@@ -1,0 +1,17 @@
+0 verbose cli /Users/JP/.nvm/versions/node/v20.18.1/bin/node /Users/JP/.nvm/versions/node/v20.18.1/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/Users/JP/.nvm/versions/node/v20.18.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/JP/iVista-Projects/aims/.npmrc
+5 silly config load:file:/Users/JP/.npmrc
+6 silly config load:file:/Users/JP/.nvm/versions/node/v20.18.1/etc/npmrc
+7 verbose title npm
+8 verbose argv "--cache" "clear"
+9 verbose logfile logs-max:10 dir:/Users/JP/iVista-Projects/aims/clear/_logs/2025-08-06T07_08_44_227Z-
+10 verbose logfile /Users/JP/iVista-Projects/aims/clear/_logs/2025-08-06T07_08_44_227Z-debug-0.log
+11 verbose cwd /Users/JP/iVista-Projects/aims
+12 verbose os Darwin 24.5.0
+13 verbose node v20.18.1
+14 verbose npm  v10.8.2
+15 verbose exit 1
+16 verbose code 1
