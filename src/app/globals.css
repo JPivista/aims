@@ -85,7 +85,7 @@
 }
 
 /* Base body styles using Montserrat */
-body {
+*, body {
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -105,6 +105,85 @@ body {
 
 .font-playfair {
   font-family: var(--font-playfair), "Playfair Display", serif;
+}
+
+/* Custom Montserrat weight classes */
+.monser-100 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.monser-200 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.monser-300 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.monser-400 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.monser-500 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.monser-600 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.monser-700 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.monser-800 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.monser-900 {
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+/* Custom Playfair Display weight classes */
+/* Note: Playfair Display only supports weights 400-900 */
+
+.playfair-400 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.playfair-500 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.playfair-600 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.playfair-700 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.playfair-800 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 800;
+}
+
+.playfair-900 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 900;
 }
 
 .dark {

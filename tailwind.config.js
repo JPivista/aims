@@ -8,10 +8,10 @@ module.exports = {
     ],
     theme: {
         extend: {
-            // fontFamily: {
-            //     'montserrat': ['var(--font-montserrat)', 'sans-serif'],
-            //     'playfair': ['var(--font-playfair)', 'serif'],
-            // },
+            fontFamily: {
+                'montserrat': ['var(--font-montserrat)', 'sans-serif'],
+                'playfair': ['var(--font-playfair)', 'serif'],
+            },
             colors: {
                 // AIMS Brand Colors - 5 Main Colors Only
                 aimsPurple: '#6E3299',

@@ -8,7 +8,7 @@ Our website uses two carefully selected Google Fonts to create a professional an
 
 | Font | Usage | Weights Available |
 |------|-------|-------------------|
-| **Montserrat** | Body text, UI elements, navigation | 300, 400, 500, 600, 700, 800, 900 |
+| **Montserrat** | Body text, UI elements, navigation | 100, 200, 300, 400, 500, 600, 700, 800, 900 |
 | **Playfair Display** | Headlines, titles, decorative text | 400, 500, 600, 700, 800, 900 |
 
 ## 🎯 Font Usage Guidelines
@@ -43,6 +43,8 @@ Our website uses two carefully selected Google Fonts to create a professional an
 
 ```html
 <!-- Montserrat Weights -->
+<p className="font-montserrat font-thin">Thin (100)</p>
+<p className="font-montserrat font-extralight">Extra Light (200)</p>
 <p className="font-montserrat font-light">Light (300)</p>
 <p className="font-montserrat font-normal">Regular (400)</p>
 <p className="font-montserrat font-medium">Medium (500)</p>
