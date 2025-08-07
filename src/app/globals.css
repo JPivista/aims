@@ -85,7 +85,8 @@
 }
 
 /* Base body styles using Montserrat */
-*, body {
+*,
+body {
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
   font-weight: 400;
   /* line-height: 1.6; */
@@ -183,6 +184,25 @@
   font-weight: 900;
 }
 
+/* MBA Program and Overview specific styles */
+.mba-program-text {
+  color: var(--Color-2, #a22877);
+  font-family: Playfair;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 72px;
+}
+
+.overview-text {
+  color: var(--Aims-Blue, #0c2165);
+  font-family: Playfair;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 72px;
+}
+
 /* Global paragraph styles */
 p {
   /* color: #000; */
@@ -198,7 +218,7 @@ p {
 /* Bold text within paragraphs */
 p b {
   font-weight: 600;
-  color: #0C2165;
+  color: #0c2165;
 }
 
 /* Global h1 styles */
@@ -235,7 +255,7 @@ h3 {
 
 /* Global h4 styles */
 h4 {
-  color: #0C2165;
+  color: #0c2165;
   font-size: 20px;
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
   font-weight: 400;
