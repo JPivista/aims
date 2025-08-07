@@ -1,97 +1,123 @@
-import Link from 'next/link';
+import Button from "@/shared/Button";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
-const Footer = () => {
-    const currentYear = new Date().getFullYear();
+export default function Footer() {
+  return (
+    <footer className="bg-[#0a1a54] text-white">
+      {/* Top Section */}
+      <div className="container mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-0 px-5 lg:gap-0 gap-5">
+        <div>
+          <h3 className="font-semibold text-2xl mb-4">Students</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#">University Rank Holders</a></li>
+            <li><a href="#">Student Handbook</a></li>
+            <li><a href="#">Student Exit Formalities</a></li>
+            <li><a href="#">Examinations</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Program and Course Outcome</a></li>
+            <li><a href="#">Code of Conduct (Students)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold text-2xl mb-4">Faculty & Staff</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#">Articles/Publications</a></li>
+            <li><a href="#">Code of Conduct & Ethics</a></li>
+            <li><a href="#">Faculty Members Details</a></li>
+            <li><a href="#">Patents</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold text-2xl mb-4">Disclosures</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#">IQAC</a></li>
+            <li><a href="#">IACBE Accreditation</a></li>
+            <li><a href="#">NAAC Accreditation</a></li>
+            <li><a href="#">AICTE</a></li>
+            <li><a href="#">NIRF</a></li>
+            <li><a href="#">UGC 2(f) & 12B</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold text-2xl mb-4">Committees</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">Anti-Ragging Cell</a></li>
+            <li><a href="#">Anti-Sexual Harassment Committee</a></li>
+            <li><a href="#">Equal Opportunity Cell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold text-2xl mb-4">General Information</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#">AIMS Journal of Research</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Environment & Sustainability</a></li>
+            <li><a href="#">Rotaract Club of AIMS</a></li>
+          </ul>
+        </div>
+      </div>
 
-    return (
-        <footer className="bg-foreground/5 border-t border-foreground/10 mt-auto">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Company Info */}
-                    <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-lg font-bold text-foreground mb-4">AIMS</h3>
-                        <p className="text-foreground/70 mb-4 max-w-md">
-                            Our comprehensive platform designed to deliver exceptional user experiences
-                            and innovative solutions for modern businesses.
-                        </p>
-                        <div className="flex space-x-4">
-                            {/* Social Media Links */}
-                            <a href="#" className="text-foreground/60 hover:text-[#A22877] transition-colors">
-                                <span className="sr-only">Twitter</span>
-                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                            </a>
-                            <a href="#" className="text-foreground/60 hover:text-[#A22877] transition-colors">
-                                <span className="sr-only">LinkedIn</span>
-                                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+      {/* Middle Section */}
+      <div className="border-t border-b border-gray-600">
 
-                    {/* Quick Links */}
-                    <div>
-                        <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-                            Quick Links
-                        </h4>
-                        <ul className="space-y-2">
-                            <li>
-                                <Link href="/about-aims" className="text-foreground/70 hover:text-[#A22877] transition-colors">
-                                    About AIMS
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services" className="text-foreground/70 hover:text-[#A22877] transition-colors">
-                                    Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/contact" className="text-foreground/70 hover:text-[#A22877] transition-colors">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/privacy" className="text-foreground/70 hover:text-[#A22877] transition-colors">
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+    
+      <div className="container mx-auto grid grid-cols-1 lg:px-0 px-5">
+       <div className="lg:flex gap-4 space-x-2.5">
+       <div className="lg:flex gap-4 lg:w-[50%] lg:border-r border-gray-600 py-8 pe-4">
+       <div>
+          <h3 className="font-semibold text-2xl mb-2">AIMS Institutes</h3>
+          <p className="text-sm">
+            1st Cross, 1st Stage, Peenya, Bengaluru 560058,<br /> Karnataka, INDIA.
+          </p>
+        </div>
+        <div className="lg:pt-0 pt-5">
+          <h3 className="font-semibold text-2xl mb-2">Contact US</h3>
+          <p className="text-sm">Admissions Centre: +91-815-000-1994</p>
+          <p className="text-sm">C&PR Centre: +91 70261 91114</p>
+          <p className="text-sm">Reception: 080 28390433/34</p>
+        </div>
+        <div className="lg:pt-0 pt-5">
+          <h3 className="font-semibold text-2xl mb-2">Follow Us</h3>
+          <div className="flex space-x-4 mt-2 text-2xl">
+            <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
+            <a href="#" className="hover:text-gray-300"><FaFacebookF /></a>
+            <a href="#" className="hover:text-gray-300"><FaXTwitter /></a>
+            <a href="#" className="hover:text-gray-300"><FaYoutube /></a>
+          </div>
+        </div>
+       </div>
+       <div className="lg:w-[50%] lg:flex justify-start items-start lg:py-8">
+         <div>
+         <h3 className="font-semibold text-2xl mb-2">
+            Happy to keep you updated.<br />Sign up for our newsletter.
+          </h3>
+          <p className="text-sm mb-3">Sign up to be the first to know about our events, achievements, and new initiatives.</p>
+         </div>
+          <div className="flex flex-col gap-5">
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="flex-1 px-3 py-2 rounded focus:outline-none text-white border"
+            />
+            <Button className="rounded hover:text-white hover:border-white w-40">Sign Up</Button>
+          </div>
+        </div>
+       </div>
+       
+      </div>
 
-                    {/* Contact Info */}
-                    <div>
-                        <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-                            Contact
-                        </h4>
-                        <ul className="space-y-2 text-foreground/70">
-                            <li>contact@aims.com</li>
-                            <li>+1 (555) 123-4567</li>
-                            <li>123 Business St<br />City, State 12345</li>
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Bottom Bar */}
-                <div className="mt-8 pt-8 border-t border-foreground/10">
-                    <div className="flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-foreground/60 text-sm">
-                            © {currentYear} AIMS. All rights reserved.
-                        </p>
-                        <div className="flex space-x-6 mt-4 md:mt-0">
-                            <Link href="/terms" className="text-foreground/60 hover:text-[#A22877] text-sm transition-colors">
-                                Terms of Service
-                            </Link>
-                            <Link href="/privacy" className="text-foreground/60 hover:text-[#A22877] text-sm transition-colors">
-                                Privacy Policy
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
-};
-
-export default Footer;
+      </div>
+      {/* Bottom Section */}
+      <div className="bg-[#0a1a54] py-4 text-center text-sm">
+        © AIMS Institutes 2025
+        <a href="#" className="ml-4 hover:underline">Terms & Conditions</a>
+        <a href="#" className="ml-4 hover:underline">Privacy</a>
+        <a href="#" className="ml-4 hover:underline">Refund & Cancellations</a>
+      </div>
+    </footer>
+  );
+}
