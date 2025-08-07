@@ -1,74 +1,181 @@
-'use client';
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { FiMenu, FiX } from "react-icons/fi";
+import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Button from "@/shared/Button";
+import { MenuItems } from "@/utils/MenuItems";
+import Link from "next/link";
 
-import Link from 'next/link';
-import Button from '@/shared/Button';
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [active, setActive] = useState(null);
+  const [isFixed, setIsFixed] = useState(false);
 
-const Header = () => {
-    const handleGetStarted = () => {
-        console.log('Get Started clicked from Header');
-    };
+  const { scrollY } = useScroll();
 
-    return (
-        <header className="bg-white shadow-sm border-b border-foreground/10 sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
-                    {/* Logo/Brand */}
-                    <div className="flex items-center">
-                        <Link href="/" className="text-2xl font-bold text-foreground">
-                            AIMS
-                        </Link>
-                    </div>
+  const viewportHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
+  const scrollThreshold = viewportHeight * 0.2; // Set to 20% (or adjust to 0.1 for 10%)
 
-                    {/* Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8">
-                        <Link
-                            href="/"
-                            className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/about-aims"
-                            className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            href="/services"
-                            className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                        >
-                            Services
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="text-foreground/80 hover:text-foreground transition-colors duration-200"
-                        >
-                            Contact
-                        </Link>
-                    </nav>
+  const opacity = useTransform(scrollY, [0, scrollThreshold], [0.9, 1]);
+  const y = useTransform(scrollY, [0, scrollThreshold], [-5, 0]);
+  const shadowBlur = useTransform(scrollY, [0, scrollThreshold], [10, 20]);
+  const shadowOpacity = useTransform(scrollY, [0, scrollThreshold], [0.05, 0.1]);
+  const shadowY = useTransform(scrollY, [0, scrollThreshold], [2, 4]);
 
-                    {/* CTA Button */}
-                    <div className="flex items-center">
-                        <Button
-                            onClick={handleGetStarted}
-                            className="text-sm"
-                        >
-                            Get Started
-                        </Button>
-                    </div>
+  // 🔁 Dynamically update isFixed based on scroll position
+  useEffect(() => {
+    return scrollY.onChange((latestY) => {
+      setIsFixed(latestY > scrollThreshold);
+    });
+  }, [scrollY, scrollThreshold]);
 
-                    {/* Mobile menu button */}
-                    <div className="md:hidden">
-                        <button className="text-foreground/80 hover:text-foreground">
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
+  return (
+    <motion.header 
+      className={`z-50 bg-white transition-all duration-300 ${
+        isFixed ? 'fixed top-0 left-0 right-0' : 'relative'
+      }`}
+      style={{
+        opacity,
+        y,
+        boxShadow: `0 ${shadowY}px ${shadowBlur}px rgba(0,0,0,${shadowOpacity})`
+      }}
+    >
+      {/* TOP BAR */}
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        {/* Logo */}
+        <div className="flex items-center">
+          <Image src="/logo.svg" alt="Logo" width={200} height={200} priority />
+        </div>
+
+        {/* Desktop Right Section */}
+        <div className="hidden lg:flex items-center space-x-6">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="border rounded-full px-4 py-1 focus:outline-none"
+            />
+          </div>
+          <a
+            href="#"
+            className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+          >
+            Alumni
+          </a>
+          <a
+            href="#"
+            className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+          >
+            Resources
+          </a>
+
+          <Button showReadMore={false}>
+            Contact Us
+          </Button>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden text-xl"
+        >
+          {mobileOpen ? <FiX /> : <FiMenu />}
+        </button>
+      </div>
+
+      {/* BOTTOM NAV (Desktop) */}
+      <div className="hidden lg:block bg-[#6E3299] ">
+        <div className="container mx-auto">
+          <Menu setActive={setActive}>
+            {MenuItems.map((item, idx) => (
+              <MenuItem
+                key={idx}
+                setActive={setActive}
+                active={active}
+                item={item.title}
+              >
+                <div className="flex flex-col space-y-4">
+                  {item.links.map((link, i) => (
+                    <HoveredLink
+                      key={i}
+                      href="#"
+                      className="text-gray-700 hover:text-[#6E3299]"
+                    >
+                      {link}
+                    </HoveredLink>
+                  ))}
                 </div>
-            </div>
-        </header>
-    );
-};
+              </MenuItem>
+            ))}
+          </Menu>
+        </div>
+      </div>
 
-export default Header;
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="lg:hidden shadow-md">
+          {/* Search + Links */}
+          <div className="p-4 border-b">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full border rounded-full px-4 py-2 mb-3"
+            />
+            <a
+              href="#"
+              className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+            >
+              Alumni
+            </a>
+            <a
+              href="#"
+              className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+            >
+              Resources
+            </a>
+            <Button
+              className="font-light"
+              hoverText="Contact Us"
+              showArrow={true}
+            >
+              Contact Us
+            </Button>
+          </div>
+          {/* Nav Items */}
+          <ul>
+            {MenuItems.map((menu, idx) => (
+              <li key={idx}>
+                <button
+                  className="w-full flex justify-between px-4 py-3 text-left bg-[#6E3299] text-white"
+                  onClick={() =>
+                    setActive(active === menu.title ? null : menu.title)
+                  }
+                >
+                  {menu.title}
+                  <FiX
+                    className={`transform transition ${
+                      active === menu.title ? "" : "rotate-45"
+                    }`}
+                  />
+                </button>
+                {active === menu.title && (
+                  <ul className="bg-gray-50">
+                    {menu.links.map((link, i) => (
+                      <li key={i} className="px-6 py-2">
+                        <a href="#" className="block text-gray-700">
+                          {link}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </motion.header>
+  );
+}

@@ -8,43 +8,62 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                'montserrat': ['var(--font-montserrat)', 'sans-serif'],
-                'playfair': ['var(--font-playfair)', 'serif'],
-            },
+            // fontFamily: {
+            //     'montserrat': ['var(--font-montserrat)', 'sans-serif'],
+            //     'playfair': ['var(--font-playfair)', 'serif'],
+            // },
             colors: {
                 // AIMS Brand Colors - 5 Main Colors Only
-                'aims-purple': '#6E3299',
-                'aims-orange': '#FF853A',
-                'aims-teal': '#62C9B5',
-                'aims-blue': '#2828A2',
-                'aims-pink': '#FF98B5',
+                aimsPurple: '#6E3299',
+                aimsOrange: '#FF853A',
+                aimsTeal: '#62C9B5',
+                aimsBlue: '#2828A2',
+                aimsPink: '#FF98B5',
+            },
+            animation: {
+                'marquee': 'marquee 25s linear infinite',
+                'marquee2': 'marquee2 25s linear infinite',
+                'pause': 'pause 0s linear infinite',
+            },
+            keyframes: {
+                marquee: {
+                    '0%': { transform: 'translateX(0%)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
+                marquee2: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0%)' },
+                },
+                pause: {
+                    '0%': { transform: 'translateX(0%)' },
+                    '100%': { transform: 'translateX(0%)' },
+                },
             },
 
             // Custom CSS variables
-            backgroundColor: {
-                'aims-purple': 'var(--color-aims-purple, #6E3299)',
-                'aims-orange': 'var(--color-aims-orange, #FF853A)',
-                'aims-teal': 'var(--color-aims-teal, #62C9B5)',
-                'aims-blue': 'var(--color-aims-blue, #2828A2)',
-                'aims-pink': 'var(--color-aims-pink, #FF98B5)',
-            },
+            // backgroundColor: {
+            //     aimsPurple: 'var(--color-aims-purple, #6E3299)',
+            //     aimsOrange: 'var(--color-aims-orange, #FF853A)',
+            //     aimsTeal: 'var(--color-aims-teal, #62C9B5)',
+            //     aimsBlue: 'var(--color-aims-blue, #2828A2)',
+            //     aimsPink: 'var(--color-aims-pink, #FF98B5)',
+            // },
 
-            textColor: {
-                'aims-purple': 'var(--color-aims-purple, #6E3299)',
-                'aims-orange': 'var(--color-aims-orange, #FF853A)',
-                'aims-teal': 'var(--color-aims-teal, #62C9B5)',
-                'aims-blue': 'var(--color-aims-blue, #2828A2)',
-                'aims-pink': 'var(--color-aims-pink, #FF98B5)',
-            },
+            // textColor: {
+            //     aimsPurple: 'var(--color-aims-purple, #6E3299)',
+            //     aimsOrange: 'var(--color-aims-orange, #FF853A)',
+            //     aimsTeal: 'var(--color-aims-teal, #62C9B5)',
+            //     aimsBlue: 'var(--color-aims-blue, #2828A2)',
+            //     aimsPink: 'var(--color-aims-pink, #FF98B5)',
+            // },
 
-            borderColor: {
-                'aims-purple': 'var(--color-aims-purple, #6E3299)',
-                'aims-orange': 'var(--color-aims-orange, #FF853A)',
-                'aims-teal': 'var(--color-aims-teal, #62C9B5)',
-                'aims-blue': 'var(--color-aims-blue, #2828A2)',
-                'aims-pink': 'var(--color-aims-pink, #FF98B5)',
-            },
+            // borderColor: {
+            //     aimsPurple: 'var(--color-aims-purple, #6E3299)',
+            //     aimsOrange: 'var(--color-aims-orange, #FF853A)',
+            //     aimsTeal: 'var(--color-aims-teal, #62C9B5)',
+            //     aimsBlue: 'var(--color-aims-blue, #2828A2)',
+            //     aimsPink: 'var(--color-aims-pink, #FF98B5)',
+            // },
         },
     },
     plugins: [],
