@@ -9,6 +9,11 @@ const ApplicationMarquee = ({ announcements, pageType = 'business' }) => {
             { text: "APPLY NOW FOR BBA SELECTION PROCESS 2025-26", link: "/apply/bba" },
             { text: "APPLY NOW FOR BBA AVIATION SELECTION PROCESS 2025-26", link: "/apply/bba-aviation" }
         ],
+        finance: [
+            { text: "APPLY NOW FOR MCOM SELECTION PROCESS 2025-26", link: "/apply/mcom" },
+            { text: "APPLY NOW FOR BCOM SELECTION PROCESS 2025-26", link: "/apply/bcom" },
+            { text: "APPLY NOW FOR BCOM AVIATION SELECTION PROCESS 2025-26", link: "/apply/bcom-aviation" }
+        ],
         engineering: [
             { text: "APPLY NOW FOR B.TECH ADMISSION 2025-26", link: "/apply/btech" },
             { text: "APPLY NOW FOR M.TECH SELECTION PROCESS 2025-26", link: "/apply/mtech" },

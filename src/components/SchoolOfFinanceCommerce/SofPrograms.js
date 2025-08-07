@@ -1,0 +1,163 @@
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import Button from '../../shared/Button'
+
+const SofPrograms = () => {
+    // Program data structure
+    const undergraduateProgram = {
+        id: 'bcom',
+        title: 'B.Com–Bachelor of Commerce',
+        description: 'Our B.Com program sets the stage for future commerce professionals with a robust curriculum and tailored specialisations that combine core subjects with value-added certifications and industry-led projects.',
+        image: '/school-of-finance/bcom.png', // You'll need to add this image
+        link: '/finance-commerce-school/bachelor-of-commerce'
+    }
+
+    const postgraduateProgram = {
+        id: 'mba',
+        title: 'M.Com–Master of Commerce',
+        description: 'A postgraduate program designed for those who wish to dive deeper into the mechanics of commerce and finance. M.Com at AIMS is not just about academic depth, it’s about real-world applicability. ',
+        image: '/school-of-finance/mcom.png', // You'll need to add this image
+        link: '/finance-commerce-school/master-of-commerce',
+    }
+
+    const doctoralProgram = {
+        id: 'doctoral',
+        title: 'Doctoral Program',
+        subtitle: 'PhD in <br /> Commerce ',
+        description: 'Our doctoral program is designed for scholars ready to contribute original insights to the world of commerce and management. With NAAC ‘A’ grade credentials and expert faculty, AIMS provides the environment, resources, and mentorship to help you pursue purposeful research aligned to your interests and ambitions.',
+        image: '/school-of-finance/sof-doctoral-program.png', // You'll need to add this image
+        link: '/finance-commerce-school/doctoral'
+    }
+
+    return (
+        <div className="py-10 relative overflow-hidden">
+            {/* Background SVG */}
+            <div className='absolute top-[20%] left-0 md:block hidden'>
+                <Image
+                    src="/school-circle.svg"
+                    alt="School Circle Background"
+                    width={250}
+                    height={100}
+                    className=" rotate-180"
+                />
+            </div>
+
+            <div className="container mx-auto px-6 lg:px-8 relative z-10">
+                {/* Undergraduate Programs Section */}
+
+                <section className="mb-10">
+                    <h3 className="text-[#0C2165]">
+                        Undergraduate Program
+                    </h3>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div className="lg:order-1 order-2 md:p-8 p-4">
+                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
+                                {undergraduateProgram.title}
+                            </h4>
+                            <p
+                                className="text-gray-700 text-left mb-6 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: undergraduateProgram.description }}
+                            />
+                            <Link href={undergraduateProgram.link}>
+                                <Button variant="primary" className="text-left">
+                                    Explore Now
+                                </Button>
+                            </Link>
+                        </div>
+                        <div className="lg:order-2 order-1 relative md:h-[350px] h-52">
+                            <Image
+                                src={undergraduateProgram.image}
+                                alt={undergraduateProgram.title}
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                {/* Postgraduate Program Section */}
+                <section className="mb-10">
+                    <h3 className="text-[#0C2165]">
+                        Postgraduate Program
+                    </h3>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div className="order-1 relative md:h-[350px] h-52">
+                            <Image
+                                src={postgraduateProgram.image}
+                                alt={postgraduateProgram.title}
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className=" order-2 md:p-8 p-4">
+                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
+                                {postgraduateProgram.title}
+                            </h4>
+                            <p
+                                className="text-gray-700 text-left mb-6 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: postgraduateProgram.description }}
+                            />
+                            <Link href={postgraduateProgram.link}>
+                                <Button variant="primary" className="text-left">
+                                    Explore Now
+                                </Button>
+                            </Link>
+                        </div>
+
+                    </div>
+                </section>
+
+                {/* Doctoral Program Section */}
+                <section>
+                    <h3 className="text-[#0C2165]">
+                        {doctoralProgram.title}
+                    </h3>
+
+                    <div className="bg-[#531574] rounded-2xl overflow-hidden">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center md:p-8 p-4">
+                            <div className="flex justify-center">
+                                <div className="relative">
+                                    {/* Circular background */}
+                                    <div className="w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+                                        <div className="w-full h-full rounded-full overflow-hidden p-4">
+                                            <Image
+                                                src={doctoralProgram.image}
+                                                alt={doctoralProgram.subtitle}
+                                                width={320}
+                                                height={320}
+                                                className="object-cover w-full h-full"
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* Decorative circles */}
+                                    {/* <div className="absolute -top-4 -left-4 w-20 h-20 border-2 border-purple-300/50 rounded-full"></div>
+                                    <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-purple-300/30 rounded-full"></div> */}
+                                </div>
+                            </div>
+                            <div className="text-white">
+                                <h3
+                                    className='text-white'
+                                    dangerouslySetInnerHTML={{ __html: doctoralProgram.subtitle }}
+                                />
+                                <p className="text-white/90 text-lg lg:text-xl mb-8 leading-relaxed">
+                                    {doctoralProgram.description}
+                                </p>
+                                <Link href={doctoralProgram.link}>
+                                    <Button variant="third" className="text-[12px] lg:text-[16px] text-white">
+                                        Explore Now
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    )
+}
+
+export default SofPrograms

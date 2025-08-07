@@ -45,11 +45,21 @@ const Programs = () => {
     }
 
     return (
-        <div className="py-10">
-            <div className="container mx-auto px-6 lg:px-8">
+        <div className="py-10 relative overflow-hidden">
+            {/* Background SVG */}
+            <div className='absolute top-[33%] left-0 md:block hidden'>
+                <Image
+                    src="/school-circle.svg"
+                    alt="School Circle Background"
+                    width={250}
+                    height={100}
+                    className=" rotate-180"
+                />
+            </div>
 
+            <div className="container mx-auto px-6 lg:px-8 relative z-10">
                 {/* Undergraduate Programs Section */}
-                <section className="mb-20">
+                <section className="mb-10">
                     <h3 className="text-center text-[#0C2165]">
                         Undergraduate Programs
                     </h3>
@@ -65,7 +75,7 @@ const Programs = () => {
                                         className="object-cover"
                                     />
                                 </div>
-                                <div className="p-8">
+                                <div className="md:p-8 p-4">
                                     <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
                                         {program.title}
                                     </h4>
@@ -84,14 +94,14 @@ const Programs = () => {
                 </section>
 
                 {/* Postgraduate Program Section */}
-                <section className="mb-20">
+                <section className="mb-10">
                     <h3 className="text-center text-[#0C2165]">
                         Postgraduate Program
                     </h3>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="lg:order-1 order-2">
-                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div className="lg:order-1 order-2 md:p-8 p-4">
+                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
                                 {postgraduateProgram.title}
                             </h4>
                             <p
@@ -109,7 +119,7 @@ const Programs = () => {
                                 src={postgraduateProgram.image}
                                 alt={postgraduateProgram.title}
                                 fill
-                                className="object-cover rounded-2xl"
+                                className="object-cover"
                             />
                         </div>
                     </div>
@@ -122,12 +132,12 @@ const Programs = () => {
                     </h3>
 
                     <div className="bg-[#531574] rounded-2xl overflow-hidden">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 items-center p-8 lg:p-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center md:p-8 p-4">
                             <div className="flex justify-center">
                                 <div className="relative">
                                     {/* Circular background */}
                                     <div className="w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
-                                        <div className="w-48 h-48 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                                        <div className="w-full h-full rounded-full overflow-hidden p-4">
                                             <Image
                                                 src={doctoralProgram.image}
                                                 alt={doctoralProgram.subtitle}

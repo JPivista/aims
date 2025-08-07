@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const SofContent = () => {
+const SoFinanceContent = () => {
     return (
         <>
             <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 bg-[#FDE9E9] relative overflow-hidden'>
@@ -19,15 +19,13 @@ const SofContent = () => {
                 <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
 
                     <h3 className='text-center text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
-                        Focused. Forward. Future-Ready.
+                        Sharpening Minds.
+                        <br />
+                        Shaping Tomorrow.
                     </h3>
                     <div className='lg:w-[60%] w-full mx-auto '>
                         <p className='text-center text-lg lg:text-[20px] monser-400'>
-                            At AIMS School of Business, students are equipped with the tools, mindset, and exposure needed to navigate and succeed in the modern business landscape. With every program, we help students sharpen their AIM, build discipline, and hit ambitious career targets across sectors.
-                        </p>
-
-                        <p className='text-center text-lg lg:text-[20px] monser-400'>
-                            We understand that stepping into the business world means being ready for real challenges. At AIMS, we help you stay focused, build the right skills, and move ahead with confidence.
+                            At AIMS, we understand that every career in finance begins with a clear goal. Our school helps you AIM with clarity, whether you're starting out or building expertise. With a foundation of precision, discipline, and real-world relevance, we prepare you to navigate the financial world with focus and confidence.
                         </p>
                     </div>
                 </div>
@@ -36,4 +34,4 @@ const SofContent = () => {
     )
 }
 
-export default SofContent
+export default SoFinanceContent
