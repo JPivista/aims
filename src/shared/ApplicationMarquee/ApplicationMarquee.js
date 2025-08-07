@@ -46,29 +46,27 @@ const ApplicationMarquee = ({ announcements, pageType = 'business' }) => {
             className="py-4 overflow-hidden shadow-lg"
             style={{ backgroundColor: '#A22877' }}
         >
-            <div className='container mx-auto'
-
-                onMouseEnter={(e) => {
-                    const marquee = e.currentTarget.querySelector('marquee')
-                    if (marquee) marquee.stop()
-                }}
-                onMouseLeave={(e) => {
-                    const marquee = e.currentTarget.querySelector('marquee')
-                    if (marquee) marquee.start()
-                }}
-            >
+            <div className='container mx-auto'>
                 <marquee
                     behavior="scroll"
                     direction="left"
                     scrollamount="10"
-                // style={{ transform: 'translateX(50%)' }}
+                    id="applicationMarquee"
                 >
                     {displayAnnouncements.map((announcement, index) => (
                         <span key={index} className="mx-8">
                             <a
                                 href={announcement.link}
-                                className="text-white font-semibold text-lg tracking-wide hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
+                                className="text-white font-semibold text-[16px] tracking-wide hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
                                 style={{ textDecoration: 'none' }}
+                                onMouseEnter={() => {
+                                    const marquee = document.getElementById('applicationMarquee')
+                                    if (marquee) marquee.stop()
+                                }}
+                                onMouseLeave={() => {
+                                    const marquee = document.getElementById('applicationMarquee')
+                                    if (marquee) marquee.start()
+                                }}
                             >
                                 {announcement.text}
                             </a>

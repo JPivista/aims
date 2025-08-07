@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ApplicationMarquee from '../shared/ApplicationMarquee'
+import ApplicationMarquee from '../../shared/ApplicationMarquee'
 
 const HeroBannerSoB = ({ announcements, pageType = 'engineering' }) => {
     return (
