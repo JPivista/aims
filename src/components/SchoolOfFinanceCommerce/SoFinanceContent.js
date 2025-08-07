@@ -25,7 +25,7 @@ const SoFinanceContent = () => {
                     </h3>
                     <div className='lg:w-[60%] w-full mx-auto '>
                         <p className='text-center text-lg lg:text-[20px] monser-400'>
-                            At AIMS, we understand that every career in finance begins with a clear goal. Our school helps you AIM with clarity, whether you're starting out or building expertise. With a foundation of precision, discipline, and real-world relevance, we prepare you to navigate the financial world with focus and confidence.
+                            At AIMS, we understand that every career in finance begins with a clear goal. Our school helps you AIM with clarity, whether you&apos;re starting out or building expertise. With a foundation of precision, discipline, and real-world relevance, we prepare you to navigate the financial world with focus and confidence.
                         </p>
                     </div>
                 </div>
