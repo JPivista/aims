@@ -88,7 +88,7 @@
 *, body {
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 /* Typography styles */
@@ -108,15 +108,7 @@
 }
 
 /* Custom Montserrat weight classes */
-.monser-100 {
-  font-family: var(--font-montserrat), "Montserrat", sans-serif;
-  font-weight: 100;
-}
-
-.monser-200 {
-  font-family: var(--font-montserrat), "Montserrat", sans-serif;
-  font-weight: 200;
-}
+/* Note: Montserrat only supports weights 300-900 in this project */
 
 .monser-300 {
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
@@ -156,6 +148,11 @@
 /* Custom Playfair Display weight classes */
 /* Note: Playfair Display only supports weights 400-900 */
 
+.playfair-300 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 300;
+}
+
 .playfair-400 {
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 400;
@@ -184,6 +181,50 @@
 .playfair-900 {
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 900;
+}
+
+/* Global paragraph styles */
+p {
+  /* color: #000; */
+  text-align: center;
+  font-family: var(--font-montserrat), "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+/* Global h1 styles */
+h1 {
+  /* color: #0C2165; */
+  font-size: 24px;
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 300;
+  margin-bottom: 1.5rem; /* 32px */
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+}
+
+/* Global h3 styles */
+h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #0C2165;
+  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-weight: 300;
+  margin-bottom: 1.5rem; /* 32px */
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 56px;
+  }
 }
 
 .dark {
