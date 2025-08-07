@@ -1,0 +1,166 @@
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import Button from '../../shared/Button'
+
+const Programs = () => {
+    // Program data structure
+    const undergraduatePrograms = [
+        {
+            id: 'bba-general',
+            title: 'BBA (General)',
+            description: 'A comprehensive program designed to develop strong fundamentals across business domains - finance, marketing, HR, and entrepreneurship, while encouraging leadership and strategic thinking from day one.',
+            image: '/school-of-business/bba-general.png', // You'll need to add this image
+            link: '/programs/bba-general'
+        },
+        {
+            id: 'bba-aviation',
+            title: 'BBA (Aviation Management)',
+            description: 'Designed for students with a sharp eye for aviation and airport management, this specialisation blends business education with operational insights into one of the fastest-growing sectors in India.',
+            image: '/school-of-business/bba-aviation.png', // You'll need to add this image
+            link: '/programs/bba-aviation'
+        }
+    ]
+
+    const postgraduateProgram = {
+        id: 'mba',
+        title: 'MBA',
+        description: 'An <b>IACBE accredited</b>, industry-attuned program that strengthens analytical and leadership skills while immersing students in real-world business challenges. Among the <b>Top 1% B-Schools in India</b>, the MBA at AIMS is recognised for its placement record and applied learning.',
+        image: '/school-of-business/mba.png', // You'll need to add this image
+        link: '/programs/mba',
+        highlights: [
+            'IACBE accredited',
+            'Top 1% B-Schools in India'
+        ]
+    }
+
+    const doctoralProgram = {
+        id: 'doctoral',
+        title: 'Doctoral Program',
+        subtitle: 'PhD in Management',
+        description: 'The PhD program is built for experienced professionals and scholars ready to explore strategic research in business disciplines. With rigorous guidance and global exposure, AIMS helps you shape insights that influence practice, policy, and progress.',
+        image: '/school-of-business/doctoral-program.png', // You'll need to add this image
+        link: '/programs/doctoral'
+    }
+
+    return (
+        <div className="py-10">
+            <div className="container mx-auto px-6 lg:px-8">
+
+                {/* Undergraduate Programs Section */}
+                <section className="mb-20">
+                    <h3 className="text-center text-[#0C2165]">
+                        Undergraduate Programs
+                    </h3>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {undergraduatePrograms.map((program) => (
+                            <div key={program.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                                <div className="relative md:h-[350px] h-52">
+                                    <Image
+                                        src={program.image}
+                                        alt={program.title}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <div className="p-8">
+                                    <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
+                                        {program.title}
+                                    </h4>
+                                    <p className="text-gray-700 text-left mb-6 leading-relaxed">
+                                        {program.description}
+                                    </p>
+                                    <Link href={program.link}>
+                                        <Button variant="primary" className="text-[12px] lg:text-[16px]">
+                                            Explore Now
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Postgraduate Program Section */}
+                <section className="mb-20">
+                    <h3 className="text-center text-[#0C2165]">
+                        Postgraduate Program
+                    </h3>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="lg:order-1 order-2">
+                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
+                                {postgraduateProgram.title}
+                            </h4>
+                            <p
+                                className="text-gray-700 text-left mb-6 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: postgraduateProgram.description }}
+                            />
+                            <Link href={postgraduateProgram.link}>
+                                <Button variant="primary" className="text-left">
+                                    Explore Now
+                                </Button>
+                            </Link>
+                        </div>
+                        <div className="lg:order-2 order-1 relative md:h-[350px] h-52">
+                            <Image
+                                src={postgraduateProgram.image}
+                                alt={postgraduateProgram.title}
+                                fill
+                                className="object-cover rounded-2xl"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                {/* Doctoral Program Section */}
+                <section>
+                    <h3 className="text-center text-[#0C2165]">
+                        {doctoralProgram.title}
+                    </h3>
+
+                    <div className="bg-[#531574] rounded-2xl overflow-hidden">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 items-center p-8 lg:p-12">
+                            <div className="flex justify-center">
+                                <div className="relative">
+                                    {/* Circular background */}
+                                    <div className="w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+                                        <div className="w-48 h-48 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                                            <Image
+                                                src={doctoralProgram.image}
+                                                alt={doctoralProgram.subtitle}
+                                                width={320}
+                                                height={320}
+                                                className="object-cover w-full h-full"
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* Decorative circles */}
+                                    {/* <div className="absolute -top-4 -left-4 w-20 h-20 border-2 border-purple-300/50 rounded-full"></div>
+                                    <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-purple-300/30 rounded-full"></div> */}
+                                </div>
+                            </div>
+                            <div className="text-white">
+                                <h3 className='text-white'>
+                                    {doctoralProgram.subtitle}
+                                </h3>
+                                <p className="text-white/90 text-lg lg:text-xl mb-8 leading-relaxed">
+                                    {doctoralProgram.description}
+                                </p>
+                                <Link href={doctoralProgram.link}>
+                                    <Button variant="third" className="text-[12px] lg:text-[16px] text-white">
+                                        Explore Now
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    )
+}
+
+export default Programs

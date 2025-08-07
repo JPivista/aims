@@ -18,6 +18,8 @@ const Button = ({
       "bg-[#A22977] text-white border-[#A22977] border-[0.1px] hover:bg-transparent hover:text-[#2828A2]",
     secondary:
       "bg-white text-[#2828A2] border-white border-[0.1px] hover:bg-transparent hover:text-white",
+    third:
+      "bg-[#A22977] text-white border-[#A22977] border-[0.1px] hover:bg-transparent",
   };
 
   const buttonClasses = `${baseClasses} ${variants[variant]} ${className}`;
@@ -25,17 +27,17 @@ const Button = ({
   return (
     <button className={buttonClasses} onClick={onClick} {...props}>
       {/* Original content */}
-      <span className={`text-xl transition-all duration-300 ease-in-out ${showReadMore ? 'group-hover:opacity-0 group-hover:-translate-y-2' : ''}`}>
+      <span className={` transition-all duration-300 ease-in-out ${showReadMore ? 'group-hover:opacity-0 group-hover:-translate-y-2' : ''}`}>
         {children}
       </span>
-      
+
       {/* Read More text - appears on hover */}
       {showReadMore && (
         <span className="absolute text-xl transition-all duration-300 ease-in-out opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
           {hoverText}
         </span>
       )}
-      
+
       {showArrow && (
         <div className="relative">
           {/* Down-right arrow - visible by default */}

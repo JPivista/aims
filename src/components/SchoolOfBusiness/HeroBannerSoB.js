@@ -27,7 +27,7 @@ const HeroBannerSoB = ({ announcements, pageType = 'engineering' }) => {
                 {/* Bottom Content Container */}
                 <div className="absolute bottom-20 left-0 right-0">
                     <div className="container mx-auto py-4 px-6 lg:px-8">
-                        <div className="flex lg:flex-row flex-col items-center justify-between gap-10">
+                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
                                     AIMS School of <br className='hidden lg:block' /> <span className='italic playfair-400'>Business</span>
