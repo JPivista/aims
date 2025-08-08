@@ -6,6 +6,8 @@ import ValueAdded from "./ValueAdded"
 import Companies from "../shared/Companies"
 import PracticalSkills from "./PracticalSkills"
 import ReadyToDraw from "./ReadyToDraw"
+import ValueAddedPrograms from "./ValueAddedPrograms"
+import MbaCourseStructure from "./MbaCourseStructure"
 
 const index = () => {
   return (
@@ -13,8 +15,9 @@ const index = () => {
       <HeroBanner />
       <WhyChoose />
       <Overview />
-      <ValueAdded />
+      <ValueAddedPrograms />
       <Companies />
+      <MbaCourseStructure />
       <PracticalSkills />
       <ReadyToDraw />
     </div>
