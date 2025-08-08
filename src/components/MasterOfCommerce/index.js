@@ -4,6 +4,7 @@ import McomContent from './McomContent'
 import McomProgramOverview from './McomProgramOverview'
 import ValueAddedPrograms from './ValueAddedPrograms'
 import McomStudentLead from './McomStudentLead'
+import Companies from '../shared/Companies/Companies'
 
 const index = () => {
     return (
@@ -13,6 +14,7 @@ const index = () => {
             <McomProgramOverview />
             <ValueAddedPrograms />
             <McomStudentLead />
+            <Companies />
         </>
     )
 }
