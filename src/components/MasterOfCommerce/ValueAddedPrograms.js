@@ -77,21 +77,21 @@ const ValueAddedPrograms = () => {
                     {/* Program Sections */}
                     <div className='space-y-6'>
                         {programs.map((program) => (
-                            <div key={program.id} className='border-b border-gray-200 pb-6'>
+                            <div key={program.id} className='border-b border-gray-200'>
                                 <button
                                     onClick={() => toggleSection(program.id)}
-                                    className='w-full flex items-center justify-between text-left hover:bg-gray-50 p-4 rounded-lg transition-colors duration-200'
+                                    className='w-full flex items-center justify-between text-left hover:bg-gray-50 rounded-lg transition-colors duration-200'
                                 >
                                     <h4 className='text-[#0C2165] monser-600 text-xl'>
-                                        {program.title}
+                                        {program.title}   <span className='text-[#0C2165] text-2xl transition-transform duration-200'>
+                                            {expandedSection === program.id ? '↗' : '↙'}
+                                        </span>
                                     </h4>
-                                    <span className='text-[#0C2165] text-2xl transition-transform duration-200'>
-                                        {expandedSection === program.id ? '↗' : '↙'}
-                                    </span>
+
                                 </button>
 
                                 {expandedSection === program.id && (
-                                    <div className='mt-4 ml-4 space-y-2'>
+                                    <div className='my-4 ml-4 space-y-2'>
                                         {program.content.map((item, index) => (
                                             <div key={index} className='flex items-start'>
                                                 <span className='text-[#0C2165] mr-3 mt-2'>•</span>
@@ -107,7 +107,7 @@ const ValueAddedPrograms = () => {
                     </div>
 
                     {/* Footer Disclaimer */}
-                    <div className='mt-12 pt-6 border-t border-gray-200'>
+                    <div className='mt-6'>
                         <p className='text-gray-600 text-sm leading-relaxed'>
                             Value additions might vary for every semester depending on the feedback from the alumni and industry representatives.
                         </p>
