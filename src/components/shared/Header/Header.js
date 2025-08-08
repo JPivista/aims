@@ -41,9 +41,8 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className={`z-50 bg-white/95 backdrop-blur-md ${
-          isSticky ? "fixed top-0 left-0 right-0" : "relative"
-        }`}
+        className={`z-50 bg-white/95 backdrop-blur-md ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
+          }`}
         style={{
           y,
           scale,
@@ -166,10 +165,10 @@ export default function Header() {
                     {item.links.map((link, i) => (
                       <HoveredLink
                         key={i}
-                        href="#"
+                        href={link.href || "#"}
                         className="text-gray-700 hover:text-[#6E3299]"
                       >
-                        {link}
+                        {link.name}
                       </HoveredLink>
                     ))}
                   </div>
@@ -231,17 +230,16 @@ export default function Header() {
                     >
                       {menu.title}
                       <FiX
-                        className={`transform transition ${
-                          active === menu.title ? "" : "rotate-45"
-                        }`}
+                        className={`transform transition ${active === menu.title ? "" : "rotate-45"
+                          }`}
                       />
                     </button>
                     {active === menu.title && (
                       <ul className="bg-gray-50">
                         {menu.links.map((link, i) => (
                           <li key={i} className="px-6 py-2">
-                            <a href="#" className="block text-gray-700">
-                              {link}
+                            <a href={link.href || "#"} className="block text-gray-700">
+                              {link.name}
                             </a>
                           </li>
                         ))}

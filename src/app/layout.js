@@ -25,6 +25,7 @@ const RootLayout = ({ children }) => {
     <html lang="en" className="">
       <body
         className={`${montserrat.variable} ${playfairDisplay.variable} font-montserrat antialiased`}
+        suppressHydrationWarning={true}
       >
         <Header />
         {children}
