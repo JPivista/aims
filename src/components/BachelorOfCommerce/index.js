@@ -5,6 +5,10 @@ import BcomProgramOverview from './BcomProgramOverview'
 import ValueAddedProgramsProps from './ValueAddedPrograms'
 import BcomStudentLead from './BcomStudentLead'
 import Companies from '../shared/Companies'
+import BcomCourseStructure from './BcomCourseStructure'
+import BcomPlus from './BcomPlus'
+import CareerOpportunities from './CareerOpportunities'
+import BcomAlumni from './BcomAlumni'
 
 const index = () => {
     return (
@@ -15,6 +19,10 @@ const index = () => {
             <ValueAddedProgramsProps />
             <BcomStudentLead />
             <Companies />
+            <BcomCourseStructure />
+            <BcomPlus />
+            <CareerOpportunities />
+            <BcomAlumni />
         </>
     )
 }

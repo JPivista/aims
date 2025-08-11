@@ -30,10 +30,10 @@ const TabCourseStructure = ({ courseData }) => {
                                             <button
                                                 key={tab.key}
                                                 onClick={() => setActiveTab(tab.key)}
-                                                className={`px-3 py-[0.2] rounded-full text-sm font-medium transition-all duration-200 border-2
+                                                className={`px-3 py-1 rounded-full text-sm font-medium transition-all duration-200 border-[0.5px]
                                                     ${activeTab === tab.key
-                                                        ? 'bg-[#A22877] text-white border-[#A22877]'
-                                                        : 'bg-white text-black border-black hover:bg-[#A22878] hover:text-white hover:border-[#A22878]'
+                                                        ? 'bg-[#A22877] text-white border-[#A22877] py-1'
+                                                        : 'bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]'
                                                     }`}
                                             >
                                                 {tab.label}
