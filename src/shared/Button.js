@@ -39,11 +39,11 @@ const Button = ({
       )}
 
       {showArrow && (
-        <div className="relative">
+        <div className="relative flex items-center">
           {/* Down-right arrow - visible by default */}
-          <GoArrowDownRight className={`w-5 h-5 transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:rotate-12 group-hover:scale-75 ${className}`} />
+          <GoArrowDownRight className="w-5 h-5 text-current transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:rotate-12 group-hover:scale-75" />
           {/* Up-right arrow - visible on hover */}
-          <GoArrowUpRight className="w-5 h-5 absolute top-0 left-0 transition-all duration-300 ease-in-out opacity-0 -rotate-12 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100" />
+          <GoArrowUpRight className="w-5 h-5 text-current absolute top-0 left-0 transition-all duration-300 ease-in-out opacity-0 -rotate-12 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100" />
         </div>
       )}
     </button>

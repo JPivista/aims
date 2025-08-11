@@ -76,19 +76,18 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
         link: "/about-aims",
       },
     ],
-
-    mca: [
+    phd: [
       {
-        text: "APPLY NOW FOR BCA SELECTION PROCESS 2025-26",
-        link: "/apply/bca",
+        text: "APPLY NOW FOR PhD SELECTION PROCESS 2025-26",
+        link: "/about-aims",
       },
       {
-        text: "APPLY NOW FOR BCA WITH AI & ML SELECTION PROCESS 2025-26",
-        link: "/apply/bca-ai-ml",
+        text: "APPLY NOW FOR PhD in Management 2025-26",
+        link: "/accreditation",
       },
       {
-        text: "APPLY NOW FOR MCA SELECTION PROCESS 2025-26",
-        link: "/apply/mca",
+        text: "APPLY NOW FOR Phd in CommerceSELECTION PROCESS 2025-26",
+        link: "/about-aims",
       },
     ],
   }
