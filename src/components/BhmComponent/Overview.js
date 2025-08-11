@@ -97,8 +97,8 @@ const Overview = () => {
         {/* Recognition timeline */}
         <div className="flex justify-center ">
           <Image
-            src="/bhm/Bhm overview.png"
-            alt="BBA Aviation Program Overview"
+            src="/bhm/Bhm overview-02.png"
+            alt="Bhm Aviation Program Overview"
             width={1000}
             height={600}
             className="object-contain"
