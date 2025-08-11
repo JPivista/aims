@@ -10,7 +10,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
         <Image
           src="/bhm/BHMbanner_img-01.jpg"
           alt="School of Business Banner"
-          width={1920}
+          width={1820}
           height={1080}
           className="w-full h-full object-cover"
           priority
