@@ -76,6 +76,21 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
         link: "/about-aims",
       },
     ],
+
+    mca: [
+      {
+        text: "APPLY NOW FOR BCA SELECTION PROCESS 2025-26",
+        link: "/apply/bca",
+      },
+      {
+        text: "APPLY NOW FOR BCA WITH AI & ML SELECTION PROCESS 2025-26",
+        link: "/apply/bca-ai-ml",
+      },
+      {
+        text: "APPLY NOW FOR MCA SELECTION PROCESS 2025-26",
+        link: "/apply/mca",
+      },
+    ],
   }
 
   // Convert announcements to objects if they're strings
