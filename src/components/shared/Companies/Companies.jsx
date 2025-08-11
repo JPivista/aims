@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "next/image"
 import { companyData } from "@/utils/companyData"
-import ImageWithOverlay from "../ImageWithOverlay"
 
 const Companies = () => {
   return (

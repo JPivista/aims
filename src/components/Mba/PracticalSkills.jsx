@@ -31,27 +31,27 @@ const PracticalSkills = () => {
 
   return (
     <>
-      <div className="bg-[#FCE6F499] py-8 sm:py-10 md:py-12 lg:py-16">
-        <div className="container mx-auto px-4 md:px-6 lg:px-0">
+      <div className="bg-[#FCE6F499] py-8 sm:py-10 md:py-12">
+        <div className="container mx-auto px-4 md:px-6">
           
           {/* First Div - Flex Row */}
-          <div className="flex flex-col lg:flex-row w-full gap-4 sm:gap-6 md:gap-8 lg:gap-0 mb-8 sm:mb-10 md:mb-12">
+          <div className="flex flex-col md:flex-row w-full gap-4  md:gap-2 mb-8 md:mb-12">
             
             {/* Left Side - Flex Column (2/3 width) */}
-            <div className="flex flex-col space-y-3 sm:space-y-4 w-full lg:w-2/3">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[60px] font-bold playfair-300 text-[#0C2165] leading-tight">
+            <div className="flex flex-col space-y-3 sm:space-y-4 w-full md:w-3/5">
+              <h2 className="text-xl sm:text-2xl md:text-[60px] font-bold playfair-300 text-[#0C2165] leading-tight">
                 Practical Skills.
                 <br />
                 Recognised Certifications.
               </h2>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-700 monser-400 leading-relaxed">
+              <p className="text-xs md:text-2xl text-gray-700 monser-400">
                 Your MBA is more than a degree. It's a toolkit for your future.
               </p>
             </div>
             
             {/* Right Side - Single Paragraph (1/3 width) */}
-            <div className="w-full lg:w-1/3 flex items-center">
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl text-gray-700 monser-400 leading-relaxed">
+            <div className="w-full md:w-1/3 flex items-center justify-start">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 monser-400 leading-relaxed">
                 At AIMS, we integrate essential certifications and learning tools that give you a competitive edge from day one. These are part of your journey toward a dependable, career-ready foundation.
               </p>
             </div>
@@ -77,10 +77,10 @@ const PracticalSkills = () => {
                   
                   {/* Right - Title and Paragraph (2/3) */}
                   <div className="flex-1">
-                    <h5 className="text-xs sm:text-sm md:text-base lg:text-lg monser-600 mb-1 sm:mb-2 leading-tight">
+                    <h5 className="text-xs sm:text-sm md:text-base monser-600 mb-1 sm:mb-2 leading-tight">
                       {item.title}
                     </h5>
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg monser-400 text-gray-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base monser-400 text-gray-600 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -91,7 +91,7 @@ const PracticalSkills = () => {
           
           {/* Third Paragraph */}
           <div className="mt-8 sm:mt-10 md:mt-12 text-start">
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-700 monser-400 max-w-4xl leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-gray-700 monser-400 max-w-4xl leading-relaxed">
             Each certification is designed to support your coursework, prepare you for placement, 
             and ensure you graduate with practical, recognised proof of your skills.
             </p>
