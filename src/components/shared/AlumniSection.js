@@ -19,10 +19,11 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
     }
 
     // Function to render description as multiple paragraphs
+    // Function to render description as multiple paragraphs
     const renderDescription = (description) => {
         if (typeof description === 'string') {
-            // Split by double line breaks or periods followed by space and capital letter
-            const paragraphs = description.split(/(?<=\.)\s+(?=[A-Z])|(?<=\n)\s*\n/);
+            // Split only by double line breaks, not by periods
+            const paragraphs = description.split(/\n\s*\n/);
 
             return paragraphs.map((paragraph, index) => {
                 const trimmedParagraph = paragraph.trim();
@@ -40,11 +41,9 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
         // If description is already an array, render each paragraph
         if (Array.isArray(description)) {
             return description.map((paragraph, index) => {
-                // Check if the paragraph contains HTML
                 const hasHTML = /<[^>]*>/.test(paragraph);
 
                 if (hasHTML) {
-                    // Add custom styling for bold text
                     const styledParagraph = paragraph.replace(
                         /<b>/g,
                         '<b style="color: #FFD700; font-weight: bold;">'
@@ -76,13 +75,14 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
         );
     };
 
+
     return (
         <div className="bg-[#531574] pb-10 w-full">
             <div className=" md:w-full w-full mx-auto px-6 lg:px-8">
                 <section>
                     <div className={`bg-[${backgroundColor}] rounded-2xl overflow-hidden`}>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start md:p-8 p-4">
-                            <div className="flex justify-center lg:sticky lg:top-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center md:p-8 p-4">
+                            <div className="flex justify-center">
                                 <div className="relative">
                                     {/* Circular background */}
                                     <div className="w-72 h-72 lg:w-80 lg:h-80 flex items-center justify-center">
@@ -98,6 +98,7 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="text-white col-span-2">
                                 <h3
                                     className='text-white text-2xl lg:text-3xl font-bold mb-6'
@@ -117,6 +118,11 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
                                         {alumniData.authorTitle && (
                                             <p className="text-white/80 text-base italic">
                                                 {alumniData.authorTitle}
+                                            </p>
+                                        )}
+                                        {alumniData.authorDescription && (
+                                            <p className="text-white/80 text-base leading-relaxed mt-2">
+                                                {alumniData.authorDescription}
                                             </p>
                                         )}
                                     </div>
