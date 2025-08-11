@@ -35,22 +35,22 @@ const PracticalSkills = () => {
         <div className="container mx-auto px-4 md:px-6">
           
           {/* First Div - Flex Row */}
-          <div className="flex flex-col md:flex-row w-full gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10 md:mb-12">
+          <div className="flex flex-col md:flex-row w-full gap-4  md:gap-2 mb-8 md:mb-12">
             
             {/* Left Side - Flex Column (2/3 width) */}
-            <div className="flex flex-col space-y-3 sm:space-y-4 w-full md:w-2/3">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold playfair-300 text-[#0C2165] leading-tight">
+            <div className="flex flex-col space-y-3 sm:space-y-4 w-full md:w-3/5">
+              <h2 className="text-xl sm:text-2xl md:text-[60px] font-bold playfair-300 text-[#0C2165] leading-tight">
                 Practical Skills.
                 <br />
                 Recognised Certifications.
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 monser-400 leading-relaxed">
+              <p className="text-xs md:text-2xl text-gray-700 monser-400">
                 Your MBA is more than a degree. It's a toolkit for your future.
               </p>
             </div>
             
             {/* Right Side - Single Paragraph (1/3 width) */}
-            <div className="w-full md:w-1/3 flex items-center">
+            <div className="w-full md:w-1/3 flex items-center justify-start">
               <p className="text-xs sm:text-sm md:text-base text-gray-700 monser-400 leading-relaxed">
                 At AIMS, we integrate essential certifications and learning tools that give you a competitive edge from day one. These are part of your journey toward a dependable, career-ready foundation.
               </p>

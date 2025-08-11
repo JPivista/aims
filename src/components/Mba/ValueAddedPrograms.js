@@ -98,7 +98,7 @@ const ValueAddedProgramsProps = () => {
             disclaimer={sampleProps.disclaimer}
         />
          {/* Student Image with Overlay */}
-         <div className="relative">
+         <div className="relative mx-auto">
           <div className="w-full h-auto">
             <Image
               src="/MBA/student.jpg"

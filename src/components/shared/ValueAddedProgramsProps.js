@@ -10,8 +10,7 @@ const ValueAddedPrograms = ({ programsData, title, description, disclaimer }) =>
             <div className='py-10 bg-white'>
                 <div className='container mx-auto px-6 lg:px-8'>
                     <div className='text-center'>
-                        <h3 className='text-[#0C2165] playfair-300'>
-                            {title || 'Value Added Programs'}
+                        <h3 className='text-[#0C2165] playfair-300' dangerouslySetInnerHTML={{ __html: title || 'Value Added Programs' }}>
                         </h3>
                     </div>
                 </div>
@@ -29,8 +28,7 @@ const ValueAddedPrograms = ({ programsData, title, description, disclaimer }) =>
                 <div className='container mx-auto px-6 lg:px-8'>
                     {/* Header Section */}
                     <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-0'>
-                        <h3 className='text-[#0C2165] playfair-300'>
-                            {title || 'Value Added Programs'}
+                        <h3 className='text-[#0C2165] playfair-300' dangerouslySetInnerHTML={{ __html: title || 'Value Added Programs' }}>
                         </h3>
                         <p className='text-gray-700 leading-relaxed'>
                             {description || 'In our effort to build the profile of the participants of the program and ensure they meet the requirements of the industry (in addition to personality development), we at AIMS incorporate a set of value added programs in each semester.'}
