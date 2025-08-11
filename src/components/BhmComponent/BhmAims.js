@@ -11,7 +11,7 @@ const Partnerships = () => {
         <div className="flex justify-center md:order-2">
         <div className="shadow-lg rounded-lg p-4  w-60 h-full">
             <Image
-              src="/bhm/Bhm-img-04.png"
+              src="/bhm-img/euhofa-img.png"
               alt="EUHOFA Logo"
               width={200}
               height={100}
@@ -50,7 +50,7 @@ const Partnerships = () => {
         <div className="flex justify-center md:order-2">
           <div className="shadow-lg rounded-lg p-4  w-60 h-full">
             <Image
-              src="/bhm/Bhm-img-05.png"
+              src="/bhm-img/hosco-img.png"
               alt="Hosco Logo"
               width={200}
               height={100}

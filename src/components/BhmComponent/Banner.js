@@ -8,7 +8,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
       <div className="relative w-full h-[100vh] overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/bhm/BHMbanner_img-01.jpg"
+          src="/bhm-img/banner-img.jpg"
           alt="School of Business Banner"
           width={1820}
           height={1080}
