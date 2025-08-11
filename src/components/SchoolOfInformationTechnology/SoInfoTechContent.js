@@ -28,13 +28,13 @@ const SoInfoTechContent = () => {
                             </h3>
                             <div className='lg:w-[60%] w-full mx-auto flex flex-col gap-4'>
                                 <p className='text-center text-lg lg:text-[20px] monser-400 text-gray-700'>
-                                    In a world driven by code, data, and rapid disruption, AIMS School of Information & Technology helps you set your sights on a future-proof career. Whether you're starting from the ground up or aiming to specialise, our programs equip you with the tools, training, and direction to stay ahead.
+                                    In a world driven by code, data, and rapid disruption, AIMS School of Information & Technology helps you set your sights on a future-proof career. Whether you&apos;re starting from the ground up or aiming to specialise, our programs equip you with the tools, training, and direction to stay ahead.
                                 </p>
                             </div>
 
                             <div className='text-center mt-6'>
                                 <h5 className='text-[#A22877] text-lg monser-600'>
-                                    We don't just teach IT, we train digital sharpshooters.
+                                    We don&apos;t just teach IT, we train digital sharpshooters.
                                 </h5>
                             </div>
                         </div>
