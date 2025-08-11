@@ -4,7 +4,7 @@ import AlumniSection from '../shared/AlumniSection'
 const McaAlumni = () => {
     const mcaAlumniData = {
         image: "/mca/mca-alumni.svg",
-        subtitle: "Connect with Our Alumni",
+        subtitle: "Connect with <br /> Our Alumni",
         description: [
             '<b>"Look at your handicap as a gift vs something to be embarrassed by, and it will help minimize the stigma and confusion with individuals who are not impaired."</b>',
             "AIMS and my fellow learners helped me minimize the stigma by focusing on my ability rather than my disability. The college has been an excellent place for specially-abled individuals like me.",

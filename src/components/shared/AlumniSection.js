@@ -77,8 +77,8 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
     };
 
     return (
-        <div className="bg-white pb-10">
-            <div className="container mx-auto px-6 lg:px-8">
+        <div className="bg-[#531574] pb-10 w-full">
+            <div className=" md:w-full w-full mx-auto px-6 lg:px-8">
                 <section>
                     <div className={`bg-[${backgroundColor}] rounded-2xl overflow-hidden`}>
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start md:p-8 p-4">
@@ -86,7 +86,7 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
                                 <div className="relative">
                                     {/* Circular background */}
                                     <div className="w-72 h-72 lg:w-80 lg:h-80 flex items-center justify-center">
-                                        <div className="w-full h-full rounded-full overflow-hidden p-4">
+                                        <div className="w-full h-full rounded-full overflow-hidden p-4 flex items-center justify-center">
                                             <Image
                                                 src={alumniData.image}
                                                 alt={alumniData.subtitle}
