@@ -13,7 +13,7 @@ const McomContent = () => {
 
                 <div className='text-center'>
                     <h3 className='text-[#531675]'>
-                        Why Choose <span className='italic'>M.Com at AIMS ?</span>
+                        Why Choose <span className='italic playfair-400'>M.Com at AIMS ?</span>
                     </h3>
                 </div>
 

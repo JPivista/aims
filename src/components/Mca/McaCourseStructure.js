@@ -1,3 +1,4 @@
+
 'use client'
 import React from 'react'
 import TabCourseStructure from '../Tab/TabCourseStructure'
@@ -122,7 +123,7 @@ const sampleCourseData = [
     }
 ]
 
-const McomCourseStructure = () => {
+const McaCourseStructure = () => {
     return (
         <>
 
@@ -130,7 +131,7 @@ const McomCourseStructure = () => {
                 <div className="container mx-auto px-6 lg:px-8">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-400">
-                            M.Com Program  <br />
+                            <span className='italic playfair-400'>MCA</span>  <br />
                             <span className='text-[#0C2165] playfair-400'>
                                 Course Structure
                             </span>
@@ -143,4 +144,4 @@ const McomCourseStructure = () => {
     )
 }
 
-export default McomCourseStructure 
+export default McaCourseStructure 

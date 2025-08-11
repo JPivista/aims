@@ -1,26 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
 
-const BcomContent = () => {
+const McaContent = () => {
     return (
         <>
             <div className='container mx-auto flex flex-col items-center justify-center'>
                 <div className='text-center lg:w-[80%]  py-10'>
                     <p>
-                        AIMS MCA is structured to develop skilled professionals with strong technical foundations, software development expertise, and industry-readiness. Designed to keep pace with emerging technologies, the program is tailored for students looking to build impactful careers in IT, analytics, and beyond.
+                        With a legacy of over 30 years, the B.Com program at AIMS bridges academic theory with industry demands. Designed for ambitious undergraduates, it combines core learning with certifications and real-world case exposure.
                     </p>
                 </div>
 
                 <div className='text-center'>
                     <h3 className='text-[#531675]'>
-                        Why Choose the <span className='italic'>the AIMS MCA?</span>
+                        Why Choose <span className='italic playfair-400'>B.Com at AIMS ?</span>
                     </h3>
                 </div>
 
                 {/* M.Com at AIMS Image */}
                 <div className='flex justify-center mb-10'>
                     <Image
-                        src="/bcom/bcom-at-aims.svg"
+                        src="/mca/why-choose-mca.svg"
                         alt="M.Com at AIMS"
                         width={800}
                         height={400}
@@ -32,4 +32,4 @@ const BcomContent = () => {
     )
 }
 
-export default BcomContent
+export default McaContent
