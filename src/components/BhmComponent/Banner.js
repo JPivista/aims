@@ -1,8 +1,6 @@
 import React from "react"
 import Image from "next/image"
 import ApplicationMarquee from "../../shared/ApplicationMarquee"
-import Button from "../../shared/Button"
-import Link from "next/link"
 
 const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
   return (
@@ -10,7 +8,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
       <div className="relative w-full h-[100vh] overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/BHM/BHMbanner_img.jpg"
+          src="/bhm/BHMbanner_img.jpg"
           alt="School of Business Banner"
           width={1920}
           height={1080}
@@ -52,20 +50,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
       {/* Application Announcements Marquee */}
       <ApplicationMarquee announcements={announcements} pageType={pageType} />
 
-      <div className="container mx-auto px-7 lg:py-16 py-5 flex flex-col items-center justify-center gap-5 lg:gap-8">
-        <p className="text-center lg:text-xl">
-          Our BHM program equips you with the mindset, skills and
-          professionalism to thrive in the hospitality sector, from luxury
-          hotels to global food chains. With a legacy of excellence as one of
-          the top hotel management colleges in Bangalore with placement services
-          and a strong focus on real-world readiness. Discover a hospitality
-          degree that blends global industry standards with local career
-          opportunities.
-        </p>
-        {/* <Button showReadMore={true} hoverText="Our Programs">
-          <Link href="/about">Choose Your Arrow</Link>
-        </Button> */}
-      </div>
+   
     </>
   )
 }

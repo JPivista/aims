@@ -48,7 +48,9 @@ const PhdProgram = () => {
 
                 {/* Right Side: Full-Width Edge Image */}
                 <div className="md:w-1/2 w-full">
-                    <img
+                    <Image
+                        width={1000}
+                        height={500}
                         src="/business_school/phd/phd_program.png"
                         alt="Students"
                         className="object-cover w-full h-full max-h-[500px] md:max-h-none"
