@@ -1,12 +1,12 @@
-import React from 'react'
-import HeroBanner from './HeroBanner'
-import WhyChoose from './WhyChoose'
-import Overview from './Overview'
-import BbaAviationCourseStructure from './BbaAviationCourseStructure'
-import ValueAddedPrograms from './ValueAddedPrograms'
-import PracticalSkills from './PracticalSkills'
-import ReadyToDraw from './ReadyToDraw'
-import Ambitions from './Ambitions'
+import React from "react"
+import HeroBanner from "./HeroBanner"
+import WhyChoose from "./WhyChoose"
+import Overview from "./Overview"
+import Companies from "../shared/Companies"
+import CourseStructure from "../shared/CourseStructure"
+import ValueAddedPrograms from "../shared/ValueAddedPrograms"
+import ReadyToDraw from "../shared/ReadyToDraw"
+import Ambitions from "./Ambitions"
 
 const BbaAviationComponents = ({ announcements }) => {
   return (
@@ -14,11 +14,17 @@ const BbaAviationComponents = ({ announcements }) => {
       <HeroBanner announcements={announcements} />
       <WhyChoose />
       <Overview />
-      <BbaAviationCourseStructure />
-      <ValueAddedPrograms />
-      <PracticalSkills />
+      <ValueAddedPrograms programKey="bba-aviation" />
+      <Companies />
+      <CourseStructure programKey="bba-aviation" />
       <Ambitions />
-      <ReadyToDraw />
+      <ReadyToDraw
+        title="Ready to Soar in Aviation Business?"
+        subtitle="Take the first step towards your aviation business career. Join our BBA Aviation program and become part of a community that values excellence, innovation, and leadership in the aviation industry."
+        primaryButtonText="Apply Now for BBA Aviation"
+        secondaryButtonText="Download Brochure"
+        tertiaryButtonText="Talk to a Counsellor"
+      />
     </>
   )
 }

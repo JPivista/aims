@@ -5,7 +5,7 @@ import ApplicationMarquee from "@/shared/ApplicationMarquee"
 const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
   return (
     <>
-      <div className="relative w-full min-h-[100vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] md:h-[83vh] overflow-hidden">
 
         {/* Background Image */}
         <Image

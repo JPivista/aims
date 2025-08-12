@@ -5,7 +5,7 @@ import ApplicationMarquee from "@/shared/ApplicationMarquee"
 const HeroBanner = ({ announcements, pageType = "bba" }) => {
   return (
     <>
-      <div className="relative w-full min-h-[100vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] md:h-[83vh] overflow-hidden">
 
         {/* Background Image */}
         <Image
@@ -30,7 +30,7 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
         </div>
 
                  {/* Hero Text */}
-         <div className="absolute inset-0 w-full md:w-3/4 flex flex-col justify-end bottom-10">
+         <div className="absolute inset-0 w-full md:w-3/4 flex flex-col justify-end">
            <div className="container mx-auto px-4 md:px-20 py-8 md:py-14">
                {/* Hero Text */}
                <h1 className="text-white text-3xl md:text-[80px] playfair-300">
