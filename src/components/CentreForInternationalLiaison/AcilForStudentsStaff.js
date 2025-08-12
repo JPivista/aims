@@ -67,7 +67,7 @@ const AcilForStudentsStaff = () => {
                             ACIL FOR STUDENTS/STAFF
                         </h3>
                         <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl'>
-                            AIMS Institutes' campus reflects a "global village" with students from over 20 countries. ACIL provides a platform for AIMS students and students/professors from partner institutions through exchange programs, activities and opportunities.
+                            AIMS Institutes&apos; campus reflects a &quot;global village&quot; with students from over 20 countries. ACIL provides a platform for AIMS students and students/professors from partner institutions through exchange programs, activities and opportunities.
                         </p>
                     </div>
 
