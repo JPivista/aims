@@ -98,7 +98,7 @@ const AcilForStudentsStaff = () => {
                                     <button
                                         key={tab.id}
                                         onClick={() => setActiveTab(tab.id)}
-                                        className={`text-left px-3 py-[0.5] blo rounded-2xl mb-2 transition-all duration-300 border-2 ${activeTab === tab.id
+                                        className={`text-left px-4 py-[0.5]blo rounded-2xl mb-3 transition-all duration-300 border-[1px] ${activeTab === tab.id
                                             ? 'bg-[#A22877] text-white border-[#A22877]'
                                             : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
                                             }`}
