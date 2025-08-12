@@ -36,7 +36,7 @@ const EceGoals = () => {
                                 </ul>
                             </div>
                             <p className='mt-4'>
-                                Whether you're launching your own venture or thinking like an innovator within a company, AEEC helps you AIM forward.
+                                Whether you&apos;re launching your own venture or thinking like an innovator within a company, AEEC helps you AIM forward.
                             </p>
                         </div>
                         <div className='flex flex-col gap-4 order-1 md:order-2'>
