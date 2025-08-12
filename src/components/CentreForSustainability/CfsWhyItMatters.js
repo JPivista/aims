@@ -13,7 +13,6 @@ const CfsWhyItMatters = () => {
                         background: 'linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)'
                     }}
                 >
-
                 </div>
 
                 {/* Top Content Container */}
@@ -30,7 +29,7 @@ const CfsWhyItMatters = () => {
                                 At its core, ACS represents a commitment: to help every student AIM for a sustainable future. In an era of climate urgency and social transition, we guide learners to identify environmental challenges, work across disciplines, and co-create research-based sustainability solutions for urban development.
                             </p>
                             <p className='text-white'>
-                                Whether it's through green campus initiatives in Bangalore, or research collaboration for sustainable development in Bangalore, our efforts are focused on one goal: building a better tomorrow by empowering students today.
+                                Whether it&apos;s through green campus initiatives in Bangalore, or research collaboration for sustainable development in Bangalore, our efforts are focused on one goal: building a better tomorrow by empowering students today.
                             </p>
                         </div>
                     </div>
