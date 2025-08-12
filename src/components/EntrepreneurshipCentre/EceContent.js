@@ -17,10 +17,10 @@ const EceContent = () => {
                                 We will be happy to collaborate with you. Contact us at  <a href='mailto:acil@theaims.ac.in' className='text-[#A22877]'>acil@theaims.ac.in</a>
                             </p>
                             <p className='text-center text-lg lg:text-[20px] monser-400'>
-                                How to become an entrepreneur after college? At AIMS Institutes, the journey doesn’t stop with academics. It begins with ideas, courage, and the right guidance. The AIMS Entrepreneurship Excellence Centre (AEEC) was established in 2007 to cultivate an entrepreneurial ecosystem in Bangalore colleges,  one that helps students and stakeholders turn ideas into action.
+                                How to become an entrepreneur after college? At AIMS Institutes, the journey doesn&apos;t stop with academics. It begins with ideas, courage, and the right guidance. The AIMS Entrepreneurship Excellence Centre (AEEC) was established in 2007 to cultivate an entrepreneurial ecosystem in Bangalore colleges,  one that helps students and stakeholders turn ideas into action.
                             </p>
                             <p className='text-center text-lg lg:text-[20px] monser-400'>
-                                Whether you're dreaming of a tech startup, a sustainable enterprise, or a local business with social impact, AEEC is here to support you with mentorship, concept validation, business plan development, and funding assistance for student startups in Bangalore colleges.
+                                Whether you&apos;re dreaming of a tech startup, a sustainable enterprise, or a local business with social impact, AEEC is here to support you with mentorship, concept validation, business plan development, and funding assistance for student startups in Bangalore colleges.
                             </p>
                         </div>
                     </div>
