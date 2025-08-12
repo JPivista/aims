@@ -35,7 +35,7 @@ export const MenuItems = [
       { name: "Centre for Community Service", href: "/centre-for-community-service" },
       { name: "Centre for Consulting", href: "/centre-for-consulting" },
       { name: "Centre for International Liaison", href: "/centre-for-international-liaison" },
-      { name: "Entrepreneurship Excellence Centre", href: "/focus-centres/entrepreneurship" },
+      { name: "Entrepreneurship Excellence Centre", href: "/entrepreneurship-excellence-centre" },
     ],
   },
   {
