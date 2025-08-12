@@ -90,6 +90,20 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
         link: "/about-aims",
       },
     ],
+    centreForSustainability: [
+      {
+        text: "APPLY NOW FOR PhD SELECTION PROCESS 2025-26",
+        link: "/apply/centre-for-sustainability",
+      },
+      {
+        text: "APPLY NOW FOR MBA SELECTION PROCESS 2025-26",
+        link: "/apply/mba",
+      },
+      {
+        text: "APPLY NOW FOR BHM SELECTION PROCESS 2025-26",
+        link: "/apply/bhm",
+      },
+    ],
   }
 
   // Convert announcements to objects if they're strings
