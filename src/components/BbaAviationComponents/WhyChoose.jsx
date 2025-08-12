@@ -37,7 +37,7 @@ const WhyChoose = () => {
     <>
      <div className='bg-[#FFEFE3] py-16'>
       <p className="text-lg md:text-xl text-[#010066] max-w-5xl monser-400 text-center mx-auto">
-        Experience the foundation of aviation business leadership at AIMS Institutes, acknowledged as one of the Top B schools in India where precision, focus, and ambition drive every student's journey. The Bachelor of Business Administration (BBA) Aviation program is crafted for emerging leaders who aspire to chart a clear path in the world of aviation business.
+      BBA Aviation Management program at AIMS is designed for students aiming to take flight in a competitive global market. With strong academic grounding and industry links, our course equips you with the tools to navigate the aviation sector from day one. Considered as one of the Best BBA Aviation Management College in Bengaluru, you will graduate with the expertise to soar in one of the world’s fastest-growing industries.
         </p></div>
      <div className="py-16 md:py-16">
       <div className="container mx-auto px-4 md:px-6"> 
