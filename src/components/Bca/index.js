@@ -5,11 +5,9 @@ import BcaProgramOverview from './BcaProgramOverview'
 import BcaValueAddedPrograms from './BcaValueAddedPrograms'
 import Companies from '../shared/Companies'
 import BcaCourseStructure from './BcaCourseStructure'
-<<<<<<< Updated upstream
 import BcaPLus from './BcaPLus'
 import BcaAlumni from './BcaAlumni'
-=======
->>>>>>> Stashed changes
+
 
 const index = () => {
     return (
@@ -20,11 +18,8 @@ const index = () => {
             <BcaValueAddedPrograms />
             <Companies />
             <BcaCourseStructure />
-<<<<<<< Updated upstream
             <BcaPLus />
             <BcaAlumni />
-=======
->>>>>>> Stashed changes
         </>
     )
 }
