@@ -30,7 +30,6 @@ const EsprPurposeScope = () => {
                                 </p>
                             </div>
                         </div>
-
                     </div>
 
                     {/* Our Scope */}
