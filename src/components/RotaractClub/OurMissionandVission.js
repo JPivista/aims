@@ -36,7 +36,7 @@ const OurMissionandVission = () => {
                                     Our Vision
                                 </h2>
                                 <blockquote className='text-2xl lg:text-3xl font-bold text-[#0C2165] mb-4 italic'>
-                                    "Empowering young leaders for change."
+                                    &quot;Empowering young leaders for change.&quot;
                                 </blockquote>
                                 <div className='text-gray-800 leading-relaxed space-y-4'>
                                     <p>
@@ -66,17 +66,17 @@ const OurMissionandVission = () => {
                                     Our Mission
                                 </h3>
                                 <blockquote className='text-2xl lg:text-3xl font-bold text-[#0C2165] mb-6 italic'>
-                                    "To do everything possible to expand the Exuberant potential in today's youth."
+                                    &quot;To do everything possible to expand the Exuberant potential in today&apos;s youth.&quot;
                                 </blockquote>
                                 <div className='text-gray-800 leading-relaxed space-y-4'>
                                     <p>
-                                        Our mission is centered on expanding the exuberant potential within today's youth through comprehensive community service initiatives, personal development programs, and leadership opportunities that foster growth and empowerment.
+                                        Our mission is centered on expanding the exuberant potential within today&apos;s youth through comprehensive community service initiatives, personal development programs, and leadership opportunities that foster growth and empowerment.
                                     </p>
                                     <p>
                                         We are committed to creating a supportive and inclusive environment where young individuals can discover their strengths, develop essential life skills, and cultivate a sense of social responsibility. Through our programs, we empower youth to become emotionally intelligent leaders who can navigate complex challenges with confidence and compassion.
                                     </p>
                                     <p>
-                                        We uphold the core Rotaract values of service above self, leadership development, diversity and inclusion, and friendship, ensuring that every member's journey contributes to building a stronger, more connected community and a brighter future for all.
+                                        We uphold the core Rotaract values of service above self, leadership development, diversity and inclusion, and friendship, ensuring that every member&apos;s journey contributes to building a stronger, more connected community and a brighter future for all.
                                     </p>
                                 </div>
                             </div>
