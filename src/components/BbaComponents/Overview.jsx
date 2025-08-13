@@ -97,7 +97,7 @@ const Overview = () => {
     <div className="bg-[#FFEFE3]">
       <div className="container mx-auto px-4 md:px-6 pb-8 md:pb-12  py-4">
         {/* BBA Program overview */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-between md:items-start md:items-center py-6 md:py-8">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-between md:items-center py-6 md:py-8">
           <h2 className="w-full md:w-2/5 mb-4 md:mb-0">
             <span className=" mba-program-text text-3xl md:text-4xl leading-tight md:leading-tight">
               BBA Program
