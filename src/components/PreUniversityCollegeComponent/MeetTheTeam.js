@@ -1,0 +1,47 @@
+import React from "react";
+import Image from "next/image";
+
+const teamMembers = [
+  { name: "Mr. Basavaraj", subject: "Kannada", img: "/pre-university-college/basavaraj.png" },
+  { name: "Mr. A.J Timma Reddy", subject: "Kannada", img: "/pre-university-college/timma_reddy.png" },
+  { name: "Ms. Vidyarani B. V", subject: "M.Sc Mathematics", img: "/pre-university-college/vidyarani.png" },
+  { name: "Mr. S R Chethan", subject: "M.Sc B.Ed", img: "/pre-university-college/chethan.png" },
+  { name: "Ms. Aishwarya L", subject: "M.Sc B.Ed", img: "/pre-university-college/aishwarya.png" },
+];
+
+const MeetTheTeam = () => {
+  return (
+    <section className="py-12 text-center container mx-auto">
+      {/* Heading */}
+      <h3 className="text-3xl font-serif font-bold text-[#243272] mb-12">
+        Meet the Team
+      </h3>
+
+      {/* Team grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 px-4">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="flex flex-col items-center">
+            {/* Circular Gradient Border */}
+            <div className="">
+              <div className="w-52 h-52 overflow-hidden bg-white flex items-center justify-center">
+                <Image
+                  src={member.img}
+                  alt={member.name}
+                  width={180}
+                  height={180}
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Name & Subject */}
+            <p className="mt-4 font-semibold" style={{ fontWeight: "600" }}>{member.name}</p>
+            <p className="text-gray-600 pt-5">{member.subject}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default MeetTheTeam;
