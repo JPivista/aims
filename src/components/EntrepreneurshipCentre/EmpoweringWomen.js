@@ -126,7 +126,7 @@ const EmpoweringWomen = () => {
                                             <button
                                                 key={participant.id}
                                                 onClick={() => setSelectedParticipant(participant.id)}
-                                                className={`text-left px-4 py-[0.5] rounded-lg transition-all block duration-300 mb-3 border-[1px] ${selectedParticipant === participant.id
+                                                className={`text-left px-4 py-[0.5] rounded-2xl transition-all block duration-300 mb-3 border-[1px] ${selectedParticipant === participant.id
                                                     ? 'bg-[#A22877] text-white border-[#A22877]'
                                                     : 'bg-white text-gray-700 border-black hover:border-[#A22877]'
                                                     }`}
