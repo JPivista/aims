@@ -12,11 +12,10 @@ const AcademicHub = () => {
                 <Button showReadMore={false}>Bangalore University Previous year Question papers</Button>
                 <Button showReadMore={false}>UGC NET Question papers</Button>
                 <Button showReadMore={false}>E-Resources</Button>
-
             </div>
         </div>
     )
 }
 
-export default AcademicHub  
+export default AcademicHub
 
