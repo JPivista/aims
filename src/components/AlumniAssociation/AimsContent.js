@@ -16,7 +16,7 @@ const RcContent = () => {
                 </div>
                 <div className='container mx-auto'>
                     <p className=''>
-                        At AIMS Institutes, your journey doesn’t end at graduation. Whether you're across the country or halfway across the world, the AIMS Alumni Association is your lifelong connection to where it all began.
+                        At AIMS Institutes, your journey doesn&apos;t end at graduation. Whether you're across the country or halfway across the world, the AIMS Alumni Association is your lifelong connection to where it all began.
                     </p>
                     <p className=''>
                         This growing network brings together AIMers from every batch, industry, and walk of life, offering opportunities to reconnect, contribute, and celebrate the milestones that continue beyond campus. As an alumnus, you remain a vital part of our community, our legacy, and our future.

@@ -17,7 +17,7 @@ const AlumniSpotLight = () => {
                     {/* Descriptive Paragraphs */}
                     <div className='mb-12 space-y-4'>
                         <p className='text-lg lg:text-xl text-white leading-relaxed'>
-                            Meet some of our alumni who've gone on to do incredible things across industries—from business and hospitality to tech and the arts.
+                            Meet some of our alumni who&apos;ve gone on to do incredible things across industries—from business and hospitality to tech and the arts.
                         </p>
                         <p className='text-lg lg:text-xl text-white leading-relaxed'>
                             These stories highlight how an education at AIMS helped them shape their goals and AIM for the future—with clarity, confidence, and community.
@@ -27,7 +27,7 @@ const AlumniSpotLight = () => {
                     {/* Quote */}
                     <div className='mb-8'>
                         <blockquote className='text-2xl lg:text-3xl text-white monser-600 leading-relaxed'>
-                            "AIMS gave me structure, confidence, and the mindset to keep growing. I still return for the people, and the purpose."
+                            &quot;AIMS gave me structure, confidence, and the mindset to keep growing. I still return for the people, and the purpose.&quot;
                         </blockquote>
                     </div>
 

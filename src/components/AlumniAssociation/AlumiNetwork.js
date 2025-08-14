@@ -27,7 +27,7 @@ const ProvidingOpportunities = () => {
 
                     <div className='text-gray-800 leading-relaxed space-y-4'>
                         <p className='text-lg'>
-                            Being part of the AIMS Alumni Association is more than just staying in touch—it's about building meaningful relationships, accessing opportunities, and giving back to the place that shaped your path. Here’s what you can look forward to:
+                            Being part of the AIMS Alumni Association is more than just staying in touch—it&apos;s about building meaningful relationships, accessing opportunities, and giving back to the place that shaped your path. Here’s what you can look forward to:
                         </p>
                     </div>
                     <div>
