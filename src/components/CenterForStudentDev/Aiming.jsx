@@ -5,11 +5,11 @@ const Aiming = () => {
   return (
     <>
       {/* Row 1: Left Content, Right Image */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10 px-4 md:px-0">
         {/* Left Side - Content */}
         <div className="w-full lg:w-1/2 relative px-4 sm:px-6 md:px-8 lg:ml-20">
           <div className="space-y-4 sm:space-y-6 lg:space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 lg:mb-10 playfair-300">
+            <h2 className="text-3xl  md:text-[65px] text-[#0C2165] mb-6 md:mb-10 playfair-300 text-center md:text-left">
               AIMing for All <br /> Round Development
             </h2>
             <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] leading-relaxed monser-400">
@@ -51,9 +51,9 @@ const Aiming = () => {
       </div>
 
       {/* Row 2: Left Image, Right Content */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10 px-4 md:px-0">
         {/* Left Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:pr-8 px-4 sm:px-6 md:px-8">
+        <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src="/student-development/our-approach.png"
             alt="Career Guidance"
@@ -65,7 +65,7 @@ const Aiming = () => {
 
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 lg:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-20">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 lg:mb-10 playfair-300">
+          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-6 md:mb-10 playfair-300 text-center md:text-left">
             Our Approach
           </h2>
           <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] leading-relaxed monser-400">
@@ -87,10 +87,10 @@ const Aiming = () => {
       </div>
 
       {/* Row 3: Left Content, Right Image */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-10 px-4 md:px-0">
         {/* Left Side - Content */}
         <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 lg:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-20">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 lg:mb-10 playfair-300">
+          <h2 className="text-3xl md:text-[65px] text-[#0C2165] mb-6 md:mb-10 playfair-300 text-center md:text-left">
             Objectives
           </h2>
           <h4 className="text-lg sm:text-xl md:text-[20px] lg:text-[20px] text-[#0C2165] monser-600 mb-3 sm:mb-4 lg:mb-4">
@@ -122,7 +122,7 @@ const Aiming = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8 px-4 sm:px-6 md:px-8">
+        <div className="w-full lg:w-1/2 flex justify-center px-4 md:px-0">
           <Image
             src="/student-development/objectives.png"
             alt="Success Achievement"

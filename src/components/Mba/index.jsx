@@ -5,12 +5,12 @@ import Overview from "./Overview"
 import Companies from "../shared/Companies"
 import PracticalSkills from "./PracticalSkills"
 import ReadyToDraw from "../shared/ReadyToDraw"
-import ValueAddedPrograms from "../shared/ValueAddedPrograms"
-import CourseStructure from "../shared/CourseStructure"
+import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
+import CourseStructure from "../shared/BBA-MBA-BBA-Aviation/CourseStructure"
 
 const index = () => {
   return (
-    <div>
+    <div className="w-full">
       <HeroBanner />
       <WhyChoose />
       <Overview />

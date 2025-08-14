@@ -1,5 +1,5 @@
 import React from "react"
-import AmbitionsSection from "../shared/AmbitionsSection"
+import AmbitionsSection from "../shared/BBA-MBA-BBA-Aviation/AmbitionsSection"
 
 const Ambitions = () => {
   return (

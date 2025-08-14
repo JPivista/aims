@@ -1,12 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react"
+import Image from "next/image"
 import ApplicationMarquee from "@/shared/ApplicationMarquee"
 
 const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
   return (
     <>
-      <div className="relative w-full h-[100vh] md:h-[83vh] overflow-hidden">
-
+      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[83vh] overflow-hidden">
         {/* Background Image */}
         <Image
           src="/bba-aviation/bba-aviation-banner.jpg"
@@ -18,31 +17,32 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
         />
 
         {/* Empower Image*/}
-        <div className="absolute left-4 md:left-10 top-4 md:top-15 md:max-w-2xl">
-        <Image
-          src="/bba/empower.svg"
-          alt="Empower"
-          width={100}
-          height={100}
-          className="w-full h-full"
-          priority
-        />
+        <div className="absolute left-4 sm:left-8 md:left-10 lg:left-10 top-4 sm:top-8 md:top-15 lg:top-15 md:max-w-2xl">
+          <Image
+            src="/bba/empower.svg"
+            alt="Empower"
+            width={100}
+            height={100}
+            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-full lg:h-full"
+            priority
+          />
         </div>
 
         {/* Hero Text */}
-        <div className="absolute inset-0 w-full md:w-3/4 flex flex-col justify-end">
-          <div className="container mx-auto px-4 md:px-20 py-8 md:py-14">
-           
-              {/* Hero Text */}
-                             <h1 className="text-white text-3xl md:text-[80px] playfair-600 italic">
-              BBA Aviation <span className='playfair-500 not-italic'>at AIMS</span>
-              </h1>
-              <h3 className="playfair-300 text-[#C9FFF4] text-xl sm:text-2xl md:text-[60px] mt-2">Plot Your Trajectory.<br/>
-              Prepare for Take-Off.</h3>
-              
+        <div className="absolute inset-0 w-full flex flex-col justify-end">
+          <div className="container mx-auto px-4 md:px-0">
+            {/* Hero Text */}
+            <h1 className="text-white text-2xl md:text-[80px]">
+              <span className="italic playfair-600">BBA Aviation</span>{" "}
+              <span className="playfair-500">at AIMS</span>
+            </h1>
+            <h3 className="playfair-300 text-[#C9FFF4] text-lg sm:text-xl md:text-3xl lg:text-[60px] mt-2 leading-tight pb-4">
+              Plot Your Trajectory.
+              <br />
+              Prepare for Take-Off.
+            </h3>
           </div>
         </div>
-
       </div>
       {/* Application Announcements Marquee */}
       <ApplicationMarquee announcements={announcements} pageType={pageType} />

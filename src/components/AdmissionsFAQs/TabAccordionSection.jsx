@@ -1,5 +1,5 @@
 import React from "react"
-import TabAccordion from "../shared/TabAccordion"
+import TabAccordion from "../shared/Admission/TabAccordion"
 
 const TabAccordionSection = () => {
   const tabsData = [
