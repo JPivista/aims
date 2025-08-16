@@ -20,6 +20,8 @@ const Button = ({
       "bg-white text-[#2828A2] border-white border-[0.1px] hover:bg-transparent hover:text-white",
     third:
       "bg-[#A22977] text-white border-[#A22977] border-[0.1px] hover:bg-transparent",
+    teal:
+      "bg-[#B3DBD3] text-[#002561] border-[#B3DBD3] border-[0.1px] hover:bg-transparent hover:text-[#002561]",
   };
 
   const buttonClasses = `${baseClasses} ${variants[variant]} ${className}`;
@@ -27,13 +29,13 @@ const Button = ({
   return (
     <button className={buttonClasses} onClick={onClick} {...props}>
       {/* Original content */}
-      <span className={` transition-all duration-300 ease-in-out ${showReadMore ? 'group-hover:opacity-0 group-hover:-translate-y-2' : ''}`}>
+      <span className={`transition-all duration-300 ease-in-out ${showReadMore ? 'group-hover:opacity-0 group-hover:-translate-y-2 cursor-pointer' : ''}`}>
         {children}
       </span>
 
       {/* Read More text - appears on hover */}
       {showReadMore && (
-        <span className="absolute text-xl transition-all duration-300 ease-in-out opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
+        <span className="absolute text-xl transition-all duration-300 ease-in-out opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer">
           {hoverText}
         </span>
       )}
@@ -43,7 +45,7 @@ const Button = ({
           {/* Down-right arrow - visible by default */}
           <GoArrowDownRight className="w-5 h-5 text-current transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:rotate-12 group-hover:scale-75" />
           {/* Up-right arrow - visible on hover */}
-          <GoArrowUpRight className="w-5 h-5 text-current absolute top-0 left-0 transition-all duration-300 ease-in-out opacity-0 -rotate-12 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100" />
+          <GoArrowUpRight className="w-5 h-5 text-current absolute top-0 left-0 transition-all duration-300 ease-in-out opacity-0 -rotate-12 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100 cursor-pointer" />
         </div>
       )}
     </button>
