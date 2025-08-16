@@ -5,9 +5,9 @@ const Aiming = () => {
   return (
     <>
       {/* Row 1: Left Content, Right Image */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-12">
+      <div className="flex flex-col lg:flex-row gap-12  py-6 md:py-10">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-4/5 space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-20">
+        <div className="w-full lg:w-4/5 space-y-4 sm:space-y-6  ml-20">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
             Purpose in Action. <br /> AIM for a More Compassionate World.
           </h2>
@@ -51,7 +51,7 @@ const Aiming = () => {
       {/* Row 2: Left Image, Right Content */}
       <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 sm:py-8 md:py-10 lg:py-12">
         {/* Left Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:pr-4 md:pr-8 px-4 sm:px-6 md:px-8">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start md:pr-8">
           <Image
             src="/community-service/our-approach.png"
             alt="Community Approach"
@@ -85,7 +85,7 @@ const Aiming = () => {
       {/* Row 3: Left Content, Right Image */}
       <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-12">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-20">
+        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 ml-20">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
             Objectives
           </h2>
@@ -112,7 +112,7 @@ const Aiming = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-4 md:pl-8 px-4 sm:px-6 md:px-8">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end ">
           <Image
             src="/community-service/objectives.png"
             alt="Community Objectives"

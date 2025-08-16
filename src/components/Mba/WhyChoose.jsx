@@ -25,7 +25,7 @@ const WhyChoose = () => {
         </p>
         <div className="w-full md:max-w-6xl px-2 max-w-5xl">
           <Image
-            src="/MBA/why-choose.png"
+            src="/MBA/why-choose.svg"
             alt="Why Choose Us"
             width={1200}
             height={1200}

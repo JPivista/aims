@@ -2,15 +2,15 @@ import React from "react"
 import HeroBanner from "./HeroBanner"
 import WhyChoose from "./WhyChoose"
 import Overview from "./Overview"
-import CourseStructure from "../shared/CourseStructure"
-import ValueAddedPrograms from "../shared/ValueAddedPrograms"
+import CourseStructure from "../shared/BBA-MBA-BBA-Aviation/CourseStructure"
+import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
 import Companies from "../shared/Companies"
 import ReadyToDraw from "../shared/ReadyToDraw"
 import Ambitions from "./Ambitions"
 
 const BbaComponents = ({ announcements }) => {
   return (
-    <div>
+    <div className="w-full">
       <HeroBanner announcements={announcements} />
       <WhyChoose />
       <Overview />

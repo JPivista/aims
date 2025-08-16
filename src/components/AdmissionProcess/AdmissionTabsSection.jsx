@@ -1,5 +1,5 @@
 import React from "react"
-import AdmissionTabs from "../shared/AdmissionTabs"
+import AdmissionTabs from "../shared/Admission/AdmissionTabs"
 
 const AdmissionTabsSection = () => {
   const tabsData = [
