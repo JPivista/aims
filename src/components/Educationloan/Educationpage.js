@@ -7,9 +7,9 @@ const Educationpage = () => {
     <div className="w-full font-serif ">
       {/* Top Section */}
       <section className="text-center px-4 py-10 bg-white container mx-auto">
-      <h2 className="text-[#010066] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+      <h3 className="text-[#010066] playfair-300 mb-3 md:mb-6 leading-tight">
           Education Loan Assistance <br /> at AIMS Institutes
-        </h2>
+        </h3>
         <p className="text-[#1A2A5B] text-sm md:text-base max-w-5xl mx-auto">
           At AIMS Institutes, we believe that financial constraints should never
           stand in the way of your academic goals. That&apos;s why we support our
@@ -24,10 +24,10 @@ const Educationpage = () => {
         <div className="container mx-auto flex flex-col md:flex-row gap-8">
           {/* Left Column - Text Content */}
           <div className="md:w-1/2">
-          <h2 className="text-[#010066] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+          <h3 className="text-[#010066] playfair-300 mb-3 md:mb-6 leading-tight">
               Partnering with <br className="md:hidden" /> Trusted Institutions
-            </h2>
-            <p className="text-sm md:text-base text-gray-700">
+            </h3>
+            <p className="">
               To ease your education financing journey, AIMS Institutes has
               associated with select banking and non-banking organisations
               offering student-friendly loan schemes. Click on the links below
@@ -57,11 +57,11 @@ const Educationpage = () => {
       {/* Requirements Section */}
       <section className="px-4 py-10 bg-white relative overflow-hidden">
         <div className="container  mx-auto">
-        <h2 className="text-[#A22877] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+        <h3 className="text-[#A22877] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
         
             What You’ll Need
-          </h2>
-          <p className="text-gray-800 mb-4">
+          </h3>
+          <p className=" mb-4">
             While loan requirements vary by provider, students are generally
             expected to submit:
           </p>
