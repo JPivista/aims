@@ -36,26 +36,23 @@ export default function Header() {
   const y = useTransform(scrollY, [0, 100], [0, -5]);
   const shadowBlur = useTransform(scrollY, [0, 100], [0, 20]);
   const shadowOpacity = useTransform(scrollY, [0, 100], [0, 0.15]);
-  const scale = useTransform(scrollY, [0, 50], [1, 0.98]);
+  // Removed scale transform to prevent width changes
 
   return (
     <>
       <motion.header
-        className={`z-50 bg-white/95 backdrop-blur-md ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
+        className={`z-50 bg-white/95 backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
           }`}
         style={{
           y,
-          scale,
           boxShadow: `0 4px ${shadowBlur}px rgba(0,0,0,${shadowOpacity})`,
         }}
         initial={{
           y: 0,
-          scale: 1,
           opacity: 1,
         }}
         animate={{
           y: isSticky ? 0 : 0,
-          scale: isSticky ? 1 : 1,
           opacity: 1,
         }}
         transition={{
@@ -71,7 +68,7 @@ export default function Header() {
       >
         {/* TOP BAR */}
         <motion.div
-          className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3"
+          className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 w-full"
           layout
           transition={{
             duration: 0.6,
@@ -145,14 +142,14 @@ export default function Header() {
 
         {/* BOTTOM NAV (Desktop) */}
         <motion.div
-          className="hidden lg:block bg-[#6E3299]"
+          className="hidden lg:block bg-[#6E3299] w-full"
           layout
           transition={{
             duration: 0.6,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
         >
-          <div className="container mx-auto">
+          <div className="max-w-7xl mx-auto px-4">
             <Menu setActive={setActive}>
               {MenuItems.map((item, idx) => (
                 <MenuItem

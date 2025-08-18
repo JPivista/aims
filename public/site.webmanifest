@@ -1,0 +1,21 @@
+{
+  "name": "AIMS - Comprehensive Platform",
+  "short_name": "AIMS",
+  "description": "Our comprehensive platform designed to deliver exceptional user experiences",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#A22877",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
