@@ -11,7 +11,7 @@ const teamMembers = [
 
 const MeetTheTeam = () => {
   return (
-    <section className="py-12 text-center container mx-auto">
+    <section className="py-10 text-center container mx-auto">
       {/* Heading */}
       <h3 className="text-3xl font-serif font-bold text-[#243272] mb-12">
         Meet the Team

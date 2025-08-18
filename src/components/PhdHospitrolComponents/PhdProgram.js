@@ -70,6 +70,7 @@ const PhdProgram = () => {
                             For details regarding the course structure, kindly refer to the details here:
                         </p>
                         <Button
+                            href="http://www.uni-mysore.ac.in/sites/default/files/content/final_ph.d_notification_edited.pdf"
                             showArrow={true}
                             showReadMore={false}
                             variant="secondary"

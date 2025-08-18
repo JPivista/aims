@@ -8,6 +8,7 @@ const Button = ({
   showArrow = true,
   showReadMore = false,
   hoverText,
+  href, // added
   ...props
 }) => {
   const baseClasses =
@@ -26,10 +27,16 @@ const Button = ({
 
   const buttonClasses = `${baseClasses} ${variants[variant]} ${className}`;
 
-  return (
-    <button className={buttonClasses} onClick={onClick} {...props}>
+  const content = (
+    <>
       {/* Original content */}
-      <span className={`transition-all duration-300 ease-in-out ${showReadMore ? 'group-hover:opacity-0 group-hover:-translate-y-2 cursor-pointer' : ''}`}>
+      <span
+        className={`transition-all duration-300 ease-in-out ${
+          showReadMore
+            ? "group-hover:opacity-0 group-hover:-translate-y-2 cursor-pointer"
+            : ""
+        }`}
+      >
         {children}
       </span>
 
@@ -42,12 +49,27 @@ const Button = ({
 
       {showArrow && (
         <div className="relative flex items-center">
-          {/* Down-right arrow - visible by default */}
           <GoArrowDownRight className="w-5 h-5 text-current transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:rotate-12 group-hover:scale-75" />
-          {/* Up-right arrow - visible on hover */}
           <GoArrowUpRight className="w-5 h-5 text-current absolute top-0 left-0 transition-all duration-300 ease-in-out opacity-0 -rotate-12 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100 cursor-pointer" />
         </div>
       )}
+    </>
+  );
+
+  // If href is present, render <a>, else <button>
+  return href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={buttonClasses}
+      {...props}
+    >
+      {content}
+    </a>
+  ) : (
+    <button onClick={onClick} className={buttonClasses} {...props}>
+      {content}
     </button>
   );
 };
