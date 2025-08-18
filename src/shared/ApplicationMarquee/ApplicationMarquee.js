@@ -138,11 +138,11 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
       className="py-4 overflow-hidden shadow-lg"
       style={{ backgroundColor: "#A22877" }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto flex justify-center items-center">
         <marquee
           behavior="scroll"
           direction="left"
-          scrollamount="10"
+          scrollamount="6"
           id="applicationMarquee"
         >
           {displayAnnouncements.map((announcement, index) => (

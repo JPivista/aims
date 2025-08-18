@@ -6,7 +6,7 @@ const SofContent = () => {
         <>
             <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 bg-[#FDE9E9] relative overflow-hidden'>
                 {/* Background SVG */}
-                <div className='absolute md:-top-1/3 right-0 md:block hidden'>
+                <div className='absolute md:-top-1/3 right-0 md:block hidden -rotate-45'>
                     <Image
                         src="/school-circle.svg"
                         alt="School Circle Background"

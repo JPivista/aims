@@ -66,114 +66,117 @@ export default function Header() {
         layout
         layoutId="header"
       >
-        {/* TOP BAR */}
-        <motion.div
-          className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 w-full"
-          layout
-          transition={{
-            duration: 0.6,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        >
-          {/* Logo */}
+        {/* HEADER CONTAINER */}
+        <div className="h-full flex flex-col">
+          {/* TOP BAR */}
           <motion.div
-            className="flex items-center"
+            className="container mx-auto flex items-center justify-between px-4 py-3 w-full flex-1"
             layout
             transition={{
-              duration: 0.5,
+              duration: 0.6,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
           >
-            <Image
-              src="/logo.svg"
-              alt="Logo"
-              width={200}
-              height={200}
-              priority
-            />
-          </motion.div>
-
-          {/* Desktop Right Section */}
-          <motion.div
-            className="hidden lg:flex items-center space-x-6"
-            layout
-            transition={{
-              duration: 0.5,
-              ease: [0.25, 0.46, 0.45, 0.94],
-            }}
-          >
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search..."
-                className="border rounded-full px-4 py-1 focus:outline-none"
+            {/* Logo */}
+            <motion.div
+              className="flex items-center"
+              layout
+              transition={{
+                duration: 0.5,
+                ease: [0.25, 0.46, 0.45, 0.94],
+              }}
+            >
+              <Image
+                src="/logo.svg"
+                alt="Logo"
+                width={200}
+                height={200}
+                priority
               />
-            </div>
-            <a
-              href="#"
-              className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
-            >
-              Alumni
-            </a>
-            <a
-              href="#"
-              className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
-            >
-              Resources
-            </a>
+            </motion.div>
 
-            <Button showReadMore={false}>Contact Us</Button>
+            {/* Desktop Right Section */}
+            <motion.div
+              className="hidden lg:flex items-center space-x-6"
+              layout
+              transition={{
+                duration: 0.5,
+                ease: [0.25, 0.46, 0.45, 0.94],
+              }}
+            >
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="border rounded-full px-4 py-1 focus:outline-none"
+                />
+              </div>
+              <a
+                href="#"
+                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+              >
+                Alumni
+              </a>
+              <a
+                href="#"
+                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+              >
+                Resources
+              </a>
+
+              <Button showReadMore={false}>Contact Us</Button>
+            </motion.div>
+
+            {/* Mobile Hamburger */}
+            <motion.button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="lg:hidden text-xl"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                duration: 0.2,
+                ease: [0.25, 0.46, 0.45, 0.94],
+              }}
+            >
+              {mobileOpen ? <FiX /> : <FiMenu />}
+            </motion.button>
           </motion.div>
 
-          {/* Mobile Hamburger */}
-          <motion.button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-xl"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
+          {/* BOTTOM NAV (Desktop) */}
+          <motion.div
+            className="hidden lg:block bg-[#6E3299] w-full"
+            layout
             transition={{
-              duration: 0.2,
+              duration: 0.6,
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
           >
-            {mobileOpen ? <FiX /> : <FiMenu />}
-          </motion.button>
-        </motion.div>
-
-        {/* BOTTOM NAV (Desktop) */}
-        <motion.div
-          className="hidden lg:block bg-[#6E3299] w-full"
-          layout
-          transition={{
-            duration: 0.6,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        >
-          <div className="max-w-7xl mx-auto px-4">
-            <Menu setActive={setActive}>
-              {MenuItems.map((item, idx) => (
-                <MenuItem
-                  key={idx}
-                  setActive={setActive}
-                  active={active}
-                  item={item.title}
-                >
-                  <div className="flex flex-col space-y-2">
-                    {item.links.map((link, i) => (
-                      <HoveredLink
-                        key={i}
-                        href={link.href || "#"}
-                        className="text-gray-700 hover:text-[#6E3299]"
-                      >
-                        {link.name}
-                      </HoveredLink>
-                    ))}
-                  </div>
-                </MenuItem>
-              ))}
-            </Menu>
-          </div>
-        </motion.div>
+            <div className="max-w-7xl mx-auto px-4">
+              <Menu setActive={setActive}>
+                {MenuItems.map((item, idx) => (
+                  <MenuItem
+                    key={idx}
+                    setActive={setActive}
+                    active={active}
+                    item={item.title}
+                  >
+                    <div className="flex flex-col space-y-2">
+                      {item.links.map((link, i) => (
+                        <HoveredLink
+                          key={i}
+                          href={link.href || "#"}
+                          className="text-gray-700 hover:text-[#6E3299]"
+                        >
+                          {link.name}
+                        </HoveredLink>
+                      ))}
+                    </div>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </div>
+          </motion.div>
+        </div>
 
         {/* Mobile Menu */}
         <AnimatePresence>
@@ -254,7 +257,7 @@ export default function Header() {
       <motion.div
         className="w-full"
         style={{
-          height: isSticky ? "120px" : "0px", // Adjust based on your header height
+          height: isSticky ? "16vh" : "0px", // 16vh height on medium screens and above
         }}
         transition={{
           duration: 0.8,
