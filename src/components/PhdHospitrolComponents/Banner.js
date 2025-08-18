@@ -8,7 +8,7 @@ const PhdBanner = ({ announcements, pageType = 'phd' }) => {
       <div className="relative w-full h-[100vh] md:h-[83vh] bg-[url('/business_school/phd/phd_banner.png')] bg-no-repeat bg-cover bg-center">
 
         {/* Content container */}
-        <div className="container mx-auto h-full grid grid-cols-1 lg:grid-cols-2 items-center relative z-10 px-4 sm:px-6 lg:px-12">
+        <div className="container h-full md:w-[50%] w-full items-center relative z-10 px-4 sm:px-6 lg:px-20">
 
           {/* LEFT CONTENT */}
           <div className="flex flex-col justify-between h-full pt-16 sm:pt-20 lg:pt-0">
