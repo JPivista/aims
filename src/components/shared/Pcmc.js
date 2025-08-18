@@ -5,34 +5,58 @@ import Image from "next/image";
 const TabbedInfoSection = ({
     mainHeading,
     mainDescription,
-    mainDescription2,
     subHeading,
     subDescription,
     tabData,
     bgImage,
-    tabDescription
+    tabDescription,
+    style = {} // allow custom styles
 }) => {
     const firstTabKey = Object.keys(tabData)[0];
     const [activeTab, setActiveTab] = useState(firstTabKey);
 
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden" style={style}>
             <div className="container mx-auto pt-10 px-4">
                 {/* First Section */}
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-[90%] pr-6">
-                        <h3 className="text-2xl font-bold mb-4 leading-snug text-[#0C2165]" dangerouslySetInnerHTML={{ __html: mainHeading }} />
-                        <p className="text-gray-700 mb-8" dangerouslySetInnerHTML={{ __html: mainDescription }} />
-                        <p className="text-gray-700 mb-8" dangerouslySetInnerHTML={{ __html: mainDescription2 }} />
+                        <h3
+                            className="text-2xl font-bold mb-4 leading-snug text-[#0C2165]"
+                            dangerouslySetInnerHTML={{ __html: mainHeading }}
+                        />
 
+                        {/* ✅ Handle multiple description blocks */}
+                        {Array.isArray(mainDescription) ? (
+                            mainDescription.map((desc, index) => (
+                                <p
+                                    key={index}
+                                    className="text-gray-700 mb-8"
+                                    dangerouslySetInnerHTML={{ __html: desc }}
+                                />
+                            ))
+                        ) : (
+                            <p
+                                className="text-gray-700 mb-8"
+                                dangerouslySetInnerHTML={{ __html: mainDescription }}
+                            />
+                        )}
                     </div>
                 </div>
 
                 {/* Second Section */}
                 <div className="w-full bg-white">
-                    <h3 className="text-2xl font-bold mb-4 text-[#0C2165]" dangerouslySetInnerHTML={{ __html: subHeading }} />
-                    <p className="text-gray-700 mb-4" dangerouslySetInnerHTML={{ __html: subDescription[0] }} />
-                    <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: subDescription[1] }} />
+                    <h3
+                        className="text-2xl font-bold mb-4 text-[#0C2165]"
+                        dangerouslySetInnerHTML={{ __html: subHeading }}
+                    />
+                    {subDescription.map((desc, index) => (
+                        <p
+                            key={index}
+                            className="text-gray-700 mb-4"
+                            dangerouslySetInnerHTML={{ __html: desc }}
+                        />
+                    ))}
                 </div>
 
                 {/* Tabs Section */}
@@ -43,10 +67,11 @@ const TabbedInfoSection = ({
                             <button
                                 key={key}
                                 onClick={() => setActiveTab(key)}
-                                className={`w-fit px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium text-left ${activeTab === key
-                                    ? "bg-[#a2396e] text-white border-none"
-                                    : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
-                                    }`}
+                                className={`w-fit px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium text-left ${
+                                    activeTab === key
+                                        ? "bg-[#a2396e] text-white border-none"
+                                        : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
+                                }`}
                             >
                                 {tabData[key].title} {tabData[key].subtitle}
                             </button>
@@ -66,7 +91,6 @@ const TabbedInfoSection = ({
                             {tabData[activeTab].description}
                         </div>
                     </div>
-
                 </div>
                 <p className="text-gray-600 mb-4">{tabDescription}</p>
             </div>

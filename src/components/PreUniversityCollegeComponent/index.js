@@ -7,6 +7,7 @@ import OurPrograms from './OurPrograms'
 import MeetTheTeam from './MeetTheTeam'
 import ImageCarousel from './ImageCarousel'
 import AimersSays from './AimersSays'
+import Eligibility from './EligibilityTab'
 
 const index = () => {
     return (
@@ -16,6 +17,7 @@ const index = () => {
             <PrincipalsMessage />
             <WhyChooseAims />
             <OurPrograms />
+            <Eligibility />
             <MeetTheTeam />
             <ImageCarousel />
             <AimersSays />
