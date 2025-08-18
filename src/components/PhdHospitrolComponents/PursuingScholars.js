@@ -10,16 +10,34 @@ const PursuingScholars = () => {
       "Mr. Vikram M - Registered",
       "Mr. Bhaskar Sailesh - Provisionally Registered",
       "Mr. Rajashekar J - Provisionally Registered",
+
     ],
     "Dr. Saurabh Srivastava": [
-      "Placeholder Scholar 1 - Registered",
-      "Placeholder Scholar 2 - Registered",
+      "Mr. Jagadeesh Babu M K - Thesis Submitted",
+      "Ms. Chandrika.P - Registered",
+      "Mr. Umashankar N R - Provisionally Registered",
     ],
     "Dr. Renati Jayaprakash Reddy": [
-      "Placeholder Scholar 1 - Registered",
+      "Mr. Vinayaka Shantesh Angadi - Thesis Submitted",
+      "Ms. Deepthi S J - Registered",
+      "Ms. Anita Kurian - Registered",
+      "Ms. Sushmitha P - Provisionally Registered",
+      "Mr. Sreedhar B.N - Provisionally Registered",
+      "Mr. Ranganatha R - Provisionally Registered",
+      "Ms. Shambhavi B.R - Provisionally Registered",
+      "Mr. Nataraja - Provisionally Registered",
+      "Ms. Pushpa M - Provisionally Registered",
     ],
     "Dr. B.A.Karunakara Reddy": [
-      "Placeholder Scholar 1 - Registered",
+      "Ms. Nitu Sharma - Thesis Submitted",
+      "Ms. Sangeetha.S - Registered",
+      "Ms. Diana Erudiyanathan - Registered",
+      "Mr. Virupaksha J.D - Registered",
+      "Mr. Vedanandaprabhu P.G - Registered",
+      "Ms. Sowmyashree A - Registered",
+      "Ms. Tejaswini S - Registered",
+      "Mr. Chiranth. R - Registered",
+      "Ms. Hema N - Provisionally Registered",
     ],
   };
 
@@ -47,11 +65,10 @@ const PursuingScholars = () => {
               <button
                 key={name}
                 onClick={() => setSelectedGuide(name)}
-                className={`w-full sm:w-auto px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium block ${
-                  selectedGuide === name
-                    ? "bg-[#a2396e] text-white border-none"
-                    : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
-                }`}
+                className={`w-full sm:w-auto px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium block ${selectedGuide === name
+                  ? "bg-[#a2396e] text-white border-none"
+                  : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
+                  }`}
               >
                 Guide - <span className="font-bold">{name}</span>
               </button>
@@ -63,11 +80,10 @@ const PursuingScholars = () => {
                 <button
                   key={name}
                   onClick={() => setSelectedGuide(name)}
-                  className={`w-full sm:w-auto px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium block ${
-                    selectedGuide === name
-                      ? "bg-[#a2396e] text-white border-none"
-                      : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
-                  }`}
+                  className={`w-full sm:w-auto px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium block ${selectedGuide === name
+                    ? "bg-[#a2396e] text-white border-none"
+                    : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
+                    }`}
                 >
                   Guide - <span className="font-bold">{name}</span>
                 </button>

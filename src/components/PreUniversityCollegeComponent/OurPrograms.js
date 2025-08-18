@@ -6,7 +6,7 @@ const OurPrograms = () => {
     return (
         <div className="relative overflow-hidden"> {/* relative for absolute positioning */}
             <hr className="border-t-1 border-gray-400" />
-            <div className="container mx-auto py-12 relative z-10">
+            <div className="container mx-auto py-10 relative z-10">
                 {/* Heading */}
                 <div className="text-center max-w-4xl mx-auto px-4">
                     <h3 className="text-4xl font-serif font-bold mb-4">Our Programs</h3>
@@ -36,8 +36,8 @@ const OurPrograms = () => {
                             coaching.
                         </p>
                         <div className="flex flex-col gap-3 w-fit ">
-                            <Button showReadMore={false}>PCMB/PCMC Integrated</Button>
-                            <Button showReadMore={false}>PCMB/PCMC</Button>
+                            <Button href="/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee" showReadMore={false}>PCMB/PCMC Integrated</Button>
+                            <Button href="/pre-university-college/science-pcmb-pcmc" showReadMore={false}>PCMB/PCMC</Button>
                         </div>
                     </div>
 
@@ -51,8 +51,8 @@ const OurPrograms = () => {
                             AIMS is also ranked among the top colleges and the best PU college
                             for EBAC in Bangalore.
                         </p>
-                        <div>
-                            <Button showReadMore={false}>EBAC</Button>
+                        <div className="flex flex-col gap-3 w-fit ">
+                            <Button href="/pre-university-college/commerce-ceba" showReadMore={false}>EBAC</Button>
                         </div>
                     </div>
                     <div>

@@ -16,7 +16,7 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
                     {/* Bottom text */}
                     <div>
                         <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white ">
-                            AIMS <br className='hidden lg:block' /> Centre for Research
+                        Pre-University College
                         </h1>
                     </div>
                 </div>

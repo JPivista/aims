@@ -13,18 +13,18 @@ const MeetOurResearchGuides = () => {
         },
         "Dr. Renati Jayaprakash Reddy": {
             categoryData: [
-                { category: "General Merit", vacancies: 2 },
+                { category: "General Merit", vacancies: 0 },
                 { category: "Other Backward Classes", vacancies: 0 },
-                { category: "Scheduled Castes / Tribes", vacancies: 1 },
+                { category: "Scheduled Castes / Tribes", vacancies: 0 },
                 { category: "Foreign Nationals", vacancies: 0 },
             ],
         },
         "Dr. B.A. Karunakara Reddy": {
             categoryData: [
                 { category: "General Merit", vacancies: 0 },
-                { category: "Other Backward Classes", vacancies: 1 },
-                { category: "Scheduled Castes / Tribes", vacancies: 1 },
-                { category: "Foreign Nationals", vacancies: 2 },
+                { category: "Other Backward Classes", vacancies: 0 },
+                { category: "Scheduled Castes / Tribes", vacancies: 0 },
+                { category: "Foreign Nationals", vacancies: 0 },
             ],
         },
     };
