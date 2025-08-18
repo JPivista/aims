@@ -3,7 +3,7 @@ import AlumniSpeak from "../shared/AlumniSpeak";
 export default function Page() {
     return (
         <AlumniSpeak
-            name="DARSHAN T"
+            name="KOMAL JHA"
             batch="EBAC 2022 - 2024"
             quote="EDUCATION — your door to future success."
             description1="This quote exactly reflects my opinion on education and my college, AIMS. It has opened the doors toward my future success and prepared me to face challenges head-on. AIMS has not only provided me with academic knowledge, but also helped me nurture vital life skills. Choosing commerce was the best decision of my life, and I’m proud that AIMS offered unwavering support at every step."

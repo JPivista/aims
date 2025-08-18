@@ -16,7 +16,7 @@ const Banner = ({ announcements, pageType = 'phd' }) => {
                     {/* Bottom text */}
                     <div>
                         <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white ">
-                            AIMS <br className='hidden lg:block' /> PCMB/PCMC
+                            PCMB/PCMC
                         </h1>
                     </div>
                 </div>

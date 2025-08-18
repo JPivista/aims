@@ -49,10 +49,10 @@ const OurPrograms = () => {
                         <h4 className="mb-3" style={{ fontWeight: "600", fontSize: "28px" }}>Commerce</h4>
                         <p className="text-gray-700 mb-6">
                             AIMS is also ranked among the top colleges and the best PU college
-                            for EBAC in Bangalore.
+                            for CEBA in Bangalore.
                         </p>
                         <div className="flex flex-col gap-3 w-fit ">
-                            <Button href="/pre-university-college/commerce-ceba" showReadMore={false}>EBAC</Button>
+                            <Button href="/pre-university-college/commerce-ceba" showReadMore={false}>CEBA</Button>
                         </div>
                     </div>
                     <div>

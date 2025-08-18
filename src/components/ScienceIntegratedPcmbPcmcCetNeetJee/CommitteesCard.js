@@ -7,10 +7,10 @@ export default function Page() {
       bgColor: "bg-[#FDE8EC]",
       borderColor: "border-[#A22877]",
       icon: "/centre-for-research/arrow_icon_1.svg",
-      title: "Advantages of Choosing PCMC",
+      title: "Advantages of Choosing PCMC:",
       titleColor: "text-[#531574]",
       description:
-        "This committee provides guidance to endorse the research proposals and strategic direction for AIMS' research vision. The RAC includes a Chairperson, one patron, six external experts, and three internal members. The Director of ACR serves as the Member Secretary and convenes annual meetings.",
+        "You can opt for multiple courses after PU, like BTech / BE / BCA / Bio-tech / BSc Nautical Sciences / BSc Computer Science / BSc Aviation / BDes Industrial Design.",
       objectivesTitle: "Career opportunities after adegree include:",
       objectives: [
         "Software Engineer",
@@ -29,10 +29,10 @@ export default function Page() {
       bgColor: "bg-[#E3F4F1]",
       borderColor: "border-[#88BBB1]",
       icon: "/centre-for-research/arrow_icon_2.svg",
-      title: "Advantages of Choosing PCMB",
+      title: "Advantages of Choosing PCMB:",
       titleColor: "text-[#0C2165]",
       description:
-        "You can opt for multiple courses after PU like Medical/Bio-tech/ B-Pharma/Bachelor of Medical Sciences/BE/BSc/Bioinformatics/ Agricultural Sciences.",
+        "You can opt for multiple courses after PU like Medical / Bio-tech / B-Pharma / Bachelor of Medical Sciences / BE / BSc / Bioinformatics / Agricultural Sciences.",
       objectivesTitle: "Career opportunities after degree include:",
       objectives: [
         "Doctor",

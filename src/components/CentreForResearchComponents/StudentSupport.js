@@ -24,6 +24,7 @@ const StudentSupport = () => {
             <div className="flex flex-wrap gap-4 mb-8">
                 <Button showReadMore={false}>AIMS Journal of Research</Button>
                 <Button showReadMore={false}>AIMS Faculty Articles & Publications</Button>
+                <Button showReadMore={false}>Research Advisory & Review Committees</Button>
             </div>
 
             {/* Divider */}
