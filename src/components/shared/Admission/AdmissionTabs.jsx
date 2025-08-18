@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import Image from "next/image"
+import Button from "@/shared/Button"
 
 const AdmissionTabs = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0)
@@ -67,14 +68,18 @@ const AdmissionTabs = ({ tabsData }) => {
 
               {/* Conclusion */}
               {tabsData[activeTab].conclusion && (
-                <div className="mt-6 ">
+                <div className="mt-6">
                   <p className="text-base md:text-lg monser-400">
                     {tabsData[activeTab].conclusion}
                   </p>
                 </div>
               )}
             </div>
+            <div>
           </div>
+          </div>
+          
+          
         </div>
       </div>
     </div>

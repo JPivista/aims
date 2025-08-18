@@ -13,7 +13,7 @@ const ReadyToDraw = ({
 }) => {
   return (
     <>
-      <div className={`${bgColor} py-6 sm:py-8 md:py-10`}>
+      <div className={`${bgColor} py-6 sm:py-8 md:py-16`}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
             
@@ -29,26 +29,26 @@ const ReadyToDraw = ({
               
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 pt-2">
-                <Button 
+                {primaryButtonText && <Button 
                   variant="secondary"
                   className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                 >
                   {primaryButtonText}
-                </Button>
+                </Button>}
                 
-                <Button 
+                {secondaryButtonText && <Button
                   variant="secondary"
                   className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                 >
                   {secondaryButtonText}
-                </Button>
+                </Button>}
                 
-                <Button 
+                {tertiaryButtonText && <Button 
                   variant="secondary"
                   className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                 >
                   {tertiaryButtonText}
-                </Button>
+                </Button>}
               </div>
             </div>
             

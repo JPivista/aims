@@ -1,6 +1,8 @@
 import React from "react"
 import Image from "next/image"
 import { companyData } from "@/utils/companyData"
+import ReadyToDraw from "../ReadyToDraw"
+import { FaS } from "react-icons/fa6"
 
 const Companies = () => {
   return (
@@ -30,6 +32,7 @@ const Companies = () => {
           </div>
         </div>
       </div>
+     
     </>
   )
 }
