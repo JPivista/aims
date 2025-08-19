@@ -63,7 +63,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                                 <div className="lg:hidden bg-white/90 backdrop-blur-sm rounded-2xl max-w-md shadow-lg">
                                     <div className="flex items-center justify-center">
                                         <Image
-                                            src="/mcom/naac.svg"
+                                            src="/naac-logo.svg"
                                             alt="NAAC Accreditation"
                                             width={200}
                                             height={100}
@@ -119,7 +119,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                         />
                     </div>
                 </div>
-            </div >
+            </div>
 
             {/* Application Announcements Marquee */}
             <ApplicationMarquee announcements={announcements} pageType={pageType} />

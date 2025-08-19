@@ -13,7 +13,7 @@ const BcaContent = () => {
 
                 <div className='text-center'>
                     <h3 className='text-[#531675]'>
-                        Why Choose <span className='italic playfair-400'>B.Com at AIMS ?</span>
+                        Why Choose <span className='italic playfair-400'>BCA at AIMS ?</span>
                     </h3>
                 </div>
 

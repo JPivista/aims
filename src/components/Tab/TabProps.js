@@ -31,9 +31,7 @@ const PhdTabs = ({ tabs }) => {
         {tabs.map(
           (tab) =>
             activeTab === tab.key && (
-              <div key={tab.key}>
-                {tab.content}
-              </div>
+              <div key={tab.key} dangerouslySetInnerHTML={{ __html: tab.content }} />
             )
         )}
       </div>

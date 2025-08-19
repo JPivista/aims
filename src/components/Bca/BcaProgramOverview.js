@@ -62,7 +62,7 @@ const BcaProgramOverview = () => {
                             Overview
                         </h3>
                         <p>
-                            Whether you're aiming for a role in tech, analytics, or entrepreneurship, our curriculum helps you hit the ground running. Learn by doing, think like a problem-solver, and graduate with more than just a certificate, graduate with clarity.
+                            Whether you&apos;re aiming for a role in tech, analytics, or entrepreneurship, our curriculum helps you hit the ground running. Learn by doing, think like a problem-solver, and graduate with more than just a certificate, graduate with clarity.
                         </p>
                     </div>
                     {/* Program Overview Image */}

@@ -17,7 +17,7 @@ const SoInfoTechPrograms = () => {
         title: 'BCA with AI & ML',
         description: 'Our BCA program focuses on Artificial Intelligence and Machine Learning - two of the most sought-after tech skills globally. Students get to experiment, build, and deploy intelligent systems that solve real-world problems.',
         image: '/school-of-info-tech/bca-with-ai-ml.png', // You'll need to add this image
-        link: '/information-technology-school/bca-plus-ai-ml-data-science-full-stack-development',
+        link: '/information-technology-school/bachelor-computer-applications',
     }
 
     const doctoralProgram = {
