@@ -31,6 +31,7 @@ export const MenuItems = [
     links: [
       { name: "Centre for Research", href: "/centre-for-research" },
       { name: "Library & Information Centre", href: "/library-and-information-centre" },
+      { name: "Centre for Sustainability", href: "/centre-for-sustainability" },
       { name: "Centre for Student Development", href: "/centre-for-student-development" },
       { name: "Centre for Community Service", href: "/centre-for-community-service" },
       { name: "Centre for Consulting", href: "/centre-for-consulting" },

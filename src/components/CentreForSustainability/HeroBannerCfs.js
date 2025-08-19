@@ -30,14 +30,14 @@ const HeroBannerCfs = ({ announcements, pageType = 'engineering' }) => {
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
-                                    AIMS School of
+                                    AIMS Centre
                                     <br className='hidden lg:block' />
                                     <span className='italic playfair-400 text-[#D7FCF4]'>
-                                        Finance and Commerce
+                                        for Sustainability
                                     </span>
                                 </h1>
                             </div>
-                            <div className="flex items-center">
+                            {/* <div className="flex items-center">
                                 <Image
                                     src="/school-of-business/iacbe.png"
                                     alt="IACBE"
@@ -45,7 +45,7 @@ const HeroBannerCfs = ({ announcements, pageType = 'engineering' }) => {
                                     height={100}
                                     className="object-contain"
                                 />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
