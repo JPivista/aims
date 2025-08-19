@@ -56,7 +56,7 @@ const sampleProgramsData = [
 
 // Sample props for different use cases
 const sampleProps = {
-    title: 'Value Added Programs',
+    title: 'Value Added <br /> Programs',
     description: 'In our effort to build the profile of the participants of the program and ensure they meet the requirements of the industry (in addition to personality development), we at AIMS incorporate a set of value added programs in each semester.',
     disclaimer: 'Value additions might vary for every semester depending on the feedback from the alumni and industry representatives.'
 }

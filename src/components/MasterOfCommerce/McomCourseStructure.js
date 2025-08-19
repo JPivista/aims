@@ -27,67 +27,32 @@ const sampleCourseData = [
                 label: "SEMESTER 2",
                 image: "/mcom/students-semester2.jpg", // Add your image path
                 courses: [
-                    "Advanced Financial Management",
-                    "International Marketing",
-                    "Business Research Methods",
-                    "Strategic Management",
-                    "Digital Business",
-                    "Business Ethics and Corporate Governance",
-                    "SOFT CORE Leadership and Team Management"
-                ]
-            }
-        ]
-    },
-    {
-        key: "second-year",
-        title: "Second Year",
-        tabs: [
-            {
-                key: "semester-3",
-                label: "SEMESTER 3",
-                image: "/mcom/students-semester3.jpg", // Add your image path
-                courses: [
-                    "Advanced Corporate Finance",
-                    "Investment Analysis and Portfolio Management",
-                    "Financial Derivatives",
-                    "International Financial Management",
-                    "Research Project I",
-                    "Elective Course I",
-                    "SOFT CORE Financial Modeling"
-                ]
-            },
-            {
-                key: "semester-4",
-                label: "SEMESTER 4",
-                image: "/mcom/students-semester4.jpg", // Add your image path
-                courses: [
-                    "Financial Risk Management",
-                    "Mergers and Acquisitions",
-                    "Behavioral Finance",
-                    "Research Project II",
-                    "Elective Course II",
-                    "Elective Course III",
-                    "SOFT CORE Advanced Excel and Financial Tools"
+                    "Modern Indian Banking",
+                    "Risk Management & Derivatives",
+                    "Advanced Research Methodology",
+                    "Digital Marketing",
+                    "Emerging Trends in Entrepreneurship",
+                    "Indian Ethos and Leadership",
+                    "SOFT CORE Artificial and Business Intelligence"
                 ]
             }
         ]
     },
     {
         key: "specialization-tracks",
-        title: "Specialisation Tracks",
+        title: "Specialisation Courses",
         tabs: [
             {
                 key: "accounting-taxation",
                 label: "SEMESTER 3: Accounting & Taxation",
                 image: "/mcom/accounting-students.jpg", // Add your image path
                 courses: [
-                    "Advanced Financial Accounting",
+                    "Intellectual Property Rights",
+                    "Logistics and Supply Chain Management",
+                    "Corporate Reporting Practices-I",
+                    "Strategic Cost Management – I",
                     "Corporate Tax Planning",
-                    "Auditing and Assurance",
-                    "Cost and Management Accounting",
-                    "International Accounting Standards",
-                    "Taxation Laws and Practice",
-                    "SOFT CORE Accounting Software Training"
+                    "Open Elective"
                 ]
             },
             {
@@ -95,27 +60,25 @@ const sampleCourseData = [
                 label: "SEMESTER 3: Finance & Banking",
                 image: "/mcom/finance-students.jpg", // Add your image path
                 courses: [
-                    "Commercial Banking",
-                    "Investment Banking",
-                    "Credit Risk Management",
-                    "Financial Markets and Institutions",
-                    "Banking Regulations",
-                    "Financial Technology",
-                    "SOFT CORE Banking Software Training"
+                    "Intellectual Property Rights",
+                    "Logistics and Supply Chain Management",
+                    "Financial Markets & Services",
+                    "Financial Planning",
+                    "Innovation in Banking & Technology",
+                    "Open Elective"
                 ]
             },
             {
-                key: "finance-banking-sem4",
-                label: "SEMESTER 4: Finance & Banking",
-                image: "/mcom/finance-students-sem4.jpg", // Add your image path
+                key: "semester-4",
+                label: "SEMESTER 4",
+                image: "/mcom/students-semester4.jpg", // Add your image path
                 courses: [
-                    "Advanced Banking Operations",
-                    "Islamic Banking and Finance",
-                    "Financial Engineering",
-                    "Banking Analytics",
-                    "International Banking",
-                    "Fintech and Digital Banking",
-                    "SOFT CORE Advanced Financial Modeling"
+                    "Business Analytics",
+                    "Forensic Accounting & Auditing",
+                    "Forex Management",
+                    "Security Analysis & Portfolio Management",
+                    "Strategies for Ranking Risk and Marketing Management",
+                    "Dissertation / Project"
                 ]
             }
         ]
