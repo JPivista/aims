@@ -12,29 +12,31 @@ const sampleCourseData = [
             {
                 key: "semester-1",
                 label: "SEMESTER 1",
-                image: "/mcom/students-semester1.jpg", // Add your image path
+                image: "/mca/students-semester1.jpg", // Add your image path
                 courses: [
-                    "Monetary System",
-                    "International Business Environment",
-                    "Principles and Practices of Business Decisions",
-                    "Information Technology for Business",
-                    "Managerial Finance",
-                    "Global Talent Management",
-                    "SOFT CORE Corporate Communication Skills"
+                    "The Art of Programming",
+                    "Discrete Mathematics",
+                    "Computer Organisation and Architecture",
+                    "Theory of Computation",
+                    "Object Oriented Programming",
+                    "Data Structures",
+                    "Data Structures Lab",
+                    "Object Oriented Lab"
                 ]
             },
             {
                 key: "semester-2",
                 label: "SEMESTER 2",
-                image: "/mcom/students-semester2.jpg", // Add your image path
+                image: "/mca/students-semester2.jpg", // Add your image path
                 courses: [
-                    "Advanced Financial Management",
-                    "International Marketing",
-                    "Business Research Methods",
-                    "Strategic Management",
-                    "Digital Business",
-                    "Business Ethics and Corporate Governance",
-                    "SOFT CORE Leadership and Team Management"
+                    "Operating Systems",
+                    "Database Management Systems",
+                    "Computer Networks",
+                    "Software Engineering",
+                    "The Design and Analysis of Algorithm",
+                    "Artificial Intelligence",
+                    "Database Management System Lab",
+                    "Unix Programming Lab"
                 ]
             }
         ]
@@ -46,77 +48,24 @@ const sampleCourseData = [
             {
                 key: "semester-3",
                 label: "SEMESTER 3",
-                image: "/mcom/students-semester3.jpg", // Add your image path
+                image: "/mca/students-semester3.jpg", // Add your image path
                 courses: [
-                    "Advanced Corporate Finance",
-                    "Investment Analysis and Portfolio Management",
-                    "Financial Derivatives",
-                    "International Financial Management",
-                    "Research Project I",
-                    "Elective Course I",
-                    "SOFT CORE Financial Modeling"
+                    "Research Methodology",
+                    "Open Elective",
+                    "Machine Learning",
+                    "Cloud Computing",
+                    "Web Programming",
+                    "Quantitative, Teaching and Research Aptitude",
+                    "Cryptography & Network Security, Big Data Analytics",
+                    "MINI PROJECT"
                 ]
             },
             {
                 key: "semester-4",
                 label: "SEMESTER 4",
-                image: "/mcom/students-semester4.jpg", // Add your image path
+                image: "/mca/students-semester4.jpg", // Add your image path
                 courses: [
-                    "Financial Risk Management",
-                    "Mergers and Acquisitions",
-                    "Behavioral Finance",
-                    "Research Project II",
-                    "Elective Course II",
-                    "Elective Course III",
-                    "SOFT CORE Advanced Excel and Financial Tools"
-                ]
-            }
-        ]
-    },
-    {
-        key: "specialization-tracks",
-        title: "Specialisation Tracks",
-        tabs: [
-            {
-                key: "accounting-taxation",
-                label: "SEMESTER 3: Accounting & Taxation",
-                image: "/mcom/accounting-students.jpg", // Add your image path
-                courses: [
-                    "Advanced Financial Accounting",
-                    "Corporate Tax Planning",
-                    "Auditing and Assurance",
-                    "Cost and Management Accounting",
-                    "International Accounting Standards",
-                    "Taxation Laws and Practice",
-                    "SOFT CORE Accounting Software Training"
-                ]
-            },
-            {
-                key: "finance-banking-sem3",
-                label: "SEMESTER 3: Finance & Banking",
-                image: "/mcom/finance-students.jpg", // Add your image path
-                courses: [
-                    "Commercial Banking",
-                    "Investment Banking",
-                    "Credit Risk Management",
-                    "Financial Markets and Institutions",
-                    "Banking Regulations",
-                    "Financial Technology",
-                    "SOFT CORE Banking Software Training"
-                ]
-            },
-            {
-                key: "finance-banking-sem4",
-                label: "SEMESTER 4: Finance & Banking",
-                image: "/mcom/finance-students-sem4.jpg", // Add your image path
-                courses: [
-                    "Advanced Banking Operations",
-                    "Islamic Banking and Finance",
-                    "Financial Engineering",
-                    "Banking Analytics",
-                    "International Banking",
-                    "Fintech and Digital Banking",
-                    "SOFT CORE Advanced Financial Modeling"
+                    "MAIN PROJECT"
                 ]
             }
         ]
@@ -127,8 +76,8 @@ const McaCourseStructure = () => {
     return (
         <>
 
-            <div className="py-10 bg-white">
-                <div className="container mx-auto px-6 lg:px-8">
+            <div className="pb-10 bg-white">
+                <div className="container mx-auto px-4 lg:px-0">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-400">
                             <span className='italic playfair-400'>MCA</span>  <br />

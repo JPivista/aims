@@ -4,52 +4,65 @@ import ValueAddedPrograms from '../shared/ValueAddedProgramsProps'
 // Sample data structure for value added programs
 const sampleProgramsData = [
     {
-        id: 'life-skills',
-        title: 'Life Skills',
+        id: 'technical-skills',
+        title: 'Technical Skills',
         content: [
             'Python Programming',
             'Statistics for Data Science using Python',
             'Machine Learning using Python',
-            'Full Stack Development'
-        ]
-    },
-    {
-        id: 'social-sensitisation',
-        title: 'Social Sensitisation',
-        content: [
-            'Community service projects',
-            'Social responsibility awareness',
-            'Environmental consciousness programs'
+            'Full Stack Development',
+            'Software Project Management',
+            'Software Testing',
+            'BlockChain Technology',
+            'Cyber Law & Crimes',
+            'IoT',
+            'Mobile computing',
+            'Big Data',
+            'Intellectual Property Rights & Ethics'
         ]
     },
     {
         id: 'employability',
         title: 'Employability & Pre-Placement Trainings',
         content: [
-            'Resume building workshops',
-            'Interview preparation sessions',
-            'Professional communication skills',
-            'Industry-specific training modules'
+            'Aptitude Training',
+            'Communication skills',
+            'Grooming & Etiquettes',
+            'Interpersonal Skills',
+            'Presentation Skills',
+            'Resume Writing',
+            'Interview skills',
+            'Mock Interviews & Group Discussion'
         ]
     },
     {
-        id: 'certifications',
-        title: 'Career Oriented Certifications',
-        content: [
-            'Financial modeling certifications',
-            'Data analytics tools training',
-            'Enterprise software proficiency',
-            'Industry-recognized credentials'
-        ]
-    },
-    {
-        id: 'workshops',
-        title: 'Workshops',
+        id: 'workshops-seminars',
+        title: 'Workshops / Seminars',
         content: [
             'Industry expert sessions',
             'Case study workshops',
             'Practical application training',
             'Skill development sessions'
+        ]
+    },
+    {
+        id: 'entrepreneurship',
+        title: 'Program on Entrepreneurship',
+        content: [
+            'Business model development',
+            'Startup planning and execution',
+            'Market research and analysis',
+            'Financial planning for startups'
+        ]
+    },
+    {
+        id: 'social-sensitization',
+        title: 'Social Sensitization',
+        content: [
+            'Rural camp in association with AIMS Centre for Community Service',
+            'Session on Sustainability',
+            'Community service projects',
+            'Social responsibility awareness'
         ]
     }
 ]

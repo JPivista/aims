@@ -12,7 +12,7 @@ const tabData = [
                     Important Dates
                 </h6>
                 <p className="text-gray-800 text-sm sm:text-base">
-                    Here you can list important dates related to the PhD program, such as application deadlines, interview schedules, and admission timelines.
+                    Please see the Admission Process page for important dates and deadlines for this course.
                 </p>
             </>
         ),
@@ -23,18 +23,17 @@ const tabData = [
         content: (
             <>
                 <h6 style={{ color: "#A22877", fontSize: "1.2rem", fontWeight: '600' }} className="text-[#932c79] font-semibold text-lg sm:text-xl mb-3">
-                    Any candidate who meets the following requirements is eligible to seek registration for a PhD program:
+                    Eligibility
                 </h6>
                 <p className="text-gray-800 mb-4 text-sm sm:text-base">
-                    A candidate shall have a Master&apos;s Degree or any other Degree/Diploma of the University or any other University/Institution recognized as equivalent thereto, with a minimum of 55% marks or equivalent CGPA.
+                    A candidate who has passed any recognized BCA / Bachelor Degree in Computer Science Engineering or equivalent Degree Or Passed B.Sc./B.Com / B.A. with Mathematics at 10 + 2 level or at Graduation level (with additional bridge courses as per the norms of the concerned University) and obtained an aggregate minimum of 50% marks taken together in all the subjects in all the years of the Degree Examination is eligible for admission to MCA courses.
                 </p>
                 <p style={{ fontWeight: '600' }} className="text-gray-800 font-semibold text-sm sm:text-base mb-2">
-                    However, this condition is relaxed to 50% in case of:
+                    45% of marks in Q. E. in case of SC, ST and Category-I of Karnataka candidates.
                 </p>
-                <ul className="list-disc pl-5 text-gray-800 text-sm sm:text-base space-y-1">
-                    <li>SC/ST/CAT-I candidates</li>
-                    <li>In service candidates with a minimum of five years of regular experience associated with teaching profession as teachers/library professionals/physical education instructors/laboratory staff in educational institute</li>
-                </ul>
+                <p>
+                    NOTE: Rounding off aggregate percent is not permitted.
+                </p>
             </>
         ),
     },
@@ -47,7 +46,7 @@ const tabData = [
                     Selection Process
                 </h6>
                 <p className="text-gray-800 text-sm sm:text-base">
-                    The selection process includes an entrance test followed by an interview. Candidates will be assessed on their research aptitude and subject knowledge.
+                    Please see the Admission Process page for important dates and deadlines for this course.
                 </p>
             </>
         ),
@@ -58,8 +57,8 @@ const tabData = [
 const McaProgramOverview = () => {
     return (
         <>
-            <div className='py-16' style={{ backgroundColor: '#E1F9F4' }}>
-                <div className='container mx-auto px-6 lg:px-8 flex flex-col gap-10'>
+            <div className='py-10' style={{ backgroundColor: '#E1F9F4' }}>
+                <div className='container mx-auto px-4 lg:px-0 flex flex-col gap-10'>
                     <div className=' items-center justify-between grid grid-cols-1 md:grid-cols-2'>
                         <h3 className='text-[#0C2165]'>
                             <span className='italic text-[#A22877] playfair-400'>MCA Program</span>
