@@ -9,32 +9,32 @@ const EsprStudentEngagementEvents = () => {
     const participantsData = {
         'professional-presence-integrity': {
             name: "COMPLIANCE AND CONFORMANCE",
-            testimonial: "I have used the knowledge I gained there to create a business plan not just for the sake of the competition but also genuinely to provide me with a roadmap to grow and further my business Gambolla I have made a few alterations to my plan even after the culmination of our sessions and have finally arrived at a document that I am satisfied with (for the time being) I am proud to say that I have already begun putting some of my plans into action and hope to achieve the success that I have shown on paper in reality"
+            testimonial: "AIMS will comply with all applicable Environmental and Sustainability (E&S) laws, regulations, best practices, and internal policies. This includes any other requirements the organisation subscribes to, based on identified E&S aspects and impacts. AIMS will conduct periodic audits and implement practices to ensure compliance and conformance to these requirements."
         },
         'campus-culture-collegiality': {
             name: "CONTINUOUS IMPROVEMENT",
-            testimonial: "TAIMS wil establish achievable E&S goals, objectives and targets ni conjunction with the interests ofour students, infrastructure and other related entities andcontinualy improve our performance and wil report our progress as and when required. We aim to establish policies and controls that promote a positive E&S culture."
+            testimonial: "AIMS will establish achievable E&S goals, objectives and targets in conjunction with the interests of our students, infrastructure, and other related entities and continually improve our performance and will report our progress as and when required. We aim to establish policies and controls that promote a positive E&S culture."
         },
         'resource-class-management': {
-            name: "Resource & Class Management",
-            testimonial: "Through the mentorship and networking opportunities, I've expanded my digital marketing agency to serve clients across multiple cities. The program's focus on women entrepreneurship gave me the confidence to dream bigger."
+            name: "OPERATIONAL INTEGRATION",
+            testimonial: "AIMS will integrate E&S into operational decisions to proactively ensure that we consistently promote environmentally sustainable practices. Specifically, AIMS requires that an E&S evaluation be integrated into vital decision-making processes such as changes to infrastructure, student-related activities, etc. Processes and services that will reduce E&S risks, improve E&S performance of our operations, activities and interaction with the immediate external community will also be considered."
         },
         'communication-reputation-management': {
-            name: "Communication & Reputation Management",
-            testimonial: "The business knowledge and mentorship I received helped me establish a successful health and wellness center. The program's emphasis on practical implementation made all the difference."
+            name: "ENVIRONMENT AND CLIMATE CHANGE",
+            testimonial: "AIMS will minimise waste and emissions, reuse and recycle materials, promote renewable energy use, reduce greenhouse gas emissions, and conserve energy and water wherever feasible, to minimise our impact on the environment."
         },
         'institutional-loyalty-neutrality': {
-            name: "Institutional Loyalty & Neutrality",
-            testimonial: "As a tech entrepreneur, the program helped me understand both the business and social impact aspects of my venture. I've been able to secure funding and expand to multiple schools."
+            name: "COMMUNICATION AND EDUCATION",
+            testimonial: "AIMS E&S will communicate this policy to employees, customers, shareholders, suppliers, the community and other stakeholders. AIMS E&S Standards, Procedures and other resources enable us to implement this policy and share best practices throughout AIMS in order to promote continuous improvement and enhance E&S performance."
         },
     }
 
     const participants = [
-        { id: 'professional-presence-integrity', name: 'Professional Presence & Integrity' },
-        { id: 'campus-culture-collegiality', name: 'Campus Culture & Collegiality' },
-        { id: 'resource-class-management', name: 'Resource & Class Management' },
-        { id: 'communication-reputation-management', name: 'Communication & Reputation Management' },
-        { id: 'institutional-loyalty-neutrality', name: 'Institutional Loyalty & Neutrality' },
+        { id: 'professional-presence-integrity', name: 'Compliance and Conformance' },
+        { id: 'campus-culture-collegiality', name: 'Continuous Improvement' },
+        { id: 'resource-class-management', name: 'Operational Integration' },
+        { id: 'communication-reputation-management', name: 'Environment and Climate Change' },
+        { id: 'institutional-loyalty-neutrality', name: 'Communication and Education' },
     ]
 
     return (
@@ -50,18 +50,6 @@ const EsprStudentEngagementEvents = () => {
                             height={80}
                             className="rotate-180"
                         />
-                    </div>
-                    <div className='container mx-auto'>
-                        <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
-                            {/* Header Section */}
-                            <div className='text-left'>
-                                <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                                    Student Engagement
-                                    <br className='hidden md:block' />
-                                    and Events
-                                </h3>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
