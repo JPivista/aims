@@ -56,7 +56,6 @@ const tabData = [
     },
 ];
 
-
 const BcomProgramOverview = () => {
     return (
         <>

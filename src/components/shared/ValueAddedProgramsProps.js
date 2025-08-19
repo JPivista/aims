@@ -25,7 +25,7 @@ const ValueAddedPrograms = ({ programsData, title, description, disclaimer }) =>
     return (
         <>
             <div className='py-10 bg-white'>
-                <div className='container mx-auto px-6 lg:px-8'>
+                <div className='container mx-auto px-4 lg:px-0'>
                     {/* Header Section */}
                     <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-0'>
                         <h3 className='text-[#0C2165] playfair-300' dangerouslySetInnerHTML={{ __html: title || 'Value Added Programs' }}>

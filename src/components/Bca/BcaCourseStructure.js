@@ -12,29 +12,33 @@ const sampleCourseData = [
             {
                 key: "semester-1",
                 label: "SEMESTER 1",
-                image: "/mcom/students-semester1.jpg", // Add your image path
+                image: "/bca/students-semester1.jpg", // Add your image path
                 courses: [
-                    "Monetary System",
-                    "International Business Environment",
-                    "Principles and Practices of Business Decisions",
-                    "Information Technology for Business",
-                    "Managerial Finance",
-                    "Global Talent Management",
-                    "SOFT CORE Corporate Communication Skills"
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Discrete Mathematics.",
+                    "Problem Solving Techniques.",
+                    "Data Structure.",
+                    "Problem Solving Lab.",
+                    "Data Structure Lab."
                 ]
             },
             {
                 key: "semester-2",
                 label: "SEMESTER 2",
-                image: "/mcom/students-semester2.jpg", // Add your image path
+                image: "/bca/students-semester2.jpg", // Add your image path
                 courses: [
-                    "Advanced Financial Management",
-                    "International Marketing",
-                    "Business Research Methods",
-                    "Strategic Management",
-                    "Digital Business",
-                    "Business Ethics and Corporate Governance",
-                    "SOFT CORE Leadership and Team Management"
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Computer Architecture.",
+                    "Object Oriented Programming Using Java.",
+                    "Database Management System.",
+                    "Java LAB.",
+                    "Database Management System Lab."
                 ]
             }
         ]
@@ -46,77 +50,93 @@ const sampleCourseData = [
             {
                 key: "semester-3",
                 label: "SEMESTER 3",
-                image: "/mcom/students-semester3.jpg", // Add your image path
+                image: "/bca/students-semester3.jpg", // Add your image path
                 courses: [
-                    "Advanced Corporate Finance",
-                    "Investment Analysis and Portfolio Management",
-                    "Financial Derivatives",
-                    "International Financial Management",
-                    "Research Project I",
-                    "Elective Course I",
-                    "SOFT CORE Financial Modeling"
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Operating Systems.",
+                    "Computer Networks.",
+                    "Python Programming.",
+                    "Computer Networks Lab.",
+                    "Python Programming Lab."
                 ]
             },
             {
                 key: "semester-4",
                 label: "SEMESTER 4",
-                image: "/mcom/students-semester4.jpg", // Add your image path
+                image: "/bca/students-semester4.jpg", // Add your image path
                 courses: [
-                    "Financial Risk Management",
-                    "Mergers and Acquisitions",
-                    "Behavioral Finance",
-                    "Research Project II",
-                    "Elective Course II",
-                    "Elective Course III",
-                    "SOFT CORE Advanced Excel and Financial Tools"
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Software Engineering.",
+                    "Artificial Intelligence.",
+                    "Internet Technologies.",
+                    "Artificial Intelligence LAB.",
+                    "Internet Technologies LAB."
                 ]
             }
         ]
     },
     {
-        key: "specialization-tracks",
-        title: "Specialisation Tracks",
+        key: "third-year",
+        title: "Third Year",
         tabs: [
             {
-                key: "accounting-taxation",
-                label: "SEMESTER 3: Accounting & Taxation",
-                image: "/mcom/accounting-students.jpg", // Add your image path
+                key: "semester-5",
+                label: "SEMESTER 5",
+                image: "/bca/students-semester5.jpg", // Add your image path
                 courses: [
-                    "Advanced Financial Accounting",
-                    "Corporate Tax Planning",
-                    "Auditing and Assurance",
-                    "Cost and Management Accounting",
-                    "International Accounting Standards",
-                    "Taxation Laws and Practice",
-                    "SOFT CORE Accounting Software Training"
+                    "Design & Analysis of Algorithm.",
+                    "Data Analytics Computer Architecture.",
+                    "Web Programming.",
+                    "Data Analytics Lab.",
+                    "Web Programming Lab.",
+                    "Project Work."
                 ]
             },
             {
-                key: "finance-banking-sem3",
-                label: "SEMESTER 3: Finance & Banking",
-                image: "/mcom/finance-students.jpg", // Add your image path
+                key: "semester-6",
+                label: "SEMESTER 6",
+                image: "/bca/students-semester6.jpg", // Add your image path
                 courses: [
-                    "Commercial Banking",
-                    "Investment Banking",
-                    "Credit Risk Management",
-                    "Financial Markets and Institutions",
-                    "Banking Regulations",
-                    "Financial Technology",
-                    "SOFT CORE Banking Software Training"
+                    "Theory of Computation.",
+                    "Machine Learning.",
+                    "Mobile Application Development.",
+                    "Machine Learning Lab.",
+                    "Mobile Application Development Lab.",
+                    "Project Work."
+                ]
+            }
+        ]
+    },
+    {
+        key: "fourth-year",
+        title: "Fourth Year",
+        tabs: [
+            {
+                key: "semester-7",
+                label: "SEMESTER 7",
+                image: "/bca/students-semester7.jpg", // Add your image path
+                courses: [
+                    "Cloud Computing.",
+                    "Internet of Things.",
+                    "Internship.",
+                    "Cloud Computing Lab.",
+                    "Internet of Things Lab."
                 ]
             },
             {
-                key: "finance-banking-sem4",
-                label: "SEMESTER 4: Finance & Banking",
-                image: "/mcom/finance-students-sem4.jpg", // Add your image path
+                key: "semester-8",
+                label: "SEMESTER 8",
+                image: "/bca/students-semester8.jpg", // Add your image path
                 courses: [
-                    "Advanced Banking Operations",
-                    "Islamic Banking and Finance",
-                    "Financial Engineering",
-                    "Banking Analytics",
-                    "International Banking",
-                    "Fintech and Digital Banking",
-                    "SOFT CORE Advanced Financial Modeling"
+                    "Block Chain Technologies.",
+                    "Cryptography & System Security.",
+                    "Block Chain Technologies Lab."
                 ]
             }
         ]
@@ -127,8 +147,8 @@ const BcaCourseStructure = () => {
     return (
         <>
 
-            <div className="py-10 bg-white">
-                <div className="container mx-auto px-6 lg:px-8">
+            <div className="pb-10 bg-white">
+                <div className="container mx-auto px-4 lg:px-0">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-400">
                             <span className='italic playfair-400'>BCA</span>  <br />

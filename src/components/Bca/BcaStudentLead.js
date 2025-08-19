@@ -7,8 +7,8 @@ const BcaStudentLead = () => {
     const bcaStudentLeadData = {
         mobileImage: "/bca/bca-our-student-placements.png",
         desktopImage: "/bca/bca-our-student-placements.png",
-        title: "Companies Our Students Have Been Placed In",
-        description: "Our graduates have been recruited by top companies across sectors.",
+        title: "Where Our Students Land",
+        description: "Our graduates have been placed in top tech companies, startups, and consulting firms. AIMS gives you the skills, and the direction, to get noticed.",
         gradientOverlay: "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)"
     }
 

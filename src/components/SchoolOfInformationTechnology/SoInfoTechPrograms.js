@@ -22,7 +22,7 @@ const SoInfoTechPrograms = () => {
 
     const doctoralProgram = {
         id: 'doctoral',
-        title: 'Master of Computer Applications(MCA)',
+        title: 'Master of Computer Applications (MCA)',
         description: 'Our MCA program transforms learners into capable IT professionals with a sharp eye for innovation. The program is accredited by AICTE and designed to meet global IT standards.',
         image: '/school-of-info-tech/mca.png', // You'll need to add this image
         link: '/information-technology-school/master-computer-applications'
@@ -52,7 +52,7 @@ const SoInfoTechPrograms = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="container mx-auto px-4 lg:px-0 relative z-10">
                 <h3 className="text-[#0C2165] text-2xl lg:text-3xl font-bold mb-10 text-center">
                     Programs Offered
                 </h3>
@@ -114,7 +114,7 @@ const SoInfoTechPrograms = () => {
                 </section>
 
                 {/* Section 3: Image Left, Text Right (Same as Section 1) */}
-                <section className="mb-10">
+                <section>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                         <div className="order-1 relative md:h-[350px] h-52">
                             <Image

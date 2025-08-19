@@ -20,13 +20,13 @@ const SoInfoTechContent = () => {
                 </div>
                 <div className='flex flex-col px-0 bg-transparent relative z-10 gap-5'>
                     <div className="w-full rounded-2xl overflow-hidden">
-                        <div className="px-6 lg:px-8">
+                        <div className="px-4 lg:px-0">
                             <h3 className='text-center text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-6'>
                                 Sharpen your skills.
                                 <br />
                                 Take AIM at the digital frontier.
                             </h3>
-                            <div className='lg:w-[60%] w-full mx-auto flex flex-col gap-4'>
+                            <div className='lg:w-[70%] w-full mx-auto flex flex-col gap-4'>
                                 <p className='text-center text-lg lg:text-[20px] monser-400 text-gray-700'>
                                     In a world driven by code, data, and rapid disruption, AIMS School of Information & Technology helps you set your sights on a future-proof career. Whether you&apos;re starting from the ground up or aiming to specialise, our programs equip you with the tools, training, and direction to stay ahead.
                                 </p>
@@ -40,7 +40,7 @@ const SoInfoTechContent = () => {
                         </div>
                     </div>
                 </div>
-            </div >
+            </div>
         </>
     )
 }

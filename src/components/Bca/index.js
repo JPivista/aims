@@ -7,6 +7,7 @@ import Companies from '../shared/Companies'
 import BcaCourseStructure from './BcaCourseStructure'
 import BcaPLus from './BcaPLus'
 import BcaAlumni from './BcaAlumni'
+import BcaStudentLead from './BcaStudentLead'
 
 
 const index = () => {
@@ -16,6 +17,7 @@ const index = () => {
             <BcaContent />
             <BcaProgramOverview />
             <BcaValueAddedPrograms />
+            <BcaStudentLead />
             <Companies />
             <BcaCourseStructure />
             <BcaPLus />

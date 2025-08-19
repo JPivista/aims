@@ -7,49 +7,58 @@ const sampleProgramsData = [
         id: 'life-skills',
         title: 'Life Skills',
         content: [
-            'Python Programming',
-            'Statistics for Data Science using Python',
-            'Machine Learning using Python',
-            'Full Stack Development'
+            'Firefighting at Peenya Fire Station.',
+            'Certification in hygiene, sanitation, general nutrition management & physical fitness.',
+            'Webinar on Emotional Wellbeing.',
+            'Yoga & Meditation'
         ]
     },
     {
         id: 'social-sensitisation',
         title: 'Social Sensitisation',
         content: [
-            'Community service projects',
-            'Social responsibility awareness',
-            'Environmental consciousness programs'
+            'Rural camp in association with AIMS Centre for Community Service.',
+            'NSS in association with AIMS Centre for Community Service.'
         ]
     },
     {
         id: 'employability',
         title: 'Employability & Pre-Placement Trainings',
         content: [
-            'Resume building workshops',
-            'Interview preparation sessions',
-            'Professional communication skills',
-            'Industry-specific training modules'
+            'Power dressing and Grooming.',
+            'Communication Skills training.',
+            'Etiquettes - Business & Dining Etiquettes.',
+            'Presentation Skills and CV Writing.',
+            'CV Writing and Interview Skills.',
+            'Aptitude & GD Training.',
+            'Mock Interviews.',
+            'Presentation on Dissertation Projects.',
+            'Company Specific Placement training.',
+            'Soft Skills Training (Including Language Lab).',
+            'Career Guidance Sessions.'
         ]
     },
     {
         id: 'certifications',
         title: 'Career Oriented Certifications',
         content: [
-            'Financial modeling certifications',
-            'Data analytics tools training',
-            'Enterprise software proficiency',
-            'Industry-recognized credentials'
+            'Augmentation in HTML.',
+            'Certification in Cloud Computing AWS.',
+            'Certification in DOTNET Full Stack development.',
+            'Certification in Entrepreneurship.',
+            'Certification in Cloud Computing AZURE Fundamentals 900.',
+            'Augmentation in AI based Chatbots.',
+            'Certification in PHP and MySQL.',
+            'Certification in IOT.'
         ]
     },
     {
         id: 'workshops',
         title: 'Workshops',
         content: [
-            'Industry expert sessions',
-            'Case study workshops',
-            'Practical application training',
-            'Skill development sessions'
+            'Workshop on Research Writing.',
+            'Workshop on Cyber Security.',
+            'Workshop on Sustainability.'
         ]
     }
 ]
