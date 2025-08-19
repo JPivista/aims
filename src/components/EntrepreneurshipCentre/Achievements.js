@@ -8,15 +8,20 @@ const Achievements = () => {
         {
             id: 'award',
             title: 'Outstanding Women Entrepreneur Award',
-            content: 'This prestigious recognition celebrates exceptional women entrepreneurs who have demonstrated outstanding leadership, innovation, and business acumen in their respective fields.'
+            content:
+                [
+                    'AIMS family Congratulates Lakshmidevi B.V., cohort of Batch-3 of Goldman Sachs ISB AIMS 10 K Women Entrepreneurs Development Program, for winning the Priyadarshini Award. This award was given in the 12th global conference of women entrepreneurs organised by the Federation of Indian Women Entrepreneurs in association with the International Federation of Women Entrepreneurs at Hotel Ashok, New Delhi.',
+                    'The award was presented to 31 Indian women entrepreneurs and around 15 foreign women entrepreneurs, recognising them as outstanding women entrepreneurs. The award was presented by Union Minister (state) for women & child welfare, Smt Krishna Teertha, Mauritius Women & Child Welfare Minister Miss Martin, NSIC Chairman Kumar & FIWE President Smt Rajinee Agarwal on 5th September 2012.',
+                    'The liberating Goa-based brand, Nirvana, is now online. Sneha Bhandare, Batch - 2 Cohort of GS ISB AIMS 10K Women entrepreneurs Development Program, is the co-owner of Nirvana Brand T-Shirts.'
+                ]
         },
         {
             id: 'accomplishments',
             title: 'Some of the sparkling accomplishments:',
             content: [
-                'Won the Best Business Plan award by Goldman Sachs - ISB at AIMS Institutes, Bangalore, for the 10,000 Women Entrepreneurs Initiative',
-                'Sneha Bhandare has been selected by CII-GIZ(Germany) for the 4th Indo-German Management Training Programme, which is an initiative by the German Govt and the Government of India to promote bilateral trade',
-                'Nirvana has made it to the second round of ET-Power of Ideas and is gearing up for round 3. Currently, Nirvana has its own showroom in prime MG Road in Panjim, Goa. Nirvana is also strengthening its innovation pipeline and product range. They went online on 1st July with about 30 designs. Plans are on for increasing the product portfolio to become a head-to-toe cult brand'
+                'Won the Best Business Plan award by Goldman Sachs- ISB at AIMS Institutes, Bangalore, for the 10,000 Women Entrepreneurs Initiative.',
+                'Sneha Bhandare has been selected by CII-GIZ(Germany) for the 4th Indo-German Management Training Programme, which is an initiative by the German Govt and the Government of India to promote bilateral trade.',
+                'Nirvana has made it to the second round of ET-Power of Ideas and is gearing up for round 3. Currently, Nirvana has its own showroom in prime MG Road in Panjim, Goa. Nirvana is also strengthening its innovation pipeline and product range. They went online on 1st July with about 30 designs. Plans are on for increasing the product portfolio to become a head-to-toe cult brand.'
             ]
         }
     ]
@@ -56,9 +61,13 @@ const Achievements = () => {
                                 {expandedSection === achievement.id && (
                                     <div className='my-4 ml-4 space-y-4'>
                                         {achievement.id === 'award' ? (
-                                            <p className='text-black leading-relaxed'>
-                                                {achievement.content}
-                                            </p>
+                                            <div className='space-y-4'>
+                                                {achievement.content.map((paragraph, index) => (
+                                                    <p key={index} className='text-black leading-relaxed'>
+                                                        {paragraph}
+                                                    </p>
+                                                ))}
+                                            </div>
                                         ) : (
                                             <ul className='list-none text-start monser-400 flex flex-col gap-4'>
                                                 {achievement.content.map((item, index) => (

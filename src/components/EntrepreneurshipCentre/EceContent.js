@@ -12,7 +12,7 @@ const EceContent = () => {
                             <br className='hidden md:block' />
                             AIM to Build.
                         </h3>
-                        <div className='lg:w-[75%] w-full flex flex-col gap-4'>
+                        <div className='w-full flex flex-col gap-4'>
                             <p className='text-center text-lg lg:text-[20px] monser-400'>
                                 We will be happy to collaborate with you. Contact us at  <a href='mailto:acil@theaims.ac.in' className='text-[#A22877]'>acil@theaims.ac.in</a>
                             </p>

@@ -30,16 +30,20 @@ const CfcWhyItMatters = () => {
                             </p>
                             <div>
                                 <ul className='list-disc list-inside text-start monser-400 flex flex-col gap-4 text-white'>
-                                    <li>
+                                    <li className='flex items-start gap-3'>
+                                        <span className='text-white'>•</span>
                                         Helps students develop practical skills through corporate projects
                                     </li>
-                                    <li>
+                                    <li className='flex items-start gap-3'>
+                                        <span className='text-white'>•</span>
                                         Exposes faculty to the operational and strategic realities of the industries they teach about
                                     </li>
-                                    <li>
+                                    <li className='flex items-start gap-3'>
+                                        <span className='text-white'>•</span>
                                         Ensures the application of book knowledge in real-time settings
                                     </li>
-                                    <li>
+                                    <li className='flex items-start gap-3'>
+                                        <span className='text-white'>•</span>
                                         Enhances the long-term industry readiness of AIMS students
                                     </li>
                                 </ul>

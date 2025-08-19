@@ -111,18 +111,18 @@ export default function Header() {
                   className="border rounded-full px-4 py-1 focus:outline-none"
                 />
               </div>
-              <a
-                href="#"
+              <Link
+                href="/aims-alumni-association"
                 className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
               >
                 Alumni
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
               >
                 Resources
-              </a>
+              </Link>
 
               <Button showReadMore={false}>Contact Us</Button>
             </motion.div>
@@ -198,18 +198,18 @@ export default function Header() {
                   placeholder="Search..."
                   className="w-full border rounded-full px-4 py-2 mb-3"
                 />
-                <a
+                <Link
                   href="#"
                   className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
                 >
                   Alumni
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
                 >
                   Resources
-                </a>
+                </Link>
                 <Button
                   className="font-light"
                   hoverText="Contact Us"
@@ -238,9 +238,9 @@ export default function Header() {
                       <ul className="bg-gray-50">
                         {menu.links.map((link, i) => (
                           <li key={i} className="px-6 py-2">
-                            <a href={link.href || "#"} className="block text-gray-700">
+                            <Link href={link.href || "#"} className="block text-gray-700">
                               {link.name}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
