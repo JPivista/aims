@@ -28,11 +28,11 @@ const SofPrograms = () => {
         subtitle: 'PhD in <br /> Commerce ',
         description: 'Our doctoral program is designed for scholars ready to contribute original insights to the world of commerce and management. With NAAC ‘A’ grade credentials and expert faculty, AIMS provides the environment, resources, and mentorship to help you pursue purposeful research aligned to your interests and ambitions.',
         image: '/school-of-finance/sof-doctoral-program.png', // You'll need to add this image
-        link: '/finance-commerce-school/doctoral'
+        link: '/phd-doctoral-programs'
     }
 
     return (
-        <div className="py-10 relative overflow-hidden">
+        <div className="pt-10 relative overflow-hidden">
             {/* Background SVG */}
             <div className='absolute top-[20%] left-0 md:block hidden'>
                 <Image
@@ -44,11 +44,11 @@ const SofPrograms = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="container mx-auto px-4 lg:px-0 relative z-10">
                 {/* Undergraduate Programs Section */}
 
                 <section className="mb-10">
-                    <h3 className="text-[#0C2165]">
+                    <h3 className="text-[#0C2165] text-center">
                         Undergraduate Program
                     </h3>
 
@@ -80,7 +80,7 @@ const SofPrograms = () => {
 
                 {/* Postgraduate Program Section */}
                 <section className="mb-10">
-                    <h3 className="text-[#0C2165]">
+                    <h3 className="text-[#0C2165] text-center">
                         Postgraduate Program
                     </h3>
 
@@ -110,19 +110,22 @@ const SofPrograms = () => {
 
                     </div>
                 </section>
+            </div>
 
-                {/* Doctoral Program Section */}
-                <section>
+            {/* Doctoral Program Section */}
+            <section>
+                <div className='container mx-auto px-4 lg:px-0 text-center'>
                     <h3 className="text-[#0C2165]">
                         {doctoralProgram.title}
                     </h3>
-
-                    <div className="bg-[#531574] rounded-2xl overflow-hidden">
+                </div>
+                <div className="bg-[#531574] overflow-hidden">
+                    <div className='container mx-auto px-4 lg:px-0'>
                         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center md:p-8 p-4">
                             <div className="flex justify-center">
                                 <div className="relative">
                                     {/* Circular background */}
-                                    <div className="w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+                                    <div className="w-full h-80 lg:w-full lg:h-[60vh] flex items-center justify-center">
                                         <div className="w-full h-full rounded-full overflow-hidden p-4">
                                             <Image
                                                 src={doctoralProgram.image}
@@ -154,8 +157,8 @@ const SofPrograms = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     )
 }

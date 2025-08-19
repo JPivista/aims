@@ -18,7 +18,7 @@ const SoFinanceContent = () => {
 
                 <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
 
-                    <h3 className='text-center text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
+                    <h3 className='text-center text-[32px] lg:text-[56px] playfair-300 text-[#751649]'>
                         Sharpening Minds.
                         <br />
                         Shaping Tomorrow.

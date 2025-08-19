@@ -11,29 +11,29 @@ const sampleCourseData = [
             {
                 key: "semester-1",
                 label: "SEMESTER 1",
-                image: "/mcom/students-semester1.jpg", // Add your image path
+                image: "/mcom/students-semester1.jpg",
                 courses: [
-                    "Monetary System",
-                    "International Business Environment",
-                    "Principles and Practices of Business Decisions",
-                    "Information Technology for Business",
-                    "Managerial Finance",
-                    "Global Talent Management",
-                    "SOFT CORE Corporate Communication Skills"
+                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "English",
+                    "Financial Accountancy",
+                    "Corporate Law",
+                    "Modern Marketing",
+                    "Business Quantitative Analysis",
+                    "Environmental studies (EVS)"
                 ]
             },
             {
                 key: "semester-2",
                 label: "SEMESTER 2",
-                image: "/mcom/students-semester2.jpg", // Add your image path
+                image: "/mcom/students-semester2.jpg",
                 courses: [
-                    "Advanced Financial Management",
-                    "International Marketing",
-                    "Business Research Methods",
-                    "Strategic Management",
-                    "Digital Business",
-                    "Business Ethics and Corporate Governance",
-                    "SOFT CORE Leadership and Team Management"
+                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "English",
+                    "Advanced Financial Accounting",
+                    "Environmental studies (EVS)",
+                    "Human Capital Management",
+                    "Business Data Analysis",
+                    "Computer Accounting - Tally Prime (CATP)"
                 ]
             }
         ]
@@ -45,77 +45,63 @@ const sampleCourseData = [
             {
                 key: "semester-3",
                 label: "SEMESTER 3",
-                image: "/mcom/students-semester3.jpg", // Add your image path
+                image: "/mcom/students-semester3.jpg",
                 courses: [
-                    "Advanced Corporate Finance",
-                    "Investment Analysis and Portfolio Management",
-                    "Financial Derivatives",
-                    "International Financial Management",
-                    "Research Project I",
-                    "Elective Course I",
-                    "SOFT CORE Financial Modeling"
+                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "English",
+                    "Corporate Accounting",
+                    "Financial Management",
+                    "Cost Accounting",
+                    "Indian Financial System",
+                    "Constitution of India (CI)"
                 ]
             },
             {
                 key: "semester-4",
                 label: "SEMESTER 4",
-                image: "/mcom/students-semester4.jpg", // Add your image path
+                image: "/mcom/students-semester4.jpg",
                 courses: [
-                    "Financial Risk Management",
-                    "Mergers and Acquisitions",
-                    "Behavioral Finance",
-                    "Research Project II",
-                    "Elective Course II",
-                    "Elective Course III",
-                    "SOFT CORE Advanced Excel and Financial Tools"
+                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "English",
+                    "Advanced Corporate Accounting",
+                    "Costing Methods",
+                    "Stock and Commodity markets",
+                    "Business Research Methodology",
+                    "Corporate Communication"
                 ]
             }
         ]
     },
     {
-        key: "specialization-tracks",
-        title: "Specialisation Tracks",
+        key: "third-year",
+        title: "Third Year",
         tabs: [
             {
-                key: "accounting-taxation",
-                label: "SEMESTER 3: Accounting & Taxation",
-                image: "/mcom/accounting-students.jpg", // Add your image path
+                key: "semester-5",
+                label: "SEMESTER 5",
+                image: "/mcom/students-semester5.jpg",
                 courses: [
-                    "Advanced Financial Accounting",
-                    "Corporate Tax Planning",
-                    "Auditing and Assurance",
-                    "Cost and Management Accounting",
-                    "International Accounting Standards",
-                    "Taxation Laws and Practice",
-                    "SOFT CORE Accounting Software Training"
+                    "Direct Taxation -I",
+                    "Business Regulations",
+                    "Goods & Services Tax",
+                    "Advanced Accounting",
+                    "Elective -1",
+                    "Elective -2",
+                    "Internship Learning (IL)"
                 ]
             },
             {
-                key: "finance-banking-sem3",
-                label: "SEMESTER 3: Finance & Banking",
-                image: "/mcom/finance-students.jpg", // Add your image path
+                key: "semester-6",
+                label: "SEMESTER 6",
+                image: "/mcom/students-semester6.jpg",
                 courses: [
-                    "Commercial Banking",
-                    "Investment Banking",
-                    "Credit Risk Management",
-                    "Financial Markets and Institutions",
-                    "Banking Regulations",
-                    "Financial Technology",
-                    "SOFT CORE Banking Software Training"
-                ]
-            },
-            {
-                key: "finance-banking-sem4",
-                label: "SEMESTER 4: Finance & Banking",
-                image: "/mcom/finance-students-sem4.jpg", // Add your image path
-                courses: [
-                    "Advanced Banking Operations",
-                    "Islamic Banking and Finance",
-                    "Financial Engineering",
-                    "Banking Analytics",
-                    "International Banking",
-                    "Fintech and Digital Banking",
-                    "SOFT CORE Advanced Financial Modeling"
+                    "Direct Taxation -I",
+                    "Management Accounting",
+                    "Auditing and Reporting",
+                    "Advanced Accounting",
+                    "Entrepreneurship Development",
+                    "Elective -3",
+                    "Elective -4"
                 ]
             }
         ]
@@ -130,7 +116,7 @@ const BcomCourseStructure = () => {
                 <div className="container mx-auto px-6 lg:px-8">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2">
-                            M.Com Program  <br />
+                            B.Com Program  <br />
                             <span className='text-[#0C2165] playfair-400'>
                                 Course Structure
                             </span>

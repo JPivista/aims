@@ -41,11 +41,11 @@ const Programs = () => {
         subtitle: 'PhD in Management',
         description: 'The PhD program is built for experienced professionals and scholars ready to explore strategic research in business disciplines. With rigorous guidance and global exposure, AIMS helps you shape insights that influence practice, policy, and progress.',
         image: '/school-of-business/doctoral-program.png', // You'll need to add this image
-        link: '/business-school/phd-doctoral-programs'
+        link: '/phd-doctoral-programs'
     }
 
     return (
-        <div className="py-10 relative overflow-hidden">
+        <div className="pt-10 relative overflow-hidden">
             {/* Background SVG */}
             <div className='absolute top-[33%] left-0 md:block hidden'>
                 <Image
@@ -57,7 +57,7 @@ const Programs = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="container mx-auto px-4 lg:px-0 relative z-10">
                 {/* Undergraduate Programs Section */}
                 <section className="mb-10">
                     <h3 className="text-center text-[#0C2165]">
@@ -124,19 +124,20 @@ const Programs = () => {
                         </div>
                     </div>
                 </section>
+            </div>
+            {/* Doctoral Program Section */}
+            <section>
+                <h3 className="text-center text-[#0C2165]">
+                    {doctoralProgram.title}
+                </h3>
 
-                {/* Doctoral Program Section */}
-                <section>
-                    <h3 className="text-center text-[#0C2165]">
-                        {doctoralProgram.title}
-                    </h3>
-
-                    <div className="bg-[#531574] rounded-2xl overflow-hidden">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center md:p-8 p-4">
+                <div className="bg-[#531574] overflow-hidden">
+                    <div className='container mx-auto px-6 lg:px-0'>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center py-4">
                             <div className="flex justify-center">
                                 <div className="relative">
                                     {/* Circular background */}
-                                    <div className="w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+                                    <div className="w-full h-80 lg:w-full lg:h-[60vh] flex items-center justify-center">
                                         <div className="w-full h-full rounded-full overflow-hidden p-4">
                                             <Image
                                                 src={doctoralProgram.image}
@@ -167,8 +168,8 @@ const Programs = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     )
 }
