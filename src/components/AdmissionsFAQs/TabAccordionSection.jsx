@@ -8,37 +8,40 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "programs",
-          title: "1. What programs are offered at AIMS Institutes?",
+          title: "What programs are offered at AIMS Institutes?",
           content: [
-            "AIMS Institutes offers undergraduate and postgraduate programs and diplomas across Management, Hospitality, Computer Applications, Commerce and more. View the full list on the Programs page.",
+            "AIMS Institutes offers undergraduate and postgraduate programs and diplomas across Management, Hospitality, Computer Applications, Commerce and more.",
+            "View the full list on the Programs page.",
           ],
         },
         {
           id: "medium",
-          title: "2. What is the medium of instruction?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
+          title: "What is the medium of instruction?",
+          content: ["All programs are taught in English."],
         },
         {
           id: "eligibility",
-          title: "3. What are the eligibility criteria for UG and PG programs?",
+          title: "What are the eligibility criteria for UG and PG programs?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Each course has specific eligibility criteria. In general:",
+            "UG applicants must have completed 10+2 / A Level or equivalent.",
+            "PG applicants must hold a recognised bachelor's degree.",
+            "MBA applicants must also have a valid CAT, MAT, XAT, CMAT, or ATMA score.",
+            "Refer to the course-specific eligibility section for details.",
           ],
         },
         {
           id: "accreditation",
-          title: "4. Is AIMS a recognised and accredited institution?",
+          title: "Is AIMS a recognised and accredited institution?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. AIMS Institutes is NAAC 'A' Grade accredited and affiliated with recognised bodies. Our MBA program is accredited by IACBE (USA), and many of our courses include globally aligned curriculum and certification options.",
           ],
         },
         {
           id: "international",
-          title: "5. Does AIMS accept international students?",
+          title: "Does AIMS accept international students?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. AIMS welcomes international students and provides academic, visa, and accommodation support through its International Relations Office.",
           ],
         },
       ],
@@ -48,37 +51,44 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "apply",
-          title: "1. How do I apply for admission?",
+          title: "How do I apply to AIMS Institutes?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            'You can apply online using the "Apply Now" button on any page of the website. The process is simple.',
+          ],
+        },
+        {
+          id: "offline",
+          title: "Is there an offline application option?",
+          content: [
+            "Currently, applications are accepted only through the online portal.",
           ],
         },
         {
           id: "documents",
-          title: "2. What documents are required for application?",
+          title: "What documents are required for UG and PG applications?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Academic transcripts (10th, 12th, UG/PG as applicable)",
+            "Entrance test scorecards (for MBA)",
+            "Aadhar/PAN",
+            "2 passport-size photographs",
+            "Category/income/sports certificates (if applying for scholarships)",
           ],
         },
         {
-          id: "fees",
-          title: "3. Is there an application fee?",
+          id: "difference",
+          title:
+            "Is there a difference in the admission process for UG and PG programs?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes.",
+            "UG and non-MBA PG programs involve an online application followed by a selection call or interview (if applicable).",
+            "The MBA program has a separate 4-stage selection process.",
           ],
         },
         {
-          id: "multiple",
-          title: "4. Can I apply for multiple programs?",
+          id: "professionals",
+          title: "Can working professionals apply for postgraduate programs?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "online",
-          title: "5. Can I apply online?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. Many of our PG courses are designed to support career advancement, and we welcome applications from working professionals.",
           ],
         },
       ],
@@ -88,37 +98,41 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "selection",
-          title: "1. What is the selection process?",
+          title: "How does the MBA selection process work?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "The AIMS MBA selection process includes:",
+            "Statement of Purpose",
+            "Extempore",
+            "Group Discussion",
+            "Personal Interview",
           ],
         },
         {
-          id: "timeline",
-          title: "2. How long does the admission process take?",
+          id: "selected",
+          title: "How will I know if I've been selected?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Selected applicants will receive an Offer Letter by email. Seat blocking and confirmation deadlines will be listed in the letter.",
           ],
         },
         {
-          id: "interview",
-          title: "3. Is there an interview process?",
+          id: "deadline",
+          title: "What if I miss a selection round deadline?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "You may have to defer your application to the next intake. Please refer to Important Deadlines for timely updates.",
           ],
         },
         {
-          id: "entrance",
-          title: "4. Are there entrance exams?",
+          id: "confirmed",
+          title: "What happens after my admission is confirmed?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "You will receive onboarding and orientation information, fee payment instructions, and course start dates by email.",
           ],
         },
         {
-          id: "provisional",
-          title: "5. What if I'm awaiting final-year results?",
+          id: "defer",
+          title: "Can I defer my admission?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Deferral is possible under specific circumstances. Please contact the Admissions Office for guidance.",
           ],
         },
       ],
@@ -127,38 +141,27 @@ const TabAccordionSection = () => {
       title: "Fees, Scholarships & Loans",
       sections: [
         {
-          id: "fees",
-          title: "1. What are the fee structures?",
+          id: "scholarships",
+          title: "Are scholarships available?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. AIMS offers merit-based, need-based, and performance-linked scholarships.",
+            "Visit the Scholarships page to explore your options.",
           ],
         },
         {
-          id: "scholarships",
-          title: "2. Are there scholarships available?",
+          id: "concession",
+          title: "Is there a fee concession for siblings or alumni?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. Fee concessions are available for siblings of current students, alumni, defence personnel, and more.",
+            "View all fee concession categories",
           ],
         },
         {
           id: "loans",
-          title: "3. Do you provide education loans?",
+          title: "Does AIMS help with educational loans?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "payment",
-          title: "4. What are the payment options?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "refund",
-          title: "5. Is the fee refundable?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. We've partnered with recognised banks and NBFCs to assist students in applying for loans.",
+            "Visit the Educational Loans page for details.",
           ],
         },
       ],
@@ -168,37 +171,24 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "hostel",
-          title: "1. Is hostel accommodation available?",
+          title: "Is hostel accommodation available?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "facilities",
-          title: "2. What are the campus facilities?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. On-campus hostels are available for boys and girls with options for single and shared rooms. Facilities include Wi-Fi, mess, study spaces, and 24/7 security.",
           ],
         },
         {
           id: "food",
-          title: "3. Is food provided in the hostel?",
+          title: "Is food provided in the hostels?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. AIMS hostels offer nutritious vegetarian and non-vegetarian meals prepared in hygienic kitchens.",
           ],
         },
         {
-          id: "security",
-          title: "4. What about campus security?",
+          id: "visit",
+          title: "Can I visit the campus before applying?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "activities",
-          title: "5. What extracurricular activities are available?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Absolutely. You can schedule a guided campus tour.",
+            "Write to us at admissions@theaims.ac.in to fix a visit.",
           ],
         },
       ],
@@ -208,37 +198,28 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "deadlines",
-          title: "1. What are the application deadlines?",
+          title: "What are the key admission deadlines for 2025?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "MBA Application Deadline: 15 August 2025",
+            "PG (non-MBA) Deadline: 31 August 2025",
+            "UG Application Deadline: 15 August 2025",
+            "👉 View Important Dates",
           ],
         },
         {
-          id: "confirmation",
-          title: "2. How do I confirm my admission?",
+          id: "results",
+          title: "What if I am waiting for my final year results?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "support",
-          title: "3. What support is available during admission?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "You can still apply. Provisional admission will be granted subject to final result submission before the academic year begins.",
           ],
         },
         {
           id: "contact",
-          title: "4. How can I contact the admissions office?",
+          title: "Who can I contact for help with my application?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "updates",
-          title: "5. How will I receive admission updates?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "📧 admissions@theaims.ac.in",
+            "📞 +91-XXXXXXXXXX",
+            "📍 Or visit the Admissions Helpdesk on campus",
           ],
         },
       ],
@@ -248,37 +229,30 @@ const TabAccordionSection = () => {
       sections: [
         {
           id: "placement",
-          title: "1. What about placement opportunities?",
+          title: "Does AIMS have industry tie-ups for placements?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. We have tie-ups with leading companies in consulting, finance, hospitality, retail, and tech. Our placement team supports students with internships and job opportunities.",
           ],
         },
         {
-          id: "internship",
-          title: "2. Are internships available?",
+          id: "certifications",
+          title: "Are certifications and value-added courses included?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "alumni",
-          title: "3. What is the alumni network like?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
-          ],
-        },
-        {
-          id: "location",
-          title: "4. Where is the campus located?",
-          content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. Many UG and PG programs offer certification options in data analytics, entrepreneurship, digital marketing, culinary arts, etc., depending on your field.",
           ],
         },
         {
           id: "transport",
-          title: "5. What about transportation facilities?",
+          title: "Is transportation provided?",
           content: [
-            "English is the primary medium of instruction at AIMS Institutes. All courses, lectures, and examinations are conducted in English to ensure global compatibility and industry standards.",
+            "Yes. AIMS offers college bus services across select routes in Bengaluru. Details will be provided during onboarding.",
+          ],
+        },
+        {
+          id: "international",
+          title: "Does AIMS provide international exposure?",
+          content: [
+            "Yes. Several programs include options for international internships, global immersion trips, or collaborative learning with overseas institutions.",
           ],
         },
       ],

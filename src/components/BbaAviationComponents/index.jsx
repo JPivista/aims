@@ -19,9 +19,13 @@ const BbaAviationComponents = ({ announcements }) => {
       <CourseStructure programKey="bba-aviation" />
       <Ambitions />
       <ReadyToDraw
-        title="Ready to Soar in Aviation Business?"
-        subtitle="Take the first step towards your aviation business career. Join our BBA Aviation program and become part of a community that values excellence, innovation, and leadership in the aviation industry."
-        primaryButtonText="Apply Now for BBA Aviation"
+        title={
+          <>
+            Ready to <br className="hidden md:block" /> Draw Your Bow?
+          </>
+        }
+        subtitle="From helping you define your goals to guiding you through every step, we're here to help you take that first shot."
+        primaryButtonText="Apply Now"
         secondaryButtonText="Download Brochure"
         tertiaryButtonText="Talk to a Counsellor"
       />

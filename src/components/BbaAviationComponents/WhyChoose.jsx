@@ -52,7 +52,7 @@ const WhyChoose = () => {
           <div className="text-center mb-8 md:mb-16 px-4 md:px-0">
             <h2 className="text-3xl  md:text-[65px] text-[#0C2165] mb-4 playfair-300">
               Why Choose the <br />{" "}
-              <span className="text-[#A22877] italic playfair-400 ">
+              <span className="text-[#A22877] aviation-heading-2">
                 BBA in Aviation Management
               </span>{" "}
               <span className="text-[#A22877] playfair-400">at AIMS</span>

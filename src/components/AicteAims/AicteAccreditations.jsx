@@ -9,40 +9,112 @@ const AicteAccreditations = () => {
     {
       name: "MBA",
       years: [
-        "2021-2022",
-        "2020-2021",
-        "2019-2020",
-        "2018-2019",
-        "2017-2018",
-        "2016-2017",
-        "2015-2016",
-        "2014-2015",
+        {
+          year: "2021-2022",
+          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2dbe10e7f352b0d7d739/1672228287475/AICTE-MBA-EoA-2021-22.pdf",
+        },
+        {
+          year: "2020-2021",
+          link: `/aicte-documents/eoa-mba-2020-2021.pdf`,
+        },
+        {
+          year: "2019-2020",
+          link: `/aicte-documents/eoa-mba-2019-2020.pdf`,
+        },
+        {
+          year: "2018-2019",
+          link: `/aicte-documents/eoa-mba-2018-2019.pdf`,
+        },
+        {
+          year: "2017-2018",
+          link: `/aicte-documents/eoa-mba-2017-2018.pdf`,
+        },
+        {
+          year: "2016-2017",
+          link: `/aicte-documents/eoa-mba-2016-2017.pdf`,
+        },
+        {
+          year: "2015-2016",
+          link: `/aicte-documents/eoa-mba-2015-2016.pdf`,
+        },
+        {
+          year: "2014-2015",
+          link: `/aicte-documents/eoa-mba-2014-2015.pdf`,
+        },
       ],
     },
     {
       name: "MCA",
       years: [
-        "2021-2022",
-        "2020-2021",
-        "2019-2020",
-        "2018-2019",
-        "2017-2018",
-        "2016-2017",
-        "2015-2016",
-        "2014-2015",
+        {
+          year: "2021-2022",
+          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2ef25d3aff00c8386318/1672228598483/AICTE-MCA-EoA-2021-22.pdf",
+        },
+        {
+          year: "2020-2021",
+          link: `/aicte-documents/eoa-mca-2020-2021.pdf`,
+        },
+        {
+          year: "2019-2020",
+          link: `/aicte-documents/eoa-mca-2019-2020.pdf`,
+        },
+        {
+          year: "2018-2019",
+          link: `/aicte-documents/eoa-mca-2018-2019.pdf`,
+        },
+        {
+          year: "2017-2018",
+          link: `/aicte-documents/eoa-mca-2017-2018.pdf`,
+        },
+        {
+          year: "2016-2017",
+          link: `/aicte-documents/eoa-mca-2016-2017.pdf`,
+        },
+        {
+          year: "2015-2016",
+          link: `/aicte-documents/eoa-mca-2015-2016.pdf`,
+        },
+        {
+          year: "2014-2015",
+          link: `/aicte-documents/eoa-mca-2014-2015.pdf`,
+        },
       ],
     },
     {
       name: "BHM",
       years: [
-        "2021-2022",
-        "2020-2021",
-        "2019-2020",
-        "2018-2019",
-        "2017-2018",
-        "2016-2017",
-        "2015-2016",
-        "2014-2015",
+        {
+          year: "2021-2022",
+          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac3185cf1f5f49b95e7081/1672229254612/AICTE-BHM-EoA-2021-22.pdf",
+        },
+        {
+          year: "2020-2021",
+          link: `/aicte-documents/eoa-bhm-2020-2021.pdf`,
+        },
+        {
+          year: "2019-2020",
+          link: `/aicte-documents/eoa-bhm-2019-2020.pdf`,
+        },
+        {
+          year: "2018-2019",
+          link: `/aicte-documents/eoa-bhm-2018-2019.pdf`,
+        },
+        {
+          year: "2017-2018",
+          link: `/aicte-documents/eoa-bhm-2017-2018.pdf`,
+        },
+        {
+          year: "2016-2017",
+          link: `/aicte-documents/eoa-bhm-2016-2017.pdf`,
+        },
+        {
+          year: "2015-2016",
+          link: `/aicte-documents/eoa-bhm-2015-2016.pdf`,
+        },
+        {
+          year: "2014-2015",
+          link: `/aicte-documents/eoa-bhm-2014-2015.pdf`,
+        },
       ],
     },
   ]
@@ -80,16 +152,16 @@ const AicteAccreditations = () => {
           <div className="px-2 md:px-4 pb-4 md:pb-6">
             <div>
               <ul className="text-sm md:text-base monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
-                {years.map((year, index) => (
+                {years.map((yearItem, index) => (
                   <li key={index} className="relative">
                     <a
-                      href={`/aicte-documents/eoa-${program.toLowerCase()}-${year}.pdf`}
+                      href={yearItem.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[20px] monser-400 underline cursor-pointer"
+                      className="text-[20px] monser-400 cursor-pointer text-[#A22877]"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      {year}
+                      {yearItem.year}
                     </a>
                   </li>
                 ))}

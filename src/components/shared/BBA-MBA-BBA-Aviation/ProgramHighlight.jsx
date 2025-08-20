@@ -33,24 +33,24 @@ const ProgramHighlight = ({ programKey = "mba" }) => {
 
   return (
     <div
-      className="relative w-full lg:h-[80vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="relative w-full h-[60vh]  md:h-[75vh] overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url('${data.image}')` }}
     >
       {/* Content Container */}
       <div className="relative z-10 h-full flex flex-col justify-center">
-        <div className="container mx-auto py-4 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-12">
           <div
             className={`flex ${
               data.alignment === "right" ? "justify-end" : "justify-start"
             }`}
           >
-            <div className="max-w-2xl">
+            <div className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl">
               <h3
-                className={`text-white text-2xl sm:text-3xl md:text-4xl lg:text-[60px] ${data.font} leading-tight lg:leading-tight mb-4 sm:mb-6`}
+                className={`text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[60px] ${data.font} leading-tight mb-3 sm:mb-4 md:mb-6`}
                 dangerouslySetInnerHTML={{ __html: data.heading }}
               />
               <p
-                className="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed"
+                className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: data.description }}
               />
             </div>

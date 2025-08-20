@@ -1,5 +1,7 @@
+"use client"
 import React from "react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const DigitalTools = () => {
   const subscribedResources = [
@@ -7,11 +9,13 @@ const DigitalTools = () => {
       id: 1,
       name: "DELNET",
       description: "Access shared library resources across India",
+      url: "https://delnet.in",
     },
     {
       id: 2,
       name: "NLIST",
       description: "e-Journals and e-Books through UGC-INFONET",
+      url: "https://nlist.inflibnet.ac.in",
     },
   ]
 
@@ -54,13 +58,29 @@ const DigitalTools = () => {
                   <span className="text-white font-bold text-2xl md:text-[36px] monser-600">
                     {resource.name}
                   </span>
-                  <Image
-                    src="/eresources/white-arrow.svg"
-                    alt="Arrow"
-                    width={14}
-                    height={15}
-                    className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-5"
-                  />
+                  <a
+                    href={resource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer"
+                  >
+                    <motion.div
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      <Image
+                        src="/eresources/white-arrow.svg"
+                        alt="Arrow"
+                        width={14}
+                        height={15}
+                        className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-5"
+                      />
+                    </motion.div>
+                  </a>
                 </div>
                 <div className="px-4 md:px-6 py-4 md:py-6 flex-1">
                   <p className="text-xs md:text-sm">{resource.description}</p>

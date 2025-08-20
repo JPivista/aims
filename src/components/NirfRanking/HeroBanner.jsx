@@ -26,23 +26,23 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         ></div>
 
         {/* Empower Image*/}
-        <div className="absolute left-4 sm:left-8 md:left-12 lg:left-20 xl:left-20 top-4 sm:top-6 md:top-8 lg:top-10 xl:top-10">
+        <div className="absolute left-4 md:left-20 -top-10 md:top-12">
           <Image
-            src="/nirf/empower.svg"
+            src="/black-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-30 h-30  md:w-full md:h-full"
+            className="w-35 h-35 md:w-full md:h-full"
             priority
           />
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute bottom-20 left-0 right-0">
+        <div className="absolute bottom-10 left-0 right-0">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
               <div className="flex items-center">
-                <h1 className="text-white text-3xl lg:text-[60px] playfair-300">
+                <h1 className="text-white text-3xl lg:text-[60px] playfair-300 tracking-wider">
                   NIRF
                 </h1>
               </div>

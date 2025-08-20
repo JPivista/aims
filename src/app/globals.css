@@ -99,6 +99,18 @@ body {
   line-height: 1.2;
 } */
 
+/* Aviation Heading Style */
+.aviation-heading {
+  font-family: playfair;
+  font-style: italic;
+  font-weight: 600;
+}
+.aviation-heading-2 {
+  font-family: playfair;
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Utility classes for fonts */
 .font-montserrat {
   font-family: var(--font-montserrat), "Montserrat", sans-serif;
@@ -188,19 +200,15 @@ body {
 .mba-program-text {
   color: var(--Color-2, #a22877);
   font-family: Playfair;
-  font-size: 70px;
   font-style: italic;
   font-weight: 300;
-  line-height: 72px;
 }
 
 .overview-text {
   color: var(--Aims-Blue, #0c2165);
   font-family: Playfair;
-  font-size: 70px;
   font-style: normal;
   font-weight: 300;
-  line-height: 72px;
 }
 
 /* Global paragraph styles */
@@ -311,4 +319,3 @@ h4 {
     @apply bg-background text-foreground;
   }
 }
-

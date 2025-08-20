@@ -5,9 +5,10 @@ import FAQSection from "./FAQSection"
 const AdmissionsFAQs = () => {
   return (
     <>
-      <Banner />
-      <FAQSection />
-      {/* Add other FAQ sections here */}
+      <div className="w-full overflow-hidden">
+        <Banner />
+        <FAQSection />
+      </div>
     </>
   )
 }

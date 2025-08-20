@@ -26,7 +26,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         ></div>
 
         {/* Bottom Content Container */}
-        <div className="absolute bottom-20 left-0 right-0">
+        <div className="absolute bottom-10 left-0 right-0">
           <h1 className="text-white text-3xl lg:text-[60px] playfair-300 text-center">
             Grievance Redressal
           </h1>

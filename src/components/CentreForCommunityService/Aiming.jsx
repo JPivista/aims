@@ -5,14 +5,14 @@ const Aiming = () => {
   return (
     <>
       {/* Row 1: Left Content, Right Image */}
-      <div className="flex flex-col lg:flex-row gap-12  py-6 md:py-10">
+      <div className="flex flex-col lg:flex-row gap-12  py-6 md:py-10 px-4 md:px-0">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-4/5 space-y-4 sm:space-y-6  ml-20">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
+        <div className="w-full lg:w-4/5 space-y-4 sm:space-y-6  md:ml-20">
+          <h2 className="text-3xl  md:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
             Purpose in Action. <br /> AIM for a More Compassionate World.
           </h2>
           <div className="flex flex-col gap-3 sm:gap-4 w-full lg:w-4/5 relative">
-            <p className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400">
+            <p className="text-base  md:text-[18px] leading-relaxed monser-400">
               For collaborations and support, write to us at{" "}
               <span className="text-[#A22877] monser-600 underline">
                 accs@theaims.ac.in
@@ -83,10 +83,10 @@ const Aiming = () => {
       </div>
 
       {/* Row 3: Left Content, Right Image */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10 lg:py-12">
+      <div className="flex flex-col md:flex-row gap-6  md:gap-16 py-8 md:py-12 px-4 md:px-0">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 ml-20">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
+        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 md:ml-20">
+          <h2 className="text-3xl md:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
             Objectives
           </h2>
           <h4 className="text-lg sm:text-xl md:text-[20px] text-[#0C2165] monser-600 mb-3 sm:mb-4">

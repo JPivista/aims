@@ -16,6 +16,17 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           priority
         />
 
+        <div className="absolute right-4 md:right-20 -top-10 md:top-12">
+          <Image
+            src="/black-empower.svg"
+            alt="Empower"
+            width={100}
+            height={100}
+            className="w-35 h-35 md:w-full md:h-full"
+            priority
+          />
+        </div>
+
         {/* Gradient Overlay - Figma Design */}
         <div
           className="absolute inset-0"
@@ -27,13 +38,11 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
 
         {/* Bottom Content Container */}
         <div className="absolute bottom-20 left-0 right-0">
-          <div className="container mx-auto py-4 px-6 lg:px-8">
+          <div className="container mx-auto py-4">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
               <div className="flex items-center">
                 <h1 className="text-white text-3xl lg:text-[60px] playfair-300">
-                  Students
-                  <br className="hidden md:block" />
-                  Information Zone
+                  Students Handbook
                 </h1>
               </div>
               {/* <div className="flex items-center">

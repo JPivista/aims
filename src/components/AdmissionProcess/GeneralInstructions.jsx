@@ -17,7 +17,7 @@ const GeneralInstructions = () => {
       {/* Main Content - Two Flex Containers */}
       <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 py-8 sm:py-12 md:py-16">
         {/* Left Side - Heading and Instructions (5/6 width) */}
-        <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-20">
+        <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
           {/* Heading */}
           <h1 className="text-[#0C2165] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 leading-tight">
             General <br />
@@ -40,7 +40,7 @@ const GeneralInstructions = () => {
         </div>
 
         {/* Right Side - Image (1/6 width) - Hidden on mobile and tablet */}
-        <div className="hidden lg:flex w-full lg:w-1/6 justify-center lg:justify-end lg:-mt-14 lg:-mr-10">
+        <div className="hidden lg:flex w-full lg:w-1/6 justify-center lg:justify-end lg:-mt-14 lg:-mr-4 xl:-mr-10">
           <Image
             src="/admission-process/circle.svg"
             alt="General Instructions"

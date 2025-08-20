@@ -6,23 +6,20 @@ const Overview = () => {
   const eligibilityData = [
     {
       id: 1,
-      heading:
-        "The applicant must satisfy one of the following eligibility criteria for admissions into the BBA Aviation program:",
+      heading: "Eligibility Criteria:",
       items: [
-        "A pass in 10+2 or equivalent examination from a recognized board with at least 50% marks in aggregate",
-        "Students from any stream (Science, Commerce, Arts) are eligible to apply",
-        "Candidates appearing for their final examination can also apply, subject to meeting the eligibility criteria upon completion",
-        "Interest in aviation industry and business management",
-      ],
-    },
-    {
-      id: 2,
-      heading: "Important:",
-      items: [
-        "Candidates must have completed their 10+2 education from a recognized board",
-        "In case of SC/ST/Category I candidates, there is a relaxation of 5% in the aggregate of marks obtained",
-        "BBA Aviation admission criteria is based on academic performance and personal interview",
-        "Candidates should have a passion for aviation and business",
+        {
+          text: "Pass in Pre-University Course (PUC) / 12th or any other equivalent examination. Students with good communication skills are preferred.",
+          hasOr: true,
+        },
+        {
+          text: "GCE/JGCSE/GCSE Certification with pass in a minimum of FIVE subjects at 'O' level & TWO subjects at 'A' level.",
+          hasOr: true,
+        },
+        {
+          text: "Pass certificate / Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board / council of any country.",
+          hasOr: false,
+        },
       ],
     },
   ]
@@ -39,10 +36,12 @@ const Overview = () => {
           >
             Important Dates
           </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            Here you can list important dates related to the BBA Aviation
-            program, such as application deadlines, interview schedules, and
-            admission timelines.
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+            Please see the{" "}
+            <a href="/admission-process" className="text-[#A22877]">
+              Admission Process
+            </a>{" "}
+            page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -53,26 +52,20 @@ const Overview = () => {
       content: (
         <>
           {eligibilityData.map((section) => (
-            <div key={section.id} className="mb-8 sm:mb-10 md:mb-12">
-              <h5 className="text-[#A22877] font-bold text-xl sm:text-2xl md:text-[24px] monser-600 leading-tight mb-4 sm:mb-6 md:mb-8">
+            <div key={section.id} className="mb-8 md:mb-12">
+              <h5 className="text-[#A22877] text-lg md:text-[24px] monser-600  mb-4 md:mb-8">
                 {section.heading}
               </h5>
-              <ul className="list-disc pl-6 sm:pl-8 md:pl-10 font-monser-400 text-base sm:text-lg md:text-xl space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
+              <ul className="list-disc pl-6 sm:pl-8 md:pl-10 monser-400 text-base  md:text-[18px] space-y-3 md:space-y-4">
                 {section.items.map((item, index) => (
                   <li key={index} className="mb-2">
-                    {item}
+                    {item.text}
+                    {item.hasOr && <span className="monser-600"> (or)</span>}
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            Students seeking admission to BBA Aviation degree at AIMS Institutes
-            must adhere to the guidelines of eligibility prior to submitting
-            application form (online only) to us. All applications which do not
-            meet our BBA Aviation selection criteria listed above will not be
-            entertained.
-          </p>
         </>
       ),
     },
@@ -87,11 +80,12 @@ const Overview = () => {
           >
             Selection Process
           </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            The selection process includes evaluation of academic performance
-            followed by a personal interview. Candidates will be assessed on
-            their communication skills, academic background, aviation interest,
-            and overall personality.
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+            Please see the{" "}
+            <a href="/admission-process" className="text-[#A22877]">
+              Admission Process
+            </a>{" "}
+            page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -102,8 +96,8 @@ const Overview = () => {
       <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10">
         {/* BBA Aviation Program overview */}
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between py-6 sm:py-8 md:py-10 px-4 md:px-0">
-          <h2 className="w-full lg:w-3/5 mb-4 text-center md:text-left">
-            <span className=" text-[#A22877] italic playfair-300 text-4xl md:text-[60px] ">
+          <h2 className="w-full lg:w-3/5 mb-4 text-center md:text-left tracking-wider">
+            <span className=" text-[#A22877] aviation-heading-2 text-4xl md:text-[60px] ">
               BBA Aviation
             </span>
             <br />
@@ -121,13 +115,13 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline */}
-        <div className="flex justify-center px-2 sm:px-4 md:px-6 lg:px-0 mb-6 sm:mb-8 md:mb-10">
+        <div className="flex justify-center">
           <Image
             src="/bba-aviation/bba-aviation-program.svg"
             alt="BBA Aviation Program Overview"
             width={1000}
             height={600}
-            className="object-contain w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-5xl"
+            className="object-contain w-full h-full"
             priority
           />
         </div>

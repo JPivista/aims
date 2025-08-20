@@ -38,9 +38,11 @@ const Overview = () => {
             Important Dates
           </h6>
           <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            Here you can list important dates related to the MBA program, such
-            as application deadlines, interview schedules, and admission
-            timelines.
+            Please see the{" "}
+            <a href="/admission-process" className="text-[#A22877]">
+              Admission Process
+            </a>{" "}
+            page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -64,7 +66,7 @@ const Overview = () => {
               </ul>
             </div>
           ))}
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
             Students seeking admission to MBA degree at AIMS Institutes must
             adhere to the guidelines of eligibility prior to submitting
             application form (online only) to us. All applications which do not
@@ -85,10 +87,12 @@ const Overview = () => {
           >
             Selection Process
           </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            The selection process includes an entrance test followed by an
-            interview. Candidates will be assessed on their research aptitude
-            and subject knowledge.
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+            Please see the{" "}
+            <a href="/admission-process" className="text-[#A22877]">
+              Admission Process
+            </a>{" "}
+            page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -99,16 +103,16 @@ const Overview = () => {
       <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10">
         {/* MBA Program overview */}
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between lg:items-center py-6 sm:py-8 md:py-10">
-          <h2 className="w-full lg:w-2/5 mb-6 sm:mb-8 lg:mb-0 text-center lg:text-left">
-            <span className="mba-program-text text-3xl sm:text-4xl md:text-5xl lg:text-4xl leading-tight playfair-300 text-[#0C2165]">
+          <h2 className="w-full lg:w-2/5 mb-6 sm:mb-8 lg:mb-0 text-center lg:text-left tracking-wider">
+            <span className="mba-program-text text-5xl md:text-[60px]">
               MBA Program
             </span>
             <br />
-            <span className="overview-text text-3xl sm:text-4xl md:text-5xl lg:text-4xl leading-tight font-bold text-[#0C2165]">
+            <span className="text-5xl md:text-[60px] font-bold text-[#0C2165] playfair-300">
               Overview
             </span>
           </h2>
-          <p className="w-full lg:w-3/5 monser-400 text-base sm:text-lg md:text-[18px] leading-relaxed text-center lg:text-left">
+          <p className="w-full lg:w-3/5 monser-400 text-base  md:text-[18px] leading-relaxed text-center md:text-left tracking-wider">
             Since 1998, the MBA program at AIMS Institutes has been equipping
             future leaders to aim sharp and solve complex business challenges.
             We train students to build strong conceptual and analytical
@@ -120,13 +124,13 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline */}
-        <div className="flex justify-center px-2 sm:px-4 md:px-6 lg:px-0 mb-6 sm:mb-8 md:mb-10">
+        <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
           <Image
             src="/MBA/mba-program.svg"
             alt="MBA Program Overview"
             width={1000}
             height={600}
-            className="object-contain w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-5xl"
+            className="object-contain w-full h-full"
             priority
           />
         </div>

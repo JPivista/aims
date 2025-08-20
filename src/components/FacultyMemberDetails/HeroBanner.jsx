@@ -8,10 +8,10 @@ const HeroBanner = ({
 }) => {
   return (
     <>
-      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[83vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/faculty-details/hero-banner.png"
+          src="/faculty-details/desktop-banner.png"
           alt="Faculty Details"
           width={1920}
           height={1080}
@@ -20,13 +20,13 @@ const HeroBanner = ({
         />
 
         {/* Empower Image*/}
-        <div className="absolute left-4 sm:left-8 md:left-12 lg:left-20 top-4 sm:top-8 md:top-12 lg:top-20">
+        <div className="absolute left-4 md:left-20 -top-10 md:top-12">
           <Image
-            src="/faculty-details/empower.svg"
+            src="/white-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-full h-full"
+            className="w-35 h-35 md:w-full md:h-full"
             priority
           />
         </div>

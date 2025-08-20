@@ -15,7 +15,7 @@ const AicteContent = () => {
           />
         </div>
         <div className="md:ml-20 text-base md:text-[20px] px-4 md:px-0">
-          <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-[65px] text-[#0C2165] playfair-300 mb-3 md:mb-4 lg:mb-6 md:max-w-4xl">
+          <h2 className="text-xl md:text-[65px] text-[#0C2165] playfair-300 mb-3 md:mb-4 lg:mb-6 md:max-w-4xl tracking-wider leading-tight">
             AICTE‑Approved for <br className="hidden md:block" /> Quality and
             Relevance
           </h2>

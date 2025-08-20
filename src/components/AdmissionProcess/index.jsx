@@ -9,18 +9,20 @@ import ReadyToDraw from "../shared/ReadyToDraw"
 const AdmissionProcess = () => {
   return (
     <>
-      <HeroBanner />
-      <HowToApply />
-      <GeneralInstructions />
-      <AdmissionTabsSection />
-      <AimAheadSection />
-      <ReadyToDraw
-        title="Need help completing your form or understanding the difference in UG and PG admission processes?"
-        subtitle="Reach out to our admissions office or visit our FAQs section."
-        primaryButtonText="Apply Now"
-        secondaryButtonText="Download Brochure"
-        bgColor="bg-[#A22877]"
-      />
+      <div className="w-full overflow-x-hidden">
+        <HeroBanner />
+        <HowToApply />
+        <GeneralInstructions />
+        <AdmissionTabsSection />
+        <AimAheadSection />
+        <ReadyToDraw
+          title="Need help completing your form or understanding the difference in UG and PG admission processes?"
+          subtitle="Reach out to our admissions office or visit our FAQs section."
+          primaryButtonText="Apply Now"
+          secondaryButtonText="Download Brochure"
+          bgColor="bg-[#A22877]"
+        />
+      </div>
     </>
   )
 }
