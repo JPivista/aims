@@ -5,7 +5,7 @@ const PhdTabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs?.[0]?.key || "");
 
   return (
-    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 w-full pb-10 px-4">
+    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 w-full px-4">
 
       {/* Tabs */}
       <div

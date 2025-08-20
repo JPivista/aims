@@ -4,7 +4,7 @@ import Image from 'next/image'
 const McomContent = () => {
     return (
         <>
-            <div className='container mx-auto flex flex-col items-center justify-center'>
+            <div className='container mx-auto flex flex-col items-center justify-center lg:px-0 px-4'>
                 <div className='text-center lg:w-[80%]  py-10'>
                     <p>
                         Offered under the University of Bangalore, the AIMS M.Com program is designed to build high-level financial acumen and business sense. With value-added certifications and immersive workshops, we help you bridge the gap between classroom learning and real-world application.

@@ -70,7 +70,7 @@ export default function Header() {
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
           <motion.div
-            className="container mx-auto flex items-center justify-between px-4 py-3 w-full h-[10vh]"
+            className="container mx-auto flex items-center justify-between px-4 lg:px-0 py-3 w-full h-[10vh]"
             layout
             transition={{
               duration: 0.6,

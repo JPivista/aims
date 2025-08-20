@@ -15,12 +15,12 @@ const McomStudentLead = () => {
                 ></div>
 
                 {/* Top Content Container */}
-                <div className="relative z-10 h-full flex flex-col items-start justify-center">
+                <div className="relative z-10 h-full flex flex-col justify-end md:justify-center items-center md:items-start">
                     <div className="container mx-auto py-4 px-6 lg:px-8">
-                        <div className="flex lg:flex-row md:gap-10 gap-4">
-                            <div className="">
+                        <div className="flex lg:flex-row md:gap-10 gap-4 lg:mb-0 mb-20">
+                            <div className="text-center md:text-start">
                                 <h3 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
-                                    Where Our <br className='md:block hidden' /> Students Lead
+                                    Where Our <br className='block' /> Students Lead
                                 </h3>
                                 <p className='text-white'>
                                     Explore how AIMS postgraduates are building

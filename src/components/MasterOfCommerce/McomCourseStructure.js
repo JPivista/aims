@@ -89,8 +89,8 @@ const McomCourseStructure = () => {
     return (
         <>
 
-            <div className="py-10 bg-white">
-                <div className="container mx-auto px-6 lg:px-8">
+            <div className="mb-10 bg-white">
+                <div className="container mx-auto px-4 lg:px-0">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-400">
                             M.Com Program  <br />

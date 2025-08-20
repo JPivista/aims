@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 
 const TabCourseStructure = ({ courseData }) => {
   const [activeTab, setActiveTab] = useState(
@@ -32,11 +31,10 @@ const TabCourseStructure = ({ courseData }) => {
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
                         className={`px-3 py-1 rounded-full text-sm font-medium transition-all duration-200 border-[0.5px]
-                                                    ${
-                                                      activeTab === tab.key
-                                                        ? "bg-[#A22877] text-white border-[#A22877] py-1"
-                                                        : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
-                                                    }`}
+                                                    ${activeTab === tab.key
+                            ? "bg-[#A22877] text-white border-[#A22877] py-1"
+                            : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
+                          }`}
                       >
                         {tab.label}
                       </button>
@@ -57,19 +55,6 @@ const TabCourseStructure = ({ courseData }) => {
                       <h5 className="text-[#A22877] text-3xl lg:text-5xl monser-600">
                         {section.title}
                       </h5>
-
-                      {/* Student Image */}
-                      {tab.image && (
-                        <div className="border-2 border-blue-200 rounded-lg overflow-hidden">
-                          <Image
-                            src={tab.image}
-                            alt="Students"
-                            width={400}
-                            height={150}
-                            className="w-full h-auto object-cover"
-                          />
-                        </div>
-                      )}
 
                       {/* Course Content */}
                       <div className="bg-[#A22877] rounded-lg p-6 text-white">

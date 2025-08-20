@@ -224,7 +224,7 @@ p b {
 /* Global h1 styles */
 h1 {
   /* color: #0C2165; */
-  font-size: 40px;
+  font-size: 28px;
   font-family: var(--font-playfair), "Playfair Display", serif;
   font-weight: 300;
   margin-bottom: 1.5rem; /* 32px */
