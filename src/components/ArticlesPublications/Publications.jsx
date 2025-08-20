@@ -1,22 +1,39 @@
 "use client"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 
 const Publications = () => {
   const [activeTab, setActiveTab] = useState(0)
   const [visibleCount, setVisibleCount] = useState(30)
+  const [isMobile, setIsMobile] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  // Check if we're on the client side
+  useEffect(() => {
+    setIsClient(true)
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    // Set initial mobile state
+    checkMobile()
+
+    // Add resize listener
+    window.addEventListener("resize", checkMobile)
+
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
 
   // Reset visible count when switching tabs
-  React.useEffect(() => {
-    // Set initial count based on screen size
-    const isMobile = window.innerWidth < 768 // md breakpoint
-    setVisibleCount(isMobile ? 10 : 30)
-  }, [activeTab])
+  useEffect(() => {
+    if (isClient) {
+      setVisibleCount(isMobile ? 10 : 30)
+    }
+  }, [activeTab, isMobile, isClient])
 
   // Function to get the next batch size based on screen size
   const getNextBatchSize = () => {
-    const isMobile = window.innerWidth < 768
     return isMobile ? 10 : 30
   }
 
@@ -604,10 +621,6 @@ const Publications = () => {
   ]
 
   const currentTabData = tabsData[activeTab]
-  const hasMoreThan31Points = currentTabData.points.length > 31
-  const displayedPoints = showAllPoints
-    ? currentTabData.points
-    : currentTabData.points.slice(0, 31)
 
   return (
     <div className="container mx-auto px-4 md:px-0 pb-8">
@@ -691,14 +704,14 @@ const Publications = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
                           duration:
-                            index < (window.innerWidth < 768 ? 10 : 30)
+                            index < (isClient && isMobile ? 10 : 30)
                               ? 0.8
                               : 0.2,
                           delay:
-                            index < (window.innerWidth < 768 ? 10 : 30)
+                            index < (isClient && isMobile ? 10 : 30)
                               ? 0.2 + index * 0.15
                               : 0.02 +
-                                (index - (window.innerWidth < 768 ? 10 : 30)) *
+                                (index - (isClient && isMobile ? 10 : 30)) *
                                   0.02,
                           ease: "easeOut",
                         }}
