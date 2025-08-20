@@ -1,12 +1,12 @@
-import React from 'react'
-import CentreForSustainability from '@/components/CentreForSustainability'
+import React from "react";
+import CentreForSustainability from "@/components/CentreForSustainability";
 
 const page = () => {
-    return (
-        <>
-            <CentreForSustainability />
-        </>
-    )
-}
+  return (
+    <>
+      <CentreForSustainability />
+    </>
+  );
+};
 
-export default page
+export default page;

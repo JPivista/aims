@@ -1,8 +1,8 @@
-import React from "react"
-import ArticlesPublications from "@/components/ArticlesPublications"
+import React from "react";
+import ArticlesPublications from "@/components/ArticlesPublications";
 
 const ArticlesPublicationsPage = () => {
-  return <ArticlesPublications />
-}
+  return <ArticlesPublications />;
+};
 
-export default ArticlesPublicationsPage
+export default ArticlesPublicationsPage;

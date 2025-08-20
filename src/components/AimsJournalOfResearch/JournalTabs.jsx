@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Button from "@/shared/Button";
+import PricingTable from "@/components/shared/PricingTable";
 
 const JournalTabs = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -45,136 +46,189 @@ const JournalTabs = ({ tabsData }) => {
           <div className="bg-white rounded-2xl py-5 mx-auto lg:px-20 xl:px-20 md:px-10 px-4">
             <div>
               {/* Heading */}
-              <h5 className="text-2xl md:text-[24px] mb-6 monser-600 text-[#A22877]">
-                {tabsData[activeTab].heading}
-              </h5>
+              {tabsData[activeTab].heading && tabsData[activeTab].heading.trim() !== "" && (
+                <h5 className="text-2xl md:text-[24px] mb-6 monser-600 text-[#A22877]">
+                  {tabsData[activeTab].heading}
+                </h5>
+              )}
 
               {/* Conclusion */}
               {tabsData[activeTab].conclusion && (
                 <div className="">
-                  <p className="text-base md:text-lg monser-400">
-                    {tabsData[activeTab].conclusion}
-                  </p>
+                  {typeof tabsData[activeTab].conclusion === 'string' ? (
+                    <p className="text-base md:text-lg monser-400">
+                      {tabsData[activeTab].conclusion}
+                    </p>
+                  ) : (
+                    <div className="text-base md:text-lg monser-400">
+                      {tabsData[activeTab].conclusion}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
-            <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row gap-4 py-5">
-              <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
-                Download Submission Guidelines
-              </Button>
-              <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
-                Download Undertaking Form
-              </Button>
-            </div>
-            <h5 className="text-2xl md:text-[24px] py-3 monser-600 text-[#000]">
-              {tabsData[activeTab].subheading}
-            </h5>
-            <p>{tabsData[activeTab].subcontent}</p>
-            {/* Points Heading */}
-            <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
-              {tabsData[activeTab].pointsheading}
-            </h5>
-            {/* Points */}
-            <div className="space-y-4 pt-3">
-              <div className="monser-400">
-                {(tabsData[activeTab].points || [])
-                  .filter((point) => point?.trim())
-                  .map((point, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 text-lg"
-                    >
-                      <ul className="pl-4">
-                        <li className="list-disc list-outside">{point}</li>
-                      </ul>
-                    </div>
-                  ))}
+            {tabsData[activeTab].showButtons && (
+              <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row gap-4 py-5">
+                <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
+                  Download Submission Guidelines
+                </Button>
+                <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
+                  Download Undertaking Form
+                </Button>
               </div>
-            </div>
-            {/* Points Heading */}
-            <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
-              {tabsData[activeTab].pointsheading2}
-            </h5>
-            {/* Points */}
-            <div className="space-y-4 pt-3">
-              <div className="monser-400">
-                {(tabsData[activeTab].points2 || [])
-                  .filter((point) => point?.trim())
-                  .map((point, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 text-lg"
-                    >
-                      <ul className="pl-4">
-                        <li className="list-disc list-outside">{point}</li>
-                      </ul>
-                    </div>
-                  ))}
+            )}
+
+            {/* Pricing Table */}
+            {tabsData[activeTab].showPricingTable && (
+              <div className="py-6">
+                <PricingTable className="mt-4" />
               </div>
-            </div>
-            {/* Points Heading */}
-            <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
-              {tabsData[activeTab].pointsheading3}
-            </h5>
-            {/* Points */}
-            <div className="space-y-4 pt-3">
-              <div className="monser-400">
-                {(tabsData[activeTab].points3 || [])
-                  .filter((point) => point?.trim())
-                  .map((point, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 text-lg"
-                    >
-                      <ul className="pl-4">
-                        <li className="list-disc list-outside">{point}</li>
-                      </ul>
-                    </div>
-                  ))}
-              </div>
-            </div>
-            {/* Points Heading */}
-            <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
-              {tabsData[activeTab].pointsheading4}
-            </h5>
-            {/* Points */}
-            <div className="space-y-4 pt-3">
-              <div className="monser-400">
-                {(tabsData[activeTab].points4 || [])
-                  .filter((point) => point?.trim())
-                  .map((point, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 text-lg"
-                    >
-                      <ul className="pl-4">
-                        <li className="list-disc list-outside">{point}</li>
-                      </ul>
-                    </div>
-                  ))}
-              </div>
-            </div>
-            {/* Points Heading */}
-            <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
-              {tabsData[activeTab].pointsheading5}
-            </h5>
-            {/* Points */}
-            <div className="space-y-4 pt-3">
-              <div className="monser-400">
-                {(tabsData[activeTab].points5 || [])
-                  .filter((point) => point?.trim())
-                  .map((point, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 text-lg"
-                    >
-                      <ul className="pl-4">
-                        <li className="list-disc list-outside">{point}</li>
-                      </ul>
-                    </div>
-                  ))}
-              </div>
-            </div>
+            )}
+
+            {/* Subheading and Subcontent */}
+            {tabsData[activeTab].subheading && tabsData[activeTab].subheading.trim() !== "" && (
+              <h5 className="text-2xl md:text-[24px] py-3 monser-600 text-[#000]">
+                {tabsData[activeTab].subheading}
+              </h5>
+            )}
+            {tabsData[activeTab].subcontent && tabsData[activeTab].subcontent.trim() !== "" && (
+              <p>{tabsData[activeTab].subcontent}</p>
+            )}
+
+            {/* Points Section 1 */}
+            {tabsData[activeTab].points && tabsData[activeTab].points.length > 0 && (
+              <>
+                {tabsData[activeTab].pointsheading && tabsData[activeTab].pointsheading.trim() !== "" && (
+                  <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
+                    {tabsData[activeTab].pointsheading}
+                  </h5>
+                )}
+                <div className="space-y-4 pt-3">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points
+                      .filter((point) => point?.trim())
+                      .map((point, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 text-lg"
+                        >
+                          <ul className="pl-4">
+                            <li className="list-disc list-outside">{point}</li>
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Points Section 2 */}
+            {tabsData[activeTab].points2 && tabsData[activeTab].points2.length > 0 && (
+              <>
+                {tabsData[activeTab].pointsheading2 && tabsData[activeTab].pointsheading2.trim() !== "" && (
+                  <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
+                    {tabsData[activeTab].pointsheading2}
+                  </h5>
+                )}
+                <div className="space-y-4 pt-3">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points2
+                      .filter((point) => point?.trim())
+                      .map((point, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 text-lg"
+                        >
+                          <ul className="pl-4">
+                            <li className="list-disc list-outside">{point}</li>
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Points Section 3 */}
+            {tabsData[activeTab].points3 && tabsData[activeTab].points3.length > 0 && (
+              <>
+                {tabsData[activeTab].pointsheading3 && tabsData[activeTab].pointsheading3.trim() !== "" && (
+                  <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
+                    {tabsData[activeTab].pointsheading3}
+                  </h5>
+                )}
+                <div className="space-y-4 pt-3">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points3
+                      .filter((point) => point?.trim())
+                      .map((point, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 text-lg"
+                        >
+                          <ul className="pl-4">
+                            <li className="list-disc list-outside">{point}</li>
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Points Section 4 */}
+            {tabsData[activeTab].points4 && tabsData[activeTab].points4.length > 0 && (
+              <>
+                {tabsData[activeTab].pointsheading4 && tabsData[activeTab].pointsheading4.trim() !== "" && (
+                  <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
+                    {tabsData[activeTab].pointsheading4}
+                  </h5>
+                )}
+                <div className="space-y-4 pt-3">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points4
+                      .filter((point) => point?.trim())
+                      .map((point, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 text-lg"
+                        >
+                          <ul className="pl-4">
+                            <li className="list-disc list-outside">{point}</li>
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Points Section 5 */}
+            {tabsData[activeTab].points5 && tabsData[activeTab].points5.length > 0 && (
+              <>
+                {tabsData[activeTab].pointsheading5 && tabsData[activeTab].pointsheading5.trim() !== "" && (
+                  <h5 className="text-2xl md:text-[24px] pt-7 monser-600 text-[#000]">
+                    {tabsData[activeTab].pointsheading5}
+                  </h5>
+                )}
+                <div className="space-y-4 pt-3">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points5
+                      .filter((point) => point?.trim())
+                      .map((point, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 text-lg"
+                        >
+                          <ul className="pl-4">
+                            <li className="list-disc list-outside">{point}</li>
+                          </ul>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
