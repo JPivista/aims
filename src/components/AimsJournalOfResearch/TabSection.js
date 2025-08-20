@@ -35,50 +35,72 @@ const AdmissionTabsSection = () => {
       points5: ["All references to be cited within text of the article"],
       conclusion:
         "We accept Academic Papers (Conceptual or Empirical), Reflective Practice articles, Case Studies, and Book Reviews.",
+      showButtons: true,
     },
 
     {
       title: "Submission Process",
-      heading: "Postgraduate Admission Requirements:",
-      points: [
-        "Bachelor's degree with minimum 50% marks",
-        "Submit application with academic transcripts",
-        "Complete entrance test if required",
-        "Attend interview and receive admission confirmation",
-      ],
-      conclusion:
-        "Postgraduate programs include M.Com, MCA, and other specialized master's degrees.",
+
+      points: ["", ""],
+      conclusion: (
+        <>
+          <p>
+            Authors should submit the manuscript to &quot;AIMS Journal of
+            Research&quot;. There is no charge for article submission. <br />
+            <br />
+            <b className="monser-600">Note:</b> Please fill in the Undertaking
+            form and send the its scanned copy along with the paper to{" "}
+            <a
+              href="mailto:research@theaims.ac.in"
+              className="text-[#000] underline"
+            >
+              research@theaims.ac.in
+            </a>
+          </p>
+        </>
+      ),
+      showButtons: false,
     },
+
     {
       title: "Archives",
-      heading: "Individual mentoring",
-      points: ["", "", "", ""],
-      conclusion:
-        "The assessments allow us to determine each student's understanding of subjects, as well as their ability to recall concepts for exams. We can also indicate areas that need to be improved. Remedial classes are available for those who require more assistance. To ensure better performance in final exams, students who require a lot of improvement are mentored individually.",
+      heading: "",
+      showButtons: false,
+      points: [
+        "2025 – Vol 20, Issue 1",
+        "2024 – Vol 19, Issue 2",
+        "2023 – Vol 18, Issue 1 & 2",
+      ],
+      conclusion: (
+        <>
+          <p>
+            [Full Archive Page] (take from Archives section:{" "}
+            <a className="underline" href="https://www.theaims.ac.in/aims-journal-of-research" target="_blank" rel="noopener noreferrer">
+              https://www.theaims.ac.in/aims-journal-of-research
+            </a>
+            )
+          </p>
+        </>
+      ),
     },
+
     {
       title: "Indexing/Abstracting",
-      heading: "PUC Admission Process:",
-      points: [
-        "Complete 10th standard with good marks",
-        "Apply online for PUC program selection",
-        "Submit required certificates and documents",
-        "Complete admission formalities and start classes",
-      ],
-      conclusion:
-        "PUC programs provide strong foundation for higher education and career development.",
+      // heading: "PUC Admission Process:",
+      points: ["DRJI", "Index Copernicus", "Indian Citation Index (ici)"],
+      conclusion: "",
     },
     {
       title: "Subscription",
-      heading: "PUC Admission Process:",
-      points: [
-        "Complete 10th standard with good marks",
-        "Apply online for PUC program selection",
-        "Submit required certificates and documents",
-        "Complete admission formalities and start classes",
-      ],
-      conclusion:
-        "PUC programs provide strong foundation for higher education and career development.",
+      // heading: "Subscription Plans",
+      // points: [
+      //   "Complete 10th standard with good marks",
+      //   "Apply online for PUC program selection",
+      //   "Submit required certificates and documents",
+      //   "Complete admission formalities and start classes",
+      // ],
+      conclusion: "Rates (₹):`",
+      showPricingTable: true,
     },
   ];
 

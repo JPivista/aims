@@ -5,6 +5,7 @@ import Since from './Since'
 import SelectYourCourse from './SelectYourCourse'
 // import AimersInAction from './AimersInAction'
 import SocialFeed from './SocialFeed'
+import Slide from './Slide'
 
 const HomeComponents = () => {
   return (
@@ -15,6 +16,7 @@ const HomeComponents = () => {
       {/* <SelectYourCourse /> */}
       {/* <AimersInAction/> */}
       <SocialFeed />
+      <Slide />
     </>
   )
 }

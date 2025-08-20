@@ -1,12 +1,12 @@
-import React from 'react'
-import RotaractClub from '@/components/RotaractClub'
+import React from "react";
+import RotaractClub from "@/components/RotaractClub";
 
 const page = () => {
-    return (
-        <>
-            <RotaractClub />
-        </>
-    )
-}
+  return (
+    <>
+      <RotaractClub />
+    </>
+  );
+};
 
-export default page
+export default page;

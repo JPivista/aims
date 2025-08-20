@@ -1,7 +1,7 @@
-import React from "react"
-import HeroBanner from "./HeroBanner"
-import Publications from "./Publications"
-import OurRepository from "./OurRepository"
+import React from "react";
+import HeroBanner from "./HeroBanner";
+import Publications from "./Publications";
+import OurRepository from "./OurRepository";
 
 const ArticlesPublications = () => {
   return (
@@ -11,7 +11,7 @@ const ArticlesPublications = () => {
       <Publications />
       {/* Add more components here as they are created */}
     </div>
-  )
-}
+  );
+};
 
-export default ArticlesPublications
+export default ArticlesPublications;
