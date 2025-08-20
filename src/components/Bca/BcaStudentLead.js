@@ -19,6 +19,7 @@ const BcaStudentLead = () => {
             title={bcaStudentLeadData.title}
             description={bcaStudentLeadData.description}
             gradientOverlay={bcaStudentLeadData.gradientOverlay}
+            backgroundClassName="bg-[url('/bca/bca-our-student-placements-mobile.png')] lg:bg-[url('/bca/bca-our-student-placements.png')]"
         />
     )
 }

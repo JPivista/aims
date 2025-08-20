@@ -5,7 +5,7 @@ import StudentLeadSection from '../shared/StudentLeadSection'
 
 const McaStudentLead = () => {
     const mcaStudentLeadData = {
-        mobileImage: "/mca/mca-our-student-placements.png",
+        mobileImage: "/mca/mca-our-student-placements-mobile.png",
         desktopImage: "/mca/mca-our-student-placements.png",
         title: "Companies Our Students Have Been Placed In",
         description: "Our graduates have been recruited by top companies across sectors.",
@@ -19,6 +19,7 @@ const McaStudentLead = () => {
             title={mcaStudentLeadData.title}
             description={mcaStudentLeadData.description}
             gradientOverlay={mcaStudentLeadData.gradientOverlay}
+            backgroundClassName="bg-[url('/mca/mca-our-student-placements-mobile.png')] lg:bg-[url('/mca/mca-our-student-placements.png')]"
         />
     )
 }
