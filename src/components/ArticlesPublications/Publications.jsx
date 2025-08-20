@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Button from "@/shared/Button";
 
 const Publications = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -285,7 +286,7 @@ const Publications = () => {
     {
       title: "Books Publications",
       heading: "Individual Mentoring",
-      
+
       points: [
         "Ms. Deepa V H, Environmental Science, Dharshan Publishers, 2022",
         "Dr. Javad Ghalambor, Principles of Research Methodology, Red'Shine publication Pvt. Ltd, 2022",
@@ -324,8 +325,8 @@ const Publications = () => {
 
   const currentTabData = tabsData[activeTab];
   const hasMoreThan31Points = currentTabData.points.length > 31;
-  const displayedPoints = showAllPoints 
-    ? currentTabData.points 
+  const displayedPoints = showAllPoints
+    ? currentTabData.points
     : currentTabData.points.slice(0, 31);
 
   return (
@@ -391,13 +392,14 @@ const Publications = () => {
 
             {/* Read More/Less Button */}
             {hasMoreThan31Points && (
-              <div className="mt-6 text-center">
-                <button
-                  onClick={() => setShowAllPoints(!showAllPoints)}
-                  className="bg-[#A22877] text-white px-6 py-3 rounded-lg hover:bg-[#8B1F5F] transition-colors duration-300 font-semibold text-lg"
-                >
-                  {showAllPoints ? "Show Less" : `Read More (${currentTabData.points.length - 31} more items)`}
-                </button>
+              <div className="mt-6 text-center mx-auto flex justify-center">
+                <Button onClick={() => setShowAllPoints(!showAllPoints)}>
+                  {showAllPoints
+                    ? "Show Less"
+                    : `Read More (${
+                        currentTabData.points.length - 31
+                      } more items)`}
+                </Button>
               </div>
             )}
           </div>
