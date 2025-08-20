@@ -5,7 +5,7 @@ import React from 'react'
 const CfcWhyItMatters = () => {
     return (
         <>
-            <div className="relative w-full lg:min-h-[60vh] min-h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-consulting/cfc-why-its-matter-n.png')] lg:bg-[url('/centre-for-consulting/cfc-why-its-matter-n.png')]">
+            <div className="relative w-full lg:min-h-[60vh] min-h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-consulting/cfc-why-its-matter-mobile.png')] lg:bg-[url('/centre-for-consulting/cfc-why-its-matter-n.png')]">
                 {/* Gradient Overlay - Figma Design */}
                 <div
                     className="absolute inset-0"
@@ -16,12 +16,12 @@ const CfcWhyItMatters = () => {
                 </div>
 
                 {/* Top Content Container */}
-                <div className="relative z-10 h-full flex flex-col items-start justify-center lg">
-                    <div className="container mx-auto py-4 px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-4">
+                <div className="relative z-10 h-full flex flex-col items-start justify-center">
+                    <div className="container mx-auto py-4 px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-4">
                         <div className='col-span-1'>
 
                         </div>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4 lg:mt-0 mt-96">
                             <h3 className="text-white playfair-300 leading-0">
                                 Why It Matters
                             </h3>

@@ -48,7 +48,7 @@ const CfcCurrentAssignments = () => {
     return (
         <div className='justify-center items-center pb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
             <div className='container mx-auto'>
-                <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                <div className='flex flex-col bg-transparent relative z-10'>
                     {/* Current Assignments Section */}
                     <div>
                         <h4 className='text-2xl lg:text-3xl monser-600 text-[#0C2165] mb-6'>

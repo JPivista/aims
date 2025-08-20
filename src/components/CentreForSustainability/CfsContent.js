@@ -15,7 +15,7 @@ const CfsContent = () => {
                     />
                 </div>
                 <div className='container mx-auto'>
-                    <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
                         <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
                             AIMing for a Sustainable
                             <br className='hidden md:block' />

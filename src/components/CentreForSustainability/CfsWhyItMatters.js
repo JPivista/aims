@@ -5,7 +5,7 @@ import React from 'react'
 const CfsWhyItMatters = () => {
     return (
         <>
-            <div className="relative w-full lg:h-[60vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-sustainability/cfr-why-it-matters-bg.png')] lg:bg-[url('/centre-for-sustainability/cfr-why-it-matters-bg.png')] mb-10">
+            <div className="relative w-full lg:h-[60vh] min-h-[80vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-sustainability/cfc-why-its-matter-mobile.png')] lg:bg-[url('/centre-for-sustainability/cfr-why-it-matters-bg.png')]">
                 {/* Gradient Overlay - Figma Design */}
                 <div
                     className="absolute inset-0"
@@ -16,12 +16,12 @@ const CfsWhyItMatters = () => {
                 </div>
 
                 {/* Top Content Container */}
-                <div className="relative z-10 h-full flex flex-col items-start justify-center lg">
+                <div className="relative z-10 h-full flex flex-col items-start justify-center">
                     <div className="container mx-auto py-4 px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-4">
                         <div className='col-span-1'>
 
                         </div>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-4 lg:mt-0 mt-80">
                             <h3 className="text-white playfair-300 leading-0">
                                 Why It Matters
                             </h3>

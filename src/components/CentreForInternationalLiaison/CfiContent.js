@@ -15,13 +15,13 @@ const CfiContent = () => {
                     />
                 </div>
                 <div className='container mx-auto'>
-                    <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
                         <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
                             AIM for Global Perspective
                             <br className='hidden md:block' />
                             Future for All
                         </h3>
-                        <div className='lg:w-[75%] w-full '>
+                        <div className='lg:w-[75%] w-full flex flex-col gap-4'>
                             <p className='text-start text-lg lg:text-[20px] monser-400'>
                                 We will be happy to collaborate with you. Contact us at <a href='mailto:acil@theaims.ac.in' className='text-[#A22877]'>acil@theaims.ac.in</a>
                             </p>

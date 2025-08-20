@@ -211,9 +211,9 @@ const CfsStudentEvents = () => {
     }
 
     return (
-        <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+        <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
             <div className='container mx-auto'>
-                <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                <div className='flex flex-col bg-transparent relative z-10'>
                     {/* Header Section */}
                     <div className='text-left mb-12'>
                         <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
@@ -229,7 +229,7 @@ const CfsStudentEvents = () => {
                     {/* Timeline Layout */}
                     <div className=' flex-col lg:flex-row gap-8 grid grid-cols-1 lg:grid-cols-6'>
                         {/* Year Navigation */}
-                        <div className='flex flex-col gap-4 flex-shrink-0 col-span-1 w-20'>
+                        <div className='flex md:flex-col flex-row flex-wrap gap-4 flex-shrink-0 col-span-1 w-20'>
                             {years.map((year) => (
                                 <button
                                     key={year}
@@ -246,7 +246,7 @@ const CfsStudentEvents = () => {
                         </div>
 
                         {/* Event Details */}
-                        <div className='flex-1 border-l-2 border-black pl-8 min-h-[400px] col-span-5'>
+                        <div className='flex-1 md:border-l-2 border-t-2 md:border-t-0 border-black md:pl-8 pl-0 min-h-[400px] col-span-5'>
                             {eventsData[selectedYear]?.map((event, index) => (
                                 <div key={index} className='mb-8'>
                                     <button
@@ -300,7 +300,7 @@ const CfsStudentEvents = () => {
                 </div>
 
                 {/* Concluding Statement */}
-                <div className='mt-12 pt-4'>
+                <div className='mt-2 pt-4'>
                     <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl'>
                         These initiatives allow students to experience the arc from classroom awareness to field action, strengthening their confidence as future leaders of sustainable change.
                     </p>
