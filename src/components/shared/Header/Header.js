@@ -70,7 +70,7 @@ export default function Header() {
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
           <motion.div
-            className="container mx-auto flex items-center justify-between px-4 py-3 w-full flex-1"
+            className="container mx-auto flex items-center justify-between px-4 py-3 w-full h-[10vh]"
             layout
             transition={{
               duration: 0.6,
@@ -86,13 +86,15 @@ export default function Header() {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
-              <Image
-                src="/logo.svg"
-                alt="Logo"
-                width={200}
-                height={200}
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="Logo"
+                  width={200}
+                  height={200}
+                  priority
+                />
+              </Link>
             </motion.div>
 
             {/* Desktop Right Section */}
@@ -144,7 +146,7 @@ export default function Header() {
 
           {/* BOTTOM NAV (Desktop) */}
           <motion.div
-            className="hidden lg:block bg-[#6E3299] w-full"
+            className="hidden lg:flex bg-[#6E3299] w-full h-[7vh] items-center justify-center"
             layout
             transition={{
               duration: 0.6,
@@ -257,7 +259,7 @@ export default function Header() {
       <motion.div
         className="w-full"
         style={{
-          height: isSticky ? "16vh" : "0px", // 16vh height on medium screens and above
+          height: isSticky ? "22vh md:19vh lg:16vh xl:15vh" : "0px", // Responsive height based on screen size
         }}
         transition={{
           duration: 0.8,

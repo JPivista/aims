@@ -135,7 +135,7 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
 
   return (
     <div
-      className="py-4 overflow-hidden shadow-lg"
+      className="h-[7vh] overflow-hidden shadow-lg flex items-center"
       style={{ backgroundColor: "#A22877" }}
     >
       <div className="container mx-auto flex justify-center items-center">

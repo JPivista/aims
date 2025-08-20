@@ -5,7 +5,7 @@ import Image from "next/image"
 const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
   return (
     <>
-      <div className="relative w-full h-[80vh] md:h-[76vh] lg:h-[75vh] xl:h-[76vh] 2xl:h-[80.5vh] 3xl:h-[90vh] overflow-hidden">
+      <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-business/school-of-business-banner.png')]" />
 
