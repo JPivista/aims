@@ -14,7 +14,7 @@ const AtAims = () => {
             are ready to step confidently into the professional world.
           </p>
           <p>
-            Our dedicated Corporate & Public Relations (CPR) team works closely
+            Our dedicated <b className="monser-600">Corporate & Public Relations (CPR)</b> team works closely
             with recruiting partners to identify the right fit, streamline the
             placement process, and ensure timely coordination across
             departments.

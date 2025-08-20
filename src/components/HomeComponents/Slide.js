@@ -79,7 +79,7 @@
 //       <div className="max-w-7xl mx-auto">
 //         {/* TOP SECTION - Main Content */}
 //         <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-          
+
 //           {/* LEFT IMAGE */}
 //           <div className="relative h-full md:h-[600px] w-full flex items-center justify-center">
 //             <AnimatePresence mode="wait">
@@ -121,7 +121,7 @@
 //             </div>
 //           </div>
 //         </div>
-        
+
 //         {/* BOTTOM SECTION - Thumbnails Carousel */}
 //         <div className="flex gap-4 overflow-x-auto pb-4">
 //           {courses.map((course, index) => (
@@ -154,7 +154,6 @@
 //     </div>
 //   );
 // }
-
 
 "use client";
 import React, { useRef, useEffect, useState } from "react";
@@ -220,17 +219,29 @@ export default function ExactSwapCarousel() {
   useEffect(() => {
     const el = thumbsRef.current[current];
     if (el && typeof el.scrollIntoView === "function") {
-      el.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      el.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
     }
   }, [current]);
 
-  const prev = () => setCurrent((p) => (p - 1 + courses.length) % courses.length);
+  const prev = () =>
+    setCurrent((p) => (p - 1 + courses.length) % courses.length);
   const next = () => setCurrent((p) => (p + 1) % courses.length);
   const goTo = (i) => setCurrent(i);
 
   return (
     <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-purple-800 text-white p-6 md:p-12 relative overflow-hidden">
       <div className="container mx-auto">
+        <div>
+          <h3> Select your Course</h3>
+          <p className="pb-4"> 
+            Explore our schools, see their potential paths, and select the <br /> one
+            that fits your goal.
+          </p>
+        </div>
         <div className="md:flex gap-6 md:gap-12 items-center">
           {/* LEFT - Big Image */}
           <div className="flex justify-center items-center">
@@ -246,8 +257,8 @@ export default function ExactSwapCarousel() {
                   className="rounded-lg overflow-hidden"
                 >
                   <Image
-                  width={270}
-                  height={270}
+                    width={250}
+                    height={250}
                     src={courses[current].leftImage}
                     alt={courses[current].title}
                     className="h-[320px] md:h-full object-cover block"
@@ -289,7 +300,10 @@ export default function ExactSwapCarousel() {
                     </li>
                   ))}
                 </ul>
-                <Button showReadMore={false} className="hover:text-white hover:border-white">
+                <Button
+                  showReadMore={false}
+                  className="hover:text-white hover:border-white"
+                >
                   <Link href="/campus-life">Browse All Programs</Link>
                 </Button>
               </motion.div>
@@ -298,7 +312,7 @@ export default function ExactSwapCarousel() {
             {/* THUMBNAILS */}
             <motion.div
               ref={thumbsContainerRef}
-              className="flex gap-4 overflow-x-auto pb-2 mt-4 items-center"
+              className="flex gap-4 overflow-x-auto pb-2 mt-10 items-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
@@ -324,7 +338,11 @@ export default function ExactSwapCarousel() {
                       className="w-full h-full object-cover block"
                       initial={false}
                       animate={isActive ? { y: -16 } : { y: 0 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
                       draggable={false}
                     />
                     <div className="text-sm md:text-sm font-medium truncate">
@@ -358,7 +376,3 @@ export default function ExactSwapCarousel() {
     </div>
   );
 }
-
-
-
-
