@@ -66,11 +66,11 @@ const Testimonial = () => {
                     </div>
 
                     {/* Navigation Arrows */}
-                    <div className='flex items-center justify-between w-full max-w-6xl px-4 lg:px-0 lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2'>
+                    <div className='flex items-center justify-between w-full max-w-6xl px-4 lg:px-0 lg:absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 '>
                         {/* Left Arrow */}
                         <button
                             onClick={prevTestimonial}
-                            className='w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300 shadow-lg'
+                            className='w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300 shadow-lg cursor-pointer'
                         >
                             <svg
                                 className='w-6 h-6 text-black'
@@ -90,7 +90,7 @@ const Testimonial = () => {
                         {/* Right Arrow */}
                         <button
                             onClick={nextTestimonial}
-                            className='w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300 shadow-lg'
+                            className='w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300 shadow-lg cursor-pointer'
                         >
                             <svg
                                 className='w-6 h-6 text-black'

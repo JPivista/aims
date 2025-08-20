@@ -36,7 +36,7 @@ const ValueAddedPrograms = ({
 
   return (
     <>
-      <div className="pt-10 bg-white">
+      <div className="py-10 bg-white">
         <div className="mx-5 md:mx-20 ">
           {/* Header Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-4">
@@ -53,7 +53,7 @@ const ValueAddedPrograms = ({
           </div>
 
           {/* Program Sections */}
-          <div className="space-y-4 md:space-y-6 md:mt-12 mt-6 ">
+          <div className="space-y-4 md:space-y-6 md:mt-8 mt-6 ">
             {programsData.map((program, index) => (
               <div key={program.id} className="relative">
                 {/* Partial border for non-first items */}
@@ -62,20 +62,19 @@ const ValueAddedPrograms = ({
                 )}
                 <button
                   onClick={() => handleItemClick(program.title)}
-                  className="w-full flex items-center justify-between text-left"
+                  className="w-full flex items-center justify-between text-left cursor-pointer"
                 >
                   <h5 className="flex items-center justify-start gap-2 md:gap-4 w-full md:w-4/5 ">
-                    <span className="break-words monser-500 md:text-[36px] text-[22px]  ">
+                    <span className="break-words monser-500 md:text-[24px] text-[22px]  ">
                       {program.title}
                     </span>
                     <Image
                       src="/nirf/arrow.svg"
                       alt="Arrow"
-                      width={31}
-                      height={31}
-                      className={`w-3 h-3 md:w-6 md:h-6 flex-shrink-0 transition-transform duration-200 ${
-                        expandedSection === program.title ? "rotate-90" : ""
-                      }`}
+                      width={20}
+                      height={20}
+                      className={`w-3 h-3 md:w-4 md:h-4 flex-shrink-0 transition-transform duration-200 ${expandedSection === program.title ? "rotate-90" : ""
+                        }`}
                     />
                   </h5>
                 </button>

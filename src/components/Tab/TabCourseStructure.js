@@ -21,23 +21,22 @@ const TabCourseStructure = ({ courseData }) => {
           {/* Left Column - Navigation */}
           <div className="space-y-8 md:border-r border-black ">
             {/* Navigation Tabs */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {courseData.map((section) => (
-                <div key={section.key} className="space-y-3">
-                  <h5 className="text-[#0C2165] monser-500 text-2xl md:text-[36px]">
+                <div key={section.key} className="space-y-2">
+                  <h5 className="text-[#0C2165] monser-500 text-2xl md:text-[24px]">
                     {section.title}
                   </h5>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 ">
                     {section.tabs.map((tab) => (
                       <button
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
-                        className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium transition-all duration-200 border-[0.5px] monser-400 text-[14px] md:text-[18px]
-                                                    ${
-                                                      activeTab === tab.key
-                                                        ? "bg-[#A22877] text-white border-[#A22877] py-1 "
-                                                        : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
-                                                    }`}
+                        className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium transition-all duration-200 border-[0.5px] monser-400 text-[14px] md:text-[14px]
+                                                    ${activeTab === tab.key
+                            ? "bg-[#A22877] text-white border-[#A22877] py-1 "
+                            : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
+                          }`}
                       >
                         {tab.label}
                       </button>
@@ -55,22 +54,9 @@ const TabCourseStructure = ({ courseData }) => {
                 (tab) =>
                   activeTab === tab.key && (
                     <div key={tab.key} className="space-y-6">
-                      <h5 className="text-[#A22877] text-2xl md:text-3xl lg:text-5xl monser-600">
+                      <h5 className="text-[#A22877] text-2xl md:text-3xl monser-600">
                         {section.title}
                       </h5>
-
-                      {/* Student Image */}
-                      {tab.image && (
-                        <div className="overflow-hidden mr-4 md:mr-20">
-                          <Image
-                            src={tab.image}
-                            alt="Students"
-                            width={128}
-                            height={80}
-                            className="w-full h-full object-cover rounded-xl"
-                          />
-                        </div>
-                      )}
 
                       {/* Course Content */}
                       <AnimatePresence mode="wait">

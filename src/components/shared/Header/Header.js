@@ -18,6 +18,12 @@ export default function Header() {
   const [active, setActive] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
 
+  // Function to close mobile menu
+  const closeMobileMenu = () => {
+    setMobileOpen(false);
+    setActive(null);
+  };
+
   const { scrollY } = useScroll();
 
   // Ultra-smooth sticky behavior with debouncing
@@ -201,14 +207,16 @@ export default function Header() {
                   className="w-full border rounded-full px-4 py-2 mb-3"
                 />
                 <Link
-                  href="#"
+                  href="/aims-alumni-association"
                   className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                  onClick={closeMobileMenu}
                 >
                   Alumni
                 </Link>
                 <Link
                   href="#"
                   className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                  onClick={closeMobileMenu}
                 >
                   Resources
                 </Link>
@@ -240,7 +248,11 @@ export default function Header() {
                       <ul className="bg-gray-50">
                         {menu.links.map((link, i) => (
                           <li key={i} className="px-6 py-2">
-                            <Link href={link.href || "#"} className="block text-gray-700">
+                            <Link
+                              href={link.href || "#"}
+                              className="block text-gray-700"
+                              onClick={closeMobileMenu}
+                            >
                               {link.name}
                             </Link>
                           </li>
