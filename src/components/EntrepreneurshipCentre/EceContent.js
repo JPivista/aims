@@ -9,7 +9,7 @@ const EceContent = () => {
                     <div className='flex flex-col justify-center items-center gap-4 lg:px-0 px-4 bg-transparent relative z-10'>
                         <h3 className='text-center text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
                             Choose Your Goal.
-                            <br className='hidden md:block' />
+                            <br />
                             AIM to Build.
                         </h3>
                         <div className='w-full flex flex-col gap-4'>

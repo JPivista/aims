@@ -26,11 +26,11 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                 ></div>
 
                 {/* Bottom Content Container */}
-                <div className="absolute bottom-20 left-0 right-0">
-                    <div className="container mx-auto py-4 px-6 lg:px-8">
-                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
+                <div className="absolute md:bottom-10 bottom-0 left-0 right-0 px-4 lg:px-0">
+                    <div className="container mx-auto">
+                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
                             <div className="flex items-center">
-                                <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
+                                <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
                                     Rotaract Club
                                     <br className='hidden md:block' />
                                     of AIMS

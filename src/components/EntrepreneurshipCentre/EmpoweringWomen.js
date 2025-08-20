@@ -66,9 +66,9 @@ const EmpoweringWomen = () => {
                     />
                 </div>
                 <div className='container mx-auto'>
-                    <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
                         {/* Header Section */}
-                        <div className='text-left mb-12'>
+                        <div className='text-left'>
                             <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
                                 Empowering Women
                                 <br className='hidden md:block' />
@@ -90,7 +90,7 @@ const EmpoweringWomen = () => {
 
             <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
                 <div className='container mx-auto'>
-                    <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
                         {/* Participant Voices Section */}
                         <div className='grid grid-cols-1 lg:grid-cols-5 gap-8'>
                             {/* Left Column - Participant Names */}

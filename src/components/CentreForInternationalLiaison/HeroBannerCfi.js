@@ -6,7 +6,7 @@ const HeroBannerCfi = ({ announcements, pageType = 'centreForInternationalLiaiso
     return (
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
-                {/* Background Image */}
+                {/* Background Image Desktop*/}
                 <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-international-liaison/centre-for-international-liaison-herobanner.png')]" />
 
                 {/* Background Image - Mobile */}

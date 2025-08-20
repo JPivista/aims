@@ -40,7 +40,7 @@ const Testimonial = () => {
     }
 
     return (
-        <div className='w-full bg-[#4A148C] py-10 mb-10'>
+        <div className='w-full bg-[#4A148C] py-10'>
             <div className='container mx-auto px-4 lg:px-8'>
                 <div className='flex flex-col items-center text-center relative'>
                     {/* Title */}

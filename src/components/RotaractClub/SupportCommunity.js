@@ -34,39 +34,41 @@ const SupportCommunity = () => {
 
   return (
     <div className="w-full bg-[#E1F9F4] py-10 lg:px-0 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Column - Image */}
-        <div className="flex flex-col gap-4 h-fit">
-          <div className="w-full h-[400px] md:h-[500px] relative">
-            <Image
-              src="/rotaract-club/support-for-community.png"
-              alt="Community Support Event"
-              fill
-              className="object-cover rounded-lg"
-            />
+      <div className='container mx-auto'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Left Column - Image */}
+          <div className="flex flex-col gap-4 h-fit">
+            <div className="w-full h-[400px] md:h-[500px] relative">
+              <Image
+                src="/rotaract-club/support-for-community.png"
+                alt="Community Support Event"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
           </div>
-        </div>
 
-        {/* Right Column - Content */}
-        <div className="flex flex-col md:pl-8 pl-0 justify-start">
-          <h3 className="text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-6">
-            Support for Community
-          </h3>
-          <div>
-            {displayedContent.map((paragraph, index) => (
-              <p key={index} className="mt-4 pe-4">
-                {paragraph.text}
-              </p>
-            ))}
-            
-            {hasMoreContent && (
-              <button
-                onClick={() => setIsExpanded(!isExpanded)}
-                className="text-[#000] text-xl monser-600 hover:underline cursor-pointer mt-4 inline-block"
-              >
-                {isExpanded ? "Read Less" : "Read More"}
-              </button>
-            )}
+          {/* Right Column - Content */}
+          <div className="flex flex-col md:pl-8 pl-0 justify-start">
+            <h3 className="text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-6">
+              Support for Community
+            </h3>
+            <div>
+              {displayedContent.map((paragraph, index) => (
+                <p key={index} className="mt-4 pe-4">
+                  {paragraph.text}
+                </p>
+              ))}
+
+              {hasMoreContent && (
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="text-[#000] text-xl monser-600 hover:underline cursor-pointer mt-4 inline-block"
+                >
+                  {isExpanded ? "Read Less" : "Read More"}
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

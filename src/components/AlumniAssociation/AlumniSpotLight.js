@@ -4,18 +4,18 @@ import Button from '@/shared/Button'
 
 const AlumniSpotLight = () => {
     return (
-        <div className='w-full bg-[#531675] py-20'>
+        <div className='w-full bg-[#531675] py-10'>
             <div className='container mx-auto px-4 lg:px-8'>
                 <div className='flex flex-col items-center text-center max-w-6xl mx-auto'>
                     {/* Main Title */}
                     <h2 className='text-4xl lg:text-6xl playfair-300 text-white mb-8 leading-tight'>
                         Alumni Spotlight:
-                        <br className='hidden md:block' />
+                        <br />
                         AIMers Who Inspire
                     </h2>
 
                     {/* Descriptive Paragraphs */}
-                    <div className='mb-12 space-y-4'>
+                    <div className='mb-8 space-y-4'>
                         <p className='text-lg lg:text-xl text-white leading-relaxed'>
                             Meet some of our alumni who&apos;ve gone on to do incredible things across industries—from business and hospitality to tech and the arts.
                         </p>
@@ -32,7 +32,7 @@ const AlumniSpotLight = () => {
                     </div>
 
                     {/* Quote Attribution */}
-                    <div className='mb-12'>
+                    <div className='mb-8'>
                         <p className='text-lg text-white'>
                             — Ananya J., Batch of 2018
                         </p>

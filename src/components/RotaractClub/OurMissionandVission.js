@@ -79,7 +79,7 @@ const OurMissionandVission = () => {
       </div>
 
       <div className="w-full bg-white py-10 border-b border-gray-200">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-0">
           {/* Our Mission Section */}
           <div>
             <div className="items-center grid grid-cols-1 lg:grid-cols-3 ">
