@@ -10,9 +10,11 @@ const AmbitionsSection = ({
   bgColor = "bg-[#531675]",
 }) => {
   return (
-    <div className={`${bgColor} py-8 sm:py-12 md:py-16 lg:py-20 relative`}>
+    <div
+      className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative`}
+    >
       {/* Background SVG */}
-      <div className="absolute top-[13%] left-0 md:block hidden">
+      <div className="absolute top-[13%] left-0 hidden md:block">
         <Image
           src="/school-circle.svg"
           alt="Ambitions Section Background"
@@ -22,8 +24,8 @@ const AmbitionsSection = ({
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-20 items-center">
+      <div className="px-4  md:px-12">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start">
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2 flex justify-center z-10">
             <Image
@@ -31,23 +33,23 @@ const AmbitionsSection = ({
               alt={imageAlt}
               width={600}
               height={600}
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[600px] h-auto"
+              className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px] object-cover"
             />
           </div>
 
           {/* Right Side - Content */}
-          <div className="w-full lg:w-2/3 flex flex-col space-y-4 sm:space-y-6 md:space-y-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-bold text-white playfair-300 leading-tight text-center lg:text-left">
+          <div className="w-full lg:w-2/3 flex flex-col space-y-3 md:space-y-6  text-white">
+            <h2 className="text-3xl  md:text-[60px]  playfair-300 text-center md:text-left">
               {heading}
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed monser-400 text-center lg:text-left">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl monser-400 text-center md:text-left  leading-relaxed">
               "{content}"
             </p>
 
             {/* Name */}
             <div className="text-center lg:text-left">
               <h4
-                className="!text-white monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px] leading-tight"
+                className="!text-white monser-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] leading-tight"
                 style={{ color: "white" }}
               >
                 - {name}

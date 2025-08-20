@@ -5,7 +5,7 @@ const HowToApply = () => {
   const deadlines = [
     {
       program: "MBA Program (Non-PGCET)",
-      deadline: "March 31, 2025",
+      deadline: "31st August 2025",
     },
     {
       program: "Postgraduate Programs (Non-MBA)",
@@ -13,7 +13,7 @@ const HowToApply = () => {
     },
     {
       program: "Undergraduate Programs",
-      deadline: "15th August 2025",
+      deadline: "31st August 2025",
     },
   ]
 
@@ -33,7 +33,7 @@ const HowToApply = () => {
       {/* How to Apply */}
       <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-20">
+        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#A22877] mb-3 sm:mb-4 playfair-300 leading-tight">
             How to Apply
           </h2>
@@ -69,7 +69,7 @@ const HowToApply = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8 px-4 sm:px-6 md:px-8">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
           <Image
             src="/admission-process/apply.svg"
             alt="Admission Process"

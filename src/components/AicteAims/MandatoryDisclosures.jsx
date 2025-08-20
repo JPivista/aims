@@ -11,16 +11,9 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "MBA Mandatory Disclosures 2022",
-          download: "mba-mandatory-disclosures-2022.pdf",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac29c3d286603aef5efea6/1672227271822/AICTE+MBA+final+Mandatory+disclosure+2022.pdf",
           hasView: true,
-        },
-        {
-          text: "MBA Mandatory Disclosures 2023",
-          download: "mba-mandatory-disclosures-2023.pdf",
-        },
-        {
-          text: "MBA Mandatory Disclosures 2024",
-          download: "mba-mandatory-disclosures-2024.pdf",
         },
       ],
       hasDownload: true,
@@ -30,15 +23,9 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "MCA Mandatory Disclosures 2022",
-          download: "mca-mandatory-disclosures-2022.pdf",
-        },
-        {
-          text: "MCA Mandatory Disclosures 2023",
-          download: "mca-mandatory-disclosures-2023.pdf",
-        },
-        {
-          text: "MCA Mandatory Disclosures 2024",
-          download: "mca-mandatory-disclosures-2024.pdf",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac29f6d00c0131b3095129/1672227323982/AICTE+MCA+Final+Mandatory+Disclosure+2022.pdf",
+          hasView: true,
         },
       ],
     },
@@ -47,15 +34,9 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "BHM Mandatory Disclosures 2022",
-          download: "bhm-mandatory-disclosures-2022.pdf",
-        },
-        {
-          text: "BHM Mandatory Disclosures 2023",
-          download: "bhm-mandatory-disclosures-2023.pdf",
-        },
-        {
-          text: "BHM Mandatory Disclosures 2024",
-          download: "bhm-mandatory-disclosures-2024.pdf",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2a1f4080065acc4205e0/1672227365484/AICTE+BHM+final+Mandatory+disclosure+2022.pdf",
+          hasView: true,
         },
       ],
     },
@@ -75,9 +56,7 @@ const MandatoryDisclosures = () => {
           onClick={() => handleProgramClick(program)}
         >
           <div className="flex-1">
-            <h5 className="mb-2 monser-500 text-xl md:text-[36px]">
-              {program}
-            </h5>
+            <h5 className="monser-500 text-xl md:text-[36px]">{program}</h5>
           </div>
           <Image
             src="/nirf/arrow.svg"
@@ -96,18 +75,18 @@ const MandatoryDisclosures = () => {
               <ul className="text-sm md:text-base monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
                 {description.map((point, index) => (
                   <li key={index} className="relative">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                      <span className="mb-2 md:mb-0">{point.text}</span>
+                    <span>
+                      {point.text} -{" "}
                       <a
-                        href={`/mandatory-disclosures/${point.download}`}
+                        href={point.download}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#A22877] underline cursor-pointer text-sm md:ml-4"
+                        className="text-[#A22877] underline cursor-pointer"
                         onClick={(e) => e.stopPropagation()}
                       >
                         {point.hasView ? "View" : "Download"}
                       </a>
-                    </div>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -119,7 +98,7 @@ const MandatoryDisclosures = () => {
   }
 
   return (
-    <div className="py-4 md:py-6">
+    <div className="py-4 md:pb-10">
       <div className="mx-4 md:mx-20">
         <div className="mb-2">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C2165] playfair-300 mb-4">

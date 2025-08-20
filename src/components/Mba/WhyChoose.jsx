@@ -17,7 +17,7 @@ const WhyChoose = () => {
         </div>
         <p className="monser-400 w-full md:w-4/5 py-4  md:py-8 text-sm md:text-[18px] text-center md:px-4 leading-relaxed">
           At AIMS School of Business, ranked among the{" "}
-          <b className="monser-600 text-black">top 1% B schools in India</b>,
+          <span className="monser-600">top 1% B schools in India</span>,
           programs are crafted like arrows, each aimed at a specific career
           path. With industry-aligned curriculum, hands-on learning, and
           career-oriented tracks, we prepare students to lead with confidence in

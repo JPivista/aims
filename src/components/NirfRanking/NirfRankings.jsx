@@ -10,50 +10,19 @@ const NirfRankings = () => {
       year: "2024",
       description: [
         {
-          text: "Comprehensive ranking data for 2024",
-          download: "nirf-2024-ranking-data.pdf",
-        },
-        {
-          text: "Academic performance metrics",
-          download: "nirf-2024-academic-metrics.pdf",
-        },
-        {
-          text: "Research and innovation scores",
-          download: "nirf-2024-research-scores.pdf",
-        },
-        {
-          text: "Industry collaboration details",
-          download: "nirf-2024-industry-collaboration.pdf",
-        },
-        {
-          text: "Student satisfaction ratings",
-          download: "nirf-2024-student-satisfaction.pdf",
+          text: "You can download and view our submitted information using this link",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e93ba536f8653e8c5f2c32/1709783975960/NIRF_AIMS_2024.pdf",
         },
       ],
-      hasDownload: true,
     },
     {
       year: "2023",
       description: [
         {
-          text: "NIRF 2023 ranking details and performance metrics",
-          download: "nirf-2023-ranking-details.pdf",
-        },
-        {
-          text: "Institutional data and academic achievements",
-          download: "nirf-2023-institutional-data.pdf",
-        },
-        {
-          text: "Research output and publication statistics",
-          download: "nirf-2023-research-output.pdf",
-        },
-        {
-          text: "Faculty quality and student-teacher ratio",
-          download: "nirf-2023-faculty-quality.pdf",
-        },
-        {
-          text: "Infrastructure and facilities assessment",
-          download: "nirf-2023-infrastructure.pdf",
+          text: "You can download and view our submitted information using this link",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e93cb5028ea23a4f655ee4/1709784248142/NIRF_AIMS_2023.pdf",
         },
       ],
     },
@@ -61,24 +30,9 @@ const NirfRankings = () => {
       year: "2022",
       description: [
         {
-          text: "NIRF 2022 comprehensive ranking analysis",
-          download: "nirf-2022-ranking-analysis.pdf",
-        },
-        {
-          text: "Institutional performance data and metrics",
-          download: "nirf-2022-performance-data.pdf",
-        },
-        {
-          text: "Academic excellence indicators",
-          download: "nirf-2022-excellence-indicators.pdf",
-        },
-        {
-          text: "Research and development achievements",
-          download: "nirf-2022-research-achievements.pdf",
-        },
-        {
-          text: "Student placement and career outcomes",
-          download: "nirf-2022-placement-outcomes.pdf",
+          text: "You can download and view our submitted information using this link",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a594e3021154409d655bb7/1671795939371/Acharya+Institute+of+Management+and+Science20220228-.pdf",
         },
       ],
     },
@@ -86,24 +40,9 @@ const NirfRankings = () => {
       year: "2021",
       description: [
         {
-          text: "NIRF 2021 ranking information",
-          download: "nirf-2021-ranking-info.pdf",
-        },
-        {
-          text: "Academic performance and research metrics",
-          download: "nirf-2021-academic-research.pdf",
-        },
-        {
-          text: "Faculty qualifications and experience",
-          download: "nirf-2021-faculty-qualifications.pdf",
-        },
-        {
-          text: "Student diversity and inclusion data",
-          download: "nirf-2021-diversity-inclusion.pdf",
-        },
-        {
-          text: "Industry partnerships and collaborations",
-          download: "nirf-2021-industry-partnerships.pdf",
+          text: "You can download and view our submitted information using this link",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a59575e22cf43d26c3d26b/1671796085455/NIRF-2021.pdf",
         },
       ],
     },
@@ -111,24 +50,9 @@ const NirfRankings = () => {
       year: "2020",
       description: [
         {
-          text: "NIRF 2020 detailed ranking data",
-          download: "nirf-2020-ranking-data.pdf",
-        },
-        {
-          text: "Institutional assessment information",
-          download: "nirf-2020-assessment-info.pdf",
-        },
-        {
-          text: "Teaching and learning outcomes",
-          download: "nirf-2020-teaching-outcomes.pdf",
-        },
-        {
-          text: "Research publications and citations",
-          download: "nirf-2020-research-publications.pdf",
-        },
-        {
-          text: "Graduation rates and employment statistics",
-          download: "nirf-2020-graduation-employment.pdf",
+          text: "You can download and view our submitted information using this link",
+          download:
+            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a595d8590d6528d29ab0c6/1671796184984/NIRF-2020.pdf",
         },
       ],
     },
@@ -138,19 +62,17 @@ const NirfRankings = () => {
     setExpandedYear(expandedYear === year ? null : year)
   }
 
-  const NirfYearItem = ({ year, description, hasDownload = false }) => {
+  const NirfYearItem = ({ year, description }) => {
     const isExpanded = expandedYear === year
 
     return (
       <div className="border-b border-black">
         <div
-          className="flex items-center justify-between py-2 md:py-6 cursor-pointer transition-colors duration-200"
+          className="flex items-center justify-between py-2 md:py-2 cursor-pointer transition-colors duration-200"
           onClick={() => handleYearClick(year)}
         >
           <div className="flex-1">
-            <h5 className="mb-2 monser-500 text-xl md:text-[36px]">
-              NIRF {year}
-            </h5>
+            <h5 className="monser-500 text-xl md:text-[36px]">NIRF {year}</h5>
           </div>
           <Image
             src="/nirf/arrow.svg"
@@ -169,18 +91,18 @@ const NirfRankings = () => {
               <ul className="text-sm md:text-base monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
                 {description.map((point, index) => (
                   <li key={index} className="relative">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                      <span className="mb-2 md:mb-0">{point.text}</span>
+                    <span>
+                      {point.text} -{" "}
                       <a
-                        href={`/nirf-documents/${point.download}`}
+                        href={point.download}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#A22877] underline cursor-pointer text-sm md:ml-4"
+                        className="text-[#A22877] underline cursor-pointer"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Download
                       </a>
-                    </div>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -193,13 +115,12 @@ const NirfRankings = () => {
 
   return (
     <div className="bg-[#E0F8F3] py-4 md:py-6">
-      <div className="mx-4 md:mx-30">
+      <div className="mx-4 md:mx-20">
         {nirfYears.map((item, index) => (
           <NirfYearItem
             key={index}
             year={item.year}
             description={item.description}
-            hasDownload={item.hasDownload}
           />
         ))}
       </div>

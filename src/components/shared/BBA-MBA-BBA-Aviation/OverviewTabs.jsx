@@ -18,7 +18,7 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   }, [activeTab])
 
   return (
-    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-10 w-full py-6 sm:py-8 md:py-10">
+    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-10 w-full py-6 sm:py-8 md:py-6">
       {/* Tabs */}
       <div
         ref={containerRef}
@@ -28,7 +28,7 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`whitespace-nowrap rounded-full px-3 sm:px-4 md:px-6 py-2 sm:py-3 text-sm sm:text-base md:text-lg transition border snap-start font-medium
+            className={`whitespace-nowrap rounded-full px-3 sm:px-4 md:px-6 py-2 md:py-2 text-sm md:text-lg transition border snap-start font-medium
               ${
                 activeTab === tab.key
                   ? "bg-[#a22978] text-white border-transparent active-tab"
@@ -41,12 +41,14 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
       </div>
 
       {/* Content */}
-      <div className="w-full bg-white rounded-lg  md:rounded-2xl p-4  md:p-8  mx-4  md:mx-8  max-w-6xl">
+      <div className="w-full bg-white rounded-lg md:rounded-2xl p-4 md:px-16 md:pb-6 md:pt-10 mx-4 md:mx-8 ">
         <div className="w-full">
           {tabs.map((tab) => (
             <div
               key={tab.key}
-              className={`w-full ${activeTab === tab.key ? "block" : "hidden"}`}
+              className={`w-full ${
+                activeTab === tab.key ? "block" : "hidden"
+              } tracking-wider`}
             >
               {tab.content}
             </div>

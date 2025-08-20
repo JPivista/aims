@@ -12,7 +12,17 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           alt="Eresources"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover"
+          className="hidden md:block w-full h-full object-cover"
+          priority
+        />
+
+        {/* Mobile Background Image */}
+        <Image
+          src="/eresources/mobile-banner.png"
+          alt="Eresources"
+          width={1920}
+          height={1080}
+          className="block md:hidden w-full h-full object-cover"
           priority
         />
 
@@ -26,39 +36,28 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         ></div>
 
         {/* Empower Image*/}
-        <div className="absolute left-4 sm:left-8 md:left-12 lg:left-20 xl:left-20 top-4 sm:top-6 md:top-8 lg:top-10 xl:top-10">
+        <div className="absolute left-4 md:left-20 -top-10 md:top-12">
           <Image
-            src="/eresources/empower.svg"
+            src="/white-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-full lg:h-full xl:w-full xl:h-full"
+            className="w-35 h-35 md:w-full md:h-full"
             priority
           />
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute bottom-20 left-0 right-0">
-          <div className="container mx-auto">
-            <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
-              <div className="flex items-center">
-                <h1 className="text-white text-3xl lg:text-[60px] playfair-300">
-                  Library Subscribed Resources
-                  <br className="hidden md:block" />
-                  (E-Resources)
-                </h1>
-              </div>
-              {/* <div className="flex items-center">
-                                <Image
-                                    src="/school-of-business/iacbe.png"
-                                    alt="IACBE"
-                                    width={400}
-                                    height={100}
-                                    className="object-contain"
-                                />
-                            </div> */}
-            </div>
-          </div>
+        <div className="absolute bottom-10 md:bottom-12 left-0 right-0 md:ml-20 px-2 md:px-0">
+          <h2 className="text-white text-4xl md:text-[60px] playfair-300 whitespace-nowrap text-center md:text-left">
+            Library
+            <br className="block md:hidden" />
+            <span className="hidden md:inline"> </span>
+            Subscribed Resources
+            <br className="block md:hidden" />
+            <br className="hidden md:block" />
+            (E-Resources)
+          </h2>
         </div>
       </div>
 

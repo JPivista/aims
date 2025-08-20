@@ -3,7 +3,7 @@ import HeroBannerAlumi from "./HeroBannerAlumi"
 import AimsContent from "./AimsContent"
 import Handbook from "./Handbook"
 import StudentExitFormalities from "./StudentExitFormalities"
-import AcademicCalendar from "./AcademicCalendar"
+import StudentHandbookMain from "./StudentHandbookMain"
 
 const StudentHandbook = () => {
   return (
@@ -12,7 +12,7 @@ const StudentHandbook = () => {
       <AimsContent />
       <Handbook />
       <StudentExitFormalities />
-      <AcademicCalendar />
+      <StudentHandbookMain />
     </>
   )
 }

@@ -3,8 +3,8 @@ import Image from "next/image"
 
 const InfoBoxes = ({ boxes }) => {
   return (
-    <div className="container mx-auto">
-      <div className="px-4 sm:px-6 md:px-12 lg:px-24">
+    <div className="mx-15">
+      <div className="">
         {/* Mobile: Column Layout with Horizontal Arrows */}
         <div className="flex flex-col gap-4 md:hidden">
           {boxes.map((box, index) => (
@@ -23,7 +23,7 @@ const InfoBoxes = ({ boxes }) => {
                 <h5 className="text-base text-[#A22877] mb-2 monser-600 leading-tight">
                   {box.title}
                 </h5>
-                <p className="text-sm text-[#A22877] monser-400 leading-relaxed">
+                <p className="text-sm text-[#0C2165] monser-400 leading-relaxed">
                   {box.description}
                 </p>
               </div>

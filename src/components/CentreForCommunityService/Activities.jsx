@@ -3,23 +3,23 @@ import Image from "next/image"
 
 const Activities = () => {
   return (
-    <div className="bg-[#E1F9F4] mb-4">
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 py-8 md:py-1 w-full">
+    <div className="bg-[#E1F9F4]">
+      <div className="flex flex-col md:flex-row gap-0 py-4 md:py-8 px-4 md:px-0">
         {/* Left Side - Content (3/4 width) */}
-        <div className="w-5/6 space-y-4 sm:space-y-6 lg:ml-20 ">
+        <div className="w-full md:w-4/5 space-y-4 md:space-y-6 md:ml-10 px-4 md:px-8 pb-0 mb-0">
           {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-4 sm:mb-6 playfair-300 leading-tight">
+          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-4 md:mb-6 playfair-300">
             Activities
           </h2>
 
           {/* Subtitle */}
-          <h5 className="text-lg sm:text-xl md:text-[20px] monser-600 mb-4 sm:mb-6">
+          <h5 className="text-lg md:text-[20px] monser-600 mb-4 md:mb-6">
             Our community engagement initiatives include a range of student
             development activities in Bangalore colleges, including:
           </h5>
 
           {/* Bullet Points */}
-          <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 sm:ml-6 mb-4 sm:mb-6">
+          <ul className="space-y-2 sm:space-y-3 lg:space-y-3 xl:space-y-3 list-disc list-outside ml-4 sm:ml-6 lg:ml-6 xl:ml-6 mb-4 sm:mb-6 lg:mb-6 xl:mb-6">
             {[
               "Health awareness programs, including HIV/AIDS education and mental health awareness",
               "Annual blood donation camps, in collaboration with the Lions Club",
@@ -33,7 +33,7 @@ const Activities = () => {
             ].map((activity, index) => (
               <li
                 key={index}
-                className="text-base sm:text-lg md:text-[18px]  monser-400"
+                className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400"
               >
                 {activity}
               </li>
@@ -41,20 +41,21 @@ const Activities = () => {
           </ul>
 
           {/* Paragraph */}
-          <p className="text-base sm:text-lg md:text-[20px] leading-relaxed monser-400 w-full lg:w-4/5">
+          <h5 className="text-base md:text-[20px] monser-400 w-full">
             These programs not only create social impact but also offer social
             work opportunities for students in Bangalore through immersive,
             real-world involvement.
-          </p>
+          </h5>
         </div>
 
         {/* Right Side - Image (1/4 width) */}
-        <div className="lg:w-2/5 flex items-end md:mt-60">
+        <div className="flex flex-col md:justify-end md:items-end justify-center items-center -mb-5 md:-mb-32">
           <Image
-            src="/community-service/activities.png"
+            src="/community-service/activities.svg"
             alt="Community Activities"
             width={800}
             height={600}
+            className="w-full md:w-[700px] h-full md:h-[600px]"
           />
         </div>
       </div>

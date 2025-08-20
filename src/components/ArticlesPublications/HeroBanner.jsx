@@ -8,7 +8,7 @@ const HeroBanner = ({
 }) => {
   return (
     <>
-      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[83vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] overflow-hidden">
         {/* Background Image */}
         <Image
           src="/articles-publications/hero-banner.png"
@@ -20,26 +20,24 @@ const HeroBanner = ({
         />
 
         {/* Empower Image*/}
-        <div className="absolute left-4 sm:left-8 md:left-12 lg:left-20 top-4 sm:top-8 md:top-12 lg:top-20">
+        <div className="absolute left-6 md:left-18 -top-10 md:top-12">
           <Image
-            src="/articles-publications/empower.svg"
+            src="/black-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-full h-full"
+            className="w-35 h-35 md:w-full md:h-full"
             priority
           />
         </div>
 
         {/* Hero Text */}
-        <div className="absolute inset-0 w-full flex flex-col justify-end">
-          <div className="container mx-auto px-4 md:px-0 py-4 md:py-10">
-            {/* Hero Text */}
-            <div className="relative z-10">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-[70px] playfair-300">
-                Articles and <br /> Publications
-              </h2>
-            </div>
+        <div className="absolute inset-0 w-full flex flex-col justify-end md:ml-15 mb-10 text-center md:text-left">
+          {/* Hero Text */}
+          <div className="relative z-10">
+            <h2 className="text-white text-4xl md:text-[66px] playfair-300 leading-tight tracking-wider">
+              Articles and <br /> Publications
+            </h2>
           </div>
         </div>
       </div>

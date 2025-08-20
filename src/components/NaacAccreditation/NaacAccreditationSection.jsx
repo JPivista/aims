@@ -17,7 +17,7 @@ const NaacAccreditationSection = () => {
               <span className=" monser-400 text-base md:text-[20px]">
                 NAAC Certificate -{" "}
                 <a
-                  href="/naac-documents/naac-certificate.pdf"
+                  href="https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac0e4f3395000bd416d4a5/1672220241857/AIMS+NAAC+Certificate+2022.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline cursor-pointer"
@@ -34,7 +34,7 @@ const NaacAccreditationSection = () => {
               <span className="monser-400 text-base md:text-[20px]">
                 AIMS NAAC Visit 16 & 17 March 2022 -{" "}
                 <a
-                  href="/naac-documents/aims-naac-visit-video.mp4"
+                  href="https://www.youtube.com/embed/17UP0CqEtPE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline cursor-pointer"

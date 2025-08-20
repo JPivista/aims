@@ -1,10 +1,45 @@
 import React from "react"
+import Image from "next/image"
 import AmbitionsSection from "../shared/BBA-MBA-BBA-Aviation/AmbitionsSection"
 
 const Ambitions = () => {
   return (
     <>
-      {/* Alumni Speak */}
+      <div className="relative">
+        <Image
+          src="/bba/acca-training.svg"
+          alt="BBA ACCA Training"
+          width={200}
+          height={200}
+          className="object-cover h-[450px] w-full"
+          priority
+        />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-20 px-4 md:px-6 lg:px-8">
+            <div className="max-w-2xl space-y-4 text-white">
+              {/* Heading */}
+              <h2 className="text-[40px] md:text-[60px] playfair-300 italic">
+                BBA+ 
+              </h2>
+
+              {/* Subheading */}
+              <h5 className="text-xl md:text-[28px] monser-600">
+                CA/ACCA Training
+              </h5>
+
+              {/* Paragraph */}
+              <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8">
+                Students can opt for CA or ACCA training alongside their <br />{" "}
+                BBA to strengthen their professional foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content Container */}
+
+      {/* Original Alumni Speak Section */}
       <AmbitionsSection
         imageSrc="/bba/alumni.svg"
         imageAlt="BBA Alumni"

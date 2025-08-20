@@ -19,9 +19,13 @@ const BbaComponents = ({ announcements }) => {
       <CourseStructure programKey="bba" />
       <Ambitions />
       <ReadyToDraw
-        title="Ready to Draw Your Bow?"
+        title={
+          <>
+            Ready to <br className="hidden md:block" /> Draw Your Bow?
+          </>
+        }
         subtitle="From helping you define your goals to guiding you through every step, we're here to help you take that first shot."
-        primaryButtonText="Apply Now for BBA"
+        primaryButtonText="Apply Now"
         secondaryButtonText="Download Brochure"
         tertiaryButtonText="Talk to a Counsellor"
       />
