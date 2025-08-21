@@ -6,7 +6,7 @@ import ApplicationMarquee from '../../shared/ApplicationMarquee'
 const HeroBannerEspr = ({ announcements, pageType = 'engineering' }) => {
     return (
         <>
-            <div className="relative w-full h-[100vh] overflow-hidden">
+            <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <Image
                     src="/environment-sustainability-policy-report/environment-sustainability-policy-report-banner.png"

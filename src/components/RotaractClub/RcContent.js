@@ -25,7 +25,7 @@ const RcContent = () => {
                         </h3>
                     </div>
 
-                    <p className='mt-4'>
+                    <p className=''>
                         The Rotaract Club is a community of young leaders who are passionate about making a positive impact in the world. Our vision is to empower our members with the skills, knowledge, and resources they need to drive change and create a better future for all. We believe that every person has the potential to make a difference, and we work to cultivate that potential through service, leadership development, and networking opportunities. Our club offers a platform for young people to take on meaningful projects, gain practical experience, and make a tangible impact in their communities. By empowering young leaders to create positive change, we aim to build a better future for all, one step at a time.
                     </p>
                 </div>

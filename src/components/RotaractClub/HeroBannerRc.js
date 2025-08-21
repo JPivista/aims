@@ -6,16 +6,12 @@ import ApplicationMarquee from '../../shared/ApplicationMarquee'
 const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
     return (
         <>
-            <div className="relative w-full h-[100vh] overflow-hidden">
-                {/* Background Image */}
-                <Image
-                    src="/rotaract-club/rotaract-club-banner.png"
-                    alt="Rotaract Club"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-full object-cover"
-                    priority
-                />
+            <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+                {/* Background Image - Desktop */}
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/rotaract-club/rotaract-club-banner.png')]" />
+
+                {/* Background Image - Mobile */}
+                <div className="md:hidden w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/rotaract-club/rotaract-club-banner-mobile.png')]" />
 
                 {/* Gradient Overlay - Figma Design */}
                 <div
@@ -26,7 +22,7 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                 ></div>
 
                 {/* Bottom Content Container */}
-                <div className="absolute md:bottom-10 bottom-0 left-0 right-0 px-4 lg:px-0">
+                <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
                     <div className="container mx-auto">
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
                             <div className="flex items-center">

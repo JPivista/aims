@@ -12,7 +12,6 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
                 {/* Background Image - Mobile */}
                 <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-finance/school-of-finance-banner-mobile.png')]" />
 
-
                 {/* Gradient Overlay - Figma Design */}
                 <div
                     className="absolute inset-0"

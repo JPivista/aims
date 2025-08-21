@@ -33,14 +33,13 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
       },
     ],
     engineering: [
-      { text: "APPLY NOW FOR B.TECH ADMISSION 2025-26", link: "/apply/btech" },
       {
-        text: "APPLY NOW FOR M.TECH SELECTION PROCESS 2025-26",
-        link: "/apply/mtech",
+        text: "APPLY NOW FOR BBA ADMISSION 2025-26",
+        link: "https://apply.theaims.ac.in/login"
       },
       {
-        text: "APPLY NOW FOR ENGINEERING DIPLOMA 2025-26",
-        link: "/apply/diploma",
+        text: "APPLY NOW FOR MBA SELECTION PROCESS 2025-26",
+        link: "https://apply.theaims.ac.in/login",
       },
     ],
     medical: [

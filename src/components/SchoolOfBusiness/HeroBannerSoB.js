@@ -28,7 +28,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
               <div className="flex items-center">
                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
                   AIMS School of <br className="hidden lg:block" />{" "}
-                  <span className="italic playfair-400">Business</span>
+                  <span className="italic playfair-400 text-[#D2EEE8]">Business</span>
                 </h1>
               </div>
               <div className="flex items-center">
