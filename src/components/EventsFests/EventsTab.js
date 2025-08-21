@@ -10,35 +10,31 @@ const EventsTab = () => {
       content: {
         heading: "Prerana – National Level Cultural & Management Fest",
         description:
-          "A launchpad for aspiring founders, supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "Hosted by students across schools, this flagship event brings together music, debate, marketing games, entrepreneurship challenges, and cultural performances.",
         features: [],
         conclusion: "",
       },
     },
     2: {
-      title: "Sanskriti",
+      title: "Sanskriti – Intercollegiate Fest",
       content: {
-        heading: "Sanskriti",
+        heading: "Sanskriti – Intercollegiate Fest",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
+          "A celebration of heritage, expression, and community spirit, featuring performing arts, literary contests, culinary shows, and more.",
         features: [
-          "Cultural immersion programs",
-          "Academic credit transfer systems",
-          "Local industry exposure and internships",
-          "Language and cultural workshops",
-          "Networking with Indian business community",
+        
         ],
         conclusion:
-          "Exchange students gain valuable insights into Indian business practices and culture while contributing to our diverse campus community.",
+          "",
       },
     },
     3: {
-      title: "Anveshana",
+      title: "Anveshana – Intra-College Academic Fest",
       content: {
-        heading: "Anveshana",
+        heading: "Anveshana – Intra-College Academic Fest",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
-        features: ["Cultural immersion programs"],
+          "Designed to showcase classroom learning in action, through simulations, project exhibitions, and problem-solving challenges.",
+        features: [],
         conclusion: "",
       },
     },
@@ -47,7 +43,7 @@ const EventsTab = () => {
       content: {
         heading: "Corporate Interface Series ",
         description:
-          " supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          " Talks and panel discussions with senior professionals from Deloitte, TCS, and other industry leaders. Helps MBA and PGDM students explore corporate trends and career paths.",
         features: [],
         conclusion: "",
       },
@@ -58,7 +54,17 @@ const EventsTab = () => {
       content: {
         heading: "Hospitality Showcase & Culinary Events ",
         description:
-          "A launchpad for aspiring founders, supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "From food festivals to theme-based events, students from our hospitality school take the lead in crafting exceptional experiences.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    6: {
+      title: "Data & Tech Hackathons",
+      content: {
+        heading: "Data & Tech Hackathons ",
+        description:
+          "For MCA and tech-stream students: intense coding, problem-solving, and analytics sessions judged by industry mentors.",
         features: [],
         conclusion: "",
       },
@@ -71,6 +77,7 @@ const EventsTab = () => {
     { id: "3", label: "Anveshana" },
     { id: "4", label: "Corporate Interface Series" },
     { id: "5", label: "Hospitality Showcase & Culinary Events" },
+    { id: "6", label: "Data & Tech Hackathons" },
   ]
 
   return (
@@ -80,7 +87,7 @@ const EventsTab = () => {
           {/* Header Section */}
           <div className="text-left mb-12">
             <h3 className="text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4">
-              Our Active Clubs
+            Signature Annual Events
             </h3>
           </div>
           {/* Mobile Tabs - Visible only on mobile */}

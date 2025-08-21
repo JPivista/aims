@@ -29,7 +29,7 @@ const WhyChooseAimsBhm = () => {
         <div className="text-center mb-8">
           <h3 className="text-2xl md:text-3xl  text-[#0C2165]">
             Why Choose the<br/>
-            <span className=" text-[#A22877] italic "> AIMS BHM?</span>
+            <span className=" text-[#A22877] italic playfair-300"> AIMS BHM?</span>
           </h3>
         </div>
 

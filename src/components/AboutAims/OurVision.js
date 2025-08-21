@@ -5,7 +5,7 @@ const Aiming = () => {
   return (
     <>
       {/* Row 2: Left Image, Right Content */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 sm:py-8 md:py-10 lg:py-12">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 sm:py-8 md:py-10 lg:py-10 mt-5">
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start  ">
           <Image
@@ -75,7 +75,7 @@ const Aiming = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end ">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end py-5">
           <Image
             src="/community-service/objectives.png"
             alt="Community Objectives"

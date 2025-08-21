@@ -7,23 +7,23 @@ import "slick-carousel/slick/slick-theme.css"
 const Campusfacpage = () => {
   const clubs = [
     {
-      text: "Real-world exposure through competitions, exhibitions, and speaker series",
+      text: "Designed for focus, flexibility, and student well-being",
       gradient: "bg-gradient-to-b from-[#531675] to-[#4F6BC2]",
     },
     {
-      text: "Cross-disciplinary collaboration across management, IT, hospitality, and life sciences",
+      text: "Equipped with smart classrooms, ICT-enabled tools, and high-speed connectivity",
       gradient: "bg-gradient-to-b from-[#4641AC] to-[#9B29DB]",
     },
     {
-      text: "Platform to host and organise, not just participate ",
+      text: "Located near major industry hubs, ideal for real-world learning and placements ",
       gradient: "bg-gradient-to-b from-[#FF6C02] to-[#DF3A68]",
     },
     {
-      text: "Opportunities to connect with alumni, industry leaders, and global guests",
+      text: "Supported by dedicated Centres for Research, Sustainability, Consulting, and Entrepreneurship",
       gradient: "bg-gradient-to-b from-[#531675] to-[#4F6BC2]",
     },
     {
-      text: "Focus on social responsibility, sustainability, and inclusive engagement",
+      text: "Fully enabled for interdisciplinary collaboration across our Schools of Management, IT, Hospitality, and Commerce",
       gradient: "bg-gradient-to-b from-[#4641AC] to-[#9B29DB]",
     },
   ]

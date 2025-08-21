@@ -5,26 +5,26 @@ import Image from "next/image"
 const data = [
   {
     title: "Curriculum:",
-    desc: "Our curriculum innovatively combines the latest global business trends with traditional academic methods.",
+    desc: "Our curriculum innovatively combines the latest global business trends with traditional academic methods",
   },
   {
     title: "Experienced Faculty:",
-    desc: "Our faculty brings together deep theoretical knowledge and real-world industry experience.",
+    desc: "Our faculty brings together deep theoretical knowledge and real-world industry experience",
   },
   {
     title: "State-of-the-Art Facilities:",
-    desc: "Our facilities are modern and advanced, enhancing the learning experience.",
+    desc: "Our facilities are modern and advanced, enhancing the learning experience",
   },
   {
     title: "Dynamic Student Community:",
-    desc: "A melting pot of diverse cultures and ideas, enriching your educational journey.",
+    desc: "A melting pot of diverse cultures and ideas, enriching your educational journey",
   },
 ]
 
 export default function ProgramHighlights() {
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-5">
+    <div className="container mx-auto px-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         {data.map((item, index) => (
           <div
             key={index}

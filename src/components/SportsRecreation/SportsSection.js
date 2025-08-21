@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const GetInvolvedSection = () => {
   return (
-    <section className="bg-[#A43177] text-white px-6 py-16">
+    <section className="bg-[#A43177] text-white px-6 py-10">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-6">
         {/* Left Content */}
         <div className="md:w-2/3">

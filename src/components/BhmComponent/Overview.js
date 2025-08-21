@@ -16,9 +16,7 @@ const Overview = () => {
             Important Dates
           </h6>
           <p className="text-gray-800 text-sm sm:text-base">
-            Here you can list important dates related to the BBA Aviation
-            program, such as application deadlines, interview schedules, and
-            admission timelines.
+          Please see the Admission Process page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -67,10 +65,7 @@ const Overview = () => {
             Selection Process
           </h6>
           <p className="text-gray-800 text-sm sm:text-base">
-            The selection process includes evaluation of academic performance
-            followed by a personal interview. Candidates will be assessed on
-            their communication skills, academic background, aviation interest,
-            and overall personality.
+          Please see the Admission Process page for important dates and deadlines for this course.
           </p>
         </>
       ),
@@ -82,7 +77,7 @@ const Overview = () => {
         {/* BBA Aviation Program overview */}
         <div className=" items-center justify-between grid grid-cols-1 md:grid-cols-2">
           <h3 className="text-[#0C2165]">
-            <span className="italic text-[#A22877]">BHM Program</span>
+            <span className="italic text-[#A22877] playfair-300">BHM Program</span>
             <br />
             Overview
           </h3>

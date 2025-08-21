@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const GetInvolvedSection = () => {
   return (
-    <section className="bg-[#FFFFFF] text-black px-6 mb-10">
+    <section className="bg-[#FFFFFF] text-black px-6 mb-14 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-6">
         {/* Left Content */}
         <div className="md:w-2/3">
@@ -22,7 +22,7 @@ const GetInvolvedSection = () => {
         </div>
 
         {/* Right Icon */}
-        <div className="md:w-1/3 flex justify-center md:justify-end">
+        <div className="md:w-1/3 flex justify-center md:justify-end ">
           <Image
             src="/about-aims/arrows.svg"
             alt="Arrow"

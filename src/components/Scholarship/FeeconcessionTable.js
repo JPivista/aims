@@ -12,7 +12,7 @@ const concessions = [
       "Completion of 12th/‘A’ Level for UG, graduation for PG from a recognised institution",
     documents: [
       "Academic transcripts",
-      "2 Recommendation letters",
+     
       "Aadhaar Card",
       "PAN Card",
       "2 Letters of Recommendation",
@@ -59,7 +59,8 @@ const concessions = [
     documents: [
       "Academic transcripts",
       "2 Recommendation letters",
-      "Aadhaar Card/PAN Card",
+      "Aadhaar Card",
+      "PAN Card",
       "2 passport photos",
     ],
   },
@@ -111,7 +112,7 @@ const concessions = [
   },
   {
     slno: 8,
-    category: "Defence & Armed Forces",
+    category: "Girl Child & Single Mother",
     description:
       "5% concession on total fee (excluding university eligibility, exam, boarding & lodging fees)",
     slots: "3",

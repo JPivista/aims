@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const QualityPolicy = () => {
   return (
-    <section className="relative w-full h-[600px] mb-10">
+    <section className="relative w-full h-[600px] mb-10 ">
       {/* Background Image */}
       <Image
         src="/about-aims/Quality-img.png"
