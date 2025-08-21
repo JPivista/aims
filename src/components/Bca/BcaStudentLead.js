@@ -5,7 +5,7 @@ import StudentLeadSection from '../shared/StudentLeadSection'
 
 const BcaStudentLead = () => {
     const bcaStudentLeadData = {
-        mobileImage: "/bca/bca-our-student-placements.png",
+        mobileImage: "/bca/bca-our-student-placements-mobile.png",
         desktopImage: "/bca/bca-our-student-placements.png",
         title: "Where Our Students Land",
         description: "Our graduates have been placed in top tech companies, startups, and consulting firms. AIMS gives you the skills, and the direction, to get noticed.",
