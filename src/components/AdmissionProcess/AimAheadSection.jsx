@@ -30,7 +30,7 @@ const AimAheadSection = () => {
               <h3
                 className="text-white text-lg  md:text-[60px] playfair-300 leading-tight mb-3 sm:mb-4 md:mb-6 tracking-wider"
                 dangerouslySetInnerHTML={{
-                  __html: "Aim Ahead with Confidence",
+                  __html: "AIM Ahead with Confidence",
                 }}
               />
               <p className="text-white text-sm md:text-lg px-4 md:px-0 max-w-lg">

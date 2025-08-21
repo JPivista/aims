@@ -16,7 +16,7 @@ const TabCourseStructure = ({ courseData }) => {
 
   return (
     <div className="bg-white py-4">
-      <div className="container mx-auto px-4 lg:px-0">
+      <div className="container mx-auto px-4 lg:px-0 ">
         <div className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
             {/* Left Column - Navigation */}
@@ -34,10 +34,11 @@ const TabCourseStructure = ({ courseData }) => {
                           key={tab.key}
                           onClick={() => setActiveTab(tab.key)}
                           className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium transition-all duration-200 border-[0.5px] monser-400 text-[14px] md:text-[14px]
-                                                    ${activeTab === tab.key
-                              ? "bg-[#A22877] text-white border-[#A22877] py-1 "
-                              : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
-                            }`}
+                                                    ${
+                                                      activeTab === tab.key
+                                                        ? "bg-[#A22877] text-white border-[#A22877] py-1 "
+                                                        : "bg-white text-black border-black border-[0.5px] py-1 hover:bg-[#A22878] hover:text-white hover:border-[#A22878]"
+                                                    }`}
                         >
                           {tab.label}
                         </button>
@@ -74,11 +75,11 @@ const TabCourseStructure = ({ courseData }) => {
                             }}
                             className="flex items-center w-full"
                           >
-                            <div className="bg-[#A22877] rounded-xl p-4 md:p-6 text-white w-72 md:w-96 lg:w-[500px]">
+                            <div className="bg-[#A22877] rounded-xl p-4 md:p-6 text-white w-80 md:w-[550px] lg:w-[750px]">
                               <h5 className="text-[30px]  mb-3 md:mb-4 monser-400 md:text-[36px] ">
                                 {tab.label}
                               </h5>
-                              <ol className="text-white">
+                              <ul className="text-white list-disc list-inside">
                                 {(() => {
                                   let courseNumber = 1
                                   return tab.courses.map((course, index) => {
@@ -87,8 +88,6 @@ const TabCourseStructure = ({ courseData }) => {
                                       course.type === "subheading"
                                     ) {
                                       courseNumber = 1 // Reset counter for new semester
-                                      const isSemester4 =
-                                        course.text === "SEMESTER 4"
                                       return (
                                         <li
                                           key={index}
@@ -107,24 +106,16 @@ const TabCourseStructure = ({ courseData }) => {
                                       return (
                                         <li
                                           key={index}
-                                          className="flex items-start"
+                                          className="text-sm md:text-base break-words mb-1 monser-400"
                                         >
-                                          <span className="mr-2 md:mr-3 text-sm md:text-base">
-                                            {courseNumber++}.
-                                          </span>
-                                          <span className="text-sm md:text-base">
-                                            {course}
-                                          </span>
+                                          {course}
                                         </li>
                                       )
                                     }
                                   })
                                 })()}
-                              </ol>
+                              </ul>
                             </div>
-
-                            {/* Horizontal Line connected to box */}
-                            <div className="h-[1px] bg-black flex-1 ml-0"></div>
                           </motion.div>
                         </AnimatePresence>
                       </div>

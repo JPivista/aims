@@ -45,8 +45,8 @@ const Ambitions = () => {
 
               {/* Paragraph */}
               <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8 max-w-md">
-                Students can opt for CA or ACCA training alongside their <br />{" "}
-                BBA to strengthen their professional foundation.
+                Students can opt for CA or ACCA training alongside their BBA to
+                strengthen their professional foundation.
               </p>
             </div>
           </div>

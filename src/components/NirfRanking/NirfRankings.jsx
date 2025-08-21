@@ -11,8 +11,7 @@ const NirfRankings = () => {
       description: [
         {
           text: "You can download and view our submitted information using this link",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e93ba536f8653e8c5f2c32/1709783975960/NIRF_AIMS_2024.pdf",
+          download: "/nirf/NIRF_AIMS_2024.pdf",
         },
       ],
     },
@@ -21,8 +20,7 @@ const NirfRankings = () => {
       description: [
         {
           text: "You can download and view our submitted information using this link",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e93cb5028ea23a4f655ee4/1709784248142/NIRF_AIMS_2023.pdf",
+          download: "/nirf/NIRF_AIMS_2023.pdf",
         },
       ],
     },
@@ -31,8 +29,7 @@ const NirfRankings = () => {
       description: [
         {
           text: "You can download and view our submitted information using this link",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a594e3021154409d655bb7/1671795939371/Acharya+Institute+of+Management+and+Science20220228-.pdf",
+          download: "/nirf/NIRF_AIMS_2022.pdf",
         },
       ],
     },
@@ -41,8 +38,7 @@ const NirfRankings = () => {
       description: [
         {
           text: "You can download and view our submitted information using this link",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a59575e22cf43d26c3d26b/1671796085455/NIRF-2021.pdf",
+          download: "/nirf/NIRF_AIMS_2021.pdf",
         },
       ],
     },
@@ -51,8 +47,7 @@ const NirfRankings = () => {
       description: [
         {
           text: "You can download and view our submitted information using this link",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63a595d8590d6528d29ab0c6/1671796184984/NIRF-2020.pdf",
+          download: "/nirf/NIRF_AIMS_2020.pdf",
         },
       ],
     },

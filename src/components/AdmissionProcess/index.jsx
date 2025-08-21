@@ -17,7 +17,14 @@ const AdmissionProcess = () => {
         <AimAheadSection />
         <ReadyToDraw
           title="Need help completing your form or understanding the difference in UG and PG admission processes?"
-          subtitle="Reach out to our admissions office or visit our FAQs section."
+          subtitle={
+            <>
+              Reach out to our admissions office or{" "}
+              <a href="tel:+918150001994" className="text-white underline">
+                +91-815-000-1994
+              </a>
+            </>
+          }
           primaryButtonText="Apply Now"
           secondaryButtonText="Download Brochure"
           bgColor="bg-[#A22877]"

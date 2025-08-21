@@ -1,10 +1,28 @@
 import React from "react"
 
 const AcademicCalendarContent = () => {
-  const handleCalendarClick = (text, link) => {
-    console.log(`Opening academic calendar: ${text} - ${link}`)
-    // Add your navigation logic here
+  const handleCalendarClick = (link) => {
+    window.open(link, "_blank")
   }
+
+  const academicYears = [
+    {
+      year: "2023-24",
+      link: "/academic-calender/2023-2024/Academic Calender-(2023-2024).pdf",
+    },
+    {
+      year: "2022-23",
+      link: "/academic-calender/2022-2023/Academic Calender-(2022-2023).pdf",
+    },
+    {
+      year: "2021-22",
+      link: "/academic-calender/2021-2022/Academic Calender-(2021-2022).pdf",
+    },
+    {
+      year: "2020-21",
+      link: "/academic-calender/2020-2021/Academic Calendar-(2020-2021).pdf",
+    },
+  ]
 
   return (
     <div className="space-y-6">
@@ -19,63 +37,20 @@ const AcademicCalendarContent = () => {
       </h5>
 
       {/* Academic Year Links */}
-      <div className="space-y-3 sm:space-y-4 px-2 sm:px-0">
-        <div
-          className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-all duration-200 min-h-[60px] sm:min-h-auto touch-manipulation"
-          onClick={() =>
-            handleCalendarClick("Academic Year 2023-24", "/calendar/2023-24")
-          }
-        >
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mb-2 sm:mb-0">
-            Academic Year 2023-24
-          </span>
-          <span className="text-sm sm:text-sm text-[#A22877] font-medium self-start sm:self-auto">
-            [View Here]
-          </span>
-        </div>
-
-        <div
-          className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-all duration-200 min-h-[60px] sm:min-h-auto touch-manipulation"
-          onClick={() =>
-            handleCalendarClick("Academic Year 2022-23", "/calendar/2022-23")
-          }
-        >
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mb-2 sm:mb-0">
-            Academic Year 2022-23
-          </span>
-          <span className="text-sm sm:text-sm text-[#A22877] font-medium self-start sm:self-auto">
-            [View Here]
-          </span>
-        </div>
-
-        <div
-          className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-all duration-200 min-h-[60px] sm:min-h-auto touch-manipulation"
-          onClick={() =>
-            handleCalendarClick("Academic Year 2021-22", "/calendar/2021-22")
-          }
-        >
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mb-2 sm:mb-0">
-            Academic Year 2021-22
-          </span>
-          <span className="text-sm sm:text-sm text-[#A22877] font-medium self-start sm:self-auto">
-            [View Here]
-          </span>
-        </div>
-
-        <div
-          className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-4 border border-gray-200 rounded-lg hover:bg-gray-50 active:bg-gray-100 cursor-pointer transition-all duration-200 min-h-[60px] sm:min-h-auto touch-manipulation"
-          onClick={() =>
-            handleCalendarClick("Academic Year 2020-21", "/calendar/2020-21")
-          }
-        >
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mb-2 sm:mb-0">
-            Academic Year 2020-21
-          </span>
-          <span className="text-sm sm:text-sm text-[#A22877] font-medium self-start sm:self-auto">
-            [View Here]
-          </span>
-        </div>
-      </div>
+      <ul className="space-y-2 px-2 sm:px-0 list-disc pl-6">
+        {academicYears.map((item, index) => (
+          <li
+            key={index}
+            className="flex items-center cursor-pointer hover:text-[#A22877] transition-colors duration-200"
+            onClick={() => handleCalendarClick(item.link)}
+          >
+            <span className="text-base md:text-lg text-gray-800">
+              Academic Year {item.year} -{" "}
+              <span className="text-sm text-[#A22877] font-medium">View</span>
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

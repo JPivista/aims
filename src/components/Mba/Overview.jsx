@@ -112,7 +112,7 @@ const Overview = () => {
               Overview
             </span>
           </h2>
-          <p className="w-full lg:w-3/5 monser-400 text-base  md:text-[18px] leading-relaxed text-center md:text-left tracking-wider">
+          <p className="w-full lg:w-3/5 monser-400 text-base  md:text-[18px] leading-relaxed text-center md:text-left">
             Since 1998, the MBA program at AIMS Institutes has been equipping
             future leaders to aim sharp and solve complex business challenges.
             We train students to build strong conceptual and analytical

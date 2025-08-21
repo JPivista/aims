@@ -10,7 +10,7 @@ const HeroBanner = ({
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/community-service/hero-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/community-service/hero-banner.png')]" />
 
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/community-service/mobile-banner.png')]" />
@@ -28,7 +28,7 @@ const HeroBanner = ({
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-10">
+        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-8">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">

@@ -4,7 +4,7 @@ import Image from "next/image"
 const PrivacyPolicy = () => {
   const contentSections = [
     {
-      heading: "Personal information collection",
+      heading: "Personal Information Collection",
       subHeading:
         "AIMS Institutes may collect and use the following kinds of personal information:",
       points: [
@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "Using personal information",
+      heading: "Using Personal Information",
       subHeading: "AIMS Institutes may use personal information to:",
       points: [
         "Administer this website",
@@ -31,7 +31,7 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "Disclosing personal information",
+      heading: "Disclosing Personal Information",
       subHeading: "AIMS Institutes may disclose your personal information:",
       points: [
         "Where AIMS Institutes discloses your personal information to its agents or sub-contractors for these purposes, the agent or sub-contractor in question will be obligated to use that personal information in accordance with the terms of this privacy statement.",
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "Securing your data",
+      heading: "Securing Your Data",
       subHeading: "AIMS Institutes data security measures:",
       points: [
         "AIMS Institutes will take reasonable technical and organisational precautions to prevent the loss, misuse or alteration of your personal information.",
@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "Cross-border data transfers",
+      heading: "Cross-border Data Transfers",
       subHeading: "International data handling:",
       points: [
         "Information that AIMS Institutes collects may be stored and processed in and transferred between any of the countries in which AIMS Institutes operates to enable the use of the information in accordance with this privacy policy.",
@@ -59,14 +59,14 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "Updating this statement",
+      heading: "Updating This Statement",
       subHeading: "Policy updates and notifications:",
       points: [
         "AIMS Institutes may update this privacy policy by posting a new version on this website. You should check this page occasionally to ensure you are familiar with any changes.",
       ],
     },
     {
-      heading: "Other websites",
+      heading: "Other Websites",
       subHeading: "External website links:",
       points: [
         "This website contains links to other websites. AIMS Institutes is not responsible for the privacy policies or practices of any third party.",
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
       ],
     },
     {
-      heading: "This privacy statement",
+      heading: "This Privacy Statement",
       subHeading: "Statement basis:",
       points: [
         "This privacy statement is based on a precedent created by employmentlawcontracts.co.uk and published by freenetlaw.com.",

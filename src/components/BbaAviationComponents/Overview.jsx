@@ -9,7 +9,7 @@ const Overview = () => {
       heading: "Eligibility Criteria:",
       items: [
         {
-          text: "Pass in Pre-University Course (PUC) / 12th or any other equivalent examination. Students with good communication skills are preferred.",
+          text: "Pass in Pre-University Course (PUC)/12th or any other equivalent examination. Students with good communication skills are preferred.",
           hasOr: true,
         },
         {
@@ -17,7 +17,7 @@ const Overview = () => {
           hasOr: true,
         },
         {
-          text: "Pass certificate / Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board / council of any country.",
+          text: "Pass certificate/Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board/council of any country.",
           hasOr: false,
         },
       ],
@@ -60,7 +60,12 @@ const Overview = () => {
                 {section.items.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item.text}
-                    {item.hasOr && <span className="monser-600"> (or)</span>}
+                    {item.hasOr && (
+                      <>
+                        <br />
+                        <span className="monser-600">(or)</span>
+                      </>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -114,7 +119,7 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Recognition timeline */}
+        {/* Recognition timeline for Mobile */}
         <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">

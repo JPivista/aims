@@ -29,7 +29,7 @@ const SchoolOfBusiness = () => {
       "3",
       "Dr.Kalpana Venugopal",
       "BBM,MBA,MHRM,PhD",
-      "Professor /Director of MBA",
+      "Professor/Director of MBA",
       "Human Resource",
     ],
     ["4", "Dr.T N Anuradha", "MA,M.Phil, Ph.D", "Professor", "Economics"],

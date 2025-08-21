@@ -9,10 +9,6 @@ const FAQSection = () => {
         {/* Left Side - Heading and Instructions (5/6 width) */}
         <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-20">
           {/* Heading */}
-          <h1 className="text-[#A22877] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 italic leading-tight">
-            Admissions{" "}
-            <span className="text-[#0C2165] not-italic playfair-300">FAQs</span>
-          </h1>
 
           <p className="text-base sm:text-lg md:text-[18px] leading-relaxed">
             At AIMS Institutes, we believe that financial constraints should

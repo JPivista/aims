@@ -7,7 +7,7 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mba-herobanner.jpg')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/MBA/mba-herobanner.jpg')]" />
 
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mobile-banner.png')]" />
@@ -82,14 +82,20 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
               </div>
             </div>
           </div>
-          <div className="hidden md:flex mt-4">
-            <Image
-              src="/MBA/iacbe-final.svg"
-              alt="IACBE"
-              width={400}
-              height={100}
-              className="w-[800px] h-[200px] object-contain"
-            />
+        </div>
+
+        {/* Desktop IACBE Accreditation Box - Absolute positioned */}
+        <div className="hidden md:block absolute bottom-0 left-0 z-40">
+          <div className="backdrop-blur-sm rounded-2xl shadow-lg">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/MBA/iacbe-final.svg"
+                alt="IACBE"
+                width={750}
+                height={250}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

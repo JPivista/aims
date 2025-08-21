@@ -3,6 +3,7 @@ import HeroBanner from "./HeroBanner"
 import MeetTheFaculty from "./MeetTheFaculty"
 import SchoolOfBusiness from "./SchoolOfBusiness"
 import SchoolOfCommerceAndFinance from "./SchoolOfCommerceAndFinance"
+import SchoolOfInformationTechnology from "./SchoolOfInformationTechnology"
 import SchoolOfLiberalArtsAndSciences from "./SchoolOfLiberalArtsAndSciences"
 import PartTimeFaculty from "./PartTimeFaculty"
 import LibraryAndPhysicalEducation from "./LibraryAndPhysicalEducation"
@@ -16,6 +17,7 @@ const FacultyMemberDetails = () => {
       <div className="w-full">
         <SchoolOfBusiness />
         <SchoolOfCommerceAndFinance />
+        <SchoolOfInformationTechnology />
         <SchoolOfHospitalityAndTourism />
         <SchoolOfLiberalArtsAndSciences />
         <LibraryAndPhysicalEducation />

@@ -84,14 +84,37 @@ const AdmissionTabs = ({ tabsData }) => {
                     <div className="space-y-2">
                       {tabsData[activeTab].eligibility.requirements.map(
                         (req, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-3"
-                          >
-                            <span className="font-semibold">•</span>
-                            <p className="text-base md:text-lg monser-400">
-                              {req}
-                            </p>
+                          <div key={index}>
+                            {typeof req === "string" ? (
+                              <div className="flex items-start space-x-3">
+                                <span className="font-semibold">•</span>
+                                <p className="text-base md:text-lg monser-400">
+                                  {req}
+                                </p>
+                              </div>
+                            ) : (
+                              <div className="space-y-2">
+                                <div className="flex items-start space-x-3">
+                                  <span className="font-semibold">•</span>
+                                  <p className="text-base md:text-lg monser-400 font-medium">
+                                    {req.main}
+                                  </p>
+                                </div>
+                                <div className="ml-6 space-y-1">
+                                  {req.sub.map((subReq, subIndex) => (
+                                    <div
+                                      key={subIndex}
+                                      className="flex items-start space-x-3"
+                                    >
+                                      <span className="text-sm">◦</span>
+                                      <p className="text-base md:text-lg monser-400">
+                                        {subReq}
+                                      </p>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
                           </div>
                         )
                       )}

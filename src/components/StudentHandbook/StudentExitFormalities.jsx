@@ -22,8 +22,12 @@ const StudentExitFormalities = () => {
             </div>
 
             <div className="flex md:flex-row flex-col gap-4 py-6">
-              <Button>Student Exit Formalities Process</Button>
-              <Button>Student Exit Formalities Form</Button>
+              <Button href="/student-handbook/Student-Handbook/Student Exit Formalities Process.pdf">
+                Student Exit Formalities Process
+              </Button>
+              <Button href="/student-handbook/Student-Handbook/Student Exit Formalities Form.pdf">
+                Student Exit Formalities Form
+              </Button>
             </div>
           </div>
 
