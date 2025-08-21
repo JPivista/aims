@@ -24,20 +24,20 @@
 //               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
 //           }}
 //         ></div>
-//         <div className="absolute top-20 left- right-0">
-//           <div className="container mx-auto py-4 px-6 lg:px-8">
-//             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
-//               <div className="flex items-center">
-//                 <Image
-//                   src="/iacbe/since-black.svg"
-//                   alt="Recruiters"
-//                   width={200}
-//                   height={200}
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
+        // <div className="absolute top-20 left- right-0">
+        //   <div className="container mx-auto py-4 px-6 lg:px-8">
+        //     <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+        //       <div className="flex items-center">
+        //         <Image
+        //           src="/iacbe/since-black.svg"
+        //           alt="Recruiters"
+        //           width={200}
+        //           height={200}
+        //         />
+        //       </div>
+        //     </div>
+        //   </div>
+        // </div>
 
 //         {/* Bottom Content Container */}
 //         <div className="absolute bottom-20 left-0 right-0">
@@ -75,10 +75,10 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aims-journal-of-research/banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aims-journal-of-research/banner-02.png')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aims-journal-of-research/mobile.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aims-journal-of-research/mobile-02.png')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -88,6 +88,20 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
           }}
         ></div>
+            <div className="absolute lg:top-20 top-0 lg:right-0">
+          <div className="container mx-auto py-4 px-6 lg:px-8">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Bottom Content Container */}
         <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">

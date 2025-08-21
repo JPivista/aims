@@ -3,7 +3,7 @@ import React from "react";
 const Content = () => {
   return (
     <>
-      <div className="container mx-auto px-6 lg:px-8 flex flex-col gap-7 text-center py-10 lg:w-[80%]">
+      <div className="container mx-auto px-6 lg:px-8 flex flex-col gap-7 text-center pt-10 lg:w-[80%]">
         <p>
           AIMS has consistently upheld a proud legacy of academic distinction,
           with our students earning top University Ranks year after year. This
