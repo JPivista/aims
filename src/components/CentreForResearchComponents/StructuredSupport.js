@@ -33,7 +33,7 @@ const StructuredSupport = () => {
                         alt="Our Track Record"
                         width={1000}
                         height={1000}   // set the original image height
-                        className="md:w-[800px] w-full h-auto object-cover"
+                        className="md:w-[1000px] w-full h-auto object-cover"
                         priority
                     />
                 </div>

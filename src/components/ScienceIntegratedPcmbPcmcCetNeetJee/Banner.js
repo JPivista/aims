@@ -50,7 +50,7 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                     {/* Bottom Heading */}
                     <div className="container mx-auto px-4 pb-12 text-left">
                         <h1 className="text-white font-bold text-center md:text-left">
-                            Integrated PCMC/PCMB
+                            AIMS <br />Integrated PCMC/PCMB
                         </h1>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function Page() {
       titleColor: "text-[#531574]",
       description:
         "You can opt for multiple courses after PU, like BTech / BE / BCA / Bio-tech / BSc Nautical Sciences / BSc Computer Science / BSc Aviation / BDes Industrial Design.",
-      objectivesTitle: "Career opportunities after adegree include:",
+      objectivesTitle: "Career opportunities after degree include:",
       objectives: [
         "Software Engineer",
         "Industrial Design",
@@ -32,7 +32,7 @@ export default function Page() {
       title: "Advantages of Choosing PCMB:",
       titleColor: "text-[#0C2165]",
       description:
-        "You can opt for multiple courses after PU like Medical / Bio-tech / B-Pharma / Bachelor of Medical Sciences / BE / BSc / Bioinformatics / Agricultural Sciences.",
+        "You can opt for multiple courses after PU like Medical/Bio-tech/B-Pharma/Bachelor of Medical Sciences/BE/BSc/Bioinformatics/Agricultural Sciences.",
       objectivesTitle: "Career opportunities after degree include:",
       objectives: [
         "Doctor",

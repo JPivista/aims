@@ -11,7 +11,7 @@ const PhdProgramOverview = () => {
                     <div className="w-full">
                         <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-12">
                             <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic">PhD Program</span> <br />
-                           Overview
+                            Overview
                         </h3>
                     </div>
                     <div className="flex flex-col justify-center pb-5">
@@ -25,76 +25,90 @@ const PhdProgramOverview = () => {
                 </div>
 
                 {/* Info Boxes with Central Border */}
-                <div className="flex justify-center">
-                    <div className="w-full container border border-[#A774CC] rounded-2xl  bg-white">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                            {/* Box 1 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="-mt-8 sm:-mt-10 lg:-mt-11 mb-3 sm:mb-4 w-20 sm:w-24 lg:w-32">
+                <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
+                    {/* Mobile Card Version */}
+                    <div className="block md:hidden w-full max-w-sm">
+                        <div className="rounded-2xl p-6 border border-[#A774CC]">
+                            {/* Affiliation & Recognition Section */}
+                            <div className="text-center mb-6">
+                                <div className="flex justify-center">
                                     <Image
-                                        src="/business_school/phd/phd_overview_1.svg"
-                                        alt="Accreditation Icon"
-                                        className="w-full h-full object-contain"
-                                        width={200}
-                                        height={200}
+                                        src="/business_school/phd/trophy.svg"
+                                        alt="Trophy"
+                                        width={32}
+                                        height={32}
+                                        className="w-[130px] h-[130px] object-contain"
                                     />
                                 </div>
-                                <div className="pt-1 w-full">
-                                    <h5 style={{ color: "#A22877", fontSize: "1.1rem", fontWeight: '600' }} className="min-h-8 sm:min-h-10 font-semibold mb-1 sm:text-lg lg:text-xl">
-                                        Affiliation & Recognition
-                                    </h5>
-                                    <p style={{ fontSize: "1.1rem" }} className="text-gray-700 text-xs sm:text-sm lg:text-base">
-                                        Affiliated to University of Mysore
-                                    </p>
-                                </div>
+                                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                                    Affiliation & Recognition
+                                </h5>
+                                <p className="text-sm monser-400 ">
+                                    Affiliated to Bangalore University
+                                </p>
+                                <p className="text-black text-sm">Recognised by AICTE</p>
                             </div>
 
-                            {/* Box 2 */}
-                            <div className="flex flex-col items-center text-center pb-5">
-                                <div className="-mt-6 sm:-mt-8 lg:-mt-8 mb-3 sm:mb-4 w-16 sm:w-20 lg:w-52">
+                            <div className="border-t border-gray-500 mb-4"></div>
+
+                            {/* Accreditations Section */}
+                            <div className="text-center mb-6">
+                                <div className="flex justify-center mb-4">
                                     <Image
                                         src="/business_school/phd/phd_overview_2.svg"
-                                        alt="Accreditation Icon"
+                                        alt="NAAC and IACBE"
+                                        width={96}
+                                        height={32}
                                         className="w-full h-full object-contain"
-                                        width={64}
-                                        height={64}
                                     />
                                 </div>
-                                <div className=" w-full  border-t border-b sm:border-t-0 sm:border-b-0 sm:border-l sm:border-r border-[#A774CC]">
-                                    <h5 style={{ color: "#A22877", fontSize: "1.1rem", fontWeight: '600' }} className="min-h-8 sm:min-h-10 font-semibold mb-1 sm:text-lg lg:text-xl">
-                                        Accreditations
-                                    </h5>
-                                    <p style={{ fontSize: "1.1rem" }} className="text-gray-700 text-xs sm:text-sm lg:text-base">
-                                        NAAC &apos;A&apos; Grade (3.25 on a scale of 4)
-                                    </p>
-                                </div>
+                                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                                    Accreditations
+                                </h5>
+                                <p className="text-sm monser-400">
+                                    <span className="monser-600">NAAC &apos;A&apos;</span> Grade (3.25 on a
+                                    scale of 4)
+                                </p>
+                                <p className="text-sm monser-400">
+                                    <span className="monser-600">IACBE</span> Accredited
+                                </p>
                             </div>
 
-                            {/* Box 3 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="-mt-8 sm:-mt-10 lg:-mt-11 mb-3 sm:mb-4 w-20 sm:w-24 lg:w-32">
+                            <div className="border-t border-gray-500 mb-6"></div>
+
+                            {/* Duration Section */}
+                            <div className="text-center">
+                                <div className="flex justify-center">
                                     <Image
-                                        src="/business_school/phd/phd_overview_3.svg"
-                                        alt="Duration Icon"
-                                        className="w-full h-full object-contain"
-                                        width={64}
-                                        height={64}
+                                        src="/business_school/phd/calender.svg"
+                                        alt="Calendar"
+                                        width={32}
+                                        height={32}
+                                        className="w-[130px] h-[130px] object-contain"
                                     />
                                 </div>
-                                <div className="pt-1 w-full">
-                                    <h5 style={{ color: "#A22877", fontSize: "1.1rem", fontWeight: '600' }} className="min-h-8 sm:min-h-10 font-semibold mb-1 sm:text-lg lg:text-xl">
-                                        Duration
-                                    </h5>
-                                    <p style={{ fontSize: "1.1rem" }} className="text-gray-700 text-xs sm:text-sm lg:text-base">
-                                        3 years (minimum)
-                                    </p>
-                                </div>
+                                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                                    Duration
+                                </h5>
+                                <p className="text-black text-sm">2 years (4 semesters)</p>
                             </div>
                         </div>
                     </div>
+
+                    {/* Desktop Version */}
+                    <div className="hidden md:block">
+                        <Image
+                            src="/business_school/phd/phd_program.svg"
+                            alt="MBA Program Overview"
+                            width={1000}
+                            height={600}
+                            className="object-contain w-full h-full"
+                            priority
+                        />
+                    </div>
                 </div>
 
-              
+
             </div>
         </div>
     );

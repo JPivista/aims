@@ -72,7 +72,7 @@ const AdmissionTabsSection = () => {
         },
         {
             title: "Individual Mentoring",
-            heading: "Individual mentoring",
+            heading: "Individual Mentoring",
             points: [
                 "",
                 "",
@@ -84,7 +84,7 @@ const AdmissionTabsSection = () => {
         },
         {
             title: "Teaching Methods",
-            heading: "Teaching Methods:",
+            heading: "Teaching Methods",
             points: [
                 "",
                 "",

@@ -37,7 +37,7 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                     {/* Bottom Heading */}
                     <div className="container mx-auto px-4 pb-12 text-left">
                         <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold">
-                        CEBA
+                        AIMS <br />CEBA
                         </h1>
                     </div>
                 </div>

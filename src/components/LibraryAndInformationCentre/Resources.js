@@ -38,17 +38,13 @@ const Resources = () => {
                             and digital platforms. Membership is valid for the duration of the program.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Button showReadMore={false}>Student Membership Form</Button>
-
-                            <Button showReadMore={false}>Faculty Membership Form</Button>
+                            <Button target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScVrD4N-iZ-IWbIXNTAXxjfx-_CNofVNoV4ti682A5WrLCCHg/viewform" showReadMore={false}>Student Membership Form</Button>
+                            <Button target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSe7zCWJS8aOIZdHo2XQ4sjlvDPdY-x0jzy3a_9SzPAJluBH6w/viewform" showReadMore={false}>Faculty Membership Form</Button>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-
-
 
             {/* Accordion */}
             <div className="grid md:grid-cols-2 gap-4">
@@ -80,7 +76,7 @@ const Resources = () => {
                                 submissions and research publications.
                             </p>
                             <p>
-                                Fill the form <a href="#" className="text-[#a22978] underline" style={{ fontWeight: "600" }}>here</a>
+                                Fill the form <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSf1LXPfuYFzhv7VwQy9ZUChDJSyefAdXujQCHffQBR2eyL_iA/viewform" className="text-[#a22978] underline" style={{ fontWeight: "600" }}>here</a>
                             </p>
                         </div>
                     </div>
@@ -114,7 +110,7 @@ const Resources = () => {
                                 These inputs directly inform future acquisitions.
                             </p>
                             <p>
-                                Access it here: <a href="#" className="text-[#a22978] underline" style={{ fontWeight: "600" }}>Link</a>
+                                Access it here: <a target='_blank' href="https://docs.google.com/spreadsheets/d/1p2aISNXbzCmG-FYLUBaaxIPkhnehqclzy_oTtNVw0wQ/edit?gid=748430511#gid=748430511" className="text-[#a22978] underline" style={{ fontWeight: "600" }}>Link</a>
                             </p>
                         </div>
                     </div>

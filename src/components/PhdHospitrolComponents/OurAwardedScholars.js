@@ -170,12 +170,12 @@ const OurAwardedScholars = () => {
                                                         {yearBlock.entries.map((entry, i) => (
                                                             <div key={i} className="flex items-start">
                                                                 <span className="pr-2">•</span>
-                                                                <span className="text-sm md:text-base">{entry}</span>
+                                                                <span className="text-[16px]">{entry}</span>
                                                             </div>
                                                         ))}
                                                     </div>
                                                 ) : (
-                                                    <p className="text-sm md:text-base">{yearBlock.entries[0]}</p>
+                                                    <p className="" style={{ fontSize: '16px' }}>{yearBlock.entries[0]}</p>
                                                 )}
                                             </td>
                                         </tr>
