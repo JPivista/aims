@@ -37,7 +37,7 @@ export default function SkillsSection() {
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative w-1/2 sm:w-[30%] lg:w-[14%] xl:w-[13%] 2xl:w-[13%] md:w-[25%]  h-[300px] flex flex-col justify-center items-center text-left px-4 py-6"
+            className="relative w-1/2 sm:w-[30%] lg:w-[14%] xl:w-[14.7%] 2xl:w-[13%] md:w-[25%]  h-[300px] flex flex-col justify-center items-center text-left px-4 py-6"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

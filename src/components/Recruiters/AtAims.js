@@ -30,10 +30,10 @@ const AtAims = () => {
         </div>
         <div>
           <Image
-            src="/recruiters/at-aims.png"
+            src="/recruiters/aims.png"
             alt="Recruiters"
-            width={1000}
-            height={1000}
+            width={1350}
+            height={1350}
             className="rounded-lg"
           />
         </div>

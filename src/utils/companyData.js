@@ -65,12 +65,12 @@ export const companyData = [
     logo: "/MBA/company/accenture.png",
     alt: "Accenture",
   },
-  {
-    id: 12,
-    name: "ICICI Bank",
-    logo: "/MBA/company/icici-bank.png",
-    alt: "ICICI Bank",
-  },
+  // {
+  //   id: 12,
+  //   name: "ICICI Bank",
+  //   logo: "/MBA/company/icici-bank.png",
+  //   alt: "ICICI Bank",
+  // },
   {
     id: 13,
     name: "Federal Bank",
