@@ -75,7 +75,7 @@ const AdmissionTabsSection = () => {
         <>
           <p>
             [Full Archive Page] (take from Archives section:{" "}
-            <a className="underline" href="https://www.theaims.ac.in/aims-journal-of-research" target="_blank" rel="noopener noreferrer">
+            <a className="underline" href="/aims-journal-of-research" target="_blank" rel="noopener noreferrer">
               https://www.theaims.ac.in/aims-journal-of-research
             </a>
             )
