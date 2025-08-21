@@ -47,15 +47,15 @@ const StudentLeadSection = ({
         ></div>
 
         {/* Top Content Container */}
-        <div className="relative z-10 h-full flex flex-col items-start justify-center">
+        <div className="relative z-10 h-full flex flex-col md:items-start items-center md:justify-center justify-end py-6">
           <div className="container mx-auto py-4 px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-10">
               <div className="col-span-1 md:col-span-2">
-                <h3 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
+                <h3 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 text-center md:text-left">
                   {title}
                 </h3>
                 {description && (
-                  <p className="text-white text-lg lg:text-xl mt-4 max-w-2xl">
+                  <p className="text-white text-lg lg:text-xl mt-4 max-w-2xl text-center md:text-left">
                     {description}
                   </p>
                 )}
