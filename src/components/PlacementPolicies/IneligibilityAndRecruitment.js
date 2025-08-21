@@ -29,12 +29,12 @@ const IneligibilityAndRecruitment = () => {
                 Students will be considered ineligible for campus placements if:
               </p>
 
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <ul className="list-disc list-outside space-y-2 ml-7">
                 <li>Attendance is below 75%</li>
                 <li>They don&apos;t complete 100% of pre-placement training</li>
                 <li>
                   They register to attend, but fail to appear for a scheduled
-                  company interview/process.
+                  company interview/process
                 </li>
                 <li>
                   They attend 5 interviews and still do not secure a single
@@ -73,7 +73,7 @@ const IneligibilityAndRecruitment = () => {
             <div className="text-black space-y-4">
               <p className="text-lg monser-600">The Ones Guiding Your Aim.</p>
 
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <ul className="list-disc list-outside space-y-2 ml-7">
                 <li>Principal and Chief Executive Officer</li>
                 <li>Director – Corporate & Public Relations</li>
                 <li>Dean(s)</li>
