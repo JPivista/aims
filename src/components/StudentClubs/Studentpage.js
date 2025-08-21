@@ -45,6 +45,7 @@ const StudentClubs = () => {
         <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6 pt-8">
         Choose your interest.
           <br /> Choose your role. Choose your goal.
+
         </h3>
         <p className="max-w-5xl mx-auto">
           At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
@@ -66,7 +67,7 @@ const StudentClubs = () => {
           Why Join a Student Club?
         </h3>
 
-        {/* Tablet + Desktop view (≥768px) */}
+       
         <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
           {clubs.map((club, index) => (
             <div
@@ -86,7 +87,7 @@ const StudentClubs = () => {
           ))}
         </div>
 
-        {/* Mobile only (<768px) */}
+      
         <div className="block md:hidden">
           <Slider {...sliderSettings}>
             {clubs.map((club, index) => (
