@@ -43,6 +43,21 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
             </div>
           </div>
         </div>
+
+        <div className="absolute top-5 md:right-20 right-0">
+          <div className="container mx-auto py-4 px-6 lg:px-0">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Application Announcements Marquee */}

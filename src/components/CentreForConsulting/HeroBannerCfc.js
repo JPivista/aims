@@ -27,10 +27,24 @@ const HeroBannerCfc = ({ announcements, pageType = 'engineering' }) => {
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
-                                    AIMS Centre for Consulting
+                                    AIMS Centre for <span className='italic playfair-400 text-[#D2EEE8]'>Consulting</span>
                                     <br className='hidden lg:block' />
                                     (ACC)
                                 </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="absolute top-5 left-0 right-0">
+                    <div className="container mx-auto py-4 px-6 lg:px-0">
+                        <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+                            <div className="flex items-center">
+                                <Image
+                                    src="/white-empower.svg"
+                                    alt="Recruiters"
+                                    width={200}
+                                    height={200}
+                                />
                             </div>
                         </div>
                     </div>
