@@ -22,13 +22,13 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
       {/* Tabs */}
       <div
         ref={containerRef}
-        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10 px-4 sm:px-6 md:px-0"
+        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10 px-4 sm:px-6 md:px-0 w-full md:w-auto"
       >
         {tabs.map((tab) => (
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`whitespace-nowrap rounded-full px-3 sm:px-4 md:px-6 py-2 md:py-2 text-sm md:text-lg transition border snap-start font-medium
+            className={`whitespace-nowrap rounded-full px-3  md:px-6 py-3 md:py-2 text-sm md:text-lg transition border snap-start font-medium
               ${
                 activeTab === tab.key
                   ? "bg-[#a22978] text-white border-transparent active-tab"

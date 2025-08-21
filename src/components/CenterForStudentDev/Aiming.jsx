@@ -107,7 +107,7 @@ const Aiming = () => {
             {objectives.map((objective, index) => (
               <li
                 key={index}
-                className="text-base sm:text-lg md:text-[18px] lg:text-[18px] monser-400"
+                className="text-base md:text-[18px] lg:text-[18px] monser-400 leading-relaxed"
               >
                 {objective}
               </li>

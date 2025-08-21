@@ -18,7 +18,7 @@ const Handbook = () => {
         </div>
 
         {/* Right Column - Content */}
-        <div className="flex flex-col gap-6 px-4 md:px-0">
+        <div className="flex flex-col md:gap-6 px-4 md:px-0">
           <h3 className="text-4xl lg:text-5xl playfair-300 text-[#0C2165] leading-tight text-center md:text-left">
             Student Handbook
           </h3>
@@ -32,7 +32,7 @@ const Handbook = () => {
             </p>
           </div>
 
-          <div>
+          <div className="mt-4 md:mt-0 flex justify-center md:justify-start">
             <Button>Download Student Handbook</Button>
           </div>
         </div>

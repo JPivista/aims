@@ -13,18 +13,18 @@ const AdmissionTabs = ({ tabsData }) => {
         {" "}
         {/* Reduced width for better centering */}
         {/* Buttons Row */}
-        <div className="flex flex-wrap  gap-1 mb-12">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 mb-12">
           {tabsData.map((tab, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(index)}
-              className={`flex items-center space-x-3 px-11 py-2 transition-all duration-300 cursor-pointer ${
+              className={`flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3 px-4 sm:px-11 py-3 sm:py-2 transition-all duration-300 cursor-pointer w-full sm:w-auto ${
                 activeTab === index
                   ? "bg-white/20 text-[#A22877] border border-black"
                   : "bg-[#A22877] text-white hover:bg-[#8B1F5F]"
               }`}
             >
-              <span className="font-semibold text-sm md:text-[18px] monser-400">
+              <span className="font-semibold text-base sm:text-sm md:text-[18px] monser-400 text-center sm:text-left">
                 {tab.title}
               </span>
               <Image
@@ -36,7 +36,7 @@ const AdmissionTabs = ({ tabsData }) => {
                 alt={tab.title}
                 width={24}
                 height={24}
-                className="w-6 h-6"
+                className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
               />
             </button>
           ))}
