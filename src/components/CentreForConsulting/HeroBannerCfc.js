@@ -7,11 +7,10 @@ const HeroBannerCfc = ({ announcements, pageType = 'engineering' }) => {
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
-                <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/centre-for-consulting/centre-for-consulting-herobanner.png')]" />
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-consulting/centre-for-consulting-herobanner.png')]" />
 
                 {/* Background Image - Mobile */}
                 <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-consulting/centre-for-consulting-herobanner-mobile.png')]" />
-
 
                 {/* Gradient Overlay - Figma Design */}
                 <div

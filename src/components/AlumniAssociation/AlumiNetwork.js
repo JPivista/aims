@@ -21,8 +21,7 @@ const ProvidingOpportunities = () => {
                     {/* Right Column - Content */}
                     <div className='flex flex-col gap-6'>
                         <h3 className='text-4xl lg:text-5xl playfair-300 text-[#0C2165] leading-tight'>
-                            Why Join the AIMS
-                            <br className='hidden md:block' />
+                            Why Join the AIMS  <br className='hidden md:block' />
                             Alumni Network?
                         </h3>
 

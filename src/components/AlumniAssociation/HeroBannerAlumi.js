@@ -11,7 +11,7 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                 <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/alumni-association/alumni-association-banner.png')]" />
 
                 {/* Background Image - Mobile */}
-                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-international-liaison/centre-for-international-liaison-herobanner-mobile.png')]" />
+                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/alumni-association/alumni-association-banner-mobile.png')]" />
 
                 {/* Gradient Overlay - Figma Design */}
                 <div
@@ -27,8 +27,7 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
-                                    Stay Connected. Keep
-                                    <br className='hidden md:block' />
+                                    Stay Connected. Keep <br className='hidden md:block' />
                                     AIMing Forward
                                 </h1>
                             </div>

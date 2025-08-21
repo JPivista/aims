@@ -21,8 +21,7 @@ const ProvidingOpportunities = () => {
                     {/* Right Column - Content */}
                     <div className='flex flex-col gap-6'>
                         <h2 className='text-4xl lg:text-5xl playfair-300 text-[#0C2165] leading-tight'>
-                            Give Back to the
-                            <br className='hidden md:block' />
+                            Give Back to the  <br className='hidden md:block' />
                             AIMS Community
                         </h2>
 
