@@ -24,7 +24,7 @@ const McaContent = () => {
                         alt="M.Com at AIMS"
                         width={800}
                         height={400}
-                        className="object-contain"
+                        className="object-cover w-full h-full"
                     />
                 </div>
             </div>
