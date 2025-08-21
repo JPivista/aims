@@ -14,7 +14,7 @@ const SectorWise = () => {
             className="rounded-lg"
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-5 lg:px-x px-4 lg:w-1/2">
+        <div className="flex flex-col items-center justify-center lg:gap-5 lg:px-x px-4 lg:w-1/2">
           <h1 className="text-[#8A1D64]">Sector-Wise Placements Statistics</h1>
           <p>
             At AIMS, students step into varied, high-growth sectors. Our
