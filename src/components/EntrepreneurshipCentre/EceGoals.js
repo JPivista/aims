@@ -27,6 +27,10 @@ const EceGoals = () => {
                                         </li>
                                         <li className='flex items-start gap-3'>
                                             <span className='text-black'>•</span>
+                                            <span>Disseminate knowledge on entrepreneurship and traching success story of entrepreneurs.</span>
+                                        </li>
+                                        <li className='flex items-start gap-3'>
+                                            <span className='text-black'>•</span>
                                             <span>Conduct research in the field of entrepreneurship</span>
                                         </li>
                                         <li className='flex items-start gap-3'>

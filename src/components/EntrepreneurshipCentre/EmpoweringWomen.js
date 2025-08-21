@@ -9,37 +9,37 @@ const EmpoweringWomen = () => {
         mahita: {
             name: "Mahita Fernandez",
             affiliation: "Children's Activity & Play Centre",
-            testimonial: "I have used the knowledge I gained there to create a business plan not just for the sake of the competition but also genuinely to provide me with a roadmap to grow and further my business Gambolla I have made a few alterations to my plan even after the culmination of our sessions and have finally arrived at a document that I am satisfied with (for the time being) I am proud to say that I have already begun putting some of my plans into action and hope to achieve the success that I have shown on paper in reality"
+            testimonial: "I have used the knowledge I gained there to create a business plan, not just for the sake of the competition, but also genuinely to provide me with a roadmap to grow and further my business, Gambolla. I have made a few alterations to my plan even after the culmination of our sessions, and have finally arrived at a document that I am satisfied with (for the time being). I am proud to say that I have already begun putting some of my plans into action, and hope to achieve the success that I have shown on paper, in reality."
         },
         meena: {
             name: "Meena Sivaraman",
-            affiliation: "Sustainable Fashion Brand",
-            testimonial: "The program provided me with invaluable insights into business strategy and market analysis. I've been able to scale my sustainable fashion brand from a local startup to a recognized name in the industry."
+            affiliation: "Daycare Centre for Corporate",
+            testimonial: "I take back significant lessons from the course and the need to rework my business plan. Continue to build relationships and that has been my God given strength from childhood. I would be more than happy to be a case study for your students as to how it took me 19 years to reach 88lakh revenue from here after this course it will be an accelerated growth with strategy in place already fixed an appointment with a reputed management consultant. I feel blessed to have got this chance."
         },
         sandhya: {
             name: "Sandhya Yadav",
-            affiliation: "Digital Marketing Agency",
-            testimonial: "Through the mentorship and networking opportunities, I've expanded my digital marketing agency to serve clients across multiple cities. The program's focus on women entrepreneurship gave me the confidence to dream bigger."
+            affiliation: "Landscaping, Trading and Designing of Flowers (fresh)",
+            testimonial: "The programme covered many things which I was unaware of and also, I'm very confident that I can compete with the existing competition."
         },
         nitya: {
             name: "Nitya Kalyani",
-            affiliation: "Health & Wellness Center",
-            testimonial: "The business knowledge and mentorship I received helped me establish a successful health and wellness center. The program's emphasis on practical implementation made all the difference."
+            affiliation: "Publishing of Magazines for Insurance Professional",
+            testimonial: "Being mentored was a fantastic opportunity. Faculty of AIMS went out of the way to make the program a success."
         },
         padmavathy: {
             name: "Padmavathy Mahesh",
-            affiliation: "Educational Technology Startup",
-            testimonial: "As a tech entrepreneur, the program helped me understand both the business and social impact aspects of my venture. I've been able to secure funding and expand to multiple schools."
+            affiliation: "Coaching for MBA Exam",
+            testimonial: "Really, I have learnt many skills like Leadership, Marketing, Communication, Finance and negotiation skills. I will implement all the techniques and other motivation techniques to move my business forward with success."
         },
         latha: {
             name: "Latha Srinivasan",
-            affiliation: "Organic Food Distribution",
-            testimonial: "The program's focus on sustainable business models aligned perfectly with my vision. I've created a network of organic farmers and established a successful distribution business."
+            affiliation: "Children's Library & Learning Centre",
+            testimonial: "More than what I expected – mentoring by the seasoned entrepreneurs have been a significant value-add."
         },
         sadhana: {
             name: "Sadhana Kini",
-            affiliation: "Creative Design Studio",
-            testimonial: "The mentorship helped me transform my creative passion into a profitable business. I've expanded from freelance work to a full-service design studio with multiple employees."
+            affiliation: "NGO for differently-abled Children",
+            testimonial: "Always felt the need to do an MBA course and this course has covered all the subjects in a consolidated form."
         }
     }
 
@@ -70,8 +70,7 @@ const EmpoweringWomen = () => {
                         {/* Header Section */}
                         <div className='text-left'>
                             <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                                Empowering Women
-                                <br className='hidden md:block' />
+                                Empowering Women <br className='hidden md:block' />
                                 Entrepreneurs
                             </h3>
                             <h5 className='text-xl monser-600 text-black mb-4'>

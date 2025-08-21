@@ -1,8 +1,9 @@
 'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const Achievements = () => {
-    const [expandedSection, setExpandedSection] = useState('award')
+    const [expandedSection, setExpandedSection] = useState('award') // First section is active by default
 
     const achievementsData = [
         {
@@ -47,19 +48,23 @@ const Achievements = () => {
                             <div key={achievement.id} className='border-b border-black'>
                                 <button
                                     onClick={() => toggleSection(achievement.id)}
-                                    className='w-full flex items-center justify-between text-left hover:bg-gray-50 rounded-lg transition-colors duration-200 p-2'
+                                    className={`w-full flex items-center justify-between text-left  transition-all duration-200 p-2 ${expandedSection === achievement.id
+                                        ? 'bg-[#A22877] text-white hover:bg-[#8B1F6A]'
+                                        : 'hover:bg-gray-50'
+                                        }`}
                                 >
-                                    <h5 className='text-black monser-600 text-xl lg:text-2xl'>
+                                    <h5 className={`monser-600 text-xl lg:text-2xl transition-colors duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
+                                        }`}>
                                         {achievement.title}
-                                        <span className='text-black pl-4 text-2xl transition-transform duration-200'>
+                                        <span className={`pl-4 text-3xl transition-transform duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
+                                            }`}>
                                             {expandedSection === achievement.id ? '↗' : '↙'}
                                         </span>
                                     </h5>
-
                                 </button>
 
                                 {expandedSection === achievement.id && (
-                                    <div className='my-4 ml-4 space-y-4'>
+                                    <div className=' space-y-4 bg-gray-100 p-4'>
                                         {achievement.id === 'award' ? (
                                             <div className='space-y-4'>
                                                 {achievement.content.map((paragraph, index) => (
