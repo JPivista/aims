@@ -27,10 +27,10 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
               <div className="flex items-center">
                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
-                  AIMS School of <br className="block" />{" "}
+                Fuel Your Goals with <br className="block" />{" "} 
                   <span className="italic playfair-400 text-[#D7FCF4]">
                     
-                    the Right Support
+                  the Right Support
                   </span>
                 </h1>
               </div>

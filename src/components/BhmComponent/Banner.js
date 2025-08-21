@@ -62,6 +62,15 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                   </span>
                 </h1>
               </div>
+              <div className="flex items-center">
+                <Image
+                  src="/school-of-hospitality/NAAC VET.png"
+                  alt="IACBE"
+                  width={200}
+                  height={100}
+                  className="object-contain "
+                />
+              </div>
             </div>
           </div>
         </div>

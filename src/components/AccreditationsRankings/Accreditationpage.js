@@ -374,48 +374,311 @@ const PatentsTimeline = () => {
     ],
     2022: [
       {
-        title:
-          "Machine Learning Based Approach to Predict the Impact of Anti-Microbial Resistance for Animal Production",
-        description: "Deepa VH",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: " The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>34th Best Private Business School in India.</li>
+            <li>8th Best Private Business School in South India.</li>
+          </ul>
+        ),
       },
       {
-        title:
-          "Artificial Intelligence Based Approach for Analysing the Importance of Agriculture on Environmental Change",
-        description: "Deepa VH",
+        titles: "Fortune India",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>17th Best Private Business School in South India.</li>
+      
+          </ul>
+        ),
       },
       {
-        title:
-          "Business Management-Based Appraisal System for Enhancing Productivity Among Employees",
-        description: "Dr. Javad Ghalambor",
+        titles: "Business Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            45th Best Private Business School in India for Learning Experience.
+            </li>
+           
+          </ul>
+        ),
       },
+      {
+        titles: "India Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>20th Best Private Business School in South India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Outlook Best BBA Colleges Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            30th Best Private BBA College in India.
+            </li>
+            <li>
+            9th Best Private BBA College in Bangalore.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "GHRDC BBA College Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>1st Rank in the category of Eminence in India.</li>
+            <li>5th Best BBA college in South.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM",
+        titles: "GHRDC Hotel Management Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+            </li>
+            <li>2nd Best Private Hotel Management Institution under “Super Excellence” Category in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+    
+        titles: " Outlook Best Hotel Management Colleges Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>9th Best Private Hotel Management Institute in India.</li>
+            <li>
+            2nd Best Private Hotel Management Institute in Bangalore.
+            </li>
+         
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF INFORMATION TECHNOLOGY",
+        titles: "Outlook Best BCA Colleges Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            29th Best Private BCA College in India.
+            </li>
+            <li>8th Best Private BCA College in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "GHRDC BCA College Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>5th Rank in the category of Super Excellence in India.</li>
+            <li>4th Best BCA college in South.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF COMMERCE & FINANCE",
+        titles: "Outlook Best BCOM Colleges Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            30th Best Private BCOM College in India.
+            </li>
+            <li>6th Best Private BCOM College in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF LIBERAL & PERFORMING ARTS",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Outlook Best MSW Colleges Survey</li>
+            <li>11th Best Private MSW College in India.</li>
+            <li>2nd Best Private MSW College in Bangalore.</li>
+          </ul>
+        ),
+      },
+     
+     
     ],
     2021: [
       {
-        title: "Innovative Data Analytics Framework for Educational Assessment",
-        description: "Dr. Sarah Johnson",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: " The Week Best B-School Surve",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>32nd Best Private Business School in India.</li>
+            <li>7th Best Private Business School in South India.</li>
+            <li>3rd Best Private Business School in Bangalore.</li>
+            <li>Business Today B -School Survey</li>
+            <li>4th Best Private Business School in the category of Top 100 Living Experience in Bangalore.</li>
+            <li>5th Best Private Business School in the category of Top 100 Learning Experience in Bangalore.</li>
+            <li>6th Best Private Business School in the category of Top 100 Future Orientation in Bangalore.</li>
+        
+           
+          </ul>
+        ),
       },
       {
-        title: "Sustainable Energy Management System for Smart Cities",
-        description: "Prof. Michael Chen",
+        titles: "India Today B-School Survey",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>20th Best Private Business School in South India.</li>
+            <li>6th Best Private Business School in Bangalore.</li>
+          </ul>
+        ),
       },
       {
-        title: "Advanced Healthcare Monitoring Platform Using IoT",
-        description: "Dr. Emily Rodriguez",
+        titles: "Outlook Survey Best Colleges Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            32nd Best BBA colleges in India.
+            </li>
+            <li>
+            9th Best BBA college in Bangalore
+            </li>
+          </ul>
+        ),
       },
+      {
+        titles: "Careers360 B -School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Best B- School Rating of “AAA”</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM",
+        titles: "GHRDC Hotel Management Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+            </li>
+            <li>2nd Best Private Hotel Management Institution under “Super Excellence” Category in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week Best Hotel Management Schools Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>4th Best Private Hotel Management in India.</li>
+            <li>3rd Best Private Hotel Management in the South.</li>
+            <li>2nd Best Private Hotel Management in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "India Today Hotel Management Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            4th Best Private Hotel Management in Karnataka.
+            </li>
+            <li>3rd Best Private Hotel Management in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF LIBERAL & PERFORMING ARTS",
+        titles: " India Today Social Work Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>6th Best Emerging College in Social Work, Karnataka.</li>
+            <li>
+            4th Best Emerging College in Social Work, Bangalore.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Outlook Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            18th Best MSW colleges in India.
+            </li>
+            <li>3rd Best MSW College in Bangalore.</li>
+          </ul>
+        ),
+      },
+    
+    
     ],
     2020: [
       {
-        title: "AI-Driven Waste Management Systems",
-        description: "Dr. Anita Gupta",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: " The Week Best B-School Surve",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best Private Business School in Bangalore.</li>
+            <li>7th Best Private Business School in South India.</li>
+          </ul>
+        ),
       },
       {
-        title: "Blockchain for Transparent Voting Systems",
-        description: "Dr. Raj Malhotra",
+        titles: "India Today B-School Survey",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>5th Best Private Business School in Bangalore.</li>
+            <li>15th Best Business School in South India.</li>
+          </ul>
+        ),
       },
       {
-        title: "Personalized Medicine using Genomic Data",
-        description: "Dr. Aisha Khan",
+        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM",
+        titles: "GHRDC Hotel Management Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+            </li>
+           
+          </ul>
+        ),
       },
+      {
+        titles: "The Week Best Hotel Management Schools Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best Private Hotel Management Institute in Bangalore.</li>
+            <li>5th Best Private Hotel Management Institution in India.</li>
+          </ul>
+        ),
+      },
+      {
+      
+        titles: "India Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+            2nd Best Private Hotel Management in Bangalore.
+            </li>
+          
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF LIBERAL & PERFORMING ARTS",
+        titles: "India Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Emerging College in Social Work, Bangalore.</li>
+           
+          </ul>
+        ),
+      },
+     
+
     ],
     2019: [
       {

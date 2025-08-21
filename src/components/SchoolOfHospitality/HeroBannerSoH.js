@@ -27,12 +27,13 @@ const Banner = ({ announcements, pageType = 'engineering' }) => {
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
                                     AIMS School of <br className="block" />{" "}
-                                    <span className="italic playfair-400 text-[#D7FCF4]">Finance and Commerce</span>
+                                    <span className="italic playfair-400 text-[#D7FCF4]">
+                                    Hospitality and Tourism</span>
                                 </h1>
                             </div>
                             <div className="flex items-center">
                                 <Image
-                                    src="/school-of-hospitality/NAAC VET.png"
+                                    src="/naac/nacc-logo.svg"
                                     alt="IACBE"
                                     width={200}
                                     height={100}

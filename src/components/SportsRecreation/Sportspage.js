@@ -42,13 +42,13 @@ const Sportspage = () => {
           AIM Higher, Play Stronger.
         </h3>
 
-        <p className="max-w-5xl mx-auto pt-5">
+        <p className="max-w-4xl mx-auto pt-5">
           At AIMS Institutes, we believe the lessons learned on the field are
           just as valuable as those in the classroom. That&apos;s why we provide
           a well-rounded environment where sports, fitness, and recreation are
           integral to student life.
         </p>
-        <p className="max-w-5xl mx-auto pt-5">
+        <p className="max-w-4xl mx-auto pt-5">
           Whether you&apos;re pursuing your MBA from an internationally accredited
           institute or training to become a hospitality professional, we ensure
           that every AIMer has the space to recharge, compete, and grow stronger
