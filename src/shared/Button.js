@@ -1,4 +1,5 @@
 import { GoArrowDownRight, GoArrowUpRight } from "react-icons/go"
+import Link from "next/link"
 
 const Button = ({
   children,
@@ -30,11 +31,10 @@ const Button = ({
     <>
       {/* Original content */}
       <span
-        className={`transition-all duration-300 ease-in-out ${
-          showReadMore
+        className={`transition-all duration-300 ease-in-out ${showReadMore
             ? "group-hover:opacity-0 group-hover:-translate-y-2 cursor-pointer"
             : ""
-        }`}
+          }`}
       >
         {children}
       </span>
@@ -55,17 +55,17 @@ const Button = ({
     </>
   )
 
-  // If href is present, render <a>, else <button>
+  // If href is present, render <Link>, else <button>
   return href ? (
-    <a
+    <Link
       href={href}
-      target="_blank"
+      // target="_blank"
       rel="noopener noreferrer"
       className={buttonClasses}
       {...props}
     >
       {content}
-    </a>
+    </Link>
   ) : (
     <button onClick={onClick} className={buttonClasses} {...props}>
       {content}
