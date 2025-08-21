@@ -6,6 +6,8 @@ import Since from "./Since";
 // import AimersInAction from './AimersInAction'
 
 import Slide from "./Slide";
+import CampusUpdates from "./CampusUpdates";
+import CampusUpdatesSlider from "./CampusUpdatesCarousel";
 
 const HomeComponents = () => {
   return (
@@ -14,6 +16,9 @@ const HomeComponents = () => {
       <Since />
 
       <Slide />
+      {/* <CampusUpdatesSlider />
+      <CampusUpdates /> */}
+
     </>
   );
 };

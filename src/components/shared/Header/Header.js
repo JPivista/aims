@@ -24,7 +24,19 @@ export default function Header() {
     setActive(null);
   };
 
+  // Function to handle link click and scroll to top
+  const handleLinkClick = () => {
+    closeMobileMenu();
+    // Scroll page to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const { scrollY } = useScroll();
+
+  // Scroll to top on page refresh
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Ultra-smooth sticky behavior with debouncing
   useEffect(() => {
@@ -47,7 +59,7 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className={`z-50 bg-white/95 backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
+        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
           }`}
         style={{
           y,
@@ -76,7 +88,7 @@ export default function Header() {
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
           <motion.div
-            className="container mx-auto flex items-center justify-between px-4 lg:px-0 py-3 w-full h-[10vh]"
+            className="container mx-auto flex items-center justify-between px-4 lg:px-0 py-3 w-full h-[10vh] z-50 bg-white"
             layout
             transition={{
               duration: 0.6,
@@ -138,7 +150,7 @@ export default function Header() {
             {/* Mobile Hamburger */}
             <motion.button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-xl"
+              className="lg:hidden text-xl z-50 bg-white"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               transition={{
@@ -189,80 +201,101 @@ export default function Header() {
         {/* Mobile Menu */}
         <AnimatePresence>
           {mobileOpen && (
-            <motion.div
-              className="lg:hidden shadow-md"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{
-                duration: 0.4,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
-            >
-              {/* Search + Links */}
-              <div className="p-4 border-b">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="w-full border rounded-full px-4 py-2 mb-3"
-                />
-                <Link
-                  href="/aims-alumni-association"
-                  className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
-                  onClick={closeMobileMenu}
-                >
-                  Alumni
-                </Link>
-                <Link
-                  href="#"
-                  className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
-                  onClick={closeMobileMenu}
-                >
-                  Resources
-                </Link>
-                <Button
-                  className="font-light"
-                  hoverText="Contact Us"
-                  showArrow={true}
-                >
-                  Contact Us
-                </Button>
-              </div>
-              {/* Nav Items */}
-              <ul>
-                {MenuItems.map((menu, idx) => (
-                  <li key={idx}>
-                    <button
-                      className="w-full flex justify-between px-4 py-3 text-left bg-[#6E3299] text-white"
-                      onClick={() =>
-                        setActive(active === menu.title ? null : menu.title)
-                      }
-                    >
-                      {menu.title}
-                      <FiX
-                        className={`transform transition ${active === menu.title ? "" : "rotate-45"
-                          }`}
-                      />
-                    </button>
-                    {active === menu.title && (
-                      <ul className="bg-gray-50">
-                        {menu.links.map((link, i) => (
-                          <li key={i} className="px-6 py-2">
-                            <Link
-                              href={link.href || "#"}
-                              className="block text-gray-700"
-                              onClick={closeMobileMenu}
-                            >
-                              {link.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+            <>
+              {/* Full-screen overlay */}
+              <motion.div
+                className="fixed inset-0 bg-black/75 backdrop-blur-sm z-40"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={closeMobileMenu}
+                transition={{
+                  duration: 0.3,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              />
+
+              {/* Mobile menu content */}
+              <motion.div
+                className="lg:hidden shadow-md min-h-screen bg-white z-50 relative overflow-scroll"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{
+                  duration: 0.4,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              >
+                {/* Search */}
+                {/* <div className="p-4 border-b">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    className="w-full border rounded-full px-4 py-2 mb-3"
+                  />
+                </div> */}
+
+                {/* Nav Items */}
+                <ul>
+                  {MenuItems.map((menu, idx) => (
+                    <li key={idx}>
+                      <button
+                        className="w-full flex justify-between px-4 py-3 text-left bg-[#6E3299] text-white"
+                        onClick={() =>
+                          setActive(active === menu.title ? null : menu.title)
+                        }
+                      >
+                        {menu.title}
+                        <FiX
+                          className={`transform transition ${active === menu.title ? "" : "rotate-45"
+                            }`}
+                        />
+                      </button>
+                      {active === menu.title && (
+                        <ul className="bg-gray-50">
+                          {menu.links.map((link, i) => (
+                            <li key={i} className="px-6 py-2">
+                              <Link
+                                href={link.href || "#"}
+                                className="block text-gray-700"
+                                onClick={handleLinkClick}
+                              >
+                                {link.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Additional Links - After Placements */}
+                <div className="p-4 border-t border-gray-200">
+                  <Link
+                    href="/aims-alumni-association"
+                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                    onClick={handleLinkClick}
+                  >
+                    Alumni
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                    onClick={handleLinkClick}
+                  >
+                    Resources
+                  </Link>
+                  <Button
+                    className="font-light w-full mt-2"
+                    hoverText="Contact Us"
+                    showArrow={true}
+                  >
+                    Contact Us
+                  </Button>
+                </div>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </motion.header>
