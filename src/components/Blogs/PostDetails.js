@@ -84,7 +84,7 @@ const BlogPostDetails = () => {
                                     <p className="text-gray-700 mb-4">
                                         {stripHtml(event.excerpt?.rendered)?.slice(0, 220)}...
                                     </p>
-                                    <Button className="w-fit">Read More </Button>
+                                    <Button href={`/blogs/${event.slug}`} className="w-fit">Read More</Button>
                                 </div>
                             </>
                         ) : (
@@ -99,7 +99,7 @@ const BlogPostDetails = () => {
                                     <p className="text-gray-700 mb-4">
                                         {stripHtml(event.excerpt?.rendered)?.slice(0, 220)}...
                                     </p>
-                                    <Button className="w-fit">Read More </Button>
+                                    <Button href={`/blogs/${event.slug}`} className="w-fit">Read More</Button>
                                 </div>
                                 <div className="w-full lg:w-1/2">
                                     <Image

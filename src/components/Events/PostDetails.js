@@ -72,7 +72,12 @@ const EventsWorkshops = () => {
                                     <span dangerouslySetInnerHTML={{ __html: event.title.rendered }} style={{ fontWeight: "600", color: "#0C2165" }} />
                                 </h5>
 
-                                <Button className="mt-auto w-full sm:w-fit">View Event</Button>
+                                <Button
+                                    href={`/events/${event.slug}`}
+                                    className="mt-auto w-full sm:w-fit"
+                                >
+                                    View Event
+                                </Button>
                             </div>
                         </div>
                     ))}

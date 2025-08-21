@@ -164,8 +164,8 @@ const StudentAchievements = () => {
                             <p className='text-gray-600 mb-4 line-clamp-3 flex-grow'>
                                 {stripHtml(news.content.rendered)}
                             </p>
-                            <div className='mt-auto'>
-                                <Button>Read More</Button>
+                            <div className='mt-auto flex justify-start items-start'>
+                                <Button href={`/news/${news.slug}`}>Read More</Button>
                             </div>
                         </div>
                     </div>
