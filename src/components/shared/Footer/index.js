@@ -1,9 +1,11 @@
 import React from 'react'
 import Footer from './Footer'
+import FooterAcadamicJourney from './FooterAcadamicJourney'
 
 const index = () => {
     return (
         <div>
+            <FooterAcadamicJourney />
             <Footer />
         </div>
     )

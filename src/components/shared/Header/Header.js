@@ -173,7 +173,7 @@ export default function Header() {
                 Alumni
               </Link>
               <Link
-                href="#"
+                href="/eresources"
                 className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
               >
                 Resources

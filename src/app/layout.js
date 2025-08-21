@@ -2,6 +2,7 @@ import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
+import FloatingButton from "../components/shared/FloatingButton";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -79,6 +80,7 @@ const RootLayout = ({ children }) => {
         <Header />
         {children}
         <Footer />
+        <FloatingButton />
       </body>
     </html>
   );

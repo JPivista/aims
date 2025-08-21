@@ -42,18 +42,18 @@ export const MenuItems = [
   {
     title: "Life At AIMS",
     links: [
-      { name: "Student Clubs", href: "/life-at-aims/student-clubs" },
-      { name: "Events & Festivals", href: "/life-at-aims/events-festivals" },
-      { name: "Sports & Recreation", href: "/life-at-aims/sports-recreation" },
-      { name: "Campus Facilities", href: "/life-at-aims/campus-facilities" },
+      { name: "Student Clubs", href: "/student-clubs" },
+      { name: "Events & Festivals", href: "/events-fests" },
+      { name: "Sports & Recreation", href: "/sports-recreation" },
+      { name: "Campus Facilities", href: "/campus-facilities" },
     ],
   },
   {
     title: "Placements",
     links: [
-      { name: "Recruiters", href: "/placements/recruiters" },
-      { name: "Placement Policies", href: "/placements/policies" },
-      { name: "Placements MBA/PGDM", href: "/placements/mba-pgdm" }
+      { name: "Recruiters", href: "/recruiters" },
+      { name: "Placement Policies", href: "/placement-policies" },
+      { name: "Placements MBA/PGDM", href: "/placements-mba/pgdm" }
     ],
   },
 ];
