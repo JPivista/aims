@@ -63,8 +63,8 @@ const BcomProgramOverview = () => {
             <div className='py-10 lg:px-0 px-4' style={{ backgroundColor: '#E1F9F4' }}>
                 <div className='container mx-auto flex flex-col gap-10'>
                     <div className=' items-center justify-between grid grid-cols-1 md:grid-cols-2'>
-                        <h3 className='text-[#0C2165]'>
-                            <span className='italic text-[#A22877]'>B.Com Program</span>
+                        <h3 className='text-[#0C2165] playfair-400'>
+                            <span className='italic text-[#A22877] playfair-400'>B.Com Program</span>
                             <br />
                             Overview
                         </h3>

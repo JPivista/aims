@@ -12,8 +12,8 @@ const BcomContent = () => {
                 </div>
 
                 <div className='text-center'>
-                    <h3 className='text-[#531675]'>
-                        Why Choose the <span className='italic'> AIMS B.Com?</span>
+                    <h3 className='text-[#531675] playfair-400'>
+                        Why Choose <span className='italic playfair-400'> B.Com at AIMS?</span>
                     </h3>
                 </div>
 

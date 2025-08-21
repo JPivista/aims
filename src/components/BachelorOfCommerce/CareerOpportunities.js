@@ -74,9 +74,9 @@ const CareerOpportunities = () => {
                             <thead>
                                 <tr className="">
                                     <th></th>
-                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white">Role</th>
-                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white">Skills Developed</th>
-                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white">Opportunities</th>
+                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white md:text-center">Role</th>
+                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white md:text-center">Skills Developed</th>
+                                    <th className="px-6 py-4 text-left font-semibold text-lg bg-gradient-to-r from-[#0C2165] to-[#5522A1] text-white rounded-t-md border-r border-white md:text-center">Opportunities</th>
                                 </tr>
                             </thead>
                             <tbody>

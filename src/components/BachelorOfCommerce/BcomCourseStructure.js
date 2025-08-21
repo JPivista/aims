@@ -13,7 +13,7 @@ const sampleCourseData = [
                 label: "SEMESTER 1",
                 image: "/mcom/students-semester1.jpg",
                 courses: [
-                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
                     "Financial Accountancy",
                     "Corporate Law",
@@ -27,7 +27,7 @@ const sampleCourseData = [
                 label: "SEMESTER 2",
                 image: "/mcom/students-semester2.jpg",
                 courses: [
-                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
                     "Advanced Financial Accounting",
                     "Environmental studies (EVS)",
@@ -47,7 +47,7 @@ const sampleCourseData = [
                 label: "SEMESTER 3",
                 image: "/mcom/students-semester3.jpg",
                 courses: [
-                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
                     "Corporate Accounting",
                     "Financial Management",
@@ -61,7 +61,7 @@ const sampleCourseData = [
                 label: "SEMESTER 4",
                 image: "/mcom/students-semester4.jpg",
                 courses: [
-                    "Language: Kannada / Hindi / Additional English / Sanskrit / Tamil / Telugu / Malayalam / Marathi",
+                    "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
                     "Advanced Corporate Accounting",
                     "Costing Methods",
@@ -81,12 +81,12 @@ const sampleCourseData = [
                 label: "SEMESTER 5",
                 image: "/mcom/students-semester5.jpg",
                 courses: [
-                    "Direct Taxation -I",
+                    "Direct Taxation - I",
                     "Business Regulations",
                     "Goods & Services Tax",
                     "Advanced Accounting",
-                    "Elective -1",
-                    "Elective -2",
+                    "Elective - 1",
+                    "Elective - 2",
                     "Internship Learning (IL)"
                 ]
             },
@@ -95,13 +95,13 @@ const sampleCourseData = [
                 label: "SEMESTER 6",
                 image: "/mcom/students-semester6.jpg",
                 courses: [
-                    "Direct Taxation -I",
+                    "Direct Taxation - I",
                     "Management Accounting",
                     "Auditing and Reporting",
                     "Advanced Accounting",
                     "Entrepreneurship Development",
-                    "Elective -3",
-                    "Elective -4"
+                    "Elective - 3",
+                    "Elective - 4"
                 ]
             }
         ]
@@ -113,10 +113,11 @@ const BcomCourseStructure = () => {
         <>
 
             <div className="mb-10 bg-white">
-                <div className="container mx-auto px-6 lg:px-8">
+                <div className="container mx-auto px-6 lg:px-0">
                     <div className="">
-                        <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2">
-                            B.Com Program  <br />
+                        <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-400">
+                            <span className='italic playfair-400'>B.Com Program</span>
+                            <br />
                             <span className='text-[#0C2165] playfair-400'>
                                 Course Structure
                             </span>
