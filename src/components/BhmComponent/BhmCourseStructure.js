@@ -1,167 +1,184 @@
-
 'use client'
 import React from 'react'
-import TabCourseStructure from '../Tab/TabCourseStructure'
+import TabCourseStructure from "@/components/BhmComponent/TabCourseStructure"
 
-// Sample data structure for the course structure
+// ✅ Full BHM JSON (8 Semesters)
 const sampleCourseData = [
-    {
-        key: "first-year",
-        title: "First Year",
-        tabs: [
-            {
-                key: "semester-1",
-                label: "SEMESTER 1",
-                image: "/bca/students-semester1.jpg", // Add your image path
-                courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
-                    "Part 2 Optional",
-                    "Discrete Mathematics.",
-                    "Problem Solving Techniques.",
-                    "Data Structure.",
-                    "Problem Solving Lab.",
-                    "Data Structure Lab."
-                ]
-            },
-            {
-                key: "semester-2",
-                label: "SEMESTER 2",
-                image: "/bca/students-semester2.jpg", // Add your image path
-                courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
-                    "Part 2 Optional",
-                    "Computer Architecture.",
-                    "Object Oriented Programming Using Java.",
-                    "Database Management System.",
-                    "Java LAB.",
-                    "Database Management System Lab."
-                ]
-            }
+  {
+    key: "first-year",
+    title: "First Year",
+    tabs: [
+      {
+        key: "semester-1",
+        label: "SEMESTER 1",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Language - I",
+          "Language - II",
+          "Food & Beverage Production - I",
+          "Food & Beverage Service - I",
+          "Front Office - I",
+          "Housekeeping - I",
+          "Environmental Studies",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - I",
+          "Food & Beverage Service Practical - I",
+          "Front Office Practical - I",
+          "Housekeeping Practical - I"
         ]
-    },
-    {
-        key: "second-year",
-        title: "Second Year",
-        tabs: [
-            {
-                key: "semester-3",
-                label: "SEMESTER 3",
-                image: "/bca/students-semester3.jpg", // Add your image path
-                courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
-                    "Part 2 Optional",
-                    "Operating Systems.",
-                    "Computer Networks.",
-                    "Python Programming.",
-                    "Computer Networks Lab.",
-                    "Python Programming Lab."
-                ]
-            },
-            {
-                key: "semester-4",
-                label: "SEMESTER 4",
-                image: "/bca/students-semester4.jpg", // Add your image path
-                courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
-                    "Part 2 Optional",
-                    "Software Engineering.",
-                    "Artificial Intelligence.",
-                    "Internet Technologies.",
-                    "Artificial Intelligence LAB.",
-                    "Internet Technologies LAB."
-                ]
-            }
+      },
+      {
+        key: "semester-2",
+        label: "SEMESTER 2",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Language - I",
+          "Language - II",
+          "Food & Beverage Production - II",
+          "Food & Beverage Service - II",
+          "Front Office - II",
+          "Housekeeping - II",
+          "Nutrition",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - II",
+          "Food & Beverage Service Practical - II",
+          "Front Office Practical - II",
+          "Housekeeping Practical - II"
         ]
-    },
-    {
-        key: "third-year",
-        title: "Third Year",
-        tabs: [
-            {
-                key: "semester-5",
-                label: "SEMESTER 5",
-                image: "/bca/students-semester5.jpg", // Add your image path
-                courses: [
-                    "Design & Analysis of Algorithm.",
-                    "Data Analytics Computer Architecture.",
-                    "Web Programming.",
-                    "Data Analytics Lab.",
-                    "Web Programming Lab.",
-                    "Project Work."
-                ]
-            },
-            {
-                key: "semester-6",
-                label: "SEMESTER 6",
-                image: "/bca/students-semester6.jpg", // Add your image path
-                courses: [
-                    "Theory of Computation.",
-                    "Machine Learning.",
-                    "Mobile Application Development.",
-                    "Machine Learning Lab.",
-                    "Mobile Application Development Lab.",
-                    "Project Work."
-                ]
-            }
+      }
+    ]
+  },
+  {
+    key: "second-year",
+    title: "Second Year",
+    tabs: [
+      {
+        key: "semester-3",
+        label: "SEMESTER 3",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Food & Beverage Production - III",
+          "Food & Beverage Service - III",
+          "Front Office - III",
+          "Housekeeping - III",
+          "Hotel Engineering",
+          "Communication Skills",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - III",
+          "Food & Beverage Service Practical - III",
+          "Front Office Practical - III",
+          "Housekeeping Practical - III"
         ]
-    },
-    {
-        key: "fourth-year",
-        title: "Fourth Year",
-        tabs: [
-            {
-                key: "semester-7",
-                label: "SEMESTER 7",
-                image: "/bca/students-semester7.jpg", // Add your image path
-                courses: [
-                    "Cloud Computing.",
-                    "Internet of Things.",
-                    "Internship.",
-                    "Cloud Computing Lab.",
-                    "Internet of Things Lab."
-                ]
-            },
-            {
-                key: "semester-8",
-                label: "SEMESTER 8",
-                image: "/bca/students-semester8.jpg", // Add your image path
-                courses: [
-                    "Block Chain Technologies.",
-                    "Cryptography & System Security.",
-                    "Block Chain Technologies Lab."
-                ]
-            }
+      },
+      {
+        key: "semester-4",
+        label: "SEMESTER 4",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Food & Beverage Production - IV",
+          "Food & Beverage Service - IV",
+          "Front Office - IV",
+          "Housekeeping - IV",
+          "Hotel Accountancy",
+          "Computer Applications",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - IV",
+          "Food & Beverage Service Practical - IV",
+          "Front Office Practical - IV",
+          "Housekeeping Practical - IV"
         ]
-    }
+      }
+    ]
+  },
+  {
+    key: "third-year",
+    title: "Third Year",
+    tabs: [
+      {
+        key: "semester-5",
+        label: "SEMESTER 5",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Food & Beverage Production - V",
+          "Food & Beverage Service - V",
+          "Front Office - V",
+          "Housekeeping - V",
+          "Financial Management",
+          "Food Science",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - V",
+          "Food & Beverage Service Practical - V",
+          "Front Office Practical - V",
+          "Housekeeping Practical - V"
+        ]
+      },
+      {
+        key: "semester-6",
+        label: "SEMESTER 6",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Food & Beverage Production - VI",
+          "Food & Beverage Service - VI",
+          "Front Office - VI",
+          "Housekeeping - VI",
+          "Marketing Management",
+          "Research Methodology",
+          { type: "subheading", text: "Practical" },
+          "Food & Beverage Production Practical - VI",
+          "Food & Beverage Service Practical - VI",
+          "Front Office Practical - VI",
+          "Housekeeping Practical - VI"
+        ]
+      }
+    ]
+  },
+  {
+    key: "fourth-year",
+    title: "Fourth Year",
+    tabs: [
+      {
+        key: "semester-7",
+        label: "SEMESTER 7",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Strategic Management",
+          "Hospitality Law",
+          "Human Resource Management",
+          "Elective I",
+          { type: "subheading", text: "Practical" },
+          "Project Work / Internship"
+        ]
+      },
+      {
+        key: "semester-8",
+        label: "SEMESTER 8",
+        courses: [
+          { type: "subheading", text: "Theory" },
+          "Entrepreneurship Development",
+          "Hospitality Management",
+          "Elective II",
+          { type: "subheading", text: "Practical" },
+          "Final Project / Viva Voce"
+        ]
+      }
+    ]
+  }
 ]
 
-const BcaCourseStructure = () => {
-    return (
-        <>
-
-<div className="py-10 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="">
-            <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2">
-              BHM Program <br />
-              <span className="text-[#0C2165] playfair-400">
-                Course Structure
-              </span>
-            </h3>
-          </div>
+const BhmCourseStructure = () => {
+  return (
+    <div className="py-10 bg-white">
+      <div className="container mx-auto ">
+        <div>
+          <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 px-4 lg:px-0">
+            BHM Program <br />
+            <span className="text-[#0C2165] playfair-400">Course Structure</span>
+          </h3>
         </div>
-        <TabCourseStructure courseData={sampleCourseData} />
       </div>
-        </>
-    )
+      <TabCourseStructure courseData={sampleCourseData} />
+    </div>
+  )
 }
 
-export default BcaCourseStructure 
+export default BhmCourseStructure

@@ -9,12 +9,11 @@ const index = () => {
   return (
     <>
       <div>
-        <Banner/>
-        <Sportspage/>
-        <SportsTab/>
-        <Impact/>
-        <SportsSection/>
-
+        <Banner />
+        <Sportspage />
+        <SportsTab />
+        <Impact />
+        <SportsSection />
       </div>
     </>
   )

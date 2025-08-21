@@ -45,13 +45,13 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
               <div className="flex items-center lg:items-start w-full">
                 <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
                   <span className="playfair-400">
-                    Fuel Your Goals with
+                  Invest in Your 
                     <span className="inline-block lg:hidden ml-2"></span>
                   </span>
 
                   <br className="hidden lg:block" />
                   <span className="playfair-400 text-[#D7FCF4]">
-                    the Right Support
+                  Future with Confidence
                   </span>
                 </h1>
               </div>

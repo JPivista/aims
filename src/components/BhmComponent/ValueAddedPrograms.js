@@ -118,7 +118,7 @@ const BbaValueAddedPrograms = () => {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-end ">
-          <div className="w-2/4 md:px-10">
+          <div className="w-2/5 md:px-10">
             <h2 className="text-[#010066] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
               Employers Who
               <br /> Hire Our BHM
