@@ -6,11 +6,11 @@ const EqualOpportunity = () => {
     <>
       <div className="bg-[#EFE0F6] lg:py-10">
         <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-[90%]">
             <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
               EQUAL <br className="hidden md:block" /> OPPORTUNITY CELL
             </h5>
-            <p className="lg:mt-3 text-gray-600 lg:w-[80%] xl:w-[80%] md:w-full w-full lg:px-0 px-4">
+            <p className="lg:mt-3 text-gray-600 w-full lg:px-0 px-4">
               AIMS Institutes shall ensure a level playing ground for all
               students in respect of entitlement and opportunity for enjoyment
               of all legitimate rights as specified under UGC (Promotion of
@@ -18,7 +18,7 @@ const EqualOpportunity = () => {
             </p>
           </div>
           {/* Right Side Image */}
-          <div className="w-full flex justify-center lg:justify-end">
+          <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
             <Image
               src="/welfare-committees/equality.png"
               alt="students"
@@ -75,20 +75,22 @@ const EqualOpportunity = () => {
                     Complaints may also be submitted in one of the following
                     ways:
                   </p>
-                  <p className="mt-2">
-                  <ul className="list-decimal list-inside px-2 pt-3">
+                  <p>
+                  <ul className="list-decimal list-inside px- pt-3">
                       <li>In writing to the Principal/Registrar</li>
                       <li>Or use one of the following means</li>
                     </ul>
-                    <ul className="list-disc list-inside px-3 pt-5">
+                    <ul className="list-disc list-inside px-4 pt-3">
                       <li className="">
-                        Grievance Registration Portal Link
+                        <a href="/grievance-redressal" target="_blank" className="underline">
+                          Grievance Registration Portal Link
+                        </a>
                       </li>
                       <li>
                         Email:{" "}
                         <a
                           href="mailto:grievances@theaims.ac.in"
-                          className="text-[#000] monser-500"
+                          className="text-[#A22877] monser-500"
                         >
                           grievances@theaims.ac.in
                         </a>

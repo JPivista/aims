@@ -5,7 +5,7 @@ const Committees = () => {
     <>
       <div className="container mx-auto text-center py-10">
         <h1 className="text-[#0C2165]">
-          Committees Committed to a Safe and Respectful Campus
+          Committed to a Safe and Respectful Campus
         </h1>
         <p className="text-[#0C2165] lg:w-[80%] xl:w-[80%] md:w-full w-full lg:px-0 px-4 mx-auto">
           We at AIMS Institutes have dedicated cells and committees to address

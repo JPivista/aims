@@ -6,11 +6,11 @@ const AntiSexualHarassment = () => {
     <>
       <div className="bg-[#FFE2E3] lg:py-10">
         <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-[90%]">
             <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
               ANTI-SEXUAL <br className="hidden md:block" /> HARASSMENT CELL
             </h5>
-            <p className="mt-3 text-gray-600 lg:w-[80%] xl:w-[80%] md:w-full w-full lg:px-0 px-4">
+            <p className="mt-3 text-gray-600 w-full lg:px-0 px-4">
               AIMS Institutes is committed to creating and maintaining a
               community in which students, teachers, and staff can work together
               in an environment free of violence, harassment, exploitation,
@@ -20,7 +20,7 @@ const AntiSexualHarassment = () => {
             </p>
           </div>
           {/* Right Side Image */}
-          <div className="w-full flex justify-center lg:justify-end">
+          <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
             <Image
               src="/welfare-committees/anti-sexual.png"
               alt="students"
@@ -136,11 +136,13 @@ const AntiSexualHarassment = () => {
                       9448525018
                     </a>
                   </p>
-                  <p className="mt-2">
+                  <p className="">
                     or use one of the following means:
-                    <ul className="list-disc list-inside">
+                    <ul className="list-disc list-inside mt-3 px-4">
                       <li className="underline">
+                        <a href="/grievance-redressal" target="_blank">
                         Grievance Registration Portal Link
+                        </a>
                       </li>
                       <li>
                         Email:{" "}
