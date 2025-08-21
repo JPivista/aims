@@ -1,7 +1,9 @@
 import React from "react"
 import Image from "next/image"
 import ValueAddedProgramsProps from "../ValueAddedProgramsProps"
-import ProgramHighlight from "./ProgramHighlight"
+import MBAProgramHighlight from "../../Mba/ProgramHighlight"
+import BBAProgramHighlight from "../../BbaComponents/ProgramHighlight"
+import BBAAviationProgramHighlight from "../../BbaAviationComponents/ProgramHighlight"
 
 const ValueAddedPrograms = ({ programKey = "mba" }) => {
   const programData = {
@@ -88,54 +90,36 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
         {
           title: "Workshops & Specialised Training",
           content: [
-            "Capstone CAPSIM Simulation",
-            "Certification on Advanced Excel",
-            "Certification on Sustainability",
-            "Certification on Insurance Management",
-            "Certification on Entrepreneurship",
-            "Certification on BFSI",
-            "Certification on SCM",
-            "Certification on Digital Marketing",
-            "Global Online Certifications on Change Management, and Operations & Information Management",
+            "Workshop on AI/ML for enhancing business",
+            "Aptitude Training",
+            "Case Study Analysis",
+            "Cyber Security",
+            "Life Security",
           ],
         },
         {
           title: "Placement & Career Preparation",
           content: [
-            "Capstone CAPSIM Simulation",
-            "Certification on Advanced Excel",
-            "Certification on Sustainability",
-            "Certification on Insurance Management",
-            "Certification on Entrepreneurship",
-            "Certification on BFSI",
-            "Certification on SCM",
-            "Certification on Digital Marketing",
-            "Global Online Certifications on Change Management, and Operations & Information Management",
+            "Pre-Placement Talks",
+            "Domain & Company Specific Training",
+            "Mock Interviews",
+            "Group Discussions",
+            "Career Guidance Workshops",
+            "Employability Skills",
           ],
         },
         {
           title: "Soft Skills & Professional Grooming",
           content: [
-            "Capstone CAPSIM Simulation",
-            "Certification on Advanced Excel",
-            "Certification on Sustainability",
-            "Certification on Insurance Management",
-            "Certification on Entrepreneurship",
-            "Certification on BFSI",
-            "Certification on SCM",
-            "Certification on Digital Marketing",
-            "Global Online Certifications on Change Management, and Operations & Information Management",
+            "Corporate Grooming",
+            "Dining Etiquette",
+            "WFH Skills & Business Etiquettes",
+            "Business & Language Lab Training",
           ],
         },
         {
           title: "Wellness & Life Skills",
-          content: [
-            "Firefighting at Peenya Fire Station",
-            "Certification in hygiene, sanitation, general nutrition management & physical fitness",
-            "Webinar on emotional wellbeing",
-            "Yoga & Meditation",
-            "Survival Training",
-          ],
+          content: ["Nutrition & Wellness", "Life skills", "Yoga & Meditation"],
         },
       ],
     },
@@ -301,7 +285,9 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
 
       {/* Program Highlight Section */}
       <div className="py-10">
-        <ProgramHighlight programKey={programKey} />
+        {programKey === "mba" && <MBAProgramHighlight />}
+        {programKey === "bba" && <BBAProgramHighlight />}
+        {programKey === "bba-aviation" && <BBAAviationProgramHighlight />}
       </div>
     </>
   )

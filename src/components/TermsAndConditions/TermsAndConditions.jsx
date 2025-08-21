@@ -238,31 +238,69 @@ const TermsAndConditions = () => {
         <h3 className="text-xl sm:text-2xl md:text-3xl text-[#0C2165] playfair-300">
           {section.heading}
         </h3>
-        {section.paragraphs.map((paragraph, paragraphIndex) => (
-          <p
-            key={`${sectionIndex}-${paragraphIndex}`}
-            className="text-base sm:text-lg text-gray-700 leading-relaxed monser-400"
-            dangerouslySetInnerHTML={{
-              __html: paragraph
-                .replace(
-                  /https:\/\/[^\s]+/g,
-                  '<a href="$&" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
-                )
-                .replace(
-                  /www\.theaims\.ac\.in/g,
-                  '<a href="https://www.theaims.ac.in" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">www.theaims.ac.in</a>'
-                )
-                .replace(
-                  /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
-                  '<a href="mailto:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
-                )
-                .replace(
-                  /\+91[-\s]?\(?[0-9]+\)?[-\s]?[0-9]+[-\s]?[0-9]+/g,
-                  '<a href="tel:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
-                ),
-            }}
-          />
-        ))}
+        {section.paragraphs.map((paragraph, paragraphIndex) => {
+          // Check if paragraph starts with bullet point
+          if (paragraph.startsWith("•")) {
+            return (
+              <div
+                key={`${sectionIndex}-${paragraphIndex}`}
+                className="flex items-start space-x-3 text-base sm:text-lg leading-relaxed monser-400"
+              >
+                <span className="font-bold flex-shrink-0 text-lg sm:text-xl md:text-4xl -mt-2">
+                  •
+                </span>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph
+                      .substring(1) // Remove the bullet point
+                      .replace(
+                        /https:\/\/[^\s]+/g,
+                        '<a href="$&" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                      )
+                      .replace(
+                        /www\.theaims\.ac\.in/g,
+                        '<a href="https://www.theaims.ac.in" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">www.theaims.ac.in</a>'
+                      )
+                      .replace(
+                        /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
+                        '<a href="mailto:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                      )
+                      .replace(
+                        /\+91[-\s]?\(?[0-9]+\)?[-\s]?[0-9]+[-\s]?[0-9]+/g,
+                        '<a href="tel:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                      ),
+                  }}
+                />
+              </div>
+            )
+          } else {
+            return (
+              <p
+                key={`${sectionIndex}-${paragraphIndex}`}
+                className="text-base sm:text-lg leading-relaxed monser-400"
+                dangerouslySetInnerHTML={{
+                  __html: paragraph
+                    .replace(
+                      /https:\/\/[^\s]+/g,
+                      '<a href="$&" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                    )
+                    .replace(
+                      /www\.theaims\.ac\.in/g,
+                      '<a href="https://www.theaims.ac.in" target="_blank" rel="noopener noreferrer" class="text-[#A22877] hover:text-[#A10000] underline">www.theaims.ac.in</a>'
+                    )
+                    .replace(
+                      /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
+                      '<a href="mailto:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                    )
+                    .replace(
+                      /\+91[-\s]?\(?[0-9]+\)?[-\s]?[0-9]+[-\s]?[0-9]+/g,
+                      '<a href="tel:$&" class="text-[#A22877] hover:text-[#A10000] underline">$&</a>'
+                    ),
+                }}
+              />
+            )
+          }
+        })}
       </div>
     )
   }

@@ -50,7 +50,7 @@ const Activities = () => {
         {/* Right Side - Image (1/4 width) */}
         <div className="flex flex-col md:justify-end md:items-end justify-center items-center -mb-5 md:-mb-32">
           <Image
-            src="/student-development/activities.svg"
+            src="/student-development/activities-new.svg"
             alt="Student Activities"
             width={800}
             height={600}

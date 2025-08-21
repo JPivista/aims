@@ -46,7 +46,7 @@ const WhyChoose = () => {
         </p>
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-5xl md:text-[65px] text-[#0C2165] mb-4 playfair-300 leading-tight">
+          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-4 playfair-300 leading-tight">
             Why Choose the <br />{" "}
             <span className="text-[#A22877] italic playfair-400 ">
               AIMS BBA?

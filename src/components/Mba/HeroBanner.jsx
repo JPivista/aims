@@ -5,85 +5,103 @@ import React from "react"
 const HeroBanner = ({ announcements, pageType = "mba" }) => {
   return (
     <>
-      <div className="relative w-full h-[100vh]  md:h-[100vh] overflow-hidden">
-        {/* Background Image */}
-        <Image
-          src="/MBA/mba-herobanner.jpg"
-          alt="AIMS Student"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover"
-          priority
-        />
+      <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+        {/* Background Image - Desktop */}
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mba-herobanner.jpg')]" />
+
+        {/* Background Image - Mobile */}
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mobile-banner.png')]" />
+
+        {/* Gradient Overlay - Figma Design */}
+        {/* <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(230, 187, 215, 0.40) 0%, rgba(230, 187, 215, 0.40) 38.94%, var(--Color, rgba(83, 22, 117, 0.40)) 100%)",
+          }}
+        ></div> */}
 
         {/* Empower Image*/}
-        <div className="absolute right-4 md:right-20 -top-8 md:top-10 md:max-w-2xl">
+        <div className="absolute left-4 md:left-auto md:right-20 -top-8 md:-top-8 md:max-w-2xl">
           <Image
             src="/black-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-40 h-40 md:w-full md:h-full"
+            className="w-30 h-30 md:w-45 md:h-45"
             priority
           />
         </div>
 
-        {/* Hero Text */}
-        <div className="absolute inset-0 w-full flex flex-col justify-between">
-          <div className="px-4 md:px-14 py-8 md:py-14 mt-20 md:mt-10 ml-5">
-            {/* Hero Text */}
-            <h1 className="text-[#002561] text-[60px] md:text-[72px] playfair-500 leading-tight tracking-wider">
-              Learn the Skills.
-              <br />
-              Build the Career.
-            </h1>
-            <h2 className="monser-500 text-[30px] md:text-[40px] mt-2 leading-tight">
-              MBA at AIMS
-            </h2>
-            <h2 className="text-[#A22877] text-[30px] md:text-[34px] monser-400 mt-2 leading-tight">
-              Placement Snapshot
-            </h2>
+        {/* Bottom Content Container */}
+        <div className="absolute left-0 right-0 px-4 lg:px-0 top-13">
+          <div className="container mx-auto">
+            <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
+              <div className="flex items-center">
+                <div className="text-center md:text-left">
+                  {/* Hero Text */}
+                  <h1 className="text-[#002561] !text-4xl md:!text-[60px] playfair-500 md:leading-tight md:tracking-wider">
+                    Learn the Skills.
+                    <br />
+                    Build the Career.
+                  </h1>
+                  <h2 className="monser-500 text-3xl md:text-[40px]  leading-tight text-[#002561] md:text-black">
+                    MBA at AIMS
+                  </h2>
+                  <h2 className="text-[#A22877] text-xl md:text-[34px] monser-400 leading-tight">
+                    Placement Snapshot
+                  </h2>
 
-            {/* Package */}
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-6 md:mt-6">
-              <div className="rounded-lg border border-black p-3 md:px-4 py-4 text-center min-w-[120px] md:min-w-[150px] relative">
-                <div className="text-xl sm:text-2xl md:text-3xl text-[#A22877] monser-500">
-                  <span className="text-[60px] text-[#A22877] monser-700">
-                    ₹8
-                  </span>{" "}
-                  LPA
-                </div>
-                <div className="absolute text-[16px]  top-22 left-4 px-2 bg-[#FAFAFA] monser-400">
-                  Average Package
-                </div>
-              </div>
-              <div className="rounded-lg border border-black p-3 md:px-4 py-4 text-center min-w-[120px] md:min-w-[140px] relative">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#A22877] monser-500">
-                  <span className="text-[60px] text-[#A22877] monser-700">
-                    ₹27
-                  </span>{" "}
-                  LPA
-                </div>
-                <div className="absolute text-[16px]  top-22 left-8 px-2 bg-[#FAFAFA] monser-400">
-                  Highest Package
+                  {/* Package */}
+                  <div className="mt-4 sm:mt-6 md:mt-6">
+                    {/* Mobile Package SVG */}
+                    <div className="block md:hidden">
+                      <Image
+                        src="/MBA/mobile-package.svg"
+                        alt="Package Information"
+                        width={398}
+                        height={96}
+                        className="w-full h-auto px-4"
+                        priority
+                      />
+                    </div>
+
+                    {/* Desktop Package SVG */}
+                    <div className="hidden md:block">
+                      <Image
+                        src="/MBA/desktop-pacakage.svg"
+                        alt="Package Information"
+                        width={418}
+                        height={94}
+                        className="w-80 h-auto"
+                        priority
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* IABCE Section */}
-          <div className="hidden lg:block absolute bottom-0 left-0 z-40">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl">
-              <Image
-                src="/MBA/iacbe-final.svg"
-                alt="IACBE Accreditation"
-                width={920}
-                height={250}
-                className="object-cover"
-              />
-            </div>
+          <div className="hidden md:flex mt-4">
+            <Image
+              src="/MBA/iacbe-final.svg"
+              alt="IACBE"
+              width={400}
+              height={100}
+              className="w-[800px] h-[200px] object-contain"
+            />
           </div>
         </div>
+      </div>
+      <div className="block md:hidden">
+        <Image
+          src="/MBA/iacbe-mobile.svg"
+          alt="Mobile Banner and IACBE"
+          width={440}
+          height={574}
+          className="w-full h-auto"
+          priority
+        />
       </div>
       {/* Application Announcements Marquee */}
       <ApplicationMarquee announcements={announcements} pageType={pageType} />

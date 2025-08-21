@@ -20,7 +20,7 @@ const GeneralInstructions = () => {
         <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
           {/* Heading */}
           <h1 className="text-[#0C2165] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 leading-tight">
-            General <br />
+            General <br className="hidden md:block" />
             Instructions
           </h1>
 
@@ -30,7 +30,7 @@ const GeneralInstructions = () => {
               {instructions.map((instruction, index) => (
                 <li
                   key={index}
-                  className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-[20px] monser-400 leading-relaxed"
+                  className="text-base md:text-lg lg:text-[20px] monser-400 leading-relaxed"
                 >
                   {instruction}
                 </li>

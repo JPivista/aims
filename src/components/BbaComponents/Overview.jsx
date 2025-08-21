@@ -114,15 +114,91 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline */}
-        <div className="flex justify-center mb-6 sm:mb-8 md:mb-10">
-          <Image
-            src="/bba/bba-program.svg"
-            alt="BBA Program Overview"
-            width={1000}
-            height={600}
-            className="object-contain w-full h-full"
-            priority
-          />
+        <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
+          {/* Mobile Card Version */}
+          <div className="block md:hidden w-full max-w-sm">
+            <div className="rounded-2xl p-6 border border-[#A774CC]">
+              {/* Affiliation & Recognition Section */}
+              <div className="text-center mb-6">
+                <div className="flex justify-center">
+                  <Image
+                    src="/MBA/trophy.svg"
+                    alt="Trophy"
+                    width={32}
+                    height={32}
+                    className="w-[130px] h-[130px] object-contain"
+                  />
+                </div>
+                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                  Affiliation & Recognition
+                </h5>
+                <p className="text-sm monser-400 whitespace-nowrap">
+                  Affiliated to Bangalore University
+                </p>
+              </div>
+
+              <div className="border-t border-gray-500 mb-4"></div>
+
+              {/* Accreditations Section */}
+              <div className="text-center mb-6">
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/MBA/naac-iabce.svg"
+                    alt="NAAC and IACBE"
+                    width={96}
+                    height={32}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                  Accreditations
+                </h5>
+                <p className="text-sm monser-400">
+                  <span className="monser-600">NAAC 'A'</span> Grade (3.25 on a
+                  scale of 4)
+                </p>
+                <p className="text-sm monser-400">
+                  <span className="monser-600">IACBE</span> Accredited
+                </p>
+              </div>
+
+              <div className="border-t border-gray-500 mb-6"></div>
+
+              {/* Duration Section */}
+              <div className="text-center">
+                <div className="flex justify-center">
+                  <Image
+                    src="/MBA/calender.svg"
+                    alt="Calendar"
+                    width={32}
+                    height={32}
+                    className="w-[130px] h-[130px] object-contain"
+                  />
+                </div>
+                <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
+                  Duration
+                </h5>
+                <p className="text-black text-sm">
+                  BBA - 3 years (6 semesters)
+                </p>
+                <p className="text-black text-sm">
+                  BBA (Honours) - 4 years <br /> (8 semesters)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Version */}
+          <div className="hidden md:block">
+            <Image
+              src="/bba/bba-program.svg"
+              alt="BBA Program Overview"
+              width={1000}
+              height={600}
+              className="object-contain w-full h-full"
+              priority
+            />
+          </div>
         </div>
 
         {/* Buttons */}

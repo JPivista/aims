@@ -6,20 +6,36 @@ const Ambitions = () => {
   return (
     <>
       <div className="relative">
-        <Image
-          src="/bba/acca-training.svg"
-          alt="BBA ACCA Training"
-          width={200}
-          height={200}
-          className="object-cover h-[450px] w-full"
-          priority
-        />
-        <div className="absolute inset-0 flex items-center">
-          <div className="mx-20 px-4 md:px-6 lg:px-8">
-            <div className="max-w-2xl space-y-4 text-white">
+        {/* Desktop Image */}
+        <div className="hidden md:block">
+          <Image
+            src="/bba/acca-training.svg"
+            alt="BBA ACCA Training"
+            width={200}
+            height={200}
+            className="object-cover h-[450px] w-full"
+            priority
+          />
+        </div>
+
+        {/* Mobile Image */}
+        <div className="block md:hidden">
+          <Image
+            src="/bba/mobile-acca-training.png"
+            alt="BBA ACCA Training"
+            width={768}
+            height={1024}
+            className="object-cover h-full w-full"
+            priority
+          />
+        </div>
+
+        <div className="absolute inset-0 flex md:items-center  items-end  bottom-10 md:bottom-0">
+          <div className="md:mx-20 px-4 md:px-6 lg:px-8 text-center md:text-left ">
+            <div className="w-full md:max-w-2xl space-y-4 text-white ">
               {/* Heading */}
               <h2 className="text-[40px] md:text-[60px] playfair-300 italic">
-                BBA+ 
+                BBA+
               </h2>
 
               {/* Subheading */}
@@ -28,7 +44,7 @@ const Ambitions = () => {
               </h5>
 
               {/* Paragraph */}
-              <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8">
+              <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8 max-w-md">
                 Students can opt for CA or ACCA training alongside their <br />{" "}
                 BBA to strengthen their professional foundation.
               </p>

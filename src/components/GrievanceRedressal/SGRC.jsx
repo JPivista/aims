@@ -80,7 +80,7 @@ const SGRC = () => {
         </div>
 
         {/* Content */}
-        <div className="md:max-w-6xl">
+        <div className="md:max-w-6xl px-4 md:px-0">
           {paragraphs.map((paragraph, index) => (
             <div key={index}>{renderParagraph(paragraph, index)}</div>
           ))}

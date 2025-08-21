@@ -10,7 +10,7 @@ const StudentExitFormalities = () => {
           {/* Left Column - Content */}
           <div className="flex flex-col md:pl-8 pl-0 justify-start md:items-start items-center lg:order-1 order-2 md:ml-10 px-4 md:px-0">
             <h1 className="text-[#0C2165] playfair-300 text-5xl">
-              Student Exit <br /> Formalities
+              Student Exit <br className="hidden md:block" /> Formalities
             </h1>
             <div className="space-y-4 text-center md:text-left">
               <p>

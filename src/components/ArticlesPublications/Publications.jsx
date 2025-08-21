@@ -28,13 +28,13 @@ const Publications = () => {
   // Reset visible count when switching tabs
   useEffect(() => {
     if (isClient) {
-      setVisibleCount(isMobile ? 10 : 30)
+      setVisibleCount(isMobile ? 10 : 31)
     }
   }, [activeTab, isMobile, isClient])
 
   // Function to get the next batch size based on screen size
   const getNextBatchSize = () => {
-    return isMobile ? 10 : 30
+    return isMobile ? 10 : 31
   }
 
   // Sample data - replace with actual data
@@ -620,8 +620,6 @@ const Publications = () => {
     },
   ]
 
-  const currentTabData = tabsData[activeTab]
-
   return (
     <div className="container mx-auto px-4 md:px-0 pb-8">
       <div className="max-w-8xl mx-auto">
@@ -699,7 +697,7 @@ const Publications = () => {
                     .map((point, index) => (
                       <motion.div
                         key={index}
-                        className="flex items-start space-x-2 sm:space-x-3 md:space-x-4 text-sm sm:text-base md:text-lg lg:text-[20px]"
+                        className="flex items-start space-x-2 sm:space-x-3 md:space-x-4 text-sm sm:text-base md:text-lg lg:text-[20px] mb-3"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -716,10 +714,10 @@ const Publications = () => {
                           ease: "easeOut",
                         }}
                       >
-                        <span className="flex-shrink-0 text-[#A22877] font-semibold text-[16px]">
+                        <span className="flex-shrink-0 text-[#A22877] font-semibold text-[16px] leading-tight">
                           {index + 1}.
                         </span>
-                        <p className="text-[16px] md:text-[25px] leading-relaxed py-2">
+                        <p className="text-[16px] md:text-[25px] leading-tight">
                           {point}
                         </p>
                       </motion.div>
@@ -748,9 +746,7 @@ const Publications = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <span className="text-lg md:text-lg">
-                          View More....
-                        </span>
+                        <span className="text-lg md:text-lg">Read More...</span>
                         <motion.div
                           className="mt-3"
                           animate={{ y: [0, -8, 0] }}

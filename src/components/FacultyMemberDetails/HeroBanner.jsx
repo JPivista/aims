@@ -8,41 +8,46 @@ const HeroBanner = ({
 }) => {
   return (
     <>
-      <div className="relative w-full h-[100vh] overflow-hidden">
-        {/* Background Image */}
-        <Image
-          src="/faculty-details/desktop-banner.png"
-          alt="Faculty Details"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover"
-          priority
-        />
+      <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+        {/* Background Image - Desktop */}
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/faculty-details/hero-banner.png')]" />
 
-        {/* Empower Image*/}
-        <div className="absolute left-4 md:left-20 -top-10 md:top-12">
+        {/* Background Image - Mobile */}
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/faculty-details/mobile-banner.png')]" />
+
+        {/* Empower Image - Desktop */}
+
+        {/* Empower Image - Mobile */}
+        <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
           <Image
             src="/white-empower.svg"
             alt="Empower"
             width={100}
             height={100}
-            className="w-35 h-35 md:w-full md:h-full"
+            className="w-30 h-30 md:w-45 md:h-45"
             priority
           />
         </div>
 
-        {/* Hero Text */}
-        <div className="absolute inset-0 w-full flex flex-col justify-end">
-          <div className="container mx-auto px-4 md:px-0 py-4 md:py-10">
-            {/* Hero Text */}
-            <div className="relative z-10">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-[70px] playfair-300">
-                Faculty Member Details
-              </h2>
+        {/* Bottom Content Container */}
+        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-10">
+          <div className="container mx-auto">
+            <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
+              <div className="flex items-center">
+                <div className="text-center md:text-left">
+                  {/* Hero Text */}
+                  <h1 className="text-white text-4xl leading-tight tracking-wider">
+                    <span className="playfair-300 text-3xl md:text-[60px]">
+                      Faculty Member Details
+                    </span>
+                  </h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* Application Announcements Marquee */}
       <ApplicationMarquee announcements={announcements} pageType={pageType} />
     </>

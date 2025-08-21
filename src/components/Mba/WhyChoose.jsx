@@ -24,14 +24,75 @@ const WhyChoose = () => {
           today's evolving business landscape.
         </p>
         <div className="w-full md:max-w-6xl px-2 max-w-5xl">
-          <Image
-            src="/MBA/why-choose.svg"
-            alt="Why Choose Us"
-            width={1200}
-            height={1200}
-            className="w-full h-auto object-cover rounded-lg "
-            priority
-          />
+          {/* Mobile Version - Coded Design */}
+          <div className="block md:hidden">
+            <div className="text-center mb-8">
+              <h1 className="text-[#531675] text-2xl md:text-[40px] playfair-500 mb-6">
+                Why Choose the <br />{" "}
+                <span className="playfair-500 italic">AIMS MBA?</span>
+              </h1>
+            </div>
+
+            <div className="space-y-4">
+              {/* Box 1 - Dark Purple */}
+              <div className="bg-[#A22877] text-white p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  2-year, full-time program with AICTE, IACBE, NBA
+                  accreditations
+                </p>
+              </div>
+
+              {/* Box 2 - Dark Purple */}
+              <div className="bg-[#B4408B] text-white p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  Dual specialisation options: Marketing, Finance, HR,
+                  Analytics, etc
+                </p>
+              </div>
+
+              {/* Box 3 - Orange */}
+              <div className="bg-[#FF6C02] text-white p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  Live business projects, internships, case studies
+                </p>
+              </div>
+
+              {/* Box 4 - Light Pink */}
+              <div className="bg-[#F5BBBC] p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  Career-focused modules in leadership, innovation, and global
+                  business
+                </p>
+              </div>
+
+              {/* Box 5 - Dark Purple */}
+              <div className="bg-[#D264AB] text-white p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  Guest lectures & mentorship from industry leaders
+                </p>
+              </div>
+
+              {/* Box 6 - Light Pink */}
+              <div className="bg-[#F0A2B8]  p-4 rounded-xl">
+                <p className="text-sm monser-500 px-2">
+                  Placement support with 100+ recruiters (incl. Deloitte, EY,
+                  ICICI)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Image */}
+          <div className="hidden md:block">
+            <Image
+              src="/MBA/why-choose.svg"
+              alt="Why Choose Us"
+              width={1200}
+              height={1200}
+              className="w-full h-auto object-cover rounded-lg"
+              priority
+            />
+          </div>
         </div>
       </div>
     </>
