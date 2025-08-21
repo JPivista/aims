@@ -46,7 +46,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                                     <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
                                         Build the Skills.
                                         <br />
-                                        Shape the Aim.
+                                        Shape the AIM.
                                     </h1>
                                 </div>
 
@@ -55,7 +55,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                                         BCA at AIMS
                                     </h5>
                                     <p className="text-lg lg:text-xl text-gray-700 max-w-lg ">
-                                        A launchpad for tech talent ready to make their mark. Take aim at a future in tech, begin your BCA at one of the Best Colleges for BCA in Bangalore.
+                                        A launchpad for tech talent ready to make their mark. Take AIM at a future in tech, begin your BCA at one of the Best Colleges for BCA in Bangalore.
                                     </p>
                                 </div>
 

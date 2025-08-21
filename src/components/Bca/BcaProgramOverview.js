@@ -26,9 +26,9 @@ const tabData = [
                     Eligibility
                 </h6>
                 <ul className="list-disc pl-5 text-gray-800 text-sm sm:text-base space-y-1">
-                    <li>Pass in Pre-University Course (PUC) / 12th or any other equivalent examination. Students with good communication skills are preferred. (or)</li>
+                    <li>Pass in Pre-University Course (PUC)/12th or any other equivalent examination. Students with good communication skills are preferred. (or)</li>
                     <li>GCE/JGCSE/GCSE Certification with a pass in a minimum of FIVE subjects at &apos;O&apos; level & TWO subjects at &apos;A&apos; level. (or)</li>
-                    <li>Pass certificate / Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board / council of any country.</li>
+                    <li>Pass certificate/Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board/council of any country.</li>
                 </ul>
             </>
         ),

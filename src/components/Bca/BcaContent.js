@@ -24,7 +24,7 @@ const BcaContent = () => {
                         alt="BCA at AIMS"
                         width={800}
                         height={400}
-                        className="object-contain"
+                        className="object-cover w-full h-full"
                     />
                 </div>
             </div>
