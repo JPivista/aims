@@ -64,12 +64,12 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Contact, Social, Newsletter */}
-      <div className="border-t border-gray-600">
+      <div className="border-t border-b border-whtie">
         <div className="container mx-auto px-2 lg:px-0">
-          <div className="py-8">
+          <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
               {/* AIMS Institutes */}
-              <div>
+              <div className="py-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">AIMS Institutes</h6>
                 <h5 className="text-sm text-gray-300 text-[14px]">
                   1st Cross, 1st Stage, Peenya,<br /> Bengaluru 560058,<br /> Karnataka, INDIA.
@@ -77,17 +77,24 @@ export default function Footer() {
               </div>
 
               {/* Contact US */}
-              <div>
+              <div className="py-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">Contact US</h6>
                 <div className="space-y-2 text-sm text-gray-300">
-                  <h5 className="text-sm text-gray-300 text-[14px]">Admissions Centre: <br /> +91-815-000-1994</h5>
-                  <h5 className="text-sm text-gray-300 text-[14px]">C&PR Centre: +91 70261 91114</h5>
-                  <h5 className="text-sm text-gray-300 text-[14px]">Reception: 080 28390433/34</h5>
+                  <h5 className="text-sm text-gray-300 text-[14px]">
+                    Admissions Centre: <br />
+                    <a href="tel:+918150001994" className="hover:text-white transition-colors">+91-815-000-1994</a>
+                  </h5>
+                  <h5 className="text-sm text-gray-300 text-[14px]">
+                    C&PR Centre: <a href="tel:+917026191114" className="hover:text-white transition-colors">+91 70261 91114</a>
+                  </h5>
+                  <h5 className="text-sm text-gray-300 text-[14px]">
+                    Reception: 080 28390433/34
+                  </h5>
                 </div>
               </div>
 
               {/* Follow Us */}
-              <div>
+              <div className="py-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">Follow Us</h6>
                 <div className="flex space-x-4 mt-2 text-2xl">
                   <a href="#" className="hover:text-gray-300 transition-colors"><FaInstagram /></a>
@@ -98,15 +105,15 @@ export default function Footer() {
               </div>
 
               {/* Newsletter */}
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 lg:border-l border-white py-4 lg:pl-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">
                   Happy to keep you updated.<br />Sign up for our newsletter.
                 </h6>
-                <p className="text-sm text-gray-300 mb-4">
+                <h5 className="text-sm text-gray-300 text-[14px]">
                   Sign up to be the first to know about our events, achievements, and new initiatives.
-                </p>
+                </h5>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-3 py-4">
                 <input
                   type="email"
                   placeholder="Email Address"
@@ -124,7 +131,7 @@ export default function Footer() {
       {/* Bottom Section - Copyright */}
       <div className="py-4 text-center text-sm">
         <div className="container mx-auto px-5 lg:px-0">
-          <span>© AIMS Institutes 2025</span>
+          <span>© AIMS Institutes {new Date().getFullYear()}</span>
           <a href="#" className="ml-4 hover:underline transition-colors">Terms & Conditions</a>
           <a href="#" className="ml-4 hover:underline transition-colors">Privacy</a>
           <a href="#" className="ml-4 hover:underline transition-colors">Refund & Cancellations</a>
