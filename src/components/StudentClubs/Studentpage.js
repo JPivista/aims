@@ -43,15 +43,17 @@ const StudentClubs = () => {
     <>
       <div className="text-center px-4 bg-white container mx-auto">
         <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6 pt-8">
-          Find Your Passion.
-          <br /> AIM for Excellence.
+        Choose your interest.
+          <br /> Choose your role. Choose your goal.
         </h3>
         <p className="max-w-5xl mx-auto">
-          At AIMS Institutes, we believe that financial constraints should never
-          stand in the way of your academic goals. That&apos;s why we support
-          our applicants and students with access to trusted education loan
-          providers, so you can focus on learning, growing, and building a
-          future you&apos;re proud of.
+          At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
+          student clubs offer a structured yet vibrant space for students to
+          explore their interests, take initiative, and develop skills that
+          extend far beyond academics. Whether you&apos;re pursuing an MBA from our
+          IACBE-accredited institute in Bangalore or studying BBA in aviation
+          logistics, student-led activities help sharpen your leadership,
+          collaboration, and creativity in real time.
         </p>
         <p className="max-w-5xl mx-auto pt-5">
           These clubs reflect our belief in goal-oriented growth, a core part of

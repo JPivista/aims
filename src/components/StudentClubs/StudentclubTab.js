@@ -20,16 +20,12 @@ const StudentclubTab = () => {
       content: {
         heading: "Marketing Club",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
+          "  Hands-on activities, live case studies, and brand simulations for budding marketers and strategists.",
         features: [
-          "Cultural immersion programs",
-          "Academic credit transfer systems",
-          "Local industry exposure and internships",
-          "Language and cultural workshops",
-          "Networking with Indian business community",
+      
         ],
         conclusion:
-          "Exchange students gain valuable insights into Indian business practices and culture while contributing to our diverse campus community.",
+          "",
       },
     },
     3: {
@@ -37,8 +33,8 @@ const StudentclubTab = () => {
       content: {
         heading: "Data Science and Technology Club",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
-        features: ["Cultural immersion programs"],
+          "  Perfect for MCA students or those pursuing data-focused careers. Engage in workshops, coding events, and tech challenges.",
+        features: [],
         conclusion: "",
       },
     },
@@ -47,7 +43,7 @@ const StudentclubTab = () => {
       content: {
         heading: "Hospitality & Tourism Club ",
         description:
-          " supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "   A vibrant space for students from our top hospitality and tourism management courses in Karnataka to refine their service and event management skills.",
         features: [],
         conclusion: "",
       },
@@ -58,20 +54,30 @@ const StudentclubTab = () => {
       content: {
         heading: "Social Impact Club ",
         description:
-          "A launchpad for aspiring founders, supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "  Plan and execute campaigns alongside the AIMS Centre for Community Service. Develop civic responsibility and community engagement skills.",
         features: [],
         conclusion: "",
       },
     },
     6: {
+      title: "Cultural & Literary Club",
+      content: {
+        heading: "Cultural & Literary Club ",
+        description:
+          "   Debate, dramatics, creative writing, and more - open to students from all schools.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    7: {
       title: "Sports & Fitness Club",
       content: {
         heading: "Sports & Fitness Club",
         description:
-          "ACIL creates opportunities for knowledge-sharing and global collaboration through:",
-        features: ["Guest lectures and visiting faculty exchanges"],
+          "Promote wellbeing, team spirit, and healthy competition across disciplines.",
+        features: [],
         conclusion:
-          "These engagements are essential to maintaining AIMS' reputation as a college with international institutions collaborations in Bangalore.",
+          "",
       },
     },
   }
@@ -82,7 +88,8 @@ const StudentclubTab = () => {
     { id: "3", label: "Data Science and Technology Club" },
     { id: "4", label: "Hospitality & Tourism Club" },
     { id: "5", label: "Social Impact Club" },
-    { id: "6", label: "Sports & Fitness Club" },
+    { id: "6", label: "Cultural & Literary Club" },
+    { id: "7", label: "Sports & Fitness Club" },
   ]
 
   return (

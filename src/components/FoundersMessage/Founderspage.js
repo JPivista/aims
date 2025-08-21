@@ -13,7 +13,7 @@ const messages = [
   },
   {
     role: "CEO",
-    name: "Meka Priyanandan Reddy",
+    name: "Best Wishes, \n Meka Priyanandan Reddy",
     title1: "CEO",
     title2: "AIMS Institutes",
     image: "/founders-message/img2.png",
@@ -83,7 +83,13 @@ const FoundersMessage = () => {
               </p>
 
               {/* Name */}
-              <h2 className="monser-600 text-xl mb-1">- {msg.name}</h2>
+              <h2
+  className="monser-600 text-xl mb-1"
+  dangerouslySetInnerHTML={{
+    __html: msg.name.replace(/\n/g, "<br />"),
+  }}
+/>
+
 
               {/* Title */}
               <h2 className="text-md">

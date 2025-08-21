@@ -6,71 +6,98 @@ const CampusTab = () => {
 
   const tabData = {
     1: {
-      title: "Prerana",
+      title: "Classrooms & Lecture Halls",
       content: {
-        heading: "Prerana – National Level Cultural & Management Fest",
+        heading: "Classrooms & Lecture Halls",
         description:
-          "A launchpad for aspiring founders, supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "Spacious, ventilated, and tech-enabled rooms with AV facilities to support immersive learning.",
         features: [],
         conclusion: "",
       },
     },
     2: {
-      title: "Sanskriti",
+      title: "Central Library & Information Centre",
       content: {
-        heading: "Sanskriti",
+        heading: "Central Library & Information Centre",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
-        features: [
-          "Cultural immersion programs",
-          "Academic credit transfer systems",
-          "Local industry exposure and internships",
-          "Language and cultural workshops",
-          "Networking with Indian business community",
-        ],
-        conclusion:
-          "Exchange students gain valuable insights into Indian business practices and culture while contributing to our diverse campus community.",
+          "Access to DELNET and NLIST subscribed resources, e-journals, academic databases, and previous-year university question papers. One of the few private colleges in Bangalore with UGC-compliant digital access.",
+        features: [],
+        conclusion: "",
       },
     },
     3: {
-      title: "Anveshana",
+      title: " Labs & Innovation Spaces",
       content: {
-        heading: "Anveshana",
+        heading: "Labs & Innovation Spaces",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
-        features: ["Cultural immersion programs"],
+          "Fully equipped labs for Computer Applications, Biotechnology, Food & Beverage, Front Office, and more, ideal for BBA, MBA, MCA, and B.Com students who require hands-on experience.",
+        features: [],
         conclusion: "",
       },
     },
     4: {
-      title: "Corporate Interface Series",
+      title: "Cafeteria & Dining Spaces",
       content: {
-        heading: "Corporate Interface Series ",
+        heading: "Cafeteria & Dining Spaces",
         description:
-          " supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
+          "Multi-cuisine options, hygienic kitchens, and dedicated dining areas, ideal for both everyday meals and hospitality practice.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    5: {
+      title: " Hostel Accommodation",
+      content: {
+        heading: " Hostel Accommodation",
+        description:
+          "Separate on-campus hostels for boys and girls with 24x7 security, clean water, Wi-Fi, common rooms, and mess facilities, ideal for students from outside Bangalore seeking affordable, dependable living.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    6: {
+      title: "Transportation",
+      content: {
+        heading: "Transportation",
+        description:
+          "College-run buses from key points in Bengaluru ensure hassle-free access to campus.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    7: {
+      title: "Wi-Fi & Digital Infrastructure",
+      content: {
+        heading: "Wi-Fi & Digital Infrastructure",
+        description:
+          "High-speed internet throughout campus supports seamless study, research, and placement prep.",
+        features: [],
+        conclusion: "",
+      },
+    },
+    8: {
+      title: "Student Lounges & Common Areas",
+      content: {
+        heading: "Student Lounges & Common Areas",
+        description:
+          "Spaces for peer interaction, relaxation, and collaborative learning, designed to support our dynamic student community.",
         features: [],
         conclusion: "",
       },
     },
 
-    5: {
-      title: "Hospitality Showcase & Culinary Events",
-      content: {
-        heading: "Hospitality Showcase & Culinary Events ",
-        description:
-          "A launchpad for aspiring founders, supported by the AIMS Entrepreneurship Excellence Centre. Ideal for those seeking real-world business experience in Bangalore.",
-        features: [],
-        conclusion: "",
-      },
-    },
+ 
   }
 
   const tabs = [
-    { id: "1", label: "Prerana" },
-    { id: "2", label: "Sanskriti" },
-    { id: "3", label: "Anveshana" },
-    { id: "4", label: "Corporate Interface Series" },
-    { id: "5", label: "Hospitality Showcase & Culinary Events" },
+    { id: "1", label: "Classrooms & Lecture Halls" },
+    { id: "2", label: "Central Library & Information Centre" },
+    { id: "3", label: " Labs & Innovation Spaces" },
+    { id: "4", label: "Cafeteria & Dining Spaces" },
+    { id: "5", label: " Hostel Accommodation" },
+    { id: "6", label: "Transportation" },
+    { id: "7", label: " Wi-Fi & Digital Infrastructure" },
+    { id: "8", label: "Student Lounges & Common Areas" },
   ]
 
   return (

@@ -1,218 +1,153 @@
-"use client"
-import React from "react"
-import TabCourseStructure from "../Tab/TabCourseStructure"
 
-// Sample data structure for the BBA course structure
+'use client'
+import React from 'react'
+import TabCourseStructure from '../Tab/TabCourseStructure'
+
+// Sample data structure for the course structure
 const sampleCourseData = [
-  {
-    key: "first-year",
-    title: "First Year",
-    tabs: [
-      {
-        key: "semester-1",
-        label: "SEMESTER 1",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Language - I",
-          "Language - II",
-          "Food & Beverage Production - I",
-          "Food & Beverage Service - I",
-          "Front Office - I",
-          "Housekeeping - I",
-          "Environmental Studies",
-        ],
-      },
-      {
-        key: "semester-2",
-        label: "SEMESTER 2",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Organizational Behavior",
-          "Business Statistics",
-          "Cost Accounting",
-          "Marketing Management",
-          "Business Law",
-          "Information Technology for Business",
-          "SOFT CORE Leadership and Team Management",
-        ],
-      },
-    ],
-  },
-  {
-    key: "second-year",
-    title: "Second Year",
-    tabs: [
-      {
-        key: "semester-3",
-        label: "SEMESTER 3",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Human Resource Management",
-          "Financial Management",
-          "Operations Management",
-          "Business Research Methods",
-          "Managerial Economics",
-          "Database Management Systems",
-          "SOFT CORE Advanced Excel and Business Tools",
-        ],
-      },
-      {
-        key: "semester-4",
-        label: "SEMESTER 4",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Strategic Management",
-          "International Business",
-          "Business Analytics",
-          "Corporate Governance",
-          "Elective Course I",
-          "Elective Course II",
-          "SOFT CORE Industry Project and Internship",
-        ],
-      },
-    ],
-  },
-  {
-    key: "third-year",
-    title: "Third Year",
-    tabs: [
-      {
-        key: "semester-5",
-        label: "SEMESTER 5",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Entrepreneurship Development",
-          "Business Ethics and Sustainability",
-          "Project Management",
-          "Elective Course III",
-          "Elective Course IV",
-          "Elective Course V",
-          "SOFT CORE Advanced Business Tools",
-        ],
-      },
-      {
-        key: "semester-6",
-        label: "SEMESTER 6",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Business Strategy",
-          "Global Business Environment",
-          "Elective Course VI",
-          "Elective Course VII",
-          "Elective Course VIII",
-          "Capstone Project",
-          "SOFT CORE Industry Internship",
-        ],
-      },
-    ],
-  },
-  {
-    key: "specialization-tracks",
-    title: "Specialisation Tracks",
-    tabs: [
-      {
-        key: "finance",
-        label: "FINANCE",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Financial Management",
-          "Investment Analysis",
-          "Financial Markets",
-          "Risk Management",
-          "Corporate Finance",
-          "Financial Modeling",
-          "International Financial Management",
-          "Financial Derivatives",
-          "Behavioral Finance",
-          "Islamic Banking and Finance",
-          "SOFT CORE Financial Software Training",
-          "SOFT CORE Advanced Financial Analytics",
-        ],
-      },
-      {
-        key: "marketing",
-        label: "MARKETING",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Consumer Behavior",
-          "Digital Marketing",
-          "Brand Management",
-          "Marketing Research",
-          "Sales Management",
-          "International Marketing",
-          "Strategic Marketing Management",
-          "Services Marketing",
-          "Retail Marketing",
-          "Social Media Marketing",
-          "SOFT CORE Marketing Analytics Tools",
-          "SOFT CORE Advanced Marketing Tools",
-        ],
-      },
-      {
-        key: "hr",
-        label: "HUMAN RESOURCES",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Strategic Human Resource Management",
-          "Organizational Development",
-          "Compensation and Benefits",
-          "Performance Management",
-          "Employee Relations",
-          "Training and Development",
-          "International Human Resource Management",
-          "Talent Management",
-          "HR Analytics",
-          "Industrial Relations",
-          "SOFT CORE HR Information Systems",
-          "SOFT CORE Advanced HR Tools",
-        ],
-      },
-      {
-        key: "analytics",
-        label: "BUSINESS ANALYTICS",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Data Analytics for Business",
-          "Statistical Analysis",
-          "Predictive Modeling",
-          "Business Intelligence",
-          "Data Visualization",
-          "Machine Learning for Business",
-          "Advanced Business Analytics",
-          "Big Data Analytics",
-          "Customer Analytics",
-          "Financial Analytics",
-          "SOFT CORE Analytics Tools Training",
-          "SOFT CORE Advanced Analytics Tools",
-        ],
-      },
-      {
-        key: "logistics",
-        label: "LOGISTICS & SUPPLY CHAIN MANAGEMENT",
-        image: "/MBA/first-year.jpg", // Add your image path
-        courses: [
-          "Supply Chain Management",
-          "Logistics Operations",
-          "Inventory Management",
-          "Transportation Management",
-          "Warehouse Management",
-          "Procurement and Sourcing",
-          "Global Supply Chain Management",
-          "Supply Chain Analytics",
-          "Risk Management in SCM",
-          "Sustainable Supply Chain",
-          "SOFT CORE Supply Chain Software",
-          "SOFT CORE Advanced SCM Tools",
-        ],
-      },
-    ],
-  },
+    {
+        key: "first-year",
+        title: "First Year",
+        tabs: [
+            {
+                key: "semester-1",
+                label: "SEMESTER 1",
+                image: "/bca/students-semester1.jpg", // Add your image path
+                courses: [
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Discrete Mathematics.",
+                    "Problem Solving Techniques.",
+                    "Data Structure.",
+                    "Problem Solving Lab.",
+                    "Data Structure Lab."
+                ]
+            },
+            {
+                key: "semester-2",
+                label: "SEMESTER 2",
+                image: "/bca/students-semester2.jpg", // Add your image path
+                courses: [
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Computer Architecture.",
+                    "Object Oriented Programming Using Java.",
+                    "Database Management System.",
+                    "Java LAB.",
+                    "Database Management System Lab."
+                ]
+            }
+        ]
+    },
+    {
+        key: "second-year",
+        title: "Second Year",
+        tabs: [
+            {
+                key: "semester-3",
+                label: "SEMESTER 3",
+                image: "/bca/students-semester3.jpg", // Add your image path
+                courses: [
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Operating Systems.",
+                    "Computer Networks.",
+                    "Python Programming.",
+                    "Computer Networks Lab.",
+                    "Python Programming Lab."
+                ]
+            },
+            {
+                key: "semester-4",
+                label: "SEMESTER 4",
+                image: "/bca/students-semester4.jpg", // Add your image path
+                courses: [
+                    "Part 1 Languages",
+                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
+                    "Language II: English.",
+                    "Part 2 Optional",
+                    "Software Engineering.",
+                    "Artificial Intelligence.",
+                    "Internet Technologies.",
+                    "Artificial Intelligence LAB.",
+                    "Internet Technologies LAB."
+                ]
+            }
+        ]
+    },
+    {
+        key: "third-year",
+        title: "Third Year",
+        tabs: [
+            {
+                key: "semester-5",
+                label: "SEMESTER 5",
+                image: "/bca/students-semester5.jpg", // Add your image path
+                courses: [
+                    "Design & Analysis of Algorithm.",
+                    "Data Analytics Computer Architecture.",
+                    "Web Programming.",
+                    "Data Analytics Lab.",
+                    "Web Programming Lab.",
+                    "Project Work."
+                ]
+            },
+            {
+                key: "semester-6",
+                label: "SEMESTER 6",
+                image: "/bca/students-semester6.jpg", // Add your image path
+                courses: [
+                    "Theory of Computation.",
+                    "Machine Learning.",
+                    "Mobile Application Development.",
+                    "Machine Learning Lab.",
+                    "Mobile Application Development Lab.",
+                    "Project Work."
+                ]
+            }
+        ]
+    },
+    {
+        key: "fourth-year",
+        title: "Fourth Year",
+        tabs: [
+            {
+                key: "semester-7",
+                label: "SEMESTER 7",
+                image: "/bca/students-semester7.jpg", // Add your image path
+                courses: [
+                    "Cloud Computing.",
+                    "Internet of Things.",
+                    "Internship.",
+                    "Cloud Computing Lab.",
+                    "Internet of Things Lab."
+                ]
+            },
+            {
+                key: "semester-8",
+                label: "SEMESTER 8",
+                image: "/bca/students-semester8.jpg", // Add your image path
+                courses: [
+                    "Block Chain Technologies.",
+                    "Cryptography & System Security.",
+                    "Block Chain Technologies Lab."
+                ]
+            }
+        ]
+    }
 ]
 
-const BhmCourseStructure = () => {
-  return (
-    <>
-      <div className="py-10 bg-white">
+const BcaCourseStructure = () => {
+    return (
+        <>
+
+<div className="py-10 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="">
             <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2">
@@ -225,8 +160,8 @@ const BhmCourseStructure = () => {
         </div>
         <TabCourseStructure courseData={sampleCourseData} />
       </div>
-    </>
-  )
+        </>
+    )
 }
 
-export default BhmCourseStructure
+export default BcaCourseStructure 

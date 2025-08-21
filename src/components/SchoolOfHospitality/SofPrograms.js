@@ -11,7 +11,7 @@ const SofPrograms = () => {
     description:
     "Our flagship 4-year BHM program prepares students for high-growth careers in hotels, resorts, airlines, and event management. The curriculum helps students aim for leadership roles in the service industry.",
     image: "/school-of-hospitality/sohospitality-img-01.jpg",
-    link: "/finance-commerce-school/master-of-commerce",
+    link: "/hospitality-tourism-school/bachelor-hotel-management",
   }
 
   const undergraduateProgram = {

@@ -7,7 +7,7 @@ const AlumniinHospitalit = () => {
     const bcomAlumniData = {
         image: "/life-at-aims/student-club-img.png",
         subtitle: "From Ideas to Impact",
-        description: `“My experience at AIMS institutes was amazing and memorable. I have learnt a lot of valuable lessons; academic wise as well as important life lessons which pushed me to be a better person and improve in all aspects of life. My teachers have played a vital role in shaping me, they have always supported me, corrected my mistakes and motivated me. I'm grateful to AIMS for giving me a lot of wonderful opportunities and I'm extremely thankful. I hope to receive the same support throughout my life.”`,
+        description: `At AIMS, clubs are not just co-curricular, they’re an extension of our value-based education. They give every student, regardless of background, the chance to participate, lead, and grow. Whether you're an aspiring entrepreneur or a hospitality enthusiast, there’s a space for your voice, and your vision, here.`,
     }
 
     return (

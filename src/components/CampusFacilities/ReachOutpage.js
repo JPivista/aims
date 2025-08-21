@@ -25,6 +25,10 @@ const ReachOutpage = () => {
                 <span> facilities@theaims.ac.in</span>
             </a>
           </p>
+
+          <p className="pt-3">
+          Campus Location: AIMS Institutes, Peenya, Bengaluru
+          </p>
         </div>
 
         {/* Right Icon */}

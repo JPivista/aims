@@ -12,67 +12,66 @@ const sampleProgramsData = [
       "Certification in hygiene, sanitation, general nutrition management & physical fitness",
       "Webinar on emotional wellbeing",
       "Yoga & Meditation",
-      "Survival Training",
+     
     ],
   },
   {
     id: "social-sensitisation",
     title: "Social Sensitisation",
     content: [
-      "Capstone CAPSIM Simulation",
-      "Certification on Advanced Excel",
-      "Certification on Sustainability",
-      "Certification on Insurance Management",
-      "Certification on Entrepreneurship",
-      "Certification on BFSI",
-      "Certification on SCM",
-      "Certification on Digital Marketing",
-      "Global Online Certifications on Change Management, and Operations & Information Management",
+      "Rural camp in association with AIMS Centre for Community Service",
+      "NSS in association with AIMS Centre for Community Service",
+   
     ],
   },
   {
     id: "employability",
     title: "Employability & Pre-Placement Trainings",
     content: [
-      "Capstone CAPSIM Simulation",
-      "Certification on Advanced Excel",
-      "Certification on Sustainability",
-      "Certification on Insurance Management",
-      "Certification on Entrepreneurship",
-      "Certification on BFSI",
-      "Certification on SCM",
-      "Certification on Digital Marketing",
-      "Global Online Certifications on Change Management, and Operations & Information Management",
+      "Power dressing and grooming",
+     "Communication Skills",
+     "Presentation Skills and CV Writing",
+     "Interview Skills",
+     "Aptitude & Group Discussion",
+     "Soft Skills Training (Including Language Lab)",
+     "Personality Development",
+     "Presentation on Industrial training",
+     "Company Specific Placement training",
+     "Presentation on Dissertation Projects",
+     "Career Guidance Sessions",
+   
     ],
   },
   {
-    id: "certifications",
-    title: "Career Oriented Certifications",
+    id: "Career Oriented Certifications",
+    title: "Career Oriented Career Oriented Certifications",
     content: [
-      "Capstone CAPSIM Simulation",
-      "Certification on Advanced Excel",
-      "Certification on Sustainability",
-      "Certification on Insurance Management",
-      "Certification on Entrepreneurship",
-      "Certification on BFSI",
-      "Certification on SCM",
-      "Certification on Digital Marketing",
-      "Global Online Certifications on Change Management, and Operations & Information Management",
+      "Certification in Dining Etiquettes",
+      "Certification in Tourism and Climate Change",
+      "Certification in Entrepreneurship",
+      "Certification in Coffee Culture",
+      "Certification in Guest Management",
+      "Certification in Revenue Management",
+ 
     ],
   },
   {
     id: "workshops",
     title: "Workshops",
     content: [
-      "Capstone CAPSIM Simulation",
-      "Certification on Advanced Excel",
-      "Certification on Sustainability",
-      "Certification on Insurance Management",
-      "Certification on Entrepreneurship",
-      "Certification on BFSI",
-      "Certification on SCM",
-      "Certification on Digital Marketing",
-      "Global Online Certifications on Change Management, and Operations & Information Management",
+   "Workshop on Mixology",
+   "Workshop on Breakfast Breads",
+   "Workshop on Food Painting Skills",
+   "Workshop on Research Writing",
+   "Workshop on Cyber security",
+   "Workshop on Interior Design and Decoration",
+   "Workshop on Spanish Cuisine",
+   "Workshop on Floristry",
+   "Workshop on Sustainability",
+   "Workshop on Culinary Flavours",
+   "Workshop on Wine Tasting",
+   
+
     ],
   },
 ]
@@ -113,7 +112,7 @@ const BbaValueAddedPrograms = () => {
           className="absolute inset-0 w-full h-full"
           style={{
             background:
-              "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 35%, rgba(12, 33, 101, 0.00) 100%)",
+              "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 35%, rgba(12, 33, 101, 0.00) 75%)",
           }}
         ></div>
 

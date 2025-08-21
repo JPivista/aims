@@ -31,9 +31,9 @@ const EventsFestspage = () => {
   const sliderSettings = {
     dots: true,
     arrows: false,
-    infinite: true,       // loop
-    autoplay: true,       // auto scroll
-    autoplaySpeed: 3000,  // speed
+    infinite: true, // loop
+    autoplay: true, // auto scroll
+    autoplaySpeed: 3000, // speed
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -47,13 +47,20 @@ const EventsFestspage = () => {
         </h3>
 
         <p className="max-w-5xl mx-auto pt-5">
-          At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
-          student clubs offer a structured yet vibrant space for students to
-          explore their interests, take initiative, and develop skills that
-          extend far beyond academics. Whether you&apos;re pursuing an MBA from our
-          IACBE-accredited institute in Bangalore or studying BBA in aviation
-          logistics, student-led activities help sharpen your leadership,
-          collaboration, and creativity in real time.
+          At AIMS Institutes, events and fests are more than celebrations, they
+          are opportunities to{" "}
+          <span className="monser-500 font-bold text-black">
+            learn, lead, and collaborate.
+          </span>{" "}
+          From business conclaves and cultural festivals to innovation expos and
+          alumni meets, every gathering on campus is designed to sharpen skills,
+          spark creativity, and build lasting connections.
+        </p>
+
+        <p className="max-w-5xl mx-auto pt-5">
+          Whether you&apos;re studying at a top business school in Bangalore or
+          pursuing a hospitality degree from one of Karnataka&apos;s most reputed
+          institutes, there&apos;s a stage for every AIMer to shine.
         </p>
       </div>
 
@@ -63,8 +70,8 @@ const EventsFestspage = () => {
           What Makes Our Events Special?
         </h3>
 
-       {/* Tablet + Desktop view (≥768px) */}
-       <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
+        {/* Tablet + Desktop view (≥768px) */}
+        <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
           {clubs.map((club, index) => (
             <div
               key={index}

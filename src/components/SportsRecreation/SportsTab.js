@@ -6,9 +6,9 @@ const StudentclubTab = () => {
 
   const tabData = {
     1: {
-      title: "Indoor Games:",
+      title: "Indoor Games",
       content: {
-        heading: "Indoor Games:",
+        heading: "Indoor Games",
         description: "",
         features: [
           "Table Tennis",
@@ -25,22 +25,23 @@ const StudentclubTab = () => {
       content: {
         heading: "Outdoor Sports",
         description:
-          "ACIL welcomes students from partner institutions worldwide, providing them with a rich academic and cultural experience in the heart of Bangalore.",
+          "",
         features: [
-          "Cultural immersion programs",
-          "Academic credit transfer systems",
-          "Local industry exposure and internships",
-          "Language and cultural workshops",
-          "Networking with Indian business community",
+          "Cricket Ground",
+          "Football Field",
+          "Volleyball Court",
+          "Throwball Court",
+          "Track & Field for Athletics",
+         
         ],
         conclusion:
-          "Exchange students gain valuable insights into Indian business practices and culture while contributing to our diverse campus community.",
+          "",
       },
     },
   }
 
   const tabs = [
-    { id: "1", label: "Indoor Games:" },
+    { id: "1", label: "Indoor Games" },
     { id: "2", label: "Outdoor Sports" },
   ]
 

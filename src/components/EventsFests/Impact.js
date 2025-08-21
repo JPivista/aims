@@ -5,7 +5,7 @@ const AlumniinHospitalit = () => {
   const bcomAlumniData = {
     image: "/life-at-aims/events-fests.png",
     subtitle: "Global. Local. Personal.",
-    description: `“From global immersion activities to community-led campaigns, AIMS fests reflect the diversity of our campus and the ambition of our students. Each event is a chance to apply what you’ve learnt, test your ideas, and build your confidence - hallmarks of any great B-school experience.”`,
+    description: `From global immersion activities to community-led campaigns, AIMS fests reflect the diversity of our campus and the ambition of our students. Each event is a chance to apply what you’ve learnt, test your ideas, and build your confidence - hallmarks of any great B-school experience.`,
   }
 
   return (
