@@ -31,6 +31,14 @@ export default function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Function to handle logo click and ensure scroll to top
+  const handleLogoClick = () => {
+    // Force scroll to top after a short delay to ensure navigation completes
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 150);
+  };
+
   const { scrollY } = useScroll();
 
   // Scroll to top on page refresh - robust solution
@@ -131,7 +139,7 @@ export default function Header() {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
-              <Link href="/">
+              <Link href="/" scroll={false} onClick={handleLogoClick}>
                 <Image
                   src="/logo.svg"
                   alt="Logo"
