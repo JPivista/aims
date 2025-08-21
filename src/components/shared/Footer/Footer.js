@@ -1,4 +1,5 @@
 import Button from "@/shared/Button";
+import Link from "next/link";
 import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
@@ -10,54 +11,54 @@ export default function Footer() {
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Students</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</a></li>
-              <li><a href="/student-handbook" className="hover:text-gray-300 transition-colors">Student Handbook</a></li>
-              <li><a href="/student-exit-formalities" className="hover:text-gray-300 transition-colors">Student Exit Formalities</a></li>
-              <li><a href="/examinations" className="hover:text-gray-300 transition-colors">Examinations</a></li>
-              <li><a href="/academic-calendar" className="hover:text-gray-300 transition-colors">Academic Calendar</a></li>
-              <li><a href="/program-and-course-outcome" className="hover:text-gray-300 transition-colors">Program and Course Outcome</a></li>
-              <li><a href="/code-of-conduct-students" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</a></li>
+              <li><Link href="/university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</Link></li>
+              <li><Link href="/student-handbook" className="hover:text-gray-300 transition-colors">Student Handbook</Link></li>
+              <li><Link href="/student-exit-formalities" className="hover:text-gray-300 transition-colors">Student Exit Formalities</Link></li>
+              <li><Link href="/examinations" className="hover:text-gray-300 transition-colors">Examinations</Link></li>
+              <li><Link href="/academic-calendar" className="hover:text-gray-300 transition-colors">Academic Calendar</Link></li>
+              <li><Link href="/program-and-course-outcome" className="hover:text-gray-300 transition-colors">Program and Course Outcome</Link></li>
+              <li><Link href="/code-of-conduct-students" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</Link></li>
             </ul>
           </div>
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Faculty & Staff</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/articles-publications" className="hover:text-gray-300 transition-colors">Articles/Publications</a></li>
-              <li><a href="/code-of-conduct-ethics" className="hover:text-gray-300 transition-colors">Code of Conduct & Ethics</a></li>
-              <li><a href="/aims-list-of-faculty" className="hover:text-gray-300 transition-colors">Faculty Members Details</a></li>
-              <li><a href="/patents" className="hover:text-gray-300 transition-colors">Patents</a></li>
+              <li><Link href="/articles-publications" className="hover:text-gray-300 transition-colors">Articles/Publications</Link></li>
+              <li><Link href="/code-of-conduct-ethics" className="hover:text-gray-300 transition-colors">Code of Conduct & Ethics</Link></li>
+              <li><Link href="/aims-list-of-faculty" className="hover:text-gray-300 transition-colors">Faculty Members Details</Link></li>
+              <li><Link href="/patents" className="hover:text-gray-300 transition-colors">Patents</Link></li>
             </ul>
           </div>
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Disclosures</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/iqac-internal-quality-assurance-cell" className="hover:text-gray-300 transition-colors">IQAC</a></li>
-              <li><a href="/iacbe-accreditation" className="hover:text-gray-300 transition-colors">IACBE Accreditation</a></li>
-              <li><a href="/naac-accreditation" className="hover:text-gray-300 transition-colors">NAAC Accreditation</a></li>
-              <li><a href="/aicte-aims" className="hover:text-gray-300 transition-colors">AICTE</a></li>
-              <li><a href="/nirf-ranking" className="hover:text-gray-300 transition-colors">NIRF</a></li>
-              <li><a href="/ugc-recognition" className="hover:text-gray-300 transition-colors">UGC 2(f) & 12B</a></li>
+              <li><Link href="/iqac-internal-quality-assurance-cell" className="hover:text-gray-300 transition-colors">IQAC</Link></li>
+              <li><Link href="/iacbe-accreditation" className="hover:text-gray-300 transition-colors">IACBE Accreditation</Link></li>
+              <li><Link href="/naac-accreditation" className="hover:text-gray-300 transition-colors">NAAC Accreditation</Link></li>
+              <li><Link href="/aicte-aims" className="hover:text-gray-300 transition-colors">AICTE</Link></li>
+              <li><Link href="/nirf-ranking" className="hover:text-gray-300 transition-colors">NIRF</Link></li>
+              <li><Link href="/ugc-recognition" className="hover:text-gray-300 transition-colors">UGC 2(f) & 12B</Link></li>
             </ul>
           </div>
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Committees</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/grievance-redressal" className="hover:text-gray-300 transition-colors">Grievance Redressal</a></li>
-              <li><a href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Ragging Cell</a></li>
-              <li><a href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Sexual Harassment Committee</a></li>
-              <li><a href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Equal Opportunity Cell</a></li>
+              <li><Link href="/grievance-redressal" className="hover:text-gray-300 transition-colors">Grievance Redressal</Link></li>
+              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Ragging Cell</Link></li>
+              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Sexual Harassment Committee</Link></li>
+              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Equal Opportunity Cell</Link></li>
             </ul>
           </div>
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">General Information</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/aims-journal-of-research" className="hover:text-gray-300 transition-colors">AIMS Journal of Research</a></li>
-              <li><a href="/news" className="hover:text-gray-300 transition-colors">NEWS</a></li>
-              <li><a href="/gallery" className="hover:text-gray-300 transition-colors">Gallery</a></li>
-              <li><a href="/events" className="hover:text-gray-300 transition-colors">Events</a></li>
-              <li><a href="/blogs" className="hover:text-gray-300 transition-colors">Blogs</a></li>
-              <li><a href="/environment-sustainability-policy-report" className="hover:text-gray-300 transition-colors">Environment & Sustainability</a></li>
-              <li><a href="/rotaract-club" className="hover:text-gray-300 transition-colors">Rotaract Club of AIMS</a></li>
+              <li><Link href="/aims-journal-of-research" className="hover:text-gray-300 transition-colors">AIMS Journal of Research</Link></li>
+              <li><Link href="/news" className="hover:text-gray-300 transition-colors">NEWS</Link></li>
+              <li><Link href="/gallery" className="hover:text-gray-300 transition-colors">Gallery</Link></li>
+              <li><Link href="/events" className="hover:text-gray-300 transition-colors">Events</Link></li>
+              <li><Link href="/blogs" className="hover:text-gray-300 transition-colors">Blogs</Link></li>
+              <li><Link href="/environment-sustainability-policy-report" className="hover:text-gray-300 transition-colors">Environment & Sustainability</Link></li>
+              <li><Link href="/rotaract-club" className="hover:text-gray-300 transition-colors">Rotaract Club of AIMS</Link></li>
             </ul>
           </div>
         </div>
@@ -132,9 +133,9 @@ export default function Footer() {
       <div className="py-4 text-center text-sm">
         <div className="container mx-auto px-5 lg:px-0">
           <span>© AIMS Institutes {new Date().getFullYear()}</span>
-          <a href="#" className="ml-4 hover:underline transition-colors">Terms & Conditions</a>
-          <a href="#" className="ml-4 hover:underline transition-colors">Privacy</a>
-          <a href="#" className="ml-4 hover:underline transition-colors">Refund & Cancellations</a>
+          <Link href="/terms-conditions" className="ml-4 hover:underline transition-colors">Terms & Conditions</Link>
+          <Link href="/privacy" className="ml-4 hover:underline transition-colors">Privacy</Link>
+          <Link href="/refund-cancellations" className="ml-4 hover:underline transition-colors">Refund & Cancellations</Link>
         </div>
       </div>
     </footer>
