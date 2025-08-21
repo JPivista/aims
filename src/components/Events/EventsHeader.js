@@ -28,7 +28,7 @@ const EventsHeader = () => {
                 <div className='container mx-auto py-10 border-b border-gray-200'>
                     <div className='md:w-[75%] mx-auto text-center flex flex-col gap-4 justify-center items-center'>
                         <h5 className='text-center text-3xl monser-600 text-[#0C2165]'>
-                            Explore Events That Shape Tomorrow’s Leaders
+                            Explore Events That Shape Tomorrow&apos;s Leaders
                         </h5>
                         <p>
                             Join a dynamic journey of learning and growth through workshops, seminars, and cultural events designed to sharpen skills and broaden horizons within our vibrant campus community.

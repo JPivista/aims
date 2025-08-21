@@ -23,7 +23,7 @@ export default function FooterAcadamicJourney() {
 
                         {/* Description */}
                         <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">
-                            Whether you're an aspiring academic or a professional seeking
+                            Whether you&apos;re an aspiring academic or a professional seeking
                             research depth, AIMS helps you aim sharper and go further.
                         </p>
 

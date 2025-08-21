@@ -28,7 +28,7 @@ const BlogsHeader = () => {
                 <div className='container mx-auto py-10 border-b border-gray-200'>
                     <div className='md:w-[75%] mx-auto text-center flex flex-col gap-4 justify-center items-center'>
                         <h5 className='text-center text-3xl monser-600 text-[#0C2165]'>
-                            Explore Perspectives That Shape Tomorrow’s Leaders
+                            Explore Perspectives That Shape Tomorrow&apos;s Leaders
                         </h5>
                         <p>
                             Explore expert perspectives, student experiences, and industry insights through blogs that equip you to stay focused, informed, and inspired on your journey to success.
