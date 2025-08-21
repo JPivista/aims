@@ -26,7 +26,7 @@ const CfcWhyItMatters = () => {
                                 Why It Matters
                             </h3>
                             <p className='text-white'>
-                                Too often, there’s a disconnect between classroom learning and practical implementation. ACC was created to change that. Through structured business consulting services in academic institutions in Bangalore, the centre:
+                                Too often, there&apos;s a disconnect between classroom learning and practical implementation. ACC was created to change that. Through structured business consulting services in academic institutions in Bangalore, the centre:
                             </p>
                             <div>
                                 <ul className='list-disc list-inside text-start monser-400 flex flex-col gap-4 text-white'>
