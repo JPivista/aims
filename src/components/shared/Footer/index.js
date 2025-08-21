@@ -5,7 +5,7 @@ import FooterAcadamicJourney from './FooterAcadamicJourney'
 const index = () => {
     return (
         <div>
-            <FooterAcadamicJourney />
+            {/* <FooterAcadamicJourney /> */}
             <Footer />
         </div>
     )
