@@ -33,9 +33,36 @@ export default function Header() {
 
   const { scrollY } = useScroll();
 
-  // Scroll to top on page refresh
+  // Scroll to top on page refresh - robust solution
   useEffect(() => {
+    // Prevent scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    // Force scroll to top immediately
     window.scrollTo(0, 0);
+
+    // Prevent any scroll events during initial load
+    const preventScroll = (e) => {
+      if (window.scrollY > 0) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    // Add scroll listener temporarily
+    window.addEventListener('scroll', preventScroll);
+
+    // Also handle any delayed scrolling issues
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+      window.removeEventListener('scroll', preventScroll);
+    }, 500);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', preventScroll);
+    };
   }, []);
 
   // Ultra-smooth sticky behavior with debouncing
