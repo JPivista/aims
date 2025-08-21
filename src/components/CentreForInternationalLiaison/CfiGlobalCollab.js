@@ -81,13 +81,13 @@ const CfiGlobalCollab = () => {
                             <table className='w-full min-w-[800px] bg-white'>
                                 <thead className='bg-[#531675] text-white sticky top-0'>
                                     <tr>
-                                        <th className='px-4 py-3 text-left monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
+                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
                                             Country
                                         </th>
-                                        <th className='px-4 py-3 text-left monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
+                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
                                             City
                                         </th>
-                                        <th className='px-4 py-3 text-left monser-600 text-sm lg:text-base lg:w-1/3'>
+                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base lg:w-1/3'>
                                             Partner Institution
                                         </th>
                                     </tr>

@@ -18,8 +18,6 @@ const CfiContent = () => {
                     <div className='flex flex-col bg-transparent relative z-10'>
                         <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
                             AIM for Global Perspective
-                            <br className='hidden md:block' />
-                            Future for All
                         </h3>
                         <div className='lg:w-[75%] w-full flex flex-col gap-4'>
                             <p className='text-start text-lg lg:text-[20px] monser-400'>
