@@ -3,7 +3,7 @@ import React from "react";
 const PublicDisclosure = () => {
   return (
     <>
-      <div className="container mx-auto lg:pt-10 pt-5 lg:px-0 px-4">
+      <div className="container mx-auto lg:px-0 px-4">
         <h1 className="text-[#002561]">
           Public Disclosures of <br className="lg:block hidden" /> Student Achievements
         </h1>

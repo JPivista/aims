@@ -89,6 +89,20 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
           }}
         ></div>
+         <div className="absolute top-0 lg:top-20 left-0 lg:right-0 px-4 lg:px-0">
+          <div className="container mx-auto py-4">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Bottom Content Container */}
         <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
