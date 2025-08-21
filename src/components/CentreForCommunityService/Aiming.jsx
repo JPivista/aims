@@ -94,19 +94,19 @@ const Aiming = () => {
           </h4>
           <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 sm:ml-6">
             <li className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400">
-              imbibe the feeling of reciprocity among the students, i.e. serving
+              Imbibe the feeling of reciprocity among the students, i.e. serving
               the community back as it serves us
             </li>
             <li className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400">
-              involve all the departments and their students collectively in the
+              Involve all the departments and their students collectively in the
               work
             </li>
             <li className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400">
-              bring about social change in the surrounding urban and rural
+              Bring about social change in the surrounding urban and rural
               communities
             </li>
             <li className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400">
-              strengthen sense of civic responsibility of young people
+              Strengthen sense of civic responsibility of young people
             </li>
           </ul>
         </div>

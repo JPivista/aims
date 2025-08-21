@@ -54,7 +54,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                   {/* Hero Text */}
                   <h1 className="text-white text-4xl leading-tight tracking-wider">
                     <span className="playfair-300 text-3xl md:text-[60px]">
-                      Students Handbook
+                      Students Information Zone
                     </span>
                   </h1>
                 </div>

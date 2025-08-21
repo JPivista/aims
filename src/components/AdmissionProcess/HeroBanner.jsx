@@ -7,7 +7,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-process/hero-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-bottom bg-no-repeat bg-[url('/admission-process/hero-banner.png')]" />
 
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-process/mobile-banner.png')]" />
@@ -38,7 +38,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
                       Your Future.
                     </span>
                   </h1>
-                  <h5 className="monser-500 text-[#C9FFF4] text-xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
+                  <h5 className="playfair-300 text-[#C9FFF4] text-xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
                     Admissions Process at <br /> AIMS Institutes
                   </h5>
                 </div>

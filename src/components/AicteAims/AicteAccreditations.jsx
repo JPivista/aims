@@ -5,41 +5,41 @@ import Image from "next/image"
 const AicteAccreditations = () => {
   const [expandedProgram, setExpandedProgram] = useState("MBA")
 
-  const programs = [
+  const extensionOfApprovals = [
     {
       name: "MBA",
       years: [
         {
           year: "2021-2022",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2dbe10e7f352b0d7d739/1672228287475/AICTE-MBA-EoA-2021-22.pdf",
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EoA-2021-22.pdf",
         },
         {
           year: "2020-2021",
-          link: `/aicte-documents/eoa-mba-2020-2021.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EOA-2020-21.pdf",
         },
         {
           year: "2019-2020",
-          link: `/aicte-documents/eoa-mba-2019-2020.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EOA-2019-20.pdf",
         },
         {
           year: "2018-2019",
-          link: `/aicte-documents/eoa-mba-2018-2019.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EOA-2018-19.pdf",
         },
         {
           year: "2017-2018",
-          link: `/aicte-documents/eoa-mba-2017-2018.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EOA-2017-18.pdf",
         },
         {
           year: "2016-2017",
-          link: `/aicte-documents/eoa-mba-2016-2017.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-EOA-2016-17.pdf",
         },
         {
           year: "2015-2016",
-          link: `/aicte-documents/eoa-mba-2015-2016.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-2015-16.pdf",
         },
         {
           year: "2014-2015",
-          link: `/aicte-documents/eoa-mba-2014-2015.pdf`,
+          link: "/aicte/extension-of-approvals/MBA/AICTE-MBA-2014-15.pdf",
         },
       ],
     },
@@ -48,35 +48,35 @@ const AicteAccreditations = () => {
       years: [
         {
           year: "2021-2022",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2ef25d3aff00c8386318/1672228598483/AICTE-MCA-EoA-2021-22.pdf",
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-EoA-2021-22.pdf",
         },
         {
           year: "2020-2021",
-          link: `/aicte-documents/eoa-mca-2020-2021.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-EOA-2020-21.pdf",
         },
         {
           year: "2019-2020",
-          link: `/aicte-documents/eoa-mca-2019-2020.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-EOA-2019-20.pdf",
         },
         {
           year: "2018-2019",
-          link: `/aicte-documents/eoa-mca-2018-2019.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-2018-19.pdf",
         },
         {
           year: "2017-2018",
-          link: `/aicte-documents/eoa-mca-2017-2018.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-2017-18.pdf",
         },
         {
           year: "2016-2017",
-          link: `/aicte-documents/eoa-mca-2016-2017.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-2016-17.pdf",
         },
         {
           year: "2015-2016",
-          link: `/aicte-documents/eoa-mca-2015-2016.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-2015-16.pdf",
         },
         {
           year: "2014-2015",
-          link: `/aicte-documents/eoa-mca-2014-2015.pdf`,
+          link: "/aicte/extension-of-approvals/MCA/AICTE-MCA-2014-15.pdf",
         },
       ],
     },
@@ -85,35 +85,35 @@ const AicteAccreditations = () => {
       years: [
         {
           year: "2021-2022",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac3185cf1f5f49b95e7081/1672229254612/AICTE-BHM-EoA-2021-22.pdf",
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EoA-2021-22.pdf",
         },
         {
           year: "2020-2021",
-          link: `/aicte-documents/eoa-bhm-2020-2021.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EOA-2020-21.pdf",
         },
         {
           year: "2019-2020",
-          link: `/aicte-documents/eoa-bhm-2019-2020.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EOA-2019-20.pdf",
         },
         {
           year: "2018-2019",
-          link: `/aicte-documents/eoa-bhm-2018-2019.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EOA-2018-19.pdf",
         },
         {
           year: "2017-2018",
-          link: `/aicte-documents/eoa-bhm-2017-2018.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EOA-2017-18.pdf",
         },
         {
           year: "2016-2017",
-          link: `/aicte-documents/eoa-bhm-2016-2017.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-EOA-2016-17.pdf",
         },
         {
           year: "2015-2016",
-          link: `/aicte-documents/eoa-bhm-2015-2016.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-2015-16.pdf",
         },
         {
           year: "2014-2015",
-          link: `/aicte-documents/eoa-bhm-2014-2015.pdf`,
+          link: "/aicte/extension-of-approvals/BHM/AICTE-BHM-2014-15.pdf",
         },
       ],
     },
@@ -181,7 +181,7 @@ const AicteAccreditations = () => {
             Extension of Approvals (EoA)
           </h3>
         </div>
-        {programs.map((item, index) => (
+        {extensionOfApprovals.map((item, index) => (
           <ProgramItem key={index} program={item.name} years={item.years} />
         ))}
       </div>

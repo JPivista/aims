@@ -36,7 +36,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         {/* Bottom Content Container */}
         <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-10">
           <div className="container mx-auto">
-            <div className="flex lg:flex-row flex-col items-center justify-center md:gap-4 gap-4">
+            <div className="flex lg:flex-row flex-col items-center md:gap-4 gap-4">
               <div className="flex items-center">
                 <div className="text-center md:text-left">
                   {/* Hero Text */}

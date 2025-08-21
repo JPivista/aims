@@ -17,7 +17,7 @@ const NaacAccreditationSection = () => {
               <span className=" monser-400 text-base md:text-[20px]">
                 NAAC Certificate -{" "}
                 <a
-                  href="https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac0e4f3395000bd416d4a5/1672220241857/AIMS+NAAC+Certificate+2022.pdf"
+                  href="/naac/AIMS-NAAC-Certificate-2022.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline cursor-pointer"

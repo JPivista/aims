@@ -12,11 +12,11 @@ const NaacSSR = () => {
       links: [
         {
           text: "NAAC SSR - View",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac0b8a4053d730cdec5b6c/1672219532227/KACOGN14146.pdf",
+          link: "/naac/Self-Study-Report/naac-ssr.pdf",
         },
         {
           text: "IIQA - View",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac0bc1bbd55758d9970186/1672219586331/NAAC+IIQA.pdf",
+          link: "/naac/Self-Study-Report/NAAC-IIQA.pdf",
         },
       ],
     },
@@ -26,11 +26,11 @@ const NaacSSR = () => {
       links: [
         {
           text: "2.2 Seats earmarked for reserved category as per GOI/State Govt rule year-wise during the last five years - View",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac0fa06b2f8c73f2d5f2f6/1672220688559/NAAC+2.2+Reserved+Category+Seats+-+SC_ST_OBC+Supporting+Document.pdf",
+          link: "/naac/Extended-Profile/NAAC-2.2-Reserved-Category-Seats-SC_ST_OBC-Supporting-Document.pdf",
         },
         {
           text: "3.2 Number of sanctioned posts year-wise during last five years - View",
-          link: "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac10526b2f8c73f2d60000/1672220761267/NAAC+3.2+Sanctioned+Posts+-+j+m+j.pdf",
+          link: "/naac/Extended-Profile/NAAC-3.2-Sanctioned-Posts.pdf",
         },
       ],
     },
@@ -40,23 +40,23 @@ const NaacSSR = () => {
       links: [
         {
           text: "1.1.1- The Institution ensures effective curriculum delivery through a well planned and documented process. - View",
-          link: "/naac-documents/criteria-1-curricular-aspects.pdf",
+          link: "/naac/Criteria-1-Curricular-Aspects/NAAC-1.1.1.pdf",
         },
         {
           text: "1.1.2- The institution adheres to the academic calendar, including for the conduct of CIE. - View",
-          link: "/naac-documents/criteria-1-curricular-aspects.pdf",
+          link: "/naac/Criteria-1-Curricular-Aspects/NAAC-1.1.2.pdf",
         },
         {
           text: "1.1.3 -Teachers participation in curriculum development, assessment and academic bodies of the affiliating University during the last five years. - View",
-          link: "/naac-documents/criteria-1-curricular-aspects.pdf",
+          link: "/naac/Criteria-1-Curricular-Aspects/NAAC-1.1.3.pdf",
         },
         {
           text: "1.2.1 - Programs with CBCS/elective course system (Additional document). - View",
-          link: "/naac-documents/criteria-1-curricular-aspects.pdf",
+          link: "/naac/Criteria-1-Curricular-Aspects/NAAC-1.2.1-Additional-Document.pdf",
         },
         {
           text: "1.2.1 - Programs with CBCS/elective course system (Syllabus). - View",
-          link: "/naac-documents/criteria-1-curricular-aspects.pdf",
+          link: "/naac/Criteria-1-Curricular-Aspects/NAAC-1.2.1-Syllabus.pdf",
         },
         {
           text: "1.2.2 - Add-on / Certificate Programs offered during the last 5 years. - View",
@@ -340,7 +340,7 @@ const NaacSSR = () => {
           onClick={() => handleItemClick(item)}
         >
           <div className="flex-1 pr-3 md:pr-4 lg:pr-6">
-            <h5 className="monser-500 text-lg md:text-xl lg:text-2xl xl:text-[36px] leading-tight break-words">
+            <h5 className="monser-500 text-lg md:text-3xl leading-tight break-words">
               {item}
             </h5>
           </div>

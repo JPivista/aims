@@ -21,7 +21,7 @@ const HowToApply = () => {
     <>
       {/* Hero Banner Text */}
       <div className="bg-[#FCE1E1] py-8 sm:py-12 md:py-16">
-        <p className="text-base md:text-xl text-[#010066] max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto px-4 sm:px-6 md:px-8 leading-relaxed">
+        <p className="text-base md:text-xl  max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto px-4 sm:px-6 md:px-8 leading-relaxed">
           Every future begins with a first step, and at AIMS, we make sure that
           step is clear, structured, and supportive. Whether you're aiming to
           enter an undergraduate course, a postgraduate program, or our flagship

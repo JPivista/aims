@@ -11,8 +11,7 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "MBA Mandatory Disclosures 2022",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac29c3d286603aef5efea6/1672227271822/AICTE+MBA+final+Mandatory+disclosure+2022.pdf",
+          download: "/aicte/mandatory-disclosures/2022/MBA/MBA-2022.pdf",
           hasView: true,
         },
       ],
@@ -23,8 +22,7 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "MCA Mandatory Disclosures 2022",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac29f6d00c0131b3095129/1672227323982/AICTE+MCA+Final+Mandatory+Disclosure+2022.pdf",
+          download: "/aicte/mandatory-disclosures/2022/MCA/MCA-2022.pdf",
           hasView: true,
         },
       ],
@@ -34,8 +32,7 @@ const MandatoryDisclosures = () => {
       description: [
         {
           text: "BHM Mandatory Disclosures 2022",
-          download:
-            "https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/63ac2a1f4080065acc4205e0/1672227365484/AICTE+BHM+final+Mandatory+disclosure+2022.pdf",
+          download: "/aicte/mandatory-disclosures/2022/BHM/BHM-2022.pdf",
           hasView: true,
         },
       ],

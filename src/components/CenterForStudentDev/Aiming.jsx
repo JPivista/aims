@@ -6,7 +6,7 @@ const Aiming = () => {
     "Identify each student's unique needs and offer relevant support or intervention",
     "Collaborate with the academic and Corporate & Public Relations teams to deliver competency-building workshops for college students in Bangalore",
     "Provide a platform for cross-cultural, academic, and experiential learning exchanges",
-    "Support the long-term vision of AIMS by helping students grow into well-rounded professionals with a deep concern for society",
+    "Foster a strong sense of ethical leadership and social responsibility among students",
     "Support the long-term vision of AIMS by helping students grow into well-rounded professionals with a deep concern for society",
   ]
   return (
@@ -17,7 +17,7 @@ const Aiming = () => {
         <div className="w-full px-4 md:px-8 md:ml-10 flex flex-col md:flex-row gap-4 md:gap-10">
           <div className="space-y-4 sm:space-y-6 lg:space-y-6 md:w-2/4">
             <h2 className="text-4xl  md:text-[65px] text-[#0C2165] mb-6 md:mb-10 playfair-300">
-              AIMing for All <br /> Round Development
+              AIMing for All Round <br /> Development
             </h2>
             <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] monser-400">
               For queries and support, write to us at{" "}

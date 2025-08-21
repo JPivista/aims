@@ -282,7 +282,7 @@ const DvvExtendedProfile = () => {
           onClick={() => handleItemClick(item)}
         >
           <div className="flex-1">
-            <h5 className="mb-2 monser-500 text-xl md:text-[36px]">{item}</h5>
+            <h5 className="mb-2 monser-500 text-xl md:text-3xl">{item}</h5>
           </div>
           <Image
             src="/nirf/arrow.svg"

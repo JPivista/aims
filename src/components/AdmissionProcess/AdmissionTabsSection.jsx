@@ -13,9 +13,13 @@ const AdmissionTabsSection = () => {
         subtitle: "To apply, you must have:",
         requirements: [
           "A recognised bachelor's degree with a minimum of 50% (or 45% for SC/ST/CAT-1)",
-          "A valid test score:",
-          "CAT: 70 percentile or above",
-          "MAT/XAT/CMAT/ATMA: 80 percentile or above",
+          {
+            main: "A valid test score:",
+            sub: [
+              "CAT: 70 percentile or above",
+              "MAT/XAT/CMAT/ATMA: 80 percentile or above",
+            ],
+          },
           "Final-year students may apply provisionally. Offer letters will require submission of final mark sheets before confirmation.",
         ],
       },
