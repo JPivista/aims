@@ -2,29 +2,52 @@ import React from 'react'
 import Image from 'next/image'
 import ApplicationMarquee from '@/shared/ApplicationMarquee'
 
-const LibraryAndInformationCentreBanner = ({ announcements, pageType = 'phd' }) => {
+const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
     return (
         <>
-            <div className="relative w-full h-[100vh] md:h-[83vh] bg-[url('/library-and-information-centre/library-and-information-centre-banner.png')] bg-no-repeat bg-cover bg-center">
-                {/* Overlay */}
-                <div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10 lg:p-16">
-                    {/* Top text */}
-                    <div>
-                        <h6 className="tracking-wider text-xs sm:text-sm lg:text-base text-white">EMPOWERING MINDS</h6>
-                        <h5 className="text-lg sm:text-xl lg:text-2xl font-black text-white " style={{ fontWeight: "900" }}>SINCE 1994</h5>
+            <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/library-and-information-centre/library-and-information-centre-banner.png')] bg-[url('/library-and-information-centre/library_and_information_centre_mob.png')]" />
+                </div>
+
+                {/* Gradient Overlay */}
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        background:
+                            'linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)'
+                    }}
+                ></div>
+
+                {/* Text/Logo Content */}
+                <div className="absolute inset-0 flex flex-col justify-between z-10">
+                    {/* Logo Block */}
+                    <div className="container mx-auto px-4 pt-8 text-left">
+                        <Image
+                            src="/pre-university-college/empowering_minds_since1994.png" // 👉 replace with your logo path
+                            alt="Pre-University College Logo"
+                            width={160} // adjust size
+                            height={60}
+                            className="object-contain"
+                            priority
+                        />
                     </div>
-                    {/* Bottom text */}
-                    <div>
-                        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white ">
+
+                    {/* Bottom Heading */}
+                    <div className="container mx-auto px-4 pb-12 text-left">
+                        <h1 className="text-white font-bold text-center md:text-left">
                             Library and <br className='hidden lg:block' />Information Centre
                         </h1>
                     </div>
                 </div>
             </div>
+
             {/* Application Announcements Marquee */}
             <ApplicationMarquee announcements={announcements} pageType={pageType} />
         </>
     )
 }
 
-export default LibraryAndInformationCentreBanner
+export default CentreForResearchBanner
+

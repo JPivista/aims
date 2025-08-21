@@ -1,7 +1,19 @@
-import React from 'react'
+"use client"
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const OurTrackRecord = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768); // Tailwind md breakpoint
+
+        handleResize(); // run once on mount
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const data = [
         { id: "01", type: "Minor", number: 7, revenue: "5,35,630" },
         { id: "02", type: "Major", number: 1, revenue: "6,13,103" },
@@ -13,12 +25,18 @@ const OurTrackRecord = () => {
     return (
         <>
             {/* Image */}
-            <div className="relative w-full h-[200px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px]">
+            <div className="w-full">
                 <Image
-                    src="/centre-for-research/our_track_record.png"
+                    src={
+                        isMobile
+                            ? "/centre-for-research/our_track_record_mob.webp"
+                            : "/centre-for-research/our_track_record.webp"
+                    }
                     alt="Our Track Record"
-                    fill
-                    className="object-contain"
+                    width={1920}   // set the original image width
+                    height={800}   // set the original image height
+                    className="w-full h-auto object-cover"
+                    priority
                 />
             </div>
 

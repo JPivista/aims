@@ -28,7 +28,6 @@ export default function Page() {
                 mainHeading={`Set Your Sights.<br />Strengthen Your AIM.`}
                 mainDescription={[
                     `Established in 1994, AIMS Pre-University College lays the foundation for future success. Recognised as one of the <b style="color:black;">best PU colleges in Bangalore </b>, our institution offers structured academics, personalised support, and future-focused guidance. Whether you're aiming for a professional degree or career clarity, our PU program helps you chart a clear course from classroom to career. As a <b style="color:black;">top PU college for PCMB and PCMC in Bangalore</b>, we ensure every student receives the tools and support they need to thrive.`,
-                    `<b style="color:black;">Our vision:</b> To transform youth into professionals of global excellence with a deep concern for society.`,
                 ]}
                 subHeading={`Integrated Coaching <br /> Approach`}
                 subDescription={[

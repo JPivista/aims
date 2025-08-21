@@ -16,7 +16,7 @@ const PreUniversityTab = ({ tabsData }) => {
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`flex items-center space-x-3 px-10 py-4 transition-all duration-300 ${activeTab === index
+                className={`flex items-center space-x-3 px-10 py-2 transition-all duration-300 ${activeTab === index
                     ? "bg-white/20 text-[#A22877] border border-black"
                     : "bg-[#A22877] text-white hover:bg-[#8B1F5F]"
                   }`}
@@ -77,7 +77,7 @@ const PreUniversityTab = ({ tabsData }) => {
                     <div key={gIndex}>
                       {/* Group Heading */}
                       {group.heading && (
-                        <h6 className="text-xl font-semibold text-gray-800 mb-3">
+                        <h6 className="text-xl font-semibold text-gray-800 mb-3" style={{ fontWeight: "500" }}>
                           {group.heading}
                         </h6>
                       )}

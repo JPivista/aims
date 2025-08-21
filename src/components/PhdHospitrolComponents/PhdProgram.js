@@ -71,6 +71,7 @@ const PhdProgram = () => {
                         </p>
                         <Button
                             href="http://www.uni-mysore.ac.in/sites/default/files/content/final_ph.d_notification_edited.pdf"
+                            target="_blank"
                             showArrow={true}
                             showReadMore={false}
                             variant="secondary"

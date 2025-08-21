@@ -67,10 +67,10 @@ const TabbedInfoSection = ({
                             <button
                                 key={key}
                                 onClick={() => setActiveTab(key)}
-                                className={`w-fit px-3.5 py-1 rounded-full border cursor-pointer mb-2.5 text-sm font-medium text-left ${
+                                className={`w-fit px-4 py-2 rounded-full border cursor-pointer mb-2.5 text-sm font-medium text-left ${
                                     activeTab === key
                                         ? "bg-[#a2396e] text-white border-none"
-                                        : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-none"
+                                        : "bg-white text-black border border-black hover:bg-[#a2396e] hover:text-white hover:border-[#a2396e]"
                                 }`}
                             >
                                 {tabData[key].title} {tabData[key].subtitle}

@@ -47,7 +47,7 @@ const CommitteesCards = ({ committees }) => {
                     {/* Objectives */}
                     {committee.objectives?.length > 0 && (
                         <>
-                            <h4 className="text-gray-900 mt-4 font-semibold">
+                            <h4 className="text-gray-900 mt-4 font-semibold" style={{ fontWeight: "600" }}>
                                 {committee.objectivesTitle}
                             </h4>
                             <ul className="list-disc list-inside text-sm sm:text-base text-gray-700 mt-2 space-y-1 min-h-[190px]">
