@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Button from '@/shared/Button'
 
-const ProvidingOpportunities = () => {
+const AlumiNetwork = () => {
     return (
         <div className='w-full py-10 lg:px-0 px-4'>
             <div className='container mx-auto'>
@@ -19,15 +19,15 @@ const ProvidingOpportunities = () => {
                     </div>
 
                     {/* Right Column - Content */}
-                    <div className='flex flex-col gap-6'>
+                    <div className='flex flex-col gap-4'>
                         <h3 className='text-4xl lg:text-5xl playfair-300 text-[#0C2165] leading-tight'>
-                            Why Join the AIMS  <br className='hidden md:block' />
+                            Why Join the AIMS <br className='hidden md:block' />
                             Alumni Network?
                         </h3>
 
                         <div className='text-gray-800 leading-relaxed space-y-4'>
                             <p className='text-lg'>
-                                Being part of the AIMS Alumni Association is more than just staying in touch—it&apos;s about building meaningful relationships, accessing opportunities, and giving back to the place that shaped your path. Here’s what you can look forward to:
+                                Being part of the AIMS Alumni Association is more than just staying in touch, it&apos;s about building meaningful relationships, accessing opportunities, and giving back to the place that shaped your path. Here’s what you can look forward to:
                             </p>
                         </div>
                         <div>
@@ -59,7 +59,7 @@ const ProvidingOpportunities = () => {
                             </ul>
                         </div>
                         <div>
-                            <Button>
+                            <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdvpoig1zb37eq9jVRuBSUu22hQdXEBVc8vsYWK7039QhtO-g/viewform" target='_blank' className='block w-[150px]'>
                                 Register
                             </Button>
                         </div>
@@ -70,4 +70,4 @@ const ProvidingOpportunities = () => {
     )
 }
 
-export default ProvidingOpportunities
+export default AlumiNetwork

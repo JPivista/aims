@@ -14,7 +14,7 @@ const RcContent = () => {
                         className=" rotate-180"
                     />
                 </div>
-                <div className='container mx-auto'>
+                <div className='container mx-auto space-y-4'>
                     <p className=''>
                         At AIMS Institutes, your journey doesn&apos;t end at graduation. Whether you&apos;re across the country or halfway across the world, the AIMS Alumni Association is your lifelong connection to where it all began.
                     </p>
