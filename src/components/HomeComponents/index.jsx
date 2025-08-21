@@ -6,6 +6,7 @@ import Since from "./Since";
 // import AimersInAction from './AimersInAction'
 
 import Slide from "./Slide";
+import CampusUpdates from "./CampusUpdates";
 
 const HomeComponents = () => {
   return (
@@ -14,6 +15,7 @@ const HomeComponents = () => {
       <Since />
 
       <Slide />
+      <CampusUpdates />
     </>
   );
 };
