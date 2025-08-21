@@ -8,8 +8,7 @@ const CfcContent = () => {
                 <div className='container mx-auto'>
                     <div className='flex flex-col bg-transparent relative z-10'>
                         <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
-                            From Insight to Impact.
-                            <br className='hidden md:block' />
+                            From Insight to Impact.  <br className='hidden md:block' />
                             AIM for Industry-Ready Thinking.
                         </h3>
                         <div className='lg:w-[75%] w-full '>

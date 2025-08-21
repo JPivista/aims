@@ -39,7 +39,7 @@ const HeroBannerCfc = ({ announcements, pageType = 'engineering' }) => {
                         <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
                                 <Image
-                                    src="/white-empower.svg"
+                                    src="/iacbe/since-black.svg"
                                     alt="Recruiters"
                                     width={200}
                                     height={200}

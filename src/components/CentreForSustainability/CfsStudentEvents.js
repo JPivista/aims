@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const CfsStudentEvents = () => {
     const [selectedYear, setSelectedYear] = useState(2022)
@@ -207,7 +208,7 @@ const CfsStudentEvents = () => {
 
     const handleYearChange = (year) => {
         setSelectedYear(year)
-        setExpandedEvent(null) // Reset expanded event when year changes
+        setExpandedEvent(0) // Set first event as expanded by default when year changes
     }
 
     return (
@@ -217,8 +218,7 @@ const CfsStudentEvents = () => {
                     {/* Header Section */}
                     <div className='text-left mb-12'>
                         <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                            Student Engagement
-                            <br className='md:block hidden' />
+                            Student Engagement <br className='md:block hidden' />
                             and Events
                         </h3>
                         <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl'>
@@ -227,14 +227,14 @@ const CfsStudentEvents = () => {
                     </div>
 
                     {/* Timeline Layout */}
-                    <div className=' flex-col lg:flex-row gap-8 grid grid-cols-1 lg:grid-cols-6'>
+                    <div className='flex flex-col lg:grid lg:grid-cols-6 gap-8'>
                         {/* Year Navigation */}
-                        <div className='flex md:flex-col flex-row flex-wrap gap-4 flex-shrink-0 col-span-1 w-20'>
+                        <div className='flex flex-row flex-wrap justify-start lg:flex-col lg:flex-nowrap gap-2 lg:gap-4 flex-shrink-0 lg:w-20 w-full mb-6 lg:mb-0'>
                             {years.map((year) => (
                                 <button
                                     key={year}
                                     onClick={() => handleYearChange(year)}
-                                    className={`text-center px-2 py-1 rounded-full transition-all duration-300 text-sm 
+                                    className={`text-center px-3 py-2 rounded-full transition-all duration-300 text-sm whitespace-nowrap flex-shrink-0
                                          ${selectedYear === year
                                             ? 'bg-[#A22877] text-white shadow-lg'
                                             : 'border-2 border-[#A22877] text-[#A22877] hover:bg-[#A22877] hover:text-white'
@@ -246,9 +246,9 @@ const CfsStudentEvents = () => {
                         </div>
 
                         {/* Event Details */}
-                        <div className='flex-1 md:border-l-2 border-t-2 md:border-t-0 border-black md:pl-8 pl-0 min-h-[400px] col-span-5'>
+                        <div className='flex-1 md:border-l-2 border-t-2 md:border-t-0 border-black md:pl-8 pl-0 min-h-[400px] lg:col-span-5'>
                             {eventsData[selectedYear]?.map((event, index) => (
-                                <div key={index} className='mb-8'>
+                                <div key={index} className=''>
                                     <button
                                         onClick={() => toggleEvent(index)}
                                         className='w-full flex items-center justify-between text-left hover:bg-gray-50 rounded-lg transition-colors duration-200 p-2'
@@ -256,43 +256,48 @@ const CfsStudentEvents = () => {
                                         <h5 className='lg:text-2xl monser-600 text-[#0C2165] flex-1 leading-tight text-left'>
                                             {event.title}
                                         </h5>
-                                        <span className='text-[#A22877] text-2xl transition-transform duration-200 ml-4'>
-                                            {expandedEvent === index ? '↗' : '↙'}
-                                        </span>
+                                        <Image
+                                            src="/nirf/arrow.svg"
+                                            alt="Arrow"
+                                            width={20}
+                                            height={20}
+                                            className={`w-4 h-4 md:w-5 md:h-5 flex-shrink-0 transition-transform duration-200 ml-4 ${expandedEvent === index ? "rotate-180" : ""
+                                                }`}
+                                        />
                                     </button>
 
                                     {expandedEvent === index && (
-                                        <div className='my-4 space-y-4 text-gray-700'>
+                                        <div className=' space-y-4 bg-gray-100 p-4 rounded-lg mb-2'>
                                             <p className='monser-400'>
                                                 {event.objective}
                                             </p>
 
                                             {event.sdgs && (
                                                 <div>
-                                                    <ol className='monser-400 space-y-2'>
+                                                    <ul className='monser-400 space-y-2'>
                                                         {event.sdgs.map((sdg, sdgIndex) => (
-                                                            <li key={sdgIndex} className='flex items-start gap-2'>
-                                                                <span className='text-[#8B5CF6] font-semibold flex-shrink-0'>{sdgIndex + 1}.</span>
+                                                            <li key={sdgIndex} className='flex items-start gap-3'>
+                                                                <span className='text-[#A22877]'>•</span>
                                                                 <span>{sdg}</span>
                                                             </li>
                                                         ))}
-                                                    </ol>
+                                                    </ul>
                                                 </div>
                                             )}
 
-                                            <p className='monser-400'>
-                                                {event.outcomes}
-                                            </p>
+                                            {event.outcomes && (
+                                                <p className='monser-400'>
+                                                    {event.outcomes}
+                                                </p>
+                                            )}
 
-                                            <p className='monser-400'>
-                                                {event.conclusion}
-                                            </p>
+                                            {event.conclusion && (
+                                                <p className='monser-400'>
+                                                    {event.conclusion}
+                                                </p>
+                                            )}
                                         </div>
                                     )}
-
-                                    {/* {index < eventsData[selectedYear].length - 1 && (
-                                        <hr className='my-6 ' />
-                                    )} */}
                                 </div>
                             ))}
                         </div>

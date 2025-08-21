@@ -41,7 +41,7 @@ const EsprStudentEngagementEvents = () => {
         <>
 
             <div className='w-full bg-[#E1F9F4] py-10'>
-                <div className='justify-center items-center mb-5 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+                <div className='justify-center items-center flex flex-col lg:px-0 px-4 relative overflow-hidden'>
                     <div className='absolute top-[0%] right-0 md:block hidden rotate-180'>
                         <Image
                             src="/school-circle.svg"
@@ -53,10 +53,13 @@ const EsprStudentEngagementEvents = () => {
                     </div>
                 </div>
 
-                <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+                <div className='justify-center items-center flex flex-col lg:px-0 px-4 relative overflow-hidden'>
                     <div className='container mx-auto'>
-                        <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                        <div className='flex flex-col bg-transparent relative z-10'>
                             {/* Participant Voices Section */}
+                            <h3 className='text-[#0C2165] text-start text-[32px] lg:text-[56px] playfair-300 mb-4'>
+                                Student Engagement <br className='hidden md:block' /> and Events
+                            </h3>
                             <div className='grid grid-cols-1 lg:grid-cols-5 gap-8'>
                                 {/* Left Column - Participant Names */}
                                 <div className='lg:col-span-2 md:border-r-2 border-black'>

@@ -46,7 +46,7 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                 <div className="absolute top-5 left-0 right-0">
                     <div className="container mx-auto">
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
-                            <div className="flex items-center">
+                            <div className="">
                                 <Image
                                     src="/iacbe/since-black.svg"
                                     alt="Empower"

@@ -21,7 +21,15 @@ const AeecOffers = () => {
                                 alt="AEEC Offers"
                                 width={1000}
                                 height={1000}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover hidden md:block"
+                            />
+
+                            <Image
+                                src="/entrepreneurship-excellence-centre/aeec-offers-mob.svg"
+                                alt="AEEC Offers"
+                                width={1000}
+                                height={1000}
+                                className="w-full h-full object-cover md:hidden block"
                             />
                             <p className='text-center mt-4 md:w-[55%] w-full mx-auto'>
                                 To date, over 80 businesses have been launched with guidance from AEEC, a testament to the centre’s enduring impact.
