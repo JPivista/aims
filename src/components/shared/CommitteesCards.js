@@ -45,18 +45,28 @@ const CommitteesCards = ({ committees }) => {
                     )}
 
                     {/* Objectives */}
+
                     {committee.objectives?.length > 0 && (
                         <>
-                            <h4 className="text-gray-900 mt-4 font-semibold" style={{ fontWeight: "600" }}>
+                            <h4
+                                className="text-gray-900 mt-4 font-semibold"
+                                style={{ fontWeight: "600" }}
+                            >
                                 {committee.objectivesTitle}
                             </h4>
-                            <ul className="list-disc list-inside text-sm sm:text-base text-gray-700 mt-2 space-y-1 min-h-[190px]">
+                            <ul className="mt-2 space-y-2 min-h-[190px]">
                                 {committee.objectives.map((obj, idx) => (
-                                    <li key={idx}>{obj}</li>
+                                    <li key={idx} className="flex items-start gap-2">
+                                        <span className="text-xl ">•</span>
+                                        <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                                            {obj}
+                                        </p>
+                                    </li>
                                 ))}
                             </ul>
                         </>
                     )}
+
 
                     {/* Frequency */}
                     {committee.frequency && (

@@ -40,32 +40,39 @@ const ValueAddedPrograms = ({
         <div className="mx-5 md:mx-20 ">
           {/* Header Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-4">
-            <h3
-              className="text-[#0C2165] playfair-300 tracking-wider text-2xl md:text-[60px]"
-              dangerouslySetInnerHTML={{
-                __html: title || "Value Added Programs",
-              }}
-            ></h3>
-            <p className="text-base md:text-lg lg:text-[20px] leading-relaxed">
-              {description ||
-                "In our effort to build the profile of the participants of the program and ensure they meet the requirements of the industry (in addition to personality development), we at AIMS incorporate a set of value added programs in each semester."}
-            </p>
+            <div className="flex items-center justify-center text-center">
+              <h3
+                className="text-[#0C2165] playfair-300 tracking-wider text-2xl md:text-[60px]"
+                dangerouslySetInnerHTML={{
+                  __html: title || "Value Added Programs",
+                }}
+              ></h3>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <p className="text-base md:text-lg lg:text-[20px] leading-relaxed text-start">
+                {description ||
+                  "In our effort to build the profile of the participants of the program and ensure they meet the requirements of the industry (in addition to personality development), we at AIMS incorporate a set of value added programs in each semester."}
+              </p>
+            </div>
           </div>
 
+
           {/* Program Sections */}
-          <div className="space-y-4 md:space-y-6 md:mt-8 mt-6 ">
+          <div className="space-y-4 md:space-y-6 md:mt-8 mt-6">
             {programsData.map((program, index) => (
               <div key={program.id} className="relative">
                 {/* Partial border for non-first items */}
                 {index !== 0 && (
-                  <div className="absolute bottom-0 left-0 w-11/12 md:w-11/12 h-px bg-black"></div>
+                  <div className="absolute bottom-0 left-0 w-full md:w-11/12 h-px bg-black"></div>
                 )}
+
                 <button
                   onClick={() => handleItemClick(program.title)}
-                  className="w-full flex items-center justify-between text-left cursor-pointer"
+                  className="w-full flex items-center justify-between text-left cursor-pointer px-2 md:px-4"
                 >
-                  <h5 className="flex items-center justify-start gap-2 md:gap-4 w-full md:w-4/5 ">
-                    <span className="break-words monser-500 md:text-[24px] text-[22px]  ">
+                  <h5 className="flex items-center gap-2 md:gap-4 w-full md:flex-wrap">
+                    <span className="break-words monser-500 text-[18px] sm:text-[20px] md:text-[24px] leading-snug">
                       {program.title}
                     </span>
                     <Image
@@ -81,12 +88,12 @@ const ValueAddedPrograms = ({
 
                 {/* Partial border for first item */}
                 {index === 0 && (
-                  <div className="absolute bottom-0 left-0 w-3/5 md:w-3/5 h-px bg-black"></div>
+                  <div className=" absolute bottom-0 left-0 w-full md:w-3/5 h-px bg-black"></div>
                 )}
 
-                {/* Semicircle for first item */}
+                {/* Semicircle for first item (desktop only) */}
                 {index === 0 && (
-                  <div className="hidden md:block absolute right-[-80px] -top-[30%]">
+                  <div className="hidden lg:block absolute right-[-80px] -top-[30%]">
                     <Image
                       src="/MBA/semi-circle.svg"
                       alt="Semicircle"
@@ -104,10 +111,8 @@ const ValueAddedPrograms = ({
                         key={`${program.id}-content-${contentIndex}`}
                         className="flex items-start"
                       >
-                        <span className="mr-2 md:mr-3 mt-1 text-sm md:text-lg">
-                          •
-                        </span>
-                        <p className="text-sm md:text-base lg:text-[20px] leading-relaxed">
+                        <span className="mr-2 md:mr-3 mt-1 text-sm md:text-lg">•</span>
+                        <p className="text-sm sm:text-base lg:text-[20px] leading-relaxed">
                           {item}
                         </p>
                       </div>
@@ -117,6 +122,7 @@ const ValueAddedPrograms = ({
               </div>
             ))}
           </div>
+
 
           {/* Footer Disclaimer */}
           {disclaimer && (

@@ -4,7 +4,7 @@ const IcssrFunded = () => {
     const projects = [
         {
             year: "2016",
-            title: "An Empirical study on problems faced by the farmers in Agri-storage facilities with reference to Rural Bangalore",
+            title: "An Empirical Study on Problems Faced by the Farmers in Agri-storage Facilities with Reference to Rural Bangalore",
             duration: "18 Months",
             status: "Completed",
             fundingAgency: "ICSSR, New Delhi, India",
@@ -22,7 +22,7 @@ const IcssrFunded = () => {
         },
         {
             year: "2017",
-            title: "An Analytical Study on Impact of GST influencing Ease of Doing Business and focusing on Indian Automotive Industry – A Case study based on Karnataka",
+            title: "An Analytical Study on Impact of GST Influencing Ease of Doing Business and Focusing on Indian Automotive Industry - A Case Study based on Karnataka",
             duration: "12 Months",
             status: "Completed",
             fundingAgency: "ICSSR, New Delhi, India",
@@ -40,7 +40,7 @@ const IcssrFunded = () => {
         },
         {
             year: "2019",
-            title: "An Empirical study to identify reasons for post-harvest spoilage of fruits and vegetables and remedial measures required",
+            title: "An Empirical Study to Identify Reasons for Post-harvest Spoilage of Fruits and Vegetables and Remedial Measures Required",
             duration: "12 Months",
             status: "Ongoing",
             fundingAgency: "ICSSR, New Delhi, India",
@@ -51,7 +51,7 @@ const IcssrFunded = () => {
 
     return (
         <div className="container mx-auto pt-10 px-4">
-            <h2 className="text-center text-2xl font-bold mb-2">
+            <h2 className="text-center text-2xl font-bold mb-2" style={{ fontWeight: "500" }}>
                 ICSSR-Funded Projects at AIMS
             </h2>
             <h6 className="text-center text-gray-600 mb-8 text-lg">

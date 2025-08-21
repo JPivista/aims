@@ -85,7 +85,7 @@ const ApplicationMarquee = ({ announcements, pageType = "business" }) => {
         link: "/accreditation",
       },
       {
-        text: "APPLY NOW FOR Phd in CommerceSELECTION PROCESS 2025-26",
+        text: "APPLY NOW FOR Phd in Commerce 2025-26",
         link: "/about-aims",
       },
     ],
