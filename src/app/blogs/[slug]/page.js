@@ -54,7 +54,7 @@ const BlogDetail = () => {
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-gray-800 mb-4">Blog Not Found</h1>
-                    <p className="text-gray-600">The blog post you're looking for doesn't exist.</p>
+                    <p className="text-gray-600">The blog post you&apos;re looking for doesn&apos;t exist.</p>
                     <div className="mt-4 text-sm text-gray-500">
                         <p>Slug: {params.slug}</p>
                         <p>API Endpoint: {API_CONFIG.SERVER_URL}posts</p>
