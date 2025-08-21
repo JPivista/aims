@@ -17,10 +17,8 @@ const RcContent = () => {
                 <div className='container mx-auto'>
                     <div className='flex flex-col bg-transparent relative z-10'>
                         <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
-                            Empowering young
-                            <br className='hidden md:block' />
-                            leaders to make a
-                            <br className='hidden md:block' />
+                            Empowering young <br className='hidden md:block' />
+                            leaders to make a <br className='hidden md:block' />
                             difference in the world
                         </h3>
                     </div>
