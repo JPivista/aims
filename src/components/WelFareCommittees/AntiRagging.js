@@ -6,17 +6,17 @@ const AntiRagging = () => {
     <>
       <div className="bg-[#E1F9F4] lg:py-10">
         <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-[90%]">
             <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
               ANTI-RAGGING <br className="hidden md:block" /> COMMITTEE
             </h5>
-            <p className="lg:mt-3 text-gray-600 lg:w-[80%] xl:w-[80%] md:w-full w-full lg:px-0 px-4">
+            <p className="lg:mt-3 text-gray-600 w-full lg:px-0 px-4">
               AIMS Institutes shall ensure that its campus and accommodations
               facilities are free of the menace of ragging.
             </p>
           </div>
           {/* Right Side Image */}
-          <div className="w-full flex justify-center lg:justify-end">
+          <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
             <Image
               src="/welfare-committees/anti-ragging.png"
               alt="students"
@@ -153,10 +153,12 @@ const AntiRagging = () => {
                       9880205105
                     </a>
                   </p>
-                  <p className="mt-2">
+                  <p className="">
                     or use one of the following means:
-                    <ul className="list-disc list-inside">
-                      <li>Grievance Registration Portal Link</li>
+                    <ul className="list-disc list-inside mt-3 px-4">
+                      <li><a href="/grievance-redressal" target="_blank" className="underline">
+                        
+                      Grievance Registration Portal Link</a></li>
                       <li>Email:{" "}
                     <a
                       href="mailto:grievances@theaims.ac.in"

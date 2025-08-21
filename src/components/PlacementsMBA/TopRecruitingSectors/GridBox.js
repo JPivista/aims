@@ -22,11 +22,11 @@ const data = [
 export default function IndustryStats() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 py-6 sm:py-8 md:py-10 p-4 lg:p-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 py-6 sm:py-8 md:py-10 p-4 lg:p-0 justify-items-center sm:justify-items-start">
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-center w-full h-32 sm:h-40 md:h-48 "
+            className="relative flex items-center justify-center lg:w-full w-52 h-32 sm:h-40 md:h-48 "
           >
             {/* Purple box */}
             <div className="absolute inset-0 bg-[#531574] rounded-xl sm:rounded-2xl shadow-md flex flex-col items-center justify-center text-white z-10">
