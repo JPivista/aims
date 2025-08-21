@@ -7,49 +7,49 @@ const sampleProgramsData = [
         id: 'life-skills',
         title: 'Life Skills',
         content: [
-            'Firefighting at Peenya Fire Station',
-            'Certification on hygiene, sanitation, general nutrition management & physical fitness',
+            'Firefighting at Peenya Fire Station.',
+            'Certification on hygiene, sanitation, general nutrition management & physical fitness.',
             'Emotional Wellbeing',
             'Yoga & Meditation'
         ]
     },
     {
         id: 'social-sensitisation',
-        title: 'Social Sensitisation',
+        title: 'Social Sensitization',
         content: [
-            'Community service projects',
-            'Social responsibility awareness',
-            'Environmental consciousness programs'
+            'Rural camp in association with AIMS Centre for Community Service.',
+            'NSS in association with AIMS Centre for Community Service.'
         ]
     },
     {
         id: 'employability',
         title: 'Employability & Pre-Placement Trainings',
         content: [
-            'Resume building workshops',
-            'Interview preparation sessions',
-            'Professional communication skills',
-            'Industry-specific training modules'
+            'Personality Development.',
+            'Communication Skills training.',
+            'CV Writing.',
+            'Income Tax Return Filing.',
+            'Dining Etiquettes.'
         ]
     },
     {
         id: 'certifications',
-        title: 'Career Oriented Certifications',
+        title: 'Career Oriented Certification',
         content: [
-            'Financial modeling certifications',
-            'Data analytics tools training',
-            'Enterprise software proficiency',
-            'Industry-recognized credentials'
+            'Certification in Entrepreneurship.',
+            'Certification in Advance Excel and Business Analytics.',
+            'Certification in Data Analytics.',
+            'Gateway to BFSI (Banking Finance and Insurance sector).',
+            'Certification in SPSS.'
         ]
     },
     {
         id: 'workshops',
         title: 'Workshops',
         content: [
-            'Industry expert sessions',
-            'Case study workshops',
-            'Practical application training',
-            'Skill development sessions'
+            'Workshop on Case Study Analysis.',
+            'Workshop on Research.',
+            'Workshop on Sustainability.'
         ]
     }
 ]

@@ -55,8 +55,8 @@ const McomProgramOverview = () => {
             <div className='py-10' style={{ backgroundColor: '#E1F9F4' }}>
                 <div className='container mx-auto px-4 lg:px-0 flex flex-col gap-10'>
                     <div className=' items-center justify-between grid grid-cols-1 md:grid-cols-2'>
-                        <h3 className='text-[#0C2165]'>
-                            <span className='italic text-[#A22877]'>M.Com Program</span>
+                        <h3 className='text-[#0C2165] playfair-400'>
+                            <span className='italic text-[#A22877] playfair-300'>M.Com Program</span>
                             <br />
                             Overview
                         </h3>
