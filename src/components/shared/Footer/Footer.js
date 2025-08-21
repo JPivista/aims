@@ -10,12 +10,12 @@ export default function Footer() {
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Students</h6>
             <ul className="space-y-2 text-sm">
-              <li><a href="/university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</a></li>
-              <li><a href="/student-handbook" className="hover:text-gray-300 transition-colors">Student Handbook</a></li>
+              <li><a href="/student-university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</a></li>
+              <li><a href="/student-information-zone" className="hover:text-gray-300 transition-colors">Student Handbook</a></li>
               <li><a href="/student-exit-formalities" className="hover:text-gray-300 transition-colors">Student Exit Formalities</a></li>
               <li><a href="/examinations" className="hover:text-gray-300 transition-colors">Examinations</a></li>
-              <li><a href="/academic-calendar" className="hover:text-gray-300 transition-colors">Academic Calendar</a></li>
-              <li><a href="/program-and-course-outcome" className="hover:text-gray-300 transition-colors">Program and Course Outcome</a></li>
+              <li><a href="/aims-academic-calendar" className="hover:text-gray-300 transition-colors">Academic Calendar</a></li>
+              <li><a href="/programs-course-outcome" className="hover:text-gray-300 transition-colors">Program and Course Outcome</a></li>
               <li><a href="/code-of-conduct-students" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</a></li>
             </ul>
           </div>
@@ -36,7 +36,7 @@ export default function Footer() {
               <li><a href="/naac-accreditation" className="hover:text-gray-300 transition-colors">NAAC Accreditation</a></li>
               <li><a href="/aicte-aims" className="hover:text-gray-300 transition-colors">AICTE</a></li>
               <li><a href="/nirf-ranking" className="hover:text-gray-300 transition-colors">NIRF</a></li>
-              <li><a href="/ugc-recognition" className="hover:text-gray-300 transition-colors">UGC 2(f) & 12B</a></li>
+              <li><a href="/ugc-preparation" className="hover:text-gray-300 transition-colors">UGC 2(f) & 12B</a></li>
             </ul>
           </div>
           <div>
@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Contact, Social, Newsletter */}
-      <div className="border-t-[0.4px] border-b-[0.4px] border-whtie">
+      <div className="border-t border-b border-whtie">
         <div className="container mx-auto px-2 lg:px-0">
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
@@ -105,7 +105,7 @@ export default function Footer() {
               </div>
 
               {/* Newsletter */}
-              <div className="lg:col-span-2 lg:border-l-[0.4px] border-white py-4 lg:pl-4">
+              <div className="lg:col-span-2 lg:border-l border-white py-4 lg:pl-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">
                   Happy to keep you updated.<br />Sign up for our newsletter.
                 </h6>

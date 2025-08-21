@@ -13,23 +13,58 @@ const QuickLinks = () => {
 
   const links = [
     {
-      title: 'New Arrivals',
+      title: 'NEW ARRIVALS',
       contents: [
-        { type: 'text', value: 'Check the latest additions to our library collection.' },
-        { type: 'link', value: 'Browse new arrivals', href: '/library/new-arrivals' },
+        { type: 'text', value: '2025' },
+        { type: 'text', value: 'Books' },
+        {
+          type: 'link',
+          value: 'New Arrivals',
+          href: 'https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/67d7aa289773ff06c25bd72a/1742187049526/New+Arrivels+2025.pdf',
+        },
       ],
     },
     {
       title: 'WEB OPAC',
       contents: [
-        { type: 'text', value: 'Search our online catalog for books and resources.' },
-        { type: 'link', value: 'Go to OPAC', href: 'https://opac.yourlibrary.com' },
+        {
+          type: 'text',
+          value:
+            'The entire library collection is automated and the same can be accessed anywhere by anyone with the help of Web-OPAC (Web Online Public Access Catalogue) which includes books and theses. However, the full text of theses can be accessed only within the campus.',
+        },
+        {
+          type: 'html',
+          value:
+            'The link to access Web-OPAC (Online Public Access Catalogue): <a href="https://opac.aims.ac.in" target="_blank" rel="noopener noreferrer" class="text-[#531675] font-semibold ">View</a>',
+        },
+        {
+          type: 'bullets',
+          title: 'How to use Web OPAC',
+          items: [
+          ],
+        },
+        { type: 'text', value: '1. Title' },
+        { type: 'text', value: '2. Author' },
+        { type: 'text', value: '3. Subject' },
+        { type: 'text', value: '4. Keywords' },
+        { type: 'text', value: '5. Classification Number' },
+        { type: 'text', value: '6. Accession Number' },
+        { type: 'text', value: '7. Anywhere' },
+        {
+          type: 'html',
+          value:
+            '<strong>For example,</strong> if you search for a particular title under the "Title" display, the title is displayed if available in the library collection. When you click on the title, all the details of the book such as title, author, subject, call number, accession number, publication details etc. are displayed.',
+        },
       ],
     },
     {
-      title: 'Library Rules & Regulations',
+      title: 'LIBRARY RULES AND REGULATIONS',
       contents: [
-        { type: 'text', value: 'All students and staff of AIMS, Peenya, Bengaluru, are eligible for library membership, while others require prior permission from the Principal and Chief Librarian; membership is linked to your college ID, and can be obtained by submitting the Google form on the AIMS Library website.' },
+        {
+          type: 'text',
+          value:
+            'All students and staff of AIMS, Peenya, Bengaluru, are eligible for library membership, while others require prior permission from the Principal and Chief Librarian; membership is linked to your college ID, and can be obtained by submitting the Google form on the AIMS Library website.',
+        },
         {
           type: 'table',
           headers: ['User Categories', 'No of Books Issued', 'Duration', 'Fine'],
@@ -49,7 +84,7 @@ const QuickLinks = () => {
             'Students are not permitted to take two books with the same title and author.',
             'Do not mark, write, or cut pages.',
             'Report immediately lost/damaged books to the librarian.',
-            'Lost or damaged books: The borrower is responsible for replacing them.',
+            'Lost or Damaged Books: The loser is responsible for replacing the books',
           ],
         },
         {
@@ -62,15 +97,76 @@ const QuickLinks = () => {
             'Keep mobile phones on silent mode before entering; no eatables or drinks allowed (water facilities available).',
             'Loud talking, conversations, and discussions are strictly prohibited.',
             'Report any library issues to the librarian.',
+            'Respect and follow Library Rules and Policies',
+            'If any member misbehaves with library staff, their library membership will be cancelled.',
           ],
         },
       ],
     },
     {
-      title: 'Subscribed Journals List',
+      title: 'SUBSCRIBED JOURNALS LIST',
+
       contents: [
-        { type: 'text', value: 'View the list of journals and magazines we subscribe to.' },
-        { type: 'link', value: 'See Journals', href: '/library/journals' },
+        {
+          type: 'bullets',
+          title: 'How to use Web OPAC',
+          items: [
+          ],
+        },
+
+        { type: 'text', value: 'Indian Journal Of Finance' },
+        { type: 'text', value: 'Prabandhan : Indian Journal Of Management' },
+        { type: 'text', value: 'Arthshastra Indian Journal Of Economics & Research' },
+        { type: 'text', value: 'Journal Of Commerce And Accounting Research' },
+        { type: 'text', value: 'Journal Of Hospitality Application And Research' },
+
+        { type: 'text', value: 'International Journal Of Hospitality And Tourism Systems' },
+        { type: 'text', value: 'International Journal Of Banking, Risk And Insurance' },
+
+        { type: 'text', value: 'International Journal Of Applied Marketing And Management' },
+        { type: 'text', value: 'International Journal On Leadership' },
+
+        { type: 'text', value: 'International Journal Of Business Ethics In Developing Economies' },
+        { type: 'text', value: 'International Journal Of Distributed And Cloud Computing' },
+
+        { type: 'text', value: 'International Journal Of Emerging Trends In Science And Technology' },
+
+        { type: 'text', value: 'Journal Of Organization And Human Behaviour' },
+        { type: 'text', value: 'Global Journal Of Finance And Management (GJFM)' },
+
+        { type: 'text', value: 'International Journal Of Foreign Trade And International Business' },
+
+        { type: 'text', value: '  The IUP Journal Of Accounting Research And Audit Practices' },
+        { type: 'text', value: 'The IUP Journal Of Marketing Management' },
+
+        { type: 'text', value: 'The IUP Journal Of Organizational Behaviour IUP Publications' },
+        { type: 'text', value: 'Indian Journal Of Computer Science' },
+
+        { type: 'text', value: 'Desidoc Jnl.Of Library & Information Technology' },
+      ],
+    },
+    {
+      title: 'FOR MORE INFORMATION',
+
+      contents: [
+        {
+          type: 'bullets',
+          title: 'How to use Web OPAC',
+          items: [
+          ],
+        },
+        { type: 'text', value: 'CONTACT US ' },
+        {
+          type: 'html',
+          value:
+            '<a href="mailto:librarian@theaims.ac.in" class="text-[#531675] font-semibold">Email: librarian@theaims.ac.in</a>',
+        },
+        {
+          type: 'html',
+          value:
+            'Phone no.: <a href="tel:+919663051250" class="text-[#531675] font-semibold">9663051250</a>',
+        },
+
       ],
     },
   ];
@@ -94,7 +190,7 @@ const QuickLinks = () => {
 
         <div className="space-y-4">
           {links.map((link, index) => (
-            <div key={index} className="border-b border-purple-700 pb-2">
+            <div key={index} className="border-b border-[#531675] pb-2">
               {/* Accordion Header */}
               <button
                 onClick={() => toggleAccordion(index)}
@@ -102,29 +198,41 @@ const QuickLinks = () => {
               >
                 {link.title}
                 {openIndex === index ? (
-                  <FaMinus className="text-purple-700" />
+                  <FaMinus className="text-[#531675]" />
                 ) : (
-                  <FaPlus className="text-purple-700" />
+                  <FaPlus className="text-[#531675]" />
                 )}
               </button>
 
               {/* Accordion Body */}
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index ? 'max-h-[1000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[1000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <div className="space-y-3">
                   {link.contents.map((item, i) => {
                     if (item.type === 'text') {
-                      return <p key={i} className="text-gray-700 text-sm">{item.value}</p>;
+                      return (
+                        <h5 key={i} className="">
+                          {item.value}
+                        </h5>
+                      );
+                    }
+                    if (item.type === 'html') {
+                      return (
+                        <div
+                          key={i}
+                          className=""
+                          dangerouslySetInnerHTML={{ __html: item.value }}
+                        />
+                      );
                     }
                     if (item.type === 'link') {
                       return (
                         <a
                           key={i}
                           href={item.href}
-                          className="text-purple-700 text-sm font-semibold underline block"
+                          className="text-[#531675] font-semibold block"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -134,11 +242,17 @@ const QuickLinks = () => {
                     }
                     if (item.type === 'table') {
                       return (
-                        <table key={i} className="w-full text-sm border-collapse border border-gray-300 my-2">
+                        <table
+                          key={i}
+                          className="w-full text-sm border-collapse border border-gray-300 my-2"
+                        >
                           <thead className="bg-gray-100">
                             <tr>
                               {item.headers.map((header, j) => (
-                                <th key={j} className="border border-gray-300 px-2 py-1 text-left">
+                                <th
+                                  key={j}
+                                  className="border border-gray-300 px-2 py-1 text-left"
+                                >
                                   {header}
                                 </th>
                               ))}
@@ -148,7 +262,10 @@ const QuickLinks = () => {
                             {item.rows.map((row, rIdx) => (
                               <tr key={rIdx}>
                                 {row.map((cell, cIdx) => (
-                                  <td key={cIdx} className="border border-gray-300 px-2 py-1">
+                                  <td
+                                    key={cIdx}
+                                    className="border border-gray-300 px-2 py-1"
+                                  >
                                     {cell}
                                   </td>
                                 ))}
@@ -161,10 +278,12 @@ const QuickLinks = () => {
                     if (item.type === 'bullets') {
                       return (
                         <div key={i} className="mt-2">
-                          <h4 className="font-semibold text-gray-800 text-sm mb-1">{item.title}</h4>
-                          <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                          <h5 className="font-semibold text-gray-800 mb-1" style={{ fontWeight: '600' }}>
+                            {item.title}
+                          </h5>
+                          <ul key={i} className="list-disc list-inside text-gray-700 text-sm space-y-1">
                             {item.items.map((point, pIdx) => (
-                              <li key={pIdx}>{point}</li>
+                              <li style={{ fontSize: '16px' }} key={pIdx}>{point}</li>
                             ))}
                           </ul>
                         </div>
