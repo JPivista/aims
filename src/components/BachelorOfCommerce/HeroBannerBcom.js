@@ -36,10 +36,10 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                             {/* Left Content */}
                             <div className="space-y-6 flex flex-col justify-between h-full md:py-10 py-4">
                                 <div>
-                                    <h6 className=" text-gray-700 font-light tracking-wider text-[12px]">
+                                    <h6 className=" text-gray-700 font-light tracking-wider text-[12px] lg:text-start text-center">
                                         EMPOWERING MINDS
                                     </h6>
-                                    <p className="text-2xl lg:text-3xl font-bold text-black monser-900">
+                                    <p className="text-2xl lg:text-3xl font-bold text-black monser-900 lg:text-start text-center">
                                         SINCE 1994
                                     </p>
                                 </div>

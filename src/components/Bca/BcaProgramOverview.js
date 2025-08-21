@@ -66,9 +66,18 @@ const BcaProgramOverview = () => {
                         </p>
                     </div>
                     {/* Program Overview Image */}
-                    <div className='flex justify-center m'>
+                    <div className='justify-center md:flex hidden'>
                         <Image
                             src="/bca/bca-program.svg"
+                            alt="BCA Program Overview"
+                            width={1000}
+                            height={600}
+                            className="object-contain"
+                        />
+                    </div>
+                    <div className='justify-center md:hidden flex'>
+                        <Image
+                            src="/bca/bca-program-mobile.svg"
                             alt="BCA Program Overview"
                             width={1000}
                             height={600}

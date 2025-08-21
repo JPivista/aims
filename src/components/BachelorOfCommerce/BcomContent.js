@@ -18,13 +18,23 @@ const BcomContent = () => {
                 </div>
 
                 {/* M.Com at AIMS Image */}
-                <div className='flex justify-center mb-10'>
+                <div className=' justify-center mb-10 md:flex hidden'>
                     <Image
                         src="/bcom/bcom-at-aims.svg"
                         alt="M.Com at AIMS"
                         width={800}
                         height={400}
-                        className="object-contain"
+                        className="object-contain w-[70%]"
+                    />
+                </div>
+
+                <div className=' justify-center mb-10 md:hidden flex text-center'>
+                    <Image
+                        src="/bcom/bcom-at-aims-mobile.svg"
+                        alt="M.Com at AIMS"
+                        width={800}
+                        height={400}
+                        className="object-contain w-[70%]"
                     />
                 </div>
             </div>

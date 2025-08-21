@@ -70,9 +70,18 @@ const McaProgramOverview = () => {
                         </p>
                     </div>
                     {/* Program Overview Image */}
-                    <div className='flex justify-center m'>
+                    <div className='md:flex justify-center hidden'>
                         <Image
                             src="/mca/mca-program.svg"
+                            alt="M.Com Program Overview"
+                            width={1000}
+                            height={600}
+                            className="object-contain"
+                        />
+                    </div>
+                    <div className='md:hidden justify-center flex'>
+                        <Image
+                            src="/mca/mca-program-mobile.svg"
                             alt="M.Com Program Overview"
                             width={1000}
                             height={600}

@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Contact, Social, Newsletter */}
-      <div className="border-t border-b border-whtie">
+      <div className="border-t-[0.4px] border-b-[0.4px] border-whtie">
         <div className="container mx-auto px-2 lg:px-0">
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
@@ -105,7 +105,7 @@ export default function Footer() {
               </div>
 
               {/* Newsletter */}
-              <div className="lg:col-span-2 lg:border-l border-white py-4 lg:pl-4">
+              <div className="lg:col-span-2 lg:border-l-[0.4px] border-white py-4 lg:pl-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">
                   Happy to keep you updated.<br />Sign up for our newsletter.
                 </h6>

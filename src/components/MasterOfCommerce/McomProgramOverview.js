@@ -65,9 +65,18 @@ const McomProgramOverview = () => {
                         </p>
                     </div>
                     {/* Program Overview Image */}
-                    <div className='flex justify-center m'>
+                    <div className='justify-center md:flex hidden'>
                         <Image
                             src="/mcom/mcom-program.svg"
+                            alt="M.Com Program Overview"
+                            width={1000}
+                            height={600}
+                            className="object-contain"
+                        />
+                    </div>
+                    <div className='justify-center md:hidden flex'>
+                        <Image
+                            src="/mcom/mcom-program-mobile.svg"
                             alt="M.Com Program Overview"
                             width={1000}
                             height={600}

@@ -18,13 +18,22 @@ const McomContent = () => {
                 </div>
 
                 {/* M.Com at AIMS Image */}
-                <div className='flex justify-center mb-10'>
+                <div className='md:flex justify-center mb-10 hidden'>
                     <Image
                         src="/mcom/mcom-at-aims.svg"
                         alt="M.Com at AIMS"
                         width={800}
                         height={400}
-                        className="object-contain"
+                        className="object-contain w-[70%]"
+                    />
+                </div>
+                <div className='md:hidden flex justify-center mb-10'>
+                    <Image
+                        src="/mcom/mcom-at-aims-mobile.svg"
+                        alt="M.Com at AIMS"
+                        width={800}
+                        height={400}
+                        className="object-contain w-[70%]"
                     />
                 </div>
             </div>

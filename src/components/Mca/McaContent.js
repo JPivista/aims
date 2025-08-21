@@ -17,14 +17,23 @@ const McaContent = () => {
                     </h3>
                 </div>
 
-                {/* M.Com at AIMS Image */}
-                <div className='flex justify-center mb-10'>
+                {/* MCA at AIMS Image */}
+                <div className='md:flex justify-center mb-10 hidden'>
                     <Image
                         src="/mca/why-choose-mca.svg"
-                        alt="M.Com at AIMS"
+                        alt="MCA at AIMS"
                         width={800}
                         height={400}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-[70%]"
+                    />
+                </div>
+                <div className='md:hidden justify-center mb-10 flex'>
+                    <Image
+                        src="/mca/why-choose-mca-mobile.svg"
+                        alt="MCA at AIMS"
+                        width={800}
+                        height={400}
+                        className="object-cover w-[70%]"
                     />
                 </div>
             </div>

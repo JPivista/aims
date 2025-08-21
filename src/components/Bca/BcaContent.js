@@ -18,13 +18,22 @@ const BcaContent = () => {
                 </div>
 
                 {/* M.Com at AIMS Image */}
-                <div className='flex justify-center mb-10'>
+                <div className='md:flex justify-center mb-10 hidden'>
                     <Image
                         src="/bca/why-choose-bca.svg"
                         alt="BCA at AIMS"
                         width={800}
                         height={400}
-                        className="object-cover w-full h-full"
+                        className="object-contain w-[70%]"
+                    />
+                </div>
+                <div className='md:hidden flex justify-center mb-10'>
+                    <Image
+                        src="/bca/why-choose-bca-mobile.svg"
+                        alt="BCA at AIMS"
+                        width={800}
+                        height={400}
+                        className="object-contain w-[70%]"
                     />
                 </div>
             </div>
