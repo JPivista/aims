@@ -22,9 +22,9 @@ const StudentSupport = () => {
             {/* Important Links */}
             <h4 className="text-xl text-[#0d2352] mb-4" style={{ fontWeight: "600" }}>Important Links</h4>
             <div className="flex flex-wrap gap-4 mb-8">
-                <Button showReadMore={false}>AIMS Journal of Research</Button>
-                <Button showReadMore={false}>AIMS Faculty Articles & Publications</Button>
-                <Button showReadMore={false}>Research Advisory & Review Committees</Button>
+                <Button href="/aims-journal-of-research" showReadMore={false}>AIMS Journal of Research</Button>
+                <Button href="/articles-publications" showReadMore={false}>AIMS Faculty Articles & Publications</Button>
+                {/* <Button showReadMore={false}>Research Advisory & Review Committees</Button> */}
             </div>
 
             {/* Divider */}

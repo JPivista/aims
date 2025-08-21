@@ -19,11 +19,11 @@ const AlumniSpeak = ({
                 <div className="flex flex-col md:flex-row items-center gap-10">
                     {/* Left Section - Image & Info */}
                     <div className="flex flex-col items-center w-full md:w-[30%]">
-                        <div className="relative w-48 h-48">
+                        <div className="relative">
                             <Image
                                 src={imageSrc}
                                 alt={name}
-                                className="z-10 rounded-full"
+                                className="z-10 rounded-full  w-64 h-64"
                                 width={200}
                                 height={200}
                             />

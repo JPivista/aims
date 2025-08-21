@@ -36,7 +36,7 @@ const MeetTheTeam = () => {
 
             {/* Name & Subject */}
             <p className="mt-4 font-semibold" style={{ fontWeight: "600" }}>{member.name}</p>
-            <p className="text-gray-600 pt-5">{member.subject}</p>
+            <p className="text-gray-600 pt-2">{member.subject}</p>
           </div>
         ))}
       </div>

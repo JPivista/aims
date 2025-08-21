@@ -9,9 +9,11 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
   return (
     <div className="container mx-auto py-10 px-4">
       {title && (
-        <h3 className="text-4xl font-bold text-[#1D3160] mb-4">{title}</h3>
+        <h3 className="text-4xl font-bold text-[#1D3160] text-center md:text-left" style={{ marginBottom: "10px" }}>
+          {title}
+        </h3>
       )}
-      <div className="w-full flex flex-col md:flex-row items-center md:items-start bg-white">
+      <div className="w-full flex flex-col md:flex-row items-center bg-white">
         {/* Right Image - Top in mobile */}
         {imageSrc && (
           <div className="w-full md:w-[40%] flex justify-center items-center my-auto order-1 md:order-2">
@@ -25,9 +27,8 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
           </div>
         )}
 
-        {/* Left Content - Below in mobile */}
-        <div className="w-full md:w-[60%] container my-auto order-2 md:order-1">
-
+        {/* Left Content */}
+        <div className="w-full md:w-[60%] my-auto order-2 md:order-1 flex justify-center md:justify-start pt-5 md:pt-0">
           <ul className="space-y-4 list-disc pl-6">
             {items.map((item, index) => (
               <li key={index}>{item}</li>

@@ -10,6 +10,7 @@ import OurAwardedScholars from "./OurAwardedScholars"
 import PursuingScholars from "./PursuingScholars"
 import WhatOurScholarsSay from "./WhatOurScholarsSay"
 
+
 const index = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const index = () => {
       <OurAwardedScholars />
       <PursuingScholars />
       <WhatOurScholarsSay />
+      
     </div>
   )
 }

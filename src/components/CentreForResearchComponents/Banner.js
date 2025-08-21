@@ -1,22 +1,56 @@
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import ApplicationMarquee from '@/shared/ApplicationMarquee'
 
-const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
+const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = 'phd' }) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768); // Tailwind md breakpoint
+
+        handleResize(); // run once on mount
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
         <>
-            <div className="relative w-full h-[100vh] md:h-[83vh] bg-[url('/centre-for-research/centre-for-research-banner.png')] bg-no-repeat bg-cover bg-center">
-                {/* Overlay */}
-                <div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10 lg:p-16">
-                    {/* Top text */}
-                    <div>
-                        <h6 className="tracking-wider text-xs sm:text-sm lg:text-base text-white">EMPOWERING MINDS</h6>
-                        <h5 className="text-lg sm:text-xl lg:text-2xl font-black text-white " style={{ fontWeight: "900" }}>SINCE 1994</h5>
+            <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/centre-for-research/centre-for-research-banner.png')] bg-[url('/centre-for-research/centre-for-research-mob-banner.png')]" />
+                </div>
+                {/* Gradient Overlay */}
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        background:
+                            'linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)'
+                    }}
+                ></div>
+
+                {/* Text/Logo Content */}
+                <div className="absolute inset-0 flex flex-col justify-between z-10">
+                    {/* Logo Block */}
+                    <div className="container mx-auto px-4 pt-8 text-left">
+                        <Image
+                            src={
+                                isMobile
+                                    ? "/pre-university-college/empowering_minds_since1994_black.png"
+                                    : "/pre-university-college/empowering_minds_since1994.png"
+                            }
+                            alt="Pre-University College Logo"
+                            width={160} // adjust size
+                            height={60}
+                            className="object-contain"
+                            priority
+                        />
                     </div>
-                    {/* Bottom text */}
-                    <div>
-                        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white ">
-                            AIMS <br className='hidden lg:block' /> Centre for Research
+                    {/* Bottom Heading */}
+                    <div className="container mx-auto px-4 pb-12 text-left">
+                        <h1 className="text-white font-bold text-center md:text-left">
+                        AIMS <br className='hidden lg:block' /> Centre for Research
                         </h1>
                     </div>
                 </div>
@@ -27,4 +61,5 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
     )
 }
 
-export default CentreForResearchBanner
+export default ScienceIntegratedPcmbPcmcCetNeetJeeBanner
+

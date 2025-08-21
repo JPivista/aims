@@ -4,10 +4,10 @@ import Image from "next/image";
 import { HiArrowSmallLeft, HiArrowSmallRight } from "react-icons/hi2";
 
 const images = [
-  "/pre-university-college/apply_now.png",
-  "/pre-university-college/pu_distinction.png",
-  "/pre-university-college/aims.png",
-  "/pre-university-college/tennikoit.png",
+  "/pre-university-college/apply_now.webp",
+  "/pre-university-college/pu_distinction.webp",
+  "/pre-university-college/aims.webp",
+  "/pre-university-college/tennikoit.webp",
 ];
 
 const ImageCarousel = () => {
