@@ -42,7 +42,7 @@ const OurTrackRecord = () => {
 
             {/* Table */}
             <div className="max-w-4xl mx-auto my-10 px-2 sm:px-4">
-                <h2 className="text-center text-lg sm:text-2xl font-bold mb-6">
+                <h2 className="text-center text-lg sm:text-2xl font-bold mb-6" style={{ fontWeight: "500" }}>
                     Research Projects and Revenue Generated
                 </h2>
                 <div className="overflow-x-auto">

@@ -8,7 +8,6 @@ import MeetTheTeam from './MeetTheTeam'
 import ImageCarousel from './ImageCarousel'
 import AimersSays from './AimersSays'
 import Eligibility from './EligibilityTab'
-import CampusUpdates from './CampusUpdates'
 
 const index = () => {
     return (
@@ -22,7 +21,6 @@ const index = () => {
             <MeetTheTeam />
             <ImageCarousel />
             <AimersSays />
-            {/* <CampusUpdates /> */}
         </div>
     )
 }

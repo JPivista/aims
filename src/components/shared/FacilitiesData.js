@@ -31,7 +31,7 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
         <div className="w-full md:w-[60%] my-auto order-2 md:order-1 flex justify-center md:justify-start pt-5 md:pt-0">
           <ul className="space-y-4 list-disc pl-6">
             {items.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li style={{ fontSize: '18px' }} key={index}>{item}</li>
             ))}
           </ul>
         </div>

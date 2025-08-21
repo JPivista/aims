@@ -63,7 +63,7 @@ const WhyChooseAims = () => {
                                 <h5 style={{ fontWeight: '600', fontSize: '1.5rem', textAlign: 'left' }}>
                                     {feature.number}
                                 </h5>
-                                <h5 style={{ fontWeight: '600', fontSize: '1.25rem', minHeight: '80px' }}>
+                                <h5 className="mb-3" style={{ fontWeight: '600', fontSize: '1.25rem' }}>
                                     {feature.title}
                                 </h5>
                                 <p style={{ fontSize: '0.875rem' }}>

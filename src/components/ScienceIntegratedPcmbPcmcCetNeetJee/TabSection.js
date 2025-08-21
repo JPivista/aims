@@ -50,7 +50,7 @@ const AdmissionTabsSection = () => {
         },
         {
             title: "Teaching Methods",
-            heading: "PUC Admission Process:",
+            heading: "Teaching Methods",
             points: [
                 "Complete 10th standard with good marks",
                 "Apply online for PUC program selection",
