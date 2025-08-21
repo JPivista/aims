@@ -32,11 +32,26 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
                             </div>
                             <div className="flex items-center">
                                 <Image
-                                    src="/school-of-business/iacbe.png"
+                                    src="/naac-logo.svg"
                                     alt="IACBE"
-                                    width={400}
+                                    width={200}
                                     height={100}
-                                    className="object-contain md:w-full w-auto"
+                                    className="object-contain "
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="absolute top-5 left-0 right-0">
+                    <div className="container mx-auto py-4 px-6 lg:px-8">
+                        <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+                            <div className="flex items-center">
+                                <Image
+                                    src="/white-empower.svg"
+                                    alt="Recruiters"
+                                    width={200}
+                                    height={200}
                                 />
                             </div>
                         </div>
