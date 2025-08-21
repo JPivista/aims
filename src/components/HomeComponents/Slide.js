@@ -376,3 +376,211 @@ export default function ExactSwapCarousel() {
     </div>
   );
 }
+
+
+
+// for mobile
+// "use client";
+// import React, { useRef, useEffect, useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import Button from "@/shared/Button";
+// import Link from "next/link";
+// import Image from "next/image";
+
+// const courses = [
+//   {
+//     id: 1,
+//     title: "School of Business",
+//     programs: [
+//       "PhD in Management",
+//       "MBA Master of Business Administration",
+//       "BBA Bachelor of Business Administration",
+//       "BBA Aviation",
+//       "BBA+ CA / ACCA",
+//     ],
+//     leftImage: "/home/course/school-of-buisnesss-left.webp",
+//     rightImage: "/home/course/school-of-buisnesss.webp",
+//   },
+//   {
+//     id: 2,
+//     title: "School of Finance and Commerce",
+//     programs: ["B.Com General", "B.Com Finance", "B.Com Accounting"],
+//     leftImage: "/home/course/school-of-finance-left.webp",
+//     rightImage: "/home/course/school-of-finance.webp",
+//   },
+//   {
+//     id: 3,
+//     title: "School of Hospitality and Tourism",
+//     programs: ["Diploma in Hospitality", "BHM", "MHM"],
+//     leftImage: "/home/course/school-of-hospitality-left.webp",
+//     rightImage: "/home/course/school-of-hospitality.webp",
+//   },
+//   {
+//     id: 4,
+//     title: "School of Information and Technology",
+//     programs: ["BCA", "MCA", "B.Sc IT"],
+//     leftImage: "/home/course/school-of-information-left.webp",
+//     rightImage: "/home/course/school-of-information.webp",
+//   },
+//   {
+//     id: 5,
+//     title: "Pre-University College (PUC)",
+//     programs: ["Science", "Commerce", "Arts"],
+//     leftImage: "/home/course/puc-left.webp",
+//     rightImage: "/home/course/puc.webp",
+//   },
+// ];
+
+// export default function ExactSwapCarousel() {
+//   const [current, setCurrent] = useState(0);
+//   const thumbsRef = useRef([]);
+//   const thumbsContainerRef = useRef(null);
+
+//   useEffect(() => {
+//     thumbsRef.current = thumbsRef.current.slice(0, courses.length);
+//   }, []);
+
+//   useEffect(() => {
+//     const el = thumbsRef.current[current];
+//     if (el && typeof el.scrollIntoView === "function") {
+//       el.scrollIntoView({
+//         behavior: "smooth",
+//         inline: "center",
+//         block: "nearest",
+//       });
+//     }
+//   }, [current]);
+
+//   const prev = () =>
+//     setCurrent((p) => (p - 1 + courses.length) % courses.length);
+//   const next = () => setCurrent((p) => (p + 1) % courses.length);
+//   const goTo = (i) => setCurrent(i);
+
+//   return (
+//     <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-purple-800 text-white p-6 md:p-12 relative overflow-hidden">
+//       <div className="container mx-auto">
+//         <div>
+//           <h3 className="text-xl md:text-2xl font-semibold">Select your Course</h3>
+//           <p className="pb-4 text-sm md:text-base">
+//             Explore our schools, see their potential paths, and select the <br className="hidden md:block" />
+//             one that fits your goal.
+//           </p>
+//         </div>
+
+//         <div className="md:flex gap-6 md:gap-12 items-center">
+//           {/* LEFT - Big Image (desktop only) */}
+//           <div className="hidden md:flex justify-center items-center">
+//             <div className="w-full max-w-[520px] relative">
+//               <AnimatePresence mode="wait">
+//                 <motion.div
+//                   key={courses[current].id}
+//                   layoutId={`card-${courses[current].id}`}
+//                   initial={{ y: -120, opacity: 0 }}
+//                   animate={{ y: 0, opacity: 1 }}
+//                   exit={{ y: 120, opacity: 0 }}
+//                   transition={{ type: "spring", stiffness: 320, damping: 24 }}
+//                   className="rounded-lg overflow-hidden"
+//                 >
+//                   <Image
+//                     width={500}
+//                     height={500}
+//                     src={courses[current].leftImage}
+//                     alt={courses[current].title}
+//                     className="h-[320px] md:h-full object-cover block"
+//                   />
+//                 </motion.div>
+//               </AnimatePresence>
+//             </div>
+//           </div>
+
+//           {/* RIGHT - Text + Thumbnails */}
+//           <div className="flex flex-col w-full">
+//             {/* On mobile: show thumbnail above text */}
+//             <div className="md:hidden mb-4">
+//               <img
+//                 src={courses[current].rightImage}
+//                 alt={courses[current].title}
+//                 className="w-full h-48 object-cover rounded-lg"
+//               />
+//             </div>
+
+//             {/* TEXT (desktop has animation, mobile no animation) */}
+//             <div className="mb-4 w-full md:w-2/3">
+//               <AnimatePresence mode="wait">
+//                 <motion.div
+//                   key={`text-${courses[current].id}`}
+//                   initial={{ x: 40, opacity: 0 }}
+//                   animate={{ x: 0, opacity: 1 }}
+//                   exit={{ x: -40, opacity: 0 }}
+//                   transition={{ duration: 0.4, delay: 0.1 }}
+//                 >
+//                   <h3 className="text-xl md:text-3xl font-bold mb-3">
+//                     {courses[current].title}
+//                   </h3>
+//                   <ul className="mb-4 space-y-1">
+//                     {courses[current].programs.map((p, i) => (
+//                       <li key={i} className="text-base md:text-lg leading-snug">
+//                         {p}
+//                       </li>
+//                     ))}
+//                   </ul>
+//                   <Button showReadMore={false} className="hover:text-white hover:border-white">
+//                     <Link href="/campus-life">Browse All Programs</Link>
+//                   </Button>
+//                 </motion.div>
+//               </AnimatePresence>
+//             </div>
+
+//             {/* THUMBNAILS */}
+//             <div
+//               ref={thumbsContainerRef}
+//               className="flex gap-4 overflow-x-auto pb-2 mt-6 items-center"
+//             >
+//               {courses.map((c, idx) => {
+//                 const isActive = idx === current;
+//                 return (
+//                   <button
+//                     key={c.id}
+//                     ref={(el) => (thumbsRef.current[idx] = el)}
+//                     onClick={() => goTo(idx)}
+//                     className={`flex-none w-[140px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
+//                       isActive ? "border-pink-500" : "border-transparent"
+//                     }`}
+//                   >
+//                     <img
+//                       src={c.rightImage}
+//                       alt={c.title}
+//                       className="w-full h-24 object-cover block"
+//                     />
+//                     <div className="text-xs md:text-sm font-medium truncate">
+//                       {c.title}
+//                     </div>
+//                   </button>
+//                 );
+//               })}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* ARROWS */}
+//       <div className="absolute top-1/2 right-6 transform -translate-y-1/2 flex gap-3 z-20">
+//         <button
+//           onClick={prev}
+//           aria-label="Previous"
+//           className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-100"
+//         >
+//           <FaChevronLeft />
+//         </button>
+//         <button
+//           onClick={next}
+//           aria-label="Next"
+//           className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-100"
+//         >
+//           <FaChevronRight />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
