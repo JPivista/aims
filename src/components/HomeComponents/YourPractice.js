@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function CampusLifeSection() {
   return (
-    <section className="relative bg-white border-b-2 lg:pt-20">
+    <section className="relative bg-white lg:border-b-2 lg:pt-20">
       <div className="flex flex-col-reverse lg:flex-row items-center">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6 lg:px-10 px-4">

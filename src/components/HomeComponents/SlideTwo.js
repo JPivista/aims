@@ -233,11 +233,24 @@ const courses = [
 
 export default function ExactSwapCarousel() {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const thumbsRef = useRef([]);
   const thumbsContainerRef = useRef(null);
 
   useEffect(() => {
     thumbsRef.current = thumbsRef.current.slice(0, courses.length);
+  }, []);
+
+  // Detect mobile view
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   useEffect(() => {
@@ -267,7 +280,7 @@ export default function ExactSwapCarousel() {
           </p>
         </div>
         <div className="md:flex gap-6 md:gap-12 items-center">
-          {/* LEFT - Big Image (Desktop only) */}
+          {/* LEFT - Big Image (hidden on mobile) */}
           <div className="hidden md:flex justify-center items-center">
             <div className="w-full max-w-[520px] relative">
               <AnimatePresence mode="wait">
@@ -303,20 +316,21 @@ export default function ExactSwapCarousel() {
             </div>
           </div>
 
+          {/* Mobile: Show current school image above text */}
+          <div className="md:hidden mb-6">
+            <div className="w-full max-w-[500px] mx-auto relative">
+              <Image
+                width={500}
+                height={500}
+                src={courses[current].rightImage}
+                alt={courses[current].title}
+                className="w-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+
           {/* RIGHT - Text and Thumbnails */}
           <div className="flex flex-col w-full">
-            {/* Mobile: Show thumbnail image at top */}
-            <div className="md:hidden mb-6">
-              <div className="w-full relative">
-                <Image
-                  width={400}
-                  height={300}
-                  src={courses[current].rightImage}
-                  alt={courses[current].title}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              </div>
-            </div>
             <AnimatePresence mode="wait">
               <motion.div
                 key={`text-${courses[current].id}`}
@@ -326,7 +340,7 @@ export default function ExactSwapCarousel() {
                 transition={{ duration: 0.4, delay: 0.1 }}
                 className="mb-4 w-full md:w-2/3"
               >
-                <h3 className="text-2xl md:text-3xl font-bold mb-3">
+               <h3 className="text-2xl md:text-3xl font-bold mb-3">
                   {courses[current].title}
                 </h3>
                 {courses[current].programs && courses[current].programs.length > 0 && (
@@ -367,7 +381,6 @@ export default function ExactSwapCarousel() {
                     ))}
                   </ul>
                 )}
-
                 <Button
                   showReadMore={false}
                   className="hover:text-white hover:border-white"
@@ -377,28 +390,75 @@ export default function ExactSwapCarousel() {
               </motion.div>
             </AnimatePresence>
 
-            {/* THUMBNAILS */}
+            {/* MOBILE NAVIGATION ARROWS - Visible only on Mobile */}
+            <div className="md:hidden flex justify-center gap-4 mt-6">
+              <button
+                onClick={prev}
+                aria-label="Previous"
+                className="bg-white hover:bg-[#A22877] hover:text-white text-black p-3 rounded-full shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 17"
+                  fill="none"
+                  className="rotate-180"
+                >
+                  <path
+                    d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                    stroke="currentColor"
+                    strokeWidth="0.5"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <button
+                onClick={next}
+                aria-label="Next"
+                className="bg-white text-black p-3 rounded-full shadow hover:bg-[#A22877] hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 17"
+                  fill="none"
+                >
+                  <path
+                    d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                    stroke="currentColor"
+                    strokeWidth="0.5"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* THUMBNAILS - Hidden on Mobile, Visible on Desktop */}
             {/* THUMBNAILS + ARROWS WRAPPER */}
-            <div className="relative">
+            <div className="hidden md:block relative">
               {/* THUMBNAILS */}
               <motion.div
                 ref={thumbsContainerRef}
-                className="flex gap-4 overflow-x-auto pb-2 mt-10 items-center"
+                className="flex gap-4 overflow-x-auto pb-2 mt-10 items-center justify-start"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
               >
+                {/* Desktop: Show all thumbnails */}
                 {courses.map((c, idx) => {
                   const isActive = idx === current;
+
                   return (
                     <motion.button
                       key={c.id}
                       ref={(el) => (thumbsRef.current[idx] = el)}
                       onClick={() => goTo(idx)}
                       layoutId={`card-${c.id}`}
-                      className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
-                        isActive ? "border-transparent" : "border-transparent"
-                      }`}
+                      className={`flex-none w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${isActive ? "border-transparent" : "border-transparent"
+                        }`}
                       whileHover={{ scale: 1.03 }}
                       transition={{
                         type: "spring",
@@ -420,7 +480,7 @@ export default function ExactSwapCarousel() {
                         }}
                         draggable={false}
                       />
-                      <div className="text-sm md:text-sm font-medium truncate">
+                      <div className="text-sm font-medium truncate">
                         {c.title}
                       </div>
                     </motion.button>
@@ -429,7 +489,7 @@ export default function ExactSwapCarousel() {
               </motion.div>
 
               {/* ARROWS ABOVE THUMBNAILS */}
-              <div className="absolute -top-8 -right-10 flex gap-5 z-20">
+              <div className="absolute -top-8 right-0 flex gap-5 z-20">
                 <button
                   onClick={prev}
                   aria-label="Previous"
@@ -445,7 +505,7 @@ export default function ExactSwapCarousel() {
                   >
                     <path
                       d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                      stroke="currentColor" // ✅ makes stroke follow text color
+                      stroke="currentColor"
                       strokeWidth="0.5"
                       strokeLinejoin="round"
                     />
@@ -466,7 +526,7 @@ export default function ExactSwapCarousel() {
                   >
                     <path
                       d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                      stroke="currentColor" // ✅ now follows text color
+                      stroke="currentColor"
                       strokeWidth="0.5"
                       strokeLinejoin="round"
                     />

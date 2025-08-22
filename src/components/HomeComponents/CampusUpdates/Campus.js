@@ -79,7 +79,7 @@ export default function AimsCarousel() {
     <>
       <div className=" bg-[#fff]">
         <div
-          className="relative w-full container mx-auto"
+          className="relative w-full container mx-auto py-10"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
@@ -112,7 +112,7 @@ export default function AimsCarousel() {
                   {/* description stays at bottom */}
                   {slides[start].description && (
                     <div className="w-full lg:py-2 bg-white">
-                      <p className="text-black text-sm font-medium text-center line-clamp-2">
+                      <p className="text-black text-sm font-medium text-center">
                         {slides[start].description}
                       </p>
                     </div>
@@ -147,7 +147,7 @@ export default function AimsCarousel() {
                     }}
                   >
                     {/* image wrapper fixed height */}
-                    <div className="relative w-full flex items-center justify-center">
+                    <div className="relative w-full flex flex-col items-center justify-center">
                       <Image
                         src={item.src}
                         alt={item.alt}
@@ -156,16 +156,17 @@ export default function AimsCarousel() {
                         className="object-contain"
                         priority={isActive}
                       />
-                    </div>
-
-                    {/* description at bottom */}
-                    {item.description && (
-                      <div className="w-full py-2">
-                        <p className="text-black text-sm font-medium text-left">
+                        {item.description && (
+                      <div className="w-full -mt-1">
+                        <p className="text-black text-sm md:text-base font-medium text-left break-words whitespace-normal">
                           {item.description}
                         </p>
                       </div>
                     )}
+                    </div>
+
+                    {/* description at bottom */}
+                  
                   </motion.div>
                 );
               })}
@@ -173,7 +174,7 @@ export default function AimsCarousel() {
           )}
 
           {/* Arrows */}
-          <div className="absolute lg:bottom-2 bottom-5 right-6 flex items-center gap-6">
+          <div className="absolute lg:bottom-12 bottom-5 right-6 flex items-center gap-6">
             {/* PREV BUTTON */}
             <button
               onClick={prev}
