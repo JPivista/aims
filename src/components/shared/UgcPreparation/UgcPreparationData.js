@@ -170,30 +170,30 @@ export const ugcPreparationData = {
                             id: "2024",
                             title: "2024",
                             pdfs: [
-                                { name: "ADVANCED CORPORATE FINANCIAL MANAGEMENT", url: "#" },
-                                { name: "BANKING LAW AND PRACTICE", url: "#" },
-                                { name: "CONSUMER BEHAVIOUR", url: "#" },
-                                { name: "INCOME TAX 1", url: "#" },
-                                { name: "OPERATION RESEARCH", url: "#" },
-                                { name: "PRODUCTION AND OPERATIONS MANAGEMENT", url: "#" }
+                                { name: "ADVANCED CORPORATE FINANCIAL MANAGEMENT", url: "/pdf/bba/semester5/2024/ADVANCED_CORPORATE_FINANCIAL_MANAGEMENT.pdf" },
+                                { name: "BANKING LAW AND PRACTICE", url: "/pdf/bba/semester5/2024/BANKING_LAW_AND_PRACTICE.pdf" },
+                                { name: "CONSUMER BEHAVIOUR", url: "/pdf/bba/semester5/2024/CONSUMER_BEHAVIOUR.pdf" },
+                                { name: "INCOME TAX 1", url: "/pdf/bba/semester5/2024/INCOME_TAX_1.pdf" },
+                                { name: "OPERATION RESEARCH", url: "/pdf/bba/semester5/2024/OPERATION_RESEARCH.pdf" },
+                                { name: "PRODUCTION AND OPERATIONS MANAGEMENT", url: "/pdf/bba/semester5/2024/PRODUCTION_AND_OPERATIONS_MANAGEMENT.pdf" }
                             ]
                         },
                         {
                             id: "2023",
                             title: "2023",
                             pdfs: [
-                                { name: "INCOME TAX I", url: "#" },
-                                { name: "INVESTMENT MANAGEMENT", url: "#" },
-                                { name: "MANAGEMENT ACCOUNTING", url: "#" },
-                                { name: "MANAGEMENT INFORMATION AND TECHNOLOGY", url: "#" },
-                                { name: "PERFORMANCE MANAGEMENT", url: "#" },
-                                { name: "FINANCIAL ANALYSIS AND REPORTING", url: "#" },
-                                { name: "COMPUTER APLLICATIONS IN BUSINESS", url: "#" },
-                                { name: "EP ADVERTISING AND MEDIA MANAGEMENT", url: "#" },
-                                { name: "ENTRPRENEURSHIP MANAGEMENT", url: "#" },
-                                { name: "ENTRPRENEURSHIP DEVELOPMENT", url: "#" },
-                                { name: "DERIVATIVES AND RISK MANAGEMENT", url: "#" },
-                                { name: "CONSUMER BEHAVIOUR AND MARKETING RESEARCH", url: "#" }
+                                { name: "INCOME TAX I", url: "/pdf/bba/semester5/2023/INCOME_TAX_I.pdf" },
+                                { name: "INVESTMENT MANAGEMENT", url: "/pdf/bba/semester5/2023/INVESTMENT_MANAGEMENT.pdf" },
+                                { name: "MANAGEMENT ACCOUNTING", url: "/pdf/bba/semester5/2023/MANAGEMENT_ACCOUNTING.pdf" },
+                                { name: "MANAGEMENT INFORMATION AND TECHNOLOGY", url: "/pdf/bba/semester5/2023/MANAGEMENT_INFORMATION_AND_TECHNOLOGY.pdf" },
+                                { name: "PERFORMANCE MANAGEMENT", url: "/pdf/bba/semester5/2023/PERFORMANCE_MANAGEMENT.pdf" },
+                                { name: "FINANCIAL ANALYSIS AND REPORTING", url: "/pdf/bba/semester5/2023/FINANCIAL_ANALYSIS_AND_REPORTING.pdf" },
+                                { name: "COMPUTER APLLICATIONS IN BUSINESS", url: "/pdf/bba/semester5/2023/COMPUTER_APLLICATIONS_IN_BUSINESS.pdf" },
+                                { name: "EP ADVERTISING AND MEDIA MANAGEMENT", url: "/pdf/bba/semester5/2023/EP_ADVERTISING_AND_MEDIA_MANAGEMENT.pdf" },
+                                { name: "ENTRPRENEURSHIP MANAGEMENT", url: "/pdf/bba/semester5/2023/ENTRPRENEURSHIP_MANAGEMENT.pdf" },
+                                { name: "ENTRPRENEURSHIP DEVELOPMENT", url: "/pdf/bba/semester5/2023/ENTRPRENEURSHIP_DEVELOPMENT.pdf" },
+                                { name: "DERIVATIVES AND RISK MANAGEMENT", url: "/pdf/bba/semester5/2023/DERIVATIVES_AND_RISK_MANAGEMENT.pdf" },
+                                { name: "CONSUMER BEHAVIOUR AND MARKETING RESEARCH", url: "/pdf/bba/semester5/2023/CONSUMER_BEHAVIOUR_AND_MARKETING_RESEARCH.pdf" }
                             ]
                         },
                     ]
@@ -206,20 +206,20 @@ export const ugcPreparationData = {
                             id: "2024",
                             title: "2024",
                             pdfs: [
-                                { name: "ADVERTISING AND MEDIA MANAGEMENT", url: "#" },
-                                { name: "BUSINESS LAW", url: "#" },
-                                { name: "CULTURAL DIVERSITY AT WORK PLACE", url: "#" },
-                                { name: "INCOME TAX II", url: "#" }
+                                { name: "ADVERTISING AND MEDIA MANAGEMENT", url: "/pdf/bba/semester6/2024/ADVERTISING_AND_MEDIA_MANAGEMENT.pdf" },
+                                { name: "BUSINESS LAW", url: "/pdf/bba/semester6/2024/BUSINESS_LAW.pdf" },
+                                { name: "CULTURAL DIVERSITY AT WORK PLACE", url: "/pdf/bba/semester6/2024/CULTURAL_DIVERSITY_AT_WORK_PLACE.pdf" },
+                                { name: "INCOME TAX II", url: "/pdf/bba/semester6/2024/INCOME_TAX_II.pdf" }
                             ]
                         },
                         {
                             id: "2023",
                             title: "2023",
                             pdfs: [
-                                { name: "BUSINESS REGULATION", url: "#" },
-                                { name: "COSTING METHODS AND TECHNIQUES", url: "#" },
-                                { name: "GOODS AND SERVICE TAX", url: "#" },
-                                { name: "INCOME TAX II", url: "#" }
+                                { name: "BUSINESS REGULATION", url: "/pdf/bba/semester6/2023/BUSINESS_REGULATION.pdf" },
+                                { name: "COSTING METHODS AND TECHNIQUES", url: "/pdf/bba/semester6/2023/COSTING_METHODS_AND_TECHNIQUES.pdf" },
+                                { name: "GOODS AND SERVICE TAX", url: "/pdf/bba/semester6/2023/GOODS_AND_SERVICE_TAX.pdf" },
+                                { name: "INCOME TAX II", url: "/pdf/bba/semester6/2023/INCOME_TAX_II.pdf" }
                             ]
                         },
                     ]
