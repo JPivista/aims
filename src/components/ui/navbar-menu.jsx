@@ -113,7 +113,7 @@ export const HoveredLink = ({
       {...rest}
       className={`text-[16px] transition-all duration-200 px-3 py-2 w-full block m-0 p-0 border-0 ${isActive
         ? "bg-[#6e3299] text-white"
-        : "text-gray-700 hover:bg-[#2828a2] hover:text-white"
+        : "text-gray-700 hover:bg-[#0C2165] hover:text-white"
         }`}>
       {children}
     </Link>

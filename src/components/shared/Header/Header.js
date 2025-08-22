@@ -199,7 +199,7 @@ export default function Header() {
 
           {/* BOTTOM NAV (Desktop) */}
           <motion.div
-            className="hidden lg:flex bg-[#6E3299] w-full h-[7vh] items-center justify-center"
+            className="hidden lg:flex bg-[#0C2165] w-full h-[7vh] items-center justify-center"
             layout
             transition={{
               duration: 0.6,
@@ -220,7 +220,7 @@ export default function Header() {
                         <HoveredLink
                           key={i}
                           href={link.href || "#"}
-                          className="text-gray-700 hover:text-[#6E3299]"
+                          className="text-gray-700 hover:text-[#6E3299] hover"
                         >
                           {link.name}
                         </HoveredLink>
@@ -275,7 +275,7 @@ export default function Header() {
                   {MenuItems.map((menu, idx) => (
                     <li key={idx}>
                       <button
-                        className="w-full flex justify-between px-4 py-3 text-left bg-[#6E3299] text-white"
+                        className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white"
                         onClick={() =>
                           setActive(active === menu.title ? null : menu.title)
                         }

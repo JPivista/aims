@@ -13,10 +13,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/student-university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</Link></li>
               <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Student Handbook</Link></li>
-              <li><Link href="/student-exit-formalities" className="hover:text-gray-300 transition-colors">Student Exit Formalities</Link></li>
-              <li><Link href="/examinations" className="hover:text-gray-300 transition-colors">Examinations</Link></li>
-              <li><Link href="/aims-academic-calendar" className="hover:text-gray-300 transition-colors">Academic Calendar</Link></li>
-              <li><Link href="/programs-course-outcome" className="hover:text-gray-300 transition-colors">Program and Course Outcome</Link></li>
+              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Student Exit Formalities</Link></li>
+              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Examinations</Link></li>
+              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Academic Calendar</Link></li>
+              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Program and Course Outcome</Link></li>
               <li><Link href="/code-of-conduct-students" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</Link></li>
             </ul>
           </div>
