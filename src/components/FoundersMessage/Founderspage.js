@@ -16,7 +16,7 @@ const messages = [
     name: "Best Wishes, \n Meka Priyanandan Reddy",
     title1: "CEO",
     title2: "AIMS Institutes",
-    image: "/founders-message/img2.png",
+    image: "/founders-message/img-02.png",
     message: `"At AIMS, we are driven by a legacy of academic excellence, entrepreneurial spirit, global vision, and social responsibility. Our mission is to inspire and equip students to become professionals of global caliber, fostering a vibrant learning environment where ideas thrive, diversity is celebrated, and every individual is empowered to succeed. Education at AIMS is a journey of growth, discovery, and transformation. With exceptional faculty, dedicated staff, state-of-the-art facilities, and strong industry collaborations, we ensure our students receive an education that is both relevant and future-ready. Our alumni, making their mark across the globe, stand as a proud testament to the strong foundations and skills nurtured at AIMS. I warmly invite you to explore the opportunities at AIMS and take the next steps towards realising your dreams and aspirations."`,
   },
   {
