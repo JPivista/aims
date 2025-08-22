@@ -389,7 +389,6 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>17th Best Private Business School in South India.</li>
-      
           </ul>
         ),
       },
@@ -398,9 +397,9 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>
-            45th Best Private Business School in India for Learning Experience.
+              45th Best Private Business School in India for Learning
+              Experience.
             </li>
-           
           </ul>
         ),
       },
@@ -416,12 +415,8 @@ const PatentsTimeline = () => {
         titles: "Outlook Best BBA Colleges Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            30th Best Private BBA College in India.
-            </li>
-            <li>
-            9th Best Private BBA College in Bangalore.
-            </li>
+            <li>30th Best Private BBA College in India.</li>
+            <li>9th Best Private BBA College in Bangalore.</li>
           </ul>
         ),
       },
@@ -440,22 +435,22 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>
-            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+              4th Best Private Hotel Management Institution under “Super
+              Excellence” Category in India.
             </li>
-            <li>2nd Best Private Hotel Management Institution under “Super Excellence” Category in Bangalore.</li>
+            <li>
+              2nd Best Private Hotel Management Institution under “Super
+              Excellence” Category in Bangalore.
+            </li>
           </ul>
         ),
       },
       {
-    
         titles: " Outlook Best Hotel Management Colleges Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>9th Best Private Hotel Management Institute in India.</li>
-            <li>
-            2nd Best Private Hotel Management Institute in Bangalore.
-            </li>
-         
+            <li>2nd Best Private Hotel Management Institute in Bangalore.</li>
           </ul>
         ),
       },
@@ -464,9 +459,7 @@ const PatentsTimeline = () => {
         titles: "Outlook Best BCA Colleges Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            29th Best Private BCA College in India.
-            </li>
+            <li>29th Best Private BCA College in India.</li>
             <li>8th Best Private BCA College in Bangalore.</li>
           </ul>
         ),
@@ -485,9 +478,7 @@ const PatentsTimeline = () => {
         titles: "Outlook Best BCOM Colleges Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            30th Best Private BCOM College in India.
-            </li>
+            <li>30th Best Private BCOM College in India.</li>
             <li>6th Best Private BCOM College in Bangalore.</li>
           </ul>
         ),
@@ -502,8 +493,6 @@ const PatentsTimeline = () => {
           </ul>
         ),
       },
-     
-     
     ],
     2021: [
       {
@@ -515,11 +504,18 @@ const PatentsTimeline = () => {
             <li>7th Best Private Business School in South India.</li>
             <li>3rd Best Private Business School in Bangalore.</li>
             <li>Business Today B -School Survey</li>
-            <li>4th Best Private Business School in the category of Top 100 Living Experience in Bangalore.</li>
-            <li>5th Best Private Business School in the category of Top 100 Learning Experience in Bangalore.</li>
-            <li>6th Best Private Business School in the category of Top 100 Future Orientation in Bangalore.</li>
-        
-           
+            <li>
+              4th Best Private Business School in the category of Top 100 Living
+              Experience in Bangalore.
+            </li>
+            <li>
+              5th Best Private Business School in the category of Top 100
+              Learning Experience in Bangalore.
+            </li>
+            <li>
+              6th Best Private Business School in the category of Top 100 Future
+              Orientation in Bangalore.
+            </li>
           </ul>
         ),
       },
@@ -537,12 +533,8 @@ const PatentsTimeline = () => {
         titles: "Outlook Survey Best Colleges Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            32nd Best BBA colleges in India.
-            </li>
-            <li>
-            9th Best BBA college in Bangalore
-            </li>
+            <li>32nd Best BBA colleges in India.</li>
+            <li>9th Best BBA college in Bangalore</li>
           </ul>
         ),
       },
@@ -560,9 +552,13 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>
-            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+              4th Best Private Hotel Management Institution under “Super
+              Excellence” Category in India.
             </li>
-            <li>2nd Best Private Hotel Management Institution under “Super Excellence” Category in India.</li>
+            <li>
+              2nd Best Private Hotel Management Institution under “Super
+              Excellence” Category in India.
+            </li>
           </ul>
         ),
       },
@@ -580,9 +576,7 @@ const PatentsTimeline = () => {
         titles: "India Today Hotel Management Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            4th Best Private Hotel Management in Karnataka.
-            </li>
+            <li>4th Best Private Hotel Management in Karnataka.</li>
             <li>3rd Best Private Hotel Management in Bangalore.</li>
           </ul>
         ),
@@ -593,9 +587,7 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>6th Best Emerging College in Social Work, Karnataka.</li>
-            <li>
-            4th Best Emerging College in Social Work, Bangalore.
-            </li>
+            <li>4th Best Emerging College in Social Work, Bangalore.</li>
           </ul>
         ),
       },
@@ -603,15 +595,11 @@ const PatentsTimeline = () => {
         titles: "Outlook Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            18th Best MSW colleges in India.
-            </li>
+            <li>18th Best MSW colleges in India.</li>
             <li>3rd Best MSW College in Bangalore.</li>
           </ul>
         ),
       },
-    
-    
     ],
     2020: [
       {
@@ -640,9 +628,9 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>
-            4th Best Private Hotel Management Institution under “Super Excellence” Category in India.
+              4th Best Private Hotel Management Institution under “Super
+              Excellence” Category in India.
             </li>
-           
           </ul>
         ),
       },
@@ -656,14 +644,10 @@ const PatentsTimeline = () => {
         ),
       },
       {
-      
         titles: "India Today",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>
-            2nd Best Private Hotel Management in Bangalore.
-            </li>
-          
+            <li>2nd Best Private Hotel Management in Bangalore.</li>
           </ul>
         ),
       },
@@ -673,25 +657,63 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>3rd Best Emerging College in Social Work, Bangalore.</li>
-           
           </ul>
         ),
       },
-     
-
     ],
     2019: [
       {
-        title: "IoT-Based Water Quality Monitoring System",
-        description: "Dr. Vivek Reddy",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: " The Week Best B-School Surve",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>The Week Best B-School Survey</li>
+            <li>Top Best Private Business School in Bangalore.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI for Early Detection of Alzheimer’s Disease",
-        description: "Dr. Sunita Rao",
+        titles: "Times B School Survey",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best Private Business School in Karnataka.</li>
+          </ul>
+        ),
       },
       {
-        title: "Green Transportation Solutions using Hydrogen Fuel Cells",
-        description: "Prof. Aditya Sharma",
+        titles: "India Today B-School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Private Best Private Business School in Bangalore</li>
+            <li>29th Best Private Business School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Business Today B-School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Private Best Private Business School in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "AICTE-CII Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Platinum ranking with a score band {">"} 30.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF LIBERAL & PERFORMING ARTS",
+        titles: "India Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Emerging College in Social Work, Bangalore.</li>
+          </ul>
+        ),
       },
     ],
     2018: [
@@ -870,18 +892,18 @@ const PatentsTimeline = () => {
   const years = Array.from({ length: 2025 - 2006 + 1 }, (_, i) => 2025 - i)
 
   return (
-    <div className="relative overflow-hidden px-2 pb-5">
+    <div className="relative overflow-hidden">
       {/* Light Green Header Strip */}
       <div className="bg-[#E1F9F4] py-10">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="bg-[#e6f9f3] py-8 px-4 text-center">
+        <div className="container mx-auto px-4 lg:px-0">
+          <div className="bg-[#e6f9f3] text-center">
             <p className="text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
               At AIMS Institutes, rankings aren’t the destination, they’re the
               result of staying focused on our target to deliver education that
               transforms potential into performance.
             </p>
             <p className="mt-4 text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
-              As a{" "}
+              As a
               <span className=" font-bold  monser-500 ">
                 NAAC A Grade College
               </span>
@@ -894,7 +916,7 @@ const PatentsTimeline = () => {
         </div>
       </div>
 
-      <div className="bg-white mt-10 py-8 px-4">
+      <div className="bg-white mt-10 px-4 lg:px-0">
         <h3 className="text-2xl md:text-3xl font-bold text-center text-[#0C2165] playfair-300">
           Here&apos;s a look at how our efforts have <br />
           hit the mark over the years.
@@ -903,7 +925,7 @@ const PatentsTimeline = () => {
 
       {/* Main Content Area - Single Column Timeline */}
       <div className="bg-white py-10">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-0">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Vertical Timeline Line */}
