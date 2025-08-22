@@ -188,18 +188,48 @@ export default function AlumniCarousel() {
         </div>
 
         {/* Arrows - made stable */}
-        <div className="absolute lg:bottom-[25%] bottom-0 right-30 -translate-x-1/2 translate-y-16 flex gap-4">
+        <div className="absolute lg:bottom-[23%] bottom-0 right-30 -translate-x-1/2 translate-y-16 flex gap-4">
+          {/* PREV */}
           <button
             onClick={prev}
-            className="h-10 w-10 rounded-full bg-white shadow-md ring-1 ring-black/10 flex items-center justify-center hover:bg-gray-50"
+            className="h-10 w-10 rounded-full bg-white text-black shadow-md ring-1 ring-black/10 flex items-center justify-center hover:bg-[#A22877] hover:text-white"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 17"
+              fill="none"
+              className="rotate-180"
+            >
+              <path
+                d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                stroke="currentColor"
+                strokeWidth="0.5"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
+
+          {/* NEXT */}
           <button
             onClick={next}
-            className="h-10 w-10 rounded-full bg-white shadow-md ring-1 ring-black/10 flex items-center justify-center hover:bg-gray-50"
+            className="h-10 w-10 rounded-full bg-white text-black shadow-md ring-1 ring-black/10 flex items-center justify-center hover:bg-[#A22877] hover:text-white"
           >
-            <ChevronRight className="w-5 h-5" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 17"
+              fill="none"
+            >
+              <path
+                d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                stroke="currentColor"
+                strokeWidth="0.5"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
       </div>
