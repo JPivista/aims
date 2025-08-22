@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0C2165] text-white">
       {/* Top Section - Navigation Links */}
-      <div className="container mx-auto py-10 px-5 lg:px-0">
+      <div className="container mx-auto py-10 px-4 lg:px-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4">
           <div>
             <h6 className="font-semibold text-xl lg:text-2xl mb-4">Students</h6>
@@ -66,7 +66,7 @@ export default function Footer() {
 
       {/* Middle Section - Contact, Social, Newsletter */}
       <div className="border-t border-b border-whtie">
-        <div className="container mx-auto px-2 lg:px-0">
+        <div className="container mx-auto px-4 lg:px-0">
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
               {/* AIMS Institutes */}
@@ -131,7 +131,7 @@ export default function Footer() {
 
       {/* Bottom Section - Copyright */}
       <div className="py-4 text-center text-sm">
-        <div className="container mx-auto px-5 lg:px-0">
+        <div className="container mx-auto px-4 lg:px-0">
           <span>© AIMS Institutes {new Date().getFullYear()}</span>
           <Link href="/terms-conditions" className="ml-4 hover:underline transition-colors">Terms & Conditions</Link>
           <Link href="/privacy-policy" className="ml-4 hover:underline transition-colors">Privacy</Link>

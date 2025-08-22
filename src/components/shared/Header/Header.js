@@ -179,7 +179,7 @@ export default function Header() {
                 Resources
               </Link>
 
-              <Button showReadMore={false}>Contact Us</Button>
+              <Button showReadMore={false} href="https://enquiry.theaims.ac.in/">Contact Us</Button>
             </motion.div>
 
             {/* Mobile Hamburger */}
@@ -325,6 +325,7 @@ export default function Header() {
                     className="font-light w-full mt-2"
                     hoverText="Contact Us"
                     showArrow={true}
+                    href="https://enquiry.theaims.ac.in/"
                   >
                     Contact Us
                   </Button>
