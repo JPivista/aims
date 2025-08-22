@@ -86,7 +86,7 @@ export default function AimsCarousel() {
           {/* Track */}
           {isMobile ? (
             // Mobile: Centered single slide with smooth slide
-            <div className="flex justify-center overflow-hidden py-10">
+            <div className="flex justify-center overflow-hidden lg:pt-10 lg:pb-10 pb-10">
               <AnimatePresence mode="wait">
                 {/* MOBILE SLIDE */}
                 <motion.div
@@ -174,7 +174,7 @@ export default function AimsCarousel() {
           )}
 
           {/* Arrows */}
-          <div className="absolute lg:bottom-12 bottom-5 right-6 flex items-center gap-6">
+          <div className="absolute lg:bottom-12 bottom-16 right-6 flex items-center gap-6">
             {/* PREV BUTTON */}
             <button
               onClick={prev}

@@ -61,18 +61,20 @@ const ReadyToDraw = ({
             </div>
 
             {/* Right Side - Arrow SVG */}
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div className="lg:block hidden">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end ">
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
                 <Image
                   src={arrowImage}
                   alt="Arrow"
                   width={256}
                   height={256}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain "
                   priority
                 />
               </div>
             </div>
+        </div>
           </div>
         </div>
       </div>
