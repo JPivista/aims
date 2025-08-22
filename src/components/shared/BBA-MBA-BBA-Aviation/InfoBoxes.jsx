@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const InfoBoxes = ({ boxes }) => {
   return (
-    <div className="mx-15">
+    <div className="container mx-auto px-4 md:px-0">
       <div className="">
         {/* Mobile: Column Layout with Horizontal Arrows */}
-        <div className="flex flex-col gap-4 md:hidden">
+        <div className="flex flex-col  gap-4 md:hidden ">
           {boxes.map((box, index) => (
             <div
               key={index}

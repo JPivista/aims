@@ -33,7 +33,7 @@ const WhyChoose = () => {
 
   return (
     <>
-      <div className="bg-[#FFEFE3] py-8 sm:py-12 md:py-16">
+      <div className="bg-[#FFEFE3] py-6 md:py-10">
         <div className="container mx-auto">
           <p className="text-base md:text-xl text-[#010066] max-w-4xl monser-400 text-center mx-auto px-4 md:px-0">
             BBA Aviation Management program at AIMS is designed for students

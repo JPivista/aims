@@ -98,7 +98,7 @@ const Overview = () => {
   ]
   return (
     <div className="bg-[#FFEFE3]">
-      <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10">
+      <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10 ">
         {/* BBA Program overview */}
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between lg:items-center py-6 sm:py-8 md:py-10">
           <h2 className="w-full lg:w-2/5 mb-6 sm:mb-8 lg:mb-0 text-center lg:text-left">
@@ -118,8 +118,8 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Recognition timeline */}
-        <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
+        {/* Program Details For Mobile */}
+        <div className="flex justify-center px-2 md:px-0 mb-6 md:mb-0">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">

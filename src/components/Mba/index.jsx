@@ -18,7 +18,7 @@ const index = () => {
       <Companies />
       <CourseStructure programKey="mba" />
       <PracticalSkills />
-      <ReadyToDraw
+      {/* <ReadyToDraw
         title={
           <>
             Ready to <br className="hidden md:block" /> Draw Your Bow?
@@ -28,7 +28,7 @@ const index = () => {
         primaryButtonText="Apply Now"
         secondaryButtonText="Download Brochure"
         tertiaryButtonText="Talk to a Counsellor"
-      />
+      /> */}
     </div>
   )
 }

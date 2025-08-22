@@ -23,8 +23,8 @@ const WhyItMatters = () => {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col md:flex-row md:items-start justify-end md:justify-end p-4 sm:p-6 md:p-8 lg:p-8 xl:p-8 pb-20 md:pb-0 mt-6  md:mt-14  mr-4 sm:mr-8 md:mr-12">
-        <div className="md:ml-20">
+      <div className="relative z-10 h-full flex flex-col md:flex-row md:items-center justify-end md:justify-end container mx-auto  ">
+        <div className="">
           <h2 className="text-white text-3xl  md:text-[60px] playfair-300 leading-tight text-center md:text-left">
             Why It Matters
           </h2>
