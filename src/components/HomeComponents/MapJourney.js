@@ -35,8 +35,8 @@ const MapJourney = () => {
   ];
   return (
     <>
-      <div className="bg-[#C6F3EA] py-10">
-        <div className="container mx-auto lg:px-0 px-4">
+      <div className="bg-[#C6F3EA] py-10 lg:px-0 px-4">
+        <div className="container mx-auto ">
           <div>
             <h3 className="text-[#A22877]">
               Map Your <br /> Journey
@@ -86,16 +86,17 @@ const MapJourney = () => {
             ))}
           </div>
         </div>
+
         <div className="container mx-auto pt-10 flex gap-5 items-center lg:px-0 px-4">
           <div>
             <h5 className="text-2xl monser-700">Follow Us</h5>
           </div>
           <div className="flex gap-4">
-            <FaInstagram size={30}/>
-            <CiFacebook size={30}/>
-            <RiTwitterXFill size={30}/>
-            <SlSocialYoutube size={30}/>
-           
+            <FaInstagram size={30} />
+            <CiFacebook size={30} />
+            <RiTwitterXFill size={30} />
+            <SlSocialYoutube size={30} />
+
           </div>
         </div>
       </div>
