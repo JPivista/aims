@@ -159,6 +159,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
+
 import Button from "@/shared/Button";
 import Link from "next/link";
 import Image from "next/image";
@@ -237,9 +239,9 @@ export default function ExactSwapCarousel() {
       <div className="container mx-auto">
         <div>
           <h3> Select your Course</h3>
-          <p className="pb-4"> 
-            Explore our schools, see their potential paths, and select the <br /> one
-            that fits your goal.
+          <p className="pb-4">
+            Explore our schools, see their potential paths, and select the{" "}
+            <br /> one that fits your goal.
           </p>
         </div>
         <div className="md:flex gap-6 md:gap-12 items-center">
@@ -310,74 +312,108 @@ export default function ExactSwapCarousel() {
             </AnimatePresence>
 
             {/* THUMBNAILS */}
-            <motion.div
-              ref={thumbsContainerRef}
-              className="flex gap-4 overflow-x-auto pb-2 mt-10 items-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              {courses.map((c, idx) => {
-                const isActive = idx === current;
-                return (
-                  <motion.button
-                    key={c.id}
-                    ref={(el) => (thumbsRef.current[idx] = el)}
-                    onClick={() => goTo(idx)}
-                    layoutId={`card-${c.id}`}
-                    className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
-                      isActive ? "border-pink-500" : "border-transparent"
-                    }`}
-                    whileHover={{ scale: 1.03 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 24 }}
-                    aria-pressed={isActive}
-                  >
-                    <motion.img
-                      src={c.rightImage}
-                      alt={c.title}
-                      className="w-full h-full object-cover block"
-                      initial={false}
-                      animate={isActive ? { y: -16 } : { y: 0 }}
+            {/* THUMBNAILS + ARROWS WRAPPER */}
+            <div className="relative">
+              {/* THUMBNAILS */}
+              <motion.div
+                ref={thumbsContainerRef}
+                className="flex gap-4 overflow-x-auto pb-2 mt-10 items-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {courses.map((c, idx) => {
+                  const isActive = idx === current;
+                  return (
+                    <motion.button
+                      key={c.id}
+                      ref={(el) => (thumbsRef.current[idx] = el)}
+                      onClick={() => goTo(idx)}
+                      layoutId={`card-${c.id}`}
+                      className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
+                        isActive ? "border-pink-500" : "border-transparent"
+                      }`}
+                      whileHover={{ scale: 1.03 }}
                       transition={{
                         type: "spring",
                         stiffness: 300,
-                        damping: 20,
+                        damping: 24,
                       }}
-                      draggable={false}
+                      aria-pressed={isActive}
+                    >
+                      <motion.img
+                        src={c.rightImage}
+                        alt={c.title}
+                        className="w-full h-full object-cover block"
+                        initial={false}
+                        animate={isActive ? { y: -16 } : { y: 0 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 20,
+                        }}
+                        draggable={false}
+                      />
+                      <div className="text-sm md:text-sm font-medium truncate">
+                        {c.title}
+                      </div>
+                    </motion.button>
+                  );
+                })}
+              </motion.div>
+
+              {/* ARROWS ABOVE THUMBNAILS */}
+              <div className="absolute -top-8 right-0 flex gap-5 z-20">
+                <button
+                  onClick={prev}
+                  aria-label="Previous"
+                  className="bg-white hover:bg-[#A22877] hover:text-white text-black p-2 rounded-full shadow"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    className="rotate-180"
+                  >
+                    <path
+                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                      stroke="currentColor" // ✅ makes stroke follow text color
+                      strokeWidth="0.5"
+                      strokeLinejoin="round"
                     />
-                    <div className="text-sm md:text-sm font-medium truncate">
-                      {c.title}
-                    </div>
-                  </motion.button>
-                );
-              })}
-            </motion.div>
+                  </svg>
+                </button>
+
+                <button
+                  onClick={next}
+                  aria-label="Next"
+                  className="bg-white text-black p-2 rounded-full shadow hover:bg-[#A22877] hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                      stroke="currentColor" // ✅ now follows text color
+                      strokeWidth="0.5"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* ARROWS */}
-      <div className="absolute top-1/2 right-6 transform -translate-y-1/2 flex gap-3 z-20">
-        <button
-          onClick={prev}
-          aria-label="Previous"
-          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-100"
-        >
-          <FaChevronLeft />
-        </button>
-        <button
-          onClick={next}
-          aria-label="Next"
-          className="bg-white text-black p-2 rounded-full shadow hover:bg-gray-100"
-        >
-          <FaChevronRight />
-        </button>
       </div>
     </div>
   );
 }
-
-
 
 // for mobile
 // "use client";
