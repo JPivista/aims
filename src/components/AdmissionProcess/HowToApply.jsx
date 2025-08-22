@@ -20,7 +20,7 @@ const HowToApply = () => {
   return (
     <>
       {/* Hero Banner Text */}
-      <div className="bg-[#FCE1E1] py-8 sm:py-12 md:py-16">
+      <div className="bg-[#FCE1E1] py-10">
         <p className="text-base md:text-xl  max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto px-4 sm:px-6 md:px-8 leading-relaxed">
           Every future begins with a first step, and at AIMS, we make sure that
           step is clear, structured, and supportive. Whether you're aiming to
@@ -31,56 +31,58 @@ const HowToApply = () => {
       </div>
 
       {/* How to Apply */}
-      <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-16 py-6 sm:py-8 md:py-10">
-        {/* Left Side - Content */}
-        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
-          <h2 className="text-3xl  md:text-5xl lg:text-[65px] text-[#A22877] mb-3 sm:mb-4 playfair-300 leading-tight">
-            How to Apply
-          </h2>
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8 md:gap-12 py-6  md:py-10 w-full">
+          {/* Left Side - Content */}
+          <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
+            <h2 className="text-3xl  md:text-5xl lg:text-[65px] text-[#A22877] mb-3  playfair-300 leading-tight">
+              How to Apply
+            </h2>
 
-          <p className="text-base md:text-xl leading-relaxed monser-400">
-            You can apply for admission online by clicking the "Apply Now"
-            button at the top-right of this website. The application is
-            straightforward and designed to support students at every stage.
-          </p>
+            <p className="text-base md:text-xl leading-relaxed monser-400">
+              You can apply for admission online by clicking the "Apply Now"
+              button at the top-right of this website. The application is
+              straightforward and designed to support students at every stage.
+            </p>
 
-          <div className="space-y-3 sm:space-y-4">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] monser-600">
-              Before you begin, we recommend reviewing:
-            </h5>
+            <div className="space-y-3 sm:space-y-4">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] monser-600">
+                Before you begin, we recommend reviewing:
+              </h5>
 
-            <ul className="space-y-2 sm:space-y-3 list-disc list-inside">
-              <li className="text-base md:text-lg monser-400 leading-relaxed">
-                The <span className="monser-600">eligibility criteria</span> on
-                your chosen program page
-              </li>
-              <li className="text-base md:text-lg monser-400 leading-relaxed">
-                The <span className="monser-600">documents required</span> for
-                applying to UG or PG courses
-              </li>
-              <li className="text-base md:text-lg monser-400 leading-relaxed">
-                The{" "}
-                <span className="monser-600">
-                  important deadlines for college admissions 2025
-                </span>
-              </li>
-            </ul>
+              <ul className="space-y-2 sm:space-y-3 list-disc list-inside">
+                <li className="text-base md:text-lg monser-400 leading-relaxed">
+                  The <span className="monser-600">eligibility criteria</span>{" "}
+                  on your chosen program page
+                </li>
+                <li className="text-base md:text-lg monser-400 leading-relaxed">
+                  The <span className="monser-600">documents required</span> for
+                  applying to UG or PG courses
+                </li>
+                <li className="text-base md:text-lg monser-400 leading-relaxed">
+                  The{" "}
+                  <span className="monser-600">
+                    important deadlines for college admissions 2025
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Side - Image */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
+            <Image
+              src="/admission-process/apply-new.svg"
+              alt="Admission Process"
+              width={1000}
+              height={1000}
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+            />
           </div>
         </div>
 
-        {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
-          <Image
-            src="/admission-process/apply-new.svg"
-            alt="Admission Process"
-            width={1000}
-            height={1000}
-            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
-          />
-        </div>
+        {/* Important Deadlines */}
       </div>
-
-      {/* Important Deadlines */}
       <div className="bg-[#E1F9F4] py-8 sm:py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">

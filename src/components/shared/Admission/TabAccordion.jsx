@@ -26,10 +26,10 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
 
   return (
     <>
-      <div className="pb-6 sm:pb-8 md:pb-10">
+      <div className="container mx-auto pb-6 md:pb-10">
         <div className="relative flex flex-col lg:flex-row items-start">
           {/* Left Side - Tabs */}
-          <div className="w-full lg:w-1/3 px-4 sm:px-6 md:px-8 lg:ml-20 mb-6 lg:mb-0">
+          <div className="w-full lg:w-1/3 px-4 md:px-0 mb-6 lg:mb-0">
             <div
               ref={containerRef}
               className="flex flex-col items-center lg:items-start gap-3 sm:gap-3"
@@ -38,7 +38,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`w-full lg:w-fit whitespace-nowrap rounded-full px-4 sm:px-4 py-3 sm:py-2 transition border snap-start active-tab monser-400 text-sm sm:text-base md:text-[18px] text-center lg:text-left
+                  className={`w-full lg:w-fit whitespace-nowrap rounded-full px-4 sm:px-4 py-3 sm:py-2 transition border snap-start active-tab monser-400 text-sm sm:text-base md:text-base text-center lg:text-left
                       ${
                         activeTab === index
                           ? "bg-[#a22978] text-white border-transparent"
@@ -58,7 +58,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
           <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-black transform -translate-x-1/2"></div>
 
           {/* Right Side - Expandable Content */}
-          <div className="w-full lg:w-4/5 px-4 sm:px-6 md:px-8 lg:px-0">
+          <div className="w-full lg:w-4/5 px-4 md:px-6 lg:px-8">
             <div className="bg-white px-4 sm:px-6 md:px-8">
               {tabsData[activeTab] && (
                 <div className="space-y-4 sm:space-y-6 md:space-y-8">
@@ -82,7 +82,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                         onClick={() => toggleSection(section.id)}
                         className="w-full flex items-center justify-between text-left p-4 sm:p-4"
                       >
-                        <h2 className="monser-500 text-black text-lg sm:text-xl md:text-2xl lg:text-[30px] leading-tight pr-4">
+                        <h2 className="monser-500 text-black text-lg sm:text-xl md:text-2xl leading-tight pr-4">
                           {section.title}
                         </h2>
                         <motion.div

@@ -10,22 +10,22 @@ const Aiming = () => {
     "Support the long-term vision of AIMS by helping students grow into well-rounded professionals with a deep concern for society",
   ]
   return (
-    <>
+    <div className="container mx-auto ">
       {/* Row 1: Left Content, Right Image */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-16 py-6 md:py-10 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-16 py-6 md:py-10 px-4 md:px-0 ">
         {/* Left Side - Content */}
-        <div className="w-full px-4 md:px-8 md:ml-10 flex flex-col md:flex-row gap-4 md:gap-10">
-          <div className="space-y-4 sm:space-y-6 lg:space-y-6 md:w-2/4">
-            <h2 className="text-4xl  md:text-[65px] text-[#0C2165] mb-6 md:mb-10 playfair-300">
+        <div className="px-4 md:px-0 flex flex-col md:flex-row gap-4 md:gap-10">
+          <div className="space-y-4 md:space-y-6 lg:space-y-6 md:w-2/4">
+            <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-10 playfair-300">
               AIMing for All Round <br /> Development
             </h2>
-            <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] monser-400">
+            <p className="text-base md:text-base lg:text-base monser-400">
               For queries and support, write to us at{" "}
               <span className="text-[#A22877] monser-600 underline">
                 acsd@theaims.ac.in
               </span>
             </p>
-            <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] monser-400">
+            <p className="text-base  md:text-base lg:text-base monser-400">
               Founded in 2007, the AIMS Centre for Student Development (ACSD) is
               built on a singular principle, to walk alongside students through
               every phase of their academic and personal journey. At the heart
@@ -33,7 +33,7 @@ const Aiming = () => {
               attention, enabling students to build confidence, self-awareness,
               and meaningful life skills.
             </p>
-            <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] monser-400">
+            <p className="text-base  md:text-base lg:text-base monser-400">
               With structured guidance and consistent support, ACSD helps
               students align their strengths with their goals, preparing them
               for a future of responsible leadership and professional success.
@@ -58,9 +58,9 @@ const Aiming = () => {
       </div>
 
       {/* Row 2: Left Image, Right Content */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-16 py-6 md:py-10 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-0 py-6 md:py-10 px-4 md:px-0 ">
         {/* Left Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center ">
+        <div className="w-full lg:w-2/3 flex ">
           <Image
             src="/student-development/our-approach.png"
             alt="Career Guidance"
@@ -71,11 +71,11 @@ const Aiming = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 px-4 md:px-10 tracking-wide md:-ml-15 ml-0">
-          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-6 md:mb-8 playfair-300">
+        <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 px-4 md:px-10">
+          <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300">
             Our Approach
           </h2>
-          <p className="text-base md:text-[18px] lg:text-[18px] leading-relaxed monser-400">
+          <p className="text-base md:text-base lg:text-base  monser-400">
             Through one-on-one mentoring and group activities, ACSD supports the
             personal and social development of students in Bangalore, enabling
             them to better understand themselves and their aspirations. By
@@ -83,7 +83,7 @@ const Aiming = () => {
             ensures that each student experiences their time at AIMS as a
             transformative journey, not just an academic one.
           </p>
-          <p className="text-base sm:text-lg md:text-[18px] lg:text-[18px] leading-relaxed monser-400">
+          <p className="text-base sm:text-lg md:text-base lg:text-base monser-400">
             Whether a student needs career guidance, skill-building support, or
             simply someone to talk to, ACSD provides a consistent touchpoint for
             care, structure, and encouragement. The emphasis is always on
@@ -96,8 +96,8 @@ const Aiming = () => {
       {/* Row 3: Left Content, Right Image */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-16 py-6 md:py-10 px-4 md:px-0">
         {/* Left Side - Content */}
-        <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 px-4 md:ml-10">
-          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-6 playfair-300 ">
+        <div className="w-full lg:w-1/2 space-y-4 md:space-y-6">
+          <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 playfair-300 ">
             Objectives
           </h2>
           <h4 className="text-lg sm:text-xl md:text-[20px] lg:text-[20px] text-[#0C2165] monser-600">
@@ -107,7 +107,7 @@ const Aiming = () => {
             {objectives.map((objective, index) => (
               <li
                 key={index}
-                className="text-base md:text-[18px] lg:text-[18px] monser-400 leading-relaxed"
+                className="text-base md:text-[18px] lg:text-[18px] monser-400"
               >
                 {objective}
               </li>
@@ -116,17 +116,17 @@ const Aiming = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full lg:w-1/2 flex justify-center px-4 md:px-0">
+        <div className="md:w-1/2 lg:w-1/2 px-4 md:px-0">
           <Image
             src="/student-development/objectives.png"
             alt="Success Achievement"
             width={1000}
             height={1000}
-            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

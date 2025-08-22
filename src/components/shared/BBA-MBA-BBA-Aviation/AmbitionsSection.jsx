@@ -11,7 +11,7 @@ const AmbitionsSection = ({
 }) => {
   return (
     <div
-      className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative`}
+      className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative `}
     >
       {/* Background SVG */}
       <div className="absolute top-[13%] left-0 hidden md:block">
@@ -24,7 +24,7 @@ const AmbitionsSection = ({
         />
       </div>
 
-      <div className="px-4  md:px-12">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start">
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2 flex justify-center z-10">

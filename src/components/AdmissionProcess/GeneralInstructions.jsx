@@ -15,32 +15,36 @@ const GeneralInstructions = () => {
   return (
     <>
       {/* Main Content - Two Flex Containers */}
-      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 py-8 sm:py-12 md:py-16">
-        {/* Left Side - Heading and Instructions (5/6 width) */}
-        <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
-          {/* Heading */}
-          <h1 className="text-[#0C2165] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 leading-tight">
-            General <br className="hidden md:block" />
-            Instructions
-          </h1>
+      <div className="relative">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row gap-6 md:gap-12 py-10">
+            {/* Left Side - Heading and Instructions (5/6 width) */}
+            <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
+              {/* Heading */}
+              <h1 className="text-[#0C2165] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 leading-tight">
+                General <br className="hidden md:block" />
+                Instructions
+              </h1>
 
-          {/* Instructions List */}
-          <div className="space-y-3 sm:space-y-4">
-            <ul className="space-y-2 sm:space-y-3 list-disc pl-6">
-              {instructions.map((instruction, index) => (
-                <li
-                  key={index}
-                  className="text-base md:text-lg lg:text-[20px] monser-400 leading-relaxed"
-                >
-                  {instruction}
-                </li>
-              ))}
-            </ul>
+              {/* Instructions List */}
+              <div className="space-y-3 sm:space-y-4">
+                <ul className="space-y-2 sm:space-y-3 list-disc pl-6">
+                  {instructions.map((instruction, index) => (
+                    <li
+                      key={index}
+                      className="text-base md:text-lg lg:text-[20px] monser-400 leading-relaxed"
+                    >
+                      {instruction}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Side - Image (1/6 width) - Hidden on mobile and tablet */}
           </div>
         </div>
-
-        {/* Right Side - Image (1/6 width) - Hidden on mobile and tablet */}
-        <div className="hidden lg:flex w-full lg:w-1/6 justify-center lg:justify-end lg:-mt-14 lg:-mr-4 xl:-mr-10">
+        <div className="hidden lg:block absolute top-[0%] -right-10  z-10">
           <Image
             src="/admission-process/circle.svg"
             alt="General Instructions"

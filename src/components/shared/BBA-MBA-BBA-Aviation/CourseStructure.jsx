@@ -162,7 +162,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 1",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Management Innovation",
               "Fundamentals of Accountancy",
@@ -236,8 +236,8 @@ const CourseStructure = ({ programKey = "mba" }) => {
               "Production and Operations Management",
               "Income Tax-I",
               "Banking Law and Practice",
-              "Elective -1 (FN1\\MK1\\HRM1\\DA1\\ R M1\\LSCM1)",
-              "Elective-2 (FN1\\MK1\\HRM1\\DA1\\ R M1\\LSCM1)",
+              "Elective -1 (FN1\\MK1\\HRM1\\DA1\\RM1\\LSCM1)",
+              "Elective-2 (FN1\\MK1\\HRM1\\DA1\\RM1\\LSCM1)",
               "Information Technology for Business (Excel & DBMS) Digital Marketing",
               "Cyber Security/Employability skills",
             ],
@@ -250,8 +250,8 @@ const CourseStructure = ({ programKey = "mba" }) => {
               "Business Law",
               "Income Tax-II",
               "International Business",
-              "Elective -1 (FN2\\MK2\\HRM2\\DA2\\ RM2\\LSCM2)",
-              "Elective -2 (FN2\\MK2\\HRM2\\DA2\\ RM2\\LSCM2)",
+              "Elective -1 (FN2\\MK2\\HRM2\\DA2\\RM2\\LSCM2)",
+              "Elective -2 (FN2\\MK2\\HRM2\\DA2\\RM2\\LSCM2)",
               "Goods and Services Tax ERP Application",
               "Internship",
             ],
@@ -376,7 +376,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
   return (
     <>
       <div className="py-4 md:py-8 bg-white">
-        <div className="ml-4 md:ml-20">
+        <div className="container mx-auto px-4 md:px-0">
           <h3 className="text-xl md:text-2xl lg:text-3xl font-serif mb-2 ">
             <span className="mba-program-text text-4xl md:text-[60px]">
               {getProgramTitle(programKey)}

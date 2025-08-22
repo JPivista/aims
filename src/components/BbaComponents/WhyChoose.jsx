@@ -35,7 +35,7 @@ const WhyChoose = () => {
   ]
 
   return (
-    <div className="py-8 sm:py-12 md:py-16">
+    <div className="py-6 md:py-10">
       <div className="container mx-auto px-4 md:px-6">
         <p className="text-base sm:text-lg md:text-xl text-[#010066] max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto pb-6 sm:pb-8 md:pb-10 leading-relaxed px-4 md:px-0">
           Experience the foundation of business leadership at AIMS Institutes,

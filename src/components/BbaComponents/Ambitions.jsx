@@ -31,7 +31,7 @@ const Ambitions = () => {
         </div>
 
         <div className="absolute inset-0 flex md:items-center  items-end  bottom-10 md:bottom-0">
-          <div className="md:mx-20 px-4 md:px-6 lg:px-8 text-center md:text-left ">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center md:text-left ">
             <div className="w-full md:max-w-2xl space-y-4 text-white ">
               {/* Heading */}
               <h2 className="text-[40px] md:text-[60px] playfair-300 italic">
