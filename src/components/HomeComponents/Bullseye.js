@@ -8,7 +8,7 @@ import Companies from "../shared/Companies";
 const Bullseye = () => {
   return (
     <>
-      <div className="container mx-auto text-center lg:py-10 py-5">
+      <div className="container mx-auto text-center lg:pt-10 pt-5">
         <h1 className="text-4xl lg:text-6xl font-light text-[#0C2165] playfair-300 leading-tight">
           Bullseye Outcomes
         </h1>
@@ -33,7 +33,7 @@ const Bullseye = () => {
         <Companies />
       </div>
       <div className="flex justify-center w-full">
-        <Link href="/placement-policies">
+        <Link href="/placement-policies" className="lg:-mt-20">
           <Button>Explore Placement</Button>
         </Link>
       </div>

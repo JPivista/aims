@@ -6,7 +6,7 @@ import Since from "./Since";
 // import AimersInAction from './AimersInAction'
 
 import Slide from "./Slide";
-
+import SlideTwo from "./SlideTwo";
 import CampusUpdates from "./CampusUpdates/CampusUpdates";
 import Bullseye from "./Bullseye";
 import YourPractice from "./YourPractice";
@@ -19,7 +19,8 @@ const HomeComponents = () => {
     <>
       <HeroBanner />
       <Since />
-      <Slide />
+      {/* <Slide /> */}
+      <SlideTwo />
       <Bullseye />
       <YourPractice />
       <AlumniCarousel />
