@@ -80,8 +80,8 @@ export default function Header() {
     return scrollY.onChange((latest) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
-        setIsSticky(latest > 50);
-      }, 10); // Minimal delay for ultra-smooth response
+        setIsSticky(latest > 150);
+      }, 10); // Reduced delay for even smoother response
     });
   }, [scrollY]);
 
@@ -163,18 +163,18 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="border rounded-full px-4 py-1 focus:outline-none"
+                  className="border rounded-full px-4 py-1 focus:outline-none transition-all duration-200 ease-out focus:ring-2 focus:ring-[#6E3299]/20 focus:border-[#6E3299]"
                 />
               </div>
               <Link
                 href="/aims-alumni-association"
-                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
               >
                 Alumni
               </Link>
               <Link
                 href="/eresources"
-                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light"
+                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
               >
                 Resources
               </Link>
@@ -185,11 +185,11 @@ export default function Header() {
             {/* Mobile Hamburger */}
             <motion.button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-xl z-50 bg-white"
-              whileHover={{ scale: 1.1 }}
+              className="lg:hidden text-xl z-50 bg-white rounded-lg p-2 hover:bg-gray-50 transition-all duration-200 ease-out"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{
-                duration: 0.2,
+                duration: 0.15,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
@@ -275,14 +275,14 @@ export default function Header() {
                   {MenuItems.map((menu, idx) => (
                     <li key={idx}>
                       <button
-                        className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white"
+                        className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white hover:bg-[#0C2165]/90 transition-all duration-200 ease-out"
                         onClick={() =>
                           setActive(active === menu.title ? null : menu.title)
                         }
                       >
                         {menu.title}
                         <FiX
-                          className={`transform transition ${active === menu.title ? "" : "rotate-45"
+                          className={`transform transition-all duration-300 ease-out ${active === menu.title ? "" : "rotate-45"
                             }`}
                         />
                       </button>
@@ -292,7 +292,7 @@ export default function Header() {
                             <li key={i} className="px-6 py-2">
                               <Link
                                 href={link.href || "#"}
-                                className="block text-gray-700"
+                                className="block text-gray-700 hover:text-[#6E3299] transition-all duration-200 ease-out"
                                 onClick={handleLinkClick}
                               >
                                 {link.name}
@@ -309,14 +309,14 @@ export default function Header() {
                 <div className="p-4 border-t border-gray-200">
                   <Link
                     href="/aims-alumni-association"
-                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
                     onClick={handleLinkClick}
                   >
                     Alumni
                   </Link>
                   <Link
                     href="#"
-                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light"
+                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
                     onClick={handleLinkClick}
                   >
                     Resources
