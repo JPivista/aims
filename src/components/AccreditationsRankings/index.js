@@ -6,8 +6,8 @@ const index = () => {
   return (
     <>
       <div>
-        <Banner/>
-        <Accreditationpage/>
+        <Banner />
+        <Accreditationpage />
       </div>
     </>
   )
