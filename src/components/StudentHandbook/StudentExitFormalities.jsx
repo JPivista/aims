@@ -5,14 +5,14 @@ import React from "react"
 const StudentExitFormalities = () => {
   return (
     <>
-      <div className="w-full bg-white py-10 lg:px-0 px-4">
+      <div className="container mx-auto md:pb-10 md:px-0 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Content */}
-          <div className="flex flex-col md:pl-8 pl-0 justify-start md:items-start items-center lg:order-1 order-2 md:ml-10 px-4 md:px-0">
+          <div className="flex flex-col justify-start md:items-start md:order-1 order-2">
             <h1 className="text-[#0C2165] playfair-300 text-5xl">
               Student Exit <br className="hidden md:block" /> Formalities
             </h1>
-            <div className="space-y-4 text-center md:text-left">
+            <div className="space-y-4">
               <p>
                 Once you successfully complete your final semester exams, you
                 need to follow the respective processes listed in the attached
@@ -21,7 +21,7 @@ const StudentExitFormalities = () => {
               </p>
             </div>
 
-            <div className="flex md:flex-row flex-col gap-4 py-6">
+            <div className="flex md:flex-row flex-col gap-4 py-6 items-center">
               <Button href="/student-handbook/Student-Handbook/Student Exit Formalities Process.pdf">
                 Student Exit Formalities Process
               </Button>

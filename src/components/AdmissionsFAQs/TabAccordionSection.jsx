@@ -203,7 +203,7 @@ const TabAccordionSection = () => {
             "MBA Application Deadline: 15 August 2025",
             "PG (non-MBA) Deadline: 31 August 2025",
             "UG Application Deadline: 15 August 2025",
-            "👉 View Important Dates",
+            "View Important Dates",
           ],
         },
         {

@@ -8,8 +8,8 @@ const AdmissionTabs = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className="py-10 bg-[#E1F9F4]">
-      <div className="container mx-auto">
+    <div className="py-6 md:py-10 bg-[#E1F9F4]">
+      <div className="container mx-auto px-4 md:px-0">
         {" "}
         {/* Reduced width for better centering */}
         {/* Buttons Row */}
@@ -53,9 +53,9 @@ const AdmissionTabs = ({ tabsData }) => {
               ease: "easeOut",
               duration: 0.5,
             }}
-            className="bg-white rounded-2xl mx-10"
+            className="bg-white rounded-2xl md:mx-10"
           >
-            <div className="px-4 sm:px-8 md:px-16 py-6">
+            <div className="px-4 md:px-16 py-6">
               {/* Heading */}
               <h5 className="text-2xl md:text-[24px] mb-6 monser-600 text-[#A22877]">
                 {tabsData[activeTab].heading}

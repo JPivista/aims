@@ -15,12 +15,12 @@ const ExaminationsContent = () => {
       </p>
 
       {/* Main Heading */}
-      <h5 className="text-xl md:text-[28px] monser-500  mb-3">
+      <h5 className="text-xl md:text-[28px] monser-500 text-[#0C2165] mb-3">
         Two-Part Evaluation System
       </h5>
 
       {/* Introductory sentence */}
-      <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed text-gray-800 mb-3">
+      <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed monser-400 text-[#0C2165] mb-3">
         Each semester is evaluated through:
       </p>
 
@@ -50,7 +50,7 @@ const ExaminationsContent = () => {
       </h5>
 
       {/* Paragraph with bold text */}
-      <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed text-gray-800 mb-3">
+      <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed monser-400 mb-3">
         This is an ongoing process that tracks how well you're hitting your
         academic targets. CIA is designed to measure how well students meet the{" "}
         <span className="monser-500">Intended Learning Outcomes (ILOs)</span>{" "}

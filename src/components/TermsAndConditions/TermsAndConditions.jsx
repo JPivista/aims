@@ -234,7 +234,7 @@ const TermsAndConditions = () => {
 
   const renderSection = (section, sectionIndex) => {
     return (
-      <div key={sectionIndex} className="space-y-4 sm:space-y-6">
+      <div key={sectionIndex} className="space-y-4">
         <h3 className="text-xl sm:text-2xl md:text-3xl text-[#0C2165] playfair-300">
           {section.heading}
         </h3>
@@ -246,7 +246,7 @@ const TermsAndConditions = () => {
                 key={`${sectionIndex}-${paragraphIndex}`}
                 className="flex items-start space-x-3 text-base sm:text-lg leading-relaxed monser-400"
               >
-                <span className="font-bold flex-shrink-0 text-lg sm:text-xl md:text-4xl -mt-2">
+                <span className="font-bold flex-shrink-0 text-lg sm:text-xl md:text-4xl md:-mt-2">
                   •
                 </span>
                 <p
@@ -307,7 +307,7 @@ const TermsAndConditions = () => {
 
   return (
     <>
-      <div className="bg-[#E1F9F4] py-16">
+      <div className="bg-[#E1F9F4] py-6 md:py-10">
         <h1 className="text-2xl lg:text-[65px] text-[#0C2165] playfair-300 text-center">
           Terms and Conditions
         </h1>
@@ -317,29 +317,24 @@ const TermsAndConditions = () => {
       </div>
 
       {/* Content Section */}
-      <div className="py-8 sm:py-12 md:py-16 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
-          <div className="max-w-4xl mx-auto relative">
-            {/* Semi-circle SVG on the right side */}
-            {/* <div className="fixed md:top-[60%] right-0 md:block hidden rotate-180 z-10">
-              <Image
-                src="/student-handbook/semi-circle.svg"
-                alt="School Circle Background"
-                width={120}
-                height={120}
-                className="rotate-180"
-              />
-            </div> */}
-
-            {/* Content */}
-            <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-8 sm:space-y-10">
-                {contentSections.map((section, index) =>
-                  renderSection(section, index)
-                )}
-              </div>
+      <div className="relative">
+        <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
+          <div className="max-w-4xl mx-auto ">
+            <div className="space-y-4">
+              {contentSections.map((section, index) =>
+                renderSection(section, index)
+              )}
             </div>
           </div>
+        </div>
+        <div className="absolute md:top-30 right-0 md:block hidden z-10">
+          <Image
+            src="/student-handbook/semi-circle.svg"
+            alt="School Circle Background"
+            width={120}
+            height={120}
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </>

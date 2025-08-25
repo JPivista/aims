@@ -174,10 +174,10 @@ const AicteAccreditations = () => {
   }
 
   return (
-    <div className="bg-[#E0F8F3] py-4 md:py-8 mb-10">
-      <div className="mx-4 md:mx-20">
+    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-0">
+      <div className="container mx-auto">
         <div className="mb-8">
-          <h3 className="text-2xl md:text-[65px] text-[#0C2165] playfair-300 mb-4">
+          <h3 className="text-4xl md:text-[65px] text-[#0C2165] playfair-300">
             Extension of Approvals (EoA)
           </h3>
         </div>

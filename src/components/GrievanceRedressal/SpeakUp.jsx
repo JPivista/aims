@@ -2,7 +2,7 @@ import React from "react"
 
 const SpeakUp = () => {
   return (
-    <div className="py-8 sm:py-12 md:py-8 bg-white">
+    <div className="py-6 md:py-10 bg-white">
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto text-center px-4 md:px-0">
           {/* Heading */}

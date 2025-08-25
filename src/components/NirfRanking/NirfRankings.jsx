@@ -63,7 +63,7 @@ const NirfRankings = () => {
     return (
       <div className="border-b border-black">
         <div
-          className="flex items-center justify-between py-2 md:py-2 cursor-pointer transition-colors duration-200"
+          className="flex items-center justify-between cursor-pointer transition-colors duration-200"
           onClick={() => handleYearClick(year)}
         >
           <div className="flex-1">
@@ -109,8 +109,8 @@ const NirfRankings = () => {
   }
 
   return (
-    <div className="bg-[#E0F8F3] py-4 md:py-6">
-      <div className="mx-4 md:mx-20">
+    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-0">
+      <div className="container mx-auto">
         {nirfYears.map((item, index) => (
           <NirfYearItem
             key={index}

@@ -4,28 +4,33 @@ import Image from "next/image"
 const RcContent = () => {
   return (
     <>
-      <div className="justify-center items-start py-8 md:py-16 flex flex-col md:px-0 px-4 relative overflow-hidden border-b border-gray-300 ">
-        <div className="absolute md:top-[8%] right-0 md:block hidden rotate-180">
+      <div className="relative">
+        <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+          <div className="justify-center items-start  flex flex-col overflow-hidden ">
+            <div className="md:max-w-4xl text-[20px] space-y-2">
+              <p>
+                Everything you need as a student - from handbooks, exams,
+                calendars, formalities - is housed right here.
+              </p>
+              <p>
+                It is our constant endeavour to create a student friendly
+                environment across all our facilities, please feel free to share
+                your suggestions if you feel anything can be improved further to
+                <span className="monser-500"> principal@theaims.ac.in.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute md:top-[0%] right-0 md:block hidden">
           <Image
             src="/student-handbook/semi-circle.svg"
             alt="School Circle Background"
             width={120}
             height={120}
-            className=" rotate-180"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="md:max-w-4xl  md:ml-20 text-[20px] px-4 md:px-0">
-          <p className="">
-            Everything you need as a student - from handbooks, exams, calendars,
-            formalities - is housed right here.
-          </p>
-          <p className="my-2">
-            It is our constant endeavour to create a student friendly
-            environment across all our facilities, please feel free to share
-            your suggestions if you feel anything can be improved further to
-            <span className="monser-500"> principal@theaims.ac.in.</span>
-          </p>
-        </div>
+        <div className="border-b w-full h-1/2 md:mt-6"></div>
       </div>
     </>
   )

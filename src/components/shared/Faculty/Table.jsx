@@ -29,11 +29,11 @@ const Table = ({ title, headers, data }) => {
   }, [])
 
   return (
-    <div className="py-8" ref={tableRef}>
-      <div className="container mx-auto">
+    <div className="pb-6 md:pb-10" ref={tableRef}>
+      <div className="container mx-auto px-4 md:px-0">
         {/* Title */}
         <div
-          className={`text-2xl md:text-[65px] mb-6 playfair-300 text-center transition-all duration-700 ease-out ${
+          className={`text-3xl md:text-[65px] mb-6 playfair-300 text-center transition-all duration-700 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -53,7 +53,7 @@ const Table = ({ title, headers, data }) => {
                 {headers.map((header, index) => (
                   <th
                     key={index}
-                    className={`bg-[#531675] text-white text-sm md:text-[20px] py-2 px-2 text-center border border-[#808080] monser-600 transition-all duration-500 ease-out ${
+                    className={`bg-[#531675] text-white text-xs md:text-sm lg:text-[20px] py-2 px-1 md:px-2 text-center border border-[#808080] monser-600 transition-all duration-500 ease-out ${
                       isVisible
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 -translate-y-4"
@@ -81,7 +81,7 @@ const Table = ({ title, headers, data }) => {
                   {row.map((cell, cellIndex) => (
                     <td
                       key={cellIndex}
-                      className={`text-sm sm:text-base md:text-lg py-3 sm:py-4 px-2 sm:px-4 text-center border border-gray-300 transition-all duration-200 ${
+                      className={`text-sm sm:text-base md:text-lg py-3 sm:py-4 px-2 sm:px-4 text-center border border-gray-300 transition-all duration-200 whitespace-nowrap sm:whitespace-normal ${
                         cellIndex === 1 || cellIndex === 3
                           ? "bg-[#E1F9F4]"
                           : "bg-white"

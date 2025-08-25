@@ -15,7 +15,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         {/* Empower Image - Desktop */}
 
         {/* Empower Image - Mobile */}
-        <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
+        {/* <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
           <Image
             src="/white-empower.svg"
             alt="Empower"
@@ -24,7 +24,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
             className=" w-30 h-30 md:w-45 md:h-45"
             priority
           />
-        </div>
+        </div> */}
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -52,12 +52,26 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                     />
                   </div>
                   {/* Hero Text */}
-                  <h1 className="text-white text-4xl leading-tight tracking-wider">
-                    <span className="playfair-300 text-3xl md:text-[60px]">
+                  <h1 className="text-white leading-tight tracking-wider">
+                    <span className="playfair-300 text-5xl md:text-[60px]">
                       NIRF
                     </span>
                   </h1>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-5 left-0 right-0 ">
+          <div className="container mx-auto py-4 px-4 ">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                />
               </div>
             </div>
           </div>
