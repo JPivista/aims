@@ -162,7 +162,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 1",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Management Innovation",
               "Fundamentals of Accountancy",
@@ -375,18 +375,18 @@ const CourseStructure = ({ programKey = "mba" }) => {
 
   return (
     <>
-      <div className="py-4 md:py-8 bg-white">
+      <div className="bg-white">
         <div className="container mx-auto px-4 md:px-0">
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-serif mb-2 ">
-            <span className="mba-program-text text-4xl md:text-[60px]">
+          <h3 className="mb-2 ">
+            <span className="mba-program-text text-4xl md:text-6xl">
               {getProgramTitle(programKey)}
             </span>{" "}
             <br />
-            <span className="text-4xl md:text-[60px] text-[#0C2165] playfair-300">
+            <span className="text-4xl md:text-6xl text-[#0C2165] playfair-300">
               Course Structure
             </span>
           </h3>
-          <p className="text-sm md:text-base lg:text-lg mb-4 md:mb-6">
+          <p className="text-sm md:text-base lg:text-lg mb-4">
             {getProgramDescription(programKey)}
           </p>
         </div>

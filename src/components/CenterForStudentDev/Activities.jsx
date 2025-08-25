@@ -19,7 +19,7 @@ const Activities = () => {
           </h5>
 
           {/* Bullet Points */}
-          <ul className="space-y-2 md:space-y-3 lg:space-y-3 list-disc list-outside mb-4 lg:mb-6">
+          <ul className="space-y-2 md:space-y-3 lg:space-y-3 list-disc list-outside ml-4 lg:ml-6 mb-4 lg:mb-6">
             {[
               "Student mentorship programs and close supervision of mentoring efforts",
               "Training in communication and soft skills through workshops and outbound learning",
@@ -32,7 +32,7 @@ const Activities = () => {
             ].map((activity, index) => (
               <li
                 key={index}
-                className="text-base sm:text-lg md:text-[18px] leading-relaxed monser-400"
+                className="text-[18px] leading-relaxed monser-400"
               >
                 {activity}
               </li>
@@ -40,14 +40,14 @@ const Activities = () => {
           </ul>
 
           {/* Paragraph */}
-          <h5 className="text-base md:text-[20px] monser-400 max-w-3xl">
+          <h5 className="text-[18px] md:text-[20px] monser-400 max-w-3xl">
             Each of these efforts contributes to professional development for
             college students in Bangalore, ensuring that they graduate with both
             capability and character.
           </h5>
         </div>
       </div>
-      <div className="absolute -bottom-1 -right-3">
+      <div className="absolute bottom-0 right-0 md:-bottom-1 md:-right-3 hidden md:block">
         <Image
           src="/student-development/activities-new.svg"
           alt="Student Activities"

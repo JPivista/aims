@@ -35,9 +35,9 @@ const WhyChoose = () => {
   ]
 
   return (
-    <div className="py-6 md:py-10">
-      <div className="container mx-auto px-4 md:px-6">
-        <p className="text-base sm:text-lg md:text-xl text-[#010066] max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto pb-6 sm:pb-8 md:pb-10 leading-relaxed px-4 md:px-0">
+    <div className="py-6 md:py-10 px-4 md:px-0">
+      <div className="container mx-auto">
+        <p className="text-base md:text-xl text-[#010066] max-w-4xl md:max-w-5xl monser-400 text-center mx-auto leading-relaxed">
           Experience the foundation of business leadership at AIMS Institutes,
           acknowledged as one of the Top B schools in India where precision,
           focus, and ambition drive every student's journey. The Bachelor of
@@ -45,8 +45,8 @@ const WhyChoose = () => {
           who aspire to chart a clear path in the world of business.
         </p>
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-4 playfair-300 leading-tight">
+        <div className="text-center py-4 md:py-6">
+          <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-4 playfair-300 leading-tight">
             Why Choose the <br />{" "}
             <span className="text-[#A22877] italic playfair-400 ">
               AIMS BBA?

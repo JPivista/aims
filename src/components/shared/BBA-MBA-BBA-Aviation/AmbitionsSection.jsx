@@ -24,7 +24,7 @@ const AmbitionsSection = ({
         />
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start">
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2 flex justify-center z-10">
@@ -42,7 +42,7 @@ const AmbitionsSection = ({
             <h2 className="text-3xl  md:text-[60px]  playfair-300 text-center md:text-left">
               {heading}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl monser-400 text-center md:text-left  leading-relaxed">
+            <p className="text-sm  md:text-lg lg:text-xl monser-400 text-center md:text-left">
               "{content}"
             </p>
 

@@ -98,19 +98,19 @@ const Overview = () => {
   ]
   return (
     <div className="bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10 ">
         {/* BBA Aviation Program overview */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between py-6 sm:py-8 md:py-10 px-4 md:px-0">
-          <h2 className="w-full lg:w-3/5 mb-4 text-center md:text-left tracking-wider">
-            <span className=" text-[#A22877] aviation-heading-2 text-4xl md:text-[60px] ">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
+          <h2 className="w-full max-w-lg text-center md:text-left">
+            <span className=" text-[#A22877] aviation-heading-2 text-4xl md:text-6xl ">
               BBA Aviation
             </span>
             <br />
-            <span className="text-[#0C2165] text-4xl md:text-[60px] playfair-300">
+            <span className="text-[#0C2165] text-4xl md:text-6xl playfair-300">
               Program Overview
             </span>
           </h2>
-          <p className="w-full lg:w-3/5 monser-400 text-base md:text-xl px-4 md:px-0">
+          <p className="w-full lg:w-3/5 monser-400 text-base md:text-xl">
             The BBA Aviation Management degree at AIMS is more than a classroom
             experience, it's a career compass. With a blend of theoretical
             foundations, practical case studies and industry engagement, the
@@ -120,7 +120,7 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline for Mobile */}
-        <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
+        <div className="flex justify-center py-6 md:py-8 ">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">

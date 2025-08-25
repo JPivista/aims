@@ -36,7 +36,7 @@ const ValueAddedPrograms = ({
 
   return (
     <>
-      <div className="py-10 bg-white">
+      <div className="py-6 md:py-10 bg-white">
         <div className="hidden lg:block absolute right-0  z-40">
           <Image
             src="/MBA/semi-circle.svg"
@@ -89,8 +89,9 @@ const ValueAddedPrograms = ({
                         alt="Arrow"
                         width={20}
                         height={20}
-                        className={`w-3 h-3 md:w-4 md:h-4 flex-shrink-0 transition-transform duration-200 ${expandedSection === program.title ? "rotate-90" : ""
-                          }`}
+                        className={`w-3 h-3 md:w-4 md:h-4 flex-shrink-0 transition-transform duration-200 ${
+                          expandedSection === program.title ? "rotate-90" : ""
+                        }`}
                       />
                     </h5>
                   </button>
@@ -108,7 +109,9 @@ const ValueAddedPrograms = ({
                           key={`${program.id}-content-${contentIndex}`}
                           className="flex items-start"
                         >
-                          <span className="mr-2 md:mr-3 mt-1 text-sm md:text-lg">•</span>
+                          <span className="mr-2 md:mr-3 mt-1 text-sm md:text-lg">
+                            •
+                          </span>
                           <p className="text-sm sm:text-base lg:text-[20px] leading-relaxed">
                             {item}
                           </p>
@@ -123,7 +126,9 @@ const ValueAddedPrograms = ({
             {/* Footer Disclaimer */}
             {disclaimer && (
               <div className="mt-4 md:mt-6">
-                <p className="text-sm md:text-[20px] monser-400">{disclaimer}</p>
+                <p className="text-sm md:text-[20px] monser-400">
+                  {disclaimer}
+                </p>
               </div>
             )}
           </div>

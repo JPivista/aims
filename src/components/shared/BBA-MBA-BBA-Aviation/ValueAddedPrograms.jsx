@@ -284,7 +284,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
       </div>
 
       {/* Program Highlight Section */}
-      <div className="py-10">
+      <div>
         {programKey === "mba" && <MBAProgramHighlight />}
         {programKey === "bba" && <BBAProgramHighlight />}
         {programKey === "bba-aviation" && <BBAAviationProgramHighlight />}
