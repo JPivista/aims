@@ -1,16 +1,20 @@
 "use client"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 function Seo({ title, description, path, metaImage, schemaType = "WebSite", additionalSchema = {} }) {
     // Dynamically get the domain name from window.location (client-side)
-    const domainName = typeof window !== "undefined" ? window.location.origin : ""
+    const [domainName, setDomainName] = useState("")
+
+    useEffect(() => {
+        setDomainName(window.location.origin)
+    }, [])
 
     // Base schema for AIMS Institutes
     const baseSchema = {
         "@context": "https://schema.org/",
         "@type": schemaType,
         name: "AIMS Institutes",
-        url: "https://www.aimsinstitutes.org/",
+        url: `${domainName}${path}`,
         description: description,
         ...additionalSchema
     }
