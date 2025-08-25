@@ -10,7 +10,7 @@ const GrievanceForm = () => {
     firstName: "",
     lastName: "",
     email: "",
-    country: null,
+    country: { value: "IN", label: "India" },
     phoneNumber: "",
     category: "",
     grievanceDetails: "",
@@ -71,7 +71,7 @@ const GrievanceForm = () => {
 
   // Phone number validation function
   const validatePhone = (phone) => {
-    const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/
+    const phoneRegex = /^[0-9]{10}$/
     return phoneRegex.test(phone.replace(/\s/g, ""))
   }
 
@@ -131,10 +131,20 @@ const GrievanceForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
+
+    // Special handling for phone number to only allow digits
+    if (name === "phoneNumber") {
+      const numericValue = value.replace(/[^0-9]/g, "")
+      setFormData((prev) => ({
+        ...prev,
+        [name]: numericValue,
+      }))
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }))
+    }
 
     // Clear error when user starts typing
     if (errors[name]) {
@@ -193,7 +203,7 @@ const GrievanceForm = () => {
         firstName: "",
         lastName: "",
         email: "",
-        country: null,
+        country: { value: "IN", label: "India" },
         phoneNumber: "",
         category: "",
         grievanceDetails: "",
@@ -332,7 +342,9 @@ const GrievanceForm = () => {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    placeholder="+ 91"
+                    placeholder="Enter 10 digit number"
+                    maxLength={10}
+                    pattern="[0-9]{10}"
                     className={`w-full px-4 py-3 bg-[#E1F9F4] text-gray-800 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#A22877] ${
                       errors.phoneNumber ? "ring-2 ring-red-500" : ""
                     }`}
