@@ -100,19 +100,19 @@ const Overview = () => {
   ]
   return (
     <div className="bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
         {/* MBA Program overview */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between lg:items-center py-6 sm:py-8 md:py-10">
-          <h2 className="w-full lg:w-2/5 mb-6 sm:mb-8 lg:mb-0 text-center lg:text-left tracking-wider">
-            <span className="mba-program-text text-5xl md:text-[60px]">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
+          <h2 className="w-full max-w-2xl text-center md:text-left leading-relaxed tracking-wider">
+            <span className="mba-program-text text-4xl md:text-6xl">
               MBA Program
             </span>
             <br />
-            <span className="text-5xl md:text-[60px] font-bold text-[#0C2165] playfair-300">
+            <span className="text-4xl md:text-6xl font-bold text-[#0C2165] playfair-300">
               Overview
             </span>
           </h2>
-          <p className="w-full lg:w-3/5 monser-400 text-base  md:text-[18px] leading-relaxed text-center md:text-left">
+          <p className="monser-400 text-base md:text-xl text-center md:text-left max-w-3xl">
             Since 1998, the MBA program at AIMS Institutes has been equipping
             future leaders to aim sharp and solve complex business challenges.
             We train students to build strong conceptual and analytical
@@ -124,7 +124,7 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline */}
-        <div className="flex justify-center px-2 md:px-6 mb-6 md:mb-0">
+        <div className="flex justify-center py-6 md:py-8 ">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">

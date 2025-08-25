@@ -4,19 +4,10 @@ import Aiming from "./Aiming"
 import Activities from "./Activities"
 import NotableCollaborations from "./NotableCollaborations"
 
-const CentreForCommunityService = () => {
-  const communityServiceAnnouncements = [
-    "APPLY NOW FOR COMMUNITY SERVICE PROGRAMS 2025-26",
-    "APPLY NOW FOR SOCIAL IMPACT INITIATIVES 2025-26",
-    "APPLY NOW FOR COMMUNITY SERVICE PROGRAMS 2025-26",
-  ]
-
+const CentreForCommunityService = ({ announcements }) => {
   return (
     <>
-      <HeroBanner
-        announcements={communityServiceAnnouncements}
-        pageType="centre-for-community-service"
-      />
+      <HeroBanner announcements={announcements} />
       <Aiming />
       <Activities />
       <NotableCollaborations />

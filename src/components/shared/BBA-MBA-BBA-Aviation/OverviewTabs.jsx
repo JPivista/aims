@@ -18,11 +18,11 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   }, [activeTab])
 
   return (
-    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-10 w-full py-6 sm:py-8 md:py-6 container mx-auto">
+    <div className="w-full container mx-auto flex flex-col items-center justify-center">
       {/* Tabs */}
       <div
         ref={containerRef}
-        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10 px-4 sm:px-6 md:px-0 w-full md:w-auto"
+        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-0 w-full md:w-auto"
       >
         {tabs.map((tab) => (
           <button

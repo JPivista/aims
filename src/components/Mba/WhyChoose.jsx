@@ -27,10 +27,10 @@ const WhyChoose = () => {
           {/* Mobile Version - Coded Design */}
           <div className="block md:hidden">
             <div className="text-center mb-8">
-              <h1 className="text-[#531675] text-2xl md:text-[40px] playfair-500 mb-6">
+              <h2 className="text-[#531675] text-4xl playfair-500 mb-6">
                 Why Choose the <br />{" "}
                 <span className="playfair-500 italic">AIMS MBA?</span>
-              </h1>
+              </h2>
             </div>
 
             <div className="space-y-4">

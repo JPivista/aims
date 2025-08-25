@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 
 const TabCourseStructure = ({ courseData }) => {
@@ -15,8 +14,8 @@ const TabCourseStructure = ({ courseData }) => {
   }
 
   return (
-    <div className="bg-white py-4">
-      <div className="container mx-auto px-4 lg:px-0 ">
+    <div className="bg-white pb-6 md:pb-10">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
             {/* Left Column - Navigation */}
@@ -75,11 +74,11 @@ const TabCourseStructure = ({ courseData }) => {
                             }}
                             className="flex items-center w-full"
                           >
-                            <div className="bg-[#A22877] rounded-xl p-4 md:p-6 text-white w-80 md:w-[550px] lg:w-[750px]">
+                            <div className="bg-[#A22877] rounded-xl p-4 md:p-6 text-white w-80 md:w-[550px] lg:w-[750px] ">
                               <h5 className="text-[30px]  mb-3 md:mb-4 monser-400 md:text-[36px] ">
                                 {tab.label}
                               </h5>
-                              <ul className="text-white list-disc list-inside">
+                              <ul className="text-white list-disc list-outside ml-4">
                                 {(() => {
                                   let courseNumber = 1
                                   return tab.courses.map((course, index) => {
@@ -106,7 +105,7 @@ const TabCourseStructure = ({ courseData }) => {
                                       return (
                                         <li
                                           key={index}
-                                          className="text-sm md:text-base break-words mb-1 monser-400"
+                                          className="text-sm md:text-base break-words mb-1 monser-400 "
                                         >
                                           {course}
                                         </li>

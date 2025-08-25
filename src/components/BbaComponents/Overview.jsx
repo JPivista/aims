@@ -98,19 +98,19 @@ const Overview = () => {
   ]
   return (
     <div className="bg-[#FFEFE3]">
-      <div className="container mx-auto px-4 md:px-0 pb-8 md:pb-10 ">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
         {/* BBA Program overview */}
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 justify-between lg:items-center py-6 sm:py-8 md:py-10">
-          <h2 className="w-full lg:w-2/5 mb-6 sm:mb-8 lg:mb-0 text-center lg:text-left">
-            <span className="mba-program-text text-5xl md:text-[60px]">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
+          <h2 className="w-full max-w-lg text-center md:text-left">
+            <span className="mba-program-text text-4xl md:text-6xl">
               BBA Program
             </span>
             <br />
-            <span className="text-5xl md:text-[60px] font-bold text-[#0C2165] playfair-300">
+            <span className="text-4xl md:text-6xl font-bold text-[#0C2165] playfair-300">
               Overview
             </span>
           </h2>
-          <p className="w-full lg:w-3/5 monser-400 text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left">
+          <p className="monser-400 text-base md:text-xl text-center md:text-left">
             Our BBA program helps students lock in on their goals early and
             develop the mindset, discipline, and skill sets to reach them.
             Whether aiming for a corporate role or further studies like an MBA,
@@ -119,7 +119,7 @@ const Overview = () => {
         </div>
 
         {/* Program Details For Mobile */}
-        <div className="flex justify-center px-2 md:px-0 mb-6 md:mb-0">
+        <div className="flex justify-center py-6 md:py-8 ">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">

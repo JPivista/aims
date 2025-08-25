@@ -4,7 +4,7 @@ import ApplicationMarquee from "@/shared/ApplicationMarquee"
 
 const HeroBanner = ({
   announcements,
-  pageType = "centre-for-community-service",
+  pageType = "centreForInternationalLiaison",
 }) => {
   return (
     <>
@@ -16,7 +16,7 @@ const HeroBanner = ({
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/community-service/mobile-banner.png')]" />
 
         {/* Empower Image*/}
-        <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
+        {/* <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
           <Image
             src="/white-empower.svg"
             alt="Empower"
@@ -25,7 +25,7 @@ const HeroBanner = ({
             className="w-30 h-30 md:w-45 md:h-45"
             priority
           />
-        </div>
+        </div> */}
 
         {/* Bottom Content Container */}
         <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-8">
@@ -41,6 +41,20 @@ const HeroBanner = ({
                     </span>
                   </h1>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-5 left-0 right-0 ">
+          <div className="container mx-auto py-4 px-4 ">
+            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
+              <div className="flex items-center">
+                <Image
+                  src="/white-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                />
               </div>
             </div>
           </div>

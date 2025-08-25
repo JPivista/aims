@@ -4,19 +4,12 @@ import Aiming from "./Aiming"
 import WhyItMatters from "./WhyItMatters"
 import Activities from "./Activities"
 
-const CenterForStudentDev = () => {
-  const studentDevAnnouncements = [
-    "APPLY NOW FOR STUDENT DEVELOPMENT PROGRAMS 2025-26",
-    "APPLY NOW FOR CAREER GUIDANCE SERVICES 2025-26",
-    "APPLY NOW FOR STUDENT DEVELOPMENT PROGRAMS 2025-26",
-  ]
+const CenterForStudentDev = ({ announcements }) => {
+  
 
   return (
     <>
-      <HeroBanner
-        announcements={studentDevAnnouncements}
-        pageType="center-for-student-dev"
-      />
+      <HeroBanner announcements={announcements} />
       <Aiming />
       <Activities />
       <WhyItMatters />

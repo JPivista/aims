@@ -6,7 +6,7 @@ const FAQSection = () => {
   return (
     <div className="relative">
       <div>
-        <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-12 md:py-10 container mx-auto">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-12 py-6 md:py-10 container mx-auto">
           {/* Left Side - Heading and Instructions (5/6 width) */}
           <div className="w-full px-4 md:px-0 max-w-5xl">
             {/* Heading */}
