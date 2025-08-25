@@ -159,12 +159,12 @@ const OpenAccessResources = () => {
   }
 
   return (
-    <div className="mx-4 md:mx-20 py-4 md:py-8">
-      <div className="mb-8 md:mb-12">
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0C2165] playfair-300 mb-4">
+    <div className="container mx-auto px-4 md:px-0 pt-6 md:pt-10 pb-3 md:pb-6">
+      <div className="mb-4">
+        <h3 className="text-2xl md:text-4xl playfair-300  text-[#0C2165] -mt-4">
           Open Access Resources
         </h3>
-        <p className="text-base md:text-lg">
+        <p className="text-base md:text-lg monser-400 text-[#0C2165]">
           Freely available digital platforms that support academic reference,
           coursework, and research.
         </p>

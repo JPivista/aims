@@ -29,7 +29,7 @@ const StudentHandbookMain = () => {
   }
 
   return (
-    <div className="py-8 sm:py-12 md:py-10 bg-[#E1F9F4]">
+    <div className="py-6 md:py-10 bg-[#E1F9F4]">
       <div className="container mx-auto px-4 md:px-0">
         <div className="max-w-8xl">
           {/* Buttons Row */}
@@ -84,7 +84,7 @@ const StudentHandbookMain = () => {
                 ease: "easeOut",
                 duration: 0.5,
               }}
-              className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 mx-2 md:mx-0"
+              className="bg-white rounded-lg sm:rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8"
             >
               <div className="ml-2 sm:ml-4 md:ml-10">
                 {/* Content */}

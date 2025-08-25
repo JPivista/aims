@@ -21,9 +21,9 @@ const DigitalTools = () => {
 
   return (
     <>
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 py-4 md:py-8">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
         <div className="text-center max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-[65px] text-[#0C2165] mb-4 md:mb-6 playfair-300">
+          <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-4 md:mb-6 playfair-300">
             Digital Tools That Bring
             <br />
             The World of Knowledge to You
@@ -38,11 +38,11 @@ const DigitalTools = () => {
 
       {/* Subscribed Resources Section */}
       <div
-        className="py-6 md:py-10 border-b mx-4 md:ml-20 md:mr-20"
+        className="pb-6 md:pb-10 border-b border-gray-300 container mx-auto px-4 md:px-0"
         style={{ borderColor: "rgba(0, 0, 0, 0.20)" }}
       >
         <div className="mb-4">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#0C2165] playfair-300">
+          <h3 className="text-3xl md:text-5xl text-[#0C2165] playfair-300">
             Subscribed Resources
           </h3>
         </div>

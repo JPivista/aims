@@ -20,8 +20,8 @@ const HowToApply = () => {
   return (
     <>
       {/* Hero Banner Text */}
-      <div className="bg-[#FCE1E1] py-10">
-        <p className="text-base md:text-xl  max-w-4xl lg:max-w-5xl monser-400 text-center mx-auto px-4 sm:px-6 md:px-8 leading-relaxed">
+      <div className="bg-[#FCE1E1] py-6 md:py-10">
+        <p className="text-base md:text-xl  max-w-5xl monser-400 text-center mx-auto px-4 md:px-8 text-[#0C2165]">
           Every future begins with a first step, and at AIMS, we make sure that
           step is clear, structured, and supportive. Whether you're aiming to
           enter an undergraduate course, a postgraduate program, or our flagship
@@ -31,15 +31,15 @@ const HowToApply = () => {
       </div>
 
       {/* How to Apply */}
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8 md:gap-12 py-6  md:py-10 w-full">
+      <div className="container mx-auto px-4 md:px-0 py-6  md:py-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-12  w-full">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
-            <h2 className="text-3xl  md:text-5xl lg:text-[65px] text-[#A22877] mb-3  playfair-300 leading-tight">
+            <h2 className="text-4xl  md:text-6xl  text-[#A22877] mb-3  playfair-300 leading-tight">
               How to Apply
             </h2>
 
-            <p className="text-base md:text-xl leading-relaxed monser-400">
+            <p className="text-base md:text-xl  monser-400">
               You can apply for admission online by clicking the "Apply Now"
               button at the top-right of this website. The application is
               straightforward and designed to support students at every stage.
@@ -50,8 +50,8 @@ const HowToApply = () => {
                 Before you begin, we recommend reviewing:
               </h5>
 
-              <ul className="space-y-2 sm:space-y-3 list-disc list-inside">
-                <li className="text-base md:text-lg monser-400 leading-relaxed">
+              <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-0">
+                <li className="text-base md:text-lg monser-400 leading-relaxed ">
                   The <span className="monser-600">eligibility criteria</span>{" "}
                   on your chosen program page
                 </li>
@@ -80,24 +80,23 @@ const HowToApply = () => {
             />
           </div>
         </div>
-
-        {/* Important Deadlines */}
       </div>
-      <div className="bg-[#E1F9F4] py-8 sm:py-12 md:py-16">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
-          <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h1 className="text-[#A22877] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-2 leading-tight">
+      {/* Important Deadlines */}
+      <div className="bg-[#E1F9F4] py-6 md:py-10">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-6 md:mb-10 -mt-4">
+            <h2 className="text-[#A22877] text-4xl md:text-6xl playfair-300 mb-2 leading-tight">
               Important Deadlines
-            </h1>
+            </h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
             {/* Table Header */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4 text-white">
-              <div className="bg-[#002561] p-3 sm:p-4 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3  text-white">
+              <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
                 Admission Type
               </div>
-              <div className="bg-[#002561] p-3 sm:p-4 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+              <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
                 Application Deadline
               </div>
             </div>

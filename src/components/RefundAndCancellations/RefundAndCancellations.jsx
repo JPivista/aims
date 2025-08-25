@@ -97,53 +97,46 @@ const RefundAndCancellations = () => {
 
   return (
     <>
-      <div className="bg-[#E1F9F4] py-16">
+      <div className="bg-[#E1F9F4] py-6 md:py-10 px-4 md:px-0">
         <h1 className="text-2xl lg:text-[65px] text-[#0C2165] playfair-300 text-center">
           Refund & Cancellations
         </h1>
       </div>
 
       {/* Content Section */}
-      <div className="py-8 sm:py-12 md:py-16 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
-          <div className="max-w-4xl mx-auto relative">
-            {/* Semi-circle SVG on the right side */}
-            <div className="absolute md:bottom-[6%] -right-70 md:block hidden rotate-180">
-              <Image
-                src="/student-handbook/semi-circle.svg"
-                alt="School Circle Background"
-                width={120}
-                height={120}
-                className="rotate-180"
-              />
+      <div className="relative ">
+        <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
+          <div className="max-w-4xl mx-auto relative space-y-6">
+            <div className="space-y-4">
+              <h2 className="text-2xl md:text-[35px] text-[#0C2165] monser-500">
+                Terms & Conditions
+              </h2>
+              <p className="text-base md:text-[20px] monser-400  max-w-4xl mx-auto px-4 md:px-0">
+                The terms and conditions mentioned here apply to the User who
+                uses the Online Services provided for any payment made to AIMS
+                Institutes (AIMS). Please read these terms and conditions
+                carefully. By authorising a payment to AIMS through the online
+                payment service ("the service"), it would be treated as a deemed
+                acceptance to these terms and conditions. AIMS reserves all the
+                rights to amend these terms and conditions at any time without
+                prior intimation. It is the responsibility of the User to have
+                read the terms and conditions before using the Service.
+              </p>
             </div>
-
-            {/* Content */}
-            <div className="space-y-6 sm:space-y-8 px-4 md:px-0">
-              <div className="space-y-8 sm:space-y-10">
-                <div className="space-y-4 sm:space-y-6">
-                  <h2 className="text-2xl md:text-[35px] text-[#0C2165] monser-500">
-                    Terms & Conditions
-                  </h2>
-                  <p className="text-base md:text-[20px] monser-400  max-w-4xl mx-auto px-4 md:px-0">
-                    The terms and conditions mentioned here apply to the User
-                    who uses the Online Services provided for any payment made
-                    to AIMS Institutes (AIMS). Please read these terms and
-                    conditions carefully. By authorising a payment to AIMS
-                    through the online payment service ("the service"), it would
-                    be treated as a deemed acceptance to these terms and
-                    conditions. AIMS reserves all the rights to amend these
-                    terms and conditions at any time without prior intimation.
-                    It is the responsibility of the User to have read the terms
-                    and conditions before using the Service.
-                  </p>
-                </div>
-                {contentSections.map((section, index) =>
-                  renderSection(section, index)
-                )}
-              </div>
-            </div>
+            {contentSections.map((section, index) =>
+              renderSection(section, index)
+            )}
           </div>
+        </div>
+
+        <div className="absolute md:top-30 right-0 md:block hidden">
+          <Image
+            src="/student-handbook/semi-circle.svg"
+            alt="School Circle Background"
+            width={120}
+            height={120}
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </>

@@ -134,11 +134,11 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <div className="bg-[#E1F9F4] py-16">
+      <div className="bg-[#E1F9F4] py-6 md:py-10 px-4 md:px-0">
         <h1 className="text-2xl lg:text-[65px] text-[#0C2165] playfair-300 text-center">
           Privacy Policy
         </h1>
-        <p className="text-base  md:text-[20px] monser-400 text-center max-w-5xl mx-auto px-4 md:px-0">
+        <p className="text-base  md:text-[20px] monser-400 text-center max-w-5xl mx-auto">
           Your privacy is important to AIMS Institutes. This privacy statement
           provides information about the personal information that AIMS
           Institutes collects and how AIMS Institutes uses that personal
@@ -147,29 +147,25 @@ const PrivacyPolicy = () => {
       </div>
 
       {/* Content Section */}
-      <div className="py-8 sm:py-12 md:py-16 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+      <div className="relative">
+        <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
           <div className="max-w-4xl mx-auto relative">
-            {/* Semi-circle SVG on the right side */}
-            {/* <div className="fixed md:top-[20%] right-0 md:block hidden rotate-180 z-10">
-              <Image
-                src="/student-handbook/semi-circle.svg"
-                alt="School Circle Background"
-                width={120}
-                height={120}
-                className="rotate-180"
-              />
-            </div> */}
-
             {/* Content */}
-            <div className="space-y-6 sm:space-y-8 px-4 md:px-0">
-              <div className="space-y-8 sm:space-y-10">
-                {contentSections.map((section, index) =>
-                  renderSection(section, index)
-                )}
-              </div>
+            <div className="space-y-4">
+              {contentSections.map((section, index) =>
+                renderSection(section, index)
+              )}
             </div>
           </div>
+        </div>
+        <div className="absolute md:top-30 right-0 md:block hidden z-10">
+          <Image
+            src="/student-handbook/semi-circle.svg"
+            alt="School Circle Background"
+            width={120}
+            height={120}
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </>

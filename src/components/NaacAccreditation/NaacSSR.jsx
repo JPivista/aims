@@ -426,9 +426,9 @@ const NaacSSR = () => {
   }
 
   return (
-    <div className="py-4 md:py-6 lg:py-8">
-      <div className="mx-4 md:mx-20">
-        <div className="mb-6 md:mb-8">
+    <div className="py-6 md:py-10">
+      <div className="container mx-auto px-4 md:px-0">
+        <div className="mb-6">
           <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#0C2165] playfair-300 mb-2 md:mb-3">
             NAAC SSR
           </h3>

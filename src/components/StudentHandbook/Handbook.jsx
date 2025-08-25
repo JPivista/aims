@@ -4,7 +4,7 @@ import Button from "@/shared/Button"
 
 const Handbook = () => {
   return (
-    <div className="w-full md:py-10 py-4 lg:px-0 px-4">
+    <div className="container mx-auto md:py-10 py-6 md:px-0 px-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-8">
         {/* Left Column - Image */}
         <div className="flex flex-col gap-4 col-span-1">
@@ -18,12 +18,12 @@ const Handbook = () => {
         </div>
 
         {/* Right Column - Content */}
-        <div className="flex flex-col md:gap-6 px-4 md:px-0">
-          <h3 className="text-4xl lg:text-5xl playfair-300 text-[#0C2165] leading-tight text-center md:text-left">
+        <div className="flex flex-col md:gap-6">
+          <h3 className="text-4xl md:text-6xl playfair-300 text-[#0C2165] leading-tight">
             Student Handbook
           </h3>
 
-          <div className="text-gray-800 leading-relaxed space-y-4 text-center md:text-left">
+          <div className="text-gray-800 leading-relaxed space-y-4">
             <p className="text-lg">
               Please download the student handbook to understand various
               resources and facilities available to you as a student of this

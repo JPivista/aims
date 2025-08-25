@@ -5,12 +5,10 @@ import TabAccordionSection from "./TabAccordionSection"
 const FAQSection = () => {
   return (
     <div className="relative">
-      <div>
-        <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-12 py-6 md:py-10 container mx-auto">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-12 pb-6 md:pb-10">
           {/* Left Side - Heading and Instructions (5/6 width) */}
-          <div className="w-full px-4 md:px-0 max-w-5xl">
-            {/* Heading */}
-
+          <div className="w-full max-w-5xl">
             <p className="text-base sm:text-lg md:text-[18px] leading-relaxed">
               At AIMS Institutes, we believe that financial constraints should
               never stand in the way of your academic goals. That's why we
@@ -24,7 +22,7 @@ const FAQSection = () => {
         </div>
         <TabAccordionSection />
       </div>
-      <div className="hidden lg:block absolute top-[1%] -right-12  z-10">
+      <div className="hidden lg:block absolute top-[1%] -right-22  z-10">
         <Image
           src="/admission-process/circle.svg"
           alt="General Instructions"

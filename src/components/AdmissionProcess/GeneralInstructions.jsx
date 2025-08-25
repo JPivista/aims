@@ -16,23 +16,23 @@ const GeneralInstructions = () => {
     <>
       {/* Main Content - Two Flex Containers */}
       <div className="relative">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row gap-6 md:gap-12 py-10">
+        <div className="container mx-auto py-6 md:py-10 px-4 md:px-0">
+          <div className="flex flex-col lg:flex-row gap-6 md:gap-12 ">
             {/* Left Side - Heading and Instructions (5/6 width) */}
-            <div className="w-full lg:w-5/6 px-4 sm:px-6 md:px-8 lg:ml-4 xl:ml-20">
+            <div className="w-full lg:w-5/6">
               {/* Heading */}
-              <h1 className="text-[#0C2165] text-2xl sm:text-3xl md:text-5xl lg:text-[72px] playfair-300 mb-4 sm:mb-6 md:mb-8 leading-tight">
+              <h1 className="text-[#0C2165] text-4xl md:text-6xl playfair-300 mb-4 md:mb-8 leading-tight">
                 General <br className="hidden md:block" />
                 Instructions
               </h1>
 
               {/* Instructions List */}
               <div className="space-y-3 sm:space-y-4">
-                <ul className="space-y-2 sm:space-y-3 list-disc pl-6">
+                <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-0">
                   {instructions.map((instruction, index) => (
                     <li
                       key={index}
-                      className="text-base md:text-lg lg:text-[20px] monser-400 leading-relaxed"
+                      className="text-[18px] monser-400 leading-relaxed"
                     >
                       {instruction}
                     </li>
