@@ -89,7 +89,7 @@ export default function SkillsSection() {
         ))}
       </div>
 
-      <div className="container mx-auto text-center pb-10 px-4">
+      <div className="container mx-auto text-center py-5 px-4">
         <p>
           Company-specific orientation sessions are held ahead of every placement
           drive organised by the institution.

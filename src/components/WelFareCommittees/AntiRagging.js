@@ -18,7 +18,7 @@ const AntiRagging = () => {
           {/* Right Side Image */}
           <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
             <Image
-              src="/welfare-committees/anti-ragging.png"
+              src="/welfare-committees/anti-ragging.webp"
               alt="students"
               width={400}
               height={300}

@@ -7,7 +7,7 @@ const SectorWise = () => {
       <div className="container mx-auto flex lg:flex-row flex-col py-10 justify-center items-center gap-10">
         <div className="lg:w-1/2">
           <Image
-            src="/placements-mba/pgdm/sector-wise.png"
+            src="/placements-mba/pgdm/sector-wise.webp"
             alt="Recruiters"
             width={1000}
             height={1000}

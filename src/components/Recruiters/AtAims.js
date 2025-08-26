@@ -30,7 +30,7 @@ const AtAims = () => {
         </div>
         <div>
           <Image
-            src="/recruiters/aims.png"
+            src="/recruiters/aims.webp"
             alt="Recruiters"
             width={1350}
             height={1350}
