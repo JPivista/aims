@@ -6,10 +6,10 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
   return (
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/accreditations/accreditations.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/accreditations/accreditations_converted.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/accreditations/accreditations-mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/accreditations/accreditations-mobile-banner_converted.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div

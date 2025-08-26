@@ -40,7 +40,7 @@ const Educationpage = () => {
           <div className="md:w-1/2 flex flex-wrap gap-6 justify-start md:justify-center items-center md:min-h-full">
             <div className="bg-white rounded-lg shadow p-4 flex items-center justify-center w-40 h-24">
               <Image
-                src="/educationloan/HDFC.png"
+                src="/educationloan/HDFC_converted.webp"
                 alt="HDFC Credila"
                 width={140}
                 height={60}
@@ -77,8 +77,8 @@ const Educationpage = () => {
         <div className="absolute -right-20 bottom-0 top-20 opacity-20 justify-start md:justify-center items-center md:min-h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="150"
-            height="150"
+            width="180"
+            height="180"
             viewBox="0 0 150 150"
             fill="none"
           >

@@ -7,10 +7,10 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[80vh] md:h-[76vh] lg:h-[75vh] xl:h-[76vh] 2xl:h-[80.5vh] 3xl:h-[90vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/about-aims/About-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/about-aims/About-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/about-aims/About-aims-mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/about-aims/About-aims-mobile-banner.webp')]" />
 
         {/* Gradient Overlay */}
         <div

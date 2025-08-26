@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const AlumniinHospitalit = () => {
   const bcomAlumniData = {
-    image: "/life-at-aims/sports-img-1.png",
+    image: "/life-at-aims/sports-img-1.webp",
     subtitle: "Annual Sports Meet",
     description: `Our much-anticipated AIMS Annual Sports Day brings together students, faculty, and staff in a day-long celebration of fitness, friendly competition, and community spirit. Trophies, cheers, and memories await!`,
   }
@@ -32,11 +32,11 @@ const AlumniinHospitalit = () => {
             </div>
 
             {/* Right - Image */}
-            <div className="lg:w-70% flex justify-center">
+            <div className="lg:w-70% flex justify-center -mt-14">
               <div className="w-72 h-72 lg:w-80 lg:h-80 flex items-center justify-center">
                 <div className="w-full h-full rounded-full overflow-hidden p-4 flex items-center justify-center">
                   <Image
-                    src="/life-at-aims/sports-img-2.png"
+                    src="/life-at-aims/sports-img-2.webp"
                     alt="Student Club"
                     width={320}
                     height={320}

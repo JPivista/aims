@@ -707,183 +707,811 @@ const PatentsTimeline = () => {
         ),
       },
       {
-        title: "AIMS SCHOOL OF LIBERAL & PERFORMING ARTS",
-        titles: "India Today",
+        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM",
+        titles: "GHRDC Hotel Management Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>3rd Best Emerging College in Social Work, Bangalore.</li>
+            <li>
+              2nd Best Private Hotel Management Institute in Karnataka under
+              “Super Excellence” Category.
+            </li>
+            <li>
+              5th Best Private Hotel Management Institute in India under “Super
+              Excellence” Category.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week Best Hotel Management Schools Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best Private Hotel Management Institute in Bangalore.</li>
+            <li>5th Best Private Hotel Management Institute in India.</li>
           </ul>
         ),
       },
     ],
     2018: [
       {
-        title: "Cloud-Based HR Management Systems",
-        description: "Dr. Rekha Singh",
+        titles: "NIRF 2018",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Among Top 100 Institutes in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI-Powered Precision Agriculture",
-        description: "Prof. Varun Deshpande",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Times of India B-School Survey",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best B-School in Karnataka.</li>
+            <li>14th Best B-School in South Zone.</li>
+          </ul>
+        ),
       },
       {
-        title: "Smart Wearable Health Trackers with Predictive Analytics",
-        description: "Dr. Nisha Bhat",
+        titles: "The Week Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd top B-School in Bengaluru.</li>
+            <li>7th top Private B-School in South Zone.</li>
+            <li>10th top B-School in South Zone.</li>
+            <li>26th top Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Business Today B -School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Private B-School in Bangalore.</li>
+            <li>29th Best Private B-School in India.</li>
+            <li>52nd best B-School in India.</li>
+            <li>16th Best B-School in South.</li>
+            <li>10th Best Private B-School in South.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Hotel Management Institution in Karnataka.</li>
+            <li>5th Best Private Hotel Management in India.</li>
+            <li>
+              13th Best Institution ranked by Faculty, Publication, Research,
+              Consultancy, CDP and other programmes.
+            </li>
+            <li>
+              13th Best Institution ranked by Placement, Social Responsibility,
+              Networking & Industry Interface.
+            </li>
+          </ul>
+        ),
       },
     ],
     2017: [
       {
-        title: "Blockchain-Based Supply Chain Verification System",
-        description: "Dr. Rajesh Kumar",
+        titles: "NIRF 2017",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Among Top 100 Institutes in India.</li>
+            <li>Among Top 6 Management Institutes in Karnataka.</li>
+          </ul>
+        ),
       },
       {
-        title: "Machine Learning Algorithm for Predictive Maintenance",
-        description: "Prof. Lisa Wang",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Times of India B-School Survey 2017",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Top B-School in Karnataka.</li>
+            <li>Top Private B-School in Bangalore.</li>
+            <li>2nd Best Private B-School in Bangalore.</li>
+            <li>8th Best Private B-School in South India.</li>
+            <li>12th Best B-School in South India.</li>
+            <li>15th Best B-School in India for Learning Experience.</li>
+            <li>22nd Best Private B-School in India.</li>
+            <li>25th Best B-School in India.</li>
+            <li>33rd Best Private B-School in India.</li>
+            <li>49th Best B-School in India.</li>
+            <li>Business Today B-School Survey 2017</li>
+            <li>22nd Best Private B-School in India.</li>
+            <li>15th Best B-School in India for Learning Experience.</li>
+            <li>Top Private B-School in Bangalore</li>
+          </ul>
+        ),
       },
       {
-        title: "Digital Transformation Framework for SMEs",
-        description: "Dr. Carlos Mendez",
+        titles: "Business Standard- IMRB International Survey, 2017",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>&quot;Category &quot;A&quot; Business School - Super League A4&quot;.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "GHRDC Survey, 2017",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Private Hotel Management Institute in Karnataka.</li>
+            <li>
+              5th Best Private Hotel Management Institute in India under “Super
+              Excellence” Category.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week, June 2017",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              3rd Rank - Top Private Hotel Management Colleges in South Zone.
+            </li>
+            <li>6th Rank - Top Private Hotel Management Colleges in India.</li>
+            <li>17th Rank - Top Hotel Management Colleges in India.</li>
+          </ul>
+        ),
       },
     ],
     2016: [
       {
-        title: "Cloud-Based Learning Management System",
-        description: "Dr. Priya Sharma",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Outlook Business, 2016",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>49th Rank all over India - Top 100 Management Schools.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI-Powered Customer Service Automation",
-        description: "Prof. David Kim",
+        titles: "'The Week', 2016",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>53rd Place in all over India - out of 156 B - Schools.</li>
+            <li>34th Place in Private B - Schools.</li>
+            <li>9th Place in South Zone private B - Schools.</li>
+            <li>4th Place in Bangalore B - Schools.</li>
+          </ul>
+        ),
       },
       {
-        title: "Sustainable Waste Management Solution",
-        description: "Dr. Maria Garcia",
+        titles: "Times of India B-School Survey 2016.",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked No. 1 Private B-School in South zone.</li>
+            <li>No. 1 Private B-School in Karnataka.</li>
+            <li>2nd Best B-School in Karnataka.</li>
+            <li>3rd Best B-School in South-Zone.</li>
+            <li>14th Best Private B-School in India.</li>
+            <li>27th Best B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Business Standard- IMRB International Survey ,17 June 2016",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>&quot;Category &quot;A&quot; Business School - Super League A4&quot;.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Outlook Money",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>10th Rank - Top 25 Financial Specialists in India.</li>
+            <li>9th Rank - Top 10 Business School in Metros.</li>
+            <li>10th Rank - Top 10 Business School by Student Intake.</li>
+            <li>
+              4th Rank - Top 10 Business School by Infra & Living Experience.
+            </li>
+            <li>6th Rank - Top 10 Business School by Industry Interface.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "GHRDC Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>3rd Best Top Private Hotel Management Institutes in India.</li>
+            <li>
+              5th Best Top 20 Hotel Management Institutes (Government & Private)
+              in India by faculty, publication, research, consultancy, CDP &
+              other programmes.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>18th Rank - Top Hotel Management Colleges in India.</li>
+            <li>7th Rank - Top Private Hotel Management Colleges in India.</li>
+            <li>
+              4th Rank - Top Private Hotel Management Colleges in South Zone.
+            </li>
+          </ul>
+        ),
       },
     ],
     2015: [
       {
-        title: "Big Data Analytics in Healthcare",
-        description: "Dr. Rohan Kapoor",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Times B-School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked 4th Best B-School in South India.</li>
+            <li>Ranked 1st in Bangalore.</li>
+            <li>Ranked 22nd in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "IoT-Enabled Smart Parking Solutions",
-        description: "Dr. Kavita Jain",
-      },
-      {
-        title: "AI-Enhanced Financial Trading Algorithms",
-        description: "Prof. Akash Mehta",
+        titles: "Digital Learning",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked A++</li>
+          </ul>
+        ),
       },
     ],
     2014: [
       {
-        title: "Mobile App for Rural Healthcare Access",
-        description: "Dr. Leela Krishnan",
+        titles:
+          "Awarded “Great Place to Study” India Edition 2014-16 Global Indian Institutes by SkillTree on 24th June 2014 at London, United Kingdom",
       },
       {
-        title: "Solar-Powered Smart Irrigation Systems",
-        description: "Dr. Harish Chandra",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Business Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>18th Best Private B-School in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "Wearable Sensors for Athlete Performance",
-        description: "Prof. Snehal Deshmukh",
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>21st Best Private B-School in India.</li>
+            <li>st Best Private B-School in Intellectual Capital.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Outlook",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>36th Best Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>31st Best Private B-School in India.</li>
+            <li>3rd Best B-School in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Careers 360",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>36th Best Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Times B-School Survey",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>44th Best B-School in India.</li>
+            <li>9th Best B-School in South Zone.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>6th Best Private Hotel Management Institute in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "GHRDC",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best Private Hotel Management Institute in India.</li>
+            <li>
+              1st Best Private Hotel Management Institute in the “Super
+              Excellence” category.{" "}
+            </li>
+          </ul>
+        ),
       },
     ],
     2013: [
       {
-        title: "E-Learning System for Developing Countries",
-        description: "Dr. Naveen Joshi",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Outlook",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>56th Best B –School in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI-Assisted Legal Research Platform",
-        description: "Dr. Megha Varma",
+        titles: "Business Today",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>19th Best Private B-School in India.</li>
+            <li>34th Best B –School in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "Smart City IoT Infrastructure",
-        description: "Prof. Ritu Singh",
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>45th Best B-School in India.</li>
+            <li>26th Best Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>18th Best B School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Careers 360",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>13th Best Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "CSR-GHRDC",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>25th Best Hotel Management Institute in India.</li>
+            <li>4th Best Private institute in India for Hotel Management.</li>
+          </ul>
+        ),
       },
     ],
     2012: [
       {
-        title: "Automated Disaster Response Drones",
-        description: "Dr. Vijay Kulkarni",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: " IACBE Accredited",
       },
       {
-        title: "AI-Driven Personalized Marketing Systems",
-        description: "Dr. Preeti Anand",
+        titles: " Outlook",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked 57th Best B-School in India.</li>
+            <li>Ranked 54th Best Private B-School in India.</li>
+            <li>Ranked 3rd Best Private B-School in Bangalore.</li>
+          </ul>
+        ),
       },
       {
-        title: "Virtual Lab Simulations for Engineering",
-        description: "Prof. Sameer Gupta",
+        titles: "Business Today",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked 44th Best B–School in India.</li>
+            <li>Ranked 39th Best Private B-School in India.</li>
+            <li>Ranked 4th Best Private B-Schools in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Business India",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked 40th Best B–School in India.</li>
+            <li>Ranked 37th Best Private B-School. in India.</li>
+            <li>Ranked 3rd Best Private B-School in Bangalore.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Careers 360",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              13th under the category Private Ownership & B -School in Tier 1
+              Cusp.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>2nd Best B-School in South Zone. </li>
+            <li>4th in Intellectual Capital. </li>
+            <li> 11th in Industry Interface.</li>
+            <li>17th Best B-School in India. </li>
+            <li>21st with respect to Senior Faculty. </li>
+            <li> 21st by Parents.</li>
+            <li>23rd by Aspirant Students. </li>
+            <li>25th in Placements. </li>
+            <li>32nd in Infrastructure. </li>
+            <li> 33rd in Pedagogy.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranked 4th Best B-School in Bangalore.</li>
+            <li>Ranked 53rd Best B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>5th Best Hotel Management Institute in Bangalore.</li>
+            <li>38th Best Hotel Management Institute in India. </li>
+          </ul>
+        ),
+      },
+
+      {
+        titles: "GHRDC",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              2nd Best Hotel Management Institute in the state of Karnataka.
+            </li>
+            <li>
+              1st Best Hotel Management Institute in India under “Excellence”
+              Category.
+            </li>
+          </ul>
+        ),
       },
     ],
     2011: [
       {
-        title: "AI-Based Speech Therapy Tools",
-        description: "Dr. Swati Sharma",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              NEN Entrepreneurship Week India 2011 Championship Trophy - NEN
+              (National Entrepreneurship Network).
+            </li>
+          </ul>
+        ),
       },
       {
-        title: "Green Energy Powered Smart Homes",
-        description: "Prof. Manish Verma",
+        title: "AIMS SCHOOL OF BUSINESS",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              B-School Leadership Award - Asia&quot;s Best B-School Awards 2011
+              (Suntec, Singapore).
+            </li>
+            <li>
+              Best B-School for Industry Related Curriculum in Operations
+              Management - Star News Best B-School Awards 2011.
+            </li>
+          </ul>
+        ),
       },
       {
-        title: "Predictive Analytics in Retail Management",
-        description: "Dr. Rupa Banerjee",
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>18th Best B-School in India.</li>
+            <li>5th in Intellectual Capital</li>
+            <li>26th in Infrastructure</li>
+            <li>27th in Industry Interface</li>
+            <li>32 in Pedagogy</li>
+            <li>40th in Placements</li>
+            <li>37th Rank by Industry</li>
+            <li>39th ranked by Faculty</li>
+            <li>42nd by Sudents</li>
+            <li>43rd by Parents</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "The Week",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>16th Best B-School in South Zone.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Dainik Bhaskar",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>10th Best B-School in India.</li>
+          </ul>
+        ),
+      },
+
+      {
+        titles: "Careers 360",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              27th under the category Private Ownership & B-School in Tier 1
+              Cusp.
+            </li>
+            <li>15th Best B-School in the South Zone.</li>
+          </ul>
+        ),
+      },
+
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Top Hotel Management Institute of India.</li>
+          </ul>
+        ),
       },
     ],
     2010: [
       {
-        title: "Mobile Banking for Rural Communities",
-        description: "Dr. Anil Kumar",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              AIMS is accredited as an &quot;A&quot; Grade college by NAAC with one of the
+              highest CGPA of 3.46 (on 4 point scale) among all colleges in
+              India.
+            </li>
+            <li>ISO 9001:2008 Certification by TUV-SUD.</li>
+            <li>
+              Honour Roll Award for NEN e-week Celebrations - National
+              Entrepreneurship Network (NEN).
+            </li>
+          </ul>
+        ),
       },
-      { title: "AI for Predicting Crop Yield", description: "Dr. Neha Singh" },
       {
-        title: "Cloud-Based Data Storage Framework",
-        description: "Prof. Kiran Reddy",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Dainik Bhaskar",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>B22nd Best B-School in India.</li>
+            <li>Outstanding B-School in South India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Careers 360",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>35th Best B-School in India.</li>
+            <li>15th in South Zone.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>20th Best B-School in India. </li>
+            <li>6th Best B-School for Industry Interaction. </li>
+            <li>21st Best B-School in Infrastructure. </li>
+            <li>21st Best for Placements. </li>
+            <li> 40th Best for Pedagogy.</li>
+            <li>46th Best for Intellectual Capital. </li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Business India",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              41st best B-School (moved from the rating of A++ to the ranking).
+            </li>
+          </ul>
+        ),
       },
     ],
     2009: [
       {
-        title: "Renewable Energy Microgrid Systems",
-        description: "Dr. Ashok Patil",
+        titles: "Business India",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>41st Best School in India.</li>
+            <li>A++ Category B-School.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI-Enhanced Language Translation Tools",
-        description: "Dr. Ananya Gupta",
+        titles: "Dalal Street",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Among Top 100 B-Schools in India.</li>
+          </ul>
+        ),
       },
+
       {
-        title: "Smart Logistics & Supply Chain Platforms",
-        description: "Prof. Deepak Sharma",
+        titles: "AIMA-IMRB",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>A Category Business School.</li>
+          </ul>
+        ),
       },
     ],
     2008: [
-      { title: "Virtual Classroom Platforms", description: "Dr. Sanjay Rao" },
-      { title: "AI-Driven Healthcare Chatbots", description: "Dr. Meera Das" },
       {
-        title: "Smart Transportation Ticketing Systems",
-        description: "Prof. Alok Jain",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              Best Institute in Entrepreneurship Education - National Institute
+              for Training in Industrial Engineering (NITIE), Mumbai.
+            </li>
+            <li>
+              Award certification in Entrepreneurship Education - NEN (National
+              Entrepreneurship Network).
+            </li>
+          </ul>
+        ),
+      },
+      {
+        title: "AIMS SCHOOL OF BUSINESS",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Best B-School Jury Award - Deccan Herald B-School Awards.</li>
+          </ul>
+        ),
+      },
+
+      {
+        titles: "Outlook",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>46th Best Private B-School in India.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "AIMA-IMRB",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>&quot;A&quot; Category Business School.</li>
+          </ul>
+        ),
       },
     ],
     2007: [
       {
-        title: "Data Mining Techniques for Market Prediction",
-        description: "Dr. Suresh Nair",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>ISO 9001:2000 Certification by TUV SUD.</li>
+          </ul>
+        ),
       },
       {
-        title: "AI-Driven Drug Interaction Detection",
-        description: "Dr. Rekha Joshi",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "Outlook",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>34th Best Private B-School in India.</li>
+          </ul>
+        ),
       },
       {
-        title: "Green Building Automation Systems",
-        description: "Prof. Arvind Sharma",
+        titles: "AIMA-IMRB",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Category &quot;A&quot; Business School.</li>
+           
+          </ul>
+        ),
+      },
+      {
+        titles: "CSR-GHRDC",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>89th Best B-School in India.</li>
+            <li>28th in Group Ranking</li>
+            <li>10th Best B-School in Karnataka.</li>
+          </ul>
+        ),
+      },
+      {
+        titles: "Businessworld",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>28th best B-School in India.</li>
+          </ul>
+        ),
+      },
+
+      {
+        titles: "Business India",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Category &quot;A&quot; Business School.</li>
+          </ul>
+        ),
+      },
+
+      {
+        titles: "Dalal Street",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Among Top 100 B-Schools in India.</li>
+          </ul>
+        ),
+      },
+
+
+      {
+        title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
+        titles: "CSR-GHRDC Competition Success Review",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>No. 1 Private Hotel Management Institute in Bangalore. </li>
+            <li>3rd Best Private Hotel Management Institute in South India. </li>
+            <li> 12th Best Private Hotel Management Institute in India.</li>
+          </ul>
+        ),
       },
     ],
     2006: [
-      { title: "AI for Spam Email Filtering", description: "Dr. Pankaj Gupta" },
+    
       {
-        title: "Cloud-Based Student Information Systems",
-        description: "Dr. Seema Reddy",
+        title: "AIMS SCHOOL OF BUSINESS",
+        titles: "AIMA-IMRB Business Standard Survey",
+
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Category &quot;A&quot; Business School.</li>
+          </ul>
+        ),
       },
+
       {
-        title: "Sustainable Urban Planning Framework",
-        description: "Prof. Kalyan Das",
+        titles: "Business India",
+        description: (
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Category &quot;A&quot; Business School.</li>
+          </ul>
+        ),
       },
     ],
   }
@@ -898,12 +1526,12 @@ const PatentsTimeline = () => {
         <div className="container mx-auto px-4 lg:px-0">
           <div className="bg-[#e6f9f3] text-center">
             <p className="text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
-              At AIMS Institutes, rankings aren’t the destination, they’re the
+              At AIMS Institutes, rankings aren&quot;t the destination, they&quot;re the
               result of staying focused on our target to deliver education that
               transforms potential into performance.
             </p>
             <p className="mt-4 text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
-              As a
+              As a&nbsp;
               <span className=" font-bold  monser-500 ">
                 NAAC A Grade College
               </span>

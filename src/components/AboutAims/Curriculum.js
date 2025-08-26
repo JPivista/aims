@@ -42,7 +42,7 @@ export default function ProgramHighlights() {
             {index < 5 && (
               <div className="absolute right-[-15px] sm:right-[-20px] md:right-[-25px] bottom-0 -translate-y-3 z-0">
                 <Image
-                  src="/about-aims/Rectangle.png"
+                  src="/about-aims/Rectangle_converted.webp"
                   alt="arrow"
                   width={100}
                   height={100}
