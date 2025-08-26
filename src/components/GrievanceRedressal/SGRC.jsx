@@ -90,11 +90,12 @@ const SGRC = () => {
       </div>
       <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
         <Image
-          src="/grievance-redressal/chart.png"
+          src="/grievance-redressal/chart.webp"
           alt="SGRC"
           width={1000}
           height={1000}
           className="w-full h-full object-cover"
+          priority
         />
       </div>
     </>

@@ -133,7 +133,7 @@ const AicteAccreditations = () => {
           onClick={() => handleProgramClick(program)}
         >
           <div className="flex-1">
-            <h5 className="mb-2 monser-500 text-xl md:text-[36px]">
+            <h5 className="mb-2 monser-500 text-2xl md:text-[36px]">
               {program}
             </h5>
           </div>
@@ -158,7 +158,7 @@ const AicteAccreditations = () => {
                       href={yearItem.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[20px] monser-400 cursor-pointer text-[#A22877]"
+                      className="text-[18px] md:text-[20px] monser-400 cursor-pointer text-[#A22877]"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {yearItem.year}

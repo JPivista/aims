@@ -7,10 +7,10 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/bba-aviation/hero-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/bba-aviation/hero-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba-aviation/mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba-aviation/mobile-banner.webp')]" />
 
         {/* Empower Image*/}
         {/* <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">
@@ -39,7 +39,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
                       at AIMS
                     </span>
                   </h1>
-                  <h5 className="playfair-300 text-[#C9FFF4] text-xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
+                  <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
                     Plot Your Trajectory.
                     <br />
                     Prepare for Take-Off.

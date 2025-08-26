@@ -7,10 +7,10 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/admission-faqs/hero-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/admission-faqs/hero-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-faqs/mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-faqs/mobile-banner.webp')]" />
 
         {/* Empower Image*/}
         {/* <div className="absolute left-4 md:left-12 -top-8 md:-top-8 md:max-w-2xl">

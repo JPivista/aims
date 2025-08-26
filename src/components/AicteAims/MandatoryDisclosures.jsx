@@ -53,7 +53,7 @@ const MandatoryDisclosures = () => {
           onClick={() => handleProgramClick(program)}
         >
           <div className="flex-1">
-            <h5 className="monser-500 text-xl md:text-[36px]">{program}</h5>
+            <h5 className="monser-500 text-2xl md:text-[36px]">{program}</h5>
           </div>
           <Image
             src="/nirf/arrow.svg"
@@ -69,9 +69,12 @@ const MandatoryDisclosures = () => {
         {isExpanded && (
           <div className="px-2 md:px-4 pb-4 md:pb-6">
             <div>
-              <ul className="text-sm md:text-base monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
+              <ul className="text-[16px] monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
                 {description.map((point, index) => (
-                  <li key={index} className="relative">
+                  <li
+                    key={index}
+                    className="relative text-[18px] md:text-[20px]"
+                  >
                     <span>
                       {point.text} -{" "}
                       <a

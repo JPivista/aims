@@ -74,6 +74,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
       image: "/bba/one-degree.jpg",
       programs: [
         {
+          id: "certifications",
           title: "Certifications (Technical & Domain-Specific)",
           content: [
             "Capstone CAPSIM Simulation",
@@ -88,6 +89,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
           ],
         },
         {
+          id: "workshops",
           title: "Workshops & Specialised Training",
           content: [
             "Workshop on AI/ML for enhancing business",
@@ -98,6 +100,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
           ],
         },
         {
+          id: "placement",
           title: "Placement & Career Preparation",
           content: [
             "Pre-Placement Talks",
@@ -109,6 +112,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
           ],
         },
         {
+          id: "soft-skills",
           title: "Soft Skills & Professional Grooming",
           content: [
             "Corporate Grooming",
@@ -118,6 +122,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
           ],
         },
         {
+          id: "wellness",
           title: "Wellness & Life Skills",
           content: ["Nutrition & Wellness", "Life skills", "Yoga & Meditation"],
         },

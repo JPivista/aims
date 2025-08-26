@@ -7,10 +7,10 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/MBA/mba-herobanner.jpg')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/MBA/mba-herobanner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/MBA/mobile-banner.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         {/* <div

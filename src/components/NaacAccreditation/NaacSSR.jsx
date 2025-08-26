@@ -377,7 +377,7 @@ const NaacSSR = () => {
                         •
                       </span>
                       <div className="flex-1 min-w-0">
-                        <span className="monser-400 text-sm md:text-base lg:text-lg break-words">
+                        <span className="monser-400 text-[18px] md:text-lg break-words">
                           {linkItem.text.includes(" - View") ? (
                             <>
                               {linkItem.text.replace(" - View", "")} -{" "}
