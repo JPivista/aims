@@ -160,10 +160,10 @@ const HeroBannerRecruiter = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/placements-mba/pgdm/banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/placements-mba/pgdm/banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/placements-mba/pgdm/mobile.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/placements-mba/pgdm/mobile.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div

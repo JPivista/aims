@@ -61,10 +61,10 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/welfare-committees/banner-01.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/welfare-committees/banner-01.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/welfare-committees/mobile.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/welfare-committees/mobile.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div

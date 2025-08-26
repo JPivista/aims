@@ -5,7 +5,7 @@ import React from "react";
 const IneligibilityAndRecruitment = () => {
   return (
     <>
-      <div className="container mx-auto lg:pt-16 flex lg:flex-row flex-col gap-10">
+      <div className="container mx-auto lg:py-16 py-10 flex lg:flex-row flex-col gap-10">
         <div className="lg:w-1/2 mx-auto">
           <div className="bg-[#FAE5E6] sm:h-full sm:w-[750px] xl:w-full md:w-[750px] lg:h-[540px] rounded-lg border border-[#A22877] p-8 relative">
             {/* Arrow icon positioned in top right */}
@@ -84,12 +84,12 @@ const IneligibilityAndRecruitment = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto text-center py-10 flex flex-col gap-4">
+      {/* <div className="container mx-auto text-center py-10 flex flex-col gap-4">
         <p className="monser-600">
           Have questions about placements or need guidance? We’re here to help.
         </p>
         <Button className="w-fit mx-auto">Contact Us</Button>
-      </div>
+      </div> */}
     </>
   );
 };

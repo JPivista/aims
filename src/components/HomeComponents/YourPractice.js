@@ -27,7 +27,7 @@ export default function CampusLifeSection() {
         <div className="relative w-full lg:w-1/2 mt-10 lg:mt-0">
           <div className="overflow-hidden">
             <Image
-              src="/home/your-prac.png" // replace with your image path
+              src="/home/your-prac.webp" // replace with your image path
               alt="Campus Students"
               width={800}
               height={500}

@@ -18,7 +18,7 @@ const AveragePackage = () => {
         </div>
         <div className="lg:w-1/2">
           <Image
-            src="/placements-mba/pgdm/average.png"
+            src="/placements-mba/pgdm/average.webp"
             alt="Recruiters"
             width={1000}
             height={1000}

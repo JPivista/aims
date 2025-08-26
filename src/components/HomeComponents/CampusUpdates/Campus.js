@@ -8,31 +8,31 @@ import Image from "next/image";
 const slides = [
   {
     id: "s1",
-    src: "/home/campus/embla-001-updated.png",
+    src: "/home/campus/embla-001-updated.webp",
     description: "A Proud Moment for BHM Dept. of AIMS Institutes! Jun 6, 2025",
     alt: "card 1",
   },
   {
     id: "s2",
-    src: "/home/campus/embla-002.png",
+    src: "/home/campus/embla-002.webp",
     description: "PG 27th Graduation Day",
     alt: "card 2",
   },
   {
     id: "s3",
-    src: "/home/campus/embla-003.png",
+    src: "/home/campus/embla-003.webp",
     description: "Bronze Glory at the National Games",
     alt: "card 3",
   },
   {
     id: "s4",
-    src: "/home/campus/embla-4.png",
+    src: "/home/campus/embla-4.webp",
     description: "UG 27th Graduation Day",
     alt: "card 4",
   },
   {
     id: "s6",
-    src: "/home/campus/embla-006.png",
+    src: "/home/campus/embla-006.webp",
     description: "UG 28th Graduation Ceremony Jul 14, 2025",
     alt: "card 6",
   },

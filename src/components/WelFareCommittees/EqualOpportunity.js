@@ -20,7 +20,7 @@ const EqualOpportunity = () => {
           {/* Right Side Image */}
           <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
             <Image
-              src="/welfare-committees/equality.png"
+              src="/welfare-committees/equality.webp"
               alt="students"
               width={400}
               height={300}

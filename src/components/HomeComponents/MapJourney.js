@@ -8,7 +8,7 @@ import { SlSocialYoutube } from "react-icons/sl";
 const MapJourney = () => {
   const mapJourney = [
     {
-      image: "/home/map-journey/insta-1.png",
+      image: "/home/map-journey/insta-1.webp",
       title: "PG 25th Graduation Day Highlights",
       description:
         "A huge congratulations to the Class of 2024! Your journey is just beginning, and the future is yours to shape!",
@@ -16,7 +16,7 @@ const MapJourney = () => {
       duration: "Duration: 02:24",
     },
     {
-      image: "/home/map-journey/insta-2.png",
+      image: "/home/map-journey/insta-2.webp",
       title: "PG 25th Graduation Day Highlights",
       description:
         "A huge congratulations to the Class of 2024! Your journey is just beginning, and the future is yours to shape!",
@@ -25,7 +25,7 @@ const MapJourney = () => {
     },
 
     {
-      image: "/home/map-journey/youtube.png",
+      image: "/home/map-journey/youtube.webp",
       title: "PG 25th Graduation Day Highlights",
       description:
         "AIMS School of Business MBA Wins Overall Championship Trophy | AIMS Institutes",

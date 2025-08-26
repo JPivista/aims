@@ -4,6 +4,7 @@ import BridgingCampus from "./BridgingCampus";
 import PreplacementTraining from "./PreplacementTraining/PreplacementTraining";
 import PlacementPolicy from "./PlacementPolicy";
 import IneligibilityAndRecruitment from "./IneligibilityAndRecruitment";
+import ReadyToDraw from "../shared/ReadyToDraw";
 const PlacementPolicies = () => {
   return (
     <>
@@ -12,6 +13,13 @@ const PlacementPolicies = () => {
       <PreplacementTraining />
       <PlacementPolicy />
       <IneligibilityAndRecruitment />
+      <ReadyToDraw
+        title="Have questions about placements or need guidance? We’re here to help."
+        subtitle={false}
+        primaryButtonText="Contact Us"
+        secondaryButtonText={false}
+        tertiaryButtonText={false}
+      />
     </>
   );
 };
