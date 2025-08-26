@@ -7,10 +7,10 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[80vh] md:h-[76vh] lg:h-[75vh] xl:h-[76vh] 2xl:h-[80.5vh] 3xl:h-[90vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bhm-img/banner-img.jpg')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bhm-img/banner-img_converted.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bhm-img/bhm-mobile-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bhm-img/bhm-mobile-banner_converted.webp')]" />
 
         {/* Gradient Overlay */}
         <div
@@ -64,7 +64,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
               </div>
               <div className="flex items-center">
                 <Image
-                  src="/school-of-hospitality/NAAC VET.png"
+                  src="/bhm-img/NAAC VET.webp"
                   alt="IACBE"
                   width={200}
                   height={100}

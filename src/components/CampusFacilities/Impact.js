@@ -3,7 +3,7 @@ import LifeatAims from "../shared/LifeatAims"
 
 const AlumniinHospitalit = () => {
   const bcomAlumniData = {
-    image: "/life-at-aims/events-fests.png",
+    image: "/life-at-aims/events-fests.webp",
     subtitle: "A Campus That Supports Every AIMer",
     description: `We’re a space where:`,
     listItems: [

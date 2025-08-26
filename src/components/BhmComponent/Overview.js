@@ -92,7 +92,7 @@ const Overview = () => {
         {/* Recognition timeline */}
         <div className="flex justify-center ">
           <Image
-            src="/bhm-img/overview-img.png"
+            src="/bhm-img/overview-img_converted.webp"
             alt="Bhm Aviation Program Overview"
             width={1000}
             height={600}

@@ -7,7 +7,7 @@ const QualityPolicy = () => {
     <section className="relative w-full h-[600px] mb-10 ">
       {/* Background Image */}
       <Image
-        src="/about-aims/Quality-img.png"
+        src="/about-aims/Quality-img_converted.webp"
         alt="Quality Policy Background"
         fill
         className="object-cover"

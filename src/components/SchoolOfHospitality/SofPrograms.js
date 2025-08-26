@@ -10,7 +10,7 @@ const SofPrograms = () => {
     title: "Bachelor of  Hotel Management (BHM)",
     description:
     "Our flagship 4-year BHM program prepares students for high-growth careers in hotels, resorts, airlines, and event management. The curriculum helps students aim for leadership roles in the service industry.",
-    image: "/school-of-hospitality/sohospitality-img-01.jpg",
+    image: "/school-of-hospitality/sohospitality-img-01.webp",
     link: "/hospitality-tourism-school/bachelor-hotel-management",
   }
 
@@ -19,7 +19,7 @@ const SofPrograms = () => {
     title: "Vocational Certificate Program QSR by Chai Point",
     description:
       "Offered in partnership with Chai Point, this short-term vocational certificate trains you in real-world QSR operations. Perfect for learners who want to enter the workforce quickly and grow from the ground up in India's F&B retail sector.",
-    image: "/school-of-hospitality/sohospitality-img-02.jpg",
+    image: "/school-of-hospitality/sohospitality-img-02.webp",
     link: "/finance-commerce-school/bachelor-of-commerce",
   }
 

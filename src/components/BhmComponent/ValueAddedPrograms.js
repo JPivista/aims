@@ -98,7 +98,7 @@ const BbaValueAddedPrograms = () => {
       <div className="relative mx-auto">
         <div className="w-full h-[700px]">
           <Image
-            src="/bhm-img/Employers-img.jpg"
+            src="/bhm-img/Employers-img_converted.webp"
             alt="AIMS Students"
             width={800}
             height={400}

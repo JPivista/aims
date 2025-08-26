@@ -5,7 +5,7 @@ import LifeatAims from '../shared/LifeatAims'
 
 const AlumniinHospitalit = () => {
     const bcomAlumniData = {
-        image: "/life-at-aims/student-club-img.png",
+        image: "/life-at-aims/student-club-img.webp",
         subtitle: "From Ideas to Impact",
         description: `At AIMS, clubs are not just co-curricular, they’re an extension of our value-based education. They give every student, regardless of background, the chance to participate, lead, and grow. Whether you're an aspiring entrepreneur or a hospitality enthusiast, there’s a space for your voice, and your vision, here.`,
     }
