@@ -77,7 +77,7 @@ const HeroBannerMca = ({ announcements, pageType = 'mca' }) => {
                                     {/* Main circular image - Mobile */}
                                     <div className="w-96 h-96 rounded-full overflow-hidden z-30">
                                         <Image
-                                            src="/mca/mca-banner.png"
+                                            src="/mca/mca-banner.webp"
                                             alt="B.Com Student"
                                             fill
                                             className="object-cover"

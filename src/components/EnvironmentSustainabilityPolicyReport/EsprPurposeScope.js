@@ -14,7 +14,7 @@ const EsprPurposeScope = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-8  mb-10'>
                             <div className='flex flex-col gap-4'>
                                 <Image
-                                    src="/environment-sustainability-policy-report/purpose.png"
+                                    src="/environment-sustainability-policy-report/purpose.webp"
                                     alt="Our Purpose"
                                     width={500}
                                     height={500}
@@ -46,7 +46,7 @@ const EsprPurposeScope = () => {
                             </div>
                             <div className='flex flex-col gap-4 order-1 md:order-2'>
                                 <Image
-                                    src="/environment-sustainability-policy-report/scope.png"
+                                    src="/environment-sustainability-policy-report/scope.webp"
                                     alt="Our Scope"
                                     width={500}
                                     height={500}

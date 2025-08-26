@@ -50,7 +50,7 @@ const CfcOurObjectives = () => {
                             </div>
                             <div className='flex flex-col gap-4 order-1 md:order-2'>
                                 <Image
-                                    src="/centre-for-consulting/cfc-objectives.png"
+                                    src="/centre-for-consulting/cfc-objectives.webp"
                                     alt="Our Goals and Objectives"
                                     width={500}
                                     height={500}

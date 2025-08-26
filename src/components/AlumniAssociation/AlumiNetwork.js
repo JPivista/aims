@@ -10,7 +10,7 @@ const AlumiNetwork = () => {
                     {/* Left Column - Image */}
                     <div className='flex flex-col gap-4 col-span-1'>
                         <Image
-                            src="/alumni-association/alumni-netowrk.png"
+                            src="/alumni-association/alumni-netowrk.webp"
                             alt="Alumni Network"
                             width={500}
                             height={500}

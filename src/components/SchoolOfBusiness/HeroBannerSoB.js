@@ -7,10 +7,10 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-business/school-of-business-banner.png')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-business/school-of-business-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-business/school-of-business-banner.png')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-business/school-of-business-banner.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -33,7 +33,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
               </div>
               <div className="flex items-center">
                 <Image
-                  src="/school-of-business/iacbe.png"
+                  src="/school-of-business/iacbe.webp"
                   alt="IACBE"
                   width={400}
                   height={100}

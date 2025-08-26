@@ -11,14 +11,14 @@ const Programs = () => {
             id: 'bba-general',
             title: 'BBA (General)',
             description: 'A comprehensive program designed to develop strong fundamentals across business domains - finance, marketing, HR, and entrepreneurship, while encouraging leadership and strategic thinking from day one.',
-            image: '/school-of-business/bba-general.png', // You'll need to add this image
+            image: '/school-of-business/bba-general.webp', // You'll need to add this image
             link: '/business-school/bachelor-business-administration'
         },
         {
             id: 'bba-aviation',
             title: 'BBA (Aviation Management)',
             description: 'Designed for students with a sharp eye for aviation and airport management, this specialisation blends business education with operational insights into one of the fastest-growing sectors in India.',
-            image: '/school-of-business/bba-aviation.png', // You'll need to add this image
+            image: '/school-of-business/bba-aviation.webp', // You'll need to add this image
             link: '/business-school/bachelor-business-administration-aviation-management'
         }
     ]
@@ -27,7 +27,7 @@ const Programs = () => {
         id: 'mba',
         title: 'MBA',
         description: 'An <b>IACBE accredited</b>, industry-attuned program that strengthens analytical and leadership skills while immersing students in real-world business challenges. Among the <b>Top 1% B-Schools in India</b>, the MBA at AIMS is recognised for its placement record and applied learning.',
-        image: '/school-of-business/mba.png', // You'll need to add this image
+        image: '/school-of-business/mba.webp', // You'll need to add this image
         link: '/business-school/master-business-administration',
         highlights: [
             'IACBE accredited',
@@ -40,7 +40,7 @@ const Programs = () => {
         title: 'Doctoral Program',
         subtitle: 'PhD in Management',
         description: 'The PhD program is built for experienced professionals and scholars ready to explore strategic research in business disciplines. With rigorous guidance and global exposure, AIMS helps you shape insights that influence practice, policy, and progress.',
-        image: '/school-of-business/doctoral-program.png', // You'll need to add this image
+        image: '/school-of-business/doctoral-program.webp', // You'll need to add this image
         link: '/phd-doctoral-programs'
     }
 

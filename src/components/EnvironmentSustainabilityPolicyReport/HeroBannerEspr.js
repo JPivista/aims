@@ -9,7 +9,7 @@ const HeroBannerEspr = ({ announcements, pageType = 'engineering' }) => {
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <Image
-                    src="/environment-sustainability-policy-report/environment-sustainability-policy-report-banner.png"
+                    src="/environment-sustainability-policy-report/environment-sustainability-policy-report-banner.webp"
                     alt="Patents"
                     width={1920}
                     height={1080}

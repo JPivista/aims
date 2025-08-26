@@ -8,7 +8,7 @@ const SoInfoTechPrograms = () => {
         id: 'bca',
         title: 'Bachelor of Computer Applications (BCA)',
         description: 'Our BCA program lays a solid foundation in programming, databases, networking, and system design. With certifications and industry exposure, students are ready to take on roles in software development, tech support, or pursue further specialisation.',
-        image: '/school-of-info-tech/bca.png', // You'll need to add this image
+        image: '/school-of-info-tech/bca.webp', // You'll need to add this image
         link: '/information-technology-school/bachelor-computer-applications'
     }
 
@@ -16,7 +16,7 @@ const SoInfoTechPrograms = () => {
         id: 'bca',
         title: 'BCA with AI & ML',
         description: 'Our BCA program focuses on Artificial Intelligence and Machine Learning - two of the most sought-after tech skills globally. Students get to experiment, build, and deploy intelligent systems that solve real-world problems.',
-        image: '/school-of-info-tech/bca-with-ai-ml.png', // You'll need to add this image
+        image: '/school-of-info-tech/bca-with-ai-ml.webp', // You'll need to add this image
         link: '/information-technology-school/bachelor-computer-applications',
     }
 
@@ -24,7 +24,7 @@ const SoInfoTechPrograms = () => {
         id: 'doctoral',
         title: 'Master of Computer Applications (MCA)',
         description: 'Our MCA program transforms learners into capable IT professionals with a sharp eye for innovation. The program is accredited by AICTE and designed to meet global IT standards.',
-        image: '/school-of-info-tech/mca.png', // You'll need to add this image
+        image: '/school-of-info-tech/mca.webp', // You'll need to add this image
         link: '/information-technology-school/master-computer-applications'
     }
 

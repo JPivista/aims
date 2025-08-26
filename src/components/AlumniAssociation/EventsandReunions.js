@@ -47,7 +47,7 @@ const EventsandReunions = () => {
                         {/* Right Column - Image */}
                         <div className='flex flex-col gap-4 lg:order-2 order-1'>
                             <Image
-                                src="/alumni-association/events-and-reunions.png"
+                                src="/alumni-association/events-and-reunions.webp"
                                 alt="Young men playing basketball outdoors"
                                 width={500}
                                 height={500}

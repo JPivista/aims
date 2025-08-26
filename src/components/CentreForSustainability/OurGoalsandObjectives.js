@@ -12,7 +12,7 @@ const OurGoalsandObjectives = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                             <div className='flex flex-col gap-4'>
                                 <Image
-                                    src="/centre-for-sustainability/cfs-our-goals.png"
+                                    src="/centre-for-sustainability/cfs-our-goals.webp"
                                     alt="Our Goals and Objectives"
                                     width={500}
                                     height={500}
@@ -84,7 +84,7 @@ const OurGoalsandObjectives = () => {
                             </div>
                             <div className='order-1 md:order-2 col-span-1'>
                                 <Image
-                                    src="/centre-for-sustainability/csr-our-objectives.png"
+                                    src="/centre-for-sustainability/csr-our-objectives.webp"
                                     alt="Our Goals and Objectives"
                                     width={500}
                                     height={500}

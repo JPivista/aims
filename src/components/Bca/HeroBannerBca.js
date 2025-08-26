@@ -76,7 +76,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                                     {/* Main circular image - Mobile */}
                                     <div className="w-96 h-96 rounded-full overflow-hidden z-30">
                                         <Image
-                                            src="/bca/bca-herobanner.png"
+                                            src="/bca/bca-herobanner.webp"
                                             alt="B.Com Student"
                                             fill
                                             className="object-cover"
@@ -93,7 +93,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                 <div className="hidden lg:block absolute right-0 bottom-0 z-30">
                     <div className="w-[700px] h-[550px] rounded-full overflow-hidden">
                         <Image
-                            src="/bca/bca-herobanner.png"
+                            src="/bca/bca-herobanner.webp"
                             alt="B.Com Student"
                             fill
                             className="object-cover"

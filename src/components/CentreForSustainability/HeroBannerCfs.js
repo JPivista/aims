@@ -16,10 +16,10 @@ const HeroBannerCfs = ({ announcements, pageType = 'engineering' }) => {
                     priority
                 /> */}
 
-                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-sustainability/centre-for-sustainabily-banner.png')]" />
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-sustainability/centre-for-sustainabily-banner.webp')]" />
 
                 {/* Background Image - Mobile */}
-                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-sustainability/centre-for-sustainability-banner-mobile.png')]" />
+                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/centre-for-sustainability/centre-for-sustainability-banner-mobile.webp')]" />
 
                 {/* Gradient Overlay - Figma Design */}
                 <div

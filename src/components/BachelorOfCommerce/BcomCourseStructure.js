@@ -11,7 +11,7 @@ const sampleCourseData = [
             {
                 key: "semester-1",
                 label: "SEMESTER 1",
-                image: "/mcom/students-semester1.jpg",
+                image: "/bcom/students-semester1.webp",
                 courses: [
                     "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
@@ -25,7 +25,7 @@ const sampleCourseData = [
             {
                 key: "semester-2",
                 label: "SEMESTER 2",
-                image: "/mcom/students-semester2.jpg",
+                image: "/bcom/students-semester2.webp",
                 courses: [
                     "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
@@ -45,7 +45,7 @@ const sampleCourseData = [
             {
                 key: "semester-3",
                 label: "SEMESTER 3",
-                image: "/mcom/students-semester3.jpg",
+                image: "/bcom/students-semester3.webp",
                 courses: [
                     "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
@@ -59,7 +59,7 @@ const sampleCourseData = [
             {
                 key: "semester-4",
                 label: "SEMESTER 4",
-                image: "/mcom/students-semester4.jpg",
+                image: "/bcom/students-semester4.webp",
                 courses: [
                     "Language: Kannada/Hindi/Additional English/Sanskrit/Tamil/Telugu/Malayalam/Marathi",
                     "English",
@@ -79,7 +79,7 @@ const sampleCourseData = [
             {
                 key: "semester-5",
                 label: "SEMESTER 5",
-                image: "/mcom/students-semester5.jpg",
+                image: "/bcom/students-semester5.webp",
                 courses: [
                     "Direct Taxation - I",
                     "Business Regulations",
@@ -93,7 +93,7 @@ const sampleCourseData = [
             {
                 key: "semester-6",
                 label: "SEMESTER 6",
-                image: "/mcom/students-semester6.jpg",
+                image: "/bcom/students-semester6.webp",
                 courses: [
                     "Direct Taxation - I",
                     "Management Accounting",

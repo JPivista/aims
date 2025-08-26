@@ -15,7 +15,7 @@ const OurMissionandVission = () => {
                   <div className="rounded-full bg-gradient-to-br from-purple-400 to-purple-600">
                     <div>
                       <Image
-                        src="/rotaract-club/our-vision-sanjay.png"
+                        src="/rotaract-club/our-vision-sanjay.webp"
                         alt="Rtr. Sanjay - President 2022-2023"
                         width={300}
                         height={300}
@@ -130,7 +130,7 @@ const OurMissionandVission = () => {
                   <div className="rounded-full bg-gradient-to-br from-purple-400 to-purple-600">
                     <div className="w-full h-full">
                       <Image
-                        src="/rotaract-club/our-mission-lakshmi.png"
+                        src="/rotaract-club/our-mission-lakshmi.webp"
                         alt="Rtr. Lakshmi V - Secretary 2022-2023"
                         width={300}
                         height={300}

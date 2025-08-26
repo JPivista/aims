@@ -5,7 +5,7 @@ import React from 'react'
 const BcomPlus = () => {
     return (
         <>
-            <div className="relative w-full lg:h-[50vh] h-auto overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/bcom/bcom-plus.png')] lg:bg-[url('/bcom/bcom-plus.png')]">
+            <div className="relative w-full lg:h-[50vh] h-auto overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/bcom/bcom-plus.webp')] lg:bg-[url('/bcom/bcom-plus.webp')]">
                 {/* Gradient Overlay - Figma Design */}
                 <div
                     className="absolute inset-0"

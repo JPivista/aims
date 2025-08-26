@@ -10,7 +10,7 @@ const SofPrograms = () => {
         id: 'bcom',
         title: 'B.Com–Bachelor of Commerce',
         description: 'Our B.Com program sets the stage for future commerce professionals with a robust curriculum and tailored specialisations that combine core subjects with value-added certifications and industry-led projects.',
-        image: '/school-of-finance/bcom.png', // You'll need to add this image
+        image: '/school-of-finance/bcom.webp', // You'll need to add this image
         link: '/finance-commerce-school/bachelor-of-commerce'
     }
 
@@ -18,7 +18,7 @@ const SofPrograms = () => {
         id: 'mba',
         title: 'M.Com–Master of Commerce',
         description: 'A postgraduate program designed for those who wish to dive deeper into the mechanics of commerce and finance. M.Com at AIMS is not just about academic depth, it’s about real-world applicability. ',
-        image: '/school-of-finance/mcom.png', // You'll need to add this image
+        image: '/school-of-finance/mcom.webp', // You'll need to add this image
         link: '/finance-commerce-school/master-of-commerce',
     }
 
@@ -27,7 +27,7 @@ const SofPrograms = () => {
         title: 'Doctoral Program',
         subtitle: 'PhD in <br /> Commerce ',
         description: 'Our doctoral program is designed for scholars ready to contribute original insights to the world of commerce and management. With NAAC ‘A’ grade credentials and expert faculty, AIMS provides the environment, resources, and mentorship to help you pursue purposeful research aligned to your interests and ambitions.',
-        image: '/school-of-finance/sof-doctoral-program.png', // You'll need to add this image
+        image: '/school-of-finance/sof-doctoral-program.webp', // You'll need to add this image
         link: '/phd-doctoral-programs'
     }
 

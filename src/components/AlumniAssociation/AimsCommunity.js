@@ -10,7 +10,7 @@ const ProvidingOpportunities = () => {
                     {/* Left Column - Image */}
                     <div className='flex flex-col gap-4 col-span-1'>
                         <Image
-                            src="/alumni-association/give-back-the-aims-community.png"
+                            src="/alumni-association/give-back-the-aims-community.webp"
                             alt="Give Back to the AIMS Community"
                             width={500}
                             height={500}

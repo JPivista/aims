@@ -17,7 +17,7 @@ export default function Footer() {
               <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Examinations</Link></li>
               <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Academic Calendar</Link></li>
               <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Program and Course Outcome</Link></li>
-              <li><Link href="/code-of-conduct-students" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</Link></li>
+              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</Link></li>
             </ul>
           </div>
           <div>

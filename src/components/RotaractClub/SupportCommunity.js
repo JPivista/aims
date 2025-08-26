@@ -53,7 +53,7 @@ const SupportCommunity = () => {
           <div className="flex flex-col gap-4 h-fit">
             <div className="w-full h-[400px] md:h-[500px] relative">
               <Image
-                src="/rotaract-club/support-for-community.png"
+                src="/rotaract-club/support-for-community.webp"
                 alt="Community Support Event"
                 fill
                 className="object-cover rounded-lg"

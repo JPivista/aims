@@ -7,10 +7,10 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image - Desktop */}
-                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-finance/school-of-finance-banner.png')]" />
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-finance/school-of-finance-banner.webp')]" />
 
                 {/* Background Image - Mobile */}
-                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-finance/school-of-finance-banner-mobile.png')]" />
+                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-finance/school-of-finance-banner.webp')]" />
 
                 {/* Gradient Overlay - Figma Design */}
                 <div

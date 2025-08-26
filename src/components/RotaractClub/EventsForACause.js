@@ -25,7 +25,7 @@ const EventsForACause = () => {
           {/* Right Column - Image */}
           <div className="flex flex-col gap-4 lg:order-2 order-1">
             <Image
-              src="/rotaract-club/events-for-a-cause.png"
+              src="/rotaract-club/events-for-a-cause.webp"
               alt="Young men playing basketball outdoors"
               width={500}
               height={500}

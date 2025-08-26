@@ -5,7 +5,7 @@ import React from 'react'
 const CfsWhyItMatters = () => {
     return (
         <>
-            <div className="relative w-full lg:h-[60vh] min-h-[80vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-sustainability/cfc-why-its-matter-mobile.png')] lg:bg-[url('/centre-for-sustainability/cfr-why-it-matters-bg.png')]">
+            <div className="relative w-full lg:h-[60vh] min-h-[80vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/centre-for-sustainability/cfc-why-its-matter-mobile.webp')] lg:bg-[url('/centre-for-sustainability/cfr-why-it-matters-bg.webp')]">
                 {/* Gradient Overlay - Figma Design */}
                 <div
                     className="absolute inset-0"
