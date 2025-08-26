@@ -13,7 +13,7 @@ const slides = [
   {
     name: "MANISH R",
     batch: "EBAC 2022 - 2024",
-    image: "/pre-university-college/manish.png",
+    image: "/pre-university-college/manish.webp",
     quote: `"AN INVESTMENT IN KNOWLEDGE PAYS THE BEST INTEREST."`,
     p1: `This quote reflects my opinion of journey at AIMS Institutes. It taught me that acquiring knowledge and education are a valuable and worthwhile investment.`,
     p2: `My college life is filled with academic growth, personal development and memorable experiences. From making new friends to exploring new subjects, college often shapes one's worldview and future path. AIMS Institutes rendered the knowledge which empowers individual to make informal decision about my life, career and relationship. It enabled me to navigate complexities and uncertainties with confidence and clarity. The management and the faculties provided personal development, enhanced critical thinking abilities. The faculties helped to explore new ideas, perspectives and opportunities, and enriched the life in diverse ways. Thus, choosing AIMS was indeed a prominent decision which helped me to follow my passion and persue my education.`,
@@ -22,7 +22,7 @@ const slides = [
   {
     name: "NANDINI SHARMA",
     batch: "EBAC 2022 - 2024",
-    image: "/pre-university-college/nandhini_sharma.png",
+    image: "/pre-university-college/nandhini_sharma.webp",
     quote: `"WHAT YOU DO TODAY, CAN IMPROVE ALL YOUR TOMORROW"`,
     p1: `This quote is an extract of my beautiful dream regarding AIMS Institutes.I have not seen any institution like AIMS in terms of coaching, faculties, sports and many more facilities. The best quality of education I have acquired here.Now, I am free to face any type of problems. The faculties & management have supported a lot and provided many opportunities like industrial visits and so on. This exposure has enabled us to know more. AIMS has provided me a lot of opportunities where I could choose the best. We don't grow when things are easy but we grow when we face challenges that is AIMS Institutes.`,
     p2: ``,

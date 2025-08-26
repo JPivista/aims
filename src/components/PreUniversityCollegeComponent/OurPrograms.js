@@ -21,7 +21,7 @@ const OurPrograms = () => {
                 <div className="grid md:grid-cols-2 gap-10 items-center mt-14 px-4 lg:px-20">
                     <div>
                         <Image
-                            src={"/pre-university-college/our_program1.png"}
+                            src={"/pre-university-college/our_program1.webp"}
                             width={500}
                             height={500}
                             alt="Science Students"
@@ -57,7 +57,7 @@ const OurPrograms = () => {
                     </div>
                     <div>
                         <Image
-                            src={"/pre-university-college/our_program2.png"}
+                            src={"/pre-university-college/our_program2.webp"}
                             width={500}
                             height={500}
                             alt="Commerce Students"
@@ -69,7 +69,7 @@ const OurPrograms = () => {
             {/* Half Circle Background */}
             <div className="absolute bottom-10 -left-10 z-0 pointer-events-none">
                 <Image
-                    src={"/pre-university-college/half_circle.svg"}
+                    src={"/pre-university-college/half_circle.webp"}
                     width={130}
                     height={130}
                     alt="Decorative Half Circle"

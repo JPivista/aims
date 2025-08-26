@@ -19,7 +19,7 @@ const OurResearchCommittees = () => {
             <div className="w-full md:w-[30%] relative">
                 <div className="overflow-hidden">
                     <Image
-                        src="/centre-for-research/our_research.png" // change to your image path
+                        src="/centre-for-research/our_research.webp" // change to your image path
                         alt="Research Committees"
                         width={600}
                         height={400}

@@ -28,7 +28,7 @@ const StructuredSupport = () => {
                         src={
                             isMobile
                                 ? "/centre-for-research/beyond_collaboration_mob.svg"
-                                : "/centre-for-research/beyond_collaboration.png"
+                                : "/centre-for-research/beyond_collaboration.webp"
                         }
                         alt="Our Track Record"
                         width={1000}
