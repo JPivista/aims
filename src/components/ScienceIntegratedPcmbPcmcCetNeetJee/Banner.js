@@ -19,7 +19,7 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/banner.png')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.png')]" />
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/banner.webp')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.webp')]" />
                 </div>
                 {/* Gradient Overlay */}
                 <div
@@ -37,8 +37,8 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                         <Image
                             src={
                                 isMobile
-                                    ? "/pre-university-college/empowering_minds_since1994_black.png"
-                                    : "/pre-university-college/empowering_minds_since1994.png"
+                                    ? "/pre-university-college/empowering_minds_since1994_black.webp"
+                                    : "/pre-university-college/empowering_minds_since1994.webp"
                             }
                             alt="Pre-University College Logo"
                             width={160} // adjust size

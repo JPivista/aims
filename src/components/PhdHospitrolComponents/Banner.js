@@ -8,21 +8,21 @@ const PhdBanner = ({ announcements, pageType = 'phd' }) => {
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image (people included in bg) */}
         <div className="absolute inset-0">
-          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/business_school/phd/phd_banner.png')] bg-[url('/business_school/phd/phd_mobile_banner.png')]" />
+          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/business_school/phd/phd_banner.webp')] bg-[url('/business_school/phd/phd_mobile_banner.webp')]" />
         </div>
 
         {/* Content wrapper */}
-        <div className="relative z-10 container mx-auto h-full flex flex-col md:justify-between justify-center px-4 md:px-8 lg:px-12">
+        <div className="relative z-10 container mx-auto h-full flex flex-col md:justify-between justify-center px-4 md:px-8 lg:px-12 pb-30 md:pb-0">
 
           {/* Headline */}
-          <div className="pt-2 lg:pt-20 md:pt-0">
+          <div className="pt-5">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight max-w-2xl md:text-left text-center">
               Focused Research.<br /> Real-World Impact.
             </h1>
           </div>
           {/* Program description (with responsive accreditation logos) */}
           <div className="max-w-xl text-white md:text-left text-center">
-            <h5 className="text-xl sm:text-2xl lg:text-3xl font-semibold" style={{ fontWeight: "500" }}>
+            <h5 className="text-xl sm:text-2xl lg:text-3xl font-semibold" style={{ fontWeight: "600" }}>
               PhD <span className="hidden md:inline"><br /></span> Doctoral Program
             </h5>
             <p className="mt-3 text-sm sm:text-base lg:text-lg max-w-md mx-auto md:mx-0">

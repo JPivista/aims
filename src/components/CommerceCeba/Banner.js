@@ -8,7 +8,7 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/pcmc_pcmb/aims_ebac_banner.png')] bg-[url('/pre-university-college/banner-mobile.png')]" />
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/pcmc_pcmb/aims_ebac_banner.webp')] bg-[url('/pre-university-college/pcmc_pcmb/aims_ebac_banner_mob.webp')]" />
                 </div>
 
                 {/* Gradient Overlay */}

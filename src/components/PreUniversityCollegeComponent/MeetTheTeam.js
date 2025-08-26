@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Mr. Basavaraj", subject: "Kannada", img: "/pre-university-college/basavaraj.png" },
-  { name: "Mr. A.J Timma Reddy", subject: "M.A Economics", img: "/pre-university-college/timma_reddy.png" },
-  { name: "Ms. Vidyarani B. V", subject: "M.Sc Mathematics", img: "/pre-university-college/vidyarani.png" },
-  { name: "Mr. S R Chethan", subject: "M.Sc B.Ed", img: "/pre-university-college/chethan.png" },
-  { name: "Ms. Aishwarya L", subject: "M.Sc B.Ed", img: "/pre-university-college/aishwarya.png" },
+  { name: "Mr. Basavaraj", subject: "Kannada", img: "/pre-university-college/basavaraj.webp" },
+  { name: "Mr. A.J Timma Reddy", subject: "M.A Economics", img: "/pre-university-college/timma_reddy.webp" },
+  { name: "Ms. Vidyarani B. V", subject: "M.Sc Mathematics", img: "/pre-university-college/vidyarani.webp" },
+  { name: "Mr. S R Chethan", subject: "M.Sc B.Ed", img: "/pre-university-college/chethan.webp" },
+  { name: "Ms. Aishwarya L", subject: "M.Sc B.Ed", img: "/pre-university-college/aishwarya.webp" },
 ];
 
 const MeetTheTeam = () => {

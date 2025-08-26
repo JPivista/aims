@@ -8,7 +8,7 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/pre_univercity_banner.png')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.png')]" />
+          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/pre_univercity_banner.webp')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.webp')]" />
         </div>
 
         {/* Gradient Overlay */}
@@ -25,7 +25,7 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
           {/* Logo Block */}
           <div className="container mx-auto px-4 pt-8 text-left">
             <Image
-              src="/pre-university-college/empowering_minds_since1994_black.png" // 👉 replace with your logo path
+              src="/pre-university-college/empowering_minds_since1994_black.webp" // 👉 replace with your logo path
               alt="Pre-University College Logo"
               width={160} // adjust size
               height={60}
