@@ -6,7 +6,7 @@ const AimAheadSection = () => {
     <div className="relative w-full h-[90vh] md:h-[75vh] overflow-hidden">
       {/* Desktop Background Image */}
       <Image
-        src="/admission-process/student.png"
+        src="/admission-process/student.webp"
         alt="Aim Ahead with Confidence"
         fill
         className="hidden md:block object-cover"
@@ -15,7 +15,7 @@ const AimAheadSection = () => {
 
       {/* Mobile Background Image */}
       <Image
-        src="/admission-process/mobile-student.png"
+        src="/admission-process/mobile-student.webp"
         alt="Aim Ahead with Confidence"
         fill
         className="block md:hidden object-cover"

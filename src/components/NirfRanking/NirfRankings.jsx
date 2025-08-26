@@ -67,7 +67,7 @@ const NirfRankings = () => {
           onClick={() => handleYearClick(year)}
         >
           <div className="flex-1">
-            <h5 className="monser-500 text-xl md:text-[36px]">NIRF {year}</h5>
+            <h5 className="monser-500 text-2xl md:text-[36px]">NIRF {year}</h5>
           </div>
           <Image
             src="/nirf/arrow.svg"
@@ -83,7 +83,7 @@ const NirfRankings = () => {
         {isExpanded && (
           <div className="px-2 md:px-4 pb-4 md:pb-6">
             <div>
-              <ul className="text-sm md:text-base monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
+              <ul className="text-[16px] monser-400 leading-relaxed space-y-2 list-disc pl-3 md:pl-5">
                 {description.map((point, index) => (
                   <li key={index} className="relative">
                     <span>

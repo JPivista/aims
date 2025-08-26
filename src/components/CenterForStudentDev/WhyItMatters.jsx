@@ -6,7 +6,7 @@ const WhyItMatters = () => {
     <div className="relative w-full h-[90vh] md:h-[75vh] overflow-hidden mt-4 md:mt-0">
       {/* Desktop Background Image */}
       <Image
-        src="/student-development/why-it-matters.png"
+        src="/student-development/why-it-matters.webp"
         alt="Why It Matters"
         fill
         className="hidden md:block object-cover"
@@ -15,7 +15,7 @@ const WhyItMatters = () => {
 
       {/* Mobile Background Image */}
       <Image
-        src="/student-development/mobile-why-it-matters.png"
+        src="/student-development/mobile-why-it-matters.webp"
         alt="Why It Matters"
         fill
         className="block md:hidden object-cover"

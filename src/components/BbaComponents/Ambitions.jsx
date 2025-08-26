@@ -21,7 +21,7 @@ const Ambitions = () => {
         {/* Mobile Image */}
         <div className="block md:hidden">
           <Image
-            src="/bba/mobile-acca-training.png"
+            src="/bba/mobile-acca-training.webp"
             alt="BBA ACCA Training"
             width={768}
             height={1024}

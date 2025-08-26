@@ -76,7 +76,7 @@ const HowToApply = () => {
               alt="Admission Process"
               width={1000}
               height={1000}
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

@@ -724,8 +724,8 @@ const Publications = () => {
                     ))}
                 </div>
 
-                {/* View More Text with Arrows - Only for Journal Publications */}
-                {activeTab === 0 &&
+                {/* View More Text with Arrows - For Journal Publications and Books Publications on mobile */}
+                {(activeTab === 0 || (activeTab === 1 && isMobile)) &&
                   visibleCount < tabsData[activeTab].points.length && (
                     <motion.div
                       className="flex justify-center mt-8"

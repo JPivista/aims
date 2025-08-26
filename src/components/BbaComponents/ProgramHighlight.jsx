@@ -6,7 +6,7 @@ const ProgramHighlight = () => {
     <div className="relative w-full h-[90vh] md:h-[75vh] overflow-hidden">
       {/* Desktop Background Image */}
       <Image
-        src="/bba/one-degree.png"
+        src="/bba/one-degree.webp"
         alt="BBA Program Highlight"
         fill
         className="hidden md:block object-cover"
@@ -15,7 +15,7 @@ const ProgramHighlight = () => {
 
       {/* Mobile Background Image */}
       <Image
-        src="/bba/mobile-one-degree.png"
+        src="/bba/mobile-one-degree.webp"
         alt="BBA Program Highlight"
         fill
         className="block md:hidden object-cover"
