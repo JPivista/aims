@@ -101,7 +101,7 @@ const BlogDetail = () => {
                         background: 'linear-gradient(180deg, white 50%, #E1F9F4 20%)'
                     }}
                 >
-                    <div className="relative h-56 lg:h-[50vh] md:min-w-[40%] md:max-w-[50%] w-[80%]">
+                    <div className="relative h-56 lg:h-[50vh] md:min-w-[40%] md:max-w-[50%] w-[80%] rounded-xl">
                         <Image
                             src={blogData.acf.banner_image || blogData.acf.thumbnail_image || '/default-blog-banner.jpg'}
                             alt={blogData.title?.rendered || "Blog Banner"}

@@ -62,56 +62,30 @@ const BlogPostDetails = () => {
                         key={blog.id}
                         className="flex flex-col lg:flex-row items-center bg-white rounded-2xl overflow-hidden border border-[#A22877]"
                     >
-                        {/* Alternate image left/right like screenshot */}
-                        {index % 2 === 0 ? (
-                            <>
-                                <div className="w-full lg:w-1/2">
-                                    <Image
-                                        src={blog.acf.thumbnail_image || blog.acf.banner_image}
-                                        alt={blog.title?.rendered || "Blog Image"}
-                                        width={800}
-                                        height={500}
-                                        className="object-cover w-full h-full"
-                                    />
-                                </div>
-                                <div className="p-6 w-full lg:w-1/2 flex flex-col justify-center">
-                                    <p className="text-sm mb-2 border border-gray-200 px-2 py-1 w-fit">
-                                        {new Date(blog.date).toLocaleDateString('en-GB')}
-                                    </p>
-                                    <h5 className="text-xl font-semibold text-gray-900 mb-3"
-                                        dangerouslySetInnerHTML={{ __html: blog.title.rendered }}
-                                    />
-                                    <p className="text-gray-700 mb-4">
-                                        {stripHtml(blog.excerpt?.rendered)?.slice(0, 220)}...
-                                    </p>
-                                    <Button href={`/blogs/${blog.slug}`} className="w-fit">Read More</Button>
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                <div className="p-6 w-full lg:w-1/2 flex flex-col justify-center">
-                                    <p className="text-sm mb-2 border border-gray-200 px-2 py-1 w-fit">
-                                        {new Date(blog.date).toLocaleDateString('en-GB')}
-                                    </p>
-                                    <h5 className="text-xl font-semibold text-gray-900 mb-3"
-                                        dangerouslySetInnerHTML={{ __html: blog.title.rendered }}
-                                    />
-                                    <p className="text-gray-700 mb-4">
-                                        {stripHtml(blog.excerpt?.rendered)?.slice(0, 220)}...
-                                    </p>
-                                    <Button href={`/blogs/${blog.slug}`} className="w-fit">Read More</Button>
-                                </div>
-                                <div className="w-full lg:w-1/2">
-                                    <Image
-                                        src={blog.acf.thumbnail_image || blog.acf.banner_image}
-                                        alt={blog.title?.rendered || "Blog Image"}
-                                        width={800}
-                                        height={500}
-                                        className="object-cover w-full h-full"
-                                    />
-                                </div>
-                            </>
-                        )}
+                        {/* Image - always first on mobile, alternating on desktop */}
+                        <div className={`w-full lg:w-1/2 order-1 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+                            <Image
+                                src={blog.acf.thumbnail_image || blog.acf.banner_image}
+                                alt={blog.title?.rendered || "Blog Image"}
+                                width={800}
+                                height={500}
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+
+                        {/* Content - always second on mobile, alternating on desktop */}
+                        <div className={`lg:p-6 p-4 w-full lg:w-1/2 flex flex-col justify-center order-2 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
+                            <p className="text-sm mb-2 border border-gray-200 px-2 py-1 w-fit">
+                                {new Date(blog.date).toLocaleDateString('en-GB')}
+                            </p>
+                            <h5 className="text-xl font-semibold text-gray-900 mb-3"
+                                dangerouslySetInnerHTML={{ __html: blog.title.rendered }}
+                            />
+                            <p className="text-gray-700 mb-4">
+                                {stripHtml(blog.excerpt?.rendered)?.slice(0, 220)}...
+                            </p>
+                            <Button href={`/blogs/${blog.slug}`} className="w-fit">Read More</Button>
+                        </div>
                     </div>
                 ))}
 

@@ -23,7 +23,7 @@ const EventsWorkshops = () => {
     const fetchEventsData = async () => {
         try {
             setLoading(true)
-            let url = `${API_CONFIG.SERVER_URL}posts?categories=4&_embed&production=${API_CONFIG.PRODUCTION_SERVER_ID}&status=publish`
+            let url = `${API_CONFIG.SERVER_URL}posts?categories=4&_embed&production=${API_CONFIG.PRODUCTION_SERVER_ID}&status=publish&per_page=100`
 
             const response = await fetch(url)
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
