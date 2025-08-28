@@ -60,7 +60,7 @@ const BlogPostDetails = () => {
                 {displayedBlogs.map((blog, index) => (
                     <div
                         key={blog.id}
-                        className="flex flex-col lg:flex-row items-center bg-white rounded-2xl overflow-hidden border border-[#A22877]"
+                        className="flex flex-col lg:flex-row items-center bg-white rounded-2xl overflow-hidden border border-[#A22877] cursor-pointer hover:shadow-lg transition-shadow duration-300"
                     >
                         {/* Image - always first on mobile, alternating on desktop */}
                         <div className={`w-full lg:w-1/2 order-1 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>

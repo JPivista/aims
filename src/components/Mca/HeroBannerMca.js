@@ -78,7 +78,7 @@ const HeroBannerMca = ({ announcements, pageType = 'mca' }) => {
                                     <div className="w-96 h-96 rounded-full overflow-hidden z-30">
                                         <Image
                                             src="/mca/mca-banner.webp"
-                                            alt="B.Com Student"
+                                            alt="Mca Student"
                                             fill
                                             className="object-cover"
                                             priority
@@ -95,7 +95,7 @@ const HeroBannerMca = ({ announcements, pageType = 'mca' }) => {
                     <div className="w-[700px] h-[550px] rounded-full overflow-hidden">
                         <Image
                             src="/mca/mca-banner.png"
-                            alt="B.Com Student"
+                            alt="Mca Student"
                             fill
                             className="object-cover"
                             priority
