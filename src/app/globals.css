@@ -356,3 +356,20 @@ h4 {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* WordPress styles */
+.wp-paragraph {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.wordpress-h5 {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
