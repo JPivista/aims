@@ -85,14 +85,12 @@ const EventDetail = () => {
                         background: 'linear-gradient(180deg, white 50%, #E1F9F4 20%)'
                     }}
                 >
-                    <div className="relative h-96 lg:h-[50vh] w-[50%] bg-[#E1F9F4]"
-
-                    >
+                    <div className="relative h-56 lg:h-[50vh] md:min-w-[40%] md:max-w-[50%] w-[80%] rounded-xl">
                         <Image
                             src={eventData.acf.banner_image || eventData.acf.thumbnail_image || '/default-event-banner.jpg'}
                             alt={eventData.title?.rendered || "Event Banner"}
                             fill
-                            className="object-cover rounded-xl"
+                            className="object-contain rounded-xl"
                             priority
                         />
                     </div>
