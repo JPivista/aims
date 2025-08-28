@@ -20,8 +20,6 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                     }}
                 ></div>
 
-
-
                 {/* Text/Logo Content */}
                 <div className="absolute inset-0 flex flex-col justify-between z-10">
                     {/* Logo Block */}

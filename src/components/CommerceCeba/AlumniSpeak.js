@@ -10,7 +10,7 @@ export default function Page() {
             description2="The respected faculty members — renowned in their fields — guided and inspired us to push boundaries beyond academics. Campus life is vibrant and full of opportunities to engage in extracurriculars that shaped my character and leadership."
             description3="Choosing AIMS was indeed a defining decision that helped me grow as a person."
             closingNote="Wishing an encouraging and positive career to all future AIMERS!"
-            imageSrc="/pre-university-college/pcmc_pcmb/komal_jha.png"
+            imageSrc="/pre-university-college/pcmc_pcmb/komal_jha.webp"
         />
     );
 }

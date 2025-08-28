@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const principalData = {
-    image: "/pre-university-college/principal.png",
+    image: "/pre-university-college/principal.webp",
     name: "MR. M L KUMAR",
     title: "PRINCIPAL, AIMS PU COLLEGE",
     headingItalic: "Principal’s",
