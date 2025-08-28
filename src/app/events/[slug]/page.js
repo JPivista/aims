@@ -142,10 +142,23 @@ const EventDetail = () => {
                             <div className="mt-8 flex justify-start items-start w-full">
                                 <Link
                                     href="/events"
-                                    className="text-[#A22877] hover:text-[#6E3299] transition-colors duration-300 flex items-center gap-2 p-class"
+                                    className="group text-[#A22877] hover:text-[#6E3299] transition-all duration-500 flex items-center gap-3 p-class relative overflow-hidden bg-gradient-to-r from-transparent via-transparent to-transparent hover:from-[#A22877]/10 hover:via-[#6E3299]/10 hover:to-[#A22877]/10 rounded-lg px-4 py-2 hover:shadow-lg hover:shadow-[#A22877]/20"
                                 >
-                                    <span>←</span>
-                                    <span>Back</span>
+                                    <span className="transform group-hover:-translate-x-2 group-hover:scale-110 transition-all duration-500 ease-out text-2xl">←</span>
+                                    <span className="transform group-hover:-translate-x-1 group-hover:scale-105 transition-all duration-500 ease-out font-medium">Back</span>
+
+                                    {/* Beautiful gradient underline */}
+                                    <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-[#A22877] via-[#6E3299] to-[#A22877] group-hover:w-full transition-all duration-700 ease-out rounded-full"></div>
+
+                                    {/* Floating particles effect */}
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-[#A22877] rounded-full animate-pulse group-hover:animate-bounce"></div>
+                                        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-[#6E3299] rounded-full animate-pulse group-hover:animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                                        <div className="absolute bottom-1/3 left-1/2 w-1 h-1 bg-[#A22877] rounded-full animate-pulse group-hover:animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                                    </div>
+
+                                    {/* Glow effect */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-[#A22877]/0 via-[#6E3299]/0 to-[#A22877]/0 group-hover:from-[#A22877]/5 group-hover:via-[#6E3299]/5 group-hover:to-[#A22877]/5 transition-all duration-500 rounded-lg"></div>
                                 </Link>
                             </div>
                         </div>
