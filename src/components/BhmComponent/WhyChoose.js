@@ -12,7 +12,7 @@ const WhyChooseAimsBhm = () => {
 
   return (
     <>
-      <div className="container mx-auto px-7 lg:py-16 py-5 flex flex-col items-center justify-center gap-5 lg:gap-8">
+      <div className="container mx-auto px-7 lg:py-10 py-5 flex flex-col items-center justify-center gap-5 lg:gap-8">
         <p className="text-center lg:text-xl">
           Our BHM program equips you with the mindset, skills and
           professionalism to thrive in the hospitality sector, from luxury
@@ -24,7 +24,7 @@ const WhyChooseAimsBhm = () => {
         </p>
       </div>
 
-      <div className="pb-16 px-4">
+      <div className="pb-10 px-4">
         {/* Heading */}
         <div className="text-center mb-8">
           <h3 className="text-2xl md:text-3xl  text-[#0C2165]">
