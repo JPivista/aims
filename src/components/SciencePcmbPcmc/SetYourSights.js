@@ -54,7 +54,7 @@ export default function Page() {
                     ``
                 ]}
                 tabData={examData}
-                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.svg"}
+                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.webp"}
                 tabDescription={`At AIMS PU College,  among the best PU colleges for PCMB and PCMC in Bangalore,  we are committed to fostering a nurturing and stimulating environment where students can thrive academically and personally. Join us in exploring the fascinating world of science and unlock your full potential!`}
             />
             <hr className="my-10 border-gray-400" />

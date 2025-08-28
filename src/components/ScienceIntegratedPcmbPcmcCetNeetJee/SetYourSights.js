@@ -35,7 +35,7 @@ export default function Page() {
                     `Each student receives individualized attention and assistance from our knowledgeable educators, who work to help them realise their greatest potential. You'll have access to state-of-the-art tools and creative teaching strategies, giving you the knowledge and abilities to thrive in the rapidly developing world of science.`
                 ]}
                 tabData={examData}
-                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.svg"}
+                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.webp"}
             />
             <hr className="border-gray-400 mb-10" />
         </>

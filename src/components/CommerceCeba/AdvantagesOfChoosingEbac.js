@@ -41,7 +41,7 @@ const AdvantagesOfChoosingEbac = () => {
       {/* Right Image */}
       <div className="w-full md:w-1/2 flex justify-center items-center p-6">
         <Image
-          src="/pre-university-college/pcmc_pcmb/ebac-students.png"
+          src="/pre-university-college/pcmc_pcmb/ebac-students.webp"
           alt="EBAC Students"
           width={500}
           height={500}

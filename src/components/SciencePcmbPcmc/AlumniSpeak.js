@@ -11,7 +11,7 @@ export default function Page() {
             description3="AIMS Institute is a nurturing ground for an individual of holistic development to make an effective contribution to the society in a dynamic way."
             description4="Choosing AIMS for my education was the best decision I ever made AIMS taught me the value of curiosity perseverance and empathy which has given me the tools to succeed in life."
             closingNote="Wishing a successful career to all the future AIMERS!"
-            imageSrc="/pre-university-college/pcmc_pcmb/hima.png"
+            imageSrc="/pre-university-college/pcmc_pcmb/hima.webp"
         />
     );
 }

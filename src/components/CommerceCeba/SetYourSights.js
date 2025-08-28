@@ -49,7 +49,7 @@ export default function Page() {
                     ``
                 ]}
                 tabData={examData}
-                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.svg"}
+                bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.webp"}
             />
             <hr className="border-gray-400 mb-10" />
         </>
