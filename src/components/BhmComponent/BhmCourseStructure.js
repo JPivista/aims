@@ -1,5 +1,5 @@
-'use client'
-import React from 'react'
+"use client"
+import React from "react"
 import TabCourseStructure from "@/components/BhmComponent/TabCourseStructure"
 
 // ✅ Full BHM JSON (8 Semesters)
@@ -24,8 +24,8 @@ const sampleCourseData = [
           "Food & Beverage Production Practical - I",
           "Food & Beverage Service Practical - I",
           "Front Office Practical - I",
-          "Housekeeping Practical - I"
-        ]
+          "Housekeeping Practical - I",
+        ],
       },
       {
         key: "semester-2",
@@ -38,15 +38,15 @@ const sampleCourseData = [
           "Food & Beverage Service - II",
           "Front Office - II",
           "Housekeeping - II",
-          "Nutrition",
+          "Computer Fundamentals with Prime Tally(CFPT)",
           { type: "subheading", text: "Practical" },
           "Food & Beverage Production Practical - II",
           "Food & Beverage Service Practical - II",
           "Front Office Practical - II",
-          "Housekeeping Practical - II"
-        ]
-      }
-    ]
+          "Housekeeping Practical - II",
+        ],
+      },
+    ],
   },
   {
     key: "second-year",
@@ -57,38 +57,41 @@ const sampleCourseData = [
         label: "SEMESTER 3",
         courses: [
           { type: "subheading", text: "Theory" },
+          "Language - I",
+          "Language - II",
           "Food & Beverage Production - III",
           "Food & Beverage Service - III",
           "Front Office - III",
           "Housekeeping - III",
-          "Hotel Engineering",
-          "Communication Skills",
+          "Constitution of India /Constitutional Values",
           { type: "subheading", text: "Practical" },
-          "Food & Beverage Production Practical - III",
+          "Food & Beverage Production - III",
           "Food & Beverage Service Practical - III",
           "Front Office Practical - III",
-          "Housekeeping Practical - III"
-        ]
+          "Housekeeping Practical - III",
+        ],
       },
       {
         key: "semester-4",
         label: "SEMESTER 4",
         courses: [
           { type: "subheading", text: "Theory" },
-          "Food & Beverage Production - IV",
+          "Language - I",
+          "Language - II",
+          "Food & Beverage Production– IV",
           "Food & Beverage Service - IV",
           "Front Office - IV",
           "Housekeeping - IV",
-          "Hotel Accountancy",
-          "Computer Applications",
+          "Hospitality Etiquettes & Communication Skills",
+
           { type: "subheading", text: "Practical" },
           "Food & Beverage Production Practical - IV",
           "Food & Beverage Service Practical - IV",
           "Front Office Practical - IV",
-          "Housekeeping Practical - IV"
-        ]
-      }
-    ]
+          "Housekeeping Practical - IV",
+        ],
+      },
+    ],
   },
   {
     key: "third-year",
@@ -98,39 +101,35 @@ const sampleCourseData = [
         key: "semester-5",
         label: "SEMESTER 5",
         courses: [
-          { type: "subheading", text: "Theory" },
-          "Food & Beverage Production - V",
-          "Food & Beverage Service - V",
-          "Front Office - V",
-          "Housekeeping - V",
-          "Financial Management",
-          "Food Science",
-          { type: "subheading", text: "Practical" },
-          "Food & Beverage Production Practical - V",
-          "Food & Beverage Service Practical - V",
-          "Front Office Practical - V",
-          "Housekeeping Practical - V"
-        ]
+          { type: "subheading", text: "Industrial Exposure Training (20 Weeks):" },
+          "Log Book",
+          "Viva & Presentation",
+          "Industrial Training Report",
+        ],
       },
       {
         key: "semester-6",
         label: "SEMESTER 6",
         courses: [
           { type: "subheading", text: "Theory" },
-          "Food & Beverage Production - VI",
-          "Food & Beverage Service - VI",
-          "Front Office - VI",
-          "Housekeeping - VI",
-          "Marketing Management",
-          "Research Methodology",
+          "Bakery & Pastry Arts",
+          "Information Technology in Hotels",
+          "Rooms Division Management",
+          "Travel and Tourism Management",
+          " Hotel Finance and Accounting",
+        
           { type: "subheading", text: "Practical" },
-          "Food & Beverage Production Practical - VI",
-          "Food & Beverage Service Practical - VI",
-          "Front Office Practical - VI",
-          "Housekeeping Practical - VI"
-        ]
-      }
-    ]
+          "Specialisation (Electives) -",
+          " - Culinary Management",
+          "- Food and Beverage Management",
+          "- Front Office Management",
+          "- Accommodation Management",
+          "Bakery and Pastry Arts Practical",
+          "Information Technology in Hotels Practical’s",
+       
+        ],
+      },
+    ],
   },
   {
     key: "fourth-year",
@@ -141,28 +140,32 @@ const sampleCourseData = [
         label: "SEMESTER 7",
         courses: [
           { type: "subheading", text: "Theory" },
-          "Strategic Management",
-          "Hospitality Law",
-          "Human Resource Management",
-          "Elective I",
-          { type: "subheading", text: "Practical" },
-          "Project Work / Internship"
-        ]
+          "Allied Hospitality Management",
+          "Revenue Management in Hotels",
+          "Research Methodology",
+          "Entrepreneurship Development in Hospitality",
+          "Marketing for Hospitality Services & Products.",
+          "Creative Design in Hospitality",
+          "Project Work –Entrepreneurship Development",
+       
+         
+        
+        ],
       },
       {
         key: "semester-8",
         label: "SEMESTER 8",
         courses: [
           { type: "subheading", text: "Theory" },
-          "Entrepreneurship Development",
-          "Hospitality Management",
-          "Elective II",
-          { type: "subheading", text: "Practical" },
-          "Final Project / Viva Voce"
-        ]
-      }
-    ]
-  }
+          "Training Report",
+          "Log Book",
+          "Specialization Research Paper",
+          "Viva Voice & Presentation",
+      
+        ],
+      },
+    ],
+  },
 ]
 
 const BhmCourseStructure = () => {
@@ -172,7 +175,9 @@ const BhmCourseStructure = () => {
         <div>
           <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 px-4 lg:px-0">
             BHM Program <br />
-            <span className="text-[#0C2165] playfair-400">Course Structure</span>
+            <span className="text-[#0C2165] playfair-400">
+              Course Structure
+            </span>
           </h3>
         </div>
       </div>
