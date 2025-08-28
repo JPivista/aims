@@ -56,4 +56,15 @@ export const MenuItems = [
       { name: "Placements MBA/PGDM", href: "/placements-mba/pgdm" }
     ],
   },
+  ,
+  {
+    title: "Resources",
+    links: [
+      { name: "News", href: "/news" },
+      { name: "Newsletter", href: "/aims-newsletters" },
+      { name: "Events", href: "/events" },
+      { name: "Blogs", href: "/blogs" },
+      { name: "AIMS Journal of Research", href: "/aims-journal-of-research" },
+    ],
+  },
 ];

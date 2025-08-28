@@ -172,12 +172,12 @@ export default function Header() {
               >
                 Alumni
               </Link>
-              <Link
+              {/* <Link
                 href="/eresources"
                 className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
               >
                 Resources
-              </Link>
+              </Link> */}
 
               <Button showReadMore={false} href="https://enquiry.theaims.ac.in/">Contact Us</Button>
             </motion.div>
