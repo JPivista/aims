@@ -94,7 +94,7 @@ const HeroBannerMca = ({ announcements, pageType = 'mca' }) => {
                 <div className="hidden lg:block absolute right-0 bottom-0 z-30">
                     <div className="w-[700px] h-[550px] rounded-full overflow-hidden">
                         <Image
-                            src="/mca/mca-banner.png"
+                            src="/mca/mca-banner.webp"
                             alt="Mca Student"
                             fill
                             className="object-cover"
