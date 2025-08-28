@@ -5,22 +5,22 @@ import { API_CONFIG } from '../../config/config'
 import Button from '@/shared/Button'
 
 const BlogPostDetails = () => {
-    const [eventsData, setEventsData] = useState([])
-    const [displayedEvents, setDisplayedEvents] = useState([])
+    const [blogsData, setBlogsData] = useState([])
+    const [displayedBlogs, setDisplayedBlogs] = useState([])
     const [visibleCount, setVisibleCount] = useState(6)
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        fetchEventsData()
+        fetchBlogsData()
     }, [])
 
     useEffect(() => {
-        if (Array.isArray(eventsData) && eventsData.length > 0) {
-            setDisplayedEvents(eventsData.slice(0, visibleCount))
+        if (Array.isArray(blogsData) && blogsData.length > 0) {
+            setDisplayedBlogs(blogsData.slice(0, visibleCount))
         }
-    }, [eventsData, visibleCount])
+    }, [blogsData, visibleCount])
 
-    const fetchEventsData = async () => {
+    const fetchBlogsData = async () => {
         try {
             setLoading(true)
             let url = `${API_CONFIG.SERVER_URL}posts?categories=5&_embed&production=${API_CONFIG.PRODUCTION_SERVER_ID}&status=publish`
@@ -28,17 +28,17 @@ const BlogPostDetails = () => {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
             const data = await response.json()
 
-            if (Array.isArray(data)) setEventsData(data)
-            else setEventsData([])
+            if (Array.isArray(data)) setBlogsData(data)
+            else setBlogsData([])
         } catch (error) {
-            console.error('Error fetching events:', error)
+            console.error('Error fetching blogs:', error)
         } finally {
             setLoading(false)
         }
     }
 
     const loadMore = () => {
-        if (eventsData.length > visibleCount) {
+        if (blogsData.length > visibleCount) {
             setVisibleCount(prev => prev + 4)
         }
     }
@@ -50,16 +50,16 @@ const BlogPostDetails = () => {
         return tmp.textContent || tmp.innerText || ''
     }
 
-    if (!loading && eventsData.length === 0) return null
+    if (!loading && blogsData.length === 0) return null
 
     return (
         <div className="py-10 px-4">
             <div className="container mx-auto space-y-10">
 
-                {/* Events List */}
-                {displayedEvents.map((event, index) => (
+                {/* Blogs List */}
+                {displayedBlogs.map((blog, index) => (
                     <div
-                        key={event.id}
+                        key={blog.id}
                         className="flex flex-col lg:flex-row items-center bg-white rounded-2xl overflow-hidden border border-[#A22877]"
                     >
                         {/* Alternate image left/right like screenshot */}
@@ -67,8 +67,8 @@ const BlogPostDetails = () => {
                             <>
                                 <div className="w-full lg:w-1/2">
                                     <Image
-                                        src={event.acf.thumbnail_image || event.acf.banner_image}
-                                        alt={event.title?.rendered || "Event Image"}
+                                        src={blog.acf.thumbnail_image || blog.acf.banner_image}
+                                        alt={blog.title?.rendered || "Blog Image"}
                                         width={800}
                                         height={500}
                                         className="object-cover w-full h-full"
@@ -76,35 +76,35 @@ const BlogPostDetails = () => {
                                 </div>
                                 <div className="p-6 w-full lg:w-1/2 flex flex-col justify-center">
                                     <p className="text-sm mb-2 border border-gray-200 px-2 py-1 w-fit">
-                                        {new Date(event.date).toLocaleDateString('en-GB')}
+                                        {new Date(blog.date).toLocaleDateString('en-GB')}
                                     </p>
                                     <h5 className="text-xl font-semibold text-gray-900 mb-3"
-                                        dangerouslySetInnerHTML={{ __html: event.title.rendered }}
+                                        dangerouslySetInnerHTML={{ __html: blog.title.rendered }}
                                     />
                                     <p className="text-gray-700 mb-4">
-                                        {stripHtml(event.excerpt?.rendered)?.slice(0, 220)}...
+                                        {stripHtml(blog.excerpt?.rendered)?.slice(0, 220)}...
                                     </p>
-                                    <Button href={`/blogs/${event.slug}`} className="w-fit">Read More</Button>
+                                    <Button href={`/blogs/${blog.slug}`} className="w-fit">Read More</Button>
                                 </div>
                             </>
                         ) : (
                             <>
                                 <div className="p-6 w-full lg:w-1/2 flex flex-col justify-center">
                                     <p className="text-sm mb-2 border border-gray-200 px-2 py-1 w-fit">
-                                        {new Date(event.date).toLocaleDateString('en-GB')}
+                                        {new Date(blog.date).toLocaleDateString('en-GB')}
                                     </p>
                                     <h5 className="text-xl font-semibold text-gray-900 mb-3"
-                                        dangerouslySetInnerHTML={{ __html: event.title.rendered }}
+                                        dangerouslySetInnerHTML={{ __html: blog.title.rendered }}
                                     />
                                     <p className="text-gray-700 mb-4">
-                                        {stripHtml(event.excerpt?.rendered)?.slice(0, 220)}...
+                                        {stripHtml(blog.excerpt?.rendered)?.slice(0, 220)}...
                                     </p>
-                                    <Button href={`/blogs/${event.slug}`} className="w-fit">Read More</Button>
+                                    <Button href={`/blogs/${blog.slug}`} className="w-fit">Read More</Button>
                                 </div>
                                 <div className="w-full lg:w-1/2">
                                     <Image
-                                        src={event.acf.thumbnail_image || event.acf.banner_image}
-                                        alt={event.title?.rendered || "Event Image"}
+                                        src={blog.acf.thumbnail_image || blog.acf.banner_image}
+                                        alt={blog.title?.rendered || "Blog Image"}
                                         width={800}
                                         height={500}
                                         className="object-cover w-full h-full"
@@ -116,7 +116,7 @@ const BlogPostDetails = () => {
                 ))}
 
                 {/* View More */}
-                {visibleCount < eventsData.length && (
+                {visibleCount < blogsData.length && (
                     <div className="text-center mt-8">
                         <Button onClick={loadMore} variant="teal">
                             View More
