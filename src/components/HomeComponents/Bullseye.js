@@ -34,7 +34,7 @@ const Bullseye = () => {
       </div>
       <div className="flex justify-center w-full">
         <Link href="/placement-policies" className="lg:-mt-20">
-          <Button>Explore Placement</Button>
+          <Button>Explore Placements</Button>
         </Link>
       </div>
     </>

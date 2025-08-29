@@ -5,10 +5,12 @@ import Companies from "../shared/Companies";
 import SectorWise from "./SectorWise";
 import TopRecruitingSectors from "./TopRecruitingSectors/TopRecruitingSectors";
 import ReadyToDraw from "../shared/ReadyToDraw";
+import Breadcrumbs from "../shared/Breadcrumbs";
 const PlacementsMBA = () => {
   return (
     <>
       <HeroBanner />
+      <Breadcrumbs />
       <AveragePackage />
       <SectorWise />
       <TopRecruitingSectors />

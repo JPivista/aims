@@ -5,10 +5,12 @@ import PreplacementTraining from "./PreplacementTraining/PreplacementTraining";
 import PlacementPolicy from "./PlacementPolicy";
 import IneligibilityAndRecruitment from "./IneligibilityAndRecruitment";
 import ReadyToDraw from "../shared/ReadyToDraw";
+import Breadcrumbs from "../shared/Breadcrumbs";
 const PlacementPolicies = () => {
   return (
     <>
       <HeroBanner />
+      <Breadcrumbs />
       <BridgingCampus />
       <PreplacementTraining />
       <PlacementPolicy />

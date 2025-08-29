@@ -22,9 +22,9 @@ const Since = () => {
           mentors, and a distraction-free campus, we prepare learners to build
           careers in business, hospitality, IT, commerce, and more.
         </p>
-        <Button showReadMore={true} hoverText="Our Programs">
+        {/* <Button showReadMore={true} hoverText="Our Programs">
           <Link href="/about">Choose Your Arrow</Link>
-        </Button>
+        </Button> */}
       </div>
     </>
   );

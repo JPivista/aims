@@ -19,7 +19,7 @@ export default function CampusLifeSection() {
             peer learning, you’ll find your rhythm, and your strengths.
           </p>
           <Button showReadMore={false}>
-            <Link href="/campus-life">A Look Into Campus Life</Link>
+            <Link href="/campus-facilities">A Look Into Campus Life</Link>
           </Button>
         </div>
 
