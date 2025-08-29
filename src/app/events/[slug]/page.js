@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { API_CONFIG } from '../../../config/config'
 import Button from '@/shared/Button'
+import Breadcrumbs from '@/components/shared/Breadcrumbs'
 
 const EventDetail = () => {
     const params = useParams()
@@ -75,6 +76,7 @@ const EventDetail = () => {
                     // }
                 `}
             </style>
+            <Breadcrumbs />
             <div className="min-h-screen pt-10  flex flex-col justify-center items-center"
             // style={{
             //     background: 'linear-gradient(180deg, white 25%, #E1F9F4 20%)'

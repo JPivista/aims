@@ -8,12 +8,14 @@ import BcaCourseStructure from './BcaCourseStructure'
 import BcaPLus from './BcaPLus'
 import BcaAlumni from './BcaAlumni'
 import BcaStudentLead from './BcaStudentLead'
+import Breadcrumbs from '../shared/Breadcrumbs'
 
 
 const index = () => {
     return (
         <>
             <HeroBannerBca />
+            <Breadcrumbs />
             <BcaContent />
             <BcaProgramOverview />
             <BcaValueAddedPrograms />

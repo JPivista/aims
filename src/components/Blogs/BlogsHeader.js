@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import NewsTabs from '../shared/NewsTabs'
+import Breadcrumbs from '../shared/Breadcrumbs'
 
 const BlogsHeader = () => {
     return (
@@ -23,6 +24,7 @@ const BlogsHeader = () => {
                     </div>
                 </div>
             </div>
+            <Breadcrumbs />
             <div className='justify-center items-center flex flex-col lg:px-0 px-4 relative overflow-hidden'>
                 <div className='container mx-auto py-10 border-b border-gray-200'>
                     <div className='md:w-[75%] mx-auto text-center flex flex-col gap-4 justify-center items-center'>

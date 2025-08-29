@@ -25,14 +25,14 @@ const tabData = [
           Any candidate who meets the following requirements is eligible to seek registration for a PhD program :
         </h6>
         <p className="text-gray-800 mb-4 text-sm sm:text-base">
-          A candidate shall have Masters Degree or any other Degree / Diploma of the University or any other Degree / Diploma of any other University / Institution recognized as equivalent thereto, with minimum of 55% marks or equivalent Cumulative Grade Point Average (CGPA) or an equivalent Grade.
+          A candidate shall have Masters Degree or any other Degree/Diploma of the University or any other Degree/Diploma of any other University/Institution recognized as equivalent thereto, with minimum of 55% marks or equivalent Cumulative Grade Point Average (CGPA) or an equivalent Grade.
         </p>
         <p style={{ fontWeight: '600' }} className="text-gray-800 font-semibold text-sm sm:text-base mb-2">
           However, this condition is relaxed to 50% in case of:
         </p>
         <ul className="list-disc pl-5 text-gray-800 text-sm sm:text-base space-y-1">
           <li>SC/ST/Cat-I candidates</li>
-          <li>In service candidates with a minimum of five years of regular experience associated with teaching profession as teachers/ library professionals/ physical education instructors/ laboratory staff in educational institute</li>
+          <li>In service candidates with a minimum of five years of regular experience associated with teaching profession as teachers/library professionals/physical education instructors/laboratory staff in educational institute</li>
         </ul>
       </>
     ),

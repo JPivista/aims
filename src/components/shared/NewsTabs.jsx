@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Breadcrumbs from './Breadcrumbs'
 
 const NewsTabs = () => {
     const pathname = usePathname()
@@ -24,22 +25,24 @@ const NewsTabs = () => {
     const activeTab = getActiveTab()
 
     return (
-        <div className='flex justify-center my-4'>
-            <div className='flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4'>
-                {tabs.map((tab) => (
-                    <Link
-                        key={tab.id}
-                        href={tab.path}
-                        className={`px-3 sm:px-4 lg:px-6 py-2 rounded-sm transition-all duration-300 border-[1px] font-semibold text-sm sm:text-base lg:text-lg ${activeTab === tab.id
-                            ? 'bg-[#531574] text-white border-[#531574]'
-                            : 'bg-white text-black border-gray-300 hover:border-[#A22877]'
-                            }`}
-                    >
-                        {tab.label}
-                    </Link>
-                ))}
+        <>
+            <div className='flex justify-center my-4'>
+                <div className='flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4'>
+                    {tabs.map((tab) => (
+                        <Link
+                            key={tab.id}
+                            href={tab.path}
+                            className={`px-3 sm:px-4 lg:px-6 py-2 rounded-sm transition-all duration-300 border-[1px] font-semibold text-sm sm:text-base lg:text-lg ${activeTab === tab.id
+                                ? 'bg-[#531574] text-white border-[#531574]'
+                                : 'bg-white text-black border-gray-300 hover:border-[#A22877]'
+                                }`}
+                        >
+                            {tab.label}
+                        </Link>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

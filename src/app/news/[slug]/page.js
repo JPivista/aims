@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { API_CONFIG } from '../../../config/config'
+import Breadcrumbs from '@/components/shared/Breadcrumbs'
 
 const NewsDetail = () => {
     const params = useParams()
@@ -92,6 +93,7 @@ const NewsDetail = () => {
                     }
                 `}
             </style>
+            <Breadcrumbs />
             <div className="min-h-screen pt-10 flex flex-col justify-center items-center">
                 <div className='w-full flex flex-col justify-center items-center'
                     style={{

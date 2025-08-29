@@ -40,7 +40,7 @@ const WhyChooseAims = () => {
                 {/* Heading */}
                 <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] mb-12 pb-12">
                     Why Choose the <br />
-                    <span style={{ fontWeight: '600', color: '#a22978' }} className="italic">AIMS PhD?</span>
+                    <span style={{ fontWeight: '600', color: '#a22978' }} className="italic playfair-400">AIMS PhD?</span>
                 </h3>
 
                 {/* Features */}
