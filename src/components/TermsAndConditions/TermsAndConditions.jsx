@@ -1,6 +1,8 @@
 import React from "react"
 import Image from "next/image"
 
+import Breadcrumbs from "../shared/Breadcrumbs"
+
 const TermsAndConditions = () => {
   const contentSections = [
     {
@@ -316,6 +318,7 @@ const TermsAndConditions = () => {
         </p>
       </div>
 
+      <Breadcrumbs />
       {/* Content Section */}
       <div className="relative">
         <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
