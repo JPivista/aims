@@ -70,7 +70,7 @@ const ValueAddedPrograms = ({ programKey = "mba" }) => {
       description:
         "In our effort to build the profile of the participants of the program and ensure they meet the requirements of the industry (in addition to personality development), we at AIMS incorporate a set of value added programs in each semester.",
       disclaimer:
-        "Presentations by the scholars are scheduled every month in the presence of the respective guides and senior professors which help the scholars in speeding up their research works.",
+        "*Certifications might vary depending on specialisation and intake year.",
       image: "/bba/one-degree.jpg",
       programs: [
         {

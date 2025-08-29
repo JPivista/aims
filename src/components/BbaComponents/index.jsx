@@ -12,8 +12,8 @@ import Breadcrumbs from "../shared/Breadcrumbs"
 const BbaComponents = ({ announcements }) => {
   return (
     <div className="w-full">
-      <Breadcrumbs />
       <HeroBanner announcements={announcements} />
+      <Breadcrumbs />
       <WhyChoose />
       <Overview />
       <ValueAddedPrograms programKey="bba" />
@@ -29,7 +29,6 @@ const BbaComponents = ({ announcements }) => {
         subtitle="From helping you define your goals to guiding you through every step, we're here to help you take that first shot."
         primaryButtonText="Apply Now"
         secondaryButtonText="Download Brochure"
-        tertiaryButtonText="Talk to a Counsellor"
       />
     </div>
   )

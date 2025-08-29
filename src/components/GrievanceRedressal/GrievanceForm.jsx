@@ -281,14 +281,17 @@ const GrievanceForm = () => {
               {/* Email */}
               <div>
                 <label className="block text-white text-base mb-2 monser-600">
-                  Email
+                  Email{" "}
+                  <span className="text-white text-sm monser-400">
+                    (required)
+                  </span>
                 </label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email (required)"
+                  placeholder="Email"
                   className={`w-full px-4 py-3 bg-[#E1F9F4] text-gray-800 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#A22877] ${
                     errors.email ? "ring-2 ring-red-500" : ""
                   }`}
@@ -361,14 +364,14 @@ const GrievanceForm = () => {
 
             {/* Category Section */}
             <div className="space-y-4">
-              <h2 className="text-white text-3xl md:text-4xl monser-600">
+              <label className="text-white text-base monser-600">
                 Category{" "}
                 <span className="text-white text-sm monser-400">
                   (required)
                 </span>
-              </h2>
+              </label>
               {/* Category */}
-              <div className="relative">
+              <div className="relative mt-2">
                 <select
                   name="category"
                   value={formData.category}
@@ -410,19 +413,19 @@ const GrievanceForm = () => {
 
             {/* Grievance Details Section */}
             <div className="space-y-4">
-              <h2 className="text-white text-3xl md:text-4xl monser-600">
+              <label className="text-white text-base mb-2 monser-600">
                 Details of Grievance{" "}
                 <span className="text-white text-sm monser-400">
                   (required)
                 </span>
-              </h2>
+              </label>
               {/* Grievance Details */}
               <textarea
                 name="grievanceDetails"
                 value={formData.grievanceDetails}
                 onChange={handleChange}
                 rows={6}
-                className={`w-full px-4 py-3 bg-[#E1F9F4] text-gray-800 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#A22877] resize-none ${
+                className={`w-full px-4 py-3 bg-[#E1F9F4] text-gray-800 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-[#A22877] resize-none mt-2 ${
                   errors.grievanceDetails ? "ring-2 ring-red-500" : ""
                 }`}
                 required

@@ -5,7 +5,9 @@ import Button from "../../shared/Button"
 const ReadyToDraw = ({
   title = (
     <>
-    Ready to <br/>Draw Your Bow?</>
+      Ready to <br />
+      Draw Your Bow?
+    </>
   ),
   subtitle = "From helping you define your goals to guiding you through every step, we're here to help you take that first shot.",
   primaryButtonText = "Apply Now",
@@ -16,8 +18,8 @@ const ReadyToDraw = ({
 }) => {
   return (
     <>
-      <div className={`${bgColor} py-6 sm:py-8 md:py-16`}>
-        <div className="container mx-auto px-4 md:px-6">
+      <div className={`${bgColor} py-6 md:py-10`}>
+        <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
             {/* Left Side - Content */}
             <div className="w-full md:w-3/4 space-y-3 sm:space-y-4 md:space-y-6">
@@ -35,6 +37,8 @@ const ReadyToDraw = ({
                   <Button
                     variant="secondary"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
+                    href="https://apply.theaims.ac.in/login"
+                    target="_blank"
                   >
                     {primaryButtonText}
                   </Button>
@@ -44,6 +48,8 @@ const ReadyToDraw = ({
                   <Button
                     variant="secondary"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
+                    href="https://enquiry.theaims.ac.in/"
+                    target="_blank"
                   >
                     {secondaryButtonText}
                   </Button>
@@ -53,6 +59,9 @@ const ReadyToDraw = ({
                   <Button
                     variant="secondary"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
+                    href="https://enquiry.theaims.ac.in/"
+                    target="_blank"
+
                   >
                     {tertiaryButtonText}
                   </Button>
@@ -61,20 +70,20 @@ const ReadyToDraw = ({
             </div>
 
             {/* Right Side - Arrow SVG */}
-        <div className="lg:block hidden">
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end ">
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
-                <Image
-                  src={arrowImage}
-                  alt="Arrow"
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-contain "
-                  priority
-                />
+            <div className="lg:block hidden ">
+              <div className="w-full md:w-3/4 flex justify-center md:justify-end ">
+                <div className="relative">
+                  <Image
+                    src={arrowImage}
+                    alt="Arrow"
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-contain "
+                    priority
+                  />
+                </div>
               </div>
             </div>
-        </div>
           </div>
         </div>
       </div>

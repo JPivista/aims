@@ -366,7 +366,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
       mba: "Comprehensive two-year curriculum with specialisation options",
       bba: "Foundation program that builds strong business fundamentals and prepares students for diverse career opportunities.",
       "bba-aviation":
-        "Specialized program combining business management with aviation industry knowledge for future aviation leaders.",
+        "Specialised program combining business management with aviation industry knowledge for future aviation leaders.",
     }
     return descriptions[programKey] || "Program description"
   }
