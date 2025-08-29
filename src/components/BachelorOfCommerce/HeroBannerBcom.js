@@ -77,7 +77,7 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                                     {/* Main circular image - Mobile */}
                                     <div className="w-96 h-96 rounded-full overflow-hidden z-30">
                                         <Image
-                                            src="/bcom/bcom-banner.webp"
+                                            src="/bcom/bcom-banner-mobile.webp"
                                             alt="B.Com Student"
                                             fill
                                             className="object-contain"
