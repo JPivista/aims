@@ -18,7 +18,7 @@ const ReadyToDraw = ({
 }) => {
   return (
     <>
-      <div className={`${bgColor} py-6 md:py-10`}>
+      <div className={`${bgColor} py-6 md:py-10 px-4 lg:px-0`}>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
             {/* Left Side - Content */}
