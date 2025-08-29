@@ -7,7 +7,7 @@ const BcomContent = () => {
             <div className='container mx-auto flex flex-col items-center justify-center px-4 lg:px-0'>
                 <div className='text-center lg:w-[80%]  py-10'>
                     <p>
-                        AIMS MCA is structured to develop skilled professionals with strong technical foundations, software development expertise, and industry-readiness. Designed to keep pace with emerging technologies, the program is tailored for students looking to build impactful careers in IT, analytics, and beyond.
+                        With a legacy of over 30 years, the B.Com program at AIMS bridges academic theory with industry demands. Designed for ambitious undergraduates, it combines core learning with certifications and real-world case exposure.
                     </p>
                 </div>
 

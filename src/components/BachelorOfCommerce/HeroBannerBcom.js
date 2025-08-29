@@ -80,7 +80,7 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                                             src="/bcom/bcom-banner.webp"
                                             alt="B.Com Student"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             priority
                                         />
                                     </div>
