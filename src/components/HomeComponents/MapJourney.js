@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 import { RiTwitterXFill } from "react-icons/ri";
 import { SlSocialYoutube } from "react-icons/sl";
+import Link from "next/link";
 
 const MapJourney = () => {
   const mapJourney = [
@@ -92,10 +93,10 @@ const MapJourney = () => {
             <h5 className="text-2xl monser-700">Follow Us</h5>
           </div>
           <div className="flex gap-4">
-            <FaInstagram size={30} />
-            <CiFacebook size={30} />
-            <RiTwitterXFill size={30} />
-            <SlSocialYoutube size={30} />
+            <Link href="https://www.instagram.com/aimsinstitutes1994/?hl=en" target="_blank"><FaInstagram size={30} /></Link>
+            <Link href="https://www.facebook.com/aimsinstitutes1994/" target="_blank"><CiFacebook size={30} /></Link>
+            <Link href="https://x.com/aimsinstitutes1994" target="_blank"><RiTwitterXFill size={30} /></Link>
+            <Link href="https://www.youtube.com/@aimsinstitutes1994" target="_blank"><SlSocialYoutube size={30} /></Link>
 
           </div>
         </div>

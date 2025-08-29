@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Button from "@/shared/Button";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -22,12 +23,20 @@ const testimonials = [
     stars: 5,
   },
   {
-    id: 2,
-    name: "Another Alumni, MBA 2020-22",
-    text: "My experience at AIMS transformed me both personally and professionally. The faculty, peers, and opportunities helped me gain confidence and step into the corporate world with ease.",
-    image: "/home/campus/embla-2.png",
+    id: 3,
+    name: "Aritrika Pal, BBA 2021-24",
+    text: `"Excited to share that I've joined Deloitte as an Advisory Associate Analyst! While I secured the role independently, the solid foundation and support from AIMS Institutes were instrumental in my preparation. Truly grateful for the learning experience that shaped my journey."`,
+    image: "/home/slide-1.webp",
     stars: 5,
   },
+  {
+    id: 4,
+    name: "Another Alumni, MBA 2020-22",
+    text: "My experience at AIMS transformed me both personally and professionally. The faculty, peers, and opportunities helped me gain confidence and step into the corporate world with ease.",
+    image: "/home/slide-2.webp",
+    stars: 5,
+  },
+  
 ];
 
 export default function AlumniCarousel() {
@@ -45,7 +54,9 @@ export default function AlumniCarousel() {
           AIMers in <br />
           <span className="italic text-[#A22877] playfair-400">Action</span>
         </h3>
-        <Button>Read All Alumni Journeys</Button>
+        <Button>
+          <Link href="/aims-alumni-association">Read All Alumni Journeys</Link>
+        </Button>
       </div>
 
       {/* Right carousel */}

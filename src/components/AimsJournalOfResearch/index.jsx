@@ -6,11 +6,12 @@ import ReadyToDraw from "../shared/ReadyToDraw";
 import { TfiEmail } from "react-icons/tfi";
 import { LuPhone } from "react-icons/lu";
 import TabSection from "./TabSection";
-
+import Breadcrumbs from "../shared/Breadcrumbs";
 const index = () => {
   return (
     <>
       <HeroBanner />
+      <Breadcrumbs />
       <Content />
       <GridBox />
       <TabSection />

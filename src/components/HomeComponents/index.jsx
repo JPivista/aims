@@ -13,11 +13,13 @@ import YourPractice from "./YourPractice";
 import ReadyToDraw from "../shared/ReadyToDraw";
 import AlumniCarousel from "./AlumniCarousel";
 import MapJourney from "./MapJourney";
+import Breadcrumbs from "../shared/Breadcrumbs";
 
 const HomeComponents = () => {
   return (
     <>
       <HeroBanner />
+      <Breadcrumbs />
       <Since />
       {/* <Slide /> */}
       <SlideTwo />
