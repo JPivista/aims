@@ -28,10 +28,8 @@ const BcomPlus = () => {
                                 </h5>
 
                                 <p className='text-white text-sm'>
-                                    Training in CA or ACCA is available for students aiming
-                                    <br className='md:block hidden' />
-                                    to complement their B.Com with global accounting
-                                    <br className='md:block hidden' />
+                                    Training in CA or ACCA is available for students aiming <br className='md:block hidden' />
+                                    to complement their B.Com with global accounting <br className='md:block hidden' />
                                     qualifications.
                                 </p>
                             </div>

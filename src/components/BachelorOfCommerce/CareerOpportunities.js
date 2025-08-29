@@ -58,8 +58,7 @@ const CareerOpportunities = () => {
                 {/* Header Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mb-10">
                     <h3 className="text-[#0C2165] text-3xl lg:text-4xl font-serif font-bold">
-                        Career
-                        <br className='md:block hidden' />
+                        Career <br className='md:block hidden' />
                         Opportunities
                     </h3>
                     <p className="text-gray-700 leading-relaxed text-base lg:text-lg">
