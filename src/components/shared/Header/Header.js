@@ -314,13 +314,13 @@ export default function Header() {
                   >
                     Alumni
                   </Link>
-                  <Link
+                  {/* <Link
                     href="#"
                     className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
                     onClick={handleLinkClick}
                   >
                     Resources
-                  </Link>
+                  </Link> */}
                   <Button
                     className="font-light w-full mt-2"
                     hoverText="Contact Us"
