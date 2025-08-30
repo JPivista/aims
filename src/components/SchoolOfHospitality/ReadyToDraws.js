@@ -10,8 +10,8 @@ const ReadyToDraws = ({
   primaryButtonLink = "/apply",   // ✅ Dummy link
   secondaryButtonText = "Download Brochure",
   secondaryButtonLink = "/brochure.pdf",  // ✅ Dummy link
-  tertiaryButtonText = "Talk to a Counsellor",
-  tertiaryButtonLink = "/counsellor", // ✅ Dummy link
+  // tertiaryButtonText = "Talk to a Counsellor",
+  // tertiaryButtonLink = "/counsellor", 
   bgColor = "bg-[#A22877]",
   arrowImage = "/MBA/arrow.svg",
 }) => {
@@ -58,7 +58,7 @@ const ReadyToDraws = ({
                 </Link>
               )}
 
-              {tertiaryButtonText && (
+              {/* {tertiaryButtonText && (
                 <Link href={tertiaryButtonLink}>
                   <Button
                     variant="secondary"
@@ -67,12 +67,12 @@ const ReadyToDraws = ({
                     {tertiaryButtonText}
                   </Button>
                 </Link>
-              )}
+              )} */}
             </div>
           </div>
 
           {/* Right Side - Arrow SVG */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
             <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
               <Image
                 src={arrowImage}

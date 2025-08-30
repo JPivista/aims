@@ -20,7 +20,7 @@ const SofPrograms = () => {
     description:
       "Offered in partnership with Chai Point, this short-term vocational certificate trains you in real-world QSR operations. Perfect for learners who want to enter the workforce quickly and grow from the ground up in India's F&B retail sector.",
     image: "/school-of-hospitality/sohospitality-img-02.webp",
-    link: "/finance-commerce-school/bachelor-of-commerce",
+    link: "https://www.aimsenrich.com/vocational-certificate-qsr-chaipoint",
   }
 
   return (

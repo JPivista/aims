@@ -46,7 +46,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                 <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
                   <span className="playfair-400">
                     AIMS Institutes
-                    <span className="inline-block lg:hidden ml-2"></span>
+                    <span className="inline-block lg:hidden "></span>
                   </span>
 
                   <br className="hidden lg:block" />
@@ -55,7 +55,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                   Your Top Business School in
                   </span>
                   <br className="hidden lg:block" />
-                  <span className="playfair-400 text-[#D7FCF4] ml-2">Banglore</span>
+                  <span className="playfair-400 text-[#D7FCF4] ">Banglore</span>
                 </h1>
               </div>
             </div>

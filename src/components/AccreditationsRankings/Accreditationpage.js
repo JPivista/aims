@@ -831,7 +831,10 @@ const PatentsTimeline = () => {
         titles: "Business Standard- IMRB International Survey, 2017",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>&quot;Category &quot;A&quot; Business School - Super League A4&quot;.</li>
+            <li>
+              &quot;Category &quot;A&quot; Business School - Super League
+              A4&quot;.
+            </li>
           </ul>
         ),
       },
@@ -900,7 +903,10 @@ const PatentsTimeline = () => {
         titles: "Business Standard- IMRB International Survey ,17 June 2016",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>&quot;Category &quot;A&quot; Business School - Super League A4&quot;.</li>
+            <li>
+              &quot;Category &quot;A&quot; Business School - Super League
+              A4&quot;.
+            </li>
           </ul>
         ),
       },
@@ -1287,9 +1293,9 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>
-              AIMS is accredited as an &quot;A&quot; Grade college by NAAC with one of the
-              highest CGPA of 3.46 (on 4 point scale) among all colleges in
-              India.
+              AIMS is accredited as an &quot;A&quot; Grade college by NAAC with
+              one of the highest CGPA of 3.46 (on 4 point scale) among all
+              colleges in India.
             </li>
             <li>ISO 9001:2008 Certification by TUV-SUD.</li>
             <li>
@@ -1438,7 +1444,6 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>Category &quot;A&quot; Business School.</li>
-           
           </ul>
         ),
       },
@@ -1479,21 +1484,21 @@ const PatentsTimeline = () => {
         ),
       },
 
-
       {
         title: "AIMS SCHOOL OF HOSPITALITY & TOURISM",
         titles: "CSR-GHRDC Competition Success Review",
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>No. 1 Private Hotel Management Institute in Bangalore. </li>
-            <li>3rd Best Private Hotel Management Institute in South India. </li>
+            <li>
+              3rd Best Private Hotel Management Institute in South India.{" "}
+            </li>
             <li> 12th Best Private Hotel Management Institute in India.</li>
           </ul>
         ),
       },
     ],
     2006: [
-    
       {
         title: "AIMS SCHOOL OF BUSINESS",
         titles: "AIMA-IMRB Business Standard Survey",
@@ -1526,9 +1531,9 @@ const PatentsTimeline = () => {
         <div className="container mx-auto px-4 lg:px-0">
           <div className="bg-[#e6f9f3] text-center">
             <p className="text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
-              At AIMS Institutes, rankings aren&quot;t the destination, they&quot;re the
-              result of staying focused on our target to deliver education that
-              transforms potential into performance.
+              At AIMS Institutes, rankings aren&#39;t the destination,
+              they&#39;re the result of staying focused on our target to deliver
+              education that transforms potential into performance.
             </p>
             <p className="mt-4 text-sm md:text-base text-gray-700 max-w-3xl mx-auto">
               As a&nbsp;

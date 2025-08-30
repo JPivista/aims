@@ -1,38 +1,37 @@
-"use client";
-import React from "react";
-import Image from "next/image";
+"use client"
+import React from "react"
+import Image from "next/image"
 
 const GetInvolvedSection = () => {
   return (
     <section className="bg-[#A43177] text-white px-6 py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-6">
-        
         {/* Left Content */}
         <div className="md:w-2/3">
-        <h3 className=" text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+          <h3 className=" text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
             Ready to Get <br /> Involved?
           </h3>
           <p className="">
-            Every AIMer has the opportunity to join or lead a club from their very first semester.
-            Watch for club orientations at the start of the academic year or contact your program
-            coordinator for more information.
+            Every AIMer has the opportunity to join or lead a club from their
+            very first semester. Watch for club orientations at the start of the
+            academic year or contact your program coordinator for more
+            information.
           </p>
         </div>
 
         {/* Right Icon */}
-        <div className="md:w-1/3 flex justify-center md:justify-end">
-      <Image
-        src="/life-at-aims/student-loan-icon.svg" 
-        alt="Arrow"
-        width={128} 
-        height={128} 
-        className="opacity-50 w-32 h-32"
-      />
-    </div>
-
+        <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
+          <Image
+            src="/life-at-aims/student-loan-icon.svg"
+            alt="Arrow"
+            width={128}
+            height={128}
+            className="opacity-50 w-32 h-32"
+          />
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default GetInvolvedSection;
+export default GetInvolvedSection

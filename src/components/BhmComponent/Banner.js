@@ -53,7 +53,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
 
                   <span className="inline-block lg:hidden ml-2"></span>
                   <br className="hidden lg:block" />
-                  <span className="playfair-400 text-[#D7FCF4]">
+                  <span className="playfair-400 text-[#D7FCF4]   block lg:inline">
                     The Right Training.
                   </span>
                   <br className="hidden lg:block" />

@@ -13,12 +13,13 @@ const GetInvolvedSection = () => {
             <br /> More?
           </h3>
           <p className="">
-          Visit the AIMS Centre for Sports to explore our calendar, team participation opportunities, and wellness support.
+            Visit the AIMS Centre for Sports to explore our calendar, team
+            participation opportunities, and wellness support.
           </p>
         </div>
 
         {/* Right Icon */}
-        <div className="md:w-1/3 flex justify-center md:justify-end">
+        <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
           <Image
             src="/life-at-aims/student-loan-icon.svg"
             alt="Arrow"

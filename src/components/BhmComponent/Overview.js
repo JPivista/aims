@@ -16,7 +16,8 @@ const Overview = () => {
             Important Dates
           </h6>
           <p className="text-gray-800 text-sm sm:text-base">
-          Please see the Admission Process page for important dates and deadlines for this course.
+            Please see the Admission Process page for important dates and
+            deadlines for this course.
           </p>
         </>
       ),
@@ -42,7 +43,8 @@ const Overview = () => {
             </li>
             <li>
               Holders of GCE/JGCSE/GCSE Certification must have passed at least
-              FIVE subjects at &apos;O&apos; level and TWO subjects at &apos;A&apos; level
+              FIVE subjects at &apos;O&apos; level and TWO subjects at
+              &apos;A&apos; level
             </li>
             <li>
               A pass certificate or diploma from a Secondary Stage Level
@@ -65,7 +67,8 @@ const Overview = () => {
             Selection Process
           </h6>
           <p className="text-gray-800 text-sm sm:text-base">
-          Please see the Admission Process page for important dates and deadlines for this course.
+            Please see the Admission Process page for important dates and
+            deadlines for this course.
           </p>
         </>
       ),
@@ -77,7 +80,9 @@ const Overview = () => {
         {/* BBA Aviation Program overview */}
         <div className=" items-center justify-between grid grid-cols-1 md:grid-cols-2">
           <h3 className="text-[#0C2165]">
-            <span className="italic text-[#A22877] playfair-300">BHM Program</span>
+            <span className="italic text-[#A22877] playfair-300">
+              BHM Program
+            </span>
             <br />
             Overview
           </h3>
@@ -90,14 +95,27 @@ const Overview = () => {
         </div>
 
         {/* Recognition timeline */}
-        <div className="flex justify-center ">
-          <Image
-            src="/bhm-img/overview-img_converted.webp"
-            alt="Bhm Aviation Program Overview"
-            width={1000}
-            height={600}
-            className="object-contain"
-          />
+        <div>
+          {/* Desktop & Tablet Image */}
+          <div className="hidden md:flex justify-center">
+            <Image
+              src="/bhm-img/overview-img_converted.webp"
+              alt="Bhm Aviation Program Overview Desktop"
+              width={1000}
+              height={600}
+              className="object-contain"
+            />
+          </div>
+          {/* Mobile Image */}
+          <div className="flex justify-center md:hidden">
+            <Image
+              src="/bhm-img/overview-img_mobile.svg"
+              alt="Bhm Aviation Program Overview Mobile"
+              width={500}
+              height={300}
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Buttons */}

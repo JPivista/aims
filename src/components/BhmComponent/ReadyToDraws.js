@@ -72,7 +72,8 @@ const ReadyToDraws = ({
           </div>
 
           {/* Right Side - Arrow SVG */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        {/* Right Icon */}
+        <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
             <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-40 md:h-40">
               <Image
                 src={arrowImage}

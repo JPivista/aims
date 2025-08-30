@@ -1,32 +1,90 @@
 "use client"
 import React from "react"
 import Image from "next/image"
-const Objectives = () => {
-  return (
-    <section className="bg-teal-50 py-10  ">
-      <div className="container mx-auto px-6 lg:px-8 mb-5 ">
-        {/* Title */}
-        <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165]  playfair-300 leading-tight">
-          Our Objectives
-        </h3>
-        <p className="text-gray-700 mb-10 max-w-2xl">
-          The primary objective of AIMS Institutes is to provide{" "}
-          <br className="hidden lg:block" />
-          quality education to create:
-        </p>
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
-        {/* Arrow Cards */}
-        <div className="flex flex-col lg:flex-row ">
-          <Image
-            src="/about-aims/our-objective.svg"
-            alt="My Logo"
-            width={200}
-            height={200}
-            className="w-full h-full container mx-auto  "
-          />
+const Objectives = () => {
+  // Slider settings for mobile
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoslide: true,
+    autoplay: true,   
+
+    autoplaySpeed: 1000,
+  }
+
+  // Mobile images (different ones)
+  const mobileImages = [
+    "/about-aims/Our (1).webp",
+    "/about-aims/Our (3).webp",
+    "/about-aims/Our.webp",
+    "/about-aims/Our (2).webp",
+  ]
+
+  return (
+    <>
+      {/* Desktop + Tablet View */}
+      <section className="bg-teal-50 py-10 hidden sm:block">
+        <div className="container mx-auto px-6 lg:px-8 mb-5">
+          {/* Title */}
+          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] playfair-300 leading-tight">
+            Our Objectives
+          </h3>
+          <p className="text-gray-700 mb-10 max-w-2xl">
+            The primary objective of AIMS Institutes is to provide{" "}
+            <br className="hidden lg:block" />
+            quality education to create:
+          </p>
+
+          {/* Single Image for Desktop */}
+          <div className="flex flex-col lg:flex-row ">
+            <Image
+              src="/about-aims/our-objective.svg"
+              alt="Our Objective"
+              width={1000}
+              height={1200}
+              className="w-full h-full "
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Mobile View (Slider with different images) */}
+      <section className="bg-teal-50 py-10 block sm:hidden">
+        <div className="container mx-auto px-6 mb-5">
+          {/* Title */}
+          <h3 className="text-2xl text-[#0C2165] playfair-300 leading-tight">
+            Our Objectives
+          </h3>
+          <p className="text-gray-700 mb-6">
+            The primary objective of AIMS Institutes is to provide <br />
+            quality education to create:
+          </p>
+
+          {/* Slider with different images */}
+          <Slider {...settings}>
+            {mobileImages.map((img, index) => (
+              <div key={index} className="px-2">
+                <Image
+                  src={img}
+                  alt={`Our Objective ${index + 1}`}
+                  width={1800}
+                  height={1200}
+                  className="w-full h-[300px] object-contain mx-auto"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
+    </>
   )
 }
 
