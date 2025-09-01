@@ -4,30 +4,65 @@ import Image from "next/image"
 
 const QualityPolicy = () => {
   return (
-    <section className="relative w-full h-[600px] mb-10 ">
-      {/* Background Image */}
-      <Image
-        src="/about-aims/Quality-img_converted.webp"
-        alt="Quality Policy Background"
-        fill
-        className="object-cover"
-      />
+    <>
+      {/* Desktop & Tablet Section */}
+      <section className="relative w-full h-[600px] mb-10 hidden lg:block lg:mt-10">
+        {/* Background Image */}
+        <Image
+          src="/about-aims/Quality-img_desktop.webp"
+          alt="Quality Policy Background"
+          fill
+          className="object-cover object-center"
+          priority
+        />
 
-      {/* Text Overlay */}
-      <div className="absolute inset-0 flex items-center justify-start">
-        <div className=" p-10 max-w-xl rounded-lg lg:ml-20 text-white">
-          <h3 className="text-4xl font-semibold mb-4">Quality Policy</h3>
-          <p className="text-base leading-relaxed">
-            We at AIMS Institutes are committed to creating intellectual capital
-            through an exemplary value based system, which provides foundation
-            for a life time of professional growth and personal development.
-            This is achieved by adopting innovative teaching, providing
-            international exposure, and encouraging continuous research and
-            learning.
-          </p>
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-start  container mx-auto ">
+          <div className=" lg:w-1/3 ml-6 rounded-lg text-white">
+            <h3 className="text-3xl lg:text-4xl font-semibold mb-4">
+              Quality Policy
+            </h3>
+            <p className="text-sm md:text-base leading-relaxed">
+              We at AIMS Institutes are committed to creating intellectual
+              capital through an exemplary value-based system, which provides
+              foundation for a lifetime of professional growth and personal
+              development. This is achieved by adopting innovative teaching,
+              providing international exposure, and encouraging continuous
+              research and learning.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Mobile Section */}
+      <section className="relative w-full  h-[800px] md:h-[1000px] mb-10 block lg:hidden ">
+        {/* Background Image */}
+        <Image
+          src="/about-aims/Quality-img_mobile.webp"
+          alt="Quality Policy Background"
+          fill
+          className=" h-[800px] md:h-[800px]"
+          priority
+        />
+
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex items-end justify-center container mx-auto">
+          <div className="p-4 sm:p-6 md:p-8 max-w-md sm:max-w-xl md:max-w-2xl md:h-[420px] rounded-lg text-center text-white">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4">
+              Quality Policy
+            </h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+              We at AIMS Institutes are committed to creating intellectual
+              capital through an exemplary value-based system, which provides
+              foundation for a lifetime of professional growth and personal
+              development. This is achieved by adopting innovative teaching,
+              providing international exposure, and encouraging continuous
+              research and learning.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

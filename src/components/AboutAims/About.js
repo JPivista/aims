@@ -15,14 +15,14 @@ const GetInvolvedSection = () => {
           <p className="">
             Every student who walks through our gates brings their own
             aspirations. Our role is to help them sharpen their aim, stay the
-            course, and deliver on their potential. That’s the AIMS approach -
-            focused, forward-looking, and fiercely committed to long-term
+            course, and deliver on their potential. That&#39;s the AIMS approach
+            - focused, forward-looking, and fiercely committed to long-term
             success.
           </p>
         </div>
 
         {/* Right Icon */}
-        <div className="md:w-1/3 flex justify-center md:justify-end ">
+        <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
           <Image
             src="/about-aims/arrows.svg"
             alt="Arrow"

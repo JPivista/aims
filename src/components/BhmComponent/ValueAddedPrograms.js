@@ -96,40 +96,71 @@ const BbaValueAddedPrograms = () => {
       />
       {/* Student Image with Overlay */}
       <div className="relative mx-auto">
-        <div className="w-full h-[700px]">
-          <Image
-            src="/bhm-img/Employers-img_converted.webp"
-            alt="AIMS Students"
-            width={800}
-            height={400}
-            className="w-full h-full object-cover"
-            priority
-          />
-        </div>
+  {/* Desktop & Tablet View */}
+  <div className="hidden md:block relative">
+    <div className="w-full h-[700px]">
+      <Image
+        src="/bhm-img/Employers-img_converted.webp"
+        alt="AIMS Students"
+        width={800}
+        height={400}
+        className="w-full h-full object-cover"
+        priority
+      />
+    </div>
 
-        {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 w-full h-full"
-          style={{
-            background:
-              "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 35%, rgba(12, 33, 101, 0.00) 75%)",
-          }}
-        ></div>
+    {/* Gradient Overlay */}
+    <div
+      className="absolute inset-0 w-full h-full"
+      style={{
+        background:
+          "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 35%, rgba(12, 33, 101, 0.00) 75%)",
+      }}
+    ></div>
 
-        {/* Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-end ">
-          <div className="w-2/5 md:px-10">
-            <h2 className="text-[#010066] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
-              Employers Who
-              <br /> Hire Our BHM
-              <br /> Graduates
-            </h2>
-            <p className="text-[#010066] text-xs sm:text-sm md:text-base monser-400 leading-relaxed">
-              AIMS BHM graduates have been placed at:
-            </p>
-          </div>
-        </div>
+    {/* Text Overlay */}
+    <div className="absolute inset-0 flex items-center justify-end">
+      <div className="w-2/5 md:px-10">
+        <h2 className="text-[#010066] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+          Employers Who
+          <br /> Hire Our BHM
+          <br /> Graduates
+        </h2>
+        <p className="text-[#010066] text-xs sm:text-sm md:text-base monser-400 leading-relaxed">
+          AIMS BHM graduates have been placed at:
+        </p>
       </div>
+    </div>
+  </div>
+
+  {/* Mobile View */}
+  <div className="block md:hidden relative">
+  <div className="w-full h-[700px]">
+    <Image
+      src="/bhm-img/Employers-img_mobile.svg"
+      alt="AIMS Students"
+      width={500}
+      height={300}
+      className="w-full h-full object-cover"
+      priority
+    />
+  </div>
+
+  {/* Text Overlay */}
+  <div className="absolute inset-0 flex items-end justify-center text-center px-4 pb-32">
+    <div className="w-full">
+      <h2 className="text-[#010066] text-lg sm:text-2xl playfair-300 mb-3 leading-tight">
+        Employers Who Hire Our BHM Graduates
+      </h2>
+      <p className="text-[#010066] text-sm monser-400 leading-relaxed">
+        AIMS BHM graduates have been placed at:
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
     </>
   )
 }

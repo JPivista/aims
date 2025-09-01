@@ -4,6 +4,7 @@ import WhyChoose from "./WhyChoose"
 import ValueAddedPrograms from "./ValueAddedPrograms"
 import Companies from "../shared/Companies"
 import ProgramsDatas from "./ProgramsDatas"
+import Breadcrumbs from "../shared/Breadcrumbs"
 
 import BhmCourseStructure from "./BhmCourseStructure"
 import BhmAims from "./BhmAims"
@@ -17,6 +18,7 @@ const index = () => {
     <>
       <div>
         <Banner />
+        <Breadcrumbs />
         <WhyChoose />
         <Overview />
         <ValueAddedPrograms/>
