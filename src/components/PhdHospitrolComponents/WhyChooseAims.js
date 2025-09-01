@@ -1,7 +1,8 @@
-import React from "react";
+import React from "react"
+import InfoBoxes from "../shared/BBA-MBA-BBA-Aviation/InfoBoxes"
 
-const WhyChooseAims = () => {
-    const features = [
+const WhyChoose = () => {
+    const naacBoxes = [
         {
             number: "01",
             title: "University-Approved Centre",
@@ -32,51 +33,31 @@ const WhyChooseAims = () => {
             description:
                 "Opportunities to present at leading conferences",
         },
-    ];
+    ]
 
     return (
-        <div className="bg-[#e1f9f4] py-16">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Heading */}
-                <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] mb-12 pb-12">
-                    Why Choose the <br />
-                    <span style={{ fontWeight: '600', color: '#a22978' }} className="italic playfair-400">AIMS PhD?</span>
-                </h3>
-
-                {/* Features */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                    {features.map((feature) => (
-                        <div
-                            key={feature.number}
-                            className="flex gap-4"
-                        >
-                            {/* Line + Arrow */}
-                            <div className="flex flex-col items-center">
-                                {/* Arrow */}
-                                <div className="w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-b-4 border-b-[#000000]"></div>
-                                {/* Line */}
-                                <div className="flex-1 w-px bg-black"></div>
-                            </div>
-
-                            {/* Content */}
-                            <div>
-                                <h5 style={{ fontWeight: '600', fontSize: '1.5rem', textAlign: 'left' }}>
-                                    {feature.number}
-                                </h5>
-                                <h5 className="mb-3" style={{ fontWeight: '600', fontSize: '1.25rem' }}>
-                                    {feature.title}
-                                </h5>
-                                <p style={{ fontSize: '0.875rem' }}>
-                                    {feature.description}
-                                </p>
-                            </div>
-
-                        </div>
-                    ))}
+        <div className="bg-[#e1f9f4] md:py-10 py-6">
+            <div className="container mx-auto">
+                {/* Header */}
+                <div className="text-center py-4 md:py-6 px-4">
+                    <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165]">
+                        Why Choose the <br />
+                        <span style={{ fontWeight: '600', color: '#a22978' }} className="italic playfair-400 -mt-6 md:-mt-10">AIMS PhD?</span>
+                    </h3>
                 </div>
             </div>
-        </div>
-    );
-};
+            <InfoBoxes
+                boxes={naacBoxes}
+                className="py-0 px-0"
+                boxBg="bg-[#e1f9f4]"
+                boxHoverBg="hover:bg-[#C9FFF4]"
+                numberColor="text-black"
+                titleColor="text-black"
+                descColor="text-black"
+            />
 
-export default WhyChooseAims;
+        </div>
+    )
+}
+
+export default WhyChoose

@@ -177,7 +177,7 @@ const QuickLinks = () => {
       {/* Right Side Image */}
       <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden order-1 md:order-2">
         <Image
-          src="/library-and-information-centre/quick_links.png"
+          src="/library-and-information-centre/quick_links.webp"
           alt="Library services"
           fill
           className="object-cover"
@@ -282,12 +282,18 @@ const QuickLinks = () => {
                           <h5 className="font-semibold text-gray-800 mb-1" style={{ fontWeight: '600' }}>
                             {item.title}
                           </h5>
-                          <ul key={i} className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                          <ul
+                            key={i}
+                            className="list-disc list-outside pl-5 text-gray-700 text-sm space-y-1"
+                          >
                             {item.items.map((point, pIdx) => (
-                              <li style={{ fontSize: '16px' }} key={pIdx}>{point}</li>
+                              <li style={{ fontSize: '16px' }} key={pIdx}>
+                                {point}
+                              </li>
                             ))}
                           </ul>
                         </div>
+
                       );
                     }
                     return null;
@@ -300,7 +306,7 @@ const QuickLinks = () => {
 
         {/* Subscribe Button */}
         <div className="lg:pt-8 pt-5">
-         <Subscribe />
+          <Subscribe />
         </div>
 
         <p className="mt-3 text-gray-800 text-sm text-center">

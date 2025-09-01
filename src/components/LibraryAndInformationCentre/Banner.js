@@ -8,7 +8,7 @@ const CentreForResearchBanner = ({ announcements, pageType = "phd" }) => {
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/library-and-information-centre/library-and-information-centre-banner.png')] bg-[url('/library-and-information-centre/library_and_information_centre_mob.png')]" />
+          <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/library-and-information-centre/library-and-information-centre-banner.webp')] bg-[url('/library-and-information-centre/library_and_information_centre_mob.webp')]" />
         </div>
 
         {/* Gradient Overlay */}

@@ -1,14 +1,12 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
-const SemesterAccordion = ({ semester }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
+const SemesterAccordion = ({ semester, isOpen, onToggle }) => {
     return (
         <div className="">
             <button
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={onToggle}
                 className="w-full flex items-center justify-between p-3 text-left border bg-white gap-0 "
             >
                 <span className="font-medium text-green-800">{semester.title}</span>
@@ -36,7 +34,6 @@ const SemesterAccordion = ({ semester }) => {
             </button>
 
             {isOpen && (
-
                 <div className="space-y-4">
                     {semester.years.map((year) => (
                         <div key={year.id} className="ml-4">
@@ -61,10 +58,9 @@ const SemesterAccordion = ({ semester }) => {
                         </div>
                     ))}
                 </div>
-
             )}
         </div>
     );
 };
 
-export default SemesterAccordion; 
+export default SemesterAccordion;
