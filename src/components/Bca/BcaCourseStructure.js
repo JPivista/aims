@@ -158,7 +158,9 @@ const BcaCourseStructure = () => {
                         </h3>
                     </div>
                 </div>
+
                 <TabCourseStructure courseData={sampleCourseData} />
+
             </div>
         </>
     )
