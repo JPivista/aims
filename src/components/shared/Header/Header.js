@@ -80,8 +80,8 @@ export default function Header() {
     return scrollY.onChange((latest) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
-        setIsSticky(latest > 150);
-      }, 10); // Reduced delay for even smoother response
+        setIsSticky(latest > 1); // Reduced threshold for smoother transition
+      }, 0); // Reduced delay for even smoother response
     });
   }, [scrollY]);
 
@@ -340,11 +340,11 @@ export default function Header() {
       <motion.div
         className="w-full"
         style={{
-          height: isSticky ? "22vh md:19vh lg:16vh xl:15vh" : "0px", // Responsive height based on screen size
+          height: isSticky ? "17vh" : "0px", // Fixed height to match header height
         }}
         transition={{
-          duration: 0.8,
-          ease: [0.25, 0.46, 0.45, 0.94],
+          duration: 0.3, // Faster transition to prevent gap
+          ease: "ease-out",
         }}
       />
     </>
