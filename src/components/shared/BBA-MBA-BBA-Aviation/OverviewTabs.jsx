@@ -3,19 +3,22 @@ import React, { useState, useEffect, useRef } from "react"
 
 const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   const [activeTab, setActiveTab] = useState(defaultActiveTab)
+  const [isUserInteraction, setIsUserInteraction] = useState(false)
   const containerRef = useRef(null)
 
-  // Auto-scroll to active tab (for mobile)
+  // Auto-scroll to active tab (for mobile) - only on user interaction
   useEffect(() => {
-    const activeButton = containerRef.current?.querySelector(".active-tab")
-    if (activeButton) {
-      activeButton.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      })
+    if (isUserInteraction) {
+      const activeButton = containerRef.current?.querySelector(".active-tab")
+      if (activeButton) {
+        activeButton.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        })
+      }
     }
-  }, [activeTab])
+  }, [activeTab, isUserInteraction])
 
   return (
     <div className="w-full container mx-auto flex flex-col items-center justify-center">
@@ -27,7 +30,10 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => {
+              setActiveTab(tab.key)
+              setIsUserInteraction(true)
+            }}
             className={`whitespace-nowrap rounded-full px-3  md:px-6 py-3 md:py-2 text-sm md:text-lg transition border snap-start font-medium
               ${
                 activeTab === tab.key

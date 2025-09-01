@@ -5,7 +5,7 @@ import ApplicationMarquee from "@/shared/ApplicationMarquee"
 const HeroBanner = ({ announcements, pageType = "bba" }) => {
   return (
     <>
-      <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+      <div className="relative w-full h-[83vh] lg:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
         <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/bba/bba-banner.webp')]" />
 
@@ -47,7 +47,7 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
                       at AIMS
                     </span>
                   </h1>
-                  <h5 className="playfair-300 text-[#C9FFF4] text-xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
+                  <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
                     Sharpen Your Aim. <br className="block md:hidden" />
                     Step Into <br className="hidden md:block" />
                     Business <br className="block md:hidden" />

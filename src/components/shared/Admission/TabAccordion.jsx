@@ -8,17 +8,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
   const [expandedSection, setExpandedSection] = useState(null)
   const containerRef = useRef(null)
 
-  // Auto-scroll to active tab (for mobile)
-  useEffect(() => {
-    const activeButton = containerRef.current?.querySelector(".active-tab")
-    if (activeButton) {
-      activeButton.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      })
-    }
-  }, [activeTab])
+  // Removed auto-scroll functionality to prevent unwanted scrolling on page load
 
   const toggleSection = (sectionId) => {
     setExpandedSection(expandedSection === sectionId ? null : sectionId)

@@ -13,7 +13,12 @@ const AdmissionTabs = ({ tabsData }) => {
         {" "}
         {/* Reduced width for better centering */}
         {/* Buttons Row */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-1 mb-12">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-flow-col lg:auto-cols-auto gap-1 mb-12"
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(auto, max-content))",
+          }}
+        >
           {tabsData.map((tab, index) => (
             <button
               key={index}

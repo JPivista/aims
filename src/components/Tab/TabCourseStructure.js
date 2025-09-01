@@ -106,9 +106,10 @@ const TabCourseStructure = ({ courseData }) => {
                                         <li
                                           key={index}
                                           className="text-sm md:text-base break-words mb-1 monser-400 "
-                                        >
-                                          {course}
-                                        </li>
+                                          dangerouslySetInnerHTML={{
+                                            __html: course,
+                                          }}
+                                        />
                                       )
                                     }
                                   })
