@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import Image from 'next/image';
 import Button from '@/shared/Button';
+import Subscribe from './Subscribe';
 
 const QuickLinks = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -299,7 +300,7 @@ const QuickLinks = () => {
 
         {/* Subscribe Button */}
         <div className="lg:pt-8 pt-5">
-          <Button showReadMore={false}>Subscribe to Our Digital Library</Button>
+         <Subscribe />
         </div>
 
         <p className="mt-3 text-gray-800 text-sm text-center">

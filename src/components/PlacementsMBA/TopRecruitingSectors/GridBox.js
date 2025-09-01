@@ -41,7 +41,7 @@ export default function IndustryStats() {
             {/* Pink arrow shape on right */}
             <div className="absolute right-[-15px] sm:right-[-20px] md:right-[-27px] bottom-0 -translate-y-3 z-0">
               <Image
-                src="/placements-mba/pgdm/arrow.png"
+                src="/placements-mba/pgdm/arrow.webp"
                 alt="arrow"
                 width={100}
                 height={100}

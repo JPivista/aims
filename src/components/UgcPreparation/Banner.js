@@ -25,7 +25,7 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
           {/* Logo Block */}
           <div className="container mx-auto px-4 pt-8 text-left">
             <Image
-              src="/pre-university-college/empowering_minds_since1994.png" // 👉 replace with your logo path
+              src="/recruiters/since.svg"
               alt="Pre-University College Logo"
               width={160} // adjust size
               height={60}
