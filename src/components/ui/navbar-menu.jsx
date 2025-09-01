@@ -5,8 +5,6 @@ import { GoArrowDownRight } from "react-icons/go";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-
-
 const transition = {
   type: "spring",
   mass: 0.5,
@@ -27,7 +25,7 @@ export const MenuItem = ({
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer hover:opacity-[0.9] text-white flex items-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl group">
-        {item} <GoArrowDownRight className="group-hover:-rotate-90 transition-transform duration-200 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+        {item} <GoArrowDownRight className="group-hover:-rotate-90 transition-transform duration-200 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:w-6" />
       </motion.p>
       {active !== null && (
         <motion.div
@@ -39,11 +37,9 @@ export const MenuItem = ({
               className="absolute top-[calc(100%_+_1.2rem)] transform -mt-1">
               <motion.div
                 transition={transition}
-                // layoutId ensures smooth animation
                 layoutId="active"
                 className="bg-white backdrop-blur-sm rounded-b-lg overflow-hidden shadow-xl">
                 <motion.div
-                  // layout ensures smooth animation
                   layout
                   className="w-max h-full p-0">
                   <div className="flex flex-col">
@@ -65,7 +61,6 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      // resets the state
       onMouseLeave={() => setActive(null)}
       className="relative shadow-input flex justify-center space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10 py-2 md:py-2 lg:py-3 xl:py-4 2xl:py-6 text-white">
       {children}
@@ -102,10 +97,37 @@ export const ProductItem = ({
 export const HoveredLink = ({
   children,
   href,
+  submenu,
   ...rest
 }) => {
   const pathname = usePathname();
   const isActive = pathname === href;
+
+  if (submenu) {
+    return (
+      <div className="group relative">
+        <div className="text-[16px] transition-all duration-200 px-3 py-2 w-full block m-0 p-0 border-0 text-gray-700 hover:bg-[#0C2165] hover:text-white">
+          {children}
+          <span className="ml-2 text-xs">▶</span>
+        </div>
+
+        {/* Nested Submenu */}
+        <div className="absolute left-full top-0 ml-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white rounded-lg shadow-xl min-w-[200px] z-50">
+          <div className="py-2">
+            {submenu.map((subItem, index) => (
+              <Link
+                key={index}
+                href={subItem.href}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0C2165] hover:text-white transition-all duration-200"
+              >
+                {subItem.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Link

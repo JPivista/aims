@@ -121,27 +121,25 @@ const SofPrograms = () => {
                 </div>
                 <div className="bg-[#531574] overflow-hidden">
                     <div className='container mx-auto px-4 lg:px-0'>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 items-center md:p-8 p-4">
-                            <div className="flex justify-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-8 items-center md:p-8 p-4">
+                            <div className="flex justify-center lg:col-span-1 min-h-[40vh]">
                                 <div className="relative">
                                     {/* Circular background */}
-                                    <div className="w-full h-80 lg:w-full lg:h-[60vh] flex items-center justify-center">
-                                        <div className="w-full h-full rounded-full overflow-hidden p-4">
-                                            <Image
-                                                src={doctoralProgram.image}
-                                                alt={doctoralProgram.subtitle}
-                                                width={320}
-                                                height={320}
-                                                className="object-cover w-full h-full"
-                                            />
-                                        </div>
+                                    <div className="w-full h-full rounded-full overflow-hidden p-4 flex items-center justify-center">
+                                        <Image
+                                            src={doctoralProgram.image}
+                                            alt={doctoralProgram.subtitle}
+                                            width={320}
+                                            height={320}
+                                            className="object-cover"
+                                        />
                                     </div>
                                     {/* Decorative circles */}
                                     {/* <div className="absolute -top-4 -left-4 w-20 h-20 border-2 border-purple-300/50 rounded-full"></div>
                                     <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-purple-300/30 rounded-full"></div> */}
                                 </div>
                             </div>
-                            <div className="text-white">
+                            <div className="text-white lg:col-span-2">
                                 <h3
                                     className='text-white'
                                     dangerouslySetInnerHTML={{ __html: doctoralProgram.subtitle }}
