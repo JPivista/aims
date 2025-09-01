@@ -162,7 +162,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 1",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Management Innovation",
               "Fundamentals of Accountancy",
@@ -176,7 +176,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 2",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Financial Accounting & Reporting",
               "Human Resource Management",
@@ -196,7 +196,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 3",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Elements of Cost Accounting",
               "Organizational Behavior",
@@ -211,7 +211,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 4",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Management Accounting & Financial Management (Managerial Finance and Accounting Or) Financial and Managerial Accounting Systems",
               "Business Analytics OR Indian Financial System",
@@ -269,7 +269,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 1",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Introduction to Airline Industry",
               "Fundamentals of Accountancy",
@@ -283,7 +283,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 2",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Financial Accounting & Reporting",
               "Airport Safety & Security Management",
@@ -303,7 +303,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 3",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Airline Accounting",
               "Air Traffic Control",
@@ -317,7 +317,7 @@ const CourseStructure = ({ programKey = "mba" }) => {
             label: "SEMESTER 4",
             image: "/bba/first-year.svg",
             courses: [
-              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+              "Language 1 - Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br/>Malayalam/Marathi/Telugu",
               "Language 2 - English",
               "Elements and Methods of costing",
               "Airline Marketing",

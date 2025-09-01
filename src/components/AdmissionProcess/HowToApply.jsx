@@ -108,7 +108,7 @@ const HowToApply = () => {
                   key={index}
                   className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4"
                 >
-                  <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center md:text-left monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed">
+                  <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center  monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed">
                     {item.program}
                   </div>
                   <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px]">

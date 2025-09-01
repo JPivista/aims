@@ -11,7 +11,7 @@ import Breadcrumbs from "../shared/Breadcrumbs"
 
 const BbaComponents = ({ announcements }) => {
   return (
-    <div className="w-full">
+    <>
       <HeroBanner announcements={announcements} />
       <Breadcrumbs />
       <WhyChoose />
@@ -30,7 +30,7 @@ const BbaComponents = ({ announcements }) => {
         primaryButtonText="Apply Now"
         secondaryButtonText="Download Brochure"
       />
-    </div>
+    </>
   )
 }
 

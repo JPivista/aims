@@ -6,7 +6,10 @@ import Breadcrumbs from "../shared/Breadcrumbs"
 const AdmissionsFAQs = () => {
   return (
     <>
-      <div className="w-full overflow-hidden">
+      <div
+        className="w-full overflow-hidden"
+        style={{ scrollBehavior: "auto" }}
+      >
         <Banner />
         <Breadcrumbs />
         <FAQSection />

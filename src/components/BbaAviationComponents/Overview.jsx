@@ -9,15 +9,15 @@ const Overview = () => {
       heading: "Eligibility Criteria:",
       items: [
         {
-          text: "Pass in Pre-University Course (PUC)/12th or any other equivalent examination. Students with good communication skills are preferred.",
+          text: "Pass in Pre-University Course (PUC)/12th or any other equivalent examination. Students with good communication skills are preferred",
           hasOr: true,
         },
         {
-          text: "GCE/JGCSE/GCSE Certification with pass in a minimum of FIVE subjects at 'O' level & TWO subjects at 'A' level.",
+          text: "GCE/JGCSE/GCSE Certification with pass in a minimum of FIVE subjects at 'O' level & TWO subjects at 'A' level",
           hasOr: true,
         },
         {
-          text: "Pass certificate/Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board/council of any country.",
+          text: "Pass certificate/Diploma of a Secondary Stage Level Examination (TWELVE Years) of any discipline, recognized by the national level board/council of any country",
           hasOr: false,
         },
       ],
