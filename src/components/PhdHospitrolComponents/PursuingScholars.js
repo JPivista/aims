@@ -45,13 +45,13 @@ const PursuingScholars = () => {
 
   return (
     <div className="border-b border-gray-500 mb-10">
-      <div className="p-5 container mx-auto">
+      <div className="px-4 pb-10 container mx-auto">
         {/* Title */}
         <div className="lg:w-1/2 items-center text-center lg:text-left mb-6">
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#0c2165]">
             Pursuing
           </h3>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-2 md:-mt-4">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-6 md:-mt-8">
             Scholars
           </h3>
         </div>

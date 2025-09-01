@@ -33,7 +33,7 @@ const PhdBanner = ({ announcements, pageType = 'phd' }) => {
             {/* Accreditation Logos (responsive across screens) */}
             <div className="hidden md:block mt-6 mx-auto md:mx-0 w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md">
               <Image
-                src="/business_school/phd/phd_logo.png"
+                src="/business_school/phd/phd_logo.webp"
                 alt="Accreditations"
                 width={400}
                 height={100}
@@ -47,7 +47,7 @@ const PhdBanner = ({ announcements, pageType = 'phd' }) => {
         {/* Mobile-only Logo at Bottom */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200px] sm:w-[250px] md:hidden">
           <Image
-            src="/business_school/phd/phd_logo.png"
+            src="/business_school/phd/phd_logo.webp"
             alt="Accreditations"
             width={400}
             height={100}
@@ -58,7 +58,7 @@ const PhdBanner = ({ announcements, pageType = 'phd' }) => {
         {/* Top-right Logo */}
         <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 z-20">
           <Image
-            src="/pre-university-college/empowering_minds_since1994.png"
+            src="/pre-university-college/empowering_minds_since1994.webp"
             alt="Empowering Minds Since 1994"
             width={160}
             height={60}

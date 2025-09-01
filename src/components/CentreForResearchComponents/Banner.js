@@ -37,8 +37,8 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                         <Image
                             src={
                                 isMobile
-                                    ? "/pre-university-college/empowering_minds_since1994_black.png"
-                                    : "/pre-university-college/empowering_minds_since1994.png"
+                                    ? "/pre-university-college/empowering_minds_since1994_black.webp"
+                                    : "/pre-university-college/empowering_minds_since1994.webp"
                             }
                             alt="Pre-University College Logo"
                             width={160} // adjust size

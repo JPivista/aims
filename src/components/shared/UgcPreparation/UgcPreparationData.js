@@ -1123,51 +1123,157 @@ export const ugcPreparationData = {
                     title: "1st Semester",
                     years: [
                         {
-                            id: "2025",
-                            title: "2025",
-                            pdfs: [
-                                { name: "Advanced Financial Accounting", url: "#" },
-                                { name: "Business Research Methods", url: "#" },
-                                { name: "Corporate Accounting", url: "#" },
-                                { name: "Financial Management", url: "#" },
-                                { name: "Marketing Management", url: "#" }
-                            ]
-                        },
-                        {
                             id: "2024",
                             title: "2024",
                             pdfs: [
-                                { name: "Advanced Financial Accounting", url: "#" },
-                                { name: "Business Research Methods", url: "#" },
-                                { name: "Corporate Accounting", url: "#" },
-                                { name: "Financial Management", url: "#" },
-                                { name: "Marketing Management", url: "#" }
+                                { name: "BUSINESS ANALYTICS", url: "/pdf/mcom/semester1/2024/BUSINESS_ANALYTICS.pdf" },
+                                { name: "COMPETENCY BASED HUMAN RESOURCE MANAGEMENT", url: "/pdf/mcom/semester1/2024/COMPETENCY_BASED_HUMAN_RESOURCE_MANAGEMENT.pdf" },
+                                { name: "CORPORATE FINANCE ACCOUNTING", url: "/pdf/mcom/semester1/2024/CORPORATE_FINANCE_ACCOUNTING.pdf" },
+                                { name: "GLOBAL TALENT MANAGEMENT", url: "/pdf/mcom/semester1/2024/GLOBAL_TALENT_MANAGEMENT.pdf" },
+                                { name: "INDIAN ACCOUNTING STANDARDS", url: "/pdf/mcom/semester1/2024/INDIAN_ACCOUNTING_STANDARDS.pdf" },
+                                { name: "INDIAN ECONOMY AND POLICY", url: "/pdf/mcom/semester1/2024/INDIAN_ECONOMY_AND_POLICY.pdf" },
+                                { name: "INFORMATION TECHNOLOGY FOR BUSINESS", url: "/pdf/mcom/semester1/2024/INFORMATION_TECHNOLOGY_FOR_BUSINESS.pdf" },
+                                { name: "INTRODUCTION TO SOCIAL WORK", url: "/pdf/mcom/semester1/2024/INTRODUCTION_TO_SOCIAL_WORK.pdf" },
+                                { name: "MANAGERIAL FINANCE", url: "/pdf/mcom/semester1/2024/MANAGERIAL_FINANCE.pdf" },
+                                { name: "MONETARY SYSTEM", url: "/pdf/mcom/semester1/2024/MONETARY_SYSTEM.pdf" }
                             ]
-                        },
+                        },                 
                         {
                             id: "2023",
                             title: "2023",
                             pdfs: [
-                                { name: "Advanced Financial Accounting", url: "#" },
-                                { name: "Business Research Methods", url: "#" },
-                                { name: "Corporate Accounting", url: "#" },
-                                { name: "Financial Management", url: "#" },
-                                { name: "Marketing Management", url: "#" }
+                                { name: "BUSINESS ANALYTICS", url: "/pdf/mcom/semester1/2023/BUSINESS_ANALYTICS.pdf" },
+                                { name: "COMPETENCY BASED HUMAN RESOURCE", url: "/pdf/mcom/semester1/2023/COMPETENCY_BASED_HUMAN_RESOURCE.pdf" },
+                                { name: "CORPORATE COMMUNICATION SKILLS", url: "/pdf/mcom/semester1/2023/CORPORATE_COMMUNICATION_SKILLS.pdf" },
+                                { name: "GLOBAL TALENT MANAGEMENT", url: "/pdf/mcom/semester1/2023/GLOBAL_TALENT_MANAGEMENT.pdf" },
+                                { name: "INDIAN ACCOUNTING STANDARDS", url: "/pdf/mcom/semester1/2023/INDIAN_ACCOUNTING_STANDARDS.pdf" },
+                                { name: "INDIAN ECONOMY AND POLICY", url: "/pdf/mcom/semester1/2023/INDIAN_ECONOMY_AND_POLICY.pdf" },
+                                { name: "INFORMATION TECHNOLOGY FOR BUSINESS", url: "/pdf/mcom/semester1/2023/INFORMATION_TECHNOLOGY_FOR_BUSINESS.pdf" },
+                                { name: "INTERNATIONAL BUSINESS ENVIRONMENT", url: "/pdf/mcom/semester1/2023/INTERNATIONAL_BUSINESS_ENVIRONMENT.pdf" },
+                                { name: "MANAGERIAL FINANCE", url: "/pdf/mcom/semester1/2023/MANAGERIAL_FINANCE.pdf" },
+                                { name: "MONETARY SYSTEM", url: "/pdf/mcom/semester1/2023/MONETARY_SYSTEM.pdf" },
+                                { name: "PRINCIPLES AND PRACTICES OF BUSINESS", url: "/pdf/mcom/semester1/2023/PRINCIPLES_AND_PRACTICES_OF_BUSINESS.pdf" }
                             ]
                         },
                         {
                             id: "2022",
                             title: "2022",
                             pdfs: [
-                                { name: "Advanced Financial Accounting", url: "#" },
-                                { name: "Business Research Methods", url: "#" },
-                                { name: "Corporate Accounting", url: "#" },
-                                { name: "Financial Management", url: "#" },
-                                { name: "Marketing Management", url: "#" }
+                                { name: "CORPORATE COMMUNICATION SKILLS", url: "/pdf/mcom/semester1/2022/CORPORATE_COMMUNICATION_SKILLS.pdf" },
+                                { name: "GLOBAL TALENT MANAGEMENT", url: "/pdf/mcom/semester1/2022/GLOBAL_TALENT_MANAGEMENT.pdf" },
+                                { name: "INTERNATIONAL BUSINESS ENVIRONMENT", url: "/pdf/mcom/semester1/2022/INTERNATIONAL_BUSINESS_ENVIRONMENT.pdf" },
+                                { name: "IT FOR BUSINESS", url: "/pdf/mcom/semester1/2022/IT_FOR_BUSINESS.pdf" },
+                                { name: "MANAGERIAL FINANCE", url: "/pdf/mcom/semester1/2022/MANAGERIAL_FINANCE.pdf" },
+                                { name: "MODERN INDIAN BANKING", url: "/pdf/mcom/semester1/2022/MODERN_INDIAN_BANKING.pdf" }
                             ]
                         }
                     ]
-                }
+                },
+                {
+                    id: "sem2",
+                    title: "2st Semester",
+                    years: [                                       
+                        {
+                            id: "2023",
+                            title: "2023",
+                            pdfs: [
+                                { name: "ADVANCED RESEARCH METHODOLOGY", url: "/pdf/mcom/semester2/2023/ADVANCED_RESEARCH_METHODOLOGY.pdf" },
+                                { name: "ARTIFICIAL INTELLIGENCE FOR ANALYTICS", url: "/pdf/mcom/semester2/2023/ARTIFICIAL_INTELLIGENCE_FOR_ANALYTICS.pdf" },
+                                { name: "DIGITAL MARKETING", url: "/pdf/mcom/semester2/2023/DIGITAL_MARKETING.pdf" },
+                                { name: "DIGITAL TECHNOLOGIES AND TRANSFORMATION", url: "/pdf/mcom/semester2/2023/DIGITAL_TECHNOLOGIES_AND_TRANSFORMATION.pdf" },
+                                { name: "EMERGING TRENDS IN ENTREPRENUIRSHIP", url: "/pdf/mcom/semester2/2023/EMERGING_TRENDS_IN_ENTREPRENUIRSHIP.pdf" },
+                                { name: "INDIAN ETHOS AND LEADERSHIP", url: "/pdf/mcom/semester2/2023/INDIAN_ETHOS_AND_LEADERSHIP.pdf" },
+                                { name: "RISK MANAGEMENT AND DERIVATIVES", url: "/pdf/mcom/semester2/2023/RISK_MANAGEMENT_AND_DERIVATIVES.pdf" }
+                            ]
+                        },
+                        {
+                            id: "2022",
+                            title: "2022",
+                            pdfs: [
+                                { name: "ARTIFICIAL AND BUSINESS INTELLIGENCE", url: "/pdf/mcom/semester2/2022/ARTIFICIAL_AND_BUSINESS_INTELLIGENCE.pdf" },
+                                { name: "DIGITAL MARKETING", url: "/pdf/mcom/semester2/2022/DIGITAL_MARKETING.pdf" },
+                                { name: "EMERGING TRENDS IN ENTERPRENIURSHIP", url: "/pdf/mcom/semester2/2022/EMERGING_TRENDS_IN_ENTERPRENIURSHIP.pdf" },
+                                { name: "INDIAN ETHOS AND LEADERSHIP", url: "/pdf/mcom/semester2/2022/INDIAN_ETHOS_AND_LEADERSHIP.pdf" },
+                                { name: "RISK MANAGEMENT AND DERIVATIVES", url: "/pdf/mcom/semester2/2022/RISK_MANAGEMENT_AND_DERIVATIVES.pdf" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: "sem3",
+                    title: "3st Semester",
+                    years: [                                       
+                        {
+                            id: "2024",
+                            title: "2024",
+                            pdfs: [
+                                { name: "BUSINESS RESEARCH METHOD", url: "/pdf/mcom/semester3/2024/BUSINESS_RESEARCH_METHOD.pdf" },
+                                { name: "CORPORATE REPORTING PRACTICE", url: "/pdf/mcom/semester3/2024/CORPORATE_REPORTING_PRACTICE.pdf" },
+                                { name: "CORPORATE TAX PLANNING", url: "/pdf/mcom/semester3/2024/CORPORATE_TAX_PLANNING.pdf" },
+                                { name: "FINANCIAL DERIVATIVES", url: "/pdf/mcom/semester3/2024/FINANCIAL_DERIVATIVES.pdf" },
+                                { name: "FINANCIAL MARKET AND SERVICES", url: "/pdf/mcom/semester3/2024/FINANCIAL_MARKET_AND_SERVICES.pdf" },
+                                { name: "FINANCIAL PLANNING", url: "/pdf/mcom/semester3/2024/FINANCIAL_PLANNING.pdf" },
+                                { name: "FINANCIAL REPORTING", url: "/pdf/mcom/semester3/2024/FINANCIAL_REPORTING.pdf" },
+                                { name: "INNOVATION IN BANKING TECHNOLOGIES", url: "/pdf/mcom/semester3/2024/INNOVATION_IN_BANKING_TECHNOLOGIES.pdf" },
+                                { name: "INTELLECTUAL PROPERTY RIGHTS", url: "/pdf/mcom/semester3/2024/INTELLECTUAL_PROPERTY_RIGHTS.pdf" },
+                                { name: "LOGISTICS AND SUPPLY CHAIN MANAGEMENT", url: "/pdf/mcom/semester3/2024/LOGISTICS_AND_SUPPLY_CHAIN_MANAGEMENT.pdf" },
+                                { name: "MERGERS, ACQUISITIONS AND RESTRUCTURING", url: "/pdf/mcom/semester3/2024/MERGERS_ACQUISITIONS_AND_RESTRUCTURING.pdf" },
+                                { name: "SECURITY ANALYSIS AND PORTFOLIO MANAGEMENT", url: "/pdf/mcom/semester3/2024/SECURITY_ANALYSIS_AND_PORTFOLIO_MANAGEMENT.pdf" },
+                                { name: "STRATEGIC COST MANAGEMENT", url: "/pdf/mcom/semester3/2024/STRATEGIC_COST_MANAGEMENT.pdf" }
+                            ]
+                        },
+                        {
+                            id: "2023",
+                            title: "2023",
+                            pdfs: [
+                                { name: "CORPORATE REPORTING PRACTICE I", url: "/pdf/mcom/semester3/2023/CORPORATE_REPORTING_PRACTICE_I.pdf" },
+                                { name: "CORPORATE TAX PLANNING", url: "/pdf/mcom/semester3/2023/CORPORATE_TAX_PLANNING.pdf" },
+                                { name: "CUSTOM DUTY AND GST", url: "/pdf/mcom/semester3/2023/CUSTOM_DUTY_AND_GST.pdf" },
+                                { name: "FINANCIAL DERIVATIVES", url: "/pdf/mcom/semester3/2023/FINANCIAL_DERIVATIVES.pdf" },
+                                { name: "FINANCIAL PLANNING", url: "/pdf/mcom/semester3/2023/FINANCIAL_PLANNING.pdf" },
+                                { name: "FINANCIAL REPORTING", url: "/pdf/mcom/semester3/2023/FINANCIAL_REPORTING.pdf" },
+                                { name: "INNOVATION IN BANKING AND TECHNOLOGY", url: "/pdf/mcom/semester3/2023/INNOVATION_IN_BANKING_AND_TECHNOLOGY.pdf" },
+                                { name: "MERGERS, ACQUISITION AND RESTRUCTURING", url: "/pdf/mcom/semester3/2023/MERGERS_ACQUISITION_AND_RESTRUCTURING.pdf" },
+                                { name: "SECURITY ANALYSIS AND PORTFOLIO MANAGEMENT", url: "/pdf/mcom/semester3/2023/SECURITY_ANALYSIS_AND_PORTFOLIO_MANAGEMENT.pdf" },
+                                { name: "STRATEGIC COST MANAGEMENT", url: "/pdf/mcom/semester3/2023/STRATEGIC_COST_MANAGEMENT.pdf" }
+                            ]
+                        },
+                        {
+                            id: "2022",
+                            title: "2022",
+                            pdfs: [
+                                { name: "CORPORATE FINANCE REPORTING", url: "/pdf/mcom/semester3/2022/CORPORATE_FINANCE_REPORTING.pdf" },
+                                { name: "CORPORATE REPORTING PRACTICE I", url: "/pdf/mcom/semester3/2022/CORPORATE_REPORTING_PRACTICE_I.pdf" },
+                                { name: "CORPORATE TAX PLANNING", url: "/pdf/mcom/semester3/2022/CORPORATE_TAX_PLANNING.pdf" },
+                                { name: "DIRECT TAX PLANNING", url: "/pdf/mcom/semester3/2022/DIRECT_TAX_PLANNING.pdf" },
+                                { name: "FINANCIAL MARKET AND SERVICES", url: "/pdf/mcom/semester3/2022/FINANCIAL_MARKET_AND_SERVICES.pdf" },
+                                { name: "FINANCIAL PLANNING", url: "/pdf/mcom/semester3/2022/FINANCIAL_PLANNING.pdf" },
+                                { name: "LOGISTICS AND SUPPLY CHAIN MANAGEMENT", url: "/pdf/mcom/semester3/2022/LOGISTICS_AND_SUPPLY_CHAIN_MANAGEMENT.pdf" },
+                                { name: "STRATEGIC COST MANAGEMENT", url: "/pdf/mcom/semester3/2022/STRATEGIC_COST_MANAGEMENT.pdf" },
+                                { name: "STRATEGIC COT MANAGEMENT ( REPEATERS)", url: "/pdf/mcom/semester3/2022/STRATEGIC_COT_MANAGEMENT_REPEATERS.pdf" }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    id: "sem4",
+                    title: "4st Semester",
+                    years: [                                       
+                        {
+                            id: "2023",
+                            title: "2023",
+                            pdfs: [
+                                { name: "CORPORATE REPORTING PRACTICE", url: "/pdf/mcom/semester4/2023/CORPORATE_REPORTING_PRACTICE.pdf" },
+                                { name: "CUSTOM DUTY AND GST", url: "/pdf/mcom/semester4/2023/CUSTOM_DUTY_AND_GST.pdf" },
+                                { name: "FINANCIAL LITERACY", url: "/pdf/mcom/semester4/2023/FINANCIAL_LITERACY.pdf" },
+                                { name: "FORENSIC ACCOUNTING AND AUDITING", url: "/pdf/mcom/semester4/2023/FORENSIC_ACCOUNTING_AND_AUDITING.pdf" },
+                                { name: "FOREX MANAGEMENT", url: "/pdf/mcom/semester4/2023/FOREX_MANAGEMENT.pdf" },
+                                { name: "SECURITY ANALYSIS AND PORTFOLIO MANAGEMENT", url: "/pdf/mcom/semester4/2023/SECURITY_ANALYSIS_AND_PORTFOLIO_MANAGEMENT.pdf" },
+                                { name: "STRATEGIES FOR BANKING RISK AND MANAGEMENT", url: "/pdf/mcom/semester4/2023/STRATEGIES_FOR_BANKING_RISK_AND_MANAGEMENT.pdf" }
+                            ]
+                        },
+                    ]
+                },
                 // Add remaining 7 semesters for M.COM with similar structure
             ]
         },
@@ -1178,53 +1284,73 @@ export const ugcPreparationData = {
                 {
                     id: "sem1",
                     title: "1st Semester",
-                    years: [
-                        {
-                            id: "2025",
-                            title: "2025",
-                            pdfs: [
-                                { name: "Advanced Data Structures", url: "#" },
-                                { name: "Database Management Systems", url: "#" },
-                                { name: "Object-Oriented Programming", url: "#" },
-                                { name: "Computer Networks", url: "#" },
-                                { name: "Software Engineering", url: "#" }
-                            ]
-                        },
+                    years: [                        
                         {
                             id: "2024",
                             title: "2024",
                             pdfs: [
-                                { name: "Advanced Data Structures", url: "#" },
-                                { name: "Database Management Systems", url: "#" },
-                                { name: "Object-Oriented Programming", url: "#" },
-                                { name: "Computer Networks", url: "#" },
-                                { name: "Software Engineering", url: "#" }
+                                { name: "COMPUTER ORGANIZATION AND ARCHITECTURE", url: "/pdf/mca/semester1/2024/COMPUTER_ORGANIZATION_AND_ARCHITECTURE.pdf" },
+                                { name: "OBJECT ORIENTED PROGRAMMING", url: "/pdf/mca/semester1/2024/OBJECT_ORIENTED_PROGRAMMING.pdf" },
+                                { name: "THEORY OF COMPUTATION", url: "/pdf/mca/semester1/2024/THEORY_OF_COMPUTATION.pdf" }
                             ]
                         },
                         {
                             id: "2023",
                             title: "2023",
                             pdfs: [
-                                { name: "Advanced Data Structures", url: "#" },
-                                { name: "Database Management Systems", url: "#" },
-                                { name: "Object-Oriented Programming", url: "#" },
-                                { name: "Computer Networks", url: "#" },
-                                { name: "Software Engineering", url: "#" }
+                                { name: "COMPUTER ORGANIZATION AND ARCHITECTURE", url: "/pdf/mca/semester1/2023/COMPUTER_ORGANIZATION_AND_ARCHITECTURE.pdf" },
+                                { name: "OBJECT ORIENTED PROGRAMMING", url: "/pdf/mca/semester1/2023/OBJECT_ORIENTED_PROGRAMMING.pdf" },
+                                { name: "THEORY OF COMPUTATION", url: "/pdf/mca/semester1/2023/THEORY_OF_COMPUTATION.pdf" },
+                                { name: "DATA STRUCTURE", url: "/pdf/mca/semester1/2023/DATA_STRUCTURE.pdf" },
+                                { name: "DISCRETE MATHEMATICS", url: "/pdf/mca/semester1/2023/DISCRETE_MATHEMATICS.pdf" },
+                                { name: "THE ART OF PROGRAMMING", url: "/pdf/mca/semester1/2023/THE_ART_OF_PROGRAMMING.pdf" }
                             ]
-                        },
+                        },                       
+                    ]
+                },
+                {
+                    id: "sem2",
+                    title: "2st Semester",
+                    years: [                                               
+                        {
+                            id: "2023",
+                            title: "2023",
+                            pdfs: [
+                                { name: "ARTIFICIAL INTELLIGENCE", url: "/pdf/mca/semester2/2023/ARTIFICIAL_INTELLIGENCE.pdf" },
+                                { name: "SOFTWARE ENGINEERING", url: "/pdf/mca/semester2/2023/SOFTWARE_ENGINEERING.pdf" },
+                                { name: "THE DESIGN AND ANALYSIS FOR ALGORITHM", url: "/pdf/mca/semester2/2023/THE_DESIGN_AND_ANALYSIS_FOR_ALGORITHM.pdf" }
+                            ]
+                        },                       
                         {
                             id: "2022",
                             title: "2022",
                             pdfs: [
-                                { name: "Advanced Data Structures", url: "#" },
-                                { name: "Database Management Systems", url: "#" },
-                                { name: "Object-Oriented Programming", url: "#" },
-                                { name: "Computer Networks", url: "#" },
-                                { name: "Software Engineering", url: "#" }
+                                { name: "ARTIFICIAL INTELLIGENCE", url: "/pdf/mca/semester2/2022/ARTIFICIAL_INTELLIGENCE.pdf" },
+                                { name: "COMPUTER NETWORKS", url: "/pdf/mca/semester2/2022/COMPUTER_NETWORKS.pdf" },
+                                { name: "DBMS", url: "/pdf/mca/semester2/2022/DBMS.pdf" },
+                                { name: "DESIGN AND ANALYSIS OF ALGORITHMS", url: "/pdf/mca/semester2/2022/DESIGN_AND_ANALYSIS_OF_ALGORITHMS.pdf" },
+                                { name: "OPERATING SYSTEM", url: "/pdf/mca/semester2/2022/OPERATING_SYSTEM.pdf" },
+                                { name: "SOFTWARE ENGINEERING", url: "/pdf/mca/semester2/2022/SOFTWARE_ENGINEERING.pdf" }
                             ]
-                        }
+                        },                       
                     ]
-                }
+                },
+                {
+                    id: "sem3",
+                    title: "3st Semester",
+                    years: [                                               
+                        {
+                            id: "2024",
+                            title: "2024",
+                            pdfs: [
+                                { name: "MACHINE LEARNING", url: "/pdf/mca/semester3/2024/MACHINE_LEARNING.pdf" },
+                                { name: "POSITIVE PSYCHOLOGY", url: "/pdf/mca/semester3/2024/POSITIVE_PSYCHOLOGY.pdf" },
+                                { name: "QUANTITATIVE TEACHING AND RESEARCH", url: "/pdf/mca/semester3/2024/QUANTITATIVE_TEACHING_AND_RESEARCH.pdf" },
+                                { name: "RESEARCH METHODOLOGY", url: "/pdf/mca/semester3/2024/RESEARCH_METHODOLOGY.pdf" }
+                            ]
+                        },                                             
+                    ]
+                },
                 // Add remaining 7 semesters for MCA with similar structure
             ]
         }

@@ -1,8 +1,14 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import SemesterAccordion from './SemesterAccordion';
 
 const CourseAccordion = ({ course, isOpen, onToggle }) => {
+    const [openSemesterId, setOpenSemesterId] = useState(null);
+
+    const handleSemesterToggle = (id) => {
+        setOpenSemesterId(prev => (prev === id ? null : id));
+    };
+
     return (
         <div className="mb-4">
             <button
@@ -26,7 +32,12 @@ const CourseAccordion = ({ course, isOpen, onToggle }) => {
             >
                 <div className="mt-2 space-y-0 ml-4">
                     {course.semesters.map((semester) => (
-                        <SemesterAccordion key={semester.id} semester={semester} />
+                        <SemesterAccordion
+                            key={semester.id}
+                            semester={semester}
+                            isOpen={openSemesterId === semester.id}
+                            onToggle={() => handleSemesterToggle(semester.id)}
+                        />
                     ))}
                 </div>
             </div>
@@ -34,4 +45,4 @@ const CourseAccordion = ({ course, isOpen, onToggle }) => {
     );
 };
 
-export default CourseAccordion; 
+export default CourseAccordion;

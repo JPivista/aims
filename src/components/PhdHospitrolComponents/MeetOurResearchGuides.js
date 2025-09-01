@@ -45,7 +45,7 @@ const MeetOurResearchGuides = () => {
                         <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#0c2165]">
                             Meet Our
                         </h3>
-                        <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-2 md:-mt-4">
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-6 md:-mt-8">
                             Research Guides
                         </h3>
                     </div>

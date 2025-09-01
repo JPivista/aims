@@ -4,17 +4,17 @@ import Link from "next/link";
 
 const PhdProgramOverview = () => {
     return (
-        <div className="bg-white py-8 sm:py-12 lg:py-5 lg:px-0 px-4">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white py-4 lg:py-5 lg:px-0 px-4">
+            <div className="container mx-auto px-0 sm:px-6 lg:px-8 ">
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-5 mb-12 pt-5">
+                <div className="flex flex-col lg:flex-row md:gap-6 gap-0 lg:gap-5 md:mb-12 mb-8 md:pt-5 pt-0 items-start">
                     <div className="w-full">
-                        <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-12">
-                            <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic">PhD Program</span> <br />
+                        <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165]  pb-0 mb-0">
+                            <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic -mt-10 md:-mt-10">PhD Program</span> <br />
                             Overview
                         </h3>
                     </div>
-                    <div className="flex flex-col justify-center pb-5">
+                    <div className="flex flex-col justify-center py-5">
                         <p className="text-gray-700 text-sm sm:text-base lg:text-lg">
                             At AIMS Institutes, scholars are trained to think deeply, write
                             rigorously, and contribute meaningfully to their field. With access
@@ -33,7 +33,7 @@ const PhdProgramOverview = () => {
                             <div className="text-center mb-6">
                                 <div className="flex justify-center">
                                     <Image
-                                        src="/business_school/phd/trophy.svg"
+                                        src="/business_school/phd/trophy2.svg"
                                         alt="Trophy"
                                         width={32}
                                         height={32}
@@ -80,7 +80,7 @@ const PhdProgramOverview = () => {
                             <div className="text-center">
                                 <div className="flex justify-center">
                                     <Image
-                                        src="/business_school/phd/calender.svg"
+                                        src="/business_school/phd/calender2.svg"
                                         alt="Calendar"
                                         width={32}
                                         height={32}

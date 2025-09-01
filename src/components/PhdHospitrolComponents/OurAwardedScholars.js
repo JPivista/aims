@@ -91,14 +91,14 @@ const OurAwardedScholars = () => {
     const [selectedGuide, setSelectedGuide] = useState("Dr. Kiran Reddy");
 
     return (
-        <div className="border-b border-gray-500 mb-10">
-            <div className="p-5 container mx-auto">
+        <div className="border-b border-gray-500 md:mb-10 mb-6">
+            <div className="container mx-auto px-4 pb-10">
                 {/* Title */}
                 <div className="lg:w-1/2 items-center text-center lg:text-left mb-6">
                     <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#0c2165]">
                         Our Awarded
                     </h3>
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-2 md:-mt-4">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#a22978] italic -mt-6 md:-mt-8">
                         Scholars
                     </h3>
                 </div>

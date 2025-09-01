@@ -7,7 +7,7 @@ const RecognisedResearchCentre = () => {
       {/* Logo */}
       <div className="flex-shrink-0 h-full w-[200px]">
         <Image
-          src="/business_school/phd/research_image.png"
+          src="/business_school/phd/research_image.webp"
           alt="University of Mysore Logo"
           width={128}
           height={128}
