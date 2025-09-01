@@ -14,15 +14,14 @@ const sampleCourseData = [
                 label: "SEMESTER 1",
                 image: "/bca/students-semester1.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Language II: English",
                     "Part 2 Optional",
-                    "Discrete Mathematics.",
-                    "Problem Solving Techniques.",
-                    "Data Structure.",
-                    "Problem Solving Lab.",
-                    "Data Structure Lab."
+                    "Discrete Mathematics",
+                    "Problem Solving Techniques",
+                    "Data Structure",
+                    "Problem Solving Lab",
+                    "Data Structure Lab"
                 ]
             },
             {
@@ -30,15 +29,14 @@ const sampleCourseData = [
                 label: "SEMESTER 2",
                 image: "/bca/students-semester2.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Language II: English",
                     "Part 2 Optional",
-                    "Computer Architecture.",
-                    "Object Oriented Programming Using Java.",
-                    "Database Management System.",
-                    "Java LAB.",
-                    "Database Management System Lab."
+                    "Computer Architecture",
+                    "Object Oriented Programming Using Java",
+                    "Database Management System",
+                    "Java LAB",
+                    "Database Management System Lab"
                 ]
             }
         ]
@@ -52,15 +50,14 @@ const sampleCourseData = [
                 label: "SEMESTER 3",
                 image: "/bca/students-semester3.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Language II: English",
                     "Part 2 Optional",
-                    "Operating Systems.",
-                    "Computer Networks.",
-                    "Python Programming.",
-                    "Computer Networks Lab.",
-                    "Python Programming Lab."
+                    "Operating Systems",
+                    "Computer Networks",
+                    "Python Programming",
+                    "Computer Networks Lab",
+                    "Python Programming Lab"
                 ]
             },
             {
@@ -69,14 +66,14 @@ const sampleCourseData = [
                 image: "/bca/students-semester4.jpg", // Add your image path
                 courses: [
                     "Part 1 Languages",
-                    "Languages: Kannada / Additional English / Hindi / Urdu / Sanskrit / Tamil / Malayalam / Marathi / Telugu.",
-                    "Language II: English.",
+                    "Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Language II: English",
                     "Part 2 Optional",
-                    "Software Engineering.",
-                    "Artificial Intelligence.",
-                    "Internet Technologies.",
-                    "Artificial Intelligence LAB.",
-                    "Internet Technologies LAB."
+                    "Software Engineering",
+                    "Artificial Intelligence",
+                    "Internet Technologies",
+                    "Artificial Intelligence LAB",
+                    "Internet Technologies LAB"
                 ]
             }
         ]
@@ -90,12 +87,12 @@ const sampleCourseData = [
                 label: "SEMESTER 5",
                 image: "/bca/students-semester5.jpg", // Add your image path
                 courses: [
-                    "Design & Analysis of Algorithm.",
-                    "Data Analytics Computer Architecture.",
-                    "Web Programming.",
-                    "Data Analytics Lab.",
-                    "Web Programming Lab.",
-                    "Project Work."
+                    "Design & Analysis of Algorithm",
+                    "Data Analytics Computer Architecture",
+                    "Web Programming",
+                    "Data Analytics Lab",
+                    "Web Programming Lab",
+                    "Project Work"
                 ]
             },
             {
@@ -103,12 +100,12 @@ const sampleCourseData = [
                 label: "SEMESTER 6",
                 image: "/bca/students-semester6.jpg", // Add your image path
                 courses: [
-                    "Theory of Computation.",
-                    "Machine Learning.",
-                    "Mobile Application Development.",
-                    "Machine Learning Lab.",
-                    "Mobile Application Development Lab.",
-                    "Project Work."
+                    "Theory of Computation",
+                    "Machine Learning",
+                    "Mobile Application Development",
+                    "Machine Learning Lab",
+                    "Mobile Application Development Lab",
+                    "Project Work"
                 ]
             }
         ]
@@ -158,9 +155,7 @@ const BcaCourseStructure = () => {
                         </h3>
                     </div>
                 </div>
-
                 <TabCourseStructure courseData={sampleCourseData} />
-
             </div>
         </>
     )
