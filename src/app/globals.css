@@ -377,7 +377,7 @@ h5 .wp-h5 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 20px;
   width: 100%;
   @media (min-width: 768px) and (max-width: 1200px) {
     max-width: 1200px;
