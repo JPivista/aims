@@ -6,16 +6,23 @@ import ApplicationMarquee from '../../shared/ApplicationMarquee'
 const HeroBannerJournalResearch = ({ announcements, pageType = 'engineering' }) => {
     return (
         <>
-            <div className="relative w-full h-[100vh] overflow-hidden">
+            <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
-                <Image
-                    src="/aims-journal-of-research/aims-journal-of-research.png"
+                {/* <Image
+                    src="/aims-journal-of-research/banner-02.png"
                     alt="AIMS Journal of Research"
                     width={1920}
                     height={1080}
                     className="w-full h-full object-cover"
                     priority
-                />
+                /> */}
+
+                {/* Background Image - Desktop */}
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/iqac/iqac-herobanner.webp')]" />
+
+                {/* Background Image - Mobile */}
+                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/iqac/iqac-mobile-banner.webp')]" />
+
 
                 {/* Gradient Overlay - Figma Design */}
                 <div
@@ -26,9 +33,9 @@ const HeroBannerJournalResearch = ({ announcements, pageType = 'engineering' }) 
                 ></div>
 
                 {/* Bottom Content Container */}
-                <div className="absolute bottom-20 left-0 right-0">
-                    <div className="container mx-auto py-4 px-6 lg:px-8">
-                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
+                <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
+                    <div className="container mx-auto">
+                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
                             <div className="flex items-center">
                                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16">
                                     IQAC
