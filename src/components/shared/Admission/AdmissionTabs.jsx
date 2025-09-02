@@ -7,6 +7,39 @@ import { motion, AnimatePresence } from "framer-motion"
 const AdmissionTabs = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0)
 
+  // Helper function to make specific text portions bold
+  const renderBoldText = (text) => {
+    if (typeof text !== "string") return text
+
+    // Make specific portions bold using monser-600 class
+    if (text.includes("bachelor's degree with a minimum of 60%")) {
+      const parts = text.split(
+        /(A recognised )(bachelor's degree with a minimum of 60%)(.*)/
+      )
+      return (
+        <>
+          {parts[1]}
+          <span className="monser-600">{parts[2]}</span>
+          {parts[3]}
+        </>
+      )
+    }
+
+    // For other text, make specific portions bold
+    const parts = text.split(/(\d+ percentile & above)/)
+
+    return parts.map((part, index) => {
+      if (part.match(/\d+ percentile & above/)) {
+        return (
+          <span key={index} className="monser-600">
+            {part}
+          </span>
+        )
+      }
+      return part
+    })
+  }
+
   return (
     <div className="py-6 md:py-10 bg-[#E1F9F4]">
       <div className="container mx-auto px-4 md:px-0">
@@ -94,7 +127,7 @@ const AdmissionTabs = ({ tabsData }) => {
                               <div className="flex items-start space-x-3">
                                 <span className="font-semibold">•</span>
                                 <p className="text-base md:text-lg monser-400">
-                                  {req}
+                                  {renderBoldText(req)}
                                 </p>
                               </div>
                             ) : (
@@ -113,7 +146,7 @@ const AdmissionTabs = ({ tabsData }) => {
                                     >
                                       <span className="text-sm">◦</span>
                                       <p className="text-base md:text-lg monser-400">
-                                        {subReq}
+                                        {renderBoldText(subReq)}
                                       </p>
                                     </div>
                                   ))}
@@ -134,24 +167,106 @@ const AdmissionTabs = ({ tabsData }) => {
                     <p className="text-base md:text-lg monser-400 mb-3">
                       {tabsData[activeTab].selection.subtitle}
                     </p>
-                    <div className="space-y-2">
-                      {tabsData[activeTab].selection.rounds.map(
-                        (round, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-3"
-                          >
-                            <span className="font-semibold">{index + 1}.</span>
-                            <p className="text-base md:text-lg monser-400">
-                              {round}
-                            </p>
-                          </div>
-                        )
-                      )}
-                    </div>
-                    <p className="text-sm md:text-base monser-400 italic">
-                      {tabsData[activeTab].selection.note}
-                    </p>
+
+                    {/* New steps structure */}
+                    {tabsData[activeTab].selection.description && (
+                      <p className="text-base md:text-lg monser-400 mb-4">
+                        {tabsData[activeTab].selection.description}
+                      </p>
+                    )}
+
+                    {tabsData[activeTab].selection.steps ? (
+                      <div className="space-y-4">
+                        {tabsData[activeTab].selection.steps.map(
+                          (step, index) => (
+                            <div key={index} className="space-y-2">
+                              <h5 className="text-lg md:text-xl monser-600 text-[#A22877]">
+                                {step.title}
+                              </h5>
+                              <p className="text-base md:text-lg monser-400 ml-4">
+                                {step.description}
+                              </p>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    ) : (
+                      /* Fallback for old rounds structure */
+                      tabsData[activeTab].selection.rounds && (
+                        <div className="space-y-2">
+                          {tabsData[activeTab].selection.rounds.map(
+                            (round, index) => (
+                              <div
+                                key={index}
+                                className="flex items-start space-x-3"
+                              >
+                                <span className="font-semibold">
+                                  {index + 1}.
+                                </span>
+                                <p className="text-base md:text-lg monser-400">
+                                  {round}
+                                </p>
+                              </div>
+                            )
+                          )}
+                        </div>
+                      )
+                    )}
+
+                    {tabsData[activeTab].selection.note && (
+                      <p className="text-sm md:text-base monser-400 italic bg-black/10 p-3 rounded-lg">
+                        {tabsData[activeTab].selection.note}
+                      </p>
+                    )}
+
+                    {/* Evaluation Framework Table */}
+                    {tabsData[activeTab].selection.evaluation && (
+                      <div className="space-y-4 mt-6">
+                        <h5 className="text-lg md:text-xl monser-600 text-[#A22877] font-semibold">
+                          {tabsData[activeTab].selection.evaluation.title}
+                        </h5>
+                        <div className="overflow-x-auto w-full">
+                          <table className="w-full min-w-[600px] border-collapse border border-gray-300 rounded-2xl overflow-hidden">
+                            <thead>
+                              <tr className="bg-[#A22877] text-white">
+                                <th className="border border-gray-300 px-4 py-3 text-left monser-600">
+                                  Component
+                                </th>
+                                <th className="border border-gray-300 px-4 py-3 text-left monser-600">
+                                  Weightage
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {tabsData[
+                                activeTab
+                              ].selection.evaluation.table.map((row, index) => (
+                                <tr
+                                  key={index}
+                                  className={`border border-gray-300 transition-colors duration-200 bg-white hover:bg-blue-50 ${
+                                    index === 0 ? "rounded-t-lg" : ""
+                                  } ${
+                                    index ===
+                                    tabsData[activeTab].selection.evaluation
+                                      .table.length -
+                                      1
+                                      ? "rounded-b-lg"
+                                      : ""
+                                  }`}
+                                >
+                                  <td className="border border-gray-300 px-4 py-3 monser-400">
+                                    {row.component}
+                                  </td>
+                                  <td className="border border-gray-300 px-4 py-3 monser-400 font-semibold">
+                                    {row.weightage}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* After Selection */}

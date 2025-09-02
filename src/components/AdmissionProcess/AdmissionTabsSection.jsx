@@ -12,12 +12,12 @@ const AdmissionTabsSection = () => {
         title: "Eligibility Criteria",
         subtitle: "To apply, you must have:",
         requirements: [
-          "A recognised bachelor's degree with a minimum of 50% (or 45% for SC/ST/CAT-1)",
+          "A recognised bachelor's degree with a minimum of 60% (or 45% for SC/ST/CAT-1)",
           {
             main: "A valid test score:",
             sub: [
-              "CAT: 70 percentile or above",
-              "MAT/XAT/CMAT/ATMA: 80 percentile or above",
+              "CAT: 65 percentile & above",
+              "MAT/XAT/CMAT/ATMA: 70 percentile & above",
             ],
           },
           "Final-year students may apply provisionally. Offer letters will require submission of final mark sheets before confirmation.",
@@ -25,14 +25,46 @@ const AdmissionTabsSection = () => {
       },
       selection: {
         title: "Selection Process",
-        subtitle: "The MBA selection process includes four structured rounds:",
-        rounds: [
-          "Statement of Purpose",
-          "Extempore",
-          "Group Discussion",
-          "Personal Interview",
+        subtitle:
+          "The MBA selection process is designed to go beyond academic merit and assess a candidate's self-awareness, communication, professional readiness, and fitment into the MBA ecosystem.",
+        description: "The process includes the following stages:",
+        steps: [
+          {
+            title: "Step 1: Application Form Submission",
+            description:
+              "Applicants must fill out a detailed online application form capturing personal, academic, and professional details. The form is reviewed to determine eligibility and completeness.",
+          },
+          {
+            title: "Step 2: AI-Based Interview",
+            description:
+              "This interview serves as an elimination round. An automated video interview using AI tools will assess behavioral traits, emotional intelligence, and cognitive reasoning. The AI will generate a candidate profile for further review.",
+          },
+          {
+            title: "Step 3: SWOC Presentation by the Applicant",
+            description:
+              "Applicants are required to submit a 3–5-minute video or give a live 3-5-minute self-assessment presentation explaining their personal SWOC (Strengths, Weaknesses, Opportunities, and Challenges). This stage assesses their self-awareness, confidence, and communication skills.",
+          },
+          {
+            title: "Step 4: Final Panel Interview",
+            description:
+              "A personal interview will be conducted by industry leaders, alumni in senior roles, or recruiters. The panel will evaluate the candidate's industry readiness, leadership potential, and cultural fit for the institution.",
+          },
+          {
+            title: "Step 5: Issue of Offer Letter",
+            description:
+              "On completion of Selection Rounds, selected aspirants would receive Offer letters, notifying the admission Status.",
+          },
         ],
-        note: "You'll be evaluated not just on academic merit and test scores, but also on your achievements in extracurriculars, leadership, and communication. Selection rounds may be conducted online or in person, depending on current guidelines.",
+        note: "Presentations and/or Personal Interview will take place on a Single day at various locations with 2-3 panel members (Faculty + Alumni + Any industry expert from those locations – Where possible).",
+        evaluation: {
+          title: "Final Evaluation Framework",
+          table: [
+            { component: "Application Form + SOP", weightage: "10%" },
+            { component: "AI-Based Interview", weightage: "25%" },
+            { component: "SWOC Presentation", weightage: "30%" },
+            { component: "Panel Interview", weightage: "35%" },
+          ],
+        },
       },
       afterSelection: {
         title: "Once selected:",

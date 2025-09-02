@@ -18,7 +18,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
     <>
       <div className="relative flex flex-col lg:flex-row items-start">
         {/* Left Side - Tabs */}
-        <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
+        <div className="w-full lg:w-1/3">
           <div
             ref={containerRef}
             className="flex flex-col items-center lg:items-start gap-3 sm:gap-3"
@@ -40,17 +40,17 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
           </div>
 
           {/* Horizontal Line for Mobile */}
-          <div className="block lg:hidden w-full h-px bg-gray-300 mt-6 mb-6"></div>
+          <div className="block lg:hidden w-full h-px bg-[#A22877] mt-8 mb-8"></div>
         </div>
 
         {/* Vertical Separator - Desktop Only */}
-        <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-black transform -translate-x-1/2"></div>
+        <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-black transform -translate-x-1/2 my-6"></div>
 
         {/* Right Side - Expandable Content */}
         <div className="w-full lg:w-4/5 md:px-6 ">
           <div className="bg-white px-0 md:px-8">
             {tabsData[activeTab] && (
-              <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <div className="space-y-6 sm:space-y-8 md:space-y-8 lg:space-y-8 lg:mx-4 md:mx-4 mx-0">
                 {tabsData[activeTab].sections.map((section, index) => (
                   <motion.div
                     key={section.id}
@@ -69,7 +69,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                   >
                     <button
                       onClick={() => toggleSection(section.id)}
-                      className="w-full flex items-center justify-between text-left p-4"
+                      className="w-full flex items-center justify-between text-left p-2 "
                     >
                       <h2 className="monser-500 text-black text-lg sm:text-xl md:text-2xl leading-tight pr-4">
                         {section.title}
@@ -105,7 +105,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                           }}
                           className="overflow-hidden"
                         >
-                          <div className="my-4 md:ml-4 space-y-3">
+                          <div className="px-2 pb-6 md:ml-2 md:px-0 space-y-4 sm:space-y-5">
                             {section.content.map((item, itemIndex) => (
                               <motion.div
                                 key={itemIndex}
@@ -117,7 +117,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                                 }}
                                 className="flex items-start"
                               >
-                                <p className="leading-relaxed monser-400 text-black text-sm sm:text-base md:text-lg lg:text-[20px]">
+                                <p className="leading-relaxed monser-400 text-black text-sm sm:text-base md:text-lg lg:text-[20px] mt-2">
                                   {item}
                                 </p>
                               </motion.div>

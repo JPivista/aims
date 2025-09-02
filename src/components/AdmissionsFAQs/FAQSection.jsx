@@ -5,7 +5,7 @@ import TabAccordionSection from "./TabAccordionSection"
 const FAQSection = () => {
   return (
     <div className="relative">
-      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10 lg:py-10 lg:px-0">
         <div className="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-12 pb-6 md:pb-10">
           {/* Left Side - Heading and Instructions (5/6 width) */}
           <div className="w-full max-w-5xl">
