@@ -90,7 +90,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0 shadow-md" : "relative"
+        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0 md:shadow-none shadow-sm" : "relative"
           }`}
       >
         {/* HEADER CONTAINER */}
@@ -285,10 +285,14 @@ export default function Header() {
       </header>
 
       {/* Content spacer that smoothly adjusts when header becomes sticky */}
-      <div
+      <motion.div
         className="w-full"
         style={{
-          height: isSticky ? "10vh" : "0px", // Match mobile header height (10vh)
+          height: isSticky ? "17vh" : "0px", // Fixed height to match header height
+        }}
+        transition={{
+          duration: 0.3, // Faster transition to prevent gap
+          ease: "ease-out",
         }}
       />
     </>
