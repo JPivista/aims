@@ -173,7 +173,7 @@ export default function ExactSwapCarousel() {
   const goTo = (i) => setCurrent(i);
 
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-purple-800 text-white p-6 md:p-12 relative overflow-hidden">
+    <div className="bg-[url('/home/bg-circle.svg')] bg-cover bg-center bg-no-repeat text-white p-6 md:p-12 relative overflow-hidden">
       <div className="container mx-auto">
         <div>
           <h3 className="md:text-left"> Select your Course</h3>
