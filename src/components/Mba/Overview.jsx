@@ -9,8 +9,8 @@ const Overview = () => {
       heading:
         "The applicant must satisfy one of the following eligibility criteria for admissions into the MBA program:",
       items: [
-        "A graduate degree under 10+2+3 or 10+2+4 pattern under any discipline, securing at least 50% marks in aggregate, from a recognised university",
-        "An honors degree under 10+2+4 pattern from a recognised university under UGC Act with at least 50% marks in aggregate including languages",
+        "A graduate degree under 10+2+3 or 10+2+4 pattern under any discipline, securing at least 60% marks in aggregate, from a recognised university",
+        "An honors degree under 10+2+4 pattern from a recognised university under UGC Act with at least 60% marks in aggregate including languages",
         "Candidates who have passed Bachelor/Master degree through correspondence/Open University System from this university or from any other university recognised by law, are exempted from 10+2 pattern. The duration of the degree program must be 3 + 2 years",
       ],
     },
@@ -25,25 +25,71 @@ const Overview = () => {
     },
   ]
 
+  const selectionSteps = [
+    {
+      title: "Step 1: Application Form Submission",
+      description:
+        "Applicants must fill out a detailed online application form capturing personal, academic, and professional details. The form is reviewed to determine eligibility and completeness.",
+    },
+    {
+      title: "Step 2: AI-Based Interview",
+      description:
+        "This interview serves as an elimination round. An automated video interview using AI tools will assess behavioral traits, emotional intelligence, and cognitive reasoning. The AI will generate a candidate profile for further review.",
+    },
+    {
+      title: "Step 3: SWOC Presentation by the Applicant",
+      description:
+        "Applicants are required to submit a 3–5-minute video or give a live 3-5-minute self-assessment presentation explaining their personal SWOC (Strengths, Weaknesses, Opportunities, and Challenges). This stage assesses their self-awareness, confidence, and communication skills.",
+    },
+    {
+      title: "Step 4: Final Panel Interview",
+      description:
+        "A personal interview will be conducted by industry leaders, alumni in senior roles, or recruiters. The panel will evaluate the candidate's industry readiness, leadership potential, and cultural fit for the institution.",
+    },
+    {
+      title: "Step 5: Issue of Offer Letter",
+      description:
+        "On completion of Selection Rounds, selected aspirants would receive Offer letters, notifying the admission Status.",
+    },
+  ]
+
   const tabData = [
     {
       key: "important-dates",
       label: "Important Dates",
       content: (
         <>
-          <h6
-            style={{ color: "#A22877", fontSize: "1.2rem", fontWeight: "600" }}
-            className="text-[#932c79] font-semibold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6"
-          >
+          <h5 className="text-[#A22877] monser-600 text-[24px] mb-4 sm:mb-6">
             Important Dates
-          </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
-            Please see the{" "}
-            <a href="/admission-process" className="text-[#A22877]">
-              Admission Process
-            </a>{" "}
-            page for important dates and deadlines for this course.
-          </p>
+          </h5>
+          <div className="space-y-4">
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#A22877]">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                <span className="text-[#A22877] monser-500 text-[18px]">
+                  Application Deadline:
+                </span>{" "}
+                <span className="monser-600 text-[18px]">February 2, 2026</span>
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#A22877]">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                <span className="text-[#A22877] monser-500 text-[18px]">
+                  Online Interview Completion:
+                </span>{" "}
+                <span className="monser-600 text-[18px]">February 9, 2026</span>
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded-lg border-l-4 border-[#A22877]">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                <span className="text-[#A22877] monser-500 text-[18px]">
+                  SWOC & Personal Interviews:
+                </span>{" "}
+                <span className="monser-600 text-[18px] ">
+                  February 21, 2026
+                </span>
+              </p>
+            </div>
+          </div>
         </>
       ),
     },
@@ -66,7 +112,7 @@ const Overview = () => {
               </ul>
             </div>
           ))}
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
             Students seeking admission to MBA degree at AIMS Institutes must
             adhere to the guidelines of eligibility prior to submitting
             application form (online only) to us. All applications which do not
@@ -81,38 +127,107 @@ const Overview = () => {
       label: "Selection Process",
       content: (
         <>
-          <h6
-            style={{ color: "#A22877", fontSize: "1.2rem", fontWeight: "600" }}
-            className="text-[#932c79] font-semibold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6"
-          >
+          <h5 className="text-[#A22877] monser-600 text-[24px] mb-4 sm:mb-6">
             Selection Process
-          </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
-            Please see the{" "}
-            <a href="/admission-process" className="text-[#A22877]">
-              Admission Process
-            </a>{" "}
-            page for important dates and deadlines for this course.
-          </p>
+          </h5>
+          <div className="space-y-6">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+              The MBA selection process is designed to go beyond academic merit
+              and assess a candidate's self-awareness, communication,
+              professional readiness, and fitment into the MBA ecosystem.
+            </p>
+
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+              The process includes the following stages:
+            </p>
+
+            <div className="space-y-4">
+              {selectionSteps.map((step, index) => (
+                <div key={index} className="space-y-2">
+                  <h5 className="text-lg md:text-xl monser-600 text-[#A22877] font-semibold">
+                    {step.title}
+                  </h5>
+                  <p className="text-base md:text-lg monser-400 ml-4">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-black/10 p-4 rounded-lg">
+              <p className="text-sm md:text-base monser-400 italic">
+                Presentations and/or Personal Interview will take place on a
+                Single day at various locations with 2-3 panel members (Faculty
+                + Alumni + Any industry expert from those locations – Where
+                possible).
+              </p>
+            </div>
+
+            {/* Evaluation Framework Table */}
+            <div className="space-y-4 mt-6">
+              <h5 className="text-lg md:text-xl monser-600 text-[#A22877] font-semibold">
+                Final Evaluation Framework
+              </h5>
+              <div className="overflow-x-auto w-full">
+                <table className="w-full min-w-[600px] border-collapse border border-gray-300 rounded-2xl overflow-hidden">
+                  <thead>
+                    <tr className="bg-[#A22877] text-white">
+                      <th className="border border-gray-300 px-4 py-3 text-left monser-600">
+                        Component
+                      </th>
+                      <th className="border border-gray-300 px-4 py-3 text-left monser-600">
+                        Weightage
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { component: "Application Form + SOP", weightage: "10%" },
+                      { component: "AI-Based Interview", weightage: "25%" },
+                      { component: "SWOC Presentation", weightage: "30%" },
+                      { component: "Panel Interview", weightage: "35%" },
+                    ].map((row, index) => (
+                      <tr
+                        key={index}
+                        className={`border border-gray-300 transition-colors duration-200 bg-white hover:bg-blue-50 ${
+                          index === 0 ? "rounded-t-lg" : ""
+                        } ${index === 3 ? "rounded-b-lg" : ""}`}
+                      >
+                        <td className="border border-gray-300 px-4 py-3 monser-400">
+                          {row.component}
+                        </td>
+                        <td className="border border-gray-300 px-4 py-3 monser-400 font-semibold">
+                          {row.weightage}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </>
       ),
     },
   ]
   return (
     <div className="bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+      <div className="container mx-auto px-4 py-6 md:py-10 lg:py-10">
         {/* MBA Program overview */}
-        <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
-          <h2 className="w-full max-w-2xl text-center md:text-left leading-relaxed tracking-wider">
-            <span className="mba-program-text text-4xl md:text-6xl">
-              MBA Program
-            </span>
-            <br />
-            <span className="text-4xl md:text-6xl font-bold text-[#0C2165] playfair-300">
-              Overview
-            </span>
-          </h2>
-          <p className="monser-400 text-base md:text-xl text-center md:text-left max-w-3xl">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-8 justify-between">
+          <div className=" w-full max-w-2xl text-center md:text-left lg:text-left flex items-center justify-center md:justify-start lg:justify-start leading-relaxed tracking-wider ">
+            <h2>
+              <span className="mba-program-text text-5xl md:text-6xl lg:text-6xl">
+                MBA Program
+              </span>
+              <br />
+              <span className="text-5xl md:text-6xl lg:text-6xl text-[#0C2165] playfair-300">
+                Overview
+              </span>
+            </h2>
+          </div>
+
+          <p className="monser-400 text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left lg:text-left max-w-3xl leading-relaxed">
             Since 1998, the MBA program at AIMS Institutes has been equipping
             future leaders to aim sharp and solve complex business challenges.
             We train students to build strong conceptual and analytical
@@ -123,8 +238,8 @@ const Overview = () => {
           </p>
         </div>
 
-        {/* Recognition timeline */}
-        <div className="flex justify-center py-6 md:py-8 ">
+        {/* Program Details */}
+        <div className="flex justify-center py-6 md:py-8 lg:py-8">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">
@@ -195,7 +310,7 @@ const Overview = () => {
           </div>
 
           {/* Desktop Version */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block md:block">
             <Image
               src="/MBA/mba-program.svg"
               alt="MBA Program Overview"

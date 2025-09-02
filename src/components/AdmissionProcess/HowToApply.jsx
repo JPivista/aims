@@ -5,7 +5,7 @@ const HowToApply = () => {
   const deadlines = [
     {
       program: "MBA Program (Non-PGCET)",
-      deadline: "31st August 2025",
+      deadline: "2nd February 2026",
     },
     {
       program: "Postgraduate Programs (Non-MBA)",
@@ -91,31 +91,60 @@ const HowToApply = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            {/* Table Header */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3  text-white">
-              <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
-                Admission Type
-              </div>
-              <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
-                Application Deadline
+            {/* Mobile Scrollable Table */}
+            <div className="block sm:hidden overflow-x-auto">
+              <div className="min-w-[600px]">
+                {/* Table Header */}
+                <div className="grid grid-cols-2 gap-3 mb-3 text-white">
+                  <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg">
+                    Admission Type
+                  </div>
+                  <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg">
+                    Application Deadline
+                  </div>
+                </div>
+
+                {/* Table Rows */}
+                <div className="space-y-3">
+                  {deadlines.map((item, index) => (
+                    <div key={index} className="grid grid-cols-2 gap-3">
+                      <div className="bg-white p-3 rounded-[10px] text-center monser-400 text-sm leading-relaxed">
+                        {item.program}
+                      </div>
+                      <div className="bg-white p-3 rounded-[10px] text-center monser-400 text-sm">
+                        {item.deadline}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Table Rows */}
-            <div className="space-y-3 sm:space-y-4">
-              {deadlines.map((item, index) => (
-                <div
-                  key={index}
-                  className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4"
-                >
-                  <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center  monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed">
-                    {item.program}
-                  </div>
-                  <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px]">
-                    {item.deadline}
-                  </div>
+            {/* Desktop/Tablet Table */}
+            <div className="hidden sm:block">
+              {/* Table Header */}
+              <div className="grid grid-cols-2 gap-3 mb-3 text-white">
+                <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+                  Admission Type
                 </div>
-              ))}
+                <div className="bg-[#002561] p-3 rounded-[10px] text-center monser-600 text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+                  Application Deadline
+                </div>
+              </div>
+
+              {/* Table Rows */}
+              <div className="space-y-3 sm:space-y-4">
+                {deadlines.map((item, index) => (
+                  <div key={index} className="grid grid-cols-2 gap-3 sm:gap-4">
+                    <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed">
+                      {item.program}
+                    </div>
+                    <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px]">
+                      {item.deadline}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

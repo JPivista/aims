@@ -38,7 +38,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
                       Your Future.
                     </span>
                   </h1>
-                  <h5 className="playfair-300 text-[#C9FFF4] text-xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
+                  <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
                     Admissions Process at <br /> AIMS Institutes
                   </h5>
                 </div>

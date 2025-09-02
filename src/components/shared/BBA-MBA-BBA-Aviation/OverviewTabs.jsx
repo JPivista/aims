@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   const [activeTab, setActiveTab] = useState(defaultActiveTab)
@@ -28,12 +29,14 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
         className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-0 w-full md:w-auto"
       >
         {tabs.map((tab) => (
-          <button
+          <motion.button
             key={tab.key}
             onClick={() => {
               setActiveTab(tab.key)
               setIsUserInteraction(true)
             }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className={`whitespace-nowrap rounded-full px-3  md:px-6 py-3 md:py-2 text-sm md:text-lg transition border snap-start font-medium
               ${
                 activeTab === tab.key
@@ -42,24 +45,28 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
               }`}
           >
             {tab.label}
-          </button>
+          </motion.button>
         ))}
       </div>
 
       {/* Content */}
       <div className="w-full bg-white rounded-lg md:rounded-2xl p-4 md:px-12 md:pb-6 md:pt-10 mx-4 md:mx-10 ">
-        <div className="w-full">
-          {tabs.map((tab) => (
-            <div
-              key={tab.key}
-              className={`w-full ${
-                activeTab === tab.key ? "block" : "hidden"
-              } tracking-wider`}
-            >
-              {tab.content}
-            </div>
-          ))}
-        </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{
+              type: "tween",
+              ease: "easeOut",
+              duration: 0.5,
+            }}
+            className="w-full"
+          >
+            {tabs.find((tab) => tab.key === activeTab)?.content}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   )

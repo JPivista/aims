@@ -16,7 +16,7 @@ const GeneralInstructions = () => {
     <>
       {/* Main Content - Two Flex Containers */}
       <div className="relative">
-        <div className="container mx-auto py-6 md:py-10 px-4 md:px-0">
+        <div className="container mx-auto py-6 md:py-10 px-4 md:px-0 lg:py-10 lg:px-0">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-12 ">
             {/* Left Side - Heading and Instructions (5/6 width) */}
             <div className="w-full lg:w-5/6">
