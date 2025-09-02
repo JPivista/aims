@@ -82,7 +82,7 @@ export default function AlumniCarousel() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative -mt-10 bg-white rounded-xl shadow-lg p-4">
+              <div className="bg-white rounded-xl shadow-lg p-4 mt-4">
                 <div className="flex text-yellow-500 mb-2">
                   {Array.from({ length: testimonials[index].stars }).map(
                     (_, i) => (
@@ -108,7 +108,7 @@ export default function AlumniCarousel() {
         </div>
 
         {/* ✅ Desktop: keep 2 testimonials */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-10">
+        <div className="hidden md:flex items-center gap-6 lg:gap-10 h-[700px]">
           {[0, 1].map((offset) => {
             const t = testimonials[(index + offset) % testimonials.length];
             const isFirstCard = offset === 0;
@@ -137,7 +137,7 @@ export default function AlumniCarousel() {
                           className="object-cover"
                         />
                       </div>
-                      <div className="relative -mt-10 bg-white rounded-xl p-4">
+                      <div className="bg-white rounded-xl p-4 mt-4">
                         <div className="flex text-yellow-500 mb-2">
                           {Array.from({ length: t.stars }).map((_, i) => (
                             <Image
@@ -177,7 +177,7 @@ export default function AlumniCarousel() {
                           className="object-cover"
                         />
                       </div>
-                      <div className="relative -mt-10 bg-white rounded-xl p-4">
+                      <div className="bg-white rounded-xl p-4 mt-4">
                         <div className="flex text-yellow-500 mb-2">
                           {Array.from({ length: t.stars }).map((_, i) => (
                             <Image

@@ -86,7 +86,7 @@ export default function AimsCarousel() {
           {/* Track */}
           {isMobile ? (
             // Mobile: Centered single slide with smooth slide
-            <div className="flex justify-center overflow-hidden lg:pt-10 lg:pb-10 pb-10">
+            <div className="flex justify-center overflow-hidden lg:pt-10 lg:pb-10 pb-10 ">
               <AnimatePresence mode="wait">
                 {/* MOBILE SLIDE */}
                 <motion.div
@@ -124,7 +124,7 @@ export default function AimsCarousel() {
             // Desktop: multiple slides with animation
             <motion.div
               layout
-              className="flex items-end gap-6 overflow-hidden py-10"
+              className="flex items-end gap-6 overflow-hidden py-10 xl:py-20"
               transition={{ type: "spring", stiffness: 200, damping: 30 }}
             >
               {windowIdxs.map((idx, pos) => {
@@ -147,7 +147,7 @@ export default function AimsCarousel() {
                     }}
                   >
                     {/* image wrapper fixed height */}
-                    <div className="relative w-full flex flex-col items-center justify-center">
+                    <div className="relative w-full flex flex-col items-center justify-center h[500px]">
                       <Image
                         src={item.src}
                         alt={item.alt}
@@ -174,7 +174,7 @@ export default function AimsCarousel() {
           )}
 
           {/* Arrows */}
-          <div className="absolute lg:bottom-12 bottom-16 right-6 flex items-center gap-6">
+          <div className="absolute lg:bottom-10 bottom-10 right-6 flex items-center gap-6">
             {/* PREV BUTTON */}
             <button
               onClick={prev}
@@ -191,7 +191,7 @@ export default function AimsCarousel() {
               >
                 <path
                   d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                  stroke="currentColor" // ✅ follows text color
+                  stroke="currentColor" 
                   strokeWidth="0.5"
                   strokeLinejoin="round"
                 />
