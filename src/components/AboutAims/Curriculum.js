@@ -28,7 +28,7 @@ export default function ProgramHighlights() {
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-center w-full h-40 sm:h-44 md:h-48"
+            className="relative flex items-center justify-center w-full h-44  md:h-52 "
           >
             {/* Purple Box */}
             <div className="absolute inset-0 bg-[#531574]  rounded-lg sm:rounded-xl shadow-md flex flex-col  text-white z-10 p-4">

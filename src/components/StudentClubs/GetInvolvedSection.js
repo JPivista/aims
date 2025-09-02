@@ -4,8 +4,8 @@ import Image from "next/image"
 
 const GetInvolvedSection = () => {
   return (
-    <section className="bg-[#A43177] text-white px-6 py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-6">
+    <section className="bg-[#A43177] text-white px-4 py-16">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 ">
         {/* Left Content */}
         <div className="md:w-2/3">
           <h3 className=" text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
@@ -24,9 +24,9 @@ const GetInvolvedSection = () => {
           <Image
             src="/life-at-aims/student-loan-icon.svg"
             alt="Arrow"
-            width={128}
-            height={128}
-            className="opacity-50 w-32 h-32"
+            width={1028}
+            height={1028}
+            className=" w-44 h-44"
           />
         </div>
       </div>

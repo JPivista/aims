@@ -71,7 +71,7 @@ const Campusfacpage = () => {
               key={index}
               className={`relative md:px-8 sm:px-6 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[190px]   overflow-hidden ${
+              } flex items-center justify-center text-center w-full container mx-auto h-[220px]   overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{
@@ -79,7 +79,10 @@ const Campusfacpage = () => {
                   "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
               }}
             >
-              <span className="px-6 md:line-clamp-7 ">{club.text}</span>
+            <span className="px-6 line-clamp-6 lg:line-clamp-none">
+  {club.text}
+</span>
+
             </div>
           ))}
         </div>

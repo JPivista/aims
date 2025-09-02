@@ -24,7 +24,8 @@ const SofPrograms = () => {
   }
 
   return (
-    <div className="py-10 relative overflow-hidden bg-[#F4E2FA]">
+    <>
+    <div className="lg:py-10 relative overflow-hidden bg-[#F4E2FA]">
       {/* Background SVG */}
       <div className="absolute top-[20%] left-0 md:block hidden">
         <Image
@@ -103,6 +104,7 @@ const SofPrograms = () => {
         </section>
       </div>
     </div>
+    </>
   )
 }
 

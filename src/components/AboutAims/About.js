@@ -4,8 +4,8 @@ import Image from "next/image"
 
 const GetInvolvedSection = () => {
   return (
-    <section className="bg-[#FFFFFF] text-black px-6 mb-14 ">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-6">
+    <section className="bg-[#FFFFFF] text-black  mb-10 ">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
         {/* Left Content */}
         <div className="md:w-2/3">
           <h3 className=" text-[#A22877] playfair-300 mb-3 md:mb-6 leading-tight">
@@ -28,7 +28,7 @@ const GetInvolvedSection = () => {
             alt="Arrow"
             width={128}
             height={128}
-            className="opacity-50 w-32 h-32"
+            className=" w-44 h-44"
           />
         </div>
       </div>

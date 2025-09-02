@@ -32,12 +32,12 @@ const Objectives = () => {
     <>
       {/* Desktop + Tablet View */}
       <section className="bg-teal-50 py-10 hidden sm:block">
-        <div className="container mx-auto px-6 lg:px-8 mb-5">
+        <div className="container mx-auto px-4 mb-5">
           {/* Title */}
-          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] playfair-300 leading-tight">
+          <h3 className="container mx-auto  text-[#0C2165] playfair-300 mb-3 md:mb-6 leading-tight ">
             Our Objectives
           </h3>
-          <p className="text-gray-700 mb-10 max-w-2xl">
+          <p className=" mb-10 ">
             The primary objective of AIMS Institutes is to provide{" "}
             <br className="hidden lg:block" />
             quality education to create:
@@ -63,7 +63,7 @@ const Objectives = () => {
           <h3 className="text-2xl text-[#0C2165] playfair-300 leading-tight">
             Our Objectives
           </h3>
-          <p className="text-gray-700 mb-6">
+          <p className=" mb-6">
             The primary objective of AIMS Institutes is to provide <br />
             quality education to create:
           </p>
@@ -77,7 +77,7 @@ const Objectives = () => {
                   alt={`Our Objective ${index + 1}`}
                   width={1800}
                   height={1200}
-                  className="w-full h-[300px] object-contain mx-auto"
+                  className="w-full h-[250px] object-contain mx-auto"
                 />
               </div>
             ))}

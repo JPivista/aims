@@ -18,7 +18,7 @@ const QualityPolicy = () => {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-start  container mx-auto ">
-          <div className=" lg:w-1/3 ml-6 rounded-lg text-white">
+          <div className=" w-[45%] px-4 rounded-lg text-white text-left">
             <h3 className="text-3xl lg:text-4xl font-semibold mb-4">
               Quality Policy
             </h3>
@@ -47,7 +47,7 @@ const QualityPolicy = () => {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-end justify-center container mx-auto">
-          <div className="p-4 sm:p-6 md:p-8 max-w-md sm:max-w-xl md:max-w-2xl md:h-[420px] rounded-lg text-center text-white">
+          <div className="px-4 py-5 max-w-md sm:max-w-xl md:max-w-2xl md:h-[420px] rounded-lg text-center text-white ">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-3 sm:mb-4">
               Quality Policy
             </h3>

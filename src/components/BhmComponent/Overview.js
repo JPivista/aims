@@ -109,7 +109,7 @@ const Overview = () => {
           {/* Mobile Image */}
           <div className="flex justify-center md:hidden">
             <Image
-              src="/bhm-img/overview-img_mobile.svg"
+              src="/bhm-img/BHM-mobiles.svg"
               alt="Bhm Aviation Program Overview Mobile"
               width={500}
               height={300}

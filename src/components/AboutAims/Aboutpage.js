@@ -9,7 +9,7 @@ const Aboutpage = () => {
         <h3 className="container mx-auto  text-[#0C2165] playfair-300 mb-3 md:mb-6 pb-5 leading-tight  px-4">
           Empowering Minds <br /> Since 1994
         </h3>
-        <div className="bg-[#E0F7F4]  lg:p-6 p-3 rounded-md  ">
+        <div className="bg-[#E0F7F4]  py-3 rounded-md  ">
           <p className="container mx-auto px-4">
             At AIMS Institutes, education is not a routine, it is a deliberate
             pursuit. Since our founding in 1994, we&apos;ve focused on helping

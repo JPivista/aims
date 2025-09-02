@@ -39,12 +39,7 @@ const messages = [
 
 const FoundersMessage = () => {
   return (
-    <section className="bg-white text-gray-800 py-16 px-6 lg:px-20">
-      {/* Main Title */}
-      {/* <h1 className="text-center playfair-300 text-[#a5246c] mb-12 uppercase">
-        FOUNDER’S MESSAGE
-      </h1> */}
-
+    <section className="bg-white text-gray-800 py-10 px-4 lg:px-20">
       <div className="space-y-16">
         {messages.map((msg, index) => (
           <div
@@ -55,35 +50,33 @@ const FoundersMessage = () => {
           >
             {/* Image with pink border */}
             <div className="flex-shrink-0">
-              <div className="w-60 h-60 lg:w-[350px] lg:h-full rounded-full flex items-center justify-center overflow-hidden">
+              <div className="w-60 h-60 lg:w-[370px] lg:h-full rounded-full flex items-center justify-center overflow-hidden">
                 <Image
                   src={msg.image}
                   alt={msg.name}
                   width={1220}
                   height={1220}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full lg:mt-2"
                 />
               </div>
             </div>
 
             {/* Text */}
-            <div className="lg:w-3/4">
+            <div className="lg:w-3/4 ">
               {/* Sub-heading */}
-              <h3 className="text-xl font-serif mb-4">
+              <h3 className="text-xl font-serif -mt-10 lg:-mt-1 ">
                 <span className="text-[#0C2165] playfair-300">
                   Message from
                 </span>
-                <br />
-                <span className="text-[#A22877] playfair-300 italic">
+                <span className="block text-[#A22877] playfair-300 italic lg:-mt-6 md:-mt-4 mt-0">
                   {msg.role}
                 </span>
               </h3>
 
               {/* Message body */}
-              <p className="text-gray-700 leading-relaxed font-serif mb-4 whitespace-pre-line">
-  {msg.message}
-</p>
-
+              <p className="text-gray-700 leading-relaxed font-serif  whitespace-pre-line">
+                {msg.message}
+              </p>
 
               {/* Name */}
               <h2

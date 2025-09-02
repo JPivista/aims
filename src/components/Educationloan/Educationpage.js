@@ -7,7 +7,7 @@ const Educationpage = () => {
     <div className="w-full font-serif ">
       {/* Top Section */}
       <section className="text-center px-4 py-10 bg-white container mx-auto">
-        <h3 className="text-[#010066] playfair-300 mb-3 md:mb-6 leading-tight">
+        <h3 className="text-[#010066] playfair-300 leading-tight">
           Education Loan Assistance <br /> at AIMS Institutes
         </h3>
         <p className="text-[#1A2A5B] text-sm md:text-base max-w-5xl mx-auto">
@@ -24,7 +24,7 @@ const Educationpage = () => {
         <div className="container mx-auto flex flex-col md:flex-row gap-8 px-4">
           {/* Left Column - Text Content */}
           <div className="md:w-1/2">
-            <h3 className="text-[#010066] playfair-300 mb-3 md:mb-6 leading-tight">
+            <h3 className="text-[#010066] playfair-300 leading-tight">
               Partnering with <br className="md:hidden" /> Trusted Institutions
             </h3>
             <p className="">
@@ -47,9 +47,6 @@ const Educationpage = () => {
                 className="object-contain"
               />
             </div>
-            {/* <div className="bg-white rounded-lg shadow p-4 flex items-center justify-center w-40 h-24">
-           
-            </div> */}
           </div>
         </div>
       </section>
@@ -57,61 +54,36 @@ const Educationpage = () => {
       {/* Requirements Section */}
       <section className="px-4 py-10 bg-white relative overflow-hidden">
         <div className="container  mx-auto px-4">
-          <h3 className="text-[#A22877] text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
+          <h3 className="text-[#A22877] text-xl md:text-[72px] playfair-300 leading-tight">
             What You’ll Need
           </h3>
           <p className=" mb-4">
             While loan requirements vary by provider, students are generally
             expected to submit:
           </p>
-          <ul className="list-disc pl-5 text-gray-700 space-y-1">
+          <ul className="list-disc pl-5  space-y-1">
             <li>Admission Offer Letter from AIMS Institutes</li>
             <li>KYC documents (Aadhaar, PAN, Passport photos)</li>
             <li>Guarantor details (if applicable)</li>
             <li>Fee structure and academic transcripts</li>
           </ul>
-          <p className="mt-4 text-gray-600 text-sm">
+          <p className="mt-4  text-sm">
             We recommend preparing these in advance for a smoother process.
           </p>
         </div>
-        <div className="absolute -right-20 bottom-0 top-20 opacity-20 justify-start md:justify-center items-center md:min-h-full">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="180"
-            height="180"
-            viewBox="0 0 150 150"
-            fill="none"
-          >
-            <circle
-              cx="75"
-              cy="75"
-              r="70"
-              stroke="#A32A6D"
-              strokeWidth="2"
-              fill="none"
-            />
-            <circle
-              cx="75"
-              cy="75"
-              r="50"
-              stroke="#A32A6D"
-              strokeWidth="2"
-              fill="none"
-            />
-            <circle
-              cx="75"
-              cy="75"
-              r="30"
-              stroke="#A32A6D"
-              strokeWidth="2"
-              fill="none"
-            />
-          </svg>
+        <div className="absolute right-0 top-16 z-40 hidden md:block">
+          <Image
+            src="/MBA/semi-circle.svg"
+            alt="Semicircle"
+            width={200}
+            height={200}
+            className="w-full h-full"
+          />
         </div>
       </section>
 
       <section className="text-center px-4 py-10 bg-[#531574] ">
-        <h3 className="text-white playfair-300 mb-3 md:mb-6 leading-tight  container mx-auto">
+        <h3 className="text-white playfair-300 leading-tight  container mx-auto">
           Important Note
         </h3>
 
