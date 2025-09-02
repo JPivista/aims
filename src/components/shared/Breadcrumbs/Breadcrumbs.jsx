@@ -8,6 +8,14 @@ import { usePathname } from "next/navigation"
 const Breadcrumbs = () => {
   const pathname = usePathname()
 
+  // Function to handle home link click and ensure scroll to top
+  const handleHomeClick = () => {
+    // Force scroll to top after a short delay to ensure navigation completes
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 150);
+  };
+
   // Generate breadcrumbs from pathname
   const generateBreadcrumbs = () => {
     const pathSegments = pathname.split("/").filter((segment) => segment !== "")
@@ -65,6 +73,8 @@ const Breadcrumbs = () => {
           {/* Home Link */}
           <Link
             href="/"
+            scroll={false}
+            onClick={handleHomeClick}
             className="flex items-center text-gray-600 hover:text-[#A22877] transition-colors duration-200 group flex-shrink-0"
           >
             <Home className="w-4 h-4 mr-1 group-hover:scale-110 transition-transform duration-200" />

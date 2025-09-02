@@ -152,11 +152,16 @@ export default function ExactSwapCarousel() {
 
   useEffect(() => {
     const el = thumbsRef.current[current];
-    if (el && typeof el.scrollIntoView === "function") {
-      el.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
+    const container = thumbsContainerRef.current;
+    if (el && container) {
+      const containerRect = container.getBoundingClientRect();
+      const elementRect = el.getBoundingClientRect();
+
+      // Only scroll horizontally within the container
+      const scrollLeft = el.offsetLeft - (container.offsetWidth / 2) + (el.offsetWidth / 2);
+      container.scrollTo({
+        left: scrollLeft,
+        behavior: "smooth"
       });
     }
   }, [current]);
@@ -424,9 +429,8 @@ export default function ExactSwapCarousel() {
                         ref={(el) => (thumbsRef.current[idx] = el)}
                         onClick={() => goTo(idx)}
                         layoutId={`card-${c.id}`}
-                        className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
-                          isActive ? "border-transparent" : "border-transparent"
-                        }`}
+                        className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${isActive ? "border-transparent" : "border-transparent"
+                          }`}
                         whileHover={{ scale: 1.03 }}
                         transition={{
                           type: "spring",
