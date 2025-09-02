@@ -42,7 +42,7 @@ const MapJourney = () => {
             <h3 className="text-[#A22877]">
               Map Your <br /> Journey
             </h3>
-            <p className="lg:w-[55%]">
+            <p className="lg:w-[55%] lg:pb-5">
               Stay connected through Instagram, LinkedIn & YouTube for updates,
               student stories, and campus moments.
             </p>
