@@ -32,10 +32,10 @@ const tabData = [
                     However, this condition is relaxed to 50% in case of:
                 </p> */}
                 <ul className="list-disc pl-5 text-gray-800 text-sm sm:text-base space-y-1">
-                    <li>GCE/JGCSE/GCSE Certification with minimum grades.</li>
-                    <li>Pass certificate of a 12-Year Secondary Stage Level Examination from a recognized board.</li>
-                    <li>Communication skills are a valued asset for applicants.</li>
-                    <li>Visit our Admission Process page for key dates and deadlines.</li>
+                    <li>GCE/JGCSE/GCSE Certification with minimum grades</li>
+                    <li>Pass certificate of a 12-Year Secondary Stage Level Examination from a recognized board</li>
+                    <li>Communication skills are a valued asset for applicants</li>
+                    <li>Visit our Admission Process page for key dates and deadlines</li>
                 </ul>
             </>
         ),
