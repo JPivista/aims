@@ -158,10 +158,11 @@ export default function ExactSwapCarousel() {
       const elementRect = el.getBoundingClientRect();
 
       // Only scroll horizontally within the container
-      const scrollLeft = el.offsetLeft - (container.offsetWidth / 2) + (el.offsetWidth / 2);
+      const scrollLeft =
+        el.offsetLeft - container.offsetWidth / 2 + el.offsetWidth / 2;
       container.scrollTo({
         left: scrollLeft,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   }, [current]);
@@ -177,7 +178,8 @@ export default function ExactSwapCarousel() {
         <div>
           <h3 className="md:text-left"> Select your Course</h3>
           <p className="pb-4 md:text-left">
-            Explore our schools, see their potential paths, and select the <br />
+            Explore our schools, see their potential paths, and select the{" "}
+            <br />
             one that fits your goal.
           </p>
         </div>
@@ -272,20 +274,64 @@ export default function ExactSwapCarousel() {
             {/* RIGHT - Text and Mobile Image */}
             <div className="flex flex-col w-full items-center md:items-start">
               {/* Mobile: Show current image at top */}
-              <div className="md:hidden mb-6 flex justify-center w-full">
+              <div className="md:hidden flex justify-center w-full">
                 <div className="w-full max-w-[400px] relative">
                   <Image
                     width={400}
                     height={300}
                     src={
-                      courses[current].mobileImage || courses[current].rightImage
+                      courses[current].mobileImage ||
+                      courses[current].rightImage
                     }
                     alt={courses[current].title}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
               </div>
-
+              {/* Mobile arrows (centered) */}
+              <div className="md:hidden flex justify-center gap-4 py-5">
+                <button
+                  onClick={prev}
+                  aria-label="Previous"
+                  className="bg-white hover:bg-[#A22877] hover:text-white text-black p-3 rounded-full shadow"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    className="rotate-180"
+                  >
+                    <path
+                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                      stroke="currentColor"
+                      strokeWidth="0.5"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  onClick={next}
+                  aria-label="Next"
+                  className="bg-white text-black p-3 rounded-full shadow hover:bg-[#A22877] hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
+                      stroke="currentColor"
+                      strokeWidth="0.5"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
               {/* Text (left aligned always) */}
               <div className="md:h-[450px] md:flex md:flex-col md:justify-start justify-center w-full">
                 <AnimatePresence mode="wait">
@@ -367,50 +413,7 @@ export default function ExactSwapCarousel() {
                 </AnimatePresence>
               </div>
 
-              {/* Mobile arrows (centered) */}
-              <div className="md:hidden flex justify-center gap-4 mt-6">
-                <button
-                  onClick={prev}
-                  aria-label="Previous"
-                  className="bg-white hover:bg-[#A22877] hover:text-white text-black p-3 rounded-full shadow"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                    className="rotate-180"
-                  >
-                    <path
-                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                      stroke="currentColor"
-                      strokeWidth="0.5"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-                <button
-                  onClick={next}
-                  aria-label="Next"
-                  className="bg-white text-black p-3 rounded-full shadow hover:bg-[#A22877] hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                      stroke="currentColor"
-                      strokeWidth="0.5"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+              
 
               {/* Thumbnails (desktop only) */}
               <div className="hidden md:block relative">
@@ -429,8 +432,9 @@ export default function ExactSwapCarousel() {
                         ref={(el) => (thumbsRef.current[idx] = el)}
                         onClick={() => goTo(idx)}
                         layoutId={`card-${c.id}`}
-                        className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${isActive ? "border-transparent" : "border-transparent"
-                          }`}
+                        className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
+                          isActive ? "border-transparent" : "border-transparent"
+                        }`}
                         whileHover={{ scale: 1.03 }}
                         transition={{
                           type: "spring",
