@@ -85,59 +85,23 @@ export default function Header() {
     });
   }, [scrollY]);
 
-  // Ultra-smooth transform values
-  const y = useTransform(scrollY, [0, 100], [0, -5]);
-  const shadowBlur = useTransform(scrollY, [0, 100], [0, 20]);
-  const shadowOpacity = useTransform(scrollY, [0, 100], [0, 0.15]);
-  // Removed scale transform to prevent width changes
+  // Removed all transforms to prevent mobile header enlarging
 
   return (
     <>
-      <motion.header
-        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0" : "relative"
+      <header
+        className={`z-50 bg-white backdrop-blur-md w-full ${isSticky ? "fixed top-0 left-0 right-0 shadow-md" : "relative"
           }`}
-        style={{
-          y,
-          boxShadow: `0 4px ${shadowBlur}px rgba(0,0,0,${shadowOpacity})`,
-        }}
-        initial={{
-          y: 0,
-          opacity: 1,
-        }}
-        animate={{
-          y: isSticky ? 0 : 0,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.8,
-          ease: [0.25, 0.46, 0.45, 0.94], // Ultra-smooth cubic-bezier
-          type: "spring",
-          stiffness: 50,
-          damping: 15,
-          mass: 0.8,
-        }}
-        layout
-        layoutId="header"
       >
         {/* HEADER CONTAINER */}
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
-          <motion.div
+          <div
             className="container mx-auto flex items-center justify-between px-4 lg:px-0 py-3 w-full h-[10vh] z-50 bg-white"
-            layout
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.46, 0.45, 0.94],
-            }}
           >
             {/* Logo */}
-            <motion.div
+            <div
               className="flex items-center"
-              layout
-              transition={{
-                duration: 0.5,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
             >
               <Link href="/" scroll={false} onClick={handleLogoClick}>
                 <Image
@@ -148,16 +112,11 @@ export default function Header() {
                   priority
                 />
               </Link>
-            </motion.div>
+            </div>
 
             {/* Desktop Right Section */}
-            <motion.div
+            <div
               className="hidden lg:flex items-center space-x-6"
-              layout
-              transition={{
-                duration: 0.5,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
             >
               <div className="relative">
                 <input
@@ -180,31 +139,20 @@ export default function Header() {
               </Link> */}
 
               <Button showReadMore={false} href="https://enquiry.theaims.ac.in/">Contact Us</Button>
-            </motion.div>
+            </div>
 
             {/* Mobile Hamburger */}
-            <motion.button
+            <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden text-xl z-50 bg-white rounded-lg p-2 hover:bg-gray-50 transition-all duration-200 ease-out"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{
-                duration: 0.15,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
             >
               {mobileOpen ? <FiX /> : <FiMenu />}
-            </motion.button>
-          </motion.div>
+            </button>
+          </div>
 
           {/* BOTTOM NAV (Desktop) */}
-          <motion.div
+          <div
             className="hidden lg:flex bg-[#0C2165] w-full h-[7vh] items-center justify-center"
-            layout
-            transition={{
-              duration: 0.6,
-              ease: [0.25, 0.46, 0.45, 0.94],
-            }}
           >
             <div className="max-w-7xl mx-auto px-4">
               <Menu setActive={setActive}>
@@ -230,7 +178,7 @@ export default function Header() {
                 ))}
               </Menu>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -334,17 +282,13 @@ export default function Header() {
             </>
           )}
         </AnimatePresence>
-      </motion.header>
+      </header>
 
       {/* Content spacer that smoothly adjusts when header becomes sticky */}
-      <motion.div
+      <div
         className="w-full"
         style={{
-          height: isSticky ? "17vh" : "0px", // Fixed height to match header height
-        }}
-        transition={{
-          duration: 0.3, // Faster transition to prevent gap
-          ease: "ease-out",
+          height: isSticky ? "10vh" : "0px", // Match mobile header height (10vh)
         }}
       />
     </>
