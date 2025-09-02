@@ -63,7 +63,7 @@ const Breadcrumbs = () => {
   const breadcrumbs = generateBreadcrumbs()
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 relative z-40">
+    <nav className="bg-white shadow-sm border-b border-gray-100 sticky lg:top-[17vh] top-[10vh] z-40">
       <div className="container mx-auto px-4 lg:px-0">
         <div className="flex items-center space-x-2 py-3 overflow-x-auto scrollbar-hide">
           {/* Mobile scroll indicator */}
