@@ -130,11 +130,11 @@ const concessions = [
 const FeeconcessionTable = () => {
   return (
     <>
-      <div className="bg-[#E6F8F6] py-8 mt-6 text-center">
-      <h1 className="text-2xl md:text-3xl playfair-300 text-[#9B2564]">
+      <div className="bg-[#E6F8F6]  text-center py-5">
+      <h1 className="text-2xl md:text-3xl playfair-300 text-[#9B2564] -mt-2">
           AIMS Commitment to Affordability
         </h1>
-        <h5 className="text-lg md:text-4xl playfair-300 text-[#3B2A7B] mt-2">
+        <h5 className="text-lg md:text-4xl playfair-300 text-[#3B2A7B] -mt-6">
           Fee Concession for Eligible Students
         </h5>
       </div>

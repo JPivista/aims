@@ -16,27 +16,29 @@ const SoHospitalityContent = () => {
           />
         </div>
 
-        <div className="flex flex-col lg:px-0 px-4 bg-transparent relative z-10">
-          <h3 className="text-center text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]">
+        <div className=" relative z-10">
+          <h3 className="text-center playfair-300 text-[#0C2165]">
             Aim Higher in Hospitality.
             <br />
             Master the Art of Service.
           </h3>
-          <div className="lg:w-[60%] w-full mx-auto ">
-            <p className="text-center text-lg lg:text-[20px] monser-400 pb-5">
-              At AIMS, we don’t just teach hospitality, we train you to lead it.
-              Whether your sights are set on luxury hotels, global kitchens, or
-              entrepreneurial ventures, our programs help you sharpen your
-              skills, expand your horizons and hit your career targets with
-              confidence.
-            </p>
+          <div className="container mx-auto ">
+            <div className=" text-center ">
+              <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400 pb-5">
+                At AIMS, we don’t just teach hospitality, we train you to lead
+                it. Whether your sights are set on luxury hotels, global
+                kitchens, or entrepreneurial ventures, our programs help you
+                sharpen your skills, expand your horizons and hit your career
+                targets with confidence.
+              </p>
 
-            <p className="text-center text-lg lg:text-[20px] monser-400">
-              AIMS School of Hospitality & Tourism offers globally aligned,
-              hands-on programs backed by industry access. It is a member of
-              EUHOFA and a partner of HOSCO, connecting students to top
-              employers and international opportunities.
-            </p>
+              <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400">
+                AIMS School of Hospitality & Tourism offers globally aligned,
+                hands-on programs backed by industry access. It is a member of
+                EUHOFA and a partner of HOSCO, connecting students to top
+                employers and international opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </div>

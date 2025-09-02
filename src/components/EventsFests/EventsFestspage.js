@@ -77,7 +77,7 @@ const EventsFestspage = () => {
               key={index}
               className={`relative md:px-6 sm:px-6 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[180px] overflow-hidden ${
+              } flex items-center justify-center text-center w-full container mx-auto h-[220px] overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{

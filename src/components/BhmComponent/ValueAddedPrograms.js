@@ -100,10 +100,10 @@ const BbaValueAddedPrograms = () => {
   <div className="hidden md:block relative">
     <div className="w-full h-[700px]">
       <Image
-        src="/bhm-img/Employers-img_converted.webp"
+        src="/bhm-img/Employers-img_new.webp"
         alt="AIMS Students"
-        width={800}
-        height={400}
+        width={1400}
+        height={1400}
         className="w-full h-full object-cover"
         priority
       />
@@ -137,9 +137,9 @@ const BbaValueAddedPrograms = () => {
   <div className="block md:hidden relative">
   <div className="w-full h-[700px]">
     <Image
-      src="/bhm-img/Employers-img_mobile.svg"
+      src="/bhm-img/BHM-new-Mobile.webp"
       alt="AIMS Students"
-      width={500}
+      width={1400}
       height={300}
       className="w-full h-full object-cover"
       priority
@@ -147,11 +147,11 @@ const BbaValueAddedPrograms = () => {
   </div>
 
   {/* Text Overlay */}
-  <div className="absolute inset-0 flex items-end justify-center text-center px-4 pb-32">
+  <div className="absolute inset-0 flex items-end justify-center text-center px-4 pb-24">
     <div className="w-full">
-      <h2 className="text-[#010066] text-lg sm:text-2xl playfair-300 mb-3 leading-tight">
+      <h3 className="text-[#010066] text-lg sm:text-2xl playfair-300 mb-3 leading-tight">
         Employers Who Hire Our BHM Graduates
-      </h2>
+      </h3>
       <p className="text-[#010066] text-sm monser-400 leading-relaxed">
         AIMS BHM graduates have been placed at:
       </p>

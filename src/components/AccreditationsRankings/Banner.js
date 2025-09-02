@@ -37,15 +37,15 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute md:bottom-10 bottom-0 left-0 right-0 px-4 lg:px-0">
+        <div className="absolute md:bottom-10 bottom-0 left-0 right-0 px-4 ">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
               <div className="flex items-center">
                 <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
-                  Recognised Excellence
+                  Recognised Excellence.
                   <br className="hidden lg:block" />
                   <span className="playfair-400 text-[#D7FCF4]  block lg:inline">
-                    Accredited Ambitions
+                    Accredited Ambitions.
                   </span>
                 </h1>
               </div>

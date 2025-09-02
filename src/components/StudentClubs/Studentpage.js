@@ -43,18 +43,17 @@ const StudentClubs = () => {
     <>
       <div className="text-center px-4 bg-white container mx-auto">
         <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6 pt-8">
-        Choose your interest.
-          <br /> Choose your role. Choose your goal.
-
+          Find Your Passion.
+          <br /> AIM for Excellence.
         </h3>
         <p className="max-w-5xl mx-auto">
           At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
           student clubs offer a structured yet vibrant space for students to
           explore their interests, take initiative, and develop skills that
-          extend far beyond academics. Whether you&apos;re pursuing an MBA from our
-          IACBE-accredited institute in Bangalore or studying BBA in aviation
-          logistics, student-led activities help sharpen your leadership,
-          collaboration, and creativity in real time.
+          extend far beyond academics. Whether you&apos;re pursuing an MBA from
+          our IACBE-accredited institute in Bangalore or studying BBA in
+          aviation logistics, student-led activities help sharpen your
+          leadership, collaboration, and creativity in real time.
         </p>
         <p className="max-w-5xl mx-auto pt-5">
           These clubs reflect our belief in goal-oriented growth, a core part of
@@ -67,14 +66,13 @@ const StudentClubs = () => {
           Why Join a Student Club?
         </h3>
 
-       
         <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
           {clubs.map((club, index) => (
             <div
               key={index}
               className={`relative md:px-6 sm:px-6 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[180px] overflow-hidden ${
+              } flex items-center justify-center text-center w-full container mx-auto h-[220px] overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{
@@ -87,7 +85,6 @@ const StudentClubs = () => {
           ))}
         </div>
 
-      
         <div className="block md:hidden">
           <Slider {...sliderSettings}>
             {clubs.map((club, index) => (

@@ -9,7 +9,7 @@ const Partnerships = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 border-b pb-8">
         {/* Image for mobile first */}
         <div className="flex justify-center md:order-2">
-        <div className="shadow-lg rounded-lg p-4  w-60 h-full">
+        <div className="shadow-lg rounded-lg p-4  lg:w-60  w-44 h-full">
             <Image
               src="/bhm-img/euhofa-img_converted.webp"
               alt="EUHOFA Logo"
@@ -48,7 +48,7 @@ const Partnerships = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
         {/* Image for mobile first */}
         <div className="flex justify-center md:order-2">
-          <div className="shadow-lg rounded-lg p-4  w-60 h-full">
+          <div className="shadow-lg rounded-lg p-4 lg:w-60  w-44 h-full">
             <Image
               src="/bhm-img/hosco-img_converted.webp"
               alt="Hosco Logo"

@@ -7,10 +7,10 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[80vh] md:h-[76vh] lg:h-[75vh] xl:h-[76vh] 2xl:h-[80.5vh] 3xl:h-[90vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/studentClub-Banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/studentClub-Banner-img.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/student-mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/studentClub-mobile-img-Banner.webp')]" />
 
         {/* Gradient Overlay */}
         <div
@@ -25,11 +25,11 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
         <div className="absolute top-2 left-0 right-0">
           <div className="container mx-auto py-4 px-6 lg:px-4">
             <div>
-              <h6 className="tracking-wider text-xs sm:text-sm lg:text-base lg:text-white text-black">
+              <h6 className="tracking-wider text-xs sm:text-sm lg:text-base text-white ">
                 EMPOWERING MINDS
               </h6>
               <h5
-                className="text-lg sm:text-xl lg:text-2xl font-black lg:text-white text-black"
+                className="text-lg sm:text-xl lg:text-2xl font-black text-white "
                 style={{ fontWeight: "900" }}
               >
                 SINCE 1994
@@ -50,7 +50,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                   </span>
 
                   <br className="hidden lg:block" />
-                  <span className="playfair-400 text-[#D7FCF4] ">
+                  <span className="playfair-400 text-white ">
                   at AIMS
                   </span>
                 </h1>

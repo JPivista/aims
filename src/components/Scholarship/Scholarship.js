@@ -89,7 +89,7 @@ const ScholarshipTable = () => {
     <>
       <section className="">
         {/* Top Paragraph */}
-        <div className="max-w-4xl mx-auto text-center text-[#1A2A5B] text-sm md:text-base leading-relaxed pt-10">
+        <div className="max-w-5xl mx-auto text-center text-[#1A2A5B] text-sm md:text-base leading-relaxed py-10 px-4">
           <p className="mb-4">
             At AIMS Institutes, we recognise that ambition needs the right
             foundation and support. Our scholarships and fee concession programs
@@ -105,8 +105,8 @@ const ScholarshipTable = () => {
         </div>
 
         {/* Note Section */}
-        <div className="bg-[#FFF5F2] mt-6 p-4 text-center text-xs md:text-sm text-gray-700 ">
-          <p className="container mx-auto">
+        <div className="bg-[#FFF5F2] py-4 px-4 text-center text-xs md:text-sm text-gray-700 lg:py-10 mb-10 ">
+          <p className="max-w-5xl mx-auto ">
             <strong>Note:</strong> All scholarships and concessions are awarded
             subject to eligibility, documentation, and availability of slots.
             Meeting the criteria does not automatically guarantee selection.
@@ -115,11 +115,11 @@ const ScholarshipTable = () => {
         </div>
 
         {/* Heading Section */}
-        <div className="bg-[#E6F8F6] py-8 mt-6 text-center">
-          <h1 className="text-xl md:text-3xl playfair-300 text-[#9B2564]">
+        <div className="bg-[#E6F8F6]  text-center py-5">
+          <h1 className="text-xl md:text-3xl playfair-300 text-[#9B2564] -mt-2">
             Empowering Excellence
           </h1>
-          <h5 className="text-lg md:text-4xl playfair-300 text-[#3B2A7B] mt-2">
+          <h5 className="text-lg md:text-4xl playfair-300 text-[#3B2A7B] -mt-6">
             Scholarships at AIMS Institutes
           </h5>
         </div>
@@ -127,8 +127,8 @@ const ScholarshipTable = () => {
 
 
       
-      <div className="container mx-auto p-6">
-        <h2 className="text-center text-xl md:text-2xl font-bold mb-6 monser-500 ">
+      <div className="container mx-auto p-6 mb-5">
+      <h2 className="text-center text-xl md:text-2xl font-bold mb-6 monser-500 ">
           Your Dreams, Our Support: AIMS Scholarship Program
         </h2>
         

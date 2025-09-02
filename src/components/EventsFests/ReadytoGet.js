@@ -4,8 +4,8 @@ import Image from "next/image"
 
 const ReadytoGet = () => {
   return (
-    <section className="bg-[#A43177] text-white px-6 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <section className="bg-[#A43177] text-white px-4 py-16">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Content */}
         <div className="md:w-2/3">
           <h3 className=" text-xl md:text-[72px] playfair-300 mb-3 md:mb-6 leading-tight">
@@ -20,15 +20,15 @@ const ReadytoGet = () => {
         </div>
 
         {/* Right Icon */}
-        <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
-          <Image
-            src="/life-at-aims/student-loan-icon.svg"
-            alt="Arrow"
-            width={128}
-            height={128}
-            className="opacity-50 w-32 h-32"
-          />
-        </div>
+         <div className="md:w-1/3 justify-center md:justify-end hidden md:flex">
+               <Image
+                 src="/life-at-aims/student-loan-icon.svg"
+                 alt="Arrow"
+                 width={1028}
+                 height={1028}
+                 className=" w-44 h-44"
+               />
+             </div>
       </div>
     </section>
   )
