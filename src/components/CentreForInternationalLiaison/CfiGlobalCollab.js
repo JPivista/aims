@@ -61,11 +61,11 @@ const CfiGlobalCollab = () => {
     ]
 
     return (
-        <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+        <div className='justify-center items-center mb-10 flex flex-col lg:px-8 px-4 relative overflow-hidden'>
             <div className='container mx-auto'>
                 <div className='flex flex-col bg-transparent relative z-10'>
                     {/* Header Section */}
-                    <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-0'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-8 gap-0 pb-10'>
                         <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]'>
                             Our Global Collaborations
                         </h3>

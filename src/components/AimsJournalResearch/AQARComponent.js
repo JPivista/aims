@@ -10,13 +10,13 @@ const AQARComponent = () => {
             content: {
                 heading: "AQAR",
                 documents: [
-                    { year: "2021-22", link: "#" },
-                    { year: "2020-21", link: "#" },
-                    { year: "2019-20", link: "#" },
-                    { year: "2018-19", link: "#" },
-                    { year: "2017-18", link: "#" },
-                    { year: "2016-17", link: "#" },
-                    { year: "2015-16", link: "#" }
+                    { year: "2021-22", link: "/iqac/aqar/AQAR+-2021-2022.pdf" },
+                    { year: "2020-21", link: "/iqac/aqar/AQAR+2020-2021.pdf" },
+                    { year: "2019-20", link: "/iqac/aqar/AQAR+2019-20.pdf" },
+                    { year: "2018-19", link: "/iqac/aqar/AQAR+2018-19.pdf" },
+                    { year: "2017-18", link: "/iqac/aqar/AQAR+2017-18.pdf" },
+                    { year: "2016-17", link: "/iqac/aqar/AQAR+2016-17.pdf" },
+                    { year: "2015-16", link: "/iqac/aqar/AQAR+2015-16.pdf" }
                 ]
             }
         },
@@ -24,42 +24,70 @@ const AQARComponent = () => {
             title: "Minutes Of Meeting",
             content: {
                 heading: "Minutes Of Meeting",
-                description: "Official records and documentation of institutional meetings and proceedings."
+                documents: [
+                    { year: "2023-24", link: "#" },
+                    { year: "2022-23", link: "/iqac/minutes-of-meeting/IQAC+Minutes+2022-2023.pdf" },
+                    { year: "2021-22", link: "/iqac/minutes-of-meeting/IQAC+Minutes+2021-2022.pdf" },
+                    { year: "2020-21", link: "/iqac/minutes-of-meeting/IQAC+Minutes+2020-2021.pdf" },
+                    { year: "2019-20", link: "/iqac/minutes-of-meeting/MOM_2019-20.pdf" },
+                    { year: "2018-19", link: "/iqac/minutes-of-meeting/MOM_2018-19.pdf" },
+                    { year: "2017-18", link: "/iqac/minutes-of-meeting/MOM_2017-18.pdf" },
+                    { year: "2016-17", link: "/iqac/minutes-of-meeting/MOM_2016-17.pdf" },
+                    { year: "2015-16", link: "/iqac/minutes-of-meeting/MOM_2015-16.pdf" }
+                ]
             }
         },
         feedback: {
             title: "Feedback",
             content: {
                 heading: "Feedback",
-                description: "Student and stakeholder feedback systems and reports."
+                documents: [
+                    { title: "Student Statisfaction Survey 2023-24", link: "/iqac/feedback/Student+Satisfaction+Survey+2023-2024.pdf" },
+                    { title: "Feedback on Virtual Classes 2019-20", link: "/iqac/feedback/Feedback+on+Virtual+Classes+2019-20.pdf" },
+                    { title: "Student Satisfaction Survey", link: "/iqac/feedback/Student+Satisfaction+Survey.pdf" },
+                    { title: "Industry Feedback on Curriculum", link: "/iqac/feedback/Industry_Feedback.pdf" },
+                    { title: "Alumni Feedback on Curriculum", link: "/iqac/feedback/Alumni_Feedback.pdf" },
+                    { title: "Parents Feedback on Curriculum", link: "/iqac/feedback/Parents+Feedback.pdf" },
+                    { title: "Students Feedback on Curriculum", link: "/iqac/feedback/Students+Feedback.pdf" },
+                    { title: "Teacher Feedback on Curriculum", link: "/iqac/feedback/Teacher+Feedback.pdf" }
+                ]
             }
         },
         policies: {
             title: "Policies And Procedures",
             content: {
                 heading: "Policies And Procedures",
-                description: "Institutional policies, guidelines, and standard operating procedures."
+                documents: [
+                    { title: "Infrastructure Utilisation and Maintenance Policy", link: "/iqac/policies-and-procedure/Infrastructure+Utilization+&+Maintenance+policy.pdf" }
+                ]
             }
         },
         practices: {
             title: "Best Practices",
             content: {
                 heading: "Best Practices",
-                description: "Documented best practices and quality improvement initiatives."
+                documents: [
+                    { title: "Best Practices", link: "/iqac/best-practices/Best_practices.pdf" }
+                ]
             }
         },
         distinctiveness: {
             title: "Institutional Distinctiveness",
             content: {
                 heading: "Institutional Distinctiveness",
-                description: "Unique features and characteristics that set our institution apart."
+                documents: [
+                    { title: "Institutional Distinctiveness", link: "/iqac/institutional-distinctiveness/Institutional_Distinctiveness.pdf" }
+                ]
             }
         },
         declaration: {
             title: "Declaration",
             content: {
                 heading: "Declaration",
-                description: "Official declarations and compliance statements."
+                documents: [
+                    { title: "NAAC Compliance", link: "/iqac/declaration/NAAC+Compliance.pdf" },
+                    { title: "Declaration under RTI", link: "/iqac/declaration/rti_declaration.pdf" }
+                ]
             }
         }
     }
@@ -124,14 +152,14 @@ const AQARComponent = () => {
                                 </h5>
                             </div>
 
-                            {activeTab === 'aqar' ? (
+                            {tabData[activeTab].content.documents ? (
                                 <div className='bg-[#A22877] text-white p-6 rounded-lg'>
                                     <ul className='space-y-3'>
-                                        {tabData.aqar.content.documents.map((doc, index) => (
+                                        {tabData[activeTab].content.documents.map((doc, index) => (
                                             <li key={index} className='flex items-start gap-3'>
                                                 <span className='text-white'>•</span>
                                                 <span className='monser-400'>
-                                                    AQAR {doc.year} - Download using this{' '}
+                                                    {doc.title || doc.year ? `${activeTab === 'aqar' ? 'AQAR' : activeTab === 'minutes' ? 'Minutes of Meeting' : ''} ${doc.year || doc.title}` : doc.title} - Download using this{' '}
                                                     <a
                                                         href={doc.link}
                                                         className='underline hover:text-gray-200 transition-colors'
@@ -163,14 +191,14 @@ const AQARComponent = () => {
                             </h4>
                         </div>
 
-                        {activeTab === 'aqar' ? (
+                        {tabData[activeTab].content.documents ? (
                             <div className='bg-[#A22877] text-white p-6 rounded-lg'>
                                 <ul className='space-y-3'>
-                                    {tabData.aqar.content.documents.map((doc, index) => (
+                                    {tabData[activeTab].content.documents.map((doc, index) => (
                                         <li key={index} className='flex items-start gap-3'>
                                             <span className='text-white'>•</span>
                                             <span className='monser-400'>
-                                                AQAR {doc.year} - Download using this{' '}
+                                                {doc.title || doc.year ? `${activeTab === 'aqar' ? 'AQAR' : activeTab === 'minutes' ? 'Minutes of Meeting' : ''} ${doc.year || doc.title}` : doc.title} - Download using this{' '}
                                                 <a
                                                     href={doc.link}
                                                     className='underline hover:text-gray-200 transition-colors'

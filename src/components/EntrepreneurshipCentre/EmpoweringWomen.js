@@ -19,7 +19,7 @@ const EmpoweringWomen = () => {
         sandhya: {
             name: "Sandhya Yadav",
             affiliation: "Landscaping, Trading and Designing of Flowers (fresh)",
-            testimonial: "The programme covered many things which I was unaware of and also, I'm very confident that I can compete with the existing competition."
+            testimonial: "The program covered many things which I was unaware of and also, I'm very confident that I can compete with the existing competition."
         },
         nitya: {
             name: "Nitya Kalyani",
@@ -77,7 +77,7 @@ const EmpoweringWomen = () => {
                                 Goldman Sachs - ISB - AIMS 10,000 Women Entrepreneurs Programme
                             </h5>
                             <p className='text-lg lg:text-[20px] monser-400 text-black'>
-                                AEEC has proudly hosted 5 successful batches of this prestigious initiative, helping 150 women entrepreneurs graduate with hands-on business knowledge and mentorship. Recognised as one of the most impactful women entrepreneurship programs in Bangalore, It also features guest sessions by successful founders and insights into programs for women entrepreneurs in India, specifically tailored for growth-stage female-led businesses.
+                                AEEC has proudly hosted 5 successful batches of this prestigious initiative, helping 150 women entrepreneurs graduate with hands-on business knowledge and mentorship. Recognised as one of the most impactful women entrepreneurship programs in Bangalore, it also features guest sessions by successful founders and insights into programs for women entrepreneurs in India, specifically tailored for growth-stage female-led businesses.
                             </p>
                         </div>
                     </div>
