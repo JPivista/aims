@@ -38,8 +38,8 @@ const ServicesOffered = () => {
           <Image
             src={
               isMobile
-                ? "/library-and-information-centre/service_offer_mob.png"
-                : "/library-and-information-centre/services_offered.png"
+                ? "/library-and-information-centre/service_offer_mob.webp"
+                : "/library-and-information-centre/services_offered.webp"
             }
             alt="Library services"
             fill

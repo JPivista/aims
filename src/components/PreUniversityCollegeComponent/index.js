@@ -8,12 +8,14 @@ import MeetTheTeam from './MeetTheTeam'
 import ImageCarousel from './ImageCarousel'
 import AimersSays from './AimersSays'
 import Eligibility from './EligibilityTab'
+import Breadcrumbs from '../shared/Breadcrumbs'
 
 
 const index = () => {
     return (
         <div>
             <Banner />
+            <Breadcrumbs />
             <ImpartingQuality />
             <PrincipalsMessage />
             <WhyChooseAims />
