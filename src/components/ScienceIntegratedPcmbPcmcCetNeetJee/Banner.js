@@ -41,8 +41,8 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                                     : "/pre-university-college/empowering_minds_since1994.webp"
                             }
                             alt="Pre-University College Logo"
-                            width={160} // adjust size
-                            height={60}
+                            width={200}
+                            height={200}
                             className="object-contain"
                             priority
                         />

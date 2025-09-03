@@ -27,8 +27,8 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
             <Image
               src="/pre-university-college/empowering_minds_since1994_black.webp" // 👉 replace with your logo path
               alt="Pre-University College Logo"
-              width={160} // adjust size
-              height={60}
+              width={200}
+              height={200}
               className="object-contain"
               priority
             />

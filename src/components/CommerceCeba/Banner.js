@@ -25,10 +25,10 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                     {/* Logo Block */}
                     <div className="container mx-auto px-4 pt-8 text-left">
                         <Image
-                            src="/pre-university-college/empowering_minds_since1994_black.png" // 👉 replace with your logo path
+                            src="/pre-university-college/empowering_minds_since1994_black.webp" // 👉 replace with your logo path
                             alt="Pre-University College Logo"
-                            width={180} // adjust size
-                            height={80}
+                            width={200}
+                            height={200}
                             className="object-contain"
                             priority
                         />

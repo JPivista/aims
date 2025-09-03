@@ -5,11 +5,13 @@ import CommitteesCard from './CommitteesCard'
 import TabSection from './TabSection'
 import Facilities from './Facilities'
 import AlumniSpeak from './AlumniSpeak'
+import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <div>
             <Banner />
+            <Breadcrumbs /> 
             <SetYourSights />
             <CommitteesCard />
             <TabSection />
