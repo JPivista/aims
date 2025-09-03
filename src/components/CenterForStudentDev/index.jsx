@@ -7,7 +7,7 @@ import Breadcrumbs from "../shared/Breadcrumbs"
 
 const CenterForStudentDev = ({ announcements }) => {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <HeroBanner announcements={announcements} />
       <Breadcrumbs />
       <Aiming />
@@ -15,7 +15,7 @@ const CenterForStudentDev = ({ announcements }) => {
       <WhyItMatters />
 
       {/* Add other Center for Student Development components here */}
-    </>
+    </div>
   )
 }
 

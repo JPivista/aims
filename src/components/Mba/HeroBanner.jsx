@@ -37,8 +37,8 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute left-0 right-0 px-4 lg:px-0 top-13 lg:top-13 md:top-20 ">
-          <div className="container mx-auto">
+        <div className="absolute left-0 right-0 px-4 md:px-0 lg:px-8 top-13 md:top-20 lg:top-10">
+          <div className="container mx-auto ">
             <div className="flex lg:flex-row flex-col items-center justify-between lg:gap-4 gap-4">
               <div className="flex items-center">
                 <div className="text-center lg:text-left">
@@ -88,7 +88,7 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
                         alt="Package Information"
                         width={418}
                         height={94}
-                        className="w-80 h-auto"
+                        className="w-80 h-auto object-contain"
                         priority
                       />
                     </div>
@@ -100,17 +100,15 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
         </div>
 
         {/* Desktop IACBE Accreditation Box - Absolute positioned */}
-        <div className="hidden lg:block absolute bottom-0 left-0 z-40 border border-[#D7FFF7]">
-          <div className="backdrop-blur-sm rounded-2xl shadow-lg">
-            <div className="flex items-center justify-center">
-              <Image
-                src="/MBA/iacbe-final.svg"
-                alt="IACBE"
-                width={700}
-                height={250}
-                className="object-contain"
-              />
-            </div>
+        <div className="hidden lg:block absolute bottom-0 left-0 z-40">
+          <div className="flex items-center justify-center">
+            <Image
+              src="/MBA/iacbe-final.svg"
+              alt="IACBE"
+              width={700}
+              height={250}
+              className="object-contain"
+            />
           </div>
         </div>
       </div>

@@ -41,8 +41,8 @@ const AdmissionTabs = ({ tabsData }) => {
   }
 
   return (
-    <div className="py-6 md:py-10 bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="py-6 md:py-10 bg-[#E1F9F4] lg:px-10 px-4">
+      <div className="container mx-auto">
         {" "}
         {/* Reduced width for better centering */}
         {/* Buttons Row */}

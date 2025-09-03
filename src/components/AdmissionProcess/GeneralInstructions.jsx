@@ -15,8 +15,8 @@ const GeneralInstructions = () => {
   return (
     <>
       {/* Main Content - Two Flex Containers */}
-      <div className="relative">
-        <div className="container mx-auto py-6 md:py-10 px-4 md:px-0 lg:py-10 lg:px-0">
+      <div className="relative lg:px-8 px-0">
+        <div className="container mx-auto py-6 md:py-10 px-4 md:px-0 lg:py-10 ">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-12 ">
             {/* Left Side - Heading and Instructions (5/6 width) */}
             <div className="w-full lg:w-5/6">
@@ -27,7 +27,7 @@ const GeneralInstructions = () => {
               </h1>
 
               {/* Instructions List */}
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-3 sm:space-y-4 lg:px-4 px-0">
                 <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-0">
                   {instructions.map((instruction, index) => (
                     <li
@@ -44,7 +44,7 @@ const GeneralInstructions = () => {
             {/* Right Side - Image (1/6 width) - Hidden on mobile and tablet */}
           </div>
         </div>
-        <div className="hidden lg:block absolute top-[0%] -right-10  z-10">
+        <div className="hidden lg:block absolute top-[1%] -right-10  z-10">
           <Image
             src="/admission-process/circle.svg"
             alt="General Instructions"

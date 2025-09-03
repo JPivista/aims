@@ -4,8 +4,8 @@ import Image from "next/image"
 const RcContent = () => {
   return (
     <>
-      <div className="relative">
-        <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+      <div className="relative px-4 md:px-8 lg:px-8 py-6 md:py-10">
+        <div className="container mx-auto">
           <div className="justify-center items-start  flex flex-col overflow-hidden ">
             <div className="md:max-w-4xl text-[20px] space-y-2">
               <p>
@@ -30,8 +30,8 @@ const RcContent = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="border-b w-full h-1/2 md:mt-6"></div>
       </div>
+      <div className="border-b border-gray-300 w-full h-1/2 md:mt-8"></div>
     </>
   )
 }

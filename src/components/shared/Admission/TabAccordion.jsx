@@ -44,7 +44,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
         </div>
 
         {/* Vertical Separator - Desktop Only */}
-        <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-black transform -translate-x-1/2 my-6"></div>
+        <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-black transform -translate-x-1/2"></div>
 
         {/* Right Side - Expandable Content */}
         <div className="w-full lg:w-4/5 md:px-6 ">

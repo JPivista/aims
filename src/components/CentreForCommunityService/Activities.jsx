@@ -3,8 +3,8 @@ import Image from "next/image"
 
 const Activities = () => {
   return (
-    <div className="bg-[#E1F9F4] relative">
-      <div className="flex flex-col md:flex-row gap-0 py-4 md:py-8 px-4 md:px-0 container mx-auto">
+    <div className="bg-[#E1F9F4] relative py-4 md:py-8 px-4 md:px-8 lg:px-8">
+      <div className="flex flex-col md:flex-row gap-0 container mx-auto">
         {/* Left Side - Content (3/4 width) */}
         <div className="w-full space-y-4 md:space-y-6 max-w-4xl">
           {/* Title */}

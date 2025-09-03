@@ -211,10 +211,10 @@ const Overview = () => {
     },
   ]
   return (
-    <div className="bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 py-6 md:py-10 lg:py-10">
+    <div className="bg-[#E1F9F4] px-4 lg:px-8 py-6 md:py-10 lg:py-10 ">
+      <div className="container mx-auto ">
         {/* MBA Program overview */}
-        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-8 justify-between">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-8 justify-between ">
           <div className=" w-full max-w-2xl text-center md:text-left lg:text-left flex items-center justify-center md:justify-start lg:justify-start leading-relaxed tracking-wider ">
             <h2>
               <span className="mba-program-text text-5xl md:text-6xl lg:text-6xl">
@@ -239,7 +239,7 @@ const Overview = () => {
         </div>
 
         {/* Program Details */}
-        <div className="flex justify-center py-6 md:py-8 lg:py-8">
+        <div className="flex justify-center py-6 md:py-8 lg:py-8 ">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">
@@ -316,7 +316,7 @@ const Overview = () => {
               alt="MBA Program Overview"
               width={1000}
               height={600}
-              className="object-contain w-full h-full"
+              className="object-cover w-full h-full"
               priority
             />
           </div>

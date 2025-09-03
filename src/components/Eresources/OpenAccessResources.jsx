@@ -159,7 +159,8 @@ const OpenAccessResources = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 md:px-0 pt-6 md:pt-10 pb-3 md:pb-6">
+    <div className="px-4 md:px-8 lg:px-8"> 
+    <div className="container mx-auto pt-6 md:pt-10 pb-3 md:pb-6">
       <div className="mb-4">
         <h3 className="text-2xl md:text-4xl playfair-300  text-[#0C2165] -mt-4">
           Open Access Resources
@@ -181,6 +182,7 @@ const OpenAccessResources = () => {
           />
         ))}
       </div>
+       </div>
     </div>
   )
 }

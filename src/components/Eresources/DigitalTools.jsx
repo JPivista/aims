@@ -37,57 +37,59 @@ const DigitalTools = () => {
       </div>
 
       {/* Subscribed Resources Section */}
-      <div
-        className="pb-6 md:pb-10 border-b border-gray-300 container mx-auto px-4 md:px-0"
-        style={{ borderColor: "rgba(0, 0, 0, 0.20)" }}
-      >
-        <div className="mb-4">
-          <h3 className="text-3xl md:text-5xl text-[#0C2165] playfair-300">
-            Subscribed Resources
-          </h3>
-        </div>
+      <div className="px-4 md:px-8 lg:px-8 ">
+        <div
+          className=" pb-6 md:pb-10 border-b border-gray-300 container mx-auto"
+          style={{ borderColor: "rgba(0, 0, 0, 0.20)" }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-5xl text-[#0C2165] playfair-300">
+              Subscribed Resources
+            </h3>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl">
-          {subscribedResources.map((resource) => (
-            <div
-              key={resource.id}
-              className="bg-white rounded-lg overflow-hidden border border-[#B79AAD]"
-            >
-              <div className="flex flex-col md:flex-row">
-                <div className="bg-[#A22877] px-4 md:px-6 py-4 md:py-6 flex items-center justify-between md:min-w-[140px]">
-                  <span className="text-white font-bold text-2xl md:text-[36px] monser-600">
-                    {resource.name}
-                  </span>
-                  <a
-                    href={resource.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cursor-pointer"
-                  >
-                    <motion.div
-                      animate={{ x: [0, 5, 0] }}
-                      transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                      }}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl">
+            {subscribedResources.map((resource) => (
+              <div
+                key={resource.id}
+                className="bg-white rounded-lg overflow-hidden border border-[#B79AAD]"
+              >
+                <div className="flex flex-col md:flex-row">
+                  <div className="bg-[#A22877] px-4 md:px-6 py-4 md:py-6 flex items-center justify-between md:min-w-[140px]">
+                    <span className="text-white font-bold text-2xl md:text-[36px] monser-600">
+                      {resource.name}
+                    </span>
+                    <a
+                      href={resource.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer"
                     >
-                      <Image
-                        src="/eresources/white-arrow.svg"
-                        alt="Arrow"
-                        width={14}
-                        height={15}
-                        className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-5"
-                      />
-                    </motion.div>
-                  </a>
-                </div>
-                <div className="px-4 md:px-6 py-4 md:py-6 flex-1">
-                  <p className="text-xs md:text-sm">{resource.description}</p>
+                      <motion.div
+                        animate={{ x: [0, 5, 0] }}
+                        transition={{
+                          duration: 1.5,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                        }}
+                      >
+                        <Image
+                          src="/eresources/white-arrow.svg"
+                          alt="Arrow"
+                          width={14}
+                          height={15}
+                          className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-5"
+                        />
+                      </motion.div>
+                    </a>
+                  </div>
+                  <div className="px-4 md:px-6 py-4 md:py-6 flex-1">
+                    <p className="text-xs md:text-sm">{resource.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>

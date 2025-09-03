@@ -31,53 +31,55 @@ const HowToApply = () => {
       </div>
 
       {/* How to Apply */}
-      <div className="container mx-auto px-4 md:px-0 py-6  md:py-10">
-        <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-12  w-full">
-          {/* Left Side - Content */}
-          <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
-            <h2 className="text-4xl  md:text-6xl  text-[#A22877] mb-3  playfair-300 leading-tight">
-              How to Apply
-            </h2>
+      <div className="lg:px-8 px-0 ">
+        <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-12  w-full">
+            {/* Left Side - Content */}
+            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
+              <h2 className="text-4xl  md:text-6xl  text-[#A22877] mb-3  playfair-300 leading-tight">
+                How to Apply
+              </h2>
 
-            <p className="text-base md:text-xl  monser-400">
-              You can apply for admission online by clicking the "Apply Now"
-              button at the top-right of this website. The application is
-              straightforward and designed to support students at every stage.
-            </p>
+              <p className="text-base md:text-xl  monser-400">
+                You can apply for admission online by clicking the "Apply Now"
+                button at the top-right of this website. The application is
+                straightforward and designed to support students at every stage.
+              </p>
 
-            <div className="space-y-3 sm:space-y-4">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] monser-600">
-                Before you begin, we recommend reviewing:
-              </h5>
+              <div className="space-y-3 sm:space-y-4">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] monser-600">
+                  Before you begin, we recommend reviewing:
+                </h5>
 
-              <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-0">
-                <li className="text-base md:text-lg monser-400 leading-relaxed ">
-                  The <span className="monser-600">eligibility criteria</span>{" "}
-                  on your chosen program page
-                </li>
-                <li className="text-base md:text-lg monser-400 leading-relaxed">
-                  The <span className="monser-600">documents required</span> for
-                  applying to UG or PG courses
-                </li>
-                <li className="text-base md:text-lg monser-400 leading-relaxed">
-                  The{" "}
-                  <span className="monser-600">
-                    important deadlines for college admissions 2025
-                  </span>
-                </li>
-              </ul>
+                <ul className="space-y-2 sm:space-y-3 list-disc list-inside ml-4 md:ml-0">
+                  <li className="text-base md:text-lg monser-400 leading-relaxed ">
+                    The <span className="monser-600">eligibility criteria</span>{" "}
+                    on your chosen program page
+                  </li>
+                  <li className="text-base md:text-lg monser-400 leading-relaxed">
+                    The <span className="monser-600">documents required</span>{" "}
+                    for applying to UG or PG courses
+                  </li>
+                  <li className="text-base md:text-lg monser-400 leading-relaxed">
+                    The{" "}
+                    <span className="monser-600">
+                      important deadlines for college admissions 2025
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          {/* Right Side - Image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
-            <Image
-              src="/admission-process/apply-new.svg"
-              alt="Admission Process"
-              width={1000}
-              height={1000}
-              className="w-full h-full object-cover"
-            />
+            {/* Right Side - Image */}
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pl-8">
+              <Image
+                src="/admission-process/apply-new.svg"
+                alt="Admission Process"
+                width={1000}
+                height={1000}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

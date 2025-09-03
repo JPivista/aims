@@ -621,156 +621,160 @@ const Publications = () => {
   ]
 
   return (
-    <div className="container mx-auto px-4 md:px-0 pb-6 md:pb-10">
-      <div className="max-w-8xl mx-auto">
-        {/* Buttons Row */}
-        <motion.div
-          className="flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row mb-0 gap-2 sm:gap-0"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          {tabsData.map((tab, index) => (
-            <motion.button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`flex items-center justify-center space-x-2 sm:space-x-3 px-4 sm:px-4 md:px-6 py-3 sm:py-3 transition-all duration-300 rounded-lg sm:rounded-none flex-1 ${
-                activeTab === index
-                  ? "bg-white/20 text-[#A22877] border border-black shadow-lg"
-                  : "bg-[#A22877] text-white hover:bg-[#8B1F5F] shadow-md"
-              }`}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-            >
-              <span className="font-semibold text-base sm:text-base md:text-[18px] monser-400 text-center">
-                {tab.title}
-              </span>
-              <Image
-                src={
-                  activeTab === index
-                    ? "/admission-process/up-arrow.svg"
-                    : "/admission-process/down-arrow.svg"
-                }
-                alt={tab.title}
-                width={24}
-                height={24}
-                className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0"
-              />
-            </motion.button>
-          ))}
-        </motion.div>
-
-        {/* Content Area */}
-
-        <AnimatePresence mode="wait">
+    <div className="px-4 md:px-8 lg:px-10 pb-6 md:pb-10">
+      <div className="container mx-auto">
+        <div className="max-w-8xl mx-auto">
+          {/* Buttons Row */}
           <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: -20 }}
-            transition={{
-              type: "tween",
-              ease: "easeOut",
-              duration: 0.5,
-            }}
-            className="p-4 sm:p-6 md:p-8 bg-[#E1F9F4] rounded-lg"
+            className="flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row mb-0 gap-2 sm:gap-0"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className="ml-2 sm:ml-4 md:ml-10">
-              {/* Heading */}
-              <motion.h5
-                className="text-lg sm:text-xl md:text-2xl lg:text-[24px] mb-4 sm:mb-6 monser-600 text-[#A22877] leading-tight"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.2 }}
+            {tabsData.map((tab, index) => (
+              <motion.button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`flex items-center justify-center space-x-2 sm:space-x-3 px-4 sm:px-4 md:px-6 py-3 sm:py-3 transition-all duration-300 rounded-lg sm:rounded-none flex-1 ${
+                  activeTab === index
+                    ? "bg-white/20 text-[#A22877] border border-black shadow-lg"
+                    : "bg-[#A22877] text-white hover:bg-[#8B1F5F] shadow-md"
+                }`}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
               >
-                {tabsData[activeTab].heading}
-              </motion.h5>
+                <span className="font-semibold text-base sm:text-base md:text-[18px] monser-400 text-center">
+                  {tab.title}
+                </span>
+                <Image
+                  src={
+                    activeTab === index
+                      ? "/admission-process/up-arrow.svg"
+                      : "/admission-process/down-arrow.svg"
+                  }
+                  alt={tab.title}
+                  width={24}
+                  height={24}
+                  className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0"
+                />
+              </motion.button>
+            ))}
+          </motion.div>
 
-              {/* Numbered Points */}
-              <div className="space-y-3 sm:space-y-4 ">
-                <div className="monser-400">
-                  {tabsData[activeTab].points
-                    .slice(0, visibleCount)
-                    .map((point, index) => (
-                      <motion.div
-                        key={index}
-                        className="flex items-start space-x-2 sm:space-x-3 md:space-x-4 text-sm sm:text-base md:text-lg lg:text-[20px] mb-3"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{
-                          duration:
-                            index < (isClient && isMobile ? 10 : 30)
-                              ? 0.8
-                              : 0.2,
-                          delay:
-                            index < (isClient && isMobile ? 10 : 30)
-                              ? 0.2 + index * 0.15
-                              : 0.02 +
-                                (index - (isClient && isMobile ? 10 : 30)) *
-                                  0.02,
-                          ease: "easeOut",
-                        }}
-                      >
-                        <span className="flex-shrink-0 text-[#A22877] font-semibold text-[16px] leading-tight">
-                          {index + 1}.
-                        </span>
-                        <p className="text-[16px] md:text-[25px] leading-tight">
-                          {point}
-                        </p>
-                      </motion.div>
-                    ))}
-                </div>
+          {/* Content Area */}
 
-                {/* View More Text with Arrows - For Journal Publications and Books Publications on mobile */}
-                {(activeTab === 0 || (activeTab === 1 && isMobile)) &&
-                  visibleCount < tabsData[activeTab].points.length && (
-                    <motion.div
-                      className="flex justify-center mt-8"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: 0.5 }}
-                    >
-                      <motion.button
-                        onClick={() =>
-                          setVisibleCount((prev) =>
-                            Math.min(
-                              prev + getNextBatchSize(),
-                              tabsData[activeTab].points.length
-                            )
-                          )
-                        }
-                        className="flex items-center space-x-2 text-[#A22877] hover:text-[#8B1F5F] transition-colors duration-300 monser-600 cursor-pointer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <span className="text-lg md:text-lg">Read More...</span>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: -20 }}
+              transition={{
+                type: "tween",
+                ease: "easeOut",
+                duration: 0.5,
+              }}
+              className="p-4 sm:p-6 md:p-8 bg-[#E1F9F4] rounded-lg"
+            >
+              <div className="ml-2 sm:ml-4 md:ml-10">
+                {/* Heading */}
+                <motion.h5
+                  className="text-lg sm:text-xl md:text-2xl lg:text-[24px] mb-4 sm:mb-6 monser-600 text-[#A22877] leading-tight"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
+                >
+                  {tabsData[activeTab].heading}
+                </motion.h5>
+
+                {/* Numbered Points */}
+                <div className="space-y-3 sm:space-y-4 ">
+                  <div className="monser-400">
+                    {tabsData[activeTab].points
+                      .slice(0, visibleCount)
+                      .map((point, index) => (
                         <motion.div
-                          className="mt-3"
-                          animate={{ y: [0, -8, 0] }}
+                          key={index}
+                          className="flex items-start space-x-2 sm:space-x-3 md:space-x-4 text-sm sm:text-base md:text-lg lg:text-[20px] mb-3"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
                           transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            ease: "easeInOut",
+                            duration:
+                              index < (isClient && isMobile ? 10 : 30)
+                                ? 0.8
+                                : 0.2,
+                            delay:
+                              index < (isClient && isMobile ? 10 : 30)
+                                ? 0.2 + index * 0.15
+                                : 0.02 +
+                                  (index - (isClient && isMobile ? 10 : 30)) *
+                                    0.02,
+                            ease: "easeOut",
                           }}
                         >
-                          <Image
-                            src="/admission-process/up-arrow.svg"
-                            alt="View More"
-                            width={20}
-                            height={20}
-                            className="w-4 h-4 sm:w-5 sm:h-5 rotate-180"
-                          />
+                          <span className="flex-shrink-0 text-[#A22877] font-semibold text-[16px] leading-tight">
+                            {index + 1}.
+                          </span>
+                          <p className="text-[16px] md:text-[25px] leading-tight">
+                            {point}
+                          </p>
                         </motion.div>
-                      </motion.button>
-                    </motion.div>
-                  )}
+                      ))}
+                  </div>
+
+                  {/* View More Text with Arrows - For Journal Publications and Books Publications on mobile */}
+                  {(activeTab === 0 || (activeTab === 1 && isMobile)) &&
+                    visibleCount < tabsData[activeTab].points.length && (
+                      <motion.div
+                        className="flex justify-center mt-8"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: 0.5 }}
+                      >
+                        <motion.button
+                          onClick={() =>
+                            setVisibleCount((prev) =>
+                              Math.min(
+                                prev + getNextBatchSize(),
+                                tabsData[activeTab].points.length
+                              )
+                            )
+                          }
+                          className="flex items-center space-x-2 text-[#A22877] hover:text-[#8B1F5F] transition-colors duration-300 monser-600 cursor-pointer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <span className="text-lg md:text-lg">
+                            Read More...
+                          </span>
+                          <motion.div
+                            className="mt-3"
+                            animate={{ y: [0, -8, 0] }}
+                            transition={{
+                              duration: 1.5,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                            }}
+                          >
+                            <Image
+                              src="/admission-process/up-arrow.svg"
+                              alt="View More"
+                              width={20}
+                              height={20}
+                              className="w-4 h-4 sm:w-5 sm:h-5 rotate-180"
+                            />
+                          </motion.div>
+                        </motion.button>
+                      </motion.div>
+                    )}
+                </div>
               </div>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   )

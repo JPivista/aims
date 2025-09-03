@@ -10,10 +10,10 @@ const Aiming = () => {
   ]
   return (
     <>
-      <div className="relative">
-        <div className="container mx-auto px-4 md:px-0">
+      <div className="relative px-4 md:px-8 lg:px-8 py-6 md:py-10">
+        <div className="container mx-auto">
           {/* Row-1 */}
-          <div className="max-w-6xl py-6 md:py-10">
+          <div className="max-w-6xl pb-6 md:pb-10">
             <h2 className="text-3xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300">
               Purpose in Action. <br /> AIM for a More Compassionate World.
             </h2>
@@ -79,7 +79,7 @@ const Aiming = () => {
           </div>
 
           {/* Row 3: Left Content, Right Image */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16 pb-6 md:pb-10">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-16">
             {/* Left Side - Content */}
             <div className="w-full lg:w-1/2 space-y-4">
               <h2 className="text-3xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300 leading-tight">
@@ -105,6 +105,7 @@ const Aiming = () => {
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>

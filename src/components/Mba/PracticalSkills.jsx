@@ -32,8 +32,8 @@ const PracticalSkills = () => {
 
   return (
     <>
-      <div className="bg-[#FCE6F499] ">
-        <div className="container mx-auto px-4 md:px-0 lg:px-0 py-6 md:py-8 lg:py-10">
+      <div className="bg-[#FCE6F499] px-4 md:px-8 lg:px-8 ">
+        <div className="container mx-auto  py-6 md:py-8 lg:py-10">
           {/* First Div - Flex Row */}
           <div className="flex flex-col md:flex-col lg:flex-row w-full gap-6 md:gap-8 lg:gap-0 mb-8 md:mb-10 lg:mb-12">
             {/* Left Side - Flex Column (2/3 width) */}

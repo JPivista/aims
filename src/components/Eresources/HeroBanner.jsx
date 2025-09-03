@@ -34,7 +34,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         </div> */}
 
         {/* Bottom Content Container */}
-        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-6 md:bottom-10">
+        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-6 md:bottom-10 lg:mx-10 mx-0">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
@@ -54,7 +54,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
             </div>
           </div>
         </div>
-        <div className="absolute top-5 left-0 right-0 ">
+        <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
           <div className="container mx-auto py-4 px-4 ">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
               <div className="flex items-center">
