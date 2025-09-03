@@ -1,66 +1,133 @@
+"use client";
 import Button from "@/shared/Button";
 import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
+  const [openSection, setOpenSection] = useState('students');
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
+  const footerSections = [
+    {
+      id: 'students',
+      title: 'Students',
+      links: [
+        { href: '/student-university-rank-holders', text: 'University Rank Holders' },
+        { href: '/student-information-zone', text: 'Student Handbook' },
+        { href: '/student-information-zone', text: 'Student Exit Formalities' },
+        { href: '/student-information-zone', text: 'Examinations' },
+        { href: '/student-information-zone', text: 'Academic Calendar' },
+        { href: '/student-information-zone', text: 'Program and Course Outcome' },
+        { href: '/student-information-zone', text: 'Code of Conduct (Students)' }
+      ]
+    },
+    {
+      id: 'faculty',
+      title: 'Faculty & Staff',
+      links: [
+        { href: '/articles-publications', text: 'Articles/Publications' },
+        { href: '/code-of-conduct-ethics', text: 'Code of Conduct & Ethics' },
+        { href: '/aims-list-of-faculty', text: 'Faculty Members Details' },
+        { href: '/patents', text: 'Patents' }
+      ]
+    },
+    {
+      id: 'disclosures',
+      title: 'Disclosures',
+      links: [
+        { href: '/iqac-internal-quality-assurance-cell', text: 'IQAC' },
+        { href: '/iacbe-accreditation', text: 'IACBE Accreditation' },
+        { href: '/naac-accreditation', text: 'NAAC Accreditation' },
+        { href: '/aicte-aims', text: 'AICTE' },
+        { href: '/nirf-ranking', text: 'NIRF' },
+        { href: '/ugc-preparation', text: 'UGC 2(f) & 12B' }
+      ]
+    },
+    {
+      id: 'committees',
+      title: 'Committees',
+      links: [
+        { href: '/grievance-redressal', text: 'Grievance Redressal' },
+        { href: '/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity', text: 'Anti-Ragging Cell' },
+        { href: '/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity', text: 'Anti-Sexual Harassment Committee' },
+        { href: '/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity', text: 'Equal Opportunity Cell' }
+      ]
+    },
+    {
+      id: 'general',
+      title: 'General Information',
+      links: [
+        { href: '/aims-journal-of-research', text: 'AIMS Journal of Research' },
+        { href: '/news', text: 'NEWS' },
+        { href: '/gallery', text: 'Gallery' },
+        { href: '/events', text: 'Events' },
+        { href: '/blogs', text: 'Blogs' },
+        { href: '/environment-sustainability-policy-report', text: 'Environment & Sustainability' },
+        { href: '/rotaract-club', text: 'Rotaract Club of AIMS' }
+      ]
+    }
+  ];
+
   return (
     <footer className="bg-[#0C2165] text-white">
       {/* Top Section - Navigation Links */}
       <div className="container mx-auto py-10 px-4 lg:px-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4">
-          <div>
-            <h6 className="font-semibold text-xl lg:text-2xl mb-4">Students</h6>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/student-university-rank-holders" className="hover:text-gray-300 transition-colors">University Rank Holders</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Student Handbook</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Student Exit Formalities</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Examinations</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Academic Calendar</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Program and Course Outcome</Link></li>
-              <li><Link href="/student-information-zone" className="hover:text-gray-300 transition-colors">Code of Conduct (Students)</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h6 className="font-semibold text-xl lg:text-2xl mb-4">Faculty & Staff</h6>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/articles-publications" className="hover:text-gray-300 transition-colors">Articles/Publications</Link></li>
-              <li><Link href="/code-of-conduct-ethics" className="hover:text-gray-300 transition-colors">Code of Conduct & Ethics</Link></li>
-              <li><Link href="/aims-list-of-faculty" className="hover:text-gray-300 transition-colors">Faculty Members Details</Link></li>
-              <li><Link href="/patents" className="hover:text-gray-300 transition-colors">Patents</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h6 className="font-semibold text-xl lg:text-2xl mb-4">Disclosures</h6>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/iqac-internal-quality-assurance-cell" className="hover:text-gray-300 transition-colors">IQAC</Link></li>
-              <li><Link href="/iacbe-accreditation" className="hover:text-gray-300 transition-colors">IACBE Accreditation</Link></li>
-              <li><Link href="/naac-accreditation" className="hover:text-gray-300 transition-colors">NAAC Accreditation</Link></li>
-              <li><Link href="/aicte-aims" className="hover:text-gray-300 transition-colors">AICTE</Link></li>
-              <li><Link href="/nirf-ranking" className="hover:text-gray-300 transition-colors">NIRF</Link></li>
-              <li><Link href="/ugc-preparation" className="hover:text-gray-300 transition-colors">UGC 2(f) & 12B</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h6 className="font-semibold text-xl lg:text-2xl mb-4">Committees</h6>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/grievance-redressal" className="hover:text-gray-300 transition-colors">Grievance Redressal</Link></li>
-              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Ragging Cell</Link></li>
-              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Anti-Sexual Harassment Committee</Link></li>
-              <li><Link href="/cells-committees-antiragging-sexual-harassment-grievances-equal-opportunity" className="hover:text-gray-300 transition-colors">Equal Opportunity Cell</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h6 className="font-semibold text-xl lg:text-2xl mb-4">General Information</h6>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/aims-journal-of-research" className="hover:text-gray-300 transition-colors">AIMS Journal of Research</Link></li>
-              <li><Link href="/news" className="hover:text-gray-300 transition-colors">NEWS</Link></li>
-              <li><Link href="/gallery" className="hover:text-gray-300 transition-colors">Gallery</Link></li>
-              <li><Link href="/events" className="hover:text-gray-300 transition-colors">Events</Link></li>
-              <li><Link href="/blogs" className="hover:text-gray-300 transition-colors">Blogs</Link></li>
-              <li><Link href="/environment-sustainability-policy-report" className="hover:text-gray-300 transition-colors">Environment & Sustainability</Link></li>
-              <li><Link href="/rotaract-club" className="hover:text-gray-300 transition-colors">Rotaract Club of AIMS</Link></li>
-            </ul>
-          </div>
+        {/* Desktop Grid */}
+        <div className="hidden lg:grid grid-cols-5 gap-4">
+          {footerSections.map((section) => (
+            <div key={section.id}>
+              <h6 className="font-semibold text-xl lg:text-2xl">{section.title}</h6>
+              <ul className="space-y-2 text-sm">
+                {section.links.map((link, index) => (
+                  <li key={index}>
+                    <Link href={link.href} className="hover:text-gray-300 transition-colors">
+                      {link.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Collapsible Sections */}
+        <div className="lg:hidden space-y-0">
+          {footerSections.map((section) => (
+            <div key={section.id} className="border-b border-gray-600">
+              <button
+                onClick={() => toggleSection(section.id)}
+                className="w-full flex items-center justify-between py-2 text-left"
+              >
+                <h6 className="font-semibold text-lg">{section.title}</h6>
+                {openSection === section.id ? (
+                  <FaMinus className="text-xs" />
+                ) : (
+                  <FaPlus className="text-xs" />
+                )}
+              </button>
+              {openSection === section.id && (
+                <div className="py-3">
+                  <ul className="space-y-2 text-sm">
+                    {section.links.map((link, index) => (
+                      <li key={index}>
+                        <Link
+                          href={link.href}
+                          className="hover:text-gray-300 transition-colors block py-1"
+                        >
+                          {link.text}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
