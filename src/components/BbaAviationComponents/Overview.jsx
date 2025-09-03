@@ -97,8 +97,8 @@ const Overview = () => {
     },
   ]
   return (
-    <div className="bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10 ">
+    <div className="bg-[#E1F9F4]  px-4 py-6 md:py-10 md:px-8 lg:px-8">
+      <div className="container mx-auto ">
         {/* BBA Aviation Program overview */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
           <h2 className="w-full max-w-lg text-center md:text-left">
@@ -201,7 +201,7 @@ const Overview = () => {
               alt="BBA Aviation Program Overview"
               width={1000}
               height={600}
-              className="object-contain w-full h-full"
+              className="object-cover w-full h-full"
               priority
             />
           </div>

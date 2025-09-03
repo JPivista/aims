@@ -4,8 +4,8 @@ import Image from "next/image"
 const NirfContent = () => {
   return (
     <>
-      <div className="relative">
-        <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+      <div className="relative px-4 md:px-8 lg:px-12 py-6 md:py-10">
+        <div className="container mx-auto">
           <div className="flex flex-col justify-center items-start ">
             <h2 className="text-3xl md:text-6xl text-[#0C2165] playfair-300 mb-3 md:mb-4 lg:mb-6 ">
               National Institutional <br className="hidden md:block" /> Ranking

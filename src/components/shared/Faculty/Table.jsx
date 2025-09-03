@@ -29,8 +29,8 @@ const Table = ({ title, headers, data }) => {
   }, [])
 
   return (
-    <div className="pb-6 md:pb-10" ref={tableRef}>
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="pb-6 md:pb-10 px-4 md:px-8 lg:px-20" ref={tableRef}>
+      <div className="container mx-auto ">
         {/* Title */}
         <div
           className={`text-3xl md:text-[65px] mb-6 playfair-300 text-center transition-all duration-700 ease-out ${

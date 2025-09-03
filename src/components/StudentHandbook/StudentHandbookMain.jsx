@@ -29,8 +29,8 @@ const StudentHandbookMain = () => {
   }
 
   return (
-    <div className="py-6 md:py-10 bg-[#E1F9F4]">
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="py-6 md:py-10 bg-[#E1F9F4] px-4 md:px-8 lg:px-10">
+      <div className="container mx-auto ">
         <div className="max-w-8xl">
           {/* Buttons Row */}
           <motion.div

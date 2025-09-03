@@ -14,8 +14,8 @@ const TabCourseStructure = ({ courseData }) => {
   }
 
   return (
-    <div className="bg-white pb-6 md:pb-10">
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="bg-white pb-6 md:pb-10 lg:px-8 px-4 md:px-8">
+      <div className="container mx-auto ">
         <div className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
             {/* Left Column - Navigation */}

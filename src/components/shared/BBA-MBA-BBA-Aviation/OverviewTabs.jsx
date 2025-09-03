@@ -22,7 +22,7 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   }, [activeTab, isUserInteraction])
 
   return (
-    <div className="w-full container mx-auto flex flex-col items-center justify-center">
+    <div className="w-full container mx-auto flex flex-col items-center justify-center md:px-4 px-0">
       {/* Tabs */}
       <div
         ref={containerRef}

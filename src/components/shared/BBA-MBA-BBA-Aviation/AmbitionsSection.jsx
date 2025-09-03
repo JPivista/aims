@@ -38,7 +38,7 @@ const AmbitionsSection = ({
           </div>
 
           {/* Right Side - Content */}
-          <div className="w-full lg:w-2/3 flex flex-col space-y-3 md:space-y-6  text-white">
+          <div className="w-full lg:max-w-2xl flex flex-col space-y-3 md:space-y-6  text-white ">
             <h2 className="text-3xl  md:text-[60px]  playfair-300 text-center md:text-left">
               {heading}
             </h2>

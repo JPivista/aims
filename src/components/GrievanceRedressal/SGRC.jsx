@@ -67,8 +67,8 @@ const SGRC = () => {
 
   return (
     <>
-      <div className="py-6 md:py-10 bg-[#E1F9F4] relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-0">
+      <div className="py-6 md:py-10 bg-[#E1F9F4] relative overflow-hidden px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto">
           {/* Semi-circle SVG on the right side */}
           <div className="absolute lg:top-[20%] md:top-[10%] md:right-0 md:block hidden rotate-180">
             <Image
@@ -88,7 +88,7 @@ const SGRC = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
+      <div className="container mx-auto px-4 md:px-0 py-6 md:py-10 lg:px-12">
         <Image
           src="/grievance-redressal/chart.webp"
           alt="SGRC"

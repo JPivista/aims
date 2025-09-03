@@ -18,7 +18,7 @@ const ReadyToDraw = ({
 }) => {
   return (
     <>
-      <div className={`${bgColor} py-6 md:py-10 px-4 lg:px-0`}>
+      <div className={`${bgColor} py-6 md:py-10 px-4 lg:px-8`}>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
             {/* Left Side - Content */}
@@ -61,7 +61,6 @@ const ReadyToDraw = ({
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                     href="https://enquiry.theaims.ac.in/"
                     target="_blank"
-
                   >
                     {tertiaryButtonText}
                   </Button>

@@ -6,7 +6,7 @@ import NotableCollaborations from "./NotableCollaborations"
 import Breadcrumbs from "../shared/Breadcrumbs"
 const CentreForCommunityService = ({ announcements }) => {
   return (
-    <>
+    <div className="w-full overflow-hidden">
       <HeroBanner announcements={announcements} />
       <Breadcrumbs />
       <Aiming />
@@ -14,7 +14,7 @@ const CentreForCommunityService = ({ announcements }) => {
       <NotableCollaborations />
 
       {/* Add other Centre for Community Service components here */}
-    </>
+    </div>
   )
 }
 

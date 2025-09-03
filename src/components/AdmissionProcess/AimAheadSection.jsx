@@ -23,7 +23,7 @@ const AimAheadSection = () => {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col md:justify-center justify-end pb-20 md:pb-0 mt-10 md:mt-0">
+      <div className="relative z-10 h-full flex flex-col md:justify-center justify-end pb-20 md:pb-0 mt-10 md:mt-0 lg:px-8 px-0">
         <div className="container mx-auto">
           <div className="flex justify-start">
             <div className="w-full md:max-w-2xl text-center md:text-left">
