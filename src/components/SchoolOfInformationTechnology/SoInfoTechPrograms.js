@@ -29,7 +29,7 @@ const SoInfoTechPrograms = () => {
     }
 
     return (
-        <div className="py-10 relative overflow-hidden">
+        <div className="py-10 relative overflow-hidden px-4 lg:px-8">
             {/* Background SVG */}
             {/* background svg left */}
             <div className='absolute top-[20%] left-0 md:block hidden'>

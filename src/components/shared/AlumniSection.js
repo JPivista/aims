@@ -78,59 +78,61 @@ const AlumniSection = ({ alumniData, title, backgroundColor = "#531574" }) => {
 
     return (
         <div className="bg-[#531574] pb-10 w-full">
-            <div className=" md:w-full w-full mx-auto px-6 lg:px-8">
-                <section>
-                    <div className={`bg-[${backgroundColor}] rounded-2xl overflow-hidden`}>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center md:p-8 p-4">
-                            <div className="flex justify-center">
-                                <div className="relative">
-                                    {/* Circular background */}
-                                    <div className="w-72 h-72 lg:w-80 lg:h-80 flex items-center justify-center">
-                                        <div className="w-full h-full rounded-full overflow-hidden p-4 flex items-center justify-center">
-                                            <Image
-                                                src={alumniData.image}
-                                                alt={alumniData.subtitle}
-                                                width={320}
-                                                height={320}
-                                                className="object-cover w-full h-full"
-                                            />
+            <div className="px-4 lg:px-8">
+                <div className=" container mx-auto">
+                    <section>
+                        <div className={`bg-[${backgroundColor}] rounded-2xl overflow-hidden`}>
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center md:p-8 p-4">
+                                <div className="flex justify-center">
+                                    <div className="relative">
+                                        {/* Circular background */}
+                                        <div className="w-72 h-72 lg:w-80 lg:h-80 flex items-center justify-center">
+                                            <div className="w-full h-full rounded-full overflow-hidden p-4 flex items-center justify-center">
+                                                <Image
+                                                    src={alumniData.image}
+                                                    alt={alumniData.subtitle}
+                                                    width={320}
+                                                    height={320}
+                                                    className="object-cover w-full h-full"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="text-white col-span-2">
-                                <h3
-                                    className='text-white text-2xl lg:text-3xl font-bold mb-6'
-                                    dangerouslySetInnerHTML={{ __html: alumniData.subtitle }}
-                                />
+                                <div className="text-white col-span-2">
+                                    <h3
+                                        className='text-white text-2xl lg:text-3xl font-bold mb-6'
+                                        dangerouslySetInnerHTML={{ __html: alumniData.subtitle }}
+                                    />
 
-                                {/* Render description as multiple paragraphs */}
-                                <div className="space-y-4">
-                                    {renderDescription(alumniData.description)}
-                                </div>
-
-                                {alumniData.author && (
-                                    <div className="mt-6">
-                                        <h6 className='text-white text-lg lg:text-xl font-semibold leading-relaxed'>
-                                            - {alumniData.author}
-                                        </h6>
-                                        {alumniData.authorTitle && (
-                                            <p className="text-white/80 text-base italic">
-                                                {alumniData.authorTitle}
-                                            </p>
-                                        )}
-                                        {alumniData.authorDescription && (
-                                            <p className="text-white/80 text-base leading-relaxed mt-2">
-                                                {alumniData.authorDescription}
-                                            </p>
-                                        )}
+                                    {/* Render description as multiple paragraphs */}
+                                    <div className="space-y-4">
+                                        {renderDescription(alumniData.description)}
                                     </div>
-                                )}
+
+                                    {alumniData.author && (
+                                        <div className="mt-6">
+                                            <h6 className='text-white text-lg lg:text-xl font-semibold leading-relaxed'>
+                                                - {alumniData.author}
+                                            </h6>
+                                            {alumniData.authorTitle && (
+                                                <p className="text-white/80 text-base italic">
+                                                    {alumniData.authorTitle}
+                                                </p>
+                                            )}
+                                            {alumniData.authorDescription && (
+                                                <p className="text-white/80 text-base leading-relaxed mt-2">
+                                                    {alumniData.authorDescription}
+                                                </p>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     )

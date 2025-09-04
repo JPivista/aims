@@ -4,7 +4,7 @@ import Image from 'next/image'
 const BcaContent = () => {
     return (
         <>
-            <div className='container mx-auto flex flex-col items-center justify-center px-4 lg:px-0'>
+            <div className='container mx-auto flex flex-col items-center justify-center px-4 lg:px-8'>
                 <div className='text-center lg:w-[80%]  py-10'>
                     <p>
                         Our BCA program is designed for those who want more than just a degree. From fundamentals to future-facing tech, we equip you with the tools to AIM higher, think sharper, and build the skills today’s digital world demands.

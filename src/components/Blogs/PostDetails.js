@@ -53,7 +53,7 @@ const BlogPostDetails = () => {
     if (!loading && blogsData.length === 0) return null
 
     return (
-        <div className="py-10 px-4">
+        <div className="py-10 px-4 lg:px-8">
             <div className="container mx-auto space-y-10">
 
                 {/* Blogs List */}

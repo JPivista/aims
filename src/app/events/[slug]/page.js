@@ -98,8 +98,8 @@ const EventDetail = () => {
                     </div>
                 </div>
 
-                <div className='w-full flex flex-col justify-center items-center bg-[#E1F9F4]'>
-                    <div className="container mx-auto px-4 flex flex-col justify-center items-center">
+                <div className='w-full flex flex-col justify-center items-center bg-[#E1F9F4] px-4 lg:px-8'>
+                    <div className="container mx-auto flex flex-col justify-center items-center">
                         {/* Hero Section */}
                         {/* <div className="relative h-96 lg:h-[50vh] w-[50%] ">
                         <Image

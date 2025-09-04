@@ -90,7 +90,7 @@ const McomCourseStructure = () => {
         <>
 
             <div className="mb-10 bg-white px-4 lg:px-8">
-                <div className="container mx-auto px-4 lg:px-0">
+                <div className="container mx-auto">
                     <div className="">
                         <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 playfair-300">
                             <span className='italic playfair-300'>M.Com Program</span>  <br />

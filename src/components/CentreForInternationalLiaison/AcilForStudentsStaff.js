@@ -59,46 +59,27 @@ const AcilForStudentsStaff = () => {
 
     return (
         <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
-            <div className='container mx-auto'>
-                <div className='flex flex-col bg-transparent relative z-10'>
-                    {/* Header Section */}
-                    <div className='text-left mb-12'>
-                        <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                            ACIL FOR STUDENTS/STAFF
-                        </h3>
-                        <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl'>
-                            AIMS Institutes&apos; campus reflects a &quot;global village&quot; with students from over 20 countries. ACIL provides a platform for AIMS students and students/professors from partner institutions through exchange programs, activities and opportunities.
-                        </p>
-                    </div>
-
-                    {/* Mobile Tabs - Visible only on mobile */}
-                    <div className='lg:hidden mb-8'>
-                        <div className='flex flex-col gap-3'>
-                            {tabs.map((tab) => (
-                                <button
-                                    key={tab.id}
-                                    onClick={() => setActiveTab(tab.id)}
-                                    className={`text-left px-2 py-1 rounded-lg transition-all duration-300 border-2 ${activeTab === tab.id
-                                        ? 'bg-[#A22877] text-white border-[#A22877]'
-                                        : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
-                                        }`}
-                                >
-                                    <span className='font-semibold text-lg'>{tab.label}</span>
-                                </button>
-                            ))}
+            <div className='px-4 lg:px-8'>
+                <div className='container mx-auto'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
+                        {/* Header Section */}
+                        <div className='text-left mb-12'>
+                            <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
+                                ACIL FOR STUDENTS/STAFF
+                            </h3>
+                            <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl'>
+                                AIMS Institutes&apos; campus reflects a &quot;global village&quot; with students from over 20 countries. ACIL provides a platform for AIMS students and students/professors from partner institutions through exchange programs, activities and opportunities.
+                            </p>
                         </div>
-                    </div>
 
-                    {/* Desktop Layout - Two Column */}
-                    <div className='hidden lg:grid lg:grid-cols-5 gap-8'>
-                        {/* Left Column - Navigation */}
-                        <div className='col-span-2'>
-                            <div className=''>
+                        {/* Mobile Tabs - Visible only on mobile */}
+                        <div className='lg:hidden mb-8'>
+                            <div className='flex flex-col gap-3'>
                                 {tabs.map((tab) => (
                                     <button
                                         key={tab.id}
                                         onClick={() => setActiveTab(tab.id)}
-                                        className={`text-left px-4 py-[0.5]blo rounded-2xl mb-3 transition-all duration-300 border-[1px] ${activeTab === tab.id
+                                        className={`text-left px-2 py-1 rounded-lg transition-all duration-300 border-2 ${activeTab === tab.id
                                             ? 'bg-[#A22877] text-white border-[#A22877]'
                                             : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
                                             }`}
@@ -109,12 +90,61 @@ const AcilForStudentsStaff = () => {
                             </div>
                         </div>
 
-                        {/* Right Column - Content */}
-                        <div className='col-span-3 border-l-2 border-gray-200 pl-8'>
+                        {/* Desktop Layout - Two Column */}
+                        <div className='hidden lg:grid lg:grid-cols-5 gap-8'>
+                            {/* Left Column - Navigation */}
+                            <div className='col-span-2'>
+                                <div className=''>
+                                    {tabs.map((tab) => (
+                                        <button
+                                            key={tab.id}
+                                            onClick={() => setActiveTab(tab.id)}
+                                            className={`text-left px-4 py-[0.5]blo rounded-2xl mb-3 transition-all duration-300 border-[1px] ${activeTab === tab.id
+                                                ? 'bg-[#A22877] text-white border-[#A22877]'
+                                                : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
+                                                }`}
+                                        >
+                                            <span className='font-semibold text-lg'>{tab.label}</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Right Column - Content */}
+                            <div className='col-span-3 border-l-2 border-gray-200 pl-8'>
+                                <div className='mb-6'>
+                                    <h5 className='text-2xl lg:text-4xl monser-600 text-[#A22877] mb-4'>
+                                        {tabData[activeTab].content.heading}
+                                    </h5>
+                                </div>
+
+                                <div className='bg-[#A22877] text-white p-6 rounded-lg'>
+                                    <p className='text-lg monser-400 mb-4'>
+                                        {tabData[activeTab].content.description}
+                                    </p>
+
+                                    <ul className='space-y-3 mb-4'>
+                                        {tabData[activeTab].content.features.map((feature, index) => (
+                                            <li key={index} className='flex items-start gap-3'>
+                                                <span className='text-white'>•</span>
+                                                <span className='monser-400'>{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+
+                                    <p className='text-lg monser-400'>
+                                        {tabData[activeTab].content.conclusion}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Mobile Content - Visible only on mobile */}
+                        <div className='lg:hidden'>
                             <div className='mb-6'>
-                                <h5 className='text-2xl lg:text-4xl monser-600 text-[#A22877] mb-4'>
+                                <h4 className='text-2xl lg:text-3xl monser-600 text-[#A22877] mb-4'>
                                     {tabData[activeTab].content.heading}
-                                </h5>
+                                </h4>
                             </div>
 
                             <div className='bg-[#A22877] text-white p-6 rounded-lg'>
@@ -135,34 +165,6 @@ const AcilForStudentsStaff = () => {
                                     {tabData[activeTab].content.conclusion}
                                 </p>
                             </div>
-                        </div>
-                    </div>
-
-                    {/* Mobile Content - Visible only on mobile */}
-                    <div className='lg:hidden'>
-                        <div className='mb-6'>
-                            <h4 className='text-2xl lg:text-3xl monser-600 text-[#A22877] mb-4'>
-                                {tabData[activeTab].content.heading}
-                            </h4>
-                        </div>
-
-                        <div className='bg-[#A22877] text-white p-6 rounded-lg'>
-                            <p className='text-lg monser-400 mb-4'>
-                                {tabData[activeTab].content.description}
-                            </p>
-
-                            <ul className='space-y-3 mb-4'>
-                                {tabData[activeTab].content.features.map((feature, index) => (
-                                    <li key={index} className='flex items-start gap-3'>
-                                        <span className='text-white'>•</span>
-                                        <span className='monser-400'>{feature}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <p className='text-lg monser-400'>
-                                {tabData[activeTab].content.conclusion}
-                            </p>
                         </div>
                     </div>
                 </div>

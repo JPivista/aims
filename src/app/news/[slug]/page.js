@@ -111,8 +111,8 @@ const NewsDetail = () => {
                     </div>
                 </div>
 
-                <div className='w-full flex flex-col justify-center items-center bg-[#E1F9F4]'>
-                    <div className="container mx-auto px-4 flex flex-col justify-center items-center">
+                <div className='w-full flex flex-col justify-center items-center bg-[#E1F9F4] px-4 lg:px-8'>
+                    <div className="container mx-auto flex flex-col justify-center items-center">
                         <div className='w-full flex flex-col justify-center items-center'>
                             <h1
                                 className="font-bold text-[#0C2165] my-4"

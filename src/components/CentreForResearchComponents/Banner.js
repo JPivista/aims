@@ -31,9 +31,9 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                 ></div>
 
                 {/* Text/Logo Content */}
-                <div className="absolute inset-0 flex flex-col justify-between z-10">
+                <div className="absolute inset-0 flex flex-col justify-between z-10 px-4 lg:px-8">
                     {/* Logo Block */}
-                    <div className="container mx-auto px-4 pt-8 text-left">
+                    <div className="container mx-auto pt-8 text-left">
                         <Image
                             src={
                                 isMobile
@@ -48,9 +48,9 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                         />
                     </div>
                     {/* Bottom Heading */}
-                    <div className="container mx-auto px-4 pb-12 text-left">
+                    <div className="container mx-auto pb-12 text-left">
                         <h1 className="text-white font-bold text-center md:text-left">
-                        AIMS <br className='hidden lg:block' /> Centre for Research
+                            AIMS <br className='hidden lg:block' /> Centre for Research
                         </h1>
                     </div>
                 </div>

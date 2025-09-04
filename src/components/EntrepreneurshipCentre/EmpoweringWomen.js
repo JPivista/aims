@@ -55,30 +55,32 @@ const EmpoweringWomen = () => {
 
     return (
         <>
-            <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
-                <div className='absolute top-[20%] right-0 md:block hidden rotate-180'>
-                    <Image
-                        src="/school-circle.svg"
-                        alt="School Circle Background"
-                        width={100}
-                        height={100}
-                        className="rotate-180"
-                    />
-                </div>
-                <div className='container mx-auto'>
-                    <div className='flex flex-col bg-transparent relative z-10'>
-                        {/* Header Section */}
-                        <div className='text-left'>
-                            <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                                Empowering Women <br className='hidden md:block' />
-                                Entrepreneurs
-                            </h3>
-                            <h5 className='text-xl monser-600 text-black mb-4'>
-                                Goldman Sachs - ISB - AIMS 10,000 Women Entrepreneurs Programme
-                            </h5>
-                            <p className='text-lg lg:text-[20px] monser-400 text-black'>
-                                AEEC has proudly hosted 5 successful batches of this prestigious initiative, helping 150 women entrepreneurs graduate with hands-on business knowledge and mentorship. Recognised as one of the most impactful women entrepreneurship programs in Bangalore, it also features guest sessions by successful founders and insights into programs for women entrepreneurs in India, specifically tailored for growth-stage female-led businesses.
-                            </p>
+            <div className='justify-center items-center mb-10 flex flex-col relative overflow-hidden'>
+                <div className='px-4 lg:px-8'>
+                    <div className='absolute top-[20%] right-0 md:block hidden rotate-180'>
+                        <Image
+                            src="/school-circle.svg"
+                            alt="School Circle Background"
+                            width={100}
+                            height={100}
+                            className="rotate-180"
+                        />
+                    </div>
+                    <div className='container mx-auto'>
+                        <div className='flex flex-col bg-transparent relative z-10'>
+                            {/* Header Section */}
+                            <div className='text-left'>
+                                <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
+                                    Empowering Women <br className='hidden md:block' />
+                                    Entrepreneurs
+                                </h3>
+                                <h5 className='text-xl monser-600 text-black mb-4'>
+                                    Goldman Sachs - ISB - AIMS 10,000 Women Entrepreneurs Programme
+                                </h5>
+                                <p className='text-lg lg:text-[20px] monser-400 text-black'>
+                                    AEEC has proudly hosted 5 successful batches of this prestigious initiative, helping 150 women entrepreneurs graduate with hands-on business knowledge and mentorship. Recognised as one of the most impactful women entrepreneurship programs in Bangalore, it also features guest sessions by successful founders and insights into programs for women entrepreneurs in India, specifically tailored for growth-stage female-led businesses.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,28 +89,48 @@ const EmpoweringWomen = () => {
             {/* Divider Line */}
             <hr className='border-black mb-12 w-full' />
 
-            <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
-                <div className='container mx-auto'>
-                    <div className='flex flex-col bg-transparent relative z-10'>
-                        {/* Participant Voices Section */}
-                        <div className='grid grid-cols-1 lg:grid-cols-5 gap-8'>
-                            {/* Left Column - Participant Names */}
-                            <div className='lg:col-span-2 md:border-r-2 border-black'>
-                                <h5 className='text-2xl lg:text-3xl monser-600 text-[#A22877] mb-6'>
-                                    Participant Voices
-                                </h5>
+            <div className='justify-center items-center mb-10 flex flex-col relative overflow-hidden'>
+                <div className='px-4 lg:px-8'>
+                    <div className='container mx-auto'>
+                        <div className='flex flex-col bg-transparent relative z-10'>
+                            {/* Participant Voices Section */}
+                            <div className='grid grid-cols-1 lg:grid-cols-5 gap-8'>
+                                {/* Left Column - Participant Names */}
+                                <div className='lg:col-span-2 md:border-r-2 border-black'>
+                                    <h5 className='text-2xl lg:text-3xl monser-600 text-[#A22877] mb-6'>
+                                        Participant Voices
+                                    </h5>
 
-                                {/* Mobile Tabs - Visible only on mobile */}
-                                <div className='lg:hidden'>
-                                    <div className='flex flex-col gap-3'>
+                                    {/* Mobile Tabs - Visible only on mobile */}
+                                    <div className='lg:hidden'>
+                                        <div className='flex flex-col gap-3'>
+                                            <div className=''>
+                                                {participants.map((participant) => (
+                                                    <button
+                                                        key={participant.id}
+                                                        onClick={() => setSelectedParticipant(participant.id)}
+                                                        className={`text-left px-4 py-[0.5] rounded-lg transition-all block duration-300 mb-3 border-[1px]  ${selectedParticipant === participant.id
+                                                            ? 'bg-[#A22877] text-white border-[#A22877]'
+                                                            : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
+                                                            }`}
+                                                    >
+                                                        <span className='font-semibold text-lg'>{participant.name}</span>
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Desktop Tabs - Visible only on desktop */}
+                                    <div className='hidden lg:flex flex-col gap-4 '>
                                         <div className=''>
                                             {participants.map((participant) => (
                                                 <button
                                                     key={participant.id}
                                                     onClick={() => setSelectedParticipant(participant.id)}
-                                                    className={`text-left px-4 py-[0.5] rounded-lg transition-all block duration-300 mb-3 border-[1px]  ${selectedParticipant === participant.id
+                                                    className={`text-left px-4 py-[0.5] rounded-2xl transition-all block duration-300 mb-3 border-[1px] ${selectedParticipant === participant.id
                                                         ? 'bg-[#A22877] text-white border-[#A22877]'
-                                                        : 'bg-white text-gray-700 border-gray-300 hover:border-[#A22877]'
+                                                        : 'bg-white text-gray-700 border-black hover:border-[#A22877]'
                                                         }`}
                                                 >
                                                     <span className='font-semibold text-lg'>{participant.name}</span>
@@ -118,40 +140,22 @@ const EmpoweringWomen = () => {
                                     </div>
                                 </div>
 
-                                {/* Desktop Tabs - Visible only on desktop */}
-                                <div className='hidden lg:flex flex-col gap-4 '>
-                                    <div className=''>
-                                        {participants.map((participant) => (
-                                            <button
-                                                key={participant.id}
-                                                onClick={() => setSelectedParticipant(participant.id)}
-                                                className={`text-left px-4 py-[0.5] rounded-2xl transition-all block duration-300 mb-3 border-[1px] ${selectedParticipant === participant.id
-                                                    ? 'bg-[#A22877] text-white border-[#A22877]'
-                                                    : 'bg-white text-gray-700 border-black hover:border-[#A22877]'
-                                                    }`}
-                                            >
-                                                <span className='font-semibold text-lg'>{participant.name}</span>
-                                            </button>
-                                        ))}
+                                {/* Right Column - Participant Details */}
+                                <div className='lg:col-span-3 border-l-2 border-white md:pl-8 bg'>
+                                    <div className='mb-6'>
+                                        <h5 className='text-2xl lg:text-3xl monser-600 text-[#0C2165] mb-2'>
+                                            {participantsData[selectedParticipant].name}
+                                        </h5>
+                                        <p className='text-lg lg:text-xl monser-600 text-[#0C2165]'>
+                                            {participantsData[selectedParticipant].affiliation}
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
 
-                            {/* Right Column - Participant Details */}
-                            <div className='lg:col-span-3 border-l-2 border-white md:pl-8 bg'>
-                                <div className='mb-6'>
-                                    <h5 className='text-2xl lg:text-3xl monser-600 text-[#0C2165] mb-2'>
-                                        {participantsData[selectedParticipant].name}
-                                    </h5>
-                                    <p className='text-lg lg:text-xl monser-600 text-[#0C2165]'>
-                                        {participantsData[selectedParticipant].affiliation}
-                                    </p>
-                                </div>
-
-                                <div className='bg-[#A22877] text-white p-6 rounded-lg'>
-                                    <p className='text-lg monser-400 leading-relaxed'>
-                                        {participantsData[selectedParticipant].testimonial}
-                                    </p>
+                                    <div className='bg-[#A22877] text-white p-6 rounded-lg'>
+                                        <p className='text-lg monser-400 leading-relaxed'>
+                                            {participantsData[selectedParticipant].testimonial}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

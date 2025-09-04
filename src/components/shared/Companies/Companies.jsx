@@ -5,8 +5,8 @@ import { companyData } from "@/utils/companyData"
 const Companies = () => {
   return (
     <>
-      <div className="bg-white py-10">
-        <div className="container mx-auto px-4 md:p-6  shadow-lg rounded-lg">
+      <div className="bg-white py-10 px-4 lg:px-8">
+        <div className="container mx-auto md:p-6 shadow-lg rounded-lg">
 
           {/* Companies Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4 lg:gap-8">

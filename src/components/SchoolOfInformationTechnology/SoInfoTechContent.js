@@ -4,7 +4,7 @@ import Image from 'next/image'
 const SoInfoTechContent = () => {
     return (
         <>
-            <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 bg-[#FDE9E9] relative overflow-hidden'
+            <div className='justify-center items-center py-10 flex flex-col px-4 lg:px-8 bg-[#FDE9E9] relative overflow-hidden'
                 style={{
                     background: 'linear-gradient(135deg, #F0DBFC 0%, #F0DBFC 50%, #FBDCE2 100%)'
                 }}>

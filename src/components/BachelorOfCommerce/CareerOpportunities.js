@@ -53,8 +53,8 @@ const CareerOpportunities = () => {
     ]
 
     return (
-        <div className="py-8 bg-white">
-            <div className="container mx-auto px-6 lg:px-8">
+        <div className="py-8 bg-white px-4 lg:px-8">
+            <div className="container mx-auto">
                 {/* Header Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mb-10">
                     <h3 className="text-[#0C2165] text-3xl lg:text-4xl font-serif font-bold">
@@ -67,7 +67,7 @@ const CareerOpportunities = () => {
                 </div>
 
                 {/* Desktop Table View */}
-                <div className="hidden lg:block pb-8">
+                <div className="hidden lg:block">
                     <div className="overflow-x-auto">
                         <table className="w-full border-separate border-spacing-0">
                             <thead>

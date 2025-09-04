@@ -31,37 +31,40 @@ const HeroBannerCfs = ({ announcements, pageType = 'engineering' }) => {
 
 
                 <div className="absolute top-5 md:right-20 left-0">
-                    <div className="container mx-auto py-4 px-6 lg:px-8">
-                        <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
-                            <div className="flex items-center">
-                                <Image
-                                    src="/white-empower.svg"
-                                    alt="Recruiters"
-                                    width={200}
-                                    height={200}
-                                />
+                    <div className="px-4 lg:px-8">
+                        <div className="container mx-auto py-4">
+                            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
+                                <div className="flex items-center">
+                                    <Image
+                                        src="/white-empower.svg"
+                                        alt="Recruiters"
+                                        width={200}
+                                        height={200}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Bottom Content Container */}
-                <div className="absolute md:bottom-10 bottom-0 left-0 right-0 px-4 lg:px-0">
-                    <div className="container mx-auto">
-                        <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
-                            <div className="flex items-center">
-                                <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
-                                    AIMS Centre
-                                    <br className='hidden lg:block' />
-                                    for <span className='italic playfair-400 text-[#D7FCF4]'>
-                                        Sustainability
-                                    </span>
-                                </h1>
+                <div className="absolute md:bottom-10 bottom-0 left-0 right-0">
+                    <div className="px-4 lg:px-8">
+                        <div className="container mx-auto">
+                            <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
+                                <div className="flex items-center">
+                                    <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 md:text-start text-center">
+                                        AIMS Centre
+                                        <br className='hidden lg:block' />
+                                        for <span className='italic playfair-400 text-[#D7FCF4]'>
+                                            Sustainability
+                                        </span>
+                                    </h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             {/* Application Announcements Marquee */}

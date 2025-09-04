@@ -101,68 +101,70 @@ const CfcAssignments = () => {
     ]
 
     return (
-        <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
-            <div className='container mx-auto'>
-                <div className='flex flex-col bg-transparent relative z-10'>
-                    {/* Header Section */}
-                    <div className='text-left'>
-                        <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                            Assignments
-                        </h3>
-                        <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl mb-8'>
-                            ACC has already taken up a number of assignments with some of the leading companies in India. Following is a list of completed and current assignments.
-                        </p>
-                    </div>
+        <div className='justify-center items-center py-10 flex flex-col relative overflow-hidden'>
+            <div className='px-4 lg:px-8'>
+                <div className='container mx-auto'>
+                    <div className='flex flex-col bg-transparent relative z-10'>
+                        {/* Header Section */}
+                        <div className='text-left'>
+                            <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
+                                Assignments
+                            </h3>
+                            <p className='text-lg lg:text-[20px] monser-400 text-gray-700 max-w-4xl mb-8'>
+                                ACC has already taken up a number of assignments with some of the leading companies in India. Following is a list of completed and current assignments.
+                            </p>
+                        </div>
 
-                    {/* Completed Assignments Section */}
-                    <div>
-                        <h4 className='text-2xl lg:text-3xl monser-600 text-[#0C2165] mb-6'>
-                            Completed Assignments
-                        </h4>
+                        {/* Completed Assignments Section */}
+                        <div>
+                            <h4 className='text-2xl lg:text-3xl monser-600 text-[#0C2165] mb-6'>
+                                Completed Assignments
+                            </h4>
 
-                        {/* Table Container with Mobile Scroll */}
-                        <div className='overflow-x-auto border border-gray-200 rounded-lg'>
-                            <table className='w-full min-w-[800px] bg-white'>
-                                <thead className='bg-[#531675] text-white sticky top-0'>
-                                    <tr>
-                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
-                                            Company
-                                        </th>
-                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
-                                            Website
-                                        </th>
-                                        <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base lg:w-1/3'>
-                                            Completed Assignments
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {assignmentsData.map((assignment, index) => (
-                                        <tr
-                                            key={index}
-                                            className={`border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-                                                }`}
-                                        >
-                                            <td className='px-4 py-3 text-sm lg:text-base monser-500 text-[#0C2165] border-r border-gray-200 align-top bg-[#E1F9F4]'>
-                                                {assignment.company}
-                                            </td>
-                                            <td className='px-4 py-3 text-sm lg:text-base monser-400 text-blue-600 border-r border-gray-200 align-top bg-[#C7E7E0]'>
-                                                <a
-                                                    href={`https://${assignment.website}`}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className='hover:text-blue-800 underline text-black'
-                                                >
-                                                    {assignment.website}
-                                                </a>
-                                            </td>
-                                            <td className='px-4 py-3 text-sm lg:text-base monser-400 text-gray-700 align-top bg-[#E1F9F4]'>
-                                                {assignment.assignments}
-                                            </td>
+                            {/* Table Container with Mobile Scroll */}
+                            <div className='overflow-x-auto border border-gray-200 rounded-lg'>
+                                <table className='w-full min-w-[800px] bg-white'>
+                                    <thead className='bg-[#531675] text-white sticky top-0'>
+                                        <tr>
+                                            <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
+                                                Company
+                                            </th>
+                                            <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base border-r border-gray-300 lg:w-1/3'>
+                                                Website
+                                            </th>
+                                            <th className='px-4 py-3 text-center monser-600 text-sm lg:text-base lg:w-1/3'>
+                                                Completed Assignments
+                                            </th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        {assignmentsData.map((assignment, index) => (
+                                            <tr
+                                                key={index}
+                                                className={`border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                                                    }`}
+                                            >
+                                                <td className='px-4 py-3 text-sm lg:text-base monser-500 text-[#0C2165] border-r border-gray-200 align-top bg-[#E1F9F4]'>
+                                                    {assignment.company}
+                                                </td>
+                                                <td className='px-4 py-3 text-sm lg:text-base monser-400 text-blue-600 border-r border-gray-200 align-top bg-[#C7E7E0]'>
+                                                    <a
+                                                        href={`https://${assignment.website}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className='hover:text-blue-800 underline text-black'
+                                                    >
+                                                        {assignment.website}
+                                                    </a>
+                                                </td>
+                                                <td className='px-4 py-3 text-sm lg:text-base monser-400 text-gray-700 align-top bg-[#E1F9F4]'>
+                                                    {assignment.assignments}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

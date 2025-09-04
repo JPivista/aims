@@ -15,8 +15,8 @@ const BcaPlus = () => {
                 ></div> */}
 
                 {/* Top Content Container */}
-                <div className="relative z-10 h-full flex flex-col items-start justify-center">
-                    <div className="container mx-auto py-4 px-6 lg:px-8">
+                <div className="relative z-10 h-full flex flex-col items-start justify-center px-4 lg:px-8">
+                    <div className="container mx-auto py-4 ">
                         <div className="flex lg:flex-row md:gap-10 gap-4">
                             <div className="">
                                 <h3 className="text-black text-2xl lg:text-[60px] playfair-300 lg:leading-16">

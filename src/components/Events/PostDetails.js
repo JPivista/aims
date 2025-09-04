@@ -47,7 +47,7 @@ const EventsWorkshops = () => {
     if (!loading && eventsData.length === 0) return null
 
     return (
-        <div className="py-10 px-4">
+        <div className="py-10 px-4 lg:px-8">
             <div className="container mx-auto">
                 {/* Events Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

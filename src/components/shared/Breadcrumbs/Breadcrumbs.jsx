@@ -82,11 +82,11 @@ const Breadcrumbs = () => {
   return (
     <>
       {/* Spacer div that only appears when breadcrumbs are visible */}
-      <div className={`w-full transition-all duration-300 ${isVisible ? 'h-12' : 'h-0'}`} />
+      <div className={`w-full transition-all duration-300 z-40 bg-white ${isVisible ? 'h-12' : 'h-0'}`} />
 
-      <div className="">
+      <div className="z-40">
         <nav className={`bg-white shadow-sm border-b border-gray-100 px-4 lg:px-8 fixed top-[10vh] lg:top-[17vh] left-0 right-0 z-40 transition-all duration-300 ${isVisible ? 'opacity-100 h-auto' : 'opacity-0 h-0 pointer-events-none overflow-hidden border-0'}`}>
-          <div className="max-w-screen-xl lg:max-w-screen-2xl mx-auto px-4 lg:px-0">
+          <div className="container mx-auto">
             <div className="flex items-center space-x-2 py-3 overflow-x-auto scrollbar-hide">
               {/* Mobile scroll indicator */}
               {/* <div className="lg:hidden flex-shrink-0 mr-2 text-xs text-gray-400">

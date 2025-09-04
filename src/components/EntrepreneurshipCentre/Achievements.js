@@ -32,63 +32,65 @@ const Achievements = () => {
     }
 
     return (
-        <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
-            <div className='container mx-auto'>
-                <div className='flex flex-col lg:px-0  bg-transparent relative z-10'>
-                    {/* Header Section */}
-                    <div className='text-left'>
-                        <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
-                            Achievements
-                        </h3>
-                    </div>
+        <div className='justify-center items-center mb-10 flex flex-col relative overflow-hidden'>
+            <div className='px-4 lg:px-8'>
+                <div className='container mx-auto'>
+                    <div className='flex flex-col lg:px-0  bg-transparent relative z-10'>
+                        {/* Header Section */}
+                        <div className='text-left'>
+                            <h3 className='text-[32px] lg:text-[56px] playfair-300 text-[#0C2165] mb-4'>
+                                Achievements
+                            </h3>
+                        </div>
 
-                    {/* Achievements Sections */}
-                    <div className='space-y-2'>
-                        {achievementsData.map((achievement) => (
-                            <div key={achievement.id} className='border-b border-black'>
-                                <button
-                                    onClick={() => toggleSection(achievement.id)}
-                                    className={`w-full flex items-center justify-between text-left  transition-all duration-200 p-2 ${expandedSection === achievement.id
-                                        ? 'bg-[#A22877] text-white hover:bg-[#8B1F6A]'
-                                        : 'hover:bg-gray-50'
-                                        }`}
-                                >
-                                    <h5 className={`monser-600 text-xl lg:text-2xl transition-colors duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
-                                        }`}>
-                                        {achievement.title}
-                                        <span className={`pl-4 text-3xl transition-transform duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
+                        {/* Achievements Sections */}
+                        <div className='space-y-2'>
+                            {achievementsData.map((achievement) => (
+                                <div key={achievement.id} className='border-b border-black'>
+                                    <button
+                                        onClick={() => toggleSection(achievement.id)}
+                                        className={`w-full flex items-center justify-between text-left  transition-all duration-200 p-2 ${expandedSection === achievement.id
+                                            ? 'bg-[#A22877] text-white hover:bg-[#8B1F6A]'
+                                            : 'hover:bg-gray-50'
+                                            }`}
+                                    >
+                                        <h5 className={`monser-600 text-xl lg:text-2xl transition-colors duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
                                             }`}>
-                                            {expandedSection === achievement.id ? '↗' : '↙'}
-                                        </span>
-                                    </h5>
-                                </button>
+                                            {achievement.title}
+                                            <span className={`pl-4 text-3xl transition-transform duration-200 ${expandedSection === achievement.id ? 'text-white' : 'text-black'
+                                                }`}>
+                                                {expandedSection === achievement.id ? '↗' : '↙'}
+                                            </span>
+                                        </h5>
+                                    </button>
 
-                                {expandedSection === achievement.id && (
-                                    <div className=' space-y-4 bg-gray-100 p-4'>
-                                        {achievement.id === 'award' ? (
-                                            <div className='space-y-4'>
-                                                {achievement.content.map((paragraph, index) => (
-                                                    <p key={index} className='text-black leading-relaxed'>
-                                                        {paragraph}
-                                                    </p>
-                                                ))}
-                                            </div>
-                                        ) : (
-                                            <ul className='list-none text-start monser-400 flex flex-col gap-4'>
-                                                {achievement.content.map((item, index) => (
-                                                    <li key={index} className='flex items-start gap-3'>
-                                                        <span className='text-black'>•</span>
-                                                        <span className='text-base lg:text-lg text-gray-700'>
-                                                            {item}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
+                                    {expandedSection === achievement.id && (
+                                        <div className=' space-y-4 bg-gray-100 p-4'>
+                                            {achievement.id === 'award' ? (
+                                                <div className='space-y-4'>
+                                                    {achievement.content.map((paragraph, index) => (
+                                                        <p key={index} className='text-black leading-relaxed'>
+                                                            {paragraph}
+                                                        </p>
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                <ul className='list-none text-start monser-400 flex flex-col gap-4'>
+                                                    {achievement.content.map((item, index) => (
+                                                        <li key={index} className='flex items-start gap-3'>
+                                                            <span className='text-black'>•</span>
+                                                            <span className='text-base lg:text-lg text-gray-700'>
+                                                                {item}
+                                                            </span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
