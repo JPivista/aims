@@ -44,9 +44,8 @@ const PhdProgramOverview = () => {
                                     Affiliation & Recognition
                                 </h5>
                                 <p className="text-sm monser-400 ">
-                                    Affiliated to Bangalore University
+                                    Affiliated to University of Mysore
                                 </p>
-                                <p className="text-black text-sm">Recognised by AICTE</p>
                             </div>
 
                             <div className="border-t border-gray-500 mb-4"></div>
@@ -69,9 +68,6 @@ const PhdProgramOverview = () => {
                                     <span className="monser-600">NAAC &apos;A&apos;</span> Grade (3.25 on a
                                     scale of 4)
                                 </p>
-                                <p className="text-sm monser-400">
-                                    <span className="monser-600">IACBE</span> Accredited
-                                </p>
                             </div>
 
                             <div className="border-t border-gray-500 mb-6"></div>
@@ -90,7 +86,7 @@ const PhdProgramOverview = () => {
                                 <h5 className="text-[#A22877] monser-600 text-[20px] mb-2">
                                     Duration
                                 </h5>
-                                <p className="text-black text-sm">2 years (4 semesters)</p>
+                                <p className="text-black text-sm">3 years (Minimum)</p>
                             </div>
                         </div>
                     </div>

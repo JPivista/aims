@@ -8,7 +8,7 @@ import MeetTheTeam from './MeetTheTeam'
 import ImageCarousel from './ImageCarousel'
 import AimersSays from './AimersSays'
 import Eligibility from './EligibilityTab'
-
+import GetInvolvedSection from './GetInvolvedSection'
 
 const index = () => {
     return (
@@ -22,6 +22,7 @@ const index = () => {
             <MeetTheTeam />
             <ImageCarousel />
             <AimersSays />
+            <GetInvolvedSection />
 
         </div>
     )

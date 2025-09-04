@@ -67,10 +67,10 @@ const Resources = () => {
       {/* Accordion */}
       <div className="grid md:grid-cols-2 gap-4 mb-6">
         {/* Plagiarism Check */}
-        <div className="border border-[#f2d0cf] rounded-2xl overflow-hidden">
+        <div className="overflow-hidden">
           <button
             onClick={() => setIsPlagiarismOpen(!isPlagiarismOpen)}
-            className="w-full flex justify-between items-center bg-[#fbeaee] px-4 py-3 text-lg"
+            className="w-full flex justify-between text-left items-center bg-[#fbeaee] px-4 py-3 text-lg border border-[#f2d0cf] rounded-2xl"
             style={{ fontWeight: "600" }}
           >
             Plagiarism Check
@@ -91,7 +91,7 @@ const Resources = () => {
               isPlagiarismOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <div className="px-4 py-3 text-gray-800">
+            <div className="px-4 py-3 text-gray-800 border border-[#f2d0cf] rounded-2xl mt-2">
               <p className="mb-2">
                 (Faculty Only) Faculty members can access plagiarism-check tools
                 to ensure originality in student submissions and research
@@ -113,12 +113,12 @@ const Resources = () => {
         </div>
 
         {/* Faculty Book Recommendations */}
-        <div className="border border-[#f2d0cf] rounded-xl overflow-hidden">
+        <div className="rounded-xl overflow-hidden">
           <button
             onClick={() =>
               setIsBookRecommendationsOpen(!isBookRecommendationsOpen)
             }
-            className="w-full flex justify-between items-center bg-[#fbeaee] px-4 py-3 text-lg"
+            className="w-full flex justify-between text-left items-center bg-[#fbeaee] px-4 py-3 text-lg border border-[#f2d0cf] rounded-2xl"
             style={{ fontWeight: "600" }}
           >
             Faculty Book Recommendations
@@ -143,7 +143,7 @@ const Resources = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="px-4 py-3 text-gray-800">
+            <div className="px-4 py-3 text-gray-800 border border-[#f2d0cf] rounded-2xl mt-2">
               <p className="mb-2">
                 Faculty are encouraged to suggest books or journals relevant to
                 their curriculum or emerging fields. These inputs directly

@@ -14,8 +14,8 @@ export default function Page() {
       objectivesTitle: "Objectives of RAC:",
       objectives: [
         "To provide strategic guidance to the Research activities",
-        "To guide the faculty and students to prepare research proposals/projects to be submitted to various funding agencies.",
-        "To endorse the research proposals taken up by the institute and supervise the progress of the research work.",
+        "To guide the faculty and students to prepare research proposals/projects to be submitted to various funding agencies",
+        "To endorse the research proposals taken up by the institute and supervise the progress of the research work",
         "Formulating and promoting policies and procedures that enhance and expand research culture",
         "Sharing resources, information and best practices for research",
         "Offering expertise for research communication for writing research papers, paper presentations, etc.",
@@ -35,9 +35,9 @@ export default function Page() {
         "The RRC reviews all activities of the ACR. The committee reviews whether the research centre follows the advice and recommendations of RAC. The committee also suggests areas of improvement. The RRC is composed of a Chairperson and five members.",
       objectivesTitle: "Objectives of RRC:",
       objectives: [
-        "To review the activities of the research centre.",
-        "To motivate faculty and students to take up research in the areas of management, commerce, IT and humanities.",
-        "To monitor and implement the policies of ACR.",
+        "To review the activities of the research centre",
+        "To motivate faculty and students to take up research in the areas of management, commerce, IT and humanities",
+        "To monitor and implement the policies of ACR",
       ],
       frequencyBorder: "border-teal-300",
       frequencytitle: "Frequency:",

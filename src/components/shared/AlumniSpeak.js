@@ -13,8 +13,8 @@ const AlumniSpeak = ({
     imageSrc,
 }) => {
     return (
-        <div className="bg-[#531675] text-white py-12 px-6">
-            <div className="max-w-6xl mx-auto">
+        <div className="bg-[#531675] text-white py-12 lg:px-8 px-4">
+            <div className="container mx-auto">
                 <h3 className="text-3xl font-semibold mb-4">Alumni Speak</h3>
                 <div className="flex flex-col md:flex-row items-center gap-10">
                     {/* Left Section - Image & Info */}
