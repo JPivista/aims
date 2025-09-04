@@ -5,7 +5,7 @@ import ApplicationMarquee from "../../shared/ApplicationMarquee"
 const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
   return (
     <>
-  <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
+      <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/about-aims/About-banner.webp')]" />
 
@@ -22,8 +22,8 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
         ></div>
 
         {/* ✅ Top Content Container */}
-        <div className="absolute top-2 left-0 right-0">
-          <div className="container mx-auto py-4 px-6 lg:px-8">
+        <div className="absolute top-2 left-0 right-0 px-4 lg:px-8">
+          <div className="container mx-auto py-4 ">
             <div>
               <h6 className="tracking-wider text-xs sm:text-sm lg:text-base text-white">
                 EMPOWERING MINDS
@@ -39,23 +39,21 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute bottom-4 lg:bottom-8 left-0 right-0">
-          <div className="container mx-auto py-4 px-6 lg:px-4">
+        <div className="absolute bottom-4 lg:bottom-8 left-0 right-0 px-4 lg:px-8">
+          <div className="container mx-auto py-4 ">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
               <div className="flex items-center lg:items-start w-full">
                 <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
-                  <span className="playfair-400">
+                  <span className="playfair-400 block lg:inline">
                     AIMS Institutes
-                    <span className="inline-block lg:hidden "></span>
                   </span>
-
-                  <br className="hidden lg:block" />
-                  <span className="playfair-400 text-[#D7FCF4]">
-                 
-                  Your Top Business School in
+                  <span className="playfair-400 text-[#D7FCF4] block ">
+                    Your Top Business School
                   </span>
-                  <br className="hidden lg:block" />
-                  <span className="playfair-400 text-[#D7FCF4] ">Banglore</span>
+                  <span className="playfair-400 text-[#D7FCF4] block lg:inline">
+                    {" "}
+                    in Banglore
+                  </span>
                 </h1>
               </div>
             </div>

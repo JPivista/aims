@@ -4,7 +4,9 @@ import Image from "next/image";
 
 const Partnerships = () => {
   return (
-    <div className="container mx-auto px-4 py-12 space-y-12">
+    <>
+    <div className=" px-4 lg:px-8">
+    <div className="container mx-auto py-10 space-y-12">
       {/* EUHOFA Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 border-b pb-8">
         {/* Image for mobile first */}
@@ -77,7 +79,9 @@ const Partnerships = () => {
           </p>
         </div>
       </div>
+      </div>
     </div>
+    </>
   );
 };
 

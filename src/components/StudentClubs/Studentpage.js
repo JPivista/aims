@@ -28,7 +28,7 @@ const StudentClubs = () => {
     },
   ]
 
-  const sliderSettings = {
+  const mobileSlider = {
     dots: true,
     arrows: false,
     infinite: true,
@@ -36,6 +36,17 @@ const StudentClubs = () => {
     autoplaySpeed: 3000,
     speed: 500,
     slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+
+  const tabletSlider = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 2, 
     slidesToScroll: 1,
   }
 
@@ -50,29 +61,23 @@ const StudentClubs = () => {
           At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
           student clubs offer a structured yet vibrant space for students to
           explore their interests, take initiative, and develop skills that
-          extend far beyond academics. Whether you&apos;re pursuing an MBA from
-          our IACBE-accredited institute in Bangalore or studying BBA in
-          aviation logistics, student-led activities help sharpen your
-          leadership, collaboration, and creativity in real time.
-        </p>
-        <p className="max-w-5xl mx-auto pt-5">
-          These clubs reflect our belief in goal-oriented growth, a core part of
-          what makes AIMS a dynamic student community in business education.
+          extend far beyond academics.
         </p>
       </div>
-
-      <div className="px-4 py-10 text-center">
+      <div className="px-4 lg:px-8">
+      <div className=" py-10 text-center">
         <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6">
           Why Join a Student Club?
         </h3>
 
-        <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
+        {/* Desktop view - all polygons in one row */}
+        <div className="hidden lg:flex flex-row justify-center items-center container mx-auto">
           {clubs.map((club, index) => (
             <div
               key={index}
-              className={`relative md:px-6 sm:px-6 text-white text-sm sm:text-base font-medium ${
+              className={`relative px-10 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[220px] overflow-hidden ${
+              } flex items-center justify-center text-center w-full  h-[200px] overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{
@@ -80,34 +85,49 @@ const StudentClubs = () => {
                   "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
               }}
             >
-              <span className="px-6 md:line-clamp-7 ">{club.text}</span>
+              <span className="px-6 md:line-clamp-7">{club.text}</span>
             </div>
           ))}
         </div>
 
-        <div className="block md:hidden">
-          <Slider {...sliderSettings}>
+        {/* Tablet / iPad view (2 per slide) */}
+        <div className="hidden md:block lg:hidden container mx-auto">
+          <Slider {...tabletSlider}>
             {clubs.map((club, index) => (
-              <div key={index}>
+              <div key={index} className="">
                 <div
-                  className={`relative text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[180px] overflow-hidden`}
+                  className={`relative px-10  text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
                   style={{
                     clipPath:
                       "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
                   }}
                 >
-                  <span className="px-20">{club.text}</span>
+                  <span className="line-clamp-7 px-6 ">{club.text}</span>
                 </div>
               </div>
             ))}
           </Slider>
         </div>
 
-        <p className="mt-8 max-w-4xl mx-auto leading-relaxed">
-          From business and debate to theatre and social outreach, each club is
-          led by students with faculty mentorship, encouraging independent
-          thinking, accountability, and purpose-driven engagement.
-        </p>
+        {/* Mobile view (1 per slide) */}
+        <div className="block md:hidden">
+          <Slider {...mobileSlider}>
+            {clubs.map((club, index) => (
+              <div key={index} className="">
+                <div
+                  className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                  style={{
+                    clipPath:
+                      "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                  }}
+                >
+                  <span className="line-clamp-7 px-6">{club.text}</span>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
       </div>
     </>
   )

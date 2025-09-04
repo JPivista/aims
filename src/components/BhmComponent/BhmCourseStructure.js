@@ -101,7 +101,10 @@ const sampleCourseData = [
         key: "semester-5",
         label: "SEMESTER 5",
         courses: [
-          { type: "subheading", text: "Industrial Exposure Training (20 Weeks):" },
+          {
+            type: "subheading",
+            text: "Industrial Exposure Training (20 Weeks):",
+          },
           "Log Book",
           "Viva & Presentation",
           "Industrial Training Report",
@@ -117,7 +120,7 @@ const sampleCourseData = [
           "Rooms Division Management",
           "Travel and Tourism Management",
           " Hotel Finance and Accounting",
-        
+
           { type: "subheading", text: "Practical" },
           "Specialisation (Electives) -",
           " - Culinary Management",
@@ -126,7 +129,6 @@ const sampleCourseData = [
           "- Accommodation Management",
           "Bakery and Pastry Arts Practical",
           "Information Technology in Hotels Practical’s",
-       
         ],
       },
     ],
@@ -147,9 +149,6 @@ const sampleCourseData = [
           "Marketing for Hospitality Services & Products.",
           "Creative Design in Hospitality",
           "Project Work –Entrepreneurship Development",
-       
-         
-        
         ],
       },
       {
@@ -161,7 +160,6 @@ const sampleCourseData = [
           "Log Book",
           "Specialization Research Paper",
           "Viva Voice & Presentation",
-      
         ],
       },
     ],
@@ -170,11 +168,11 @@ const sampleCourseData = [
 
 const BhmCourseStructure = () => {
   return (
-    <div className="py-10 bg-white">
+    <div className="py-10 bg-white px-4 lg:px-8">
       <div className="container mx-auto ">
         <div>
-          <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 px-4 lg:px-0">
-            BHM Program <br />
+          <h3 className="text-[#A22877] text-2xl lg:text-3xl font-serif mb-2 ">
+            <span className="italic playfair-400">BHM Program</span> <br />
             <span className="text-[#0C2165] playfair-400">
               Course Structure
             </span>

@@ -4,7 +4,8 @@ import Image from "next/image"
 
 const ReadytoGet = () => {
   return (
-    <section className="bg-[#A43177] text-white px-4 py-16">
+    <>
+    <div className="bg-[#A43177] text-white px-4 lg:px-8 py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Content */}
         <div className="md:w-2/3">
@@ -30,7 +31,8 @@ const ReadytoGet = () => {
                />
              </div>
       </div>
-    </section>
+    </div>
+    </>
   )
 }
 

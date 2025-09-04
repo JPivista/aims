@@ -1522,8 +1522,8 @@ const PatentsTimeline = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Light Green Header Strip */}
-      <div className="bg-[#E1F9F4] py-10">
-        <div className="container mx-auto px-4 ">
+      <div className="bg-[#E1F9F4] py-10 px-4 lg:px-8">
+        <div className="container mx-auto  ">
           <div className="bg-[#e6f9f3] text-center">
             <p className="text-sm md:text-base  max-w-4xl mx-auto">
               At AIMS Institutes, rankings aren&#39;t the destination,
@@ -1552,8 +1552,8 @@ const PatentsTimeline = () => {
       </div>
 
       {/* Main Content Area - Single Column Timeline */}
-      <div className="bg-white py-10">
-        <div className="container mx-auto px-4 ">
+      <div className="bg-white py-10 px-4 lg:px-8">
+        <div className="container mx-auto ">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Vertical Timeline Line */}

@@ -75,51 +75,54 @@ const Overview = () => {
     },
   ]
   return (
-    <div className="py-16" style={{ backgroundColor: "#FFE0E9" }}>
-      <div className="container mx-auto px-6 lg:px-8 flex flex-col gap-10">
-        {/* BBA Aviation Program overview */}
-        <div className=" items-center justify-between grid grid-cols-1 md:grid-cols-2">
-          <h3 className="text-[#0C2165]">
-            <span className="italic text-[#A22877] playfair-300">
-              BHM Program
-            </span>
-            <br />
-            Overview
-          </h3>
-          <p>
-            This program is tailored for those who want to enter the hospitality
-            world with an edge. From culinary arts and front office to
-            marketing, entrepreneurship, and sustainability, our curriculum
-            prepares you for a lifelong career in the service economy.
-          </p>
-        </div>
-
-        {/* Recognition timeline */}
-        <div>
-          {/* Desktop & Tablet Image */}
-          <div className="hidden md:flex justify-center">
-            <Image
-              src="/bhm-img/overview-img_converted.webp"
-              alt="Bhm Aviation Program Overview Desktop"
-              width={1000}
-              height={600}
-              className="object-contain"
-            />
+    <div className="py-10" style={{ backgroundColor: "#FFE0E9" }}>
+      <div className="px-4 lg:px-8">
+        <div className="container mx-auto  flex flex-col gap-10">
+          {/* BBA Aviation Program overview */}
+          <div className=" items-center justify-between grid grid-cols-1 md:grid-cols-2">
+            <h3 className="text-[#0C2165]">
+              <span className="italic text-[#A22877] playfair-300">
+                BHM Program
+              </span>
+              <br />
+              Overview
+            </h3>
+            <p>
+              This program is tailored for those who want to enter the
+              hospitality world with an edge. From culinary arts and front
+              office to marketing, entrepreneurship, and sustainability, our
+              curriculum prepares you for a lifelong career in the service
+              economy.
+            </p>
           </div>
-          {/* Mobile Image */}
-          <div className="flex justify-center md:hidden">
-            <Image
-              src="/bhm-img/BHM-mobiles.svg"
-              alt="Bhm Aviation Program Overview Mobile"
-              width={500}
-              height={300}
-              className="object-contain"
-            />
-          </div>
-        </div>
 
-        {/* Buttons */}
-        <BhmOverviewTabs tabs={tabData} />
+          {/* Recognition timeline */}
+          <div>
+            {/* Desktop & Tablet Image */}
+            <div className="hidden md:flex justify-center">
+              <Image
+                src="/bhm-img/overview-img_converted.webp"
+                alt="Bhm Aviation Program Overview Desktop"
+                width={1000}
+                height={600}
+                className="object-contain"
+              />
+            </div>
+            {/* Mobile Image */}
+            <div className="flex justify-center md:hidden">
+              <Image
+                src="/bhm-img/BHM-mobiles.svg"
+                alt="Bhm Aviation Program Overview Mobile"
+                width={500}
+                height={300}
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Buttons */}
+          <BhmOverviewTabs tabs={tabData} />
+        </div>
       </div>
     </div>
   )

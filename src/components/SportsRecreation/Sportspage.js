@@ -24,16 +24,28 @@ const Sportspage = () => {
     },
   ]
 
-  const sliderSettings = {
+  const mobileSlider = {
     dots: true,
     arrows: false,
-    infinite: true, // 👈 loop enabled
-    autoplay: true, // 👈 optional (auto slide)
-    autoplaySpeed: 3000, // 👈 optional speed
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   }
+
+  const tabletSlider = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 2, // ✅ 2 polygons in one row for iPad
+    slidesToScroll: 1,
+  }
+
 
   return (
     <>
@@ -62,14 +74,14 @@ const Sportspage = () => {
           Why Sports Matter at AIMS
         </h3>
 
-        {/* Tablet + Desktop view (≥768px) */}
-        <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
+        {/* Desktop view - all polygons in one row */}
+        <div className="hidden lg:flex flex-row justify-center items-center container mx-auto">
           {clubs.map((club, index) => (
             <div
               key={index}
-              className={`relative md:px-6 sm:px-6 text-white text-sm sm:text-base font-medium ${
+              className={`relative px-10 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[220px] overflow-hidden ${
+              } flex items-center justify-center text-center w-full  h-[200px] overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{
@@ -77,24 +89,43 @@ const Sportspage = () => {
                   "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
               }}
             >
-              <span className="px-6 md:line-clamp-7 ">{club.text}</span>
+              <span className="px-6 md:line-clamp-7">{club.text}</span>
             </div>
           ))}
         </div>
 
-        {/* Mobile only (<768px) */}
-        <div className="block md:hidden">
-          <Slider {...sliderSettings}>
+            {/* Tablet / iPad view (2 per slide) */}
+            <div className="hidden md:block lg:hidden container mx-auto">
+          <Slider {...tabletSlider}>
             {clubs.map((club, index) => (
-              <div key={index}>
+              <div key={index} className="">
                 <div
-                  className={`relative text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[180px] overflow-hidden`}
+                  className={`relative px-10  text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
                   style={{
                     clipPath:
                       "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
                   }}
                 >
-                  <span className="px-20">{club.text}</span>
+                  <span className="line-clamp-7 px-6 ">{club.text}</span>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+       {/* Mobile view (1 per slide) */}
+       <div className="block md:hidden">
+          <Slider {...mobileSlider}>
+            {clubs.map((club, index) => (
+              <div key={index} className="">
+                <div
+                  className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                  style={{
+                    clipPath:
+                      "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                  }}
+                >
+                  <span className="line-clamp-7 px-6">{club.text}</span>
                 </div>
               </div>
             ))}
@@ -102,7 +133,7 @@ const Sportspage = () => {
         </div>
 
         {/* Footer text */}
-        <p className="mt-8 max-w-4xl mx-auto leading-relaxed">
+        <p className="mt-8 max-w-4xl mx-auto leading-relaxed ">
           Sports at AIMS are not an add-on. They are part of our goal-oriented
           approach to education, where performance, perseverance, and
           participation go hand in hand.

@@ -22,7 +22,7 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
         ></div>
 
         {/* Bottom Content Container */}
-        <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
+        <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-8">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
               <div className="flex items-center">
@@ -38,8 +38,8 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
           </div>
         </div>
 
-        <div className="absolute top-5 left-0 right-0">
-          <div className="container mx-auto py-4 px-6 lg:px-4">
+        <div className="absolute top-5 left-0 right-0 px-4 lg:px-8">
+          <div className="container mx-auto py-4 ">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
               <div className="flex items-center">
                 <Image
