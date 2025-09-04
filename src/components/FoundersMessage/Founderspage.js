@@ -39,7 +39,7 @@ const messages = [
 
 const FoundersMessage = () => {
   return (
-    <section className="bg-white text-gray-800 py-10 px-4 lg:px-20">
+    <div className="bg-white text-gray-800 py-10 px-4 lg:px-20">
       <div className="space-y-16">
         {messages.map((msg, index) => (
           <div
@@ -94,7 +94,7 @@ const FoundersMessage = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   )
 }
 

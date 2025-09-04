@@ -99,8 +99,8 @@ const ScholarshipTable = () => {
           </p>
           <p>
             Whether you&apos;re an academic achiever, a future entrepreneur, a
-            sportsperson, or a creative thinker, there&apos;s a pathway here to make
-            your education more accessible and rewarding.
+            sportsperson, or a creative thinker, there&apos;s a pathway here to
+            make your education more accessible and rewarding.
           </p>
         </div>
 
@@ -124,67 +124,71 @@ const ScholarshipTable = () => {
           </h5>
         </div>
       </section>
+      <div className="lg:px-8">
+        <div className="container mx-auto p-6 mb-5">
+          <h2 className="text-center text-xl md:text-2xl font-bold mb-6 monser-500 ">
+            Your Dreams, Our Support: AIMS Scholarship Program
+          </h2>
 
+          <div className="overflow-x-auto">
+            <table className="min-w-full border border-gray-300">
+              <thead>
+                <tr className="bg-[#003366] text-white">
+                  <th className="p-3 border border-gray-300 text-center">
+                    Sl.No
+                  </th>
+                  <th className="p-3 border border-gray-300">Scholarship</th>
+                  <th className="p-3 border border-gray-300">Description</th>
+                  <th className="p-3 border border-gray-300 text-center">
+                    Slots Per Programme
+                  </th>
+                  <th className="p-3 border border-gray-300">Eligibility</th>
+                  <th className="p-3 border border-gray-300">
+                    Required Documents
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {scholarships.map((scholarship, index) => (
+                  <tr key={index} className="align-top">
+                    {/* Sl.No column - Teal background */}
+                    <td className="p-3 border border-gray-300 text-center bg-[#E0F9F4] font-medium">
+                      {scholarship.slno}
+                    </td>
 
-      
-      <div className="container mx-auto p-6 mb-5">
-      <h2 className="text-center text-xl md:text-2xl font-bold mb-6 monser-500 ">
-          Your Dreams, Our Support: AIMS Scholarship Program
-        </h2>
-        
-        <div className="overflow-x-auto">
-        <table className="min-w-full border border-gray-300">
-  <thead>
-    <tr className="bg-[#003366] text-white">
-      <th className="p-3 border border-gray-300 text-center">Sl.No</th>
-      <th className="p-3 border border-gray-300">Scholarship</th>
-      <th className="p-3 border border-gray-300">Description</th>
-      <th className="p-3 border border-gray-300 text-center">Slots Per Programme</th>
-      <th className="p-3 border border-gray-300">Eligibility</th>
-      <th className="p-3 border border-gray-300">Required Documents</th>
-    </tr>
-  </thead>
-  <tbody>
-    {scholarships.map((scholarship, index) => (
-      <tr key={index} className="align-top">
-        {/* Sl.No column - Teal background */}
-        <td className="p-3 border border-gray-300 text-center bg-[#E0F9F4] font-medium">
-          {scholarship.slno}
-        </td>
+                    {/* Scholarship Name */}
+                    <td className="p-3 border border-gray-300 font-medium">
+                      {scholarship.name}
+                    </td>
 
-        {/* Scholarship Name */}
-        <td className="p-3 border border-gray-300 font-medium">
-          {scholarship.name}
-        </td>
+                    {/* Description - Light gray */}
+                    <td className="p-3 border border-gray-300 bg-[#F3F3F3]">
+                      {scholarship.description}
+                    </td>
 
-        {/* Description - Light gray */}
-        <td className="p-3 border border-gray-300 bg-[#F3F3F3]">
-          {scholarship.description}
-        </td>
+                    {/* Slots Per Programme */}
+                    <td className="p-3 border border-gray-300 text-center">
+                      {scholarship.slots}
+                    </td>
 
-        {/* Slots Per Programme */}
-        <td className="p-3 border border-gray-300 text-center">
-          {scholarship.slots}
-        </td>
+                    {/* Eligibility - Light gray */}
+                    <td className="p-3 border border-gray-300 bg-[#F3F3F3]">
+                      {scholarship.eligibility}
+                    </td>
 
-        {/* Eligibility - Light gray */}
-        <td className="p-3 border border-gray-300 bg-[#F3F3F3]">
-          {scholarship.eligibility}
-        </td>
-
-        {/* Required Documents - bullet list */}
-        <td className="p-3 border border-gray-300">
-          <ul className="list-disc list-inside space-y-1 text-sm">
-            {scholarship.documents.map((doc, idx) => (
-              <li key={idx}>{doc}</li>
-            ))}
-          </ul>
-        </td>
-      </tr>
-    ))}
-  </tbody>
-</table>
-
+                    {/* Required Documents - bullet list */}
+                    <td className="p-3 border border-gray-300">
+                      <ul className="list-disc list-inside space-y-1 text-sm">
+                        {scholarship.documents.map((doc, idx) => (
+                          <li key={idx}>{doc}</li>
+                        ))}
+                      </ul>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </>

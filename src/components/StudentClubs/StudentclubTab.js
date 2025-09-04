@@ -94,7 +94,7 @@ const StudentclubTab = () => {
 
   return (
     <>
-      <div className="justify-center items-center pb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden">
+      <div className="justify-center items-center pb-10 flex flex-col lg:px-8 px-4 relative overflow-hidden">
         <div className="container mx-auto">
           <div className="flex flex-col lg:px-0 px-4 bg-transparent relative z-10">
             {/* Header Section */}

@@ -32,52 +32,55 @@ const SoSwiss = () => {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-10">
-    <h3 className="text-center t playfair-300 text-[#0C2165] ">
-      Swiss International
-    </h3>
-  
-    <div>
-      {courses.map((course, index) => (
-        <div key={course.id}>
-          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-14">
-            {/* Image */}
-            <div className="flex rounded-full overflow-hidden">
-              <Image
-                src={course.image}
-                alt={course.title}
-                width={240}
-                height={240}
-                className="object-cover lg:w-60 lg:h-full"
-              />
-            </div>
-  
-            {/* Content */}
-            <div className="text-center lg:text-left lg:flex-1 flex flex-col justify-center items-center lg:items-start">
-              <h4 className="text-xl lg:text-[24px] font-bold text-[#000000] monser-600 mb-3">
-                {course.title}
-              </h4>
-              <p
-                className="text-gray-700 mb-6 leading-relaxed"
-                dangerouslySetInnerHTML={{
-                  __html: course.description,
-                }}
-              />
-              <Link href={course.link}>
-                <Button variant="primary">Explore Now</Button>
-              </Link>
-            </div>
+    <>
+      <div className="px-4 lg:px-8">
+        <div className="container mx-auto py-10">
+          <h3 className="text-center t playfair-300 text-[#0C2165] ">
+            Swiss International
+          </h3>
+
+          <div>
+            {courses.map((course, index) => (
+              <div key={course.id}>
+                <div className="flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-14">
+                  {/* Image */}
+                  <div className="flex rounded-full overflow-hidden">
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      width={240}
+                      height={240}
+                      className="object-cover lg:w-60 lg:h-full"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center lg:text-left lg:flex-1 flex flex-col justify-center items-center lg:items-start">
+                    <h4 className="text-xl lg:text-[24px] font-bold text-[#000000] monser-600 mb-3">
+                      {course.title}
+                    </h4>
+                    <p
+                      className="text-gray-700 mb-6 leading-relaxed"
+                      dangerouslySetInnerHTML={{
+                        __html: course.description,
+                      }}
+                    />
+                    <Link href={course.link}>
+                      <Button variant="primary">Explore Now</Button>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                {index !== courses.length - 1 && (
+                  <hr className="my-8 border-gray-300" />
+                )}
+              </div>
+            ))}
           </div>
-  
-          {/* Divider */}
-          {index !== courses.length - 1 && (
-            <hr className="my-8 border-gray-300" />
-          )}
         </div>
-      ))}
-    </div>
-  </div>
-  
+      </div>
+    </>
   )
 }
 

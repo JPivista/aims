@@ -28,92 +28,126 @@ const EventsFestspage = () => {
     },
   ]
 
-  const sliderSettings = {
+  const mobileSlider = {
     dots: true,
     arrows: false,
-    infinite: true, // loop
-    autoplay: true, // auto scroll
-    autoplaySpeed: 3000, // speed
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   }
 
+  const tabletSlider = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 2, // ✅ 2 polygons in one row for iPad
+    slidesToScroll: 1,
+  }
+
   return (
     <>
-      <div className="text-center px-4 bg-white container mx-auto">
-        <h3 className="text-[#0C2165] playfair-300 pt-8">
-          Celebrate Growth, Showcase Talent.
-        </h3>
+      <div className="px-4 lg:px-8">
+        <div className="text-center px-4 bg-white container mx-auto">
+          <h3 className="text-[#0C2165] playfair-300 pt-8">
+            Celebrate Growth, Showcase Talent.
+          </h3>
 
-        <p className="max-w-5xl mx-auto pt-5">
-          At AIMS Institutes, events and fests are more than celebrations, they
-          are opportunities to{" "}
-          <span className="monser-500 font-bold text-black">
-            learn, lead, and collaborate.
-          </span>{" "}
-          From business conclaves and cultural festivals to innovation expos and
-          alumni meets, every gathering on campus is designed to sharpen skills,
-          spark creativity, and build lasting connections.
-        </p>
+          <p className="max-w-5xl mx-auto pt-5">
+            At AIMS Institutes, events and fests are more than celebrations,
+            they are opportunities to{" "}
+            <span className="monser-500 font-bold text-black">
+              learn, lead, and collaborate.
+            </span>{" "}
+            From business conclaves and cultural festivals to innovation expos
+            and alumni meets, every gathering on campus is designed to sharpen
+            skills, spark creativity, and build lasting connections.
+          </p>
 
-        <p className="max-w-5xl mx-auto pt-5">
-          Whether you&apos;re studying at a top business school in Bangalore or
-          pursuing a hospitality degree from one of Karnataka&apos;s most reputed
-          institutes, there&apos;s a stage for every AIMer to shine.
-        </p>
-      </div>
-
-      <div className="px-4 py-12 text-center">
-        {/* Heading */}
-        <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6">
-          What Makes Our Events Special?
-        </h3>
-
-        {/* Tablet + Desktop view (≥768px) */}
-        <div className="hidden md:flex flex-row justify-center items-center container mx-auto">
-          {clubs.map((club, index) => (
-            <div
-              key={index}
-              className={`relative md:px-6 sm:px-6 text-white text-sm sm:text-base font-medium ${
-                club.gradient
-              } flex items-center justify-center text-center w-full container mx-auto h-[220px] overflow-hidden ${
-                index !== 0 ? "-ml-9" : ""
-              }`}
-              style={{
-                clipPath:
-                  "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
-              }}
-            >
-              <span className="px-6 md:line-clamp-7 ">{club.text}</span>
-            </div>
-          ))}
+          <p className="max-w-5xl mx-auto pt-5">
+            Whether you&apos;re studying at a top business school in Bangalore
+            or pursuing a hospitality degree from one of Karnataka&apos;s most
+            reputed institutes, there&apos;s a stage for every AIMer to shine.
+          </p>
         </div>
+      </div>
+      <div className="px-4 lg:px-8">
+        <div className=" py-12 text-center">
+          {/* Heading */}
+          <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6">
+            What Makes Our Events Special?
+          </h3>
 
-        {/* Mobile only (<768px) */}
-        <div className="block md:hidden">
-          <Slider {...sliderSettings}>
+          {/* Desktop view - all polygons in one row */}
+          <div className="hidden lg:flex flex-row justify-center items-center container mx-auto">
             {clubs.map((club, index) => (
-              <div key={index}>
-                <div
-                  className={`relative text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[180px] overflow-hidden`}
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
-                  }}
-                >
-                  <span className="px-20">{club.text}</span>
-                </div>
+              <div
+                key={index}
+                className={`relative px-10 text-white text-sm sm:text-base font-medium ${
+                  club.gradient
+                } flex items-center justify-center text-center w-full  h-[200px] overflow-hidden ${
+                  index !== 0 ? "-ml-9" : ""
+                }`}
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                }}
+              >
+                <span className="px-2 md:line-clamp-9">{club.text}</span>
               </div>
             ))}
-          </Slider>
-        </div>
+          </div>
 
-        {/* Footer text */}
-        <p className="mt-8 max-w-4xl mx-auto leading-relaxed">
-          Our calendar is packed with opportunities that mirror the professional
-          world, blending rigour with celebration, competition with learning.
-        </p>
+          {/* Tablet / iPad view (2 per slide) */}
+          <div className="hidden md:block lg:hidden container mx-auto">
+            <Slider {...tabletSlider}>
+              {clubs.map((club, index) => (
+                <div key={index} className="">
+                  <div
+                    className={`relative px-10  text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                    }}
+                  >
+                    <span className="line-clamp-8 px-6 ">{club.text}</span>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Mobile view (1 per slide) */}
+          <div className="block md:hidden">
+            <Slider {...mobileSlider}>
+              {clubs.map((club, index) => (
+                <div key={index} className="">
+                  <div
+                    className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                    }}
+                  >
+                    <span className="line-clamp-7 px-6">{club.text}</span>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Footer text */}
+          <p className="mt-8 max-w-4xl mx-auto leading-relaxed">
+            Our calendar is packed with opportunities that mirror the
+            professional world, blending rigour with celebration, competition
+            with learning.
+          </p>
+        </div>
       </div>
     </>
   )

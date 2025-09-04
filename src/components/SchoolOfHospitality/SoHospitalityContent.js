@@ -22,22 +22,24 @@ const SoHospitalityContent = () => {
             <br />
             Master the Art of Service.
           </h3>
-          <div className="container mx-auto ">
-            <div className=" text-center ">
-              <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400 pb-5">
-                At AIMS, we don’t just teach hospitality, we train you to lead
-                it. Whether your sights are set on luxury hotels, global
-                kitchens, or entrepreneurial ventures, our programs help you
-                sharpen your skills, expand your horizons and hit your career
-                targets with confidence.
-              </p>
+          <div className=" lg:px-8">
+            <div className="container mx-auto ">
+              <div className=" text-center ">
+                <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400 pb-5">
+                  At AIMS, we don’t just teach hospitality, we train you to lead
+                  it. Whether your sights are set on luxury hotels, global
+                  kitchens, or entrepreneurial ventures, our programs help you
+                  sharpen your skills, expand your horizons and hit your career
+                  targets with confidence.
+                </p>
 
-              <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400">
-                AIMS School of Hospitality & Tourism offers globally aligned,
-                hands-on programs backed by industry access. It is a member of
-                EUHOFA and a partner of HOSCO, connecting students to top
-                employers and international opportunities.
-              </p>
+                <p className="text-sm md:text-base  max-w-4xl mx-auto monser-400">
+                  AIMS School of Hospitality & Tourism offers globally aligned,
+                  hands-on programs backed by industry access. It is a member of
+                  EUHOFA and a partner of HOSCO, connecting students to top
+                  employers and international opportunities.
+                </p>
+              </div>
             </div>
           </div>
         </div>
