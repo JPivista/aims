@@ -8,12 +8,10 @@ import SchoolOfLiberalArtsAndSciences from "./SchoolOfLiberalArtsAndSciences"
 import PartTimeFaculty from "./PartTimeFaculty"
 import LibraryAndPhysicalEducation from "./LibraryAndPhysicalEducation"
 import SchoolOfHospitalityAndTourism from "./SchoolOfHospitalityAndTourism"
-import Breadcrumbs from "../shared/Breadcrumbs"
 const FacultyMemberDetails = () => {
   return (
     <div className="w-full">
       <HeroBanner />
-      <Breadcrumbs />
       <MeetTheFaculty />
       <div className="w-full">
         <SchoolOfBusiness />

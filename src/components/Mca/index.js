@@ -7,13 +7,11 @@ import McaStudentLead from './McaStudentLead'
 import Companies from '../shared/Companies/Companies'
 import McaCourseStructure from './McaCourseStructure'
 import McaAlumni from './McaAlumni'
-import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <>
             <HeroBannerMca />
-            <Breadcrumbs />
             <McaContent />
             <McaProgramOverview />
             <McaValueAddedProgramsProps />

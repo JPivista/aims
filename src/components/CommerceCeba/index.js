@@ -5,12 +5,10 @@ import TabSection from './TabSection'
 import Facilities from './Facilities'
 import AlumniSpeak from './AlumniSpeak'
 import AdvantagesOfChoosingEbac from './AdvantagesOfChoosingEbac'
-import Breadcrumbs from '../shared/Breadcrumbs'
 const index = () => {
     return (
         <div>
             <Banner />
-            <Breadcrumbs /> 
             <SetYourSights />
             <AdvantagesOfChoosingEbac />
             <TabSection />

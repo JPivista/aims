@@ -5,14 +5,12 @@ import GeneralInstructions from "./GeneralInstructions"
 import AdmissionTabsSection from "./AdmissionTabsSection"
 import AimAheadSection from "./AimAheadSection"
 import ReadyToDraw from "../shared/ReadyToDraw"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const AdmissionProcess = () => {
   return (
     <>
       <div className="w-full overflow-x-hidden">
         <HeroBanner />
-        <Breadcrumbs />
         <HowToApply />
         <GeneralInstructions />
         <AdmissionTabsSection />

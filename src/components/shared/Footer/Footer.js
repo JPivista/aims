@@ -82,7 +82,7 @@ export default function Footer() {
           <div className="hidden lg:grid grid-cols-5 gap-4">
             {footerSections.map((section) => (
               <div key={section.id}>
-                <h6 className="font-semibold text-xl lg:text-2xl">{section.title}</h6>
+                <h6 className="font-semibold text-xl lg:text-2xl pb-4">{section.title}</h6>
                 <ul className="space-y-2 text-sm">
                   {section.links.map((link, index) => (
                     <li key={index}>

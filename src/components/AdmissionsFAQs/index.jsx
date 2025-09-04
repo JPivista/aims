@@ -1,7 +1,6 @@
 import React from "react"
 import Banner from "./Banner"
 import FAQSection from "./FAQSection"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const AdmissionsFAQs = () => {
   return (
@@ -11,7 +10,6 @@ const AdmissionsFAQs = () => {
         style={{ scrollBehavior: "auto" }}
       >
         <Banner />
-        <Breadcrumbs />
         <FAQSection />
       </div>
     </>

@@ -7,13 +7,11 @@ import ResearchCommitteesCards from './ResearchCommitteesCards'
 import OurTrackRecord from './OurTrackRecord'
 import IcssrFunded from './IcssrFunded'
 import StudentSupport from './StudentSupport'
-import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <div>
             <Banner />
-            <Breadcrumbs />
             <ChooseYourGoal />
             <StructuredSupport />
             <OurResearchCommittees />

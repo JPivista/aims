@@ -9,13 +9,11 @@ import BcomCourseStructure from './BcomCourseStructure'
 import BcomPlus from './BcomPlus'
 import CareerOpportunities from './CareerOpportunities'
 import BcomAlumni from './BcomAlumni'
-import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <>
             <HeroBannerBcom />
-            <Breadcrumbs />
             <BcomContent />
             <BcomProgramOverview />
             <ValueAddedProgramsProps />

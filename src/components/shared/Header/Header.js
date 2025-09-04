@@ -12,6 +12,7 @@ import {
 import Button from "@/shared/Button";
 import { MenuItems } from "@/utils/MenuItems";
 import Link from "next/link";
+import Breadcrumbs from "../Breadcrumbs";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -284,11 +285,13 @@ export default function Header() {
         </AnimatePresence>
       </header>
 
+      {/* Breadcrumbs positioned outside header */}
+      <Breadcrumbs />
+
       {/* Content spacer that smoothly adjusts when header becomes sticky */}
       <div
         className={`w-full ${isSticky ? "h-[10vh] md:h-[17vh]" : "h-0"}`}
       />
-
     </>
   );
 }

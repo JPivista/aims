@@ -5,12 +5,10 @@ import WhatYouFind from "./WhatYouFind";
 import ServicesOffered from "./ServicesOffered";
 import Resources from "./Resources";
 import QuickLinks from "./QuickLinks";
-import Breadcrumbs from "../shared/Breadcrumbs";
 const index = () => {
   return (
     <div>
       <Banner />
-      <Breadcrumbs />
       <AcademicHub />
       <WhatYouFind />
       <ServicesOffered />

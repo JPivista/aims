@@ -3,13 +3,11 @@ import HeroBanner from "./HeroBanner"
 import Aiming from "./Aiming"
 import WhyItMatters from "./WhyItMatters"
 import Activities from "./Activities"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const CenterForStudentDev = ({ announcements }) => {
   return (
     <div className="w-full overflow-x-hidden">
       <HeroBanner announcements={announcements} />
-      <Breadcrumbs />
       <Aiming />
       <Activities />
       <WhyItMatters />

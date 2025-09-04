@@ -5,13 +5,11 @@ import AeecOffers from './AeecOffers'
 import EceGoals from './EceGoals'
 import EmpoweringWomen from './EmpoweringWomen'
 import Achievements from './Achievements'
-import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <>
             <HeroBannerEce />
-            <Breadcrumbs />
             <EceContent />
             <AeecOffers />
             <EceGoals />

@@ -7,13 +7,11 @@ import PracticalSkills from "./PracticalSkills"
 import ReadyToDraw from "../shared/ReadyToDraw"
 import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
 import CourseStructure from "../shared/BBA-MBA-BBA-Aviation/CourseStructure"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const index = () => {
   return (
     <div className="w-full">
       <HeroBanner />
-      <Breadcrumbs />
       <WhyChoose />
       <Overview />
       <ValueAddedPrograms programKey="mba" />

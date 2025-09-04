@@ -7,13 +7,11 @@ import CourseStructure from "../shared/BBA-MBA-BBA-Aviation/CourseStructure"
 import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
 import ReadyToDraw from "../shared/ReadyToDraw"
 import Ambitions from "./Ambitions"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const BbaAviationComponents = ({ announcements }) => {
   return (
     <div className="w-full">
       <HeroBanner announcements={announcements} />
-      <Breadcrumbs />
       <WhyChoose />
       <Overview />
       <ValueAddedPrograms programKey="bba-aviation" />

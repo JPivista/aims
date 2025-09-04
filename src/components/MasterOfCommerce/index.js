@@ -6,13 +6,11 @@ import ValueAddedPrograms from './ValueAddedPrograms'
 import McomStudentLead from './McomStudentLead'
 import Companies from '../shared/Companies/Companies'
 import McomCourseStructure from './McomCourseStructure'
-import Breadcrumbs from '../shared/Breadcrumbs'
 
 const index = () => {
     return (
         <>
             <HeroBannerMcom />
-            <Breadcrumbs />
             <McomContent />
             <McomProgramOverview />
             <ValueAddedPrograms />

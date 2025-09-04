@@ -9,16 +9,20 @@ const Breadcrumbs = () => {
   const pathname = usePathname()
   const [isVisible, setIsVisible] = useState(false)
 
-  // Show breadcrumbs after scrolling 20% of viewport height
+  // Show breadcrumbs after scrolling 100px (but not on home page)
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = window.innerHeight * 0.2;
-      setIsVisible(window.scrollY > threshold);
+      const threshold = 100; // 100px scroll threshold
+      const shouldShow = window.scrollY > threshold && pathname !== '/';
+      setIsVisible(shouldShow);
     };
+
+    // Check initial state
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   // Function to handle home link click and ensure scroll to top
   const handleHomeClick = () => {
@@ -32,7 +36,8 @@ const Breadcrumbs = () => {
   const generateBreadcrumbs = () => {
     const pathSegments = pathname.split("/").filter((segment) => segment !== "")
 
-    if (pathSegments.length === 0) return []
+    // Don't show breadcrumbs on home page
+    if (pathSegments.length === 0 || pathname === '/') return []
 
     // Special case for Eresources page
     if (pathname.includes("eresources")) {
@@ -76,8 +81,11 @@ const Breadcrumbs = () => {
 
   return (
     <>
+      {/* Spacer div that only appears when breadcrumbs are visible */}
+      <div className={`w-full transition-all duration-300 ${isVisible ? 'h-12' : 'h-0'}`} />
+
       <div className="">
-        <nav className={`bg-white shadow-sm border-b border-gray-100 px-4 lg:px-8 sticky lg:top-[17vh] top-[10vh] z-40 transition-all duration-300 ${isVisible ? 'opacity-100 h-auto' : 'opacity-0 h-0 pointer-events-none overflow-hidden border-0'}`}>
+        <nav className={`bg-white shadow-sm border-b border-gray-100 px-4 lg:px-8 fixed top-[10vh] lg:top-[17vh] left-0 right-0 z-40 transition-all duration-300 ${isVisible ? 'opacity-100 h-auto' : 'opacity-0 h-0 pointer-events-none overflow-hidden border-0'}`}>
           <div className="max-w-screen-xl lg:max-w-screen-2xl mx-auto px-4 lg:px-0">
             <div className="flex items-center space-x-2 py-3 overflow-x-auto scrollbar-hide">
               {/* Mobile scroll indicator */}

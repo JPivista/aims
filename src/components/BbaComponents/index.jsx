@@ -7,13 +7,11 @@ import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedProgram
 import Companies from "../shared/Companies"
 import ReadyToDraw from "../shared/ReadyToDraw"
 import Ambitions from "./Ambitions"
-import Breadcrumbs from "../shared/Breadcrumbs"
 
 const BbaComponents = ({ announcements }) => {
   return (
     <>
       <HeroBanner announcements={announcements} />
-      <Breadcrumbs />
       <WhyChoose />
       <Overview />
       <ValueAddedPrograms programKey="bba" />

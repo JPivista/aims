@@ -9,14 +9,12 @@ import MeetOurResearchGuides from "./MeetOurResearchGuides"
 import OurAwardedScholars from "./OurAwardedScholars"
 import PursuingScholars from "./PursuingScholars"
 import WhatOurScholarsSay from "./WhatOurScholarsSay"
-import Breadcrumbs from "../shared/Breadcrumbs/Breadcrumbs"
 
 
 const index = () => {
   return (
     <div>
       <Banner />
-      <Breadcrumbs />
       <RecognisedResearchCentre />
       <WhyChooseAims />
       <PhdProgramOverview />
