@@ -4,7 +4,7 @@ import Image from 'next/image'
 const SoFinanceContent = () => {
     return (
         <>
-            <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 bg-[#FDE9E9] relative overflow-hidden'>
+            <div className='justify-center items-center py-10 flex flex-col lg:px-8 px-4 bg-[#FDE9E9] relative overflow-hidden'>
                 {/* Background SVG */}
                 <div className='absolute md:-top-1/3 right-0 md:block hidden'>
                     <Image

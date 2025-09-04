@@ -23,14 +23,11 @@ const BcaPlus = () => {
                                     BCA+
                                 </h3>
                                 <h5 className='text-black monser-600 mb-3 text-xl'>
-                                    AI/ML | Data Science |
-                                    <br className='md:block hidden' />
-                                    Full-Stack Development
+                                    AI/ML | Data Science | <br className='md:block hidden' /> Full-stack Development
                                 </h5>
                                 <p className='text-black'>
-                                    Hands-on training available in AI/ML, Data Science, and
-                                    <br className='md:block hidden' />
-                                    Full-Stack Development for interested BCA students.
+                                    Hands-on training available in AI/ML, Data Science, and <br className='md:block hidden' />
+                                    Full-stack Development for interested BCA students.
                                 </p>
                             </div>
                         </div>

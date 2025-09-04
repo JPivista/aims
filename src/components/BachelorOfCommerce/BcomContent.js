@@ -28,13 +28,13 @@ const BcomContent = () => {
                     />
                 </div>
 
-                <div className=' justify-center mb-10 md:hidden flex text-center'>
+                <div className='justify-center mb-10 md:hidden flex text-center'>
                     <Image
                         src="/bcom/bcom-at-aims-mobile.svg"
                         alt="M.Com at AIMS"
                         width={800}
                         height={400}
-                        className="object-contain w-[70%]"
+                        className="object-contain w-[95%]"
                     />
                 </div>
             </div>

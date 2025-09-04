@@ -26,7 +26,7 @@ const StudentLeadSection = ({
   return (
     <>
       <div
-        className="relative w-full lg:h-[75vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat"
+        className="relative w-full lg:h-[75vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat px-4 lg:px-8"
         style={{
           backgroundImage: `url(${mobileImage})`,
         }}
@@ -48,7 +48,7 @@ const StudentLeadSection = ({
 
         {/* Top Content Container */}
         <div className="relative z-10 h-full flex flex-col md:items-start items-center md:justify-center justify-end py-6">
-          <div className="container mx-auto py-4 px-6 lg:px-8">
+          <div className="container mx-auto py-4">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-10">
               <div className="col-span-1 md:col-span-2">
                 <h3 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 text-center md:text-left">

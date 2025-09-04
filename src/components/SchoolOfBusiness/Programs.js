@@ -101,73 +101,75 @@ const Programs = () => {
                 </div>
             </section>
 
-            <div className="container mx-auto px-4 relative z-10">
-                {/* Postgraduate Program Section */}
-                <section className="mt-10">
-                    <h3 className="text-center text-[#0C2165]">
-                        Postgraduate Program
-                    </h3>
+            <div className="px-4 lg:px-8">
+                <div className="container mx-auto px-4 relative z-10">
+                    {/* Postgraduate Program Section */}
+                    <section className="mt-10">
+                        <h3 className="text-center text-[#0C2165]">
+                            Postgraduate Program
+                        </h3>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div className="lg:order-1 order-2 md:p-8 p-4">
-                            <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
-                                {postgraduateProgram.title}
-                            </h4>
-                            <p
-                                className="text-gray-700 text-left mb-6 leading-relaxed"
-                                dangerouslySetInnerHTML={{ __html: postgraduateProgram.description }}
-                            />
-                            <Link href={postgraduateProgram.link}>
-                                <Button variant="primary" className="text-left">
-                                    Explore Now
-                                </Button>
-                            </Link>
-                        </div>
-                        <div className="lg:order-2 order-1 relative md:h-[400px] h-52">
-                            <Image
-                                src={postgraduateProgram.image}
-                                alt={postgraduateProgram.title}
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-                </section>
-
-                {/* Undergraduate Programs Section */}
-                <section className="mt-10">
-                    <h3 className="text-center text-[#0C2165]">
-                        Undergraduate Programs
-                    </h3>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        {undergraduatePrograms.map((program) => (
-                            <div key={program.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                <div className="relative md:h-[400px] h-52">
-                                    <Image
-                                        src={program.image}
-                                        alt={program.title}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                                <div className="md:p-8 p-4">
-                                    <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
-                                        {program.title}
-                                    </h4>
-                                    <p className="text-gray-700 text-left mb-6 leading-relaxed">
-                                        {program.description}
-                                    </p>
-                                    <Link href={program.link}>
-                                        <Button variant="primary" className="text-[12px] lg:text-[16px]">
-                                            Explore Now
-                                        </Button>
-                                    </Link>
-                                </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div className="lg:order-1 order-2 md:p-8 p-4">
+                                <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
+                                    {postgraduateProgram.title}
+                                </h4>
+                                <p
+                                    className="text-gray-700 text-left mb-6 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: postgraduateProgram.description }}
+                                />
+                                <Link href={postgraduateProgram.link}>
+                                    <Button variant="primary" className="text-left">
+                                        Explore Now
+                                    </Button>
+                                </Link>
                             </div>
-                        ))}
-                    </div>
-                </section>
+                            <div className="lg:order-2 order-1 relative md:h-[400px] h-52">
+                                <Image
+                                    src={postgraduateProgram.image}
+                                    alt={postgraduateProgram.title}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Undergraduate Programs Section */}
+                    <section className="mt-10">
+                        <h3 className="text-center text-[#0C2165]">
+                            Undergraduate Programs
+                        </h3>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            {undergraduatePrograms.map((program) => (
+                                <div key={program.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                                    <div className="relative md:h-[400px] h-52">
+                                        <Image
+                                            src={program.image}
+                                            alt={program.title}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <div className="md:p-8 p-4">
+                                        <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 mb-4 text-left">
+                                            {program.title}
+                                        </h4>
+                                        <p className="text-gray-700 text-left mb-6 leading-relaxed">
+                                            {program.description}
+                                        </p>
+                                        <Link href={program.link}>
+                                            <Button variant="primary" className="text-[12px] lg:text-[16px]">
+                                                Explore Now
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     )

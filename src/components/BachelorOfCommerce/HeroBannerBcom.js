@@ -6,7 +6,7 @@ import ApplicationMarquee from '@/shared/ApplicationMarquee'
 const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
     return (
         <>
-            <div className="relative w-full h-[100vh] md:h-[76vh] overflow-hidden">
+            <div className="relative w-full min-h-[95vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 {/* <div
                     className="absolute inset-0 z-10"

@@ -285,16 +285,10 @@ export default function Header() {
       </header>
 
       {/* Content spacer that smoothly adjusts when header becomes sticky */}
-      <motion.div
-        className="w-full"
-        style={{
-          height: isSticky ? "17vh" : "0px", // Fixed height to match header height
-        }}
-        transition={{
-          duration: 0.3, // Faster transition to prevent gap
-          ease: "ease-out",
-        }}
+      <div
+        className={`w-full ${isSticky ? "h-[10vh] md:h-[17vh]" : "h-0"}`}
       />
+
     </>
   );
 }

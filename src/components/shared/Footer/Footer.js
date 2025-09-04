@@ -76,23 +76,25 @@ export default function Footer() {
   return (
     <footer className="bg-[#0C2165] text-white">
       {/* Top Section - Navigation Links */}
-      <div className="container mx-auto py-10 px-4 lg:px-0">
-        {/* Desktop Grid */}
-        <div className="hidden lg:grid grid-cols-5 gap-4">
-          {footerSections.map((section) => (
-            <div key={section.id}>
-              <h6 className="font-semibold text-xl lg:text-2xl">{section.title}</h6>
-              <ul className="space-y-2 text-sm">
-                {section.links.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href} className="hover:text-gray-300 transition-colors">
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+      <div className="px-4 lg:px-8">
+        <div className="container mx-auto py-10">
+          {/* Desktop Grid */}
+          <div className="hidden lg:grid grid-cols-5 gap-4">
+            {footerSections.map((section) => (
+              <div key={section.id}>
+                <h6 className="font-semibold text-xl lg:text-2xl">{section.title}</h6>
+                <ul className="space-y-2 text-sm">
+                  {section.links.map((link, index) => (
+                    <li key={index}>
+                      <Link href={link.href} className="hover:text-gray-300 transition-colors">
+                        {link.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Mobile Collapsible Sections */}
@@ -132,8 +134,8 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Contact, Social, Newsletter */}
-      <div className="border-t border-b border-whtie">
-        <div className="container mx-auto px-4 lg:px-0">
+      <div className="border-t border-b border-whtie px-4 lg:px-8">
+        <div className="container mx-auto">
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
               {/* AIMS Institutes */}
@@ -197,8 +199,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section - Copyright */}
-      <div className="py-4 text-center text-sm">
-        <div className="container mx-auto px-4 lg:px-0">
+      <div className="py-4 text-center text-sm px-4 lg:px-8">
+        <div className="container mx-auto">
           <span>© AIMS Institutes {new Date().getFullYear()}</span>
           <Link href="/terms-conditions" className="ml-4 hover:underline transition-colors">Terms & Conditions</Link>
           <Link href="/privacy-policy" className="ml-4 hover:underline transition-colors">Privacy</Link>

@@ -46,7 +46,7 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-5 left-0 right-0 md:block hidden">
+                <div className="absolute top-5 left-0 right-0 ">
                     <div className="container mx-auto py-4 px-4 lg:px-0">
                         <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
@@ -60,7 +60,7 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-5 left-0 right-0 md:hidden block">
+                {/* <div className="absolute top-5 left-0 right-0 md:hidden block">
                     <div className="container mx-auto py-4 px-4 lg:px-0">
                         <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
@@ -73,7 +73,7 @@ const HeroBannerSoF = ({ announcements, pageType = 'engineering' }) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Application Announcements Marquee */}
