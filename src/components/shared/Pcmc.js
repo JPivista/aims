@@ -16,8 +16,8 @@ const TabbedInfoSection = ({
     const [activeTab, setActiveTab] = useState(firstTabKey);
 
     return (
-        <div className="relative overflow-hidden" style={style}>
-            <div className="container mx-auto pt-10 px-4">
+        <div className="relative overflow-hidden lg:px-8 px-4" style={style}>
+            <div className="container mx-auto pt-10">
                 {/* First Section */}
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-[90%] pr-6">

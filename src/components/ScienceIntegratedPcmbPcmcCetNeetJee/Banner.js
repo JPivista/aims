@@ -19,7 +19,7 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/banner.webp')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.webp')]" />
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/pcmc_desktop_banner.webp')] bg-[url('/pre-university-college/pcmc_mob_banner.webp')]" />
                 </div>
                 {/* Gradient Overlay */}
                 <div

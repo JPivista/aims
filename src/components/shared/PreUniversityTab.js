@@ -6,8 +6,8 @@ const PreUniversityTab = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className="py-16 bg-[#E1F9F4]">
-      <div className="container mx-auto px-4">
+    <div className="py-16 bg-[#E1F9F4] lg:px-8 px-4">
+      <div className="container mx-auto">
         <div className="mx-auto">
 
           {/* Buttons Row */}

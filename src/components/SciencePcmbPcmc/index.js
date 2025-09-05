@@ -5,7 +5,7 @@ import CommitteesCard from './CommitteesCard'
 import TabSection from './TabSection'
 import Facilities from './Facilities'
 import AlumniSpeak from './AlumniSpeak'
-
+import GetInvolvedSection from './GetInvolvedSection'
 const index = () => {
     return (
         <div>
@@ -15,6 +15,7 @@ const index = () => {
             <TabSection />
             <Facilities />
             <AlumniSpeak />
+            <GetInvolvedSection />
         </div>
     )
 }

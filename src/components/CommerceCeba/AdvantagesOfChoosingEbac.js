@@ -4,7 +4,9 @@ import Image from "next/image"
 
 const AdvantagesOfChoosingEbac = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-white container mx-auto py-10 px-4">
+    <>
+    <div className="lg:px-8 px-4">
+    <div className="flex flex-col md:flex-row items-center bg-white container mx-auto py-10">
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
         <h3 className="text-4xl font-bold text-[#531675] mb-6">
@@ -48,6 +50,8 @@ const AdvantagesOfChoosingEbac = () => {
         />
       </div>
     </div>
+    </div>
+    </>
   )
 }
 

@@ -195,7 +195,7 @@ const QuickLinks = () => {
               {/* Accordion Header */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center text-lg font-medium text-black cursor-pointer"
+                className="w-full flex justify-between text-left items-center text-lg font-medium text-black cursor-pointer"
               >
                 {link.title}
                 {openIndex === index ? (

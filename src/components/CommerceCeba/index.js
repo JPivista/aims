@@ -5,6 +5,7 @@ import TabSection from './TabSection'
 import Facilities from './Facilities'
 import AlumniSpeak from './AlumniSpeak'
 import AdvantagesOfChoosingEbac from './AdvantagesOfChoosingEbac'
+import GetInvolvedSection from './GetInvolvedSection'
 const index = () => {
     return (
         <div>
@@ -14,6 +15,7 @@ const index = () => {
             <TabSection />
             <Facilities />
             <AlumniSpeak />
+            <GetInvolvedSection />
      
         </div>
     )

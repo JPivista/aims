@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const CommitteesCards = ({ committees }) => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto my-10 px-4">
+        <div className="lg:px-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto my-10">
             {committees.map((committee, index) => (
                 <div
                     key={index}
@@ -77,6 +78,7 @@ const CommitteesCards = ({ committees }) => {
                     )}
                 </div>
             ))}
+        </div>
         </div>
     );
 };
