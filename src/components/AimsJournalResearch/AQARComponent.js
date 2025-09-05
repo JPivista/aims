@@ -103,9 +103,9 @@ const AQARComponent = () => {
     ]
 
     return (
-        <div className='justify-center items-center pb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+        <div className='justify-center items-center pb-10 flex flex-col lg:px-8 px-4 relative overflow-hidden'>
             <div className='container mx-auto'>
-                <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
+                <div className='flex flex-col bg-transparent relative z-10'>
                     {/* Mobile Tabs - Visible only on mobile */}
                     <div className='lg:hidden mb-8'>
                         <div className='flex flex-col gap-3'>

@@ -3,8 +3,8 @@ import React from 'react'
 const AnnualReport = () => {
     return (
         <>
-            <div className='w-full border-t border-black'>
-                <div className='container mx-auto px-4 py-10'>
+            <div className='w-full border-t border-black px-4 lg:px-8'>
+                <div className='container mx-auto py-10'>
                     <div className='flex flex-col gap-4'>
                         <div>
                             <h2 className='text-2xl font-bold'>Annual Report</h2>

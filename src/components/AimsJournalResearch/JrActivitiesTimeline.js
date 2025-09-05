@@ -162,8 +162,8 @@ const JrActivitiesTimeline = () => {
     return (
         <div className='relative overflow-hidden'>
             {/* Light Green Header Strip */}
-            <div className='py-10 border-t-[1px] border-black'>
-                <div className='container mx-auto px-6 lg:px-8'>
+            <div className='py-10 border-t-[1px] border-black px-4 lg:px-8'>
+                <div className='container mx-auto'>
                     <div className='flex flex-col'>
                         <h3 className='text-2xl lg:text-4xl playfair-300 text-[#0C2165] mb-4'>
                             Activities of IQAC

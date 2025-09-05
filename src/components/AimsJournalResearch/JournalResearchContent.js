@@ -5,7 +5,7 @@ import { Diff } from 'lucide-react'
 const RcContent = () => {
     return (
         <>
-            <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+            <div className='justify-center items-center py-10 flex flex-col lg:px-8 px-4 relative overflow-hidden'>
                 <div className='absolute top-[20%] right-0 md:block hidden rotate-180'>
                     <Image
                         src="/school-circle.svg"
