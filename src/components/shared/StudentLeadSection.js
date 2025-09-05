@@ -12,7 +12,7 @@ const StudentLeadSection = ({
   // Handle case when required props are missing
   if (!mobileImage || !desktopImage || !title) {
     return (
-      <div className="relative w-full lg:h-[80vh] h-[90vh] overflow-hidden bg-gray-200 flex items-center justify-center">
+      <div className="relative w-full md:h-[80vh] h-[90vh] overflow-hidden bg-gray-200 flex items-center justify-center">
         <div className="text-center">
           <h3 className="text-gray-600 text-2xl lg:text-3xl font-bold">
             Student Lead Section
@@ -26,14 +26,14 @@ const StudentLeadSection = ({
   return (
     <>
       <div
-        className="relative w-full lg:h-[75vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat px-4 lg:px-8"
+        className="relative w-full md:h-[75vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat px-4 lg:px-8"
         style={{
           backgroundImage: `url(${mobileImage})`,
         }}
       >
         {/* Desktop Background Image */}
         <div
-          className="hidden lg:block absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${desktopImage})`,
           }}

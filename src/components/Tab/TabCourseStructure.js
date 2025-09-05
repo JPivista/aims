@@ -19,7 +19,7 @@ const TabCourseStructure = ({ courseData }) => {
         <div className="">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
             {/* Left Column - Navigation */}
-            <div className="space-y-8 md:border-r border-black ">
+            <div className="space-y-8 lg:border-r border-black ">
               {/* Navigation Tabs */}
               <div className="space-y-4">
                 {courseData.map((section) => (

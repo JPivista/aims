@@ -76,8 +76,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#0C2165] text-white">
       {/* Top Section - Navigation Links */}
-      <div className="px-4 lg:px-8">
-        <div className="container mx-auto py-10">
+      <div className="px-4 lg:px-8 py-10">
+        <div className="container mx-auto">
           {/* Desktop Grid */}
           <div className="hidden lg:grid grid-cols-5 gap-4">
             {footerSections.map((section) => (
