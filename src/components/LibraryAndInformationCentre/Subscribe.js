@@ -144,8 +144,8 @@ const Subscribe = () => {
   };
   
   return (
-    <div className="p-8 rounded-lg shadow-lg">
-      <div className="max-w-md mx-auto text-center">
+    <div className="p-8 rounded-lg shadow-lg lg:px-8 px-4">
+      <div className="container mx-auto text-center">
         <h3 className="text-2xl font-bold mb-4">
           Subscribe to Our Digital Library
         </h3>

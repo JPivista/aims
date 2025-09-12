@@ -23,20 +23,20 @@ const CentreForResearchBanner = ({ announcements, pageType = "phd" }) => {
         {/* Text/Logo Content */}
         <div className="absolute inset-0 flex flex-col justify-between z-10">
           {/* Logo Block */}
-          <div className="container mx-auto px-4 pt-8 text-left">
+          <div className="container mx-auto px-4 pt-8 text-center lg:text-left">
             <Image
-             src="/recruiters/since.svg" 
+              src="/recruiters/since.svg"
               alt="Pre-University College Logo"
-              width={160} // adjust size
+              width={160}
               height={60}
-              className="object-contain"
+              className="object-contain mx-auto lg:mx-0"
               priority
             />
           </div>
 
           {/* Bottom Heading */}
-          <div className="container mx-auto px-4 pb-12 text-left">
-            <h1 className="text-white font-bold text-center md:text-left">
+          <div className="container mx-auto px-4 pb-12 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <h1 className="text-white font-bold text-3xl md:text-4xl">
               Library and <br className="hidden lg:block" />
               Information Centre
             </h1>

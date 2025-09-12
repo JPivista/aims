@@ -15,10 +15,10 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
               {title}
             </h3>
           )}
-          <div className="w-full flex flex-col md:flex-row items-center bg-white">
-            {/* Right Image - Top in mobile */}
+          <div className="w-full flex flex-col lg:flex-row items-center bg-white">
+            {/* Right Image */}
             {imageSrc && (
-              <div className="w-full md:w-[40%] flex justify-center items-center my-auto order-1 md:order-2">
+              <div className="w-full md:w-full lg:w-[40%] flex justify-center items-center my-auto order-1">
                 <Image
                   src={imageSrc}
                   alt={imageAlt || "Facilities"}
@@ -30,14 +30,17 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
             )}
 
             {/* Left Content */}
-            <div className="w-full md:w-[60%] my-auto order-2 md:order-1 flex justify-center md:justify-start pt-5 md:pt-0">
+            <div className="w-full md:w-full lg:w-[60%] my-auto flex justify-center md:justify-start pt-5 md:pt-5 lg:pt-0 order-2">
               <ul className="space-y-4 list-disc pl-6">
                 {items.map((item, index) => (
-                  <li style={{ fontSize: '18px' }} key={index}>{item}</li>
+                  <li style={{ fontSize: '18px' }} key={index}>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </>

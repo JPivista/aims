@@ -48,8 +48,8 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                         />
                     </div>
                     {/* Bottom Heading */}
-                    <div className="container mx-auto pb-12 text-left">
-                        <h1 className="text-white font-bold text-center md:text-left">
+                    <div className="container mx-auto pb-12 text-center md:text-center lg:text-left">
+                        <h1 className="text-white font-bold text-center md:text-center lg:text-left">
                             AIMS <br className='hidden lg:block' /> Centre for Research
                         </h1>
                     </div>
