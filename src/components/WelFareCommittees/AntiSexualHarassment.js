@@ -5,29 +5,31 @@ const AntiSexualHarassment = () => {
   return (
     <>
       <div className="bg-[#FFE2E3] lg:py-10">
-        <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
-          <div className="flex flex-col gap-4 w-[90%]">
-            <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
-              ANTI-SEXUAL <br className="hidden md:block" /> HARASSMENT CELL
-            </h5>
-            <p className="mt-3 text-gray-600 w-full lg:px-0 px-4">
-              AIMS Institutes is committed to creating and maintaining a
-              community in which students, teachers, and staff can work together
-              in an environment free of violence, harassment, exploitation,
-              intimidation and stress. This includes all forms of gender
-              violence, sexual harassment and discrimination on the basis of
-              sex/gender or amongst the same sex members.
-            </p>
-          </div>
-          {/* Right Side Image */}
-          <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
-            <Image
-              src="/welfare-committees/anti-sexual.webp"
-              alt="students"
-              width={400}
-              height={300}
-              className="rounded-xl object-cover lg:px-0 px-4"
-            />
+        <div className="lg:px-8 px-4">
+          <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
+            <div className="flex flex-col gap-4 w-[90%]">
+              <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
+                ANTI-SEXUAL <br className="hidden md:block" /> HARASSMENT CELL
+              </h5>
+              <p className="mt-3 text-gray-600 w-full lg:px-0 px-4">
+                AIMS Institutes is committed to creating and maintaining a
+                community in which students, teachers, and staff can work
+                together in an environment free of violence, harassment,
+                exploitation, intimidation and stress. This includes all forms
+                of gender violence, sexual harassment and discrimination on the
+                basis of sex/gender or amongst the same sex members.
+              </p>
+            </div>
+            {/* Right Side Image */}
+            <div className="w-full flex justify-center lg:justify-end lg:w-[50%]">
+              <Image
+                src="/welfare-committees/anti-sexual.webp"
+                alt="students"
+                width={400}
+                height={300}
+                className="rounded-xl object-cover lg:px-0 px-4"
+              />
+            </div>
           </div>
         </div>
 
@@ -45,7 +47,7 @@ const AntiSexualHarassment = () => {
           {/* Main Content */}
           <div className="relative z-10 gap-8 items-start container mx-auto">
             {/* Left Content */}
-            <div>
+            <div className="lg:px-8 px-4">
               <h2 className="text-2xl monser-500">
                 What is Sexual Harassment?
               </h2>
@@ -141,7 +143,7 @@ const AntiSexualHarassment = () => {
                     <ul className="list-disc list-inside mt-3 px-4">
                       <li className="underline">
                         <a href="/grievance-redressal" target="_blank">
-                        Grievance Registration Portal Link
+                          Grievance Registration Portal Link
                         </a>
                       </li>
                       <li>

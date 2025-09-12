@@ -5,7 +5,8 @@ const AntiRagging = () => {
   return (
     <>
       <div className="bg-[#E1F9F4] lg:py-10">
-        <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
+       <div className="lg:px-8 px-4">
+       <div className="flex lg:flex-row flex-col gap-4 container mx-auto border-b border-gray-300 py-10">
           <div className="flex flex-col gap-4 w-[90%]">
             <h5 className="text-2xl md:text-4xl font-bold monser-600 lg:px-0 px-4">
               ANTI-RAGGING <br className="hidden md:block" /> COMMITTEE
@@ -26,6 +27,7 @@ const AntiRagging = () => {
             />
           </div>
         </div>
+       </div>
 
         <div className="relative  py-12 px-6 md:px-20 lg:px-32 overflow-hidden">
           {/* Top Right Overlay */}

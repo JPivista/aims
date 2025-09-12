@@ -45,7 +45,7 @@
 //             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
 //               <div className="flex items-center">
 //                 <h1 className="text-white text-2xl text-left lg:text-[60px] playfair-300 lg:leading-16">
-//                 Celebrating Excellence. 
+//                 Celebrating Excellence.
 //                   <br />
 //                   Our University Rank Holders.
 //                 </h1>
@@ -63,13 +63,9 @@
 
 // export default HeroBanner;
 
-
-
-
-
-import React from "react"
-import ApplicationMarquee from "../../shared/ApplicationMarquee"
-import Image from "next/image"
+import React from "react";
+import ApplicationMarquee from "../../shared/ApplicationMarquee";
+import Image from "next/image";
 
 const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
   return (
@@ -78,7 +74,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
         {/* Background Image - Desktop */}
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/university-rank-holders/banner-01.webp')]" />
 
-        {/* Background Image - Mobile */} 
+        {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/university-rank-holders/mobile-01.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
@@ -89,7 +85,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
           }}
         ></div>
-           <div className="absolute top-0 lg:top-20 lg:right-10 px-4 lg:px-0">
+        <div className="absolute top-0 lg:top-20 lg:right-10 px-4 lg:px-0">
           <div className="container mx-auto py-4">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
               <div className="flex items-center">
@@ -104,19 +100,19 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
           </div>
         </div>
 
-
         {/* Bottom Content Container */}
         <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
-          <div className="container mx-auto">
-            <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
-              <div className="flex items-center">
-              <h1 className="text-white text-left lg:text-left md:text-left xl:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16">
-                  Safeguarding Integrity.
-                  <br className="" />
-                  Empowering Voices.
-                </h1>
-              </div>
-              {/* <div className="flex items-center">
+          <div className="lg:px-8 px-4">
+            <div className="container mx-auto">
+              <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
+                <div className="flex items-center">
+                  <h1 className="text-white text-left lg:text-left md:text-left xl:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16">
+                    Safeguarding Integrity.
+                    <br className="" />
+                    Empowering Voices.
+                  </h1>
+                </div>
+                {/* <div className="flex items-center">
                 <Image
                   src="/school-of-business/iacbe.png"
                   alt="IACBE"
@@ -125,6 +121,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
                   className="object-contain"
                 />
               </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -133,7 +130,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
       {/* Application Announcements Marquee */}
       <ApplicationMarquee announcements={announcements} pageType={pageType} />
     </>
-  )
-}
+  );
+};
 
-export default HeroBannerSoB
+export default HeroBannerSoB;
