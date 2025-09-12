@@ -186,11 +186,11 @@ export default function ExactSwapCarousel() {
 
         <div className="md:flex gap-6 md:gap-12 items-center relative">
           {/* LEFT ARROW - Desktop only */}
-          <div className="hidden md:block absolute right-44 top-1/2 -translate-y-1/2 z-20">
+          <div className="hidden lg:block absolute right-44 top-1/2 -translate-y-1/2 z-20">
             <button
               onClick={prev}
               aria-label="Previous"
-              className="bg-white hover:bg-[#A22877] hover:text-white text-black p-2 rounded-full shadow"
+              className="bg-white hover:bg-[#000] hover:text-white text-black p-2 rounded-full shadow"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +211,7 @@ export default function ExactSwapCarousel() {
           </div>
 
           {/* RIGHT ARROW - Desktop only */}
-          <div className="hidden md:block absolute right-32 top-1/2 -translate-y-1/2 z-20">
+          <div className="hidden lg:block absolute right-32 top-1/2 -translate-y-1/2 z-20">
             <button
               onClick={next}
               aria-label="Next"
@@ -235,9 +235,9 @@ export default function ExactSwapCarousel() {
           </div>
 
           {/* CENTERED CAROUSEL CONTENT */}
-          <div className="mx-0 md:mx-16 flex flex-col md:flex-row gap-6 md:gap-12 items-center w-full md:items-start md:text-left">
+          <div className="mx-0 lg:mx-16 flex flex-col lg:flex-row gap-6 lg:gap-12 items-center w-full lg:items-start lg:text-left">
             {/* LEFT - Big Image (Desktop only) */}
-            <div className="hidden md:flex justify-center items-center">
+            <div className="hidden lg:flex justify-center items-center">
               <div className="w-full max-w-[520px] relative">
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -254,7 +254,7 @@ export default function ExactSwapCarousel() {
                       height={320}
                       src={courses[current].leftImage}
                       alt={courses[current].title}
-                      className="h-[320px] md:h-full object-cover block"
+                      className="h-[320px] lg:h-full object-cover block"
                       draggable={true}
                     />
                   </motion.div>
@@ -271,10 +271,10 @@ export default function ExactSwapCarousel() {
               </div>
             </div>
 
-            {/* RIGHT - Text and Mobile Image */}
-            <div className="flex flex-col w-full items-center md:items-start">
-              {/* Mobile: Show current image at top */}
-              <div className="md:hidden flex justify-center w-full">
+            {/* RIGHT - Text and Mobile/Tablet Image */}
+            <div className="flex flex-col w-full items-center lg:items-start">
+              {/* Mobile/Tablet: Show current image at top */}
+              <div className="lg:hidden flex justify-center w-full">
                 <div className="w-full max-w-[400px] relative">
                   <Image
                     width={400}
@@ -288,8 +288,8 @@ export default function ExactSwapCarousel() {
                   />
                 </div>
               </div>
-              {/* Mobile arrows (centered) */}
-              <div className="md:hidden flex justify-center gap-4 py-5">
+              {/* Mobile/Tablet arrows (centered) */}
+              <div className="lg:hidden flex justify-center gap-4 py-5">
                 <button
                   onClick={prev}
                   aria-label="Previous"
@@ -333,7 +333,7 @@ export default function ExactSwapCarousel() {
                 </button>
               </div>
               {/* Text (left aligned always) */}
-              <div className="md:h-[450px] md:flex md:flex-col md:justify-start justify-center w-full">
+              <div className="lg:h-[450px] lg:flex lg:flex-col lg:justify-start justify-center w-full">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={`text-${courses[current].id}`}
@@ -432,7 +432,7 @@ export default function ExactSwapCarousel() {
                         ref={(el) => (thumbsRef.current[idx] = el)}
                         onClick={() => goTo(idx)}
                         layoutId={`card-${c.id}`}
-                        className={`flex-none w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
+                        className={`flex-none lg:w-[150px] md:w-[160px] rounded-lg overflow-hidden border-2 focus:outline-none ${
                           isActive ? "border-transparent" : "border-transparent"
                         }`}
                         whileHover={{ scale: 1.03 }}

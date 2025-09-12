@@ -47,51 +47,55 @@ const PlacementPolicy = () => {
       description:
         "Offer letters are released by the Director, C&PR at convocation, post completion of all academic and financial requirements. There will be no early handovers.",
     },
-    
+
     {
       title: "Official Communication Channel",
       description: (
         <>
           <p>
-            All placement-related communication must go through the <span className="monser-600">C&PR Cell.</span>{" "}
-            Direct contact with companies is a violation of protocol.
+            All placement-related communication must go through the{" "}
+            <span className="monser-600">C&PR Cell.</span> Direct contact with
+            companies is a violation of protocol.
           </p>
         </>
       ),
     },
     {
-        title: "Post-Convocation Responsibility",
-        description:
-          "Once students graduate, AIMS’ placement responsibility ends, unless a specific issue is raised by the recruiting company.",
-      },
+      title: "Post-Convocation Responsibility",
+      description:
+        "Once students graduate, AIMS’ placement responsibility ends, unless a specific issue is raised by the recruiting company.",
+    },
     {
-        title: "No-Rejection Policy",
-        description:
-          "Once the student appears for the process, the student cannot reject the offer made by the company",
-      },
+      title: "No-Rejection Policy",
+      description:
+        "Once the student appears for the process, the student cannot reject the offer made by the company",
+    },
   ];
   return (
     <>
-      <div className="lg:py-10 lg:pb-0 pb-7">
-        <div className="container mx-auto border border-[#A22877] rounded-2xl">
-          <div className="p-6">
-            <h1 className="text-[#0C2165]">Placement Policy</h1>
-            <p>
-              AIMS follows a structured placement process to ensure fair access
-              and strong outcomes for all eligible students. Please refer to the
-              policies below for clarity on expectations and responsibilities.
-            </p>
-            {data.map((item, index) => (
-              <div
-                key={index}
-                className="py-5 border-b border-dotted border-[#A22877]"
-              >
-                <h6 className="text-[#8A1D64] monser-700 text-lg">
-                  {item.title}
-                </h6>
-                <p className="pt-3">{item.description}</p>
-              </div>
-            ))}
+      <div className="lg:px-8 px-4">
+        <div className="lg:py-10 lg:pb-0 pb-7">
+          <div className="container mx-auto border border-[#A22877] rounded-2xl">
+            <div className="p-6">
+              <h1 className="text-[#0C2165]">Placement Policy</h1>
+              <p>
+                AIMS follows a structured placement process to ensure fair
+                access and strong outcomes for all eligible students. Please
+                refer to the policies below for clarity on expectations and
+                responsibilities.
+              </p>
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  className="py-5 border-b border-dotted border-[#A22877]"
+                >
+                  <h6 className="text-[#8A1D64] monser-700 text-lg">
+                    {item.title}
+                  </h6>
+                  <p className="pt-3">{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

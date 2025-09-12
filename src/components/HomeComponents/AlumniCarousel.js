@@ -47,7 +47,7 @@ export default function AlumniCarousel() {
     setIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="container mx-auto lg:mt-20 mt-10 mb-20 lg:mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="container mx-auto lg:mt-20 mt-10 mb-20 lg:mb-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       {/* Left content */}
       <div className="lg:px-0 px-4">
         <h3 className="text-4xl font-semibold text-[#0C2165]">
@@ -64,7 +64,7 @@ export default function AlumniCarousel() {
         {/* ✅ Mobile: only one testimonial */}
 
         {/* ✅ Mobile: only one testimonial */}
-        <div className="flex items-center justify-center md:hidden">
+        <div className="flex items-center justify-center lg:hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={testimonials[index].id}
@@ -108,7 +108,7 @@ export default function AlumniCarousel() {
         </div>
 
         {/* ✅ Desktop: keep 2 testimonials */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-10 h-[700px]">
+        <div className="hidden lg:flex md:hidden items-center gap-6 lg:gap-10 h-[700px]">
           {[0, 1].map((offset) => {
             const t = testimonials[(index + offset) % testimonials.length];
             const isFirstCard = offset === 0;
@@ -199,7 +199,7 @@ export default function AlumniCarousel() {
         </div>
 
         {/* Arrows - made stable */}
-        <div className="absolute lg:bottom-[23%] bottom-0 right-30 -translate-x-1/2 translate-y-16 flex gap-4">
+        <div className="absolute lg:bottom-[23%] bottom-0 lg:right-30 md:right-72 right-30 -translate-x-1/2 translate-y-16 flex gap-4">
           {/* PREV */}
           <button
             onClick={prev}

@@ -4,6 +4,7 @@ import Image from "next/image";
 const Accredited = () => {
   return (
     <>
+      <div className="lg:px-8 px-4">
       <div className="container mx-auto lg:pt-10 pt-5 lg:px-0 px-4">
         <h1 className="text-[#002561]">
           Accredited for Accuracy. <br className="lg:block hidden" /> Trusted
@@ -71,6 +72,7 @@ const Accredited = () => {
                 programs.
               </p>
             </div>
+          </div>
           </div>
         </div>
       </div>
