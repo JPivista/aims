@@ -2,22 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import ApplicationMarquee from '@/shared/ApplicationMarquee'
 
-
 const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
     return (
         <>
-            <div className="relative w-full min-h-[95vh] md:h-[76vh] overflow-hidden">
-                {/* Background Image */}
-                {/* <div
-                    className="absolute inset-0 z-10"
-                    style={{
-                        backgroundImage: 'url("/bcom/bcom-banner.png")',
-                        backgroundSize: 'cover ',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                    }}
-                /> */}
-
+           
+         <div className="relative w-full h-[100vh] lg:h-[76vh] md:h-[76vh] overflow-hidden">
                 {/* Gradient Overlay */}
                 <div
                     className="absolute inset-0 z-20"
@@ -25,25 +14,25 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                         background: 'linear-gradient(135deg, #E6BBD7 0%, #E6BBD7 39%, #531574 100%)',
                         opacity: 0.4
                     }}
-                >
-                </div>
+                />
 
                 {/* Main Content */}
                 <div className="absolute inset-0 flex z-30">
-                    <div className="px-4 lg:px-8">
+                    <div className="px-4 lg:px-8 w-full">
                         <div className="container mx-auto">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
+                            <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8">
+                                
                                 {/* Left Content */}
-                                <div className="space-y-6 flex flex-col justify-between h-full md:py-10 py-4">
+                                <div className="flex flex-col justify-between space-y-6 h-full md:py-10 py-4 flex-1">
                                     <div>
-                                        <h6 className=" text-gray-700 font-light tracking-wider text-[12px] lg:text-start text-center">
+                                        <h6 className=" font-light tracking-wider text-[12px] lg:text-start text-center">
                                             EMPOWERING MINDS
                                         </h6>
                                         <p className="text-2xl lg:text-3xl font-bold text-black monser-900 lg:text-start text-center">
                                             SINCE 1994
                                         </p>
                                     </div>
+
                                     <div className="space-y-4 lg:text-start text-center">
                                         <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
                                             A Clear Focus.
@@ -56,12 +45,13 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                                         <h5 className="text-3xl font-bold text-[#0C2165] monser-600">
                                             B.COM at AIMS
                                         </h5>
-                                        <p className="text-lg lg:text-xl text-gray-700 max-w-lg ">
+                                        <p className="text-lg lg:text-xl text-gray-700 max-w-lg">
                                             Sharpen your fundamentals in finance, accounting and business law, while gaining hands-on experience and certifications that make your profile stand out.
                                         </p>
                                     </div>
 
-                                    <div className="text-start lg:block hidden">
+                                    {/* Desktop NAAC Logo */}
+                                    <div className="lg:block hidden">
                                         <Image
                                             src="/naac-logo.svg"
                                             alt="NAAC Accreditation"
@@ -73,9 +63,8 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                                 </div>
 
                                 {/* Right Content - Circular Image */}
-                                <div className="flex justify-center lg:hidden">
+                                <div className="flex justify-center items-end lg:hidden flex-1">
                                     <div className="relative">
-                                        {/* Main circular image - Mobile */}
                                         <div className="w-96 h-96 rounded-full overflow-hidden z-30">
                                             <Image
                                                 src="/bcom/bcom-banner-mobile.webp"
@@ -106,7 +95,7 @@ const HeroBannerBcom = ({ announcements, pageType = 'finance' }) => {
                 </div>
             </div>
 
-
+            {/* Mobile NAAC Logo */}
             <div className="flex justify-center items-center bg-[#ECECEC] lg:hidden p-4">
                 <Image
                     src="/naac-logo.svg"

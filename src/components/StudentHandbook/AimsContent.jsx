@@ -21,15 +21,16 @@ const RcContent = () => {
             </div>
           </div>
         </div>
-        <div className="absolute md:top-[0%] right-0 md:block hidden">
-          <Image
-            src="/student-handbook/semi-circle.svg"
-            alt="School Circle Background"
-            width={120}
-            height={120}
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="absolute top-0 right-0 hidden lg:block">
+  <Image
+    src="/student-handbook/semi-circle.svg"
+    alt="School Circle Background"
+    width={120}
+    height={120}
+    className="w-full h-full object-cover"
+  />
+</div>
+
       </div>
       <div className="border-b border-gray-300 w-full h-1/2 md:mt-8"></div>
     </>

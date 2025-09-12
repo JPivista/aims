@@ -9,7 +9,7 @@ const SoInfoTechContent = () => {
                     background: 'linear-gradient(135deg, #F0DBFC 0%, #F0DBFC 50%, #FBDCE2 100%)'
                 }}>
                 {/* Background SVG */}
-                <div className='absolute md:-top-1/3 right-0 md:block hidden -rotate-30'>
+                <div className='absolute md:-top-1/3 right-0 lg:block hidden -rotate-30'>
                     <Image
                         src="/school-circle.svg"
                         alt="School Circle Background"

@@ -7,9 +7,22 @@ const StudentExitFormalities = () => {
     <>
       <div className="px-4 md:px-8 lg:px-8 pb-6 md:pb-10">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left Column - Content */}
-            <div className="flex flex-col justify-start md:items-start md:order-1 order-2">
+          {/* Mobile & Tablet = single column | Desktop = 2 columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            {/* Image First for Mobile & Tablet */}
+            <div className="flex flex-col gap-4 order-1 md:order-1 lg:order-2">
+              <Image
+                src="/alumni-association/events-and-reunions.webp"
+                alt="Young men playing basketball outdoors"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Text Below Image for Mobile & Tablet */}
+            <div className="flex flex-col justify-start md:items-start order-2 md:order-2 lg:order-1">
               <h1 className="text-[#0C2165] playfair-300 text-5xl">
                 Student Exit <br className="hidden md:block" /> Formalities
               </h1>
@@ -32,16 +45,6 @@ const StudentExitFormalities = () => {
               </div>
             </div>
 
-            {/* Right Column - Image */}
-            <div className="flex flex-col gap-4 lg:order-2 order-1">
-              <Image
-                src="/alumni-association/events-and-reunions.webp"
-                alt="Young men playing basketball outdoors"
-                width={500}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>

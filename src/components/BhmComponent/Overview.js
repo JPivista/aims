@@ -79,7 +79,7 @@ const Overview = () => {
       <div className="px-4 lg:px-8">
         <div className="container mx-auto  flex flex-col gap-10">
           {/* BBA Aviation Program overview */}
-          <div className=" items-center justify-between grid grid-cols-1 md:grid-cols-2">
+          <div className="items-center justify-between grid grid-cols-1 lg:grid-cols-2">
             <h3 className="text-[#0C2165]">
               <span className="italic text-[#A22877] playfair-300">
                 BHM Program

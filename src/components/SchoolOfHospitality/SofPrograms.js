@@ -37,15 +37,15 @@ const SofPrograms = () => {
           />
         </div>
 
-        <div className=" px-4 lg:px-8 relative z-10">
-          <div className="container mx-auto">
+        <div className=" px-4 lg:px-8 md:px-14 relative z-30">
+          <div className="lg:container mx-auto">
             {/* Postgraduate Program Section */}
 
             <section className="mb-10">
               {/* <h3 className="text-[#0C2165]">Postgraduate Program</h3> */}
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center  ">
-                <div className="order-1 relative md:h-[350px] h-52">
+                <div className="order-1 relative md:h-[550px]  lg:h-[400px] h-52">
                   <Image
                     src={postgraduateProgram.image}
                     alt={postgraduateProgram.title}
@@ -93,7 +93,7 @@ const SofPrograms = () => {
                     </Button>
                   </Link>
                 </div>
-                <div className="lg:order-2 order-1 relative md:h-[350px] h-52">
+                <div className="lg:order-2 order-1 relative md:h-[550px] lg:h-[400px] h-52">
                   <Image
                     src={undergraduateProgram.image}
                     alt={undergraduateProgram.title}

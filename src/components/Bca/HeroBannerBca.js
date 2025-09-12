@@ -6,17 +6,6 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
     return (
         <>
             <div className="relative w-full h-[100vh] md:h-[76vh] overflow-hidden">
-                {/* Background Image */}
-                {/* <div
-                    className="absolute inset-0 z-10"
-                    style={{
-                        backgroundImage: 'url("/bcom/bcom-banner.png")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                    }} 
-                /> */}
-
                 {/* Gradient Overlay */}
                 <div
                     className="absolute inset-0 z-20"
@@ -24,87 +13,78 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                         background: 'linear-gradient(180deg, #E1F9F4 0%, #E1F9F4 24%, #DF9A9B 100%)',
                         opacity: 0.4
                     }}
-                >
-                </div>
+                />
 
                 {/* Main Content */}
-                <div className="absolute inset-0 flex z-30">
-                    <div className="px-4 lg:px-8">
-                        <div className="container mx-auto">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="absolute inset-0 flex flex-col lg:flex-row z-30">
+                    <div className="px-4 lg:px-8 w-full lg:w-1/2 flex flex-col justify-between h-full md:py-10 py-4">
+                        {/* Left Content */}
+                        <div className="lg:text-start text-center">
+                            <h6 className=" text-gray-700 font-light tracking-wider text-[12px]">
+                                EMPOWERING MINDS
+                            </h6>
+                            <p className="text-2xl lg:text-3xl font-bold text-black monser-900">
+                                SINCE 1994
+                            </p>
 
-                                {/* Left Content */}
-                                <div className="space-y-6 flex flex-col justify-between h-full md:py-10 py-4">
-                                    <div className='md:text-start text-center'>
-                                        <h6 className=" text-gray-700 font-light tracking-wider text-[12px]">
-                                            EMPOWERING MINDS
-                                        </h6>
-                                        <p className="text-2xl lg:text-3xl font-bold text-black monser-900">
-                                            SINCE 1994
-                                        </p>
-                                    </div>
-                                    <div className="space-y-4 md:text-start text-center">
-                                        <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
-                                            Build the Skills.
-                                            <br />
-                                            Shape the AIM.
-                                        </h1>
-                                    </div>
+                            <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
+                                Build the Skills.
+                                <br />
+                                Shape the AIM.
+                            </h1>
 
-                                    <div className="space-y-2 md:text-start text-center">
-                                        <h5 className="text-3xl font-bold text-[#0C2165] monser-600">
-                                            BCA at AIMS
-                                        </h5>
-                                        <p className="text-lg lg:text-xl text-gray-700 max-w-lg ">
-                                            A launchpad for tech talent ready to make their mark. Take AIM at a future in tech, begin your BCA at one of the Best Colleges for BCA in Bangalore.
-                                        </p>
-                                    </div>
+                            <div className="space-y-2">
+                                <h5 className="text-3xl font-bold text-[#0C2165] monser-600">
+                                    BCA at AIMS
+                                </h5>
+                                <p className="text-lg lg:text-xl text-gray-700 max-w-lg md:text-center lg:text-start md:mx-auto lg:mx-0">
+                                    A launchpad for tech talent ready to make their mark. Take AIM at a future in tech, begin your BCA at one of the Best Colleges for BCA in Bangalore.
+                                </p>
+                            </div>
+                        </div>
 
-                                    <div className="text-start lg:block hidden">
-                                        <Image
-                                            src="/naac-logo.svg"
-                                            alt="NAAC Accreditation"
-                                            width={200}
-                                            height={200}
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                </div>
+                        {/* Desktop NAAC Logo */}
+                        <div className="text-start lg:block hidden">
+                            <Image
+                                src="/naac-logo.svg"
+                                alt="NAAC Accreditation"
+                                width={200}
+                                height={200}
+                                className="object-contain"
+                            />
+                        </div>
+                    </div>
 
-                                {/* Right Content - Circular Image */}
-                                <div className="flex justify-center lg:hidden">
-                                    <div className="relative">
-                                        {/* Main circular image - Mobile */}
-                                        <div className="w-96 h-96 rounded-full overflow-hidden z-30">
-                                            <Image
-                                                src="/bca/bca-herobanner.webp"
-                                                alt="B.Com Student"
-                                                fill
-                                                className="object-cover"
-                                                priority
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+                    {/* Right Content - Circular Image */}
+                    <div className="flex justify-center items-center w-full lg:w-1/2 mt-6 lg:mt-0">
+                        <div className="relative">
+                            {/* Mobile Circular Image */}
+                            <div className="w-96 h-96 rounded-full overflow-hidden lg:hidden">
+                                <Image
+                                    src="/bca/bca-herobanner.webp"
+                                    alt="BCA Student"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                            </div>
+
+                            {/* Desktop Circular Image */}
+                            <div className="hidden lg:block w-[700px] h-[550px] rounded-full overflow-hidden">
+                                <Image
+                                    src="/bca/bca-herobanner.webp"
+                                    alt="BCA Student"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* Desktop Circular Image - Absolute positioned */}
-                <div className="hidden lg:block absolute right-0 bottom-0 z-30">
-                    <div className="w-[700px] h-[550px] rounded-full overflow-hidden">
-                        <Image
-                            src="/bca/bca-herobanner.webp"
-                            alt="B.Com Student"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                    </div>
-                </div>
             </div>
 
+            {/* Mobile NAAC Logo */}
             <div className="flex justify-center items-center bg-[#ECECEC] lg:hidden p-4">
                 <Image
                     src="/naac-logo.svg"
@@ -114,6 +94,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                     className="object-contain"
                 />
             </div>
+
             {/* Application Announcements Marquee */}
             <ApplicationMarquee announcements={announcements} pageType={pageType} />
         </>

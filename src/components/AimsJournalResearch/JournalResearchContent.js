@@ -35,7 +35,7 @@ const RcContent = () => {
 
                     <div className='flex flex-col gap-4 mt-4'>
                         <div>
-                            <h5 className='monser-600 text-black'>
+                            <h5 className='monser-600 text-black text-xl'>
                                 AIMS is accredited by:
                             </h5>
                         </div>
@@ -60,7 +60,7 @@ const RcContent = () => {
                     </div>
 
                     <div className='flex flex-col gap-4 mt-4'>
-                        <h5 className='monser-600 text-black'>
+                        <h5 className='monser-600 text-black text-xl'>
                             Quality Policy
                         </h5>
 
@@ -83,7 +83,7 @@ const RcContent = () => {
                     </div>
 
                     <div className='flex flex-col gap-4 mt-4'>
-                        <h5 className='monser-600 text-black'>
+                        <h5 className='monser-600 text-black text-xl'>
                             Objectives
                         </h5>
 
@@ -112,7 +112,7 @@ const RcContent = () => {
                     </div>
 
                     <div className='flex flex-col gap-4 mt-4'>
-                        <h5 className='monser-600 text-black'>
+                        <h5 className='monser-600 text-black text-xl'>
                             Functions performed by AIQAC
                         </h5>
 
