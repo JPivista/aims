@@ -11,7 +11,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
 
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/home/mobile-banner-002.webp')]" />
-        <div className="hidden md:block lg:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/home/home-banner-tab.webp')]" />
+        <div className="hidden md:block lg:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/home/home-banner-tab-02.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         {/* <div
