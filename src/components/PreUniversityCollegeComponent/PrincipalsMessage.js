@@ -19,10 +19,10 @@ const principalData = {
 const PrincipalsMessage = () => {
     return (
         <section className="bg-[#E1F9F4] py-12 px-6 lg:px-20">
-            <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-10 items-center container mx-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10 container mx-auto">
 
-                {/* Left Side - Vertically Centered */}
-                <div className="flex flex-col justify-center items-center h-full">
+                {/* Left Side - Image */}
+                <div className="flex flex-col justify-center items-center lg:w-[40%]">
                     <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[450px] lg:h-[450px] flex items-center">
                         <Image
                             src={principalData.image}
@@ -38,10 +38,13 @@ const PrincipalsMessage = () => {
                     </h5>
                 </div>
 
-                {/* Right Side */}
-                <div>
+                {/* Right Side - Content */}
+                <div className="lg:w-[60%]">
                     <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-5">
-                        <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic">{principalData.headingItalic}</span> <br />
+                        <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic">
+                            {principalData.headingItalic}
+                        </span>{" "}
+                        <br />
                         {principalData.headingNormal}
                     </h3>
 
@@ -52,7 +55,6 @@ const PrincipalsMessage = () => {
                             dangerouslySetInnerHTML={{ __html: para }}
                         />
                     ))}
-
 
                     <p className="mt-6" style={{ fontWeight: "600" }}>
                         {principalData.footer}

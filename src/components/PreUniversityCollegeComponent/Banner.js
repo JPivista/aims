@@ -22,10 +22,11 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
 
         {/* Text/Logo Content */}
         <div className="absolute inset-0 flex flex-col justify-between z-10">
+
           {/* Logo Block */}
-          <div className="container mx-auto px-4 pt-8 text-left">
+          <div className="container mx-auto md:px-0 px-4 pt-8 text-left">
             <Image
-              src="/pre-university-college/empowering_minds_since1994_black.webp" // 👉 replace with your logo path
+              src="/pre-university-college/empowering_minds_since1994_black.webp"
               alt="Pre-University College Logo"
               width={200}
               height={200}
@@ -35,9 +36,9 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
           </div>
 
           {/* Bottom Heading */}
-          <div className="container mx-auto px-4 pb-12 text-left">
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold text-center md:text-left">
-              AIMS <br />Pre-University College
+          <div className="container mx-auto md:px-0 px-4 pb-12 text-center md:text-center lg:text-left">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold">
+              AIMS <br className="hidden lg:block" />Pre-University College
             </h1>
           </div>
         </div>

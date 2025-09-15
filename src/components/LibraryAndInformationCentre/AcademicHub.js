@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@/shared/Button";
 const AcademicHub = () => {
   return (
+    <div className="lg:px-8 px-4">
     <div className="container mx-auto py-10 lg:px-10 px-4">
       <div className="">
         <h3 className="text-center text-[#0C2165] font-semibold">
@@ -34,6 +35,7 @@ const AcademicHub = () => {
           E-Resources
         </Button>
       </div>
+    </div>
     </div>
   );
 };

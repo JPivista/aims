@@ -32,9 +32,20 @@ const ServicesOffered = () => {
       <h3 className="text-3xl md:text-4xl font-bold text-[#0d2352] mb-6">
         Services Offered:
       </h3>
-      <div className="grid md:grid-cols-2 gap-8 items-center">
-        {/* Image (first on mobile, second on desktop) */}
-        <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden order-1 md:order-2">
+
+      {/* Flex Container */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:items-start gap-8">
+        {/* Text Content */}
+        <div className="flex-1 order-2 lg:order-1">
+          <ol className="list-decimal list-inside space-y-2 text-gray-900 text-lg">
+            {services.map((service, index) => (
+              <li key={index}>{service}</li>
+            ))}
+          </ol>
+        </div>
+
+        {/* Image */}
+        <div className="relative w-full h-[300px] md:h-[350px] lg:w-1/2 lg:h-[400px] order-1 lg:order-2 rounded-xl overflow-hidden">
           <Image
             src={
               isMobile
@@ -47,23 +58,14 @@ const ServicesOffered = () => {
             priority
           />
         </div>
-
-        {/* Services List */}
-        <div className="order-2 md:order-1">
-          <ol className="list-decimal list-inside space-y-2 text-gray-900 text-lg">
-            {services.map((service, index) => (
-              <li key={index}>{service}</li>
-            ))}
-          </ol>
-        </div>
       </div>
 
       {/* Divider */}
       <hr className="my-12 border-gray-300" />
 
       {/* Vision & Mission */}
-      <div className="grid md:grid-cols-2 gap-10">
-        <div>
+      <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex-1">
           <h4 className="text-2xl text-[#0d2352] mb-3 font-semibold">Vision</h4>
           <p className="text-gray-800 leading-relaxed">
             To empower students, faculty, and the community through innovative
@@ -71,7 +73,7 @@ const ServicesOffered = () => {
             growth.
           </p>
         </div>
-        <div>
+        <div className="flex-1">
           <h4 className="text-2xl text-[#0d2352] mb-3 font-semibold">Mission</h4>
           <p className="text-gray-800 leading-relaxed">
             To provide accessible, advanced resources and services that inspire

@@ -1,26 +1,16 @@
-"use client"
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import ApplicationMarquee from '@/shared/ApplicationMarquee'
 
-const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = 'phd' }) => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth < 768); // Tailwind md breakpoint
-
-        handleResize(); // run once on mount
-        window.addEventListener("resize", handleResize);
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
     return (
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/pre-university-college/banner.webp')] bg-[url('/pre-university-college/pre_univercity_mobile_banner.webp')]" />
+                    <div className="w-full h-full bg-cover bg-top bg-no-repeat md:bg-[url('/gallery/gallery_banner.webp')] bg-[url('/gallery/gallery_mob_banner.webp')]" />
                 </div>
+
                 {/* Gradient Overlay */}
                 <div
                     className="absolute inset-0"
@@ -32,14 +22,11 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
 
                 {/* Text/Logo Content */}
                 <div className="absolute inset-0 flex flex-col justify-between z-10">
+
                     {/* Logo Block */}
-                    <div className="container mx-auto px-4 pt-8 text-left">
+                    <div className="container mx-auto md:px-0 px-4 pt-8 text-left">
                         <Image
-                            src={
-                                isMobile
-                                    ? "/pre-university-college/empowering_minds_since1994_black.webp"
-                                    : "/pre-university-college/empowering_minds_since1994.webp"
-                            }
+                            src="/pre-university-college/empowering_minds_since1994.webp"
                             alt="Pre-University College Logo"
                             width={200}
                             height={200}
@@ -49,9 +36,9 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
                     </div>
 
                     {/* Bottom Heading */}
-                    <div className="container mx-auto px-4 pb-12 text-left">
-                        <h1 className="text-white font-bold text-center md:text-center lg:text-left">
-                            AIMS <br className="hidden lg:block" />PCMB/PCMC
+                    <div className="container mx-auto md:px-0 px-4 pb-12 text-center md:text-center lg:text-left">
+                        <h1 className="text-2xl sm:text-3xl lg:text-5xl text-white font-bold">
+                            Explore AIMS Gallery
                         </h1>
                     </div>
                 </div>
@@ -63,4 +50,4 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = '
     )
 }
 
-export default ScienceIntegratedPcmbPcmcCetNeetJeeBanner
+export default CentreForResearchBanner

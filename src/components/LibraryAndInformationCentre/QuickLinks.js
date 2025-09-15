@@ -173,9 +173,11 @@ const QuickLinks = () => {
   ];
 
   return (
-    <div className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
-      {/* Right Side Image */}
-      <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden order-1 md:order-2">
+    <div className='lg:px-8 px-4'>
+    <div className="container mx-auto px-6 py-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+      {/* Image Top on Tablet and Mobile */}
+      <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden lg:order-2 md:order-1">
         <Image
           src="/library-and-information-centre/quick_links.webp"
           alt="Library services"
@@ -185,8 +187,8 @@ const QuickLinks = () => {
         />
       </div>
 
-      {/* Left Side */}
-      <div className="order-2 md:order-1">
+      {/* Accordion Below Image */}
+      <div className="lg:order-1 md:order-2">
         <h3 className="text-4xl font-bold text-[#0d2352] mb-6">Quick Links:</h3>
 
         <div className="space-y-4">
@@ -313,6 +315,7 @@ const QuickLinks = () => {
           Sign up with your email to receive login credentials for our digital platforms.
         </p>
       </div>
+    </div>
     </div>
   );
 };

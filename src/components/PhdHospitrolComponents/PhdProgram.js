@@ -30,11 +30,11 @@ const PhdProgram = () => {
             </div>
 
             {/* Middle Section */}
-            <div className="flex flex-col md:flex-row gap-0 md:gap-8 container mx-auto md:py-10 py-6 px-4 ">
+            <div className="flex flex-col md:flex-row gap-6 container mx-auto md:py-10 py-6 px-4">
 
                 {/* Left Side: Text Content */}
                 <div className="md:w-1/2 w-full flex flex-col justify-center items-start order-2 md:order-1">
-                    <h2 className="text-xl md:text-2xl font-semibold mb-4">
+                    <h2 className="text-lg md:text-xl font-semibold mb-4">
                         The suggested course structure for PhD Programs in Management, Commerce and English of UoM generally consists of:
                     </h2>
                     <ul className="list-disc list-inside space-y-2 mb-6 text-sm md:text-base">
@@ -46,20 +46,22 @@ const PhdProgram = () => {
                     </ul>
                 </div>
 
-                {/* Right Side: Full-Width Edge Image */}
-                <div className="md:w-1/2 w-full order-1 md:order-2 md:pb-0 pb-5">
+                {/* Right Side: Image */}
+                <div className="md:w-1/2 w-full order-1 md:order-2">
                     <Image
                         width={1000}
                         height={500}
                         src="/business_school/phd/phd_program.webp"
                         alt="Students"
-                        className="object-cover w-full h-full max-h-[500px] md:max-h-none"
+                        className="object-cover w-full h-auto max-h-[300px] md:max-h-none rounded-md"
+                        priority
                     />
                 </div>
             </div>
 
+
             {/* Bottom Section */}
-            <div className="bg-[#A12E79] text-white">
+            <div className="bg-[#A12E79] text-white lg:px-8 px-4">
                 <div className='container mx-auto flex flex-col md:flex-row'>
 
                     {/* Left Side (70%) */}
