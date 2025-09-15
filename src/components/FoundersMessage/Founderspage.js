@@ -68,7 +68,7 @@ const FoundersMessage = () => {
                 <span className="text-[#0C2165] playfair-300">
                   Message from
                 </span>
-                <span className="block text-[#A22877] playfair-300 italic lg:-mt-6 md:-mt-4 mt-0">
+                <span className="block text-[#A22877] playfair-300 italic lg:-mt-5 md:-mt-2 mt-0">
                   {msg.role}
                 </span>
               </h3>

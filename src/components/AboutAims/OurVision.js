@@ -19,13 +19,13 @@ const Aiming = () => {
           {/* Row 2: Left Image, Right Content */}
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-6 lg:gap-6 py-6 sm:py-8 md:py-10 lg:py-10 mt-5">
             {/* Left Side - Image */}
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <div className="w-full lg:w-1/2  flex justify-center lg:justify-start ">
               <Image
                 src="/about-aims/About-img1.webp"
                 alt="Community Approach"
                 width={1000}
                 height={1000}
-                className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-xl xl:max-w-2xl"
+                className="w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-xl xl:max-w-2xl "
                 priority
               />
             </div>
@@ -82,7 +82,7 @@ const Aiming = () => {
                 alt="Community Objectives"
                 width={1000}
                 height={1000}
-                className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-xl xl:max-w-2xl"
+                className="w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-xl xl:max-w-2xl"
               />
             </div>
           </div>

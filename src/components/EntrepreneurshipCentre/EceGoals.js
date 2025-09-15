@@ -10,7 +10,7 @@ const EceGoals = () => {
                     <div className='container mx-auto'>
                         <div className='flex flex-col bg-transparent relative z-10'>
                             {/* Our Goals */}
-                            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8'>
 
                                 <div className='flex flex-col order-2 md:order-1 justify-center'>
                                     <h3 className='text-start text-[32px] lg:text-[56px] playfair-300 text-[#A22877]'>

@@ -96,7 +96,7 @@ const EmpoweringWomen = () => {
                             {/* Participant Voices Section */}
                             <div className='grid grid-cols-1 lg:grid-cols-5 gap-8'>
                                 {/* Left Column - Participant Names */}
-                                <div className='lg:col-span-2 md:border-r-2 border-black'>
+                                <div className='lg:col-span-2 lg:border-r-1 border-black'>
                                     <h5 className='text-2xl lg:text-3xl monser-600 text-[#A22877] mb-6'>
                                         Participant Voices
                                     </h5>

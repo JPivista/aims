@@ -40,7 +40,7 @@ const Objectives = () => {
               Our Objectives
             </h3>
             <p className=" mb-10 ">
-              The primary objective of AIMS Institutes is to provide{" "}
+              The primary objective of AIMS Institutes is to provide
               <br className="hidden lg:block" />
               quality education to create:
             </p>
@@ -50,9 +50,9 @@ const Objectives = () => {
               <Image
                 src="/about-aims/our-objective.svg"
                 alt="Our Objective"
-                width={1000}
+                width={1800}
                 height={1200}
-                className="w-full h-full "
+                className="w-full md:h-[250px] lg:h-full object-contain"
               />
             </div>
           </div>
@@ -61,33 +61,32 @@ const Objectives = () => {
 
       {/* Mobile View (Slider with different images) */}
       <section className="bg-teal-50 py-10 block sm:hidden">
-
-       <div className=" px-4 lg:px-8 mb-5">
+        <div className=" px-4 lg:px-8 mb-5">
           <div className="container mx-auto ">
-          {/* Title */}
-          <h3 className="text-2xl text-[#0C2165] playfair-300 leading-tight">
-            Our Objectives
-          </h3>
-          <p className=" mb-6">
-            The primary objective of AIMS Institutes is to provide <br />
-            quality education to create:
-          </p>
+            {/* Title */}
+            <h3 className="text-2xl text-[#0C2165] playfair-300 leading-tight">
+              Our Objectives
+            </h3>
+            <p className=" mb-6">
+              The primary objective of AIMS Institutes is to provide <br />
+              quality education to create:
+            </p>
 
-          {/* Slider with different images */}
-          <Slider {...settings}>
-            {mobileImages.map((img, index) => (
-              <div key={index} className="px-2">
-                <Image
-                  src={img}
-                  alt={`Our Objective ${index + 1}`}
-                  width={1800}
-                  height={1200}
-                  className="w-full h-[250px] object-contain mx-auto"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+            {/* Slider with different images */}
+            <Slider {...settings}>
+              {mobileImages.map((img, index) => (
+                <div key={index} className="px-2">
+                  <Image
+                    src={img}
+                    alt={`Our Objective ${index + 1}`}
+                    width={1800}
+                    height={1200}
+                    className="w-full h-[250px] object-contain mx-auto"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </section>
     </>
