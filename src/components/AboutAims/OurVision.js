@@ -44,11 +44,11 @@ const Aiming = () => {
             </div>
           </div>
 
+        
           {/* Row 3: Left Content, Right Image */}
-          {/* Row 3: Left Content, Right Image */}
-          <div className="flex flex-col-reverse lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 mb-10">
+          <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 mb-10">
             {/* Left Side - Content */}
-            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4  ">
+            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 px-4">
               <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[65px] text-[#0C2165] mb-6 sm:mb-8 md:mb-10 playfair-300 leading-tight">
                 Our Mission
               </h3>
