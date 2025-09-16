@@ -46,14 +46,16 @@ const Campusfacpage = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
-    slidesToShow: 2, // ✅ 2 polygons in one row for iPad
+    slidesToShow: 2, 
     slidesToScroll: 1,
   }
 
   return (
     <>
-      <div className="text-center px-4 bg-white container mx-auto justify-center items-center">
-        <h3 className="text-[#0C2165] playfair-300 pt-8">
+     <div className="px-4 lg:px-8">
+      <div className="container mx-auto text-center">
+        {/* Intro Section */}
+        <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6 pt-8">
           A Reliable Start with
           <br /> Everything You Need
         </h3>
@@ -138,6 +140,7 @@ const Campusfacpage = () => {
           At AIMS, student development isn&apos;t a buzzword, it’s a built-in
           feature of the environment we&apos;ve created.
         </p>
+      </div>
       </div>
       </div>
     </>

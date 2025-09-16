@@ -46,90 +46,89 @@ const StudentClubs = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
-    slidesToShow: 2, 
+    slidesToShow: 2,
     slidesToScroll: 1,
   }
 
   return (
-    <>
-      <div className="text-center px-4 bg-white container mx-auto">
+    <div className="px-4 lg:px-8">
+      <div className="container mx-auto text-center">
+        {/* Top Section */}
         <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6 pt-8">
           Find Your Passion.
           <br /> AIM for Excellence.
         </h3>
         <p className="max-w-5xl mx-auto">
-          At AIMS Institutes, learning isn&apos;t limited to the classroom. Our
-          student clubs offer a structured yet vibrant space for students to
-          explore their interests, take initiative, and develop skills that
-          extend far beyond academics.
+          At AIMS Institutes, learning isn&apos;t limited to the classroom.
+          Our student clubs offer a structured yet vibrant space for
+          students to explore their interests, take initiative, and develop
+          skills that extend far beyond academics.
         </p>
-      </div>
-      <div className="px-4 lg:px-8">
-      <div className=" py-10 text-center">
-        <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6">
-          Why Join a Student Club?
-        </h3>
 
-        {/* Desktop view - all polygons in one row */}
-        <div className="hidden lg:flex flex-row justify-center items-center container mx-auto">
-          {clubs.map((club, index) => (
-            <div
-              key={index}
-              className={`relative px-10 text-white text-sm sm:text-base font-medium ${
-                club.gradient
-              } flex items-center justify-center text-center w-full  h-[200px] overflow-hidden ${
-                index !== 0 ? "-ml-9" : ""
-              }`}
-              style={{
-                clipPath:
-                  "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
-              }}
-            >
-              <span className="px-6 md:line-clamp-7">{club.text}</span>
-            </div>
-          ))}
-        </div>
+        {/* Why Join a Club Section */}
+        <div className="py-10">
+          <h3 className="text-[#0C2165] playfair-300 mb-3 md:mb-6">
+            Why Join a Student Club?
+          </h3>
 
-        {/* Tablet / iPad view (2 per slide) */}
-        <div className="hidden md:block lg:hidden container mx-auto">
-          <Slider {...tabletSlider}>
+          {/* Desktop view - all polygons in one row */}
+          <div className="hidden lg:flex flex-row justify-center items-center">
             {clubs.map((club, index) => (
-              <div key={index} className="">
-                <div
-                  className={`relative px-10  text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
-                  }}
-                >
-                  <span className="line-clamp-7 px-6 ">{club.text}</span>
-                </div>
+              <div
+                key={index}
+                className={`relative px-10 text-white text-sm sm:text-base font-medium ${club.gradient} flex items-center justify-center text-center w-full h-[200px] overflow-hidden ${
+                  index !== 0 ? "-ml-9" : ""
+                }`}
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                }}
+              >
+                <span className="px-6 line-clamp-7">{club.text}</span>
               </div>
             ))}
-          </Slider>
-        </div>
+          </div>
 
-        {/* Mobile view (1 per slide) */}
-        <div className="block md:hidden">
-          <Slider {...mobileSlider}>
-            {clubs.map((club, index) => (
-              <div key={index} className="">
-                <div
-                  className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
-                  style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
-                  }}
-                >
-                  <span className="line-clamp-7 px-6">{club.text}</span>
+          {/* Tablet / iPad view (2 per slide) */}
+          <div className="hidden md:block lg:hidden">
+            <Slider {...tabletSlider}>
+              {clubs.map((club, index) => (
+                <div key={index}>
+                  <div
+                    className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                    }}
+                  >
+                    <span className="px-6 line-clamp-7">{club.text}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Mobile view (1 per slide) */}
+          <div className="block md:hidden">
+            <Slider {...mobileSlider}>
+              {clubs.map((club, index) => (
+                <div key={index}>
+                  <div
+                    className={`relative px-10 text-white text-sm font-medium ${club.gradient} flex items-center justify-center text-center h-[200px] overflow-hidden`}
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
+                    }}
+                  >
+                    <span className="px-6 line-clamp-7">{club.text}</span>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-      </div>
-    </>
+    </div>
   )
 }
 

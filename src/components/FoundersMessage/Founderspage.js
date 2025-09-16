@@ -39,7 +39,7 @@ const messages = [
 
 const FoundersMessage = () => {
   return (
-    <div className="bg-white text-gray-800 py-10 px-4 lg:px-20">
+    <div className="bg-white text-gray-800 py-10 px-4 lg:px-8">
       <div className="space-y-16">
         {messages.map((msg, index) => (
           <div
