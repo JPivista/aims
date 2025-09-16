@@ -38,7 +38,6 @@ const FloatingButton = () => {
                 </div>
             </div>
             <QuickActionsButton />
-
         </>
     );
 };
