@@ -23,7 +23,7 @@ const TabSection = () => {
   return (
     <div className="w-full">
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 mb-6">
+      <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
         <button
           onClick={() => setActiveTab("ragging")}
           className={`px-6 py-2 rounded-sm border transition w-[85%] lg:w-auto xl:w-auto md:w-auto

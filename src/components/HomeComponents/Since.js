@@ -6,7 +6,8 @@ import Image from "next/image";
 const Since = () => {
   return (
     <>
-      <div className="container mx-auto px-7 lg:py-16 py-5 flex flex-col items-center justify-center gap-5 lg:gap-8">
+    <div className="px-4 lg:px-8">
+    <div className="container mx-auto lg:py-16 py-5 flex flex-col items-center justify-center gap-5 lg:gap-8">
         <div className="flex items-center justify-center">
           <Image
             src="/home/iacbe-naac.svg"
@@ -22,10 +23,8 @@ const Since = () => {
           mentors, and a distraction-free campus, we prepare learners to build
           careers in business, hospitality, IT, commerce, and more.
         </p>
-        {/* <Button showReadMore={true} hoverText="Our Programs">
-          <Link href="/about">Choose Your Arrow</Link>
-        </Button> */}
       </div>
+    </div>
     </>
   );
 };

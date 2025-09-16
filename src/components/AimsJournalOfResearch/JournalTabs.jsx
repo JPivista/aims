@@ -43,6 +43,7 @@ const JournalTabs = ({ tabsData }) => {
             ))}
           </div>
           {/* Content Area */}
+          <div className="px-4">
           <div className="bg-white rounded-2xl py-5 mx-auto lg:px-20 xl:px-20 md:px-10 px-4">
             <div>
               {/* Heading */}
@@ -229,6 +230,7 @@ const JournalTabs = ({ tabsData }) => {
                 </div>
               </>
             )}
+          </div>
           </div>
         </div>
       </div>

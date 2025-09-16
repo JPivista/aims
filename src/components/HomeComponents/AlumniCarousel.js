@@ -47,9 +47,11 @@ export default function AlumniCarousel() {
     setIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="container mx-auto lg:mt-20 mt-10 mb-20 lg:mb-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+   <>
+   <div className="lg:px-8 px-4">
+   <section className="container mx-auto lg:mt-20 mt-10 mb-20 lg:mb-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       {/* Left content */}
-      <div className="lg:px-0 px-4">
+      <div className="">
         <h3 className="text-4xl font-semibold text-[#0C2165]">
           AIMers in <br />
           <span className="italic text-[#A22877] playfair-400">Action</span>
@@ -245,5 +247,7 @@ export default function AlumniCarousel() {
         </div>
       </div>
     </section>
+   </div>
+   </>
   );
 }

@@ -85,7 +85,7 @@ const HeroBannerSoB = ({ announcements, pageType = "engineering" }) => {
               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
           }}
         ></div>
-        <div className="absolute top-0 lg:top-20 lg:right-10 px-4 lg:px-0">
+        <div className="absolute top-0 lg:top-20 lg:left-8 px-4 lg:px-0">
           <div className="container mx-auto py-4">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
               <div className="flex items-center">

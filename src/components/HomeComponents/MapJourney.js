@@ -36,7 +36,7 @@ const MapJourney = () => {
   ];
   return (
     <>
-      <div className="bg-[#C6F3EA] py-10 lg:px-0 px-4">
+      <div className="bg-[#C6F3EA] py-10 lg:px-8 px-4">
         <div className="container mx-auto ">
           <div>
             <h3 className="text-[#A22877]">

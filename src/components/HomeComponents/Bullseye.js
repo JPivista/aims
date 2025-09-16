@@ -19,7 +19,8 @@ const Bullseye = () => {
           intent.
         </p>
       </div>
-      <div className="container mx-auto hidden lg:block">
+     <div className="px-4 lg:px-8">
+     <div className="container mx-auto hidden lg:block">
         <Image
           src="/home/bullseye/logos.svg"
           alt="bullseye"
@@ -28,6 +29,7 @@ const Bullseye = () => {
           className="w-full"
         />
       </div>
+     </div>
 
       <div className="lg:hidden">
         <Companies />

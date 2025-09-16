@@ -49,7 +49,7 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
                 className="object-contain w-52 lg:w-64"
               />
             </div>
-            <div className="flex lg:flex-row flex-col items-center justify-center md:gap-4 gap-4">
+            <div className="flex lg:flex-row flex-col items-center justify-center lg:justify-start md:gap-4 gap-4">
               <div className="flex items-center">
                 <h1 className="text-white text-center lg:text-left md:text-left xl:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16">
                   IACBE Accreditation
