@@ -97,58 +97,60 @@ export default function Header() {
         {/* HEADER CONTAINER */}
         <div className="h-full flex flex-col">
           {/* TOP BAR */}
-          <div
-            className="container mx-auto flex items-center justify-between px-4 lg:px-0 py-3 w-full h-[10vh] z-50 bg-white"
-          >
-            {/* Logo */}
+          <div className="px-4 lg:px-8">
             <div
-              className="flex items-center"
+              className="container mx-auto flex items-center justify-between py-3 w-full h-[10vh] z-50 bg-white"
             >
-              <Link href="/" scroll={false} onClick={handleLogoClick}>
-                <Image
-                  src="/logo.svg"
-                  alt="Logo"
-                  width={200}
-                  height={200}
-                  priority
-                />
-              </Link>
-            </div>
-
-            {/* Desktop Right Section */}
-            <div
-              className="hidden lg:flex items-center space-x-6"
-            >
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="border rounded-full px-4 py-1 focus:outline-none transition-all duration-200 ease-out focus:ring-2 focus:ring-[#6E3299]/20 focus:border-[#6E3299]"
-                />
-              </div>
-              <Link
-                href="/aims-alumni-association"
-                className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
+              {/* Logo */}
+              <div
+                className="flex items-center"
               >
-                Alumni
-              </Link>
-              {/* <Link
+                <Link href="/" scroll={false} onClick={handleLogoClick}>
+                  <Image
+                    src="/logo.svg"
+                    alt="Logo"
+                    width={200}
+                    height={200}
+                    priority
+                  />
+                </Link>
+              </div>
+
+              {/* Desktop Right Section */}
+              <div
+                className="hidden lg:flex items-center space-x-6"
+              >
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    className="border rounded-full px-4 py-1 focus:outline-none transition-all duration-200 ease-out focus:ring-2 focus:ring-[#6E3299]/20 focus:border-[#6E3299]"
+                  />
+                </div>
+                <Link
+                  href="/aims-alumni-association"
+                  className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
+                >
+                  Alumni
+                </Link>
+                {/* <Link
                 href="/eresources"
                 className="text-[#0C2165] text-xl hover:text-[#6E3299] hover:underline font-light transition-all duration-200 ease-out"
               >
                 Resources
               </Link> */}
 
-              <Button showReadMore={false} href="https://enquiry.theaims.ac.in/">Contact Us</Button>
-            </div>
+                <Button showReadMore={false} href="https://enquiry.theaims.ac.in/">Contact Us</Button>
+              </div>
 
-            {/* Mobile Hamburger */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-xl z-50 bg-white rounded-lg p-2 hover:bg-gray-50 transition-all duration-200 ease-out"
-            >
-              {mobileOpen ? <FiX /> : <FiMenu />}
-            </button>
+              {/* Mobile Hamburger */}
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                className="lg:hidden text-xl z-50 bg-white rounded-lg p-2 hover:bg-gray-50 transition-all duration-200 ease-out"
+              >
+                {mobileOpen ? <FiX /> : <FiMenu />}
+              </button>
+            </div>
           </div>
 
           {/* BOTTOM NAV (Desktop) */}
