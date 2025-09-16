@@ -26,9 +26,9 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-center lg:text-left">
                   {/* NAAC Logo */}
-                  <div className="flex justify-center md:justify-start mb-4">
+                  <div className="flex justify-center md:justify-center lg:justify-start mb-4">
                     <Image
                       src="/naac/nacc-logo.svg"
                       alt="NAAC Logo"
@@ -51,7 +51,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         </div>
         <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
           <div className="container mx-auto py-4 px-4 ">
-            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
+            <div className="flex lg:flex-row flex-col lg:items-start justify-between md:gap-10 gap-4 ">
               <div className="flex items-center">
                 <Image
                   src="/white-empower.svg"

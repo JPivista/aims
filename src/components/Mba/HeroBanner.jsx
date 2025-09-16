@@ -37,7 +37,7 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
         </div>
 
         {/* Bottom Content Container */}
-        <div className="absolute left-0 right-0 px-4 md:px-0 lg:px-8 top-13 md:top-20 lg:top-10">
+        <div className="absolute left-0 right-0 px-4 md:px-8 lg:px-8 top-13 md:top-20 lg:top-10">
           <div className="container mx-auto ">
             <div className="flex lg:flex-row flex-col items-center justify-between lg:gap-4 gap-4">
               <div className="flex items-center">

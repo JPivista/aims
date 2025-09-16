@@ -2,12 +2,12 @@ import React from "react"
 
 const NaacAccreditationSection = () => {
   return (
-    <div className="bg-[#E0F8F3] py-4 md:py-10 px-4 md:px-8 lg:px-12">
+    <div className="bg-[#E0F8F3] py-4 md:py-10 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="mb-8">
-          <h3 className="text-2xl md:text-[65px] text-[#0C2165] playfair-300 mb-6">
+          <h2 className="text-3xl md:text-6xl lg:text-6xl text-[#0C2165] playfair-300 mb-6">
             NAAC Accreditation
-          </h3>
+          </h2>
         </div>
 
         <div className="space-y-4">

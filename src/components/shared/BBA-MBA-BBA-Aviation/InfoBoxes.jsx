@@ -20,23 +20,28 @@ const InfoBoxes = ({
               {boxes.map((box, index) => (
                 <div
                   key={index}
-                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-2 cursor-pointer w-full rounded-lg py-4 md:px-4`}
+                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-1 hover:scale-[1.01] cursor-pointer w-full rounded-lg py-4 md:py-6 px-4 md:px-6 overflow-hidden`}
                 >
                   {/* Content */}
-                  <div className="ml-4">
+                  <div className="ml-2">
                     <div
-                      className={`text-xl font-bold mb-2 ${numberColor}`}
-                      style={{ fontFamily: "Helvetica Neue" }}
+                      className={`text-xl md:text-2xl font-bold mb-2 ${numberColor}`}
+                      style={{
+                        fontFamily: "Helvetica Neue, Arial, sans-serif",
+                        fontWeight: "700",
+                        textShadow: "0 1px 2px rgba(0,0,0,0.1)",
+                        lineHeight: "1.2",
+                      }}
                     >
                       {box.number}
                     </div>
                     <h5
-                      className={`text-base ${titleColor} mb-2 monser-600 leading-tight`}
+                      className={`text-lg md:text-xl ${titleColor} mb-2 monser-600 leading-tight`}
                     >
                       {box.title}
                     </h5>
                     <p
-                      className={`text-sm ${descColor} monser-400 leading-relaxed`}
+                      className={`text-base md:text-lg ${descColor} monser-400 leading-relaxed`}
                     >
                       {box.description}
                     </p>
@@ -46,38 +51,43 @@ const InfoBoxes = ({
             </div>
 
             {/* Desktop: Horizontal Layout */}
-            <div className="hidden lg:grid overflow-x-auto gap-2 lg:gap-4 pb-8 lg:grid-cols-5">
+            <div className="hidden lg:flex gap-1 xl:gap-2 2xl:gap-4 pb-4 overflow-x-auto">
               {boxes.map((box, index) => (
                 <div
                   key={index}
-                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-4 cursor-pointer flex-shrink-0 w-[140px] lg:w-[250px] rounded-lg h-[200px] flex flex-col justify-center`}
+                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-1 hover:scale-[1.02] cursor-pointer rounded-lg h-[200px] flex flex-col justify-start flex-1 min-w-0 overflow-hidden`}
                 >
                   {/* Arrow */}
-                  <div className="absolute left-1 top-2 bottom-2 opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex items-center group-hover:hidden">
+                  <div className="absolute left-1 top-4 bottom-4 opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex items-center group-hover:hidden">
                     <Image
                       src="/bba/arrow.svg"
                       alt="Arrow"
                       width={8}
-                      height={149}
+                      height={110}
                       className="w-full h-full object-contain"
                     />
                   </div>
 
                   {/* Content */}
-                  <div className="ml-4 sm:ml-6 md:ml-8 group-hover:ml-2 transition-all duration-300">
+                  <div className="ml-4 xl:ml-5 2xl:ml-6 px-2 py-2 h-full flex flex-col">
                     <div
-                      className={`text-lg sm:text-xl md:text-2xl lg:text-[24px] font-bold mb-1 sm:mb-2 ${numberColor}`}
-                      style={{ fontFamily: "Helvetica Neue" }}
+                      className={`text-base xl:text-lg 2xl:text-xl font-bold mb-1 ${numberColor}`}
+                      style={{
+                        fontFamily: "Helvetica Neue, Arial, sans-serif",
+                        fontWeight: "700",
+                        textShadow: "0 1px 2px rgba(0,0,0,0.1)",
+                        lineHeight: "1.2",
+                      }}
                     >
                       {box.number}
                     </div>
                     <h5
-                      className={`text-xs md:text-base lg:text-[20px] ${titleColor} mb-1 sm:mb-2 monser-600 leading-tight`}
+                      className={`text-sm lg:text-base xl:text-lg 2xl:text-xl ${titleColor} mb-1 monser-600 leading-tight flex-shrink-0`}
                     >
                       {box.title}
                     </h5>
                     <p
-                      className={`text-[10px] md:text-sm lg:text-[14px] ${descColor} monser-400 leading-tight break-words`}
+                      className={`text-[11px] xl:text-[12px] 2xl:text-[13px] ${descColor} monser-400 leading-relaxed flex-grow`}
                     >
                       {box.description}
                     </p>

@@ -21,14 +21,14 @@ const GeneralInstructions = () => {
             {/* Left Side - Heading and Instructions (5/6 width) */}
             <div className="w-full lg:w-5/6">
               {/* Heading */}
-              <h1 className="text-[#0C2165] text-4xl md:text-6xl playfair-300 mb-4 md:mb-8 leading-tight">
+              <h2 className="text-[#0C2165] text-4xl md:text-5xl lg:text-6xl playfair-300 mb-4 md:mb-8 leading-tight">
                 General <br className="hidden md:block" />
                 Instructions
-              </h1>
+              </h2>
 
               {/* Instructions List */}
               <div className="space-y-3 sm:space-y-4 lg:px-4 px-0">
-                <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-0">
+                <ul className="space-y-2 sm:space-y-3 list-disc list-outside ml-4 md:ml-4 lg:ml-0">
                   {instructions.map((instruction, index) => (
                     <li
                       key={index}

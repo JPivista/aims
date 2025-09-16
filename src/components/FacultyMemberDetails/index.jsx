@@ -10,7 +10,7 @@ import LibraryAndPhysicalEducation from "./LibraryAndPhysicalEducation"
 import SchoolOfHospitalityAndTourism from "./SchoolOfHospitalityAndTourism"
 const FacultyMemberDetails = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <HeroBanner />
       <MeetTheFaculty />
       <div className="w-full">

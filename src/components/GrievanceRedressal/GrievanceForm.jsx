@@ -220,9 +220,9 @@ const GrievanceForm = () => {
   }
 
   return (
-    <div className="bg-[#531675] py-6 md:py-10">
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="max-w-6xl mx-auto">
+    <div className="bg-[#531675] py-6 md:py-10 px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto">
+        <div className="max-w-7xl">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name Section */}
             <div className="space-y-4">

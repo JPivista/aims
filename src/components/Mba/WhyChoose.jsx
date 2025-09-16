@@ -4,7 +4,7 @@ import Image from "next/image"
 const WhyChoose = () => {
   return (
     <>
-      <div className="container mx-auto flex flex-col items-center justify-center py-6 md:py-10 lg:py-10 px-4 md:px-6 lg:px-6 ">
+      <div className="container mx-auto flex flex-col items-center justify-center py-6 md:py-10 lg:py-10 px-4 md:px-8 lg:px-8 ">
         <div className="bg-[#D7FFF7] w-[200px] md:w-[300px] lg:w-[300px] rounded-2xl p-2 md:p-4 lg:p-4">
           <Image
             src="/MBA/naac-logo.png"

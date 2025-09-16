@@ -16,11 +16,11 @@ const HeroBanner = ({
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/faculty-details/mobile-banner.webp')]" />
 
         {/* Bottom Content Container */}
-        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-10 lg:mx-10 mx-0">
+        <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-10 lg:mx-10 mx-0 ">
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-center lg:text-left">
                   {/* Hero Text */}
                   <h1 className="text-white text-4xl leading-tight tracking-wider">
                     <span className="playfair-300 text-4xl md:text-[60px]">
@@ -41,6 +41,7 @@ const HeroBanner = ({
                   alt="Recruiters"
                   width={200}
                   height={200}
+                  priority
                 />
               </div>
             </div>

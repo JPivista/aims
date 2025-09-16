@@ -677,9 +677,9 @@ const Publications = () => {
                 ease: "easeOut",
                 duration: 0.5,
               }}
-              className="p-4 sm:p-6 md:p-8 bg-[#E1F9F4] rounded-lg"
+              className="p-4 md:p-8 lg:p-10 bg-[#E1F9F4] rounded-lg"
             >
-              <div className="ml-2 sm:ml-4 md:ml-10">
+              <div>
                 {/* Heading */}
                 <motion.h5
                   className="text-lg sm:text-xl md:text-2xl lg:text-[24px] mb-4 sm:mb-6 monser-600 text-[#A22877] leading-tight"

@@ -14,10 +14,10 @@ const Aiming = () => {
       <div className="px-4 md:px-8 lg:px-8 py-6 md:py-10">
         <div className="container mx-auto">
           {/* Row 1: Left Content, Right Image */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16 pb-6 md:pb-10 ">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-16 pb-6 md:pb-10 ">
             {/* Left Side - Content */}
-            <div className="flex flex-col md:flex-row gap-4 md:gap-10">
-              <div className="space-y-4 md:space-y-6 lg:space-y-6 md:w-1/2">
+            <div className="flex flex-col  md:flex-col lg:flex-row gap-4 md:gap-10">
+              <div className="space-y-4 md:space-y-6 lg:space-y-6 lg:w-1/2">
                 <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-10 playfair-300">
                   AIMing for All Round <br /> Development
                 </h2>
@@ -61,9 +61,9 @@ const Aiming = () => {
           </div>
 
           {/* Row 2: Left Image, Right Content */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-0 pb-6 md:pb-10 ">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-0 pb-6 md:pb-10 ">
             {/* Left Side - Image */}
-            <div className="w-full lg:w-2/3 flex ">
+            <div className="w-full lg:w-2/3 flex pb-0 md:pb-6 lg:pb-0">
               <Image
                 src="/student-development/our-approach.webp"
                 alt="Career Guidance"
@@ -74,7 +74,7 @@ const Aiming = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 px-0 md:px-10">
+            <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 lg:space-y-6 px-0 lg:px-10">
               <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300">
                 Our Approach
               </h2>
@@ -98,7 +98,7 @@ const Aiming = () => {
           </div>
 
           {/* Row 3: Left Content, Right Image */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-16">
             {/* Left Side - Content */}
             <div className="w-full lg:w-1/2 space-y-4 md:space-y-6">
               <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 playfair-300 ">
@@ -117,7 +117,7 @@ const Aiming = () => {
             </div>
 
             {/* Right Side - Image */}
-            <div className="md:w-1/2 lg:w-1/2 px-4 md:px-0">
+            <div className="lg:w-1/2 px-4 md:px-0">
               <Image
                 src="/student-development/objectives.webp"
                 alt="Success Achievement"

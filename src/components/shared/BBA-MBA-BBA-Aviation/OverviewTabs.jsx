@@ -22,11 +22,11 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
   }, [activeTab, isUserInteraction])
 
   return (
-    <div className="w-full container mx-auto flex flex-col items-center justify-center md:px-4 px-0">
+    <div className="w-full container mx-auto flex flex-col items-center justify-center ">
       {/* Tabs */}
       <div
         ref={containerRef}
-        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-0 w-full md:w-auto"
+        className="flex flex-col sm:flex-row flex-nowrap gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-0 w-full md:w-auto "
       >
         {tabs.map((tab) => (
           <motion.button
@@ -50,7 +50,7 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
       </div>
 
       {/* Content */}
-      <div className="w-full bg-white rounded-lg md:rounded-2xl p-4 md:px-12 md:pb-6 md:pt-10 mx-4 md:mx-10 ">
+      <div className="w-full bg-white rounded-lg md:rounded-2xl lg:rounded-2xl px-4 md:px-10 lg:px-10 py-6 lg:py-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -62,7 +62,7 @@ const OverviewTabs = ({ tabs, defaultActiveTab = "eligibility" }) => {
               ease: "easeOut",
               duration: 0.5,
             }}
-            className="w-full"
+            className="w-full "
           >
             {tabs.find((tab) => tab.key === activeTab)?.content}
           </motion.div>

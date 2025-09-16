@@ -26,8 +26,8 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
-                <div className="text-center md:text-left">
-                  <div className="flex justify-center md:justify-start mb-4">
+                <div className="text-center md:text-center lg:text-left">
+                  <div className="flex justify-center md:justify-center lg:justify-start mb-4">
                     <Image
                       src="/aicte/aicte-logo.svg"
                       alt="AICTE Logo"
@@ -57,6 +57,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                   alt="Recruiters"
                   width={200}
                   height={200}
+                  priority
                 />
               </div>
             </div>
@@ -71,6 +72,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                   alt="Recruiters"
                   width={200}
                   height={200}
+                  priority
                 />
               </div>
             </div>
