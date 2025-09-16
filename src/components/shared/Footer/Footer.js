@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* Mobile Collapsible Sections */}
-        <div className="lg:hidden space-y-0">
+        <div className="lg:hidden space-y-0 px-4 lg:px-8">
           {footerSections.map((section) => (
             <div key={section.id} className="border-b border-gray-600">
               <button
@@ -134,9 +134,9 @@ export default function Footer() {
       </div>
 
       {/* Middle Section - Contact, Social, Newsletter */}
-      <div className="border-t border-b border-whtie px-4 lg:px-8">
-        <div className="container mx-auto">
-          <div>
+      <div className="border-t border-b border-whtie w-full">
+        <div className="px-4 lg:px-8">
+          <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
               {/* AIMS Institutes */}
               <div className="py-4">
