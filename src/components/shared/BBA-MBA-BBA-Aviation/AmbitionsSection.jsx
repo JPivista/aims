@@ -14,7 +14,7 @@ const AmbitionsSection = ({
       className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative overflow-hidden`}
     >
       {/* Background SVG */}
-      <div className="absolute top-[13%] left-0 hidden lg:block md:hidden">
+      {/* <div className="absolute top-[13%] left-0 hidden lg:block md:hidden">
         <Image
           src="/school-circle.svg"
           alt="Ambitions Section Background"
@@ -22,7 +22,7 @@ const AmbitionsSection = ({
           height={100}
           className="rotate-180"
         />
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-4 md:px-0">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start min-h-[400px] lg:min-h-[500px]">

@@ -52,11 +52,11 @@ const Overview = () => {
       content: (
         <>
           {eligibilityData.map((section) => (
-            <div key={section.id} className="mb-8 md:mb-12">
+            <div>
               <h5 className="text-[#A22877] text-lg md:text-[24px] monser-600  mb-4 md:mb-8">
                 {section.heading}
               </h5>
-              <ul className="list-disc pl-6 sm:pl-8 md:pl-10 monser-400 text-base  md:text-[18px] space-y-3 md:space-y-4">
+              <ul className="list-disc  px-4 md:px-8 lg:px-8 monser-400 text-base  md:text-[18px] space-y-3 md:space-y-4">
                 {section.items.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item.text}
