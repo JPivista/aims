@@ -6,7 +6,8 @@ import Link from "next/link";
 const CampusUpdates = () => {
   return (
     <>
-      <div className="container mx-auto pt-10 lg:px-0 px-4">
+  <div className="px-4 lg:px-8">
+  <div className="container mx-auto pt-10 ">
         <h1 className="text-[#0C2165]">Campus Updates</h1>
         <p className="lg:w-[60%] w-full">
           Stay informed about the latest news, events, and developments,
@@ -24,6 +25,7 @@ const CampusUpdates = () => {
       <div>
         <AimsCarousel />
       </div>
+  </div>
     </>
   );
 };
