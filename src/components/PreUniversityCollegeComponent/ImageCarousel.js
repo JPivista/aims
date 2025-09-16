@@ -129,105 +129,107 @@ const ImageCarousel = () => {
 
   return (
     <div className="bg-[#E6FAF7]">
-      <div className="container mx-auto flex flex-col items-center gap-4 sm:gap-6 py-8 sm:py-12 px-4">
-        {/* Carousel Container */}
-        <div
-          className="relative w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-lg"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
+      <div className="px-4 lg:px-8">
+        <div className="container mx-auto flex flex-col items-center gap-4 sm:gap-6 py-8 sm:py-12">
+          {/* Carousel Container */}
           <div
-            ref={slideRef}
-            className="flex h-full"
-            onTransitionEnd={handleTransitionEnd}
+            className="relative w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-lg"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            {slides.map((img, index) => (
-              <div
-                key={index}
-                className="relative w-full h-full flex-shrink-0"
-              >
-                <Image
-                  src={img}
-                  alt={`Slide ${index}`}
-                  fill
-                  className="object-contain"
-                  priority={index <= 2} // Prioritize first few images
+            <div
+              ref={slideRef}
+              className="flex h-full"
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {slides.map((img, index) => (
+                <div
+                  key={index}
+                  className="relative w-full h-full flex-shrink-0"
+                >
+                  <Image
+                    src={img}
+                    alt={`Slide ${index}`}
+                    fill
+                    className="object-contain"
+                    priority={index <= 2} // Prioritize first few images
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile Indicators */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 md:hidden">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setIsTransitioning(true);
+                    setActiveIndex(index + 1);
+                  }}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${activeIndex === index + 1
+                    ? "bg-white scale-125"
+                    : "bg-white/50"
+                    }`}
                 />
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          {/* Mobile Indicators */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 md:hidden">
-            {images.map((_, index) => (
-              <button
+          {/* Thumbnails - Hidden on mobile, shown on tablet and desktop */}
+          <div className="hidden sm:flex gap-2 md:gap-4 px-4 max-w-full">
+            {images.map((img, index) => (
+              <div
                 key={index}
                 onClick={() => {
                   setIsTransitioning(true);
                   setActiveIndex(index + 1);
                 }}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${activeIndex === index + 1
-                  ? "bg-white scale-125"
-                  : "bg-white/50"
+                className={`relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 transition-all duration-300 ${activeIndex === index + 1
+                  ? "border-[#a22978] scale-105 shadow-lg"
+                  : "border-gray-300 hover:border-[#a22978] hover:scale-105"
                   }`}
-              />
+              >
+                <Image
+                  src={img}
+                  alt={`Thumb ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
             ))}
           </div>
-        </div>
 
-        {/* Thumbnails - Hidden on mobile, shown on tablet and desktop */}
-        <div className="hidden sm:flex gap-2 md:gap-4 px-4 max-w-full overflow-x-auto">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              onClick={() => {
-                setIsTransitioning(true);
-                setActiveIndex(index + 1);
-              }}
-              className={`relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-lg overflow-hidden cursor-pointer border-2 flex-shrink-0 transition-all duration-300 ${activeIndex === index + 1
-                ? "border-[#a22978] scale-105 shadow-lg"
-                : "border-gray-300 hover:border-[#a22978] hover:scale-105"
-                }`}
+          {/* Controls */}
+          <div className="flex gap-3 sm:gap-4 mt-2">
+            <button
+              onClick={prevSlide}
+              disabled={isTransitioning}
+              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[#a22978] rounded-full bg-white shadow-md hover:bg-[#a22978] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
+              aria-label="Previous slide"
             >
-              <Image
-                src={img}
-                alt={`Thumb ${index + 1}`}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+              <HiArrowSmallLeft size={16} className="sm:w-5 sm:h-5" />
+            </button>
+            <button
+              onClick={nextSlide}
+              disabled={isTransitioning}
+              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[#a22978] rounded-full bg-white shadow-md hover:bg-[#a22978] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
+              aria-label="Next slide"
+            >
+              <HiArrowSmallRight size={16} className="sm:w-5 sm:h-5" />
+            </button>
+          </div>
 
-        {/* Controls */}
-        <div className="flex gap-3 sm:gap-4 mt-2">
-          <button
-            onClick={prevSlide}
-            disabled={isTransitioning}
-            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[#a22978] rounded-full bg-white shadow-md hover:bg-[#a22978] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
-            aria-label="Previous slide"
-          >
-            <HiArrowSmallLeft size={16} className="sm:w-5 sm:h-5" />
-          </button>
-          <button
-            onClick={nextSlide}
-            disabled={isTransitioning}
-            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[#a22978] rounded-full bg-white shadow-md hover:bg-[#a22978] hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
-            aria-label="Next slide"
-          >
-            <HiArrowSmallRight size={16} className="sm:w-5 sm:h-5" />
-          </button>
-        </div>
-
-        {/* Slide Counter - Desktop only */}
-        {/* <div className="hidden lg:flex items-center gap-2 text-sm text-gray-600">
+          {/* Slide Counter - Desktop only */}
+          {/* <div className="hidden lg:flex items-center gap-2 text-sm text-gray-600">
           <span className="font-medium">{activeIndex > totalSlides ? 1 : activeIndex < 1 ? totalSlides : activeIndex}</span>
           <span>/</span>
           <span>{totalSlides}</span>
         </div> */}
+        </div>
       </div>
     </div>
   );

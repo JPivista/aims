@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const PhdProgramOverview = () => {
     return (
-        <div className="bg-white py-4 lg:py-5 lg:px-0 px-4">
-            <div className="container mx-auto px-0 sm:px-6 lg:px-8 ">
+        <div className="bg-white py-4 lg:py-5 lg:px-8 px-4">
+            <div className="container mx-auto ">
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row md:gap-6 gap-0 lg:gap-5 md:mb-12 mb-8 md:pt-5 pt-0 items-start">
                     <div className="w-full">

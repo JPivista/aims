@@ -36,10 +36,10 @@ const WhyChoose = () => {
     ]
 
     return (
-        <div className="bg-[#e1f9f4] md:py-10 py-6">
+        <div className="bg-[#e1f9f4] md:py-10 py-6 px-4 lg:px-8">
             <div className="container mx-auto">
                 {/* Header */}
-                <div className="text-center py-4 md:py-6 px-4">
+                <div className="text-center py-4 md:py-6">
                     <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165]">
                         Why Choose the <br />
                         <span style={{ fontWeight: '600', color: '#a22978' }} className="italic playfair-400 -mt-6 md:-mt-10">AIMS PhD?</span>

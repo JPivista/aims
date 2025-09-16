@@ -15,8 +15,8 @@ const ValueAddedPrograms = ({
   // Handle case when programsData is undefined or empty
   if (!programsData || programsData.length === 0) {
     return (
-      <div className="pt-20 pb-10 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
+      <div className="pt-20 pb-10 bg-white px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="text-center">
             <h3
               className="text-[#0C2165] playfair-300"

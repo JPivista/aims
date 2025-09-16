@@ -18,7 +18,7 @@ const principalData = {
 
 const PrincipalsMessage = () => {
     return (
-        <section className="bg-[#E1F9F4] py-12 px-6 lg:px-20">
+        <section className="bg-[#E1F9F4] py-12 px-4 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10 container mx-auto">
 
                 {/* Left Side - Image */}

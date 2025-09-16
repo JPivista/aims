@@ -60,7 +60,7 @@ const TabbedInfoSection = ({
                 </div>
 
                 {/* Tabs Section */}
-                <div className="flex flex-col md:flex-row w-full py-8 gap-8 md:px-12">
+                <div className="flex flex-col md:flex-row w-full py-8 gap-8">
                     {/* Left Tabs */}
                     <div className="flex flex-col gap-2 w-full md:w-[40%] items-start">
                         {Object.keys(tabData).map((key) => (

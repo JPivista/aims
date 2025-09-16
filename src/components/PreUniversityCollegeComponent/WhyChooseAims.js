@@ -22,29 +22,31 @@ const rightPoints = [
 
 const WhyChooseAims = () => {
     return (
-        <div className="container mx-auto py-12 px-4">
-            <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-5">
-                Why Choose <br />
-                AIMS PUC?
-            </h3>
+        <div className="py-12 px-4 lg:px-8">
+            <div className="container mx-auto ">
+                <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-5">
+                    Why Choose <br />
+                    AIMS PUC?
+                </h3>
 
-            <div className="flex flex-col lg:flex-row gap-8">
-                {/* Left Box */}
-                <div className="bg-[#FAE5E6] border border-[#A22877] rounded-lg p-6 lg:w-1/2">
-                    <ul className="list-disc pl-5 space-y-3 text-gray-800">
-                        {leftPoints.map((point, index) => (
-                            <li key={index}>{point}</li>
-                        ))}
-                    </ul>
-                </div>
+                <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Left Box */}
+                    <div className="bg-[#FAE5E6] border border-[#A22877] rounded-lg p-6 lg:w-1/2">
+                        <ul className="list-disc pl-5 space-y-3 text-gray-800">
+                            {leftPoints.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </div>
 
-                {/* Right Box */}
-                <div className="bg-[#FAE5E6] border border-[#A22877] rounded-lg p-6 lg:w-1/2">
-                    <ul className="list-disc pl-5 space-y-3 text-gray-800">
-                        {rightPoints.map((point, index) => (
-                            <li key={index}>{point}</li>
-                        ))}
-                    </ul>
+                    {/* Right Box */}
+                    <div className="bg-[#FAE5E6] border border-[#A22877] rounded-lg p-6 lg:w-1/2">
+                        <ul className="list-disc pl-5 space-y-3 text-gray-800">
+                            {rightPoints.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

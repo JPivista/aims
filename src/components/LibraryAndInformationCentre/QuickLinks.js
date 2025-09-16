@@ -174,148 +174,148 @@ const QuickLinks = () => {
 
   return (
     <div className='lg:px-8 px-4'>
-    <div className="container mx-auto px-6 py-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto py-12 grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-      {/* Image Top on Tablet and Mobile */}
-      <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden lg:order-2 md:order-1">
-        <Image
-          src="/library-and-information-centre/quick_links.webp"
-          alt="Library services"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+        {/* Image Top on Tablet and Mobile */}
+        <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden lg:order-2 md:order-1">
+          <Image
+            src="/library-and-information-centre/quick_links.webp"
+            alt="Library services"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
-      {/* Accordion Below Image */}
-      <div className="lg:order-1 md:order-2">
-        <h3 className="text-4xl font-bold text-[#0d2352] mb-6">Quick Links:</h3>
+        {/* Accordion Below Image */}
+        <div className="lg:order-1 md:order-2">
+          <h3 className="text-4xl font-bold text-[#0d2352] mb-6">Quick Links:</h3>
 
-        <div className="space-y-4">
-          {links.map((link, index) => (
-            <div key={index} className="border-b border-[#531675] pb-2">
-              {/* Accordion Header */}
-              <button
-                onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between text-left items-center text-lg font-medium text-black cursor-pointer"
-              >
-                {link.title}
-                {openIndex === index ? (
-                  <FaMinus className="text-[#531675]" />
-                ) : (
-                  <FaPlus className="text-[#531675]" />
-                )}
-              </button>
+          <div className="space-y-4">
+            {links.map((link, index) => (
+              <div key={index} className="border-b border-[#531675] pb-2">
+                {/* Accordion Header */}
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full flex justify-between text-left items-center text-lg font-medium text-black cursor-pointer"
+                >
+                  {link.title}
+                  {openIndex === index ? (
+                    <FaMinus className="text-[#531675]" />
+                  ) : (
+                    <FaPlus className="text-[#531675]" />
+                  )}
+                </button>
 
-              {/* Accordion Body */}
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[1000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
-                  }`}
-              >
-                <div className="space-y-3">
-                  {link.contents.map((item, i) => {
-                    if (item.type === 'text') {
-                      return (
-                        <h5 key={i} className="">
-                          {item.value}
-                        </h5>
-                      );
-                    }
-                    if (item.type === 'html') {
-                      return (
-                        <div
-                          key={i}
-                          className=""
-                          dangerouslySetInnerHTML={{ __html: item.value }}
-                        />
-                      );
-                    }
-                    if (item.type === 'link') {
-                      return (
-                        <a
-                          key={i}
-                          href={item.href}
-                          className="text-[#531675] font-semibold block"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {item.value}
-                        </a>
-                      );
-                    }
-                    if (item.type === 'table') {
-                      return (
-                        <table
-                          key={i}
-                          className="w-full text-sm border-collapse border border-gray-300 my-2"
-                        >
-                          <thead className="bg-gray-100">
-                            <tr>
-                              {item.headers.map((header, j) => (
-                                <th
-                                  key={j}
-                                  className="border border-gray-300 px-2 py-1 text-left"
-                                >
-                                  {header}
-                                </th>
-                              ))}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {item.rows.map((row, rIdx) => (
-                              <tr key={rIdx}>
-                                {row.map((cell, cIdx) => (
-                                  <td
-                                    key={cIdx}
-                                    className="border border-gray-300 px-2 py-1"
+                {/* Accordion Body */}
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[1000px] opacity-100 mt-2' : 'max-h-0 opacity-0'
+                    }`}
+                >
+                  <div className="space-y-3">
+                    {link.contents.map((item, i) => {
+                      if (item.type === 'text') {
+                        return (
+                          <h5 key={i} className="">
+                            {item.value}
+                          </h5>
+                        );
+                      }
+                      if (item.type === 'html') {
+                        return (
+                          <div
+                            key={i}
+                            className=""
+                            dangerouslySetInnerHTML={{ __html: item.value }}
+                          />
+                        );
+                      }
+                      if (item.type === 'link') {
+                        return (
+                          <a
+                            key={i}
+                            href={item.href}
+                            className="text-[#531675] font-semibold block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.value}
+                          </a>
+                        );
+                      }
+                      if (item.type === 'table') {
+                        return (
+                          <table
+                            key={i}
+                            className="w-full text-sm border-collapse border border-gray-300 my-2"
+                          >
+                            <thead className="bg-gray-100">
+                              <tr>
+                                {item.headers.map((header, j) => (
+                                  <th
+                                    key={j}
+                                    className="border border-gray-300 px-2 py-1 text-left"
                                   >
-                                    {cell}
-                                  </td>
+                                    {header}
+                                  </th>
                                 ))}
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      );
-                    }
-                    if (item.type === 'bullets') {
-                      return (
-                        <div key={i} className="mt-2">
-                          <h5 className="font-semibold text-gray-800 mb-1" style={{ fontWeight: '600' }}>
-                            {item.title}
-                          </h5>
-                          <ul
-                            key={i}
-                            className="list-disc list-outside pl-5 text-gray-700 text-sm space-y-1"
-                          >
-                            {item.items.map((point, pIdx) => (
-                              <li style={{ fontSize: '16px' }} key={pIdx}>
-                                {point}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                            </thead>
+                            <tbody>
+                              {item.rows.map((row, rIdx) => (
+                                <tr key={rIdx}>
+                                  {row.map((cell, cIdx) => (
+                                    <td
+                                      key={cIdx}
+                                      className="border border-gray-300 px-2 py-1"
+                                    >
+                                      {cell}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        );
+                      }
+                      if (item.type === 'bullets') {
+                        return (
+                          <div key={i} className="mt-2">
+                            <h5 className="font-semibold text-gray-800 mb-1" style={{ fontWeight: '600' }}>
+                              {item.title}
+                            </h5>
+                            <ul
+                              key={i}
+                              className="list-disc list-outside pl-5 text-gray-700 text-sm space-y-1"
+                            >
+                              {item.items.map((point, pIdx) => (
+                                <li style={{ fontSize: '16px' }} key={pIdx}>
+                                  {point}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
 
-                      );
-                    }
-                    return null;
-                  })}
+                        );
+                      }
+                      return null;
+                    })}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Subscribe Button */}
-        <div className="lg:pt-8 pt-5">
-          <Subscribe />
-        </div>
+          {/* Subscribe Button */}
+          <div className="lg:pt-8 pt-5">
+            <Subscribe />
+          </div>
 
-        <p className="mt-3 text-gray-800 text-sm text-center">
-          Sign up with your email to receive login credentials for our digital platforms.
-        </p>
+          <p className="mt-3 text-gray-800 text-sm text-center">
+            Sign up with your email to receive login credentials for our digital platforms.
+          </p>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
