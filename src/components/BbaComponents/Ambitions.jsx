@@ -31,20 +31,20 @@ const Ambitions = () => {
         </div>
 
         <div className="absolute inset-0 flex md:items-center  items-end  bottom-10 md:bottom-0">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center md:text-left ">
+          <div className="container mx-auto px-4 md:px-0 lg:px-8 text-center md:text-left ">
             <div className="w-full md:max-w-2xl space-y-4 text-white ">
               {/* Heading */}
-              <h2 className="text-[40px] md:text-[60px] playfair-300 italic">
+              <h2 className="text-[40px] md:text-[50px] lg:text-[60px] playfair-300 italic">
                 BBA+
               </h2>
 
               {/* Subheading */}
-              <h5 className="text-xl md:text-[28px] monser-600">
+              <h5 className="text-xl md:text-[24px] lg:text-[28px] monser-600">
                 CA/ACCA Training
               </h5>
 
               {/* Paragraph */}
-              <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8 max-w-md">
+              <p className="text-white text-base md:text-base lg:text-xl leading-relaxed mb-6 md:mb-8 max-w-md">
                 Students can opt for CA or ACCA training alongside their BBA to
                 strengthen their professional foundation.
               </p>

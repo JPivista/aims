@@ -36,7 +36,7 @@ const Overview = () => {
           >
             Important Dates
           </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed lg:px-4 px-0">
             Please see the{" "}
             <a href="/admission-process" className="text-[#A22877]">
               Admission Process
@@ -52,13 +52,16 @@ const Overview = () => {
       content: (
         <>
           {eligibilityData.map((section) => (
-            <div key={section.id} className="mb-8 md:mb-12">
+            <div key={section.id}>
               <h5 className="text-[#A22877] text-lg md:text-[24px] monser-600  mb-4 md:mb-8">
                 {section.heading}
               </h5>
-              <ul className="list-disc pl-6 sm:pl-8 md:pl-10 monser-400 text-base  md:text-[18px] space-y-3 md:space-y-4">
+              <ul className="list-disc px-4 md:px-8 lg:px-8 monser-400 text-base  md:text-[18px] space-y-3 md:space-y-4">
                 {section.items.map((item, index) => (
-                  <li key={index} className="mb-2">
+                  <li
+                    key={index}
+                    className={index === section.items.length - 1 ? "" : "mb-2"}
+                  >
                     {item.text}
                     {item.hasOr && (
                       <>
@@ -85,7 +88,7 @@ const Overview = () => {
           >
             Selection Process
           </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider lg:px-4 px-0 ">
             Please see the{" "}
             <a href="/admission-process" className="text-[#A22877]">
               Admission Process
@@ -98,7 +101,7 @@ const Overview = () => {
   ]
   return (
     <div className="bg-[#FFEFE3] px-4 lg:px-8 py-6 lg:py-10">
-      <div className="container mx-auto ">
+      <div className="container mx-auto">
         {/* BBA Program overview */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-10 justify-between items-start">
           <h2 className="w-full max-w-lg text-center md:text-left">
@@ -119,7 +122,7 @@ const Overview = () => {
         </div>
 
         {/* Program Details For Mobile */}
-        <div className="flex justify-center py-6 md:py-8 ">
+        <div className="flex justify-center py-6 md:py-8  ">
           {/* Mobile Card Version */}
           <div className="block md:hidden w-full max-w-sm">
             <div className="rounded-2xl p-6 border border-[#A774CC]">

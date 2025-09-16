@@ -91,9 +91,9 @@ const AdmissionTabs = ({ tabsData }) => {
               ease: "easeOut",
               duration: 0.5,
             }}
-            className="bg-white rounded-2xl md:mx-10"
+            className="bg-white rounded-2xl"
           >
-            <div className="px-4 md:px-16 py-6">
+            <div className="px-4 md:px-10 md:py-10 lg:px-10 lg:py-10 py-6">
               {/* Heading */}
               <h5 className="text-2xl md:text-[24px] mb-6 monser-600 text-[#A22877]">
                 {tabsData[activeTab].heading}
@@ -102,7 +102,7 @@ const AdmissionTabs = ({ tabsData }) => {
               {/* Description */}
               {tabsData[activeTab].description && (
                 <div className="mb-6">
-                  <p className="text-base md:text-lg monser-400">
+                  <p className="text-base md:text-lg monser-400 md:px-4 lg:px-4 px-0">
                     {tabsData[activeTab].description}
                   </p>
                 </div>
@@ -110,7 +110,7 @@ const AdmissionTabs = ({ tabsData }) => {
 
               {/* MBA Admission Special Structure */}
               {tabsData[activeTab].eligibility && (
-                <div className="space-y-6">
+                <div className="space-y-6 md:px-4 lg:px-4 px-0">
                   {/* Eligibility Criteria */}
                   <div className="space-y-4">
                     <h6 className="text-xl md:text-[22px] monser-600 text-[#A22877]">
@@ -296,7 +296,7 @@ const AdmissionTabs = ({ tabsData }) => {
               {/* Regular Points Structure for other tabs */}
               {tabsData[activeTab].points &&
                 !tabsData[activeTab].eligibility && (
-                  <div className="space-y-4">
+                  <div className="space-y-4 md:px-4 lg:px-4 px-0">
                     <div className="monser-400">
                       {tabsData[activeTab].points
                         .filter((point) => point?.trim())
@@ -317,7 +317,7 @@ const AdmissionTabs = ({ tabsData }) => {
 
               {/* Conclusion */}
               {tabsData[activeTab].conclusion && (
-                <div className="mt-6">
+                <div className="mt-6 md:px-4 lg:px-4 px-0">
                   <p className="text-base md:text-lg monser-400">
                     {tabsData[activeTab].conclusion}
                   </p>

@@ -91,7 +91,7 @@ const PrivacyPolicy = () => {
   const renderSection = (section, sectionIndex) => {
     return (
       <div key={sectionIndex} className="space-y-4 sm:space-y-6">
-        <h2 className="text-2xl md:text-[35px] text-[#0C2165] monser-500">
+        <h2 className="text-2xl md:text-4xl lg:text-4xl text-[#0C2165] monser-500">
           {section.heading}
         </h2>
         <p className="text-[18px] monser-600 font-semibold">
@@ -134,11 +134,11 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <div className="bg-[#E1F9F4] py-6 md:py-10 px-4 md:px-0">
-        <h1 className="text-2xl lg:text-[65px] text-[#0C2165] playfair-300 text-center">
+      <div className="bg-[#E1F9F4] py-6 md:py-10 px-4 md:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#0C2165] playfair-300 text-center mb-4">
           Privacy Policy
-        </h1>
-        <p className="text-base  md:text-[20px] monser-400 text-center max-w-5xl mx-auto">
+        </h2>
+        <p className="text-base md:text-[20px] monser-400 text-center lg:max-w-5xl mx-auto">
           Your privacy is important to AIMS Institutes. This privacy statement
           provides information about the personal information that AIMS
           Institutes collects and how AIMS Institutes uses that personal
@@ -149,17 +149,20 @@ const PrivacyPolicy = () => {
       <Breadcrumbs />
       {/* Content Section */}
       <div className="relative">
-        <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
-          <div className="max-w-4xl mx-auto relative">
-            {/* Content */}
-            <div className="space-y-4">
-              {contentSections.map((section, index) =>
-                renderSection(section, index)
-              )}
+        <div className="px-4 md:px-6 lg:px-8 py-6 md:py-10">
+          <div className="container mx-auto overflow-hidden">
+            <div className="max-w-6xl mx-auto relative">
+              {/* Content */}
+              <div className="space-y-4">
+                {contentSections.map((section, index) =>
+                  renderSection(section, index)
+                )}
+              </div>
             </div>
           </div>
         </div>
-        <div className="absolute md:top-30 right-0 md:block hidden z-10">
+
+        <div className="absolute md:top-30 right-0 md:hidden lg:block hidden z-10">
           <Image
             src="/student-handbook/semi-circle.svg"
             alt="School Circle Background"

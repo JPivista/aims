@@ -375,9 +375,9 @@ const CourseStructure = ({ programKey = "mba" }) => {
 
   return (
     <>
-      <div className="bg-white px-4 lg:px-8">
+      <div className="bg-white px-4 md:px-8 lg:px-8">
         <div className="container mx-auto ">
-          <h3 className="mb-2 ">
+          <h3 className="mb-2">
             <span className="mba-program-text text-4xl md:text-6xl">
               {getProgramTitle(programKey)}
             </span>{" "}

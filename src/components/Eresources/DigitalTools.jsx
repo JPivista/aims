@@ -43,27 +43,27 @@ const DigitalTools = () => {
           style={{ borderColor: "rgba(0, 0, 0, 0.20)" }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-5xl text-[#0C2165] playfair-300">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl text-[#0C2165] playfair-300">
               Subscribed Resources
-            </h3>
+            </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 max-w-6xl ">
             {subscribedResources.map((resource) => (
               <div
                 key={resource.id}
-                className="bg-white rounded-lg overflow-hidden border border-[#B79AAD]"
+                className="bg-white rounded-lg overflow-hidden border border-[#B79AAD] hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="flex flex-col md:flex-row">
-                  <div className="bg-[#A22877] px-4 md:px-6 py-4 md:py-6 flex items-center justify-between md:min-w-[140px]">
-                    <span className="text-white font-bold text-2xl md:text-[36px] monser-600">
+                <div className="flex flex-col lg:flex-row">
+                  <div className="bg-[#A22877] px-4 md:px-6 py-4 md:py-6 flex items-center justify-between lg:min-w-[160px] lg:max-w-[200px]">
+                    <span className="text-white font-bold text-xl md:text-2xl lg:text-[28px] monser-600 leading-tight">
                       {resource.name}
                     </span>
                     <a
                       href={resource.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="cursor-pointer"
+                      className="cursor-pointer flex-shrink-0"
                     >
                       <motion.div
                         animate={{ x: [0, 5, 0] }}
@@ -78,13 +78,15 @@ const DigitalTools = () => {
                           alt="Arrow"
                           width={14}
                           height={15}
-                          className="w-4 h-4 md:w-6 md:h-6 ml-2 md:ml-5"
+                          className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ml-2 md:ml-3 lg:ml-4"
                         />
                       </motion.div>
                     </a>
                   </div>
-                  <div className="px-4 md:px-6 py-4 md:py-6 flex-1">
-                    <p className="text-xs md:text-sm">{resource.description}</p>
+                  <div className="px-4 md:px-6 py-4 md:py-6 flex-1 flex items-center">
+                    <p className="text-sm md:text-base lg:text-sm leading-relaxed">
+                      {resource.description}
+                    </p>
                   </div>
                 </div>
               </div>

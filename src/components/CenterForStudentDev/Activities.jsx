@@ -47,7 +47,7 @@ const Activities = () => {
           </h5>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 md:-bottom-1 md:-right-3 hidden md:block">
+      <div className="absolute bottom-0 right-0 md:-bottom-1 md:-right-3 hidden md:hidden lg:block">
         <Image
           src="/student-development/activities-new.svg"
           alt="Student Activities"

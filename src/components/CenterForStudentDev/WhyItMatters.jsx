@@ -3,13 +3,22 @@ import Image from "next/image"
 
 const WhyItMatters = () => {
   return (
-    <div className="relative w-full h-[90vh] md:h-[75vh] overflow-hidden mt-4 md:mt-0">
+    <div className="relative w-full h-[90vh] md:h-[80vh] lg:h-[75vh] overflow-hidden mt-4 md:mt-0">
       {/* Desktop Background Image */}
       <Image
         src="/student-development/why-it-matters.webp"
         alt="Why It Matters"
         fill
-        className="hidden md:block object-cover"
+        className="hidden lg:block object-cover"
+        priority
+      />
+
+      {/* Tablet Background Image */}
+      <Image
+        src="/student-development/mobile-why-it-matters.webp"
+        alt="Why It Matters"
+        fill
+        className="hidden md:block lg:hidden object-cover object-top"
         priority
       />
 
@@ -23,14 +32,14 @@ const WhyItMatters = () => {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-center mt-24 lg:mt-0 px-4 lg:px-8 ">
-        <div className=" container mx-auto ">
-          <div className="flex justify-start lg:justify-end">
-            <div className="text-center lg:text-left">
-              <h2 className="text-white text-3xl  md:text-6xl playfair-300 leading-tight text-center md:text-left">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center mt-30 md:mt-60 lg:mt-0 ml-0 md:ml-0 lg:ml-20">
+        <div className="container mx-auto px-4 md:px-0 lg:px-0">
+          <div className="flex lg:justify-end md:justify-center">
+            <div className="w-full md:max-w-xl">
+              <h2 className="text-white text-3xl md:text-5xl lg:text-6xl playfair-300 leading-tight mb-3 md:mb-6 tracking-wider text-center md:text-center lg:text-left">
                 Why It Matters
               </h2>
-              <p className="text-white text-sm md:text-base mt-2 md:mt-4 lg:mt-4 xl:mt-4 max-w-md md:max-w-md lg:max-w-md xl:max-w-md text-center md:text-left">
+              <p className="text-white text-sm md:text-lg lg:text-lg max-w-md text-center md:text-center lg:text-left ml-0 md:ml-15 lg:ml-0">
                 In a world that demands more than academic excellence, ACSD
                 provides a structured foundation for personality development,
                 leadership training, and college workshops for employability

@@ -13,11 +13,11 @@ const Aiming = () => {
       <div className="relative px-4 md:px-8 lg:px-8 py-6 md:py-10">
         <div className="container mx-auto">
           {/* Row-1 */}
-          <div className="max-w-6xl pb-6 md:pb-10">
+          <div className="max-w-6xl pb-6 md:pb-10 ">
             <h2 className="text-3xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300">
               Purpose in Action. <br /> AIM for a More Compassionate World.
             </h2>
-            <div className="flex flex-col gap-4 w-full md:w-4/5 lg:w-4/5">
+            <div className="flex flex-col gap-4 w-full  lg:w-4/5">
               <p className="text-sm md:text-base  monser-400">
                 For collaborations and support, write to us at{" "}
                 <span className="text-[#A22877] monser-600 underline">
@@ -43,7 +43,7 @@ const Aiming = () => {
           </div>
 
           {/* Row 2: Left Image, Right Content */}
-          <div className="flex flex-col md:flex-row lg:flex-row gap-6 pb-6 md:pb-10">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-6 pb-6 md:pb-10">
             {/* Left Side - Image */}
             <div className="w-full lg:w-1/2 flex justify-center md:justify-start lg:justify-start ">
               <Image
@@ -79,7 +79,7 @@ const Aiming = () => {
           </div>
 
           {/* Row 3: Left Content, Right Image */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16">
+          <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-16">
             {/* Left Side - Content */}
             <div className="w-full lg:w-1/2 space-y-4">
               <h2 className="text-3xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300 leading-tight">

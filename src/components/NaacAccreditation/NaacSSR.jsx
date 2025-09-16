@@ -426,12 +426,12 @@ const NaacSSR = () => {
   }
 
   return (
-    <div className="py-6 md:py-10 px-4 md:px-8 lg:px-12">
+    <div className="py-6 md:py-10 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="mb-6">
-          <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#0C2165] playfair-300 mb-2 md:mb-3">
+          <h2 className="text-3xl md:text-6xl lg:text-6xl font-bold text-[#0C2165] playfair-300 mb-2 md:mb-3">
             NAAC SSR
-          </h3>
+          </h2>
         </div>
         {criteriaItems.map((item, index) => (
           <CriteriaItem

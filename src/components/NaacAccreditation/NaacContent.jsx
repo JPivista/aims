@@ -4,10 +4,10 @@ import Image from "next/image"
 const NaacContent = () => {
   return (
     <>
-      <div className="relative px-4 md:px-8 lg:px-12 py-6 md:py-10">
+      <div className="relative px-4 md:px-6 lg:px-8 py-6 md:py-10">
         <div className="container mx-auto">
           <div className="flex flex-col justify-center items-start ">
-            <h2 className="text-3xl md:text-6xl text-[#0C2165] playfair-300 mb-3 md:mb-4 lg:mb-6 ">
+            <h2 className="text-3xl md:text-6xl lg:text-6xl text-[#0C2165] playfair-300 mb-3 md:mb-4 lg:mb-6 ">
               AIMS Institutes: Honoured with <br className="hidden md:block" />{" "}
               'A' Grade NAAC Accreditation
             </h2>
@@ -19,7 +19,7 @@ const NaacContent = () => {
             </p>
           </div>
         </div>
-        <div className="absolute md:top-[0%] right-0 md:block hidden">
+        <div className="absolute md:top-[0%] right-0 md:hidden lg:block hidden">
           <Image
             src="/student-handbook/semi-circle.svg"
             alt="School Circle Background"

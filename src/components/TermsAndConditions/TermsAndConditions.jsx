@@ -237,9 +237,9 @@ const TermsAndConditions = () => {
   const renderSection = (section, sectionIndex) => {
     return (
       <div key={sectionIndex} className="space-y-4">
-        <h3 className="text-xl sm:text-2xl md:text-3xl text-[#0C2165] playfair-300">
+        <h2 className="text-4xl  md:text-5xl lg:text-5xl text-[#0C2165] playfair-300">
           {section.heading}
-        </h3>
+        </h2>
         {section.paragraphs.map((paragraph, paragraphIndex) => {
           // Check if paragraph starts with bullet point
           if (paragraph.startsWith("•")) {
@@ -310,10 +310,10 @@ const TermsAndConditions = () => {
   return (
     <>
       <div className="bg-[#E1F9F4] py-6 md:py-10">
-        <h1 className="text-2xl lg:text-[65px] text-[#0C2165] playfair-300 text-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#0C2165] playfair-300 text-center">
           Terms and Conditions
-        </h1>
-        <p className="text-base md:text-xl monser-400 text-center">
+        </h2>
+        <p className="text-base md:text-2xl lg:text-2xl monser-400 text-center">
           Updated in January 2023
         </p>
       </div>
@@ -321,16 +321,19 @@ const TermsAndConditions = () => {
       <Breadcrumbs />
       {/* Content Section */}
       <div className="relative">
-        <div className="container mx-auto px-4 md:px-8 py-6 md:py-10 overflow-hidden">
-          <div className="max-w-4xl mx-auto ">
-            <div className="space-y-4">
-              {contentSections.map((section, index) =>
-                renderSection(section, index)
-              )}
+        <div className="px-4 md:px-6 lg:px-8 py-6 md:py-10">
+          <div className="container mx-auto overflow-hidden">
+            <div className="max-w-6xl mx-auto ">
+              <div className="space-y-4">
+                {contentSections.map((section, index) =>
+                  renderSection(section, index)
+                )}
+              </div>
             </div>
           </div>
         </div>
-        <div className="absolute md:top-30 right-0 md:block hidden z-10">
+
+        <div className="absolute md:top-30 right-0 md:hidden lg:block hidden z-10">
           <Image
             src="/student-handbook/semi-circle.svg"
             alt="School Circle Background"

@@ -32,7 +32,7 @@ const ProgramHighlight = () => {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-end md:justify-end lg:justify-center pb-20 md:pb-0 lg:pb-0 mt-10 md:mt-0 lg:mt-0 px-4 md:px-0 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-end md:justify-end lg:justify-center pb-20 md:pb-0 lg:pb-0 mt-10 md:mt-0 lg:mt-0 px-4 md:px-8 lg:px-8">
         <div className="container mx-auto">
           <div className="flex justify-start md:justify-center lg:justify-start ">
             <div className="w-full md:max-w-2xl lg:max-w-2xl text-center md:text-center lg:text-left md:mb-10 lg:mb-0">

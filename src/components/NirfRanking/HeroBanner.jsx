@@ -26,8 +26,8 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
-                <div className="text-center md:text-left">
-                  <div className="flex justify-center md:justify-start mb-4">
+                <div className="text-center md:text-center lg:text-left">
+                  <div className="flex justify-center md:justify-center lg:justify-start mb-4">
                     <Image
                       src="/nirf/nirf-logo.svg"
                       alt="NIRF Logo"
@@ -36,10 +36,10 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                       className="w-40 h-20 md:w-2/3 md:h-2/3 object-cover rounded-lg"
                       priority
                     />
-                  </div>  
+                  </div>
                   {/* Hero Text */}
                   <h1 className="text-white leading-tight tracking-wider">
-                    <span className="playfair-300 text-5xl md:text-[60px]">
+                    <span className="playfair-300 text-5xl md:text-6xl lg:text-6xl">
                       NIRF
                     </span>
                   </h1>
@@ -48,7 +48,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
             </div>
           </div>
         </div>
-          <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
+        <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
           <div className="container mx-auto py-4 px-4 ">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
               <div className="flex items-center">

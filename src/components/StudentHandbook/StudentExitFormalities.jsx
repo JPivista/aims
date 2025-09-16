@@ -5,11 +5,10 @@ import React from "react"
 const StudentExitFormalities = () => {
   return (
     <>
-      <div className="px-4 md:px-8 lg:px-8 pb-6 md:pb-10">
+      <div className="px-4 md:px-6 lg:px-8 pb-6 md:pb-10">
         <div className="container mx-auto">
           {/* Mobile & Tablet = single column | Desktop = 2 columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image First for Mobile & Tablet */}
             <div className="flex flex-col gap-4 order-1 md:order-1 lg:order-2">
               <Image
@@ -23,9 +22,10 @@ const StudentExitFormalities = () => {
 
             {/* Text Below Image for Mobile & Tablet */}
             <div className="flex flex-col justify-start md:items-start order-2 md:order-2 lg:order-1">
-              <h1 className="text-[#0C2165] playfair-300 text-5xl">
-                Student Exit <br className="hidden md:block" /> Formalities
-              </h1>
+              <h2 className="text-[#0C2165] playfair-300 text-4xl md:text-6xl lg:text-6xl mb-2">
+                Student Exit <br className="hidden md:hidden lg:block" />{" "}
+                Formalities
+              </h2>
               <div className="space-y-4">
                 <p>
                   Once you successfully complete your final semester exams, you
@@ -44,7 +44,6 @@ const StudentExitFormalities = () => {
                 </Button>
               </div>
             </div>
-
           </div>
         </div>
       </div>

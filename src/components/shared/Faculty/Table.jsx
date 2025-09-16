@@ -29,7 +29,7 @@ const Table = ({ title, headers, data }) => {
   }, [])
 
   return (
-    <div className="pb-6 md:pb-10 px-4 md:px-8 lg:px-20" ref={tableRef}>
+    <div className="pb-6 md:pb-10 px-4 md:px-8 lg:px-8" ref={tableRef}>
       <div className="container mx-auto ">
         {/* Title */}
         <div

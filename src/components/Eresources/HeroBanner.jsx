@@ -38,7 +38,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
           <div className="container mx-auto">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
               <div className="flex items-center">
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-center lg:text-left">
                   {/* Hero Text */}
                   <h1 className="text-white text-4xl leading-tight tracking-wider">
                     <span className="playfair-300 text-4xl md:text-[60px]">
@@ -63,6 +63,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
                   alt="Recruiters"
                   width={200}
                   height={200}
+                  priority
                 />
               </div>
             </div>

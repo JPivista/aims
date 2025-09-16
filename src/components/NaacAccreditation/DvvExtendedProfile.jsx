@@ -389,12 +389,12 @@ const DvvExtendedProfile = () => {
   }
 
   return (
-    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-8 lg:px-12">
+    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="mb-6">
-          <h3 className="text-2xl md:text-[65px] text-[#0C2165] playfair-300 tracking-wider">
+          <h2 className="text-3xl md:text-6xl lg:text-6xl text-[#0C2165] playfair-300 tracking-wider">
             DVV
-          </h3>
+          </h2>
         </div>
 
         <CriteriaItem

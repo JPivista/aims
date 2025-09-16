@@ -46,8 +46,8 @@ const WhyChoose = () => {
           </p>
         </div>
       </div>
-      <div className="py-6 md:py-10 container mx-auto px-4 md:px-0">
-        <div>
+      <div className="py-6 md:py-10 px-4 lg:px-0">
+        <div className="container mx-auto">
           {/* Header */}
           <div className="text-center mb-8 md:mb-16 px-4 md:px-0">
             <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-4 playfair-300">

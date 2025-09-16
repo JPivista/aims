@@ -109,7 +109,7 @@ const NirfRankings = () => {
   }
 
   return (
-    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-8 lg:px-12">
+    <div className="bg-[#E0F8F3] py-6 md:py-10 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         {nirfYears.map((item, index) => (
           <NirfYearItem

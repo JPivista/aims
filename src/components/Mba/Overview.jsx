@@ -59,10 +59,10 @@ const Overview = () => {
       label: "Important Dates",
       content: (
         <>
-          <h5 className="text-[#A22877] monser-600 text-[24px] mb-4 sm:mb-6">
+          <h5 className="text-[#A22877] monser-600 text-[24px] mb-4">
             Important Dates
           </h5>
-          <div className="space-y-4">
+          <div className="space-y-4 lg:px-4 px-0">
             <div className="bg-white p-4 rounded-lg border-l-4 border-[#A22877]">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                 <span className="text-[#A22877] monser-500 text-[18px]">
@@ -103,7 +103,7 @@ const Overview = () => {
               <h5 className="text-[#A22877] font-bold text-xl sm:text-2xl md:text-[24px] monser-600 leading-tight mb-4 sm:mb-6 md:mb-8">
                 {section.heading}
               </h5>
-              <ul className="list-disc pl-6 sm:pl-8 md:pl-10 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
+              <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
                 {section.items.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item}
@@ -130,7 +130,7 @@ const Overview = () => {
           <h5 className="text-[#A22877] monser-600 text-[24px] mb-4 sm:mb-6">
             Selection Process
           </h5>
-          <div className="space-y-6">
+          <div className="space-y-6 lg:px-4 px-0">
             <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
               The MBA selection process is designed to go beyond academic merit
               and assess a candidate's self-awareness, communication,
@@ -211,7 +211,7 @@ const Overview = () => {
     },
   ]
   return (
-    <div className="bg-[#E1F9F4] px-4 lg:px-8 py-6 md:py-10 lg:py-10 ">
+    <div className="bg-[#E1F9F4] px-4 md:px-8 lg:px-8 py-6 md:py-10 lg:py-10 ">
       <div className="container mx-auto ">
         {/* MBA Program overview */}
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-8 justify-between ">

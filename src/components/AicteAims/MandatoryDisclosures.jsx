@@ -98,12 +98,12 @@ const MandatoryDisclosures = () => {
   }
 
   return (
-    <div className="px-4 md:px-8 lg:px-12 pb-6 md:pb-10">
+    <div className="px-4 md:px-8 lg:px-8 pb-6 md:pb-10">
       <div className="container mx-auto">
         <div className="mb-2">
-          <h3 className="text-4xl md:text-3xl font-bold text-[#0C2165] playfair-300">
+          <h2 className="text-3xl md:text-6xl lg:text-6xl font-bold text-[#0C2165] playfair-300">
             Mandatory Disclosures
-          </h3>
+          </h2>
         </div>
         {programs.map((item, index) => (
           <ProgramItem

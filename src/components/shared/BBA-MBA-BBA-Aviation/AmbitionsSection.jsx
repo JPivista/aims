@@ -11,10 +11,10 @@ const AmbitionsSection = ({
 }) => {
   return (
     <div
-      className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative `}
+      className={`${bgColor} py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative overflow-hidden`}
     >
       {/* Background SVG */}
-      <div className="absolute top-[13%] left-0 hidden md:block">
+      <div className="absolute top-[13%] left-0 hidden lg:block md:hidden">
         <Image
           src="/school-circle.svg"
           alt="Ambitions Section Background"
@@ -25,16 +25,19 @@ const AmbitionsSection = ({
       </div>
 
       <div className="container mx-auto px-4 md:px-0">
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center justify-start min-h-[400px] lg:min-h-[500px]">
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2 flex justify-center z-10">
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              width={600}
-              height={600}
-              className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px] object-cover"
-            />
+            <div className="relative">
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={600}
+                height={600}
+                className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px] object-cover"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </div>
           </div>
 
           {/* Right Side - Content */}
@@ -42,9 +45,11 @@ const AmbitionsSection = ({
             <h2 className="text-3xl  md:text-[60px]  playfair-300 text-center md:text-left">
               {heading}
             </h2>
-            <p className="text-sm  md:text-lg lg:text-xl monser-400 text-center md:text-left">
-              "{content}"
-            </p>
+            <div className="max-h-[200px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-[350px] overflow-y-auto">
+              <p className="text-sm  md:text-lg lg:text-xl monser-400 text-center md:text-left">
+                "{content}"
+              </p>
+            </div>
 
             {/* Name */}
             <div className="text-center lg:text-left">
