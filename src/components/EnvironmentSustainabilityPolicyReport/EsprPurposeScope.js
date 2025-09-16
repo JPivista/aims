@@ -7,7 +7,7 @@ const EsprPurposeScope = () => {
   return (
     <>
       {/* OUR OBJECTIVES */}
-      <div className="justify-center items-center flex flex-col lg:px-0 px-4 relative overflow-hidden py-10">
+      <div className="justify-center items-center flex flex-col lg:px-8 px-4 relative overflow-hidden py-10">
         <div className="container mx-auto">
           <div className="flex flex-col bg-transparent relative z-10">
             {/* Our Purpose */}
@@ -43,7 +43,7 @@ const EsprPurposeScope = () => {
 
             {/* Our Scope */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-              <div className="flex flex-col lg:pl-8 pl-0 order-2 lg:order-1 justify-center">
+              <div className="flex flex-col  order-2 lg:order-1 justify-center">
                 <h3 className="text-start text-[32px] lg:text-[56px] playfair-300 text-[#0C2165]">
                   Scope
                 </h3>

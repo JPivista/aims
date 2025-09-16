@@ -45,7 +45,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
               <div className="flex items-center lg:items-start w-full">
                 <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
                   <span className="playfair-400 block lg:inline">
-                 Patents at
+                    Patents at
                   </span>
                   <span className="playfair-400 text-[#D7FCF4] block ">
                     AIMS Institutes

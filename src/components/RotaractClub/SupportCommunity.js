@@ -46,7 +46,7 @@ const SupportCommunity = () => {
   }, [isModalOpen])
 
   return (
-    <div className="w-full bg-[#E1F9F4] py-10 lg:px-0 px-4">
+    <div className="w-full bg-[#E1F9F4] py-10 lg:px-8 px-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - Image */}
@@ -59,7 +59,7 @@ const SupportCommunity = () => {
                 height={500}
                 className="w-full h-full object-cover"
               />
-              
+
             </div>
           </div>
 

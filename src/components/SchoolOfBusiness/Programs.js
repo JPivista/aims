@@ -102,7 +102,7 @@ const Programs = () => {
             </section>
 
             <div className="px-4 lg:px-8">
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="container mx-auto relative z-10">
                     {/* Postgraduate Program Section */}
                     <section className="mt-10">
                         <h3 className="text-center text-[#0C2165]">

@@ -22,11 +22,11 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                 ></div>
 
                 {/* Bottom Content Container */}
-                <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-0">
+                <div className="absolute bottom-10 left-0 right-0 px-4 lg:px-8">
                     <div className="container mx-auto">
                         <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-0">
                             <div className="flex items-center">
-                            <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
+                                <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
                                     Rotaract Club <br className='hidden md:block' />
                                     of AIMS
                                 </h1>
@@ -44,7 +44,7 @@ const HeroBannerRc = ({ announcements, pageType = 'engineering' }) => {
                     </div>
                 </div>
                 <div className="absolute top-5 left-0 right-0">
-                    <div className="container mx-auto py-4 px-6 lg:px-0">
+                    <div className="container mx-auto py-4 lg:px-8">
                         <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                             <div className="flex items-center">
                                 <Image

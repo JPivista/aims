@@ -21,10 +21,10 @@ const CentreForResearchBanner = ({ announcements, pageType = 'phd' }) => {
                 ></div>
 
                 {/* Text/Logo Content */}
-                <div className="absolute inset-0 flex flex-col justify-between z-10">
+                <div className="absolute inset-0 flex flex-col justify-between z-10 px-4 lg:px-8">
 
                     {/* Logo Block */}
-                    <div className="container mx-auto md:px-0 px-4 pt-8 text-left">
+                    <div className="container mx-auto pt-8 text-left">
                         <Image
                             src="/pre-university-college/empowering_minds_since1994.webp"
                             alt="Pre-University College Logo"

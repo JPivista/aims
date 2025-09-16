@@ -5,7 +5,7 @@ import ApplicationMarquee from "@/shared/ApplicationMarquee"
 const HeroBannerMcom = ({ announcements, pageType = "finance" }) => {
   return (
     <>
-         <div className="relative w-full h-[100vh] lg:h-[76vh] md:h-[76vh] overflow-hidden">
+      <div className="relative w-full h-[100vh] lg:h-[76vh] md:h-[76vh] overflow-hidden">
         {/* Gradient Background */}
         <div
           className="absolute inset-0 z-30"
@@ -75,7 +75,7 @@ const HeroBannerMcom = ({ announcements, pageType = "finance" }) => {
         </div>
 
         {/* Desktop NAAC Accreditation Box - Absolute positioned */}
-        <div className="hidden lg:block absolute bottom-0 left-0 z-40">
+        <div className="hidden lg:block absolute bottom-0 left-0 z-30">
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg">
             <div className="flex items-center justify-center">
               <Image

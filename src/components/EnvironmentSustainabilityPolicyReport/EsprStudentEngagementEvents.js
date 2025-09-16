@@ -55,8 +55,8 @@ const EsprStudentEngagementEvents = () => {
 
   return (
     <>
-      <div className="w-full bg-[#E1F9F4] py-10">
-        <div className="justify-center items-center flex flex-col lg:px-0 px-4 relative overflow-hidden">
+      <div className="w-full bg-[#E1F9F4] py-10 lg:px-8 px-4">
+        <div className="justify-center items-center flex flex-col relative overflow-hidden">
           <div className="absolute top-[0%] right-0 md:block hidden rotate-180">
             <Image
               src="/school-circle.svg"
@@ -88,11 +88,10 @@ const EsprStudentEngagementEvents = () => {
                             onClick={() =>
                               setSelectedParticipant(participant.id)
                             }
-                            className={`text-left px-4 py-[0.5] rounded-lg transition-all block duration-300 mb-3 lg:border-[1px]  ${
-                              selectedParticipant === participant.id
-                                ? "bg-[#A22877] text-white border-[#A22877]"
-                                : "bg-white text-gray-700 border-gray-300 hover:border-[#A22877]"
-                            }`}
+                            className={`text-left px-4 py-[0.5] rounded-lg transition-all block duration-300 mb-3 lg:border-[1px]  ${selectedParticipant === participant.id
+                              ? "bg-[#A22877] text-white border-[#A22877]"
+                              : "bg-white text-gray-700 border-gray-300 hover:border-[#A22877]"
+                              }`}
                           >
                             <span className="font-semibold text-lg">
                               {participant.name}
@@ -110,11 +109,10 @@ const EsprStudentEngagementEvents = () => {
                         <button
                           key={participant.id}
                           onClick={() => setSelectedParticipant(participant.id)}
-                          className={`text-left px-4 py-[0.5] rounded-2xl transition-all block duration-300 mb-3 border-[1px] ${
-                            selectedParticipant === participant.id
-                              ? "bg-[#A22877] text-white border-[#A22877]"
-                              : "bg-white text-gray-700 border-black hover:border-[#A22877]"
-                          }`}
+                          className={`text-left px-4 py-[0.5] rounded-2xl transition-all block duration-300 mb-3 border-[1px] ${selectedParticipant === participant.id
+                            ? "bg-[#A22877] text-white border-[#A22877]"
+                            : "bg-white text-gray-700 border-black hover:border-[#A22877]"
+                            }`}
                         >
                           <span className="font-semibold text-lg">
                             {participant.name}

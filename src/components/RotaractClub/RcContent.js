@@ -4,7 +4,7 @@ import Image from 'next/image'
 const RcContent = () => {
     return (
         <>
-            <div className='justify-center items-center py-10 flex flex-col lg:px-0 px-4 relative overflow-hidden border-b border-gray-300'>
+            <div className='justify-center items-center py-10 flex flex-col lg:px-8 px-4 relative overflow-hidden border-b border-gray-300'>
                 <div className='absolute top-[20%] right-0 md:block hidden rotate-180'>
                     <Image
                         src="/school-circle.svg"

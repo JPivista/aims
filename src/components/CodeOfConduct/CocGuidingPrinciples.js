@@ -63,7 +63,7 @@ const CocGuidingPrinciples = () => {
 
     return (
         <>
-            <div className='justify-center items-center pt-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+            <div className='justify-center items-center pt-10 flex flex-col lg:px-8 px-4 relative overflow-hidden'>
                 <div className='absolute top-[20%] right-0 md:block hidden rotate-180'>
                     <Image
                         src="/school-circle.svg"
@@ -93,7 +93,7 @@ const CocGuidingPrinciples = () => {
             {/* Divider Line */}
             {/* <hr className='border-black mb-12 w-full' /> */}
 
-            <div className='justify-center items-center mb-10 flex flex-col lg:px-0 px-4 relative overflow-hidden'>
+            <div className='justify-center items-center mb-10 flex flex-col lg:px-8 px-4 relative overflow-hidden'>
                 <div className='container mx-auto'>
                     <div className='flex flex-col lg:px-0 px-4 bg-transparent relative z-10'>
                         {/* Guiding Principles Section */}
@@ -161,7 +161,7 @@ const CocGuidingPrinciples = () => {
                         </div>
                     </div>
                 </div>
-            </div >
+            </div>
         </>
     )
 }
