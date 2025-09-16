@@ -13,7 +13,7 @@ const WhatYouFind = () => {
 
   return (
     <div className="lg:px-8 px-4">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="bg-[#FEEBEB] rounded-xl overflow-hidden border border-[#f2d0cf]">
 
           {/* Header */}

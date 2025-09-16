@@ -5,7 +5,7 @@ const RecognisedResearchCentre = () => {
   return (
     <>
       <div className="lg:px-8 px-4">
-        <div className="flex flex-col md:flex-row items-center bg-white py-6 md:py-12 gap-6 container mx-auto px-4 ">
+        <div className="flex flex-col md:flex-row items-center py-6 md:py-12 gap-6 container mx-auto">
 
           {/* Logo */}
           <div className="flex-shrink-0 w-48 md:w-1/4">

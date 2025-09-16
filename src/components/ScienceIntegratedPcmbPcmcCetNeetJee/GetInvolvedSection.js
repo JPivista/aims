@@ -6,7 +6,8 @@ import Button from "@/shared/Button";
 
 const GetInvolvedSection = () => {
   return (
-    <section className="bg-[#A43177] text-white px-4 py-16">
+    <section className="bg-[#A43177] py-10">
+      <div className="px-4 lg:px-8 text-white">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 ">
         {/* Left Content */}
         <div className="md:w-2/3">
@@ -36,6 +37,7 @@ const GetInvolvedSection = () => {
             height={1028}
             className=" w-44 h-44"
           />
+          </div>
         </div>
       </div>
     </section>

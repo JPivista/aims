@@ -16,7 +16,7 @@ const Resources = () => {
 
   return (
     <div className='lg:px-8 px-4'>
-      <div className="container mx-auto px-6 md:pb-12 pb-5">
+      <div className="container mx-auto md:pb-12 pb-5">
         {/* Heading */}
         <h3 className="text-4xl font-bold text-[#0d2352] mb-8">Resources:</h3>
 
@@ -126,16 +126,16 @@ const Resources = () => {
               >
                 <FaChevronDown
                   className={`transform transition-transform duration-300 ${openSection === "bookRecommendations"
-                      ? "rotate-180"
-                      : "rotate-0"
+                    ? "rotate-180"
+                    : "rotate-0"
                     }`}
                 />
               </span>
             </button>
             <div
               className={`transition-all duration-500 overflow-hidden ${isBookRecommendationsOpen
-                  ? "max-h-[300px] opacity-100"
-                  : "max-h-0 opacity-0"
+                ? "max-h-[300px] opacity-100"
+                : "max-h-0 opacity-0"
                 }`}
             >
               <div className="px-4 py-3 text-gray-800 border border-[#f2d0cf] rounded-2xl mt-2">

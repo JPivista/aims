@@ -77,53 +77,55 @@ export default function AimersSays() {
       </style>
 
       <div className="bg-[#531675] text-white">
-        <div className="py-20 relative justify-center items-center my-auto container mx-auto px-4">
-          <h3 className="">AIMER Says</h3>
+        <div className="px-4 lg:px-8">
+          <div className="py-20 relative justify-center items-center my-auto container mx-auto">
+            <h3 className="">AIMER Says</h3>
 
-          <Slider ref={(c) => (sliderRef = c)} {...settings} className="aimersSlider">
-            {slides.map((s, i) => (
-              <div key={i} className="slide">
-                {/* LEFT */}
-                <div className="flex flex-col items-center">
-                  <div className="mb-4">
-                    <Image
-                      src={s.image}
-                      alt={s.name}
-                      width={240}
-                      height={240}
-                      priority
-                    />
+            <Slider ref={(c) => (sliderRef = c)} {...settings} className="aimersSlider">
+              {slides.map((s, i) => (
+                <div key={i} className="slide">
+                  {/* LEFT */}
+                  <div className="flex flex-col items-center">
+                    <div className="mb-4">
+                      <Image
+                        src={s.image}
+                        alt={s.name}
+                        width={240}
+                        height={240}
+                        priority
+                      />
+                    </div>
+                    <p className="" style={{ fontWeight: "600" }}>{s.name}</p>
+                    <p className="text-center">{s.batch}</p>
                   </div>
-                  <p className="" style={{ fontWeight: "600" }}>{s.name}</p>
-                  <p className="text-center">{s.batch}</p>
+
+                  {/* RIGHT */}
+                  <div className="max-w-[900px]">
+                    <p className="text-[18px] mt-[6px] mb-[14px]" style={{ fontWeight: "600" }}>{s.quote}</p>
+                    <p className="my-[12px] leading-[1.7]">{s.p1}</p>
+                    <p className="my-[12px] leading-[1.7]">{s.p2}</p>
+                    <p className="mt-[16px]" style={{ fontWeight: "600" }}>{s.wish}</p>
+                  </div>
+
                 </div>
+              ))}
+            </Slider>
 
-                {/* RIGHT */}
-                <div className="max-w-[900px]">
-                  <p className="text-[18px] mt-[6px] mb-[14px]" style={{ fontWeight: "600" }}>{s.quote}</p>
-                  <p className="my-[12px] leading-[1.7]">{s.p1}</p>
-                  <p className="my-[12px] leading-[1.7]">{s.p2}</p>
-                  <p className="mt-[16px]" style={{ fontWeight: "600" }}>{s.wish}</p>
-                </div>
-
-              </div>
-            ))}
-          </Slider>
-
-          {/* Arrow controls */}
-          <div className="absolute bottom-[20px] right-[20px] flex gap-[10px] max-sm:bottom-auto max-sm:top-[80px]">
-            <button
-              className="w-10 h-10 text-xl flex items-center justify-center border border-[#a22978] rounded-full bg-white shadow hover:bg-[#a22978] hover:text-white text-black"
-              onClick={() => sliderRef.slickPrev()}
-            >
-              <HiArrowSmallLeft />
-            </button>
-            <button
-              className="w-10 h-10 text-xl flex items-center justify-center border border-[#a22978] rounded-full bg-white shadow hover:bg-[#a22978] hover:text-white text-black"
-              onClick={() => sliderRef.slickNext()}
-            >
-              <HiArrowSmallRight />
-            </button>
+            {/* Arrow controls */}
+            <div className="absolute bottom-[20px] right-[20px] flex gap-[10px] max-sm:bottom-auto max-sm:top-[80px]">
+              <button
+                className="w-10 h-10 text-xl flex items-center justify-center border border-[#a22978] rounded-full bg-white shadow hover:bg-[#a22978] hover:text-white text-black"
+                onClick={() => sliderRef.slickPrev()}
+              >
+                <HiArrowSmallLeft />
+              </button>
+              <button
+                className="w-10 h-10 text-xl flex items-center justify-center border border-[#a22978] rounded-full bg-white shadow hover:bg-[#a22978] hover:text-white text-black"
+                onClick={() => sliderRef.slickNext()}
+              >
+                <HiArrowSmallRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>
