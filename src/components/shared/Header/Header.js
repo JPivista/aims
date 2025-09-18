@@ -18,6 +18,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive] = useState(null);
+  const [mobileActive, setMobileActive] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
   const pathname = usePathname();
 
@@ -25,6 +26,7 @@ export default function Header() {
   const closeMobileMenu = () => {
     setMobileOpen(false);
     setActive(null);
+    setMobileActive(null);
   };
 
   // Function to handle link click and scroll to top
@@ -81,6 +83,7 @@ export default function Header() {
     // Close any open menus when navigating to a new page
     setActive(null);
     setMobileOpen(false);
+    setMobileActive(null);
   }, [pathname]);
 
   // Ultra-smooth sticky behavior with debouncing
@@ -237,16 +240,16 @@ export default function Header() {
                       <button
                         className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white hover:bg-[#0C2165]/90 transition-all duration-200 ease-out"
                         onClick={() =>
-                          setActive(active === menu.title ? null : menu.title)
+                          setMobileActive(mobileActive === menu.title ? null : menu.title)
                         }
                       >
                         {menu.title}
                         <FiX
-                          className={`transform transition-all duration-300 ease-out ${active === menu.title ? "" : "rotate-45"
+                          className={`transform transition-all duration-300 ease-out ${mobileActive === menu.title ? "" : "rotate-45"
                             }`}
                         />
                       </button>
-                      {active === menu.title && (
+                      {mobileActive === menu.title && (
                         <ul className="bg-gray-50">
                           {menu.links.map((link, i) => (
                             <li key={i} className="px-6 py-2">
