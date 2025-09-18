@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const Activities = () => {
   return (
-    <div className="bg-[#E1F9F4] relative py-4 md:py-8 px-4 md:px-8 lg:px-8">
-      <div className="flex flex-col md:flex-row gap-0 container mx-auto">
-        {/* Left Side - Content (3/4 width) */}
-        <div className="w-full space-y-4 md:space-y-6 max-w-4xl">
+    <div className="bg-[#E1F9F4] py-4 md:py-8 px-4 md:px-8 lg:px-8">
+      <div className="flex flex-col lg:flex-row gap-0 container mx-auto items-end">
+        {/* Left Side - Content */}
+        <div className="w-full lg:w-3/4 space-y-4 md:space-y-6">
           {/* Title */}
           <h2 className="text-4xl md:text-[65px] text-[#0C2165] mb-4 md:mb-6 playfair-300">
             Activities
@@ -47,16 +47,18 @@ const Activities = () => {
             real-world involvement.
           </h5>
         </div>
-      </div>
-      <div className="absolute bottom-0 right-0 md:-bottom-1 md:-right-3 hidden md:hidden lg:block">
-        <Image
-          src="/community-service/activities.svg"
-          alt="Community Activities"
-          width={800}
-          height={600}
-          className="w-full h-full object-cover"
-          priority
-        />
+
+        {/* Right Side - Image */}
+        <div className="w-full lg:w-2/5 hidden lg:flex justify-end items-end -mr-4 md:-mr-8 lg:-mr-14 -mb-4 md:-mb-8 lg:-mb-9">
+          <Image
+            src="/community-service/activities.svg"
+            alt="Community Activities"
+            width={1000}
+            height={800}
+            className="w-full h-auto object-contain"
+            priority
+          />
+        </div>
       </div>
     </div>
   )
