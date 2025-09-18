@@ -215,7 +215,7 @@ export default function Header() {
 
               {/* Mobile menu content */}
               <motion.div
-                className="lg:hidden shadow-md min-h-screen bg-white z-50 relative overflow-scroll"
+                className="lg:hidden shadow-md h-screen bg-white z-50 fixed top-0 left-0 right-0 flex flex-col"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
@@ -224,74 +224,98 @@ export default function Header() {
                   ease: [0.25, 0.46, 0.45, 0.94],
                 }}
               >
-                {/* Search */}
-                {/* <div className="p-4 border-b">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    className="w-full border rounded-full px-4 py-2 mb-3"
-                  />
-                </div> */}
-
-                {/* Nav Items */}
-                <ul>
-                  {MenuItems.map((menu, idx) => (
-                    <li key={idx}>
-                      <button
-                        className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white hover:bg-[#0C2165]/90 transition-all duration-200 ease-out"
-                        onClick={() =>
-                          setMobileActive(mobileActive === menu.title ? null : menu.title)
-                        }
-                      >
-                        {menu.title}
-                        <FiX
-                          className={`transform transition-all duration-300 ease-out ${mobileActive === menu.title ? "" : "rotate-45"
-                            }`}
-                        />
-                      </button>
-                      {mobileActive === menu.title && (
-                        <ul className="bg-gray-50">
-                          {menu.links.map((link, i) => (
-                            <li key={i} className="px-6 py-2">
-                              <Link
-                                href={link.href || "#"}
-                                className="block text-gray-700 hover:text-[#6E3299] transition-all duration-200 ease-out"
-                                onClick={handleLinkClick}
-                              >
-                                {link.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Additional Links - After Placements */}
-                <div className="p-4 border-t border-gray-200">
-                  <Link
-                    href="/aims-alumni-association"
-                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
-                    onClick={handleLinkClick}
-                  >
-                    Alumni
+                {/* Mobile Menu Header with Logo and Close Button */}
+                <div className="flex justify-between items-center p-4 bg-white border-b border-gray-200 flex-shrink-0">
+                  <Link href="/" scroll={false} onClick={handleLogoClick}>
+                    <Image
+                      src="/logo.svg"
+                      alt="AIMS Logo"
+                      width={120}
+                      height={40}
+                      priority
+                      className="h-8 w-auto"
+                    />
                   </Link>
-                  {/* <Link
-                    href="#"
-                    className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
-                    onClick={handleLinkClick}
+                  <button
+                    onClick={closeMobileMenu}
+                    className="p-2 hover:bg-gray-100 rounded-lg transition-all duration-200 ease-out"
+                    aria-label="Close mobile menu"
                   >
-                    Resources
-                  </Link> */}
-                  <Button
-                    className="font-light w-full mt-2"
-                    hoverText="Contact Us"
-                    showArrow={true}
-                    href="https://enquiry.theaims.ac.in/"
-                  >
-                    Contact Us
-                  </Button>
+                    <FiX className="w-6 h-6 text-gray-600" />
+                  </button>
+                </div>
+
+                {/* Scrollable Content Area */}
+                <div className="flex-1 overflow-y-auto">
+                  {/* Search */}
+                  {/* <div className="p-4 border-b">
+                    <input
+                      type="text"
+                      placeholder="Search..."
+                      className="w-full border rounded-full px-4 py-2 mb-3"
+                    />
+                  </div> */}
+
+                  {/* Nav Items */}
+                  <ul>
+                    {MenuItems.map((menu, idx) => (
+                      <li key={idx}>
+                        <button
+                          className="w-full flex justify-between px-4 py-3 text-left bg-[#0C2165] text-white hover:bg-[#0C2165]/90 transition-all duration-200 ease-out"
+                          onClick={() =>
+                            setMobileActive(mobileActive === menu.title ? null : menu.title)
+                          }
+                        >
+                          {menu.title}
+                          <FiX
+                            className={`transform transition-all duration-300 ease-out ${mobileActive === menu.title ? "" : "rotate-45"
+                              }`}
+                          />
+                        </button>
+                        {mobileActive === menu.title && (
+                          <ul className="bg-gray-50">
+                            {menu.links.map((link, i) => (
+                              <li key={i} className="px-6 py-2">
+                                <Link
+                                  href={link.href || "#"}
+                                  className="block text-gray-700 hover:text-[#6E3299] transition-all duration-200 ease-out"
+                                  onClick={handleLinkClick}
+                                >
+                                  {link.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Additional Links - After Placements */}
+                  <div className="p-4 border-t border-gray-200">
+                    <Link
+                      href="/aims-alumni-association"
+                      className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
+                      onClick={handleLinkClick}
+                    >
+                      Alumni
+                    </Link>
+                    {/* <Link
+                      href="#"
+                      className="block py-2 text-[#0C2165] hover:text-[#6E3299] font-light transition-all duration-200 ease-out"
+                      onClick={handleLinkClick}
+                    >
+                      Resources
+                    </Link> */}
+                    <Button
+                      className="font-light w-full mt-2"
+                      hoverText="Contact Us"
+                      showArrow={true}
+                      href="https://enquiry.theaims.ac.in/"
+                    >
+                      Contact Us
+                    </Button>
+                  </div>
                 </div>
               </motion.div>
             </>
