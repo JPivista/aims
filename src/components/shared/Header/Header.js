@@ -120,10 +120,21 @@ export default function Header() {
                 <Link href="/" scroll={false} onClick={handleLogoClick}>
                   <Image
                     src="/logo.svg"
-                    alt="Logo"
-                    width={200}
-                    height={200}
+                    alt="AIMS Logo"
+                    width={360}
+                    height={120}
                     priority
+                    quality={100}
+                    className="h-12 w-auto sm:h-14 md:h-16 lg:h-18 xl:h-20"
+                    style={{
+                      width: 'auto',
+                      height: 'auto',
+                      maxWidth: '180px',
+                      maxHeight: '60px',
+                      imageRendering: 'auto',
+                      WebkitImageRendering: 'auto',
+                      shapeRendering: 'geometricPrecision'
+                    }}
                   />
                 </Link>
               </div>
@@ -230,10 +241,20 @@ export default function Header() {
                     <Image
                       src="/logo.svg"
                       alt="AIMS Logo"
-                      width={120}
-                      height={40}
+                      width={280}
+                      height={94}
                       priority
-                      className="h-8 w-auto"
+                      quality={100}
+                      className="h-8 w-auto sm:h-9 md:h-10"
+                      style={{
+                        width: 'auto',
+                        height: 'auto',
+                        maxWidth: '140px',
+                        maxHeight: '47px',
+                        imageRendering: 'auto',
+                        WebkitImageRendering: 'auto',
+                        shapeRendering: 'geometricPrecision'
+                      }}
                     />
                   </Link>
                   <button
