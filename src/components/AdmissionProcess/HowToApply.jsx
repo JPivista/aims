@@ -35,7 +35,7 @@ const HowToApply = () => {
         <div className="container mx-auto px-4 md:px-0 py-6 md:py-10">
           <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-12  w-full">
             {/* Left Side - Content */}
-            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
+            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 flex flex-col justify-center">
               <h2 className="text-4xl  md:text-6xl  text-[#A22877] mb-3  playfair-300 leading-tight">
                 How to Apply
               </h2>

@@ -12,6 +12,15 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba/mobile-banner.webp')]" />
 
+        {/* Gradient Overlay - Figma Design */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
+          }}
+        ></div>
+
         {/* Bottom Content Container */}
         <div className="absolute left-0 right-0  bottom-10 md:bottom-15 lg:mx-10 mx-0">
           <div className="container mx-auto">
@@ -38,8 +47,10 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
             </div>
           </div>
         </div>
+
+        {/* Empower Image*/}
         <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
-          <div className="container mx-auto py-4 px-4">
+          <div className="container mx-auto py-4 px-4 md:px-0 lg:px-0">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
               <div className="flex items-center">
                 <Image

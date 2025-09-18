@@ -17,7 +17,7 @@ const Aiming = () => {
           <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-16 pb-6 md:pb-10 ">
             {/* Left Side - Content */}
             <div className="flex flex-col  md:flex-col lg:flex-row gap-4 md:gap-10">
-              <div className="space-y-4 md:space-y-6 lg:space-y-6 lg:w-1/2">
+              <div className="space-y-4 md:space-y-6 lg:space-y-6 lg:w-1/2 flex flex-col justify-center">
                 <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-10 playfair-300">
                   AIMing for All Round <br /> Development
                 </h2>
@@ -74,7 +74,7 @@ const Aiming = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 lg:space-y-6 px-0 lg:px-10">
+            <div className="w-full lg:w-2/3 space-y-4 md:space-y-6 lg:space-y-6 px-0 lg:px-10 flex flex-col justify-center">
               <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 md:mb-8 playfair-300">
                 Our Approach
               </h2>
@@ -100,7 +100,7 @@ const Aiming = () => {
           {/* Row 3: Left Content, Right Image */}
           <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-16">
             {/* Left Side - Content */}
-            <div className="w-full lg:w-1/2 space-y-4 md:space-y-6">
+            <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 flex flex-col justify-center">
               <h2 className="text-4xl md:text-6xl text-[#0C2165] mb-6 playfair-300 ">
                 Objectives
               </h2>
