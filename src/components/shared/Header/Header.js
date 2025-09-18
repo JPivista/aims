@@ -13,11 +13,13 @@ import Button from "@/shared/Button";
 import { MenuItems } from "@/utils/MenuItems";
 import Link from "next/link";
 import Breadcrumbs from "../Breadcrumbs";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
+  const pathname = usePathname();
 
   // Function to close mobile menu
   const closeMobileMenu = () => {
@@ -73,6 +75,13 @@ export default function Header() {
       window.removeEventListener('scroll', preventScroll);
     };
   }, []);
+
+  // Reset header state when navigating to a new page
+  useEffect(() => {
+    // Close any open menus when navigating to a new page
+    setActive(null);
+    setMobileOpen(false);
+  }, [pathname]);
 
   // Ultra-smooth sticky behavior with debouncing
   useEffect(() => {

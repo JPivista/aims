@@ -31,8 +31,8 @@ const HeroBannerCfs = ({ announcements, pageType = 'engineering' }) => {
 
 
                 <div className="absolute top-5 md:right-20 left-0">
-                    <div className="px-4 lg:px-8">
-                        <div className="container mx-auto py-4">
+                    <div className="">
+                        <div className="container mx-auto py-4 px-4 lg:px-8">
                             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                                 <div className="flex items-center">
                                     <Image

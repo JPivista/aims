@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import { GoArrowDownRight } from "react-icons/go";
 import { usePathname } from "next/navigation";
@@ -20,12 +20,21 @@ export const MenuItem = ({
   item,
   children
 }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    // Toggle the submenu on click
+    setActive(active === item ? null : item);
+  };
+
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer hover:opacity-[0.9] text-white flex items-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl group">
-        {item} <GoArrowDownRight className="group-hover:-rotate-90 transition-transform duration-200 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:w-6" />
+        className="cursor-pointer hover:opacity-[0.9] text-white flex items-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl group"
+        onClick={handleClick}
+      >
+        {item} <GoArrowDownRight className={`transition-transform duration-200 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ${active === item ? '-rotate-90' : 'group-hover:-rotate-90'}`} />
       </motion.p>
       {active !== null && (
         <motion.div
@@ -59,9 +68,31 @@ export const Menu = ({
   setActive,
   children
 }) => {
+  const menuRef = useRef(null);
+
+  const handleMouseLeave = () => {
+    setActive(null);
+  };
+
+  // Handle clicks outside the menu to close submenus
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setActive(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [setActive]);
+
   return (
     <nav
-      onMouseLeave={() => setActive(null)}
+      ref={menuRef}
+      onMouseLeave={handleMouseLeave}
       className="relative shadow-input flex justify-center space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10 py-2 md:py-2 lg:py-3 xl:py-4 2xl:py-6 text-white">
       {children}
     </nav>
