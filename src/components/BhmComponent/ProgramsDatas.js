@@ -68,7 +68,7 @@ export default function ValueAddedPrograms() {
         <h3 className="text-3xl lg:text-4xl font-semibold text-[#1A2C6D]">
           Value Added <br /> Programs
         </h3>
-        <p className="text-gray-700 max-w-2xl mt-4 lg:mt-0">
+        <p className="text-black max-w-2xl mt-4 lg:mt-0">
           In our effort to build the profile of the participants of the
           program and ensure they meet the requirements of the industry (in
           addition to personality development), we at AIMS incorporate a set of
@@ -85,7 +85,7 @@ export default function ValueAddedPrograms() {
             className={`px-5 py-2 rounded-full border text-sm font-medium transition ${
               activeTab === year
                 ? "bg-[#6B1E8A] text-white border-[#6B1E8A]"
-                : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+                : "bg-white text-black border-gray-300 hover:bg-gray-100"
             }`}
           >
             Year: {year}
@@ -110,7 +110,7 @@ export default function ValueAddedPrograms() {
                   {item.course}
                 </td>
                 <td className="px-6 py-4 border border-[#E5B8D9] text-gray-900">{item.vap}</td>
-                <td className="px-6 py-4 border border-[#E5B8D9] whitespace-pre-line text-gray-700">
+                <td className="px-6 py-4 border border-[#E5B8D9] whitespace-pre-line text-black">
                   {item.description}
                 </td>
               </tr>

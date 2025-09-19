@@ -16,7 +16,7 @@ const Partnerships = () => {
                 International since July 2017 and has been elected to the board
                 in October 2023.
               </h4>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-black mb-6 leading-relaxed">
                 Founded in 1955, EUHOFA INTERNATIONAL is the first international
                 association of universities and schools of hospitality
                 management and tourism. It was created by the Alpine hotel
@@ -25,7 +25,7 @@ const Partnerships = () => {
                 training. In 1974, it became an advisory member of the Council
                 of Europe.
               </p>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-black mb-6 leading-relaxed">
                 Currently, EUHOFA International has more than 200 universities
                 and schools of hospitality management, tourism, and culinary
                 arts on five continents. The members of the association are the
@@ -59,7 +59,7 @@ const Partnerships = () => {
                 the hospitality industry to maximise interactions and optimise
                 the recruiting process.
               </h4>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-black mb-6 leading-relaxed">
                 All the students and alumni of AIMS School of Hospitality &
                 Tourism can utilise the HOSCO platform and connect with leading
                 employers/hotels globally at any point in their careers. This

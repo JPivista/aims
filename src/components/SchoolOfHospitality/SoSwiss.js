@@ -60,7 +60,7 @@ const SoSwiss = () => {
                       {course.title}
                     </h4>
                     <p
-                      className="text-gray-700 mb-6 leading-relaxed"
+                      className="text-black mb-6 leading-relaxed"
                       dangerouslySetInnerHTML={{
                         __html: course.description,
                       }}
