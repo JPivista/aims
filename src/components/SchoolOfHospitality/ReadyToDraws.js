@@ -54,17 +54,6 @@ const ReadyToDraw = ({
                     {secondaryButtonText}
                   </Button>
                 )}
-
-                {tertiaryButtonText && tertiaryButtonText.trim() !== "" && (
-                  <Button
-                    variant="secondary"
-                    className="whitespace-nowrap text-xs sm:text-sm md:text-base"
-                    href="https://enquiry.theaims.ac.in/"
-                    target="_blank"
-                  >
-                    {tertiaryButtonText}
-                  </Button>
-                )}
               </div>
             </div>
 

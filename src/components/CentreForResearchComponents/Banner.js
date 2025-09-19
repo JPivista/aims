@@ -37,11 +37,11 @@ const CentreForResearchBanner = ({ announcements, pageType = "engineering" }) =>
                     <div className="px-4 lg:px-8">
                         <div className="container mx-auto">
                             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-4 gap-4">
-                                <div className="flex items-center">
-                                    <h1 className="text-white text-2xl lg:text-[60px] playfair-300 lg:leading-16 lg:text-start text-center">
-                                        AIMS <br className="hidden lg:block" />PCMB/PCMC
-                                    </h1>
-                                </div>
+                            <div className="container mx-auto pb-12 text-center md:text-center lg:text-left">
+                        <h1 className="text-white font-bold text-center md:text-center lg:text-left">
+                            AIMS <br className='hidden lg:block' /> Centre for Research
+                        </h1>
+                    </div>
                             </div>
                         </div>
                     </div>

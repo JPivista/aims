@@ -37,7 +37,7 @@ const SofPrograms = () => {
           />
         </div>
 
-        <div className=" px-4 lg:px-8 md:px-14 relative z-30">
+        <div className=" px-4 lg:px-8  relative z-30">
           <div className="lg:container mx-auto">
             {/* Postgraduate Program Section */}
 
@@ -58,7 +58,7 @@ const SofPrograms = () => {
                     {postgraduateProgram.title}
                   </h4>
                   <p
-                    className="text-gray-700 text-left mb-6 leading-relaxed"
+                    className="text-black text-left mb-6 leading-relaxed"
                     dangerouslySetInnerHTML={{
                       __html: postgraduateProgram.description,
                     }}
@@ -82,7 +82,7 @@ const SofPrograms = () => {
                     {undergraduateProgram.title}
                   </h4>
                   <p
-                    className="text-gray-700 text-left mb-6 leading-relaxed"
+                    className="text-black text-left mb-6 leading-relaxed"
                     dangerouslySetInnerHTML={{
                       __html: undergraduateProgram.description,
                     }}
