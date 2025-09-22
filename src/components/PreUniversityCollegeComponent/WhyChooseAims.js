@@ -24,7 +24,7 @@ const WhyChooseAims = () => {
     return (
         <div className="py-12 px-4 lg:px-8">
             <div className="container mx-auto ">
-                <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-5">
+                <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165]">
                     Why Choose <br />
                     AIMS PUC?
                 </h3>

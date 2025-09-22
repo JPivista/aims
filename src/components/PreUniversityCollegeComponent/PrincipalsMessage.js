@@ -40,7 +40,7 @@ const PrincipalsMessage = () => {
 
                 {/* Right Side - Content */}
                 <div className="lg:w-[60%]">
-                    <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165] lg:mb-12 lg:pb-5">
+                    <h3 className="text-3xl md:text-4xl font-semibold text-left text-[#0c2165]">
                         <span style={{ fontWeight: '500', color: '#a22978', fontFamily: 'Playfair Display' }} className="italic">
                             {principalData.headingItalic}
                         </span>{" "}

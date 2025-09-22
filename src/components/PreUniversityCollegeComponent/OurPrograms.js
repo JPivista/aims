@@ -9,7 +9,7 @@ const OurPrograms = () => {
             <div className="lg:px-8 px-4">
                 <div className="container mx-auto py-10 relative z-10">
                     {/* Heading */}
-                    <div className="text-center max-w-4xl mx-auto px-4">
+                    <div className="text-center max-w-4xl mx-auto">
                         <h3 className="text-4xl font-serif font-bold mb-4">Our Programs</h3>
                         <p className="text-gray-600">
                             At AIMS PUC, we offer a choice of streams tailored to your academic
