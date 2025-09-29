@@ -82,7 +82,7 @@ const StudentclubTab = () => {
             {/* Desktop Layout - Two Column */}
             <div className="hidden lg:flex gap-8">
               {/* Left Column - Navigation */}
-              <div className="flex flex-col w-[30%]">
+              <div className="flex flex-col w-[45%]">
                 {tabs.map((tab) => (
                   <button
                     key={tab.id}
@@ -100,7 +100,7 @@ const StudentclubTab = () => {
               </div>
 
               {/* Right Column - Content */}
-              <div className="flex-1 border-l-2 border-gray-200 pl-8">
+              <div className="flex-1 border-l-1 border-black pl-8">
                 <div className="mb-6">
                   <h5 className="text-2xl lg:text-4xl monser-500 text-[#A22877] mb-4">
                     {tabData[activeTab].content.heading}

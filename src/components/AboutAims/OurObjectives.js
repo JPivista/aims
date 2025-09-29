@@ -10,14 +10,14 @@ const Objectives = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     autoslide: true,
     autoplay: true,
 
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
   }
 
   // Mobile images (different ones)

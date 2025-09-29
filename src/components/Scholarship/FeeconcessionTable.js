@@ -139,7 +139,7 @@ const FeeconcessionTable = () => {
         </h5>
       </div>
       <div className="lg:px-8">
-        <div className="container mx-auto p-6 mb-5">
+        <div className="container mx-auto py-5 lg:px-0 md:px-0 px-4 mb-5">
           <h2 className="text-center text-xl md:text-2xl font-bold mb-6 monser-500 ">
             Student Fee Concession Categories
           </h2>
