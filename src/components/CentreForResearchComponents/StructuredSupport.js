@@ -27,8 +27,8 @@ const StructuredSupport = () => {
                     <Image
                         src={
                             isMobile
-                                ? "/centre-for-research/beyond_collaboration_mob.svg"
-                                : "/centre-for-research/beyond_collaboration.webp"
+                                ? "/centre-for-research/acr-mob.webp"
+                                : "/centre-for-research/acr.webp"
                         }
                         alt="Our Track Record"
                         width={1000}
