@@ -124,11 +124,12 @@ const Programs = () => {
                                     </Button>
                                 </Link>
                             </div>
-                            <div className="lg:order-2 order-1 relative md:h-[500px] h-52">
+                            <div className="lg:order-2 order-1 relative md:h-auto h-52">
                                 <Image
                                     src={postgraduateProgram.image}
                                     alt={postgraduateProgram.title}
-                                    fill
+                                    height={400}
+                                    width={800}
                                     className="object-cover"
                                 />
                             </div>
@@ -144,12 +145,13 @@ const Programs = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {undergraduatePrograms.map((program) => (
                                 <div key={program.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <div className="relative md:h-[500px] h-52">
+                                    <div className="relative md:h-auto h-52">
                                         <Image
                                             src={program.image}
                                             alt={program.title}
-                                            fill
-                                            className="object-cover"
+                                            height={400}
+                                            width={800}
+                                            className="object-contain"
                                         />
                                     </div>
                                     <div className="md:p-8 p-4">

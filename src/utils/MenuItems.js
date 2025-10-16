@@ -8,7 +8,7 @@ export const MenuItems = [
     ],
   },
   {
-    title: "Programs",
+    title: "Schools",
     links: [
       { name: "School of Business", href: "/business-school" },
       { name: "School of Finance & Commerce", href: "/finance-commerce-school" },
