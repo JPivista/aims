@@ -17,29 +17,29 @@ export default function SkillsSection() {
 
   const data = [
     {
-      title: "Current Affairs & General Aptitude:",
+      title: "Current Affairs & General Aptitude",
       description: "To enhance awareness and critical thinking skills",
       color: "#FAD4D4",
     },
     {
-      title: "Technical Aptitude & Industrial Analytics Workshops:",
+      title: "Technical Aptitude & Industrial Analytics Workshops",
       description:
         "To build role-specific capabilities aligned with industry expectations",
       color: "#C5E3DF",
     },
     {
-      title: "Presentation, Group Discussion, and Debate Skills:",
+      title: "Presentation, Group Discussion, and Debate Skills",
       description: "To stand out in group settings",
       color: "#FAD4D4",
     },
     {
-      title: "Interview Skills & Mock Interviews:",
+      title: "Interview Skills & Mock Interviews",
       description:
         "To prepare for real-world interview scenarios with precision and poise",
       color: "#C5E3DF",
     },
     {
-      title: "Psychometric Testing & Career Counselling:",
+      title: "Psychometric Testing & Career Counselling",
       description: "To align your aim with your personality and potential",
       color: "#FAD4D4",
     },
