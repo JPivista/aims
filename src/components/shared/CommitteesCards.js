@@ -2,13 +2,22 @@ import React from "react";
 import Image from "next/image";
 
 const CommitteesCards = ({ committees }) => {
+    // Helper function to safely add wrap opportunity after each slash
+    const formatTextWithWrap = (text) => {
+        if (!text) return text;
+        if (text.includes("/")) {
+            return text.replaceAll("/", "/\u200B");
+        }
+        return text;
+    };
+
     return (
         <div className="lg:px-8 px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 container mx-auto my-10">
                 {committees.map((committee, index) => (
                     <div
                         key={index}
-                        className={`${committee.bgColor} rounded-xl p-6 ${committee.borderColor} border relative`}
+                        className={`${committee.bgColor} rounded-xl p-6 ${committee.borderColor} border relative w-full break-words overflow-visible`}
                     >
                         {/* Icon */}
                         {committee.icon && (
@@ -40,9 +49,12 @@ const CommitteesCards = ({ committees }) => {
 
                         {/* Description */}
                         {committee.description && (
-                            <p className="text-gray-700 mt-3 text-sm sm:text-base leading-relaxed">
-                                {committee.description}
-                            </p>
+                            <p
+                                className="text-gray-700 mt-3 text-sm sm:text-base leading-relaxed break-words whitespace-pre-line"
+                                dangerouslySetInnerHTML={{
+                                    __html: formatTextWithWrap(committee.description),
+                                }}
+                            />
                         )}
 
                         {/* Objectives */}
@@ -54,13 +66,16 @@ const CommitteesCards = ({ committees }) => {
                                 >
                                     {committee.objectivesTitle}
                                 </h4>
-                                <ul className="mt-2 space-y-2 min-h-[190px]">
+                                <ul className="mt-2 space-y-2">
                                     {committee.objectives.map((obj, idx) => (
-                                        <li key={idx} className="flex items-start gap-2">
+                                        <li key={idx} className="flex items-start gap-2 break-words">
                                             <span className="text-xl">•</span>
-                                            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                                                {obj}
-                                            </p>
+                                            <p
+                                                className="text-sm sm:text-base text-gray-700 leading-relaxed break-words"
+                                                dangerouslySetInnerHTML={{
+                                                    __html: formatTextWithWrap(obj),
+                                                }}
+                                            />
                                         </li>
                                     ))}
                                 </ul>
@@ -70,8 +85,13 @@ const CommitteesCards = ({ committees }) => {
                         {/* Frequency */}
                         {committee.frequency && (
                             <div className={`border-t ${committee.frequencyBorder} mt-4 pt-2`}>
-                                <p className="text-sm font-semibold"> {committee.frequencytitle}</p>
-                                <p className="text-sm">{committee.frequency}</p>
+                                <p className="text-sm font-semibold">{committee.frequencytitle}</p>
+                                <p
+                                    className="text-sm break-words"
+                                    dangerouslySetInnerHTML={{
+                                        __html: formatTextWithWrap(committee.frequency),
+                                    }}
+                                />
                             </div>
                         )}
                     </div>

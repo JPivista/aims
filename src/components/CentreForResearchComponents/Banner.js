@@ -55,11 +55,12 @@ const CentreForResearchBanner = ({ announcements, pageType = "engineering" }) =>
                                         src={
                                             isMobile
                                                 ? "/pre-university-college/empowering_minds_since1994_black.webp"
-                                                : "/pre-university-college/empowering_minds_since1994.webp"
+                                                : "/pre-university-college/empowering_minds_since1994_black.webp"
                                         }
                                         alt="Pre-University College Logo"
                                         width={200}
                                         height={200}
+                                        unoptimized
                                         className="object-contain"
                                         priority
                                     />

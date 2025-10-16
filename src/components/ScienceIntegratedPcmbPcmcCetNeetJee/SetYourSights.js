@@ -11,7 +11,7 @@ const examData = {
         title: "JEE",
         subtitle: "(Joint Entrance Examination)",
         description:
-            "The JEE integrated course at AIMS is designed to cater to aspiring engineers and technologists. Through a structured curriculum, students receive comprehensive instruction in physics, chemistry, and mathematics, aligning with the JEE syllabus. As one of the top colleges for PU with JEE coaching in Bangalore, we aim to empower students to secure admission in premier engineering institutes across the country.",
+            "The JEE integrated course at AIMS is designed to cater to aspiring engineers and technologists. Through a structured curriculum, students receive comprehensive instruction in physics, chemistry, and mathematics, aligning with the JEE syllabus. As one of the top colleges for PU with JEE coaching in Bangalore, we AIM to empower students to secure admission in premier engineering institutes across the country.",
     },
     NEET: {
         title: "NEET",
@@ -32,7 +32,7 @@ export default function Page() {
                 subHeading={`Integrated Coaching <br /> Approach`}
                 subDescription={[
                     `In addition to preparing students for their pre-university coursework, our extensive program also gets them ready for competitive entrance exams like NEET, KCET, and JEE, making AIMS one of the top colleges for PU with CET coaching and JEE coaching in Bangalore.`,
-                    `Each student receives individualized attention and assistance from our knowledgeable educators, who work to help them realise their greatest potential. You'll have access to state-of-the-art tools and creative teaching strategies, giving you the knowledge and abilities to thrive in the rapidly developing world of science.`
+                    `Each student receives individualised attention and assistance from our knowledgeable educators, who work to help them realise their greatest potential. You'll have access to state-of-the-art tools and creative teaching strategies, giving you the knowledge and abilities to thrive in the rapidly developing world of science.`
                 ]}
                 tabData={examData}
                 bgImage={"/pre-university-college/pcmc_pcmb/right_half_circle.webp"}

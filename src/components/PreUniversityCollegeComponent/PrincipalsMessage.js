@@ -4,7 +4,7 @@ import Image from "next/image";
 const principalData = {
     image: "/pre-university-college/principal.webp",
     name: "MR. M L KUMAR",
-    title: "PRINCIPAL, AIMS PU COLLEGE",
+    title: "THE PRINCIPAL, AIMS PU COLLEGE",
     headingItalic: "Principal’s",
     headingNormal: "Message",
     message: [

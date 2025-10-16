@@ -15,7 +15,7 @@ const Facilities = ({ title, items = [], imageSrc, imageAlt }) => {
               {title}
             </h3>
           )}
-          <div className="w-full flex flex-col lg:flex-row items-center bg-white">
+          <div className="w-full flex flex-col lg:flex-row items-center bg-white md:gap-10 gap-5 pt-5 md:pt-0">
             {/* Right Image */}
             {imageSrc && (
               <div className="w-full md:w-full lg:w-[40%] flex justify-center items-center my-auto order-1">

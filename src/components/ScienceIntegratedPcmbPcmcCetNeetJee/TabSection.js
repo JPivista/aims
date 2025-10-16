@@ -34,7 +34,7 @@ const AdmissionTabsSection = () => {
                 }
             ],
             conclusion:
-                "Postgraduate programs include M.Com, MCA, and other specialized master's degrees.",
+                "",
         },
         {
             title: "Individual Mentoring",
