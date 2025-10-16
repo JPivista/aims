@@ -8,7 +8,7 @@ const SoInfoTechPrograms = () => {
         id: 'bca',
         title: 'Bachelor of Computer Applications (BCA)',
         description: 'Our BCA program lays a solid foundation in programming, databases, networking, and system design. With certifications and industry exposure, students are ready to take on roles in software development, tech support, or pursue further specialisation.',
-        image: '/school-of-info-tech/bca.webp', // You'll need to add this image
+        image: '/school-of-info-tech/bca-1.webp', // You'll need to add this image
         link: '/information-technology-school/bachelor-computer-applications'
     }
 
