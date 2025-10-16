@@ -14,7 +14,7 @@ const AdmissionTabsSection = () => {
                 },
                 {
                     heading: "PART II ",
-                    points: ["Economics, Business Studies, Accountancy, Computer Science(EBACs)",],
+                    points: ["Economics, Business Studies, Accountancy, Computer Science (EBACs)",],
                 },
             ],
             conclusion:
@@ -37,7 +37,7 @@ const AdmissionTabsSection = () => {
                 {
                     heading: "Comprehensive Examinations:",
                     points: [
-                        "At the end of each term or semester, students undergo comprehensive examinations that assess their proficiency in all the subjects covered in the EBAC programme. These examinations are structured to test both theoretical knowledge and practical application, ensuring a thorough evaluation of students' academic performance. ",
+                        "At the end of each term or semester, students undergo comprehensive examinations that assess their proficiency in all the subjects covered in the EBAC program. These examinations are structured to test both theoretical knowledge and practical application, ensuring a thorough evaluation of students' academic performance. ",
                     ],
                 },
                 {
