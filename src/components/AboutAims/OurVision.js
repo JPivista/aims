@@ -23,8 +23,8 @@ const Aiming = () => {
               <Image
                 src="/about-aims/About-img1.webp"
                 alt="Community Approach"
-                width={1000}
-                height={1000}
+                width={1500}
+                height={1500}
                 className="w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-xl xl:max-w-2xl "
                 priority
               />
@@ -80,8 +80,8 @@ const Aiming = () => {
               <Image
                 src="/about-aims/About-img2.svg"
                 alt="Community Objectives"
-                width={1000}
-                height={1000}
+                width={1500}
+                height={1500}
                 className="w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-xl xl:max-w-2xl"
               />
             </div>
