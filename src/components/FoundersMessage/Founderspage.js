@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const messages = [
   {
-    role: "Founder",
+    role: "The Founder",
     name: "Dr. Kerron G Reddy",
     title1: "Founder",
     title2: "AIMS Institutes",
@@ -12,7 +12,7 @@ const messages = [
     message: `"Having a single-minded focus on addressing student needs, we are clear that it is our responsibility to help our students realize their goals in an increasingly competitive world. We have consistently produced excellent results and AIMS alumni can be found at premier organizations in India and overseas. From academic excellence to leadership qualities, in a nurturing environment with required infrastructure, AIMS offers everything needed to succeed as a student."`,
   },
   {
-    role: "CEO",
+    role: "The CEO",
     name: "Best Wishes, \n Meka Priyanandan Reddy",
     title1: "CEO",
     title2: "AIMS Institutes",
@@ -20,7 +20,7 @@ const messages = [
     message: `"At AIMS, we are driven by a legacy of academic excellence, entrepreneurial spirit, global vision, and social responsibility. Our mission is to inspire and equip students to become professionals of global caliber, fostering a vibrant learning environment where ideas thrive, diversity is celebrated, and every individual is empowered to succeed. Education at AIMS is a journey of growth, discovery, and transformation. With exceptional faculty, dedicated staff, state-of-the-art facilities, and strong industry collaborations, we ensure our students receive an education that is both relevant and future-ready. Our alumni, making their mark across the globe, stand as a proud testament to the strong foundations and skills nurtured at AIMS. I warmly invite you to explore the opportunities at AIMS and take the next steps towards realising your dreams and aspirations."`,
   },
   {
-    role: "Executive Director",
+    role: "The Executive Director",
     name: "Dr. Roja Reddy Meka",
     title1: "Executive Director",
     title2: "AIMS Institutes",
@@ -28,7 +28,7 @@ const messages = [
     message: `Dear Students, \n "Congratulations on becoming an ‘AIMER’! Welcome to AIMS Institutes — a place where you will transform into confident, ethical, and globally-minded professionals. At AIMS, we combine multidisciplinary learning with research, entrepreneurship incubation, and real-world projects. Supported by our experienced faculty and expert professionals, you will receive a 360-degree education designed to prepare you for the dynamic global workplace. Our campus celebrates diversity, echoing the spirit of Vasudhaiva Kutumbakam — The World is One Family. Here, you will build lifelong friendships and learn the values of equality, inclusivity, and empathy. We maintain a strong commitment to academic excellence and discipline while nurturing your professional growth and ethical sensitivity. Our alumni have made their mark globally, and we are confident you will too. We look forward to supporting you on this exciting journey and making your time at AIMS Institutes truly unforgettable."`,
   },
   {
-    role: "Principal",
+    role: "The Principal",
     name: "Dr. Rama Murthy",
     title1: "Principal",
     title2: "AIMS Institutes",

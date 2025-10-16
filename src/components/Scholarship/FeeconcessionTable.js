@@ -155,7 +155,7 @@ const FeeconcessionTable = () => {
                   </th>
                   <th className="p-3 border border-gray-300">Description</th>
                   <th className="p-3 border border-gray-300 text-center">
-                    Slots Per Programme
+                    Slots Per  Program
                   </th>
                   <th className="p-3 border border-gray-300">Eligibility</th>
                   <th className="p-3 border border-gray-300">
@@ -192,12 +192,14 @@ const FeeconcessionTable = () => {
                     </td>
 
                     {/* Required Documents - Bullet list */}
-                    <td className="p-3 border border-gray-300">
-                      <ul className="list-disc list-inside space-y-1 text-sm">
-                        {item.documents.map((doc, idx) => (
-                          <li key={idx}>{doc}</li>
-                        ))}
-                      </ul>
+                    <td className="p-3 border border-gray-300 align-top">
+                      <div>
+                        <ul className="list-disc pl-5 text-sm">
+                          {item.documents.map((doc, idx) => (
+                            <li key={idx}>{doc}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </td>
                   </tr>
                 ))}

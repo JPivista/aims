@@ -13,9 +13,9 @@ const QualityPolicy = () => {
       <div
         className={`
           absolute inset-0 
-          bg-[url('/about-aims/Quality-img_mobile.webp')] 
-          md:bg-[url('/about-aims/Quality-img_tab.webp')] 
-          lg:bg-[url('/about-aims/Quality-img_desktop.webp')] 
+          bg-[url('/about-aims/Quality-mobile-image-01.webp')] 
+          md:bg-[url('/about-aims/Quality_tab-image-01.webp')]
+          lg:bg-[url('/about-aims/Quality-desktop-image-01.webp')]
           bg-cover bg-center
         `}
       />

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 
 const Breadcrumbs = () => {
   const pathname = usePathname()
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   // Show breadcrumbs after scrolling 100px (but not on home page)
   useEffect(() => {
@@ -61,10 +61,36 @@ const Breadcrumbs = () => {
     pathSegments.forEach((segment, index) => {
       currentPath += `/${segment}`
 
+      // Special case for pre-university-college
+      if (segment === "pre-university-college") {
+        breadcrumbs.push({
+          label: "Pre-University College",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for science-integrated-pcmb-pcmc-cet-neet-jee
+      if (segment === "science-integrated-pcmb-pcmc-cet-neet-jee") {
+        breadcrumbs.push({
+          label: "Integrated PCMC/PCMB",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
       // Convert segment to readable label
       const label = segment
         .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .map((word) => {
+          // Special case: convert "aims" to "AIMS" in all caps
+          if (word.toLowerCase() === "aims") {
+            return "AIMS"
+          }
+          return word.charAt(0).toUpperCase() + word.slice(1)
+        })
         .join(" ")
 
       breadcrumbs.push({
