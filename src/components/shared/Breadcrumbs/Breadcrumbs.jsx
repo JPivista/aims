@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 
 const Breadcrumbs = () => {
   const pathname = usePathname()
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   // Show breadcrumbs after scrolling 100px (but not on home page)
   useEffect(() => {
@@ -64,7 +64,13 @@ const Breadcrumbs = () => {
       // Convert segment to readable label
       const label = segment
         .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .map((word) => {
+          // Special case: convert "aims" to "AIMS" in all caps
+          if (word.toLowerCase() === "aims") {
+            return "AIMS"
+          }
+          return word.charAt(0).toUpperCase() + word.slice(1)
+        })
         .join(" ")
 
       breadcrumbs.push({
