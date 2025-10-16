@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Button from "@/shared/Button";
 import Link from "next/link";
@@ -12,28 +11,28 @@ const testimonials = [
     id: 1,
     name: "Aritrika Pal, BBA 2021-24",
     text: `"Excited to share that I've joined Deloitte as an Advisory Associate Analyst! While I secured the role independently, the solid foundation and support from AIMS Institutes were instrumental in my preparation. Truly grateful for the learning experience that shaped my journey."`,
-    image: "/home/slide-1.webp",
+    image: "/home/slide01.webp",
     stars: 5,
   },
   {
     id: 2,
-    name: "Another Alumni, MBA 2020-22",
-    text: "My experience at AIMS transformed me both personally and professionally. The faculty, peers, and opportunities helped me gain confidence and step into the corporate world with ease.",
-    image: "/home/slide-2.webp",
+    name: "Susheel B Gowda, BHM 2016-20",
+    text: "My teachers are my pillars, they have always strived hard for the success of each of us and the department. I would like to thank my BHM department including teaching and support staff for supporting me in my journey. Long live AIMS!!",
+    image: "/home/slide02.webp",
     stars: 5,
   },
   {
     id: 3,
     name: "Aritrika Pal, BBA 2021-24",
     text: `"Excited to share that I've joined Deloitte as an Advisory Associate Analyst! While I secured the role independently, the solid foundation and support from AIMS Institutes were instrumental in my preparation. Truly grateful for the learning experience that shaped my journey."`,
-    image: "/home/slide-1.webp",
+    image: "/home/slide01.webp",
     stars: 5,
   },
   {
     id: 4,
-    name: "Another Alumni, MBA 2020-22",
-    text: "My experience at AIMS transformed me both personally and professionally. The faculty, peers, and opportunities helped me gain confidence and step into the corporate world with ease.",
-    image: "/home/slide-2.webp",
+    name: "Susheel B Gowda, BHM 2016-20",
+    text: "My teachers are my pillars, they have always strived hard for the success of each of us and the department. I would like to thank my BHM department including teaching and support staff for supporting me in my journey. Long live AIMS!!",
+    image: "/home/slide02.webp",
     stars: 5,
   },
   
@@ -81,7 +80,7 @@ export default function AlumniCarousel() {
                   src={testimonials[index].image}
                   alt={testimonials[index].name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <div className="bg-white rounded-xl shadow-lg p-4 mt-4">
@@ -110,7 +109,7 @@ export default function AlumniCarousel() {
         </div>
 
         {/* ✅ Desktop: keep 2 testimonials */}
-        <div className="hidden lg:flex md:hidden items-center gap-6 lg:gap-10 h-[700px]">
+        <div className="hidden lg:flex md:hidden items-center gap-6 lg:gap-10 h-[700px] w-[600px]">
           {[0, 1].map((offset) => {
             const t = testimonials[(index + offset) % testimonials.length];
             const isFirstCard = offset === 0;
@@ -136,7 +135,7 @@ export default function AlumniCarousel() {
                           src={t.image}
                           alt={t.name}
                           fill
-                          className="object-cover"
+                          className="object-contain w-[409px] h-[439px]"
                         />
                       </div>
                       <div className="bg-white rounded-xl p-4 mt-4">
@@ -176,7 +175,7 @@ export default function AlumniCarousel() {
                           src={t.image}
                           alt={t.name}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                         />
                       </div>
                       <div className="bg-white rounded-xl p-4 mt-4">

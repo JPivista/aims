@@ -9,6 +9,7 @@ const nextConfig = {
                 pathname: '/wp-content/uploads/**',
             },
         ],
+        domains: ["docs.theaims.ac.in"],
     },
 };
 
