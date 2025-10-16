@@ -113,7 +113,7 @@ const PatentsTimeline = () => {
         ),
       },
       {
-        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM  The Week",
+        title: "AIMS SCHOOL OF HOSPITALITY AND TOURISM  ",
         titles: " The Week",
         description: (
           <ul className="list-disc pl-5 space-y-1">
@@ -538,7 +538,7 @@ const PatentsTimeline = () => {
         ),
       },
       {
-        titles: "Careers360 B -School Survey",
+        titles: "Careers360 B-School Survey",
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>Best B- School Rating of “AAA”</li>
