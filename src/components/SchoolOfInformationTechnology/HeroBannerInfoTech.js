@@ -7,10 +7,10 @@ const HeroBannerSoF = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-info-tech/school-of-info-tech-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-no-repeat bg-[url('/school-of-info-tech/school-of-info-tech-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-info-tech/school-of-info-tech-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-no-repeat bg-[url('/school-of-info-tech/school-of-info-tech-banner-mobile.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -54,7 +54,7 @@ const HeroBannerSoF = ({ announcements, pageType = "engineering" }) => {
               <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
                 <div className="flex items-center">
                   <Image
-                    src="/iacbe/since-black.svg"
+                    src="/white-empower.svg"
                     alt="Recruiters"
                     width={200}
                     height={200}
