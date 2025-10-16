@@ -61,6 +61,26 @@ const Breadcrumbs = () => {
     pathSegments.forEach((segment, index) => {
       currentPath += `/${segment}`
 
+      // Special case for pre-university-college
+      if (segment === "pre-university-college") {
+        breadcrumbs.push({
+          label: "Pre-University College",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for science-integrated-pcmb-pcmc-cet-neet-jee
+      if (segment === "science-integrated-pcmb-pcmc-cet-neet-jee") {
+        breadcrumbs.push({
+          label: "Integrated PCMC/PCMB",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
       // Convert segment to readable label
       const label = segment
         .split("-")
