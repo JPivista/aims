@@ -10,7 +10,7 @@ export default function Page() {
       title: "Advantages of Choosing PCMC:",
       titleColor: "text-[#531574]",
       description:
-        "You can opt for multiple courses after PU like Btech/BE/BCA/Bio-tech/ BSc Nautical Sciences/ BSc Computer Science/BSc Aviation/ BDes Industrial Design.",
+        "You can opt for multiple courses after PU like Btech/BE/BCA/Bio-tech/BSc Nautical Sciences/BSc Computer Science/BSc Aviation/BDes Industrial Design.",
       objectivesTitle: "Can choose career opportunity in various sectors post degree:",
       objectives: [
         "Software Engineer",
@@ -32,7 +32,7 @@ export default function Page() {
       title: "Advantages of Choosing PCMB:",
       titleColor: "text-[#0C2165]",
       description:
-        "You can opt for multiple courses after PU like Medical/Bio-tech/ B-pharma/Bachelor of Medical Sciences/BE/Bsc/Bioinformatics/Agricultural Sciences.",
+        "You can opt for multiple courses after PU like Medical/Bio-tech/B-pharma/Bachelor of Medical Sciences/BE/Bsc/Bioinformatics/Agricultural Sciences.",
       objectivesTitle: "Can choose career opportunity in various sectors post degree:",
       objectives: [
         "Doctor",

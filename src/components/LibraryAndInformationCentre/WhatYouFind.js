@@ -2,8 +2,8 @@ import React from "react";
 
 const WhatYouFind = () => {
   const items = [
-    { text: <>Over <span className="font-semibold">25,000</span> print books and 30 academic journals</> },
-    { text: <><span className="font-semibold">1.6 million</span> e-books and 6,000+ e-journals</> },
+    { text: <>Over <span className="font-semibold">25,000</span> print books and <br/> 30 academic journals</> },
+    { text: <><span className="font-semibold">1.6 million</span> e-books and 6,000+ <br/> e-journals</> },
     { text: <>Subscription-based databases: <span className="font-semibold">DELNET</span> and <span className="font-semibold">NLIST</span></> },
     { text: <>Access to open platforms like NDLI, Shodhganga, NPTEL, and Swayam</> },
     { text: <>Faculty publications, theses, dissertations, and student projects</> },

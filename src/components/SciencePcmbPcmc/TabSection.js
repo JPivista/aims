@@ -34,7 +34,7 @@ const AdmissionTabsSection = () => {
                 }
             ],
             conclusion:
-                "Postgraduate programs include M.Com, MCA, and other specialized master's degrees.",
+                "",
         },
         {
             title: "Individual Mentoring",
@@ -50,7 +50,7 @@ const AdmissionTabsSection = () => {
         },
         {
             title: "Teaching Methods",
-            heading: "PUC Admission Process:",
+            heading: "Teaching Methods",
             points: [
                 "Complete 10th standard with good marks",
                 "Apply online for PUC program selection",
