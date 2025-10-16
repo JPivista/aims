@@ -42,17 +42,16 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
         <div className="absolute bottom-4 lg:bottom-8 left-0 right-0 px-4 lg:px-8">
           <div className="container mx-auto py-4 ">
             <div className="flex lg:flex-row flex-col items-center justify-between md:gap-10 gap-4">
-              <div className="flex items-center lg:items-start w-full">
-                <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300 lg:leading-16 w-full">
-                  <span className="playfair-400 block lg:inline">
+              <div className="flex items-center lg:items-start w-full ">
+                <h1 className="text-white text-center lg:text-left text-2xl lg:text-[60px] playfair-300  w-full">
+                  <span className="playfair-400 block lg:inline ">
                     AIMS Institutes
                   </span>
-                  <span className="playfair-400 text-[#D7FCF4] block ">
+                  <span className="playfair-400 text-[#D7FCF4] block lg:-mt-3 ">
                     Your Top Business School
                   </span>
-                  <span className="playfair-400 text-[#D7FCF4] block lg:inline">
-                    {" "}
-                    in Banglore
+                  <span className="playfair-400 text-[#D7FCF4] block lg:-mt-3 px-1">
+                    in Bangalore
                   </span>
                 </h1>
               </div>
