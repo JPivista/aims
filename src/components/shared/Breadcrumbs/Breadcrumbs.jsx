@@ -81,6 +81,26 @@ const Breadcrumbs = () => {
         return
       }
 
+      // Special case for science-pcmb-pcmc
+      if (segment === "science-pcmb-pcmc") {
+        breadcrumbs.push({
+          label: "PCMB/PCMC",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for commerce-ceba
+      if (segment === "commerce-ceba") {
+        breadcrumbs.push({
+          label: "CEBA",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
       // Convert segment to readable label
       const label = segment
         .split("-")
