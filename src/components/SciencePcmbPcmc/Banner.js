@@ -18,7 +18,7 @@ const SciencePcmbPcmc = ({ announcements, pageType = "engineering" }) => {
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image - Desktop */}
-                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/banner.webp')]" />
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/pcmc_pcmb/pcmc-pcmb-new-banner.webp')]" />
 
                 {/* Background Image - Mobile */}
                 <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/pre_univercity_mobile_banner.webp')]" />

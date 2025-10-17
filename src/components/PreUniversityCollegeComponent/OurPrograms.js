@@ -22,7 +22,7 @@ const OurPrograms = () => {
                     <div className="grid md:grid-cols-2 gap-10 items-center mt-14">
                         <div>
                             <Image
-                                src={"/pre-university-college/science-new.webp"}
+                                src={"/pre-university-college/science-img-new.webp"}
                                 width={600}
                                 height={500}
                                 alt="Science Students"
