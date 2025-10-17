@@ -55,6 +55,35 @@ const Overview = () => {
 
   const tabData = [
     {
+      key: "eligibility",
+      label: "Eligibility",
+      content: (
+        <>
+          {eligibilityData.map((section) => (
+            <div key={section.id} className="mb-8 sm:mb-10 md:mb-12">
+              <h5 className="text-[#A22877] font-bold text-xl sm:text-2xl md:text-[24px] monser-600 leading-tight mb-4 sm:mb-6 md:mb-8">
+                {section.heading}
+              </h5>
+              <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
+                {section.items.map((item, index) => (
+                  <li key={index} className="mb-2">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+            Students seeking admission to MBA degree at AIMS Institutes must
+            adhere to the guidelines of eligibility prior to submitting
+            application form (online only) to us. All applications which do not
+            meet our MBA selection criteria listed above will not be
+            entertained.
+          </p>
+        </>
+      ),
+    },
+    {
       key: "important-dates",
       label: "Important Dates",
       content: (
@@ -94,35 +123,6 @@ const Overview = () => {
       ),
     },
     {
-      key: "eligibility",
-      label: "Eligibility",
-      content: (
-        <>
-          {eligibilityData.map((section) => (
-            <div key={section.id} className="mb-8 sm:mb-10 md:mb-12">
-              <h5 className="text-[#A22877] font-bold text-xl sm:text-2xl md:text-[24px] monser-600 leading-tight mb-4 sm:mb-6 md:mb-8">
-                {section.heading}
-              </h5>
-              <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
-                {section.items.map((item, index) => (
-                  <li key={index} className="mb-2">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
-            Students seeking admission to MBA degree at AIMS Institutes must
-            adhere to the guidelines of eligibility prior to submitting
-            application form (online only) to us. All applications which do not
-            meet our MBA selection criteria listed above will not be
-            entertained.
-          </p>
-        </>
-      ),
-    },
-    {
       key: "selection-process",
       label: "Selection Process",
       content: (
@@ -130,7 +130,7 @@ const Overview = () => {
           <h5 className="text-[#A22877] monser-600 text-[24px] mb-4 sm:mb-6">
             Selection Process
           </h5>
-          <div className="space-y-6 lg:px-4 px-0">
+          <div className="space-y-6 lg:px-0 px-0">
             <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
               The MBA selection process is designed to go beyond academic merit
               and assess a candidate's self-awareness, communication,
@@ -147,7 +147,7 @@ const Overview = () => {
                   <h5 className="text-lg md:text-xl monser-600 text-[#A22877] font-semibold">
                     {step.title}
                   </h5>
-                  <p className="text-base md:text-lg monser-400 ml-4">
+                  <p className="text-base md:text-lg monser-400">
                     {step.description}
                   </p>
                 </div>
@@ -157,9 +157,8 @@ const Overview = () => {
             <div className="bg-black/10 p-4 rounded-lg">
               <p className="text-sm md:text-base monser-400 italic">
                 Presentations and/or Personal Interview will take place on a
-                Single day at various locations with 2-3 panel members (Faculty
-                + Alumni + Any industry expert from those locations – Where
-                possible).
+                single day at various locations with 2-3 panel members (Faculty
+                + Alumni + Any industry expert from those locations).
               </p>
             </div>
 

@@ -26,27 +26,6 @@ const Overview = () => {
 
   const tabData = [
     {
-      key: "important-dates",
-      label: "Important Dates",
-      content: (
-        <>
-          <h6
-            style={{ color: "#A22877", fontSize: "1.2rem", fontWeight: "600" }}
-            className="text-[#932c79] font-semibold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6"
-          >
-            Important Dates
-          </h6>
-          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
-            Please see the{" "}
-            <a href="/admission-process" className="text-[#A22877]">
-              Admission Process
-            </a>{" "}
-            page for important dates and deadlines for this course.
-          </p>
-        </>
-      ),
-    },
-    {
       key: "eligibility",
       label: "Eligibility",
       content: (
@@ -71,6 +50,27 @@ const Overview = () => {
               </ul>
             </div>
           ))}
+        </>
+      ),
+    },
+    {
+      key: "important-dates",
+      label: "Important Dates",
+      content: (
+        <>
+          <h6
+            style={{ color: "#A22877", fontSize: "1.2rem", fontWeight: "600" }}
+            className="text-[#932c79] font-semibold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6"
+          >
+            Important Dates
+          </h6>
+          <p className="text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed tracking-wider">
+            Please see the{" "}
+            <a href="/admission-process" className="text-[#A22877]">
+              Admission Process
+            </a>{" "}
+            page for important dates and deadlines for this course.
+          </p>
         </>
       ),
     },

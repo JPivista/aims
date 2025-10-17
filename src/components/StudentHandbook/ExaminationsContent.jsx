@@ -79,72 +79,35 @@ const ExaminationsContent = () => {
       </p>
 
       {/* Bulleted List */}
-      <div className="ml-6 mb-4">
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Unit/Monthly/Online Tests
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Quizzes
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Assignments & Presentations
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Projects & Research
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Case Studies
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Seminars
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px]">
-            Activities with professional bodies
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            Co-curricular & extracurricular initiatives
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Unit/Monthly/Online Tests
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Quizzes
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Assignments & Presentations
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Projects & Research
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Case Studies
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Seminars
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Activities with professional bodies
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          Co-curricular & extracurricular initiatives
+        </li>
+      </ul>
 
       {/* Sub-Sub-Sub-Heading with letter */}
       <h6 className="text-base sm:text-lg md:text-[22px] monser-500 mb-2">
@@ -158,24 +121,17 @@ const ExaminationsContent = () => {
       </p>
 
       {/* Bulleted List */}
-      <div className="ml-6 mb-4">
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            UG Programs: Two sessional exams, class tests, and a pre-final exam
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            PG Programs: Two sessional exams and/or pre-final exams
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          UG Programs: Two sessional exams, class tests, and a pre-final exam
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          PG Programs: Two sessional exams and/or pre-final exams
+        </li>
+      </ul>
 
       {/* Paragraph with bold text */}
       <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed text-gray-800 mb-3">
@@ -212,74 +168,45 @@ const ExaminationsContent = () => {
       </p>
 
       {/* Bulleted List */}
-      <div className="ml-6 mb-4">
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            Complete all CIA (Continuous Internal Assessment) requirements
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            Clear all outstanding fees
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            Avoid any form of cheating or malpractice, violations lead to
-            disciplinary action
-          </span>
-        </div>
-        <div className="flex items-start mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-            Attend all class tests, sessional exams, and pre-final exams
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          Complete all CIA (Continuous Internal Assessment) requirements
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          Clear all outstanding fees
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          Avoid any form of cheating or malpractice, violations lead to
+          disciplinary action
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+          Attend all class tests, sessional exams, and pre-final exams
+        </li>
+      </ul>
 
       {/* Note section */}
       <div className="mb-4">
         <h5 className="text-base sm:text-lg md:text-[22px] monser-500 mb-2">
           Note: Failure to meet the above criteria may result in:
         </h5>
-        <div className="ml-6">
-          <div className="flex items-start mb-1">
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-              •
-            </span>
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-              Denial of your hall ticket
-            </span>
-          </div>
-          <div className="flex items-start mb-1">
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-              •
-            </span>
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-              Disqualification from university examinations
-            </span>
-          </div>
-          <div className="flex items-start mb-1">
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800 mr-2">
-              •
-            </span>
-            <span className="text-base sm:text-lg md:text-xl lg:text-[18px] text-gray-800">
-              Loss of eligibility for scholarships, awards, or academic
-              recognition
-            </span>
-          </div>
-        </div>
+        <ul
+          className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2"
+          style={{ fontSize: "0.7em" }}
+        >
+          <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+            Denial of your hall ticket
+          </li>
+          <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+            Disqualification from university examinations
+          </li>
+          <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-gray-800 leading-relaxed">
+            Loss of eligibility for scholarships, awards, or academic
+            recognition
+          </li>
+        </ul>
       </div>
 
       {/* Sub-Heading */}

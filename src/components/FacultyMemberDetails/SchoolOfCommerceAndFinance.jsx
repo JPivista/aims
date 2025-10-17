@@ -14,14 +14,14 @@ const SchoolOfCommerceAndFinance = () => {
     [
       "1",
       "Dr.B A Karunakar Reddy",
-      "B.Com,M.Com,MBA,Ph.D",
+      "B.Com, M.Com, MBA, Ph.D",
       "Professor",
       "Marketing",
     ],
     [
       "2",
       "Mr.Lakshminarayana S",
-      "B.com,M.COM,M.Phil,MBA(PhD)",
+      "B.Com, M.Com, M.Phil, MBA(PhD)",
       "Assistant Professor",
       "Finance & Accounting",
     ],
@@ -35,7 +35,7 @@ const SchoolOfCommerceAndFinance = () => {
     [
       "4",
       "Dr.Guravaiah Pellur",
-      "Ph.D, Net, Set, Mcom, MBA, B.com",
+      "Ph.D, Net, Set, M.Com, MBA, B.Com",
       "Associate Professor",
       "Accounting",
     ],
@@ -49,7 +49,7 @@ const SchoolOfCommerceAndFinance = () => {
     [
       "6",
       "Dr.Basavarja K P",
-      "BA,B.Ed,MA,Ph.D,UGC-NET",
+      "BA, B.Ed, MA, Ph.D, UGC-NET",
       "Associate Professor",
       "Kannada",
     ],
@@ -70,14 +70,14 @@ const SchoolOfCommerceAndFinance = () => {
     [
       "9",
       "Mr Mujawar Jainu Hamid",
-      "BA,MA,M.Phil,UGC NET,(PhD)",
+      "BA, MA, M.Phil, UGC NET, (PhD)",
       "Assistant Professor",
       "Hindi",
     ],
     [
       "10",
       "Mr.Siddesh D",
-      "B.com, M.Com, Kset",
+      "B.Com, M.Com, Kset",
       "Assistant Professor",
       "Accounting and Taxation",
     ],

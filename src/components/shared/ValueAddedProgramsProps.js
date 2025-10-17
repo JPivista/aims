@@ -52,7 +52,7 @@ const ValueAddedPrograms = ({
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-0">
               <div className="">
                 <h3
-                  className="text-[#0C2165] playfair-300 tracking-wider text-2xl md:text-[60px] text-start"
+                  className="text-[#0C2165] playfair-300 text-2xl md:text-[60px] text-start"
                   dangerouslySetInnerHTML={{
                     __html: title || "Value Added Programs",
                   }}
@@ -78,7 +78,7 @@ const ValueAddedPrograms = ({
 
                   <button
                     onClick={() => handleItemClick(program.title)}
-                    className="w-full flex items-center justify-between text-left cursor-pointer px-2 md:px-4"
+                    className="w-full flex items-center justify-between text-left cursor-pointer px-2 md:px-4 py-3"
                   >
                     <h5 className="flex items-center gap-2 md:gap-4 w-full md:flex-wrap">
                       <span className="break-words monser-500 text-[18px] sm:text-[20px] md:text-[24px] leading-snug">
@@ -89,8 +89,9 @@ const ValueAddedPrograms = ({
                         alt="Arrow"
                         width={20}
                         height={20}
-                        className={`w-3 h-3 md:w-4 md:h-4 flex-shrink-0 transition-transform duration-200 ${expandedSection === program.title ? "rotate-90" : ""
-                          }`}
+                        className={`w-3 h-3 md:w-4 md:h-4 flex-shrink-0 transition-transform duration-200 ${
+                          expandedSection === program.title ? "rotate-90" : ""
+                        }`}
                       />
                     </h5>
                   </button>
@@ -100,22 +101,48 @@ const ValueAddedPrograms = ({
                     <div className="absolute bottom-0 left-0 w-11/12 h-px bg-black"></div>
                   )}
 
-                  {/* Semicircle for first item (desktop only) */}
+                  {/* Content with proper bullet points */}
                   {expandedSection === program.title && (
-                    <div className="my-3 md:my-4 ml-2 md:ml-4 space-y-2">
-                      {program.content.map((item, contentIndex) => (
-                        <div
-                          key={`${program.id}-content-${contentIndex}`}
-                          className="flex items-start"
-                        >
-                          <span className="mr-2 md:mr-3 mt-1 text-sm md:text-lg">
-                            •
-                          </span>
-                          <p className="text-sm sm:text-base lg:text-[20px] leading-relaxed">
-                            {item}
-                          </p>
-                        </div>
-                      ))}
+                    <div className="my-3 md:my-4 mb-10 md:mb-12 ml-2 md:ml-4">
+                      <ul
+                        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2"
+                        style={{ fontSize: "0.7em" }}
+                      >
+                        {program.content.map((item, contentIndex) => (
+                          <li
+                            key={`${program.id}-content-${contentIndex}`}
+                            className={`text-sm sm:text-base lg:text-[20px] monser-400 text-black leading-relaxed ${
+                              contentIndex === program.content.length - 1
+                                ? "mb-8"
+                                : ""
+                            }`}
+                          >
+                            {typeof item === "object" ? (
+                              // Handle object with title and sub-items
+                              <div>
+                                <div className="font-semibold mb-1 monser-600 text-[18px] sm:text-[20px] md:text-[20px]">
+                                  {item.title}
+                                </div>
+                                {item.subItems && (
+                                  <ul className="ml-4 space-y-just 2">
+                                    {item.subItems.map((subItem, subIndex) => (
+                                      <li
+                                        key={subIndex}
+                                        className="text-[18px]"
+                                      >
+                                        {subItem}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            ) : (
+                              // Handle simple string
+                              item
+                            )}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

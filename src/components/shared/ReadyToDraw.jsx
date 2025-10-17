@@ -23,9 +23,9 @@ const ReadyToDraw = ({
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-8">
             {/* Left Side - Content */}
             <div className="w-full md:w-3/4 space-y-3 sm:space-y-4 md:space-y-6">
-              <h2 className="text-white text-2xl md:text-5xl playfair-300 ">
+              <h5 className="text-white text-3xl md:text-5xl playfair-300 ">
                 {title}
-              </h2>
+              </h5>
 
               <p className="text-white text-sm sm:text-base md:text-lg monser-400 leading-relaxed">
                 {subtitle}

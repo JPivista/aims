@@ -41,72 +41,43 @@ const CodeOfConductContent = () => {
       </h5>
 
       {/* Bulleted List */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            AIMS Institutes holds jurisdiction over all students enrolled or
-            associated with the Institute
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            This includes any acts of misconduct, such as Ragging or otherwise,
-            on-campus, in hostels, or during any Institute-related activity or
-            function
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            The Institute may also take action for off-campus conduct if it:
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          AIMS Institutes holds jurisdiction over all students enrolled or
+          associated with the Institute
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          This includes any acts of misconduct, such as Ragging or otherwise,
+          on-campus, in hostels, or during any Institute-related activity or
+          function
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          The Institute may also take action for off-campus conduct if it:
+        </li>
+      </ul>
 
       {/* Nested bullet points */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Violates student conduct or discipline policies
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Poses a serious risk of harm
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Involves victims who are part of the campus community
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Is part of a pattern of behavior that includes both on-campus and
-            off-campus incidents
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-8 lg:ml-12 pl-2 mb-4"
+        style={{ listStyleType: "disc", fontSize: "0.8em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Violates student conduct or discipline policies
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Poses a serious risk of harm
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Involves victims who are part of the campus community
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Is part of a pattern of behavior that includes both on-campus and
+          off-campus incidents
+        </li>
+      </ul>
 
       {/* Standard paragraph */}
       <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed monser-400 text-black mb-4 sm:mb-6">
@@ -120,45 +91,28 @@ const CodeOfConductContent = () => {
       </h5>
 
       {/* Bulleted List */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">Language of Communication:</span>{" "}
-            English is the official medium on campus
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">ID Card Requirement:</span> Entry into
-            campus is permitted only with a valid student ID, to be worn visibly
-            at all times
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">Mobile Phones:</span> Prohibited on
-            campus unless specifically allowed for academic use
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">Ragging-Free Zone:</span> Strictly
-            prohibited across campus and hostels (Refer Anti-Ragging Policy)
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">Language of Communication:</span> English
+          is the official medium on campus
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">ID Card Requirement:</span> Entry into
+          campus is permitted only with a valid student ID, to be worn visibly
+          at all times
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">Mobile Phones:</span> Prohibited on
+          campus unless specifically allowed for academic use
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">Ragging-Free Zone:</span> Strictly
+          prohibited across campus and hostels (Refer Anti-Ragging Policy)
+        </li>
+      </ul>
 
       {/* Sub-Heading */}
       <h5 className="text-base sm:text-lg md:text-[28px] text-[#0C2165] monser-500 mb-1 sm:mb-3">
@@ -171,67 +125,35 @@ const CodeOfConductContent = () => {
       </p>
 
       {/* Bulleted List */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Discrimination or Harassment based on gender, caste, race, religion,
-            disability, etc.
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Damage to Property belonging to the Institute, faculty, or fellow
-            students
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Disruptive Behavior during classes or official events
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Unauthorized Gatherings such as protests or meetings without
-            permission
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Possession or Use of alcohol, drugs, tobacco, or banned substances
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Loitering or Disruptions during class hours
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Bringing Outsiders into campus without approval
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Discrimination or Harassment based on gender, caste, race, religion,
+          disability, etc.
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Damage to Property belonging to the Institute, faculty, or fellow
+          students
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Disruptive Behavior during classes or official events
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Unauthorized Gatherings such as protests or meetings without
+          permission
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Possession or Use of alcohol, drugs, tobacco, or banned substances
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Loitering or Disruptions during class hours
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Bringing Outsiders into campus without approval
+        </li>
+      </ul>
 
       {/* Standard paragraphs */}
       <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed monser-400 text-black mb-3">
@@ -253,26 +175,19 @@ const CodeOfConductContent = () => {
       </h5>
 
       {/* Bulleted List */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">Weekdays (Mon–Fri):</span> Mandatory
-            formal uniform while on campus, regardless of purpose
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            <span className="monser-500">Weekends (Sat–Sun):</span> Smart
-            casuals permitted
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">Weekdays (Mon–Fri):</span> Mandatory
+          formal uniform while on campus, regardless of purpose
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          <span className="monser-500">Weekends (Sat–Sun):</span> Smart casuals
+          permitted
+        </li>
+      </ul>
 
       {/* Standard paragraph */}
       <p className="text-base sm:text-lg md:text-xl lg:text-[18px] leading-relaxed monser-400 text-black mb-4 sm:mb-6">
@@ -285,32 +200,20 @@ const CodeOfConductContent = () => {
       </h5>
 
       {/* Bulleted List */}
-      <div className="md:ml-4  mb-4">
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Maintain silence in corridors and common areas
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Switch off all electrical appliances when not in use
-          </span>
-        </div>
-        <div className="flex items-start mb-2 sm:mb-1">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black mr-2 flex-shrink-0 mt-0.5">
-            •
-          </span>
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-            Park responsibly in designated areas only
-          </span>
-        </div>
-      </div>
+      <ul
+        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2 mb-4"
+        style={{ fontSize: "0.7em" }}
+      >
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Maintain silence in corridors and common areas
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Switch off all electrical appliances when not in use
+        </li>
+        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
+          Park responsibly in designated areas only
+        </li>
+      </ul>
     </div>
   )
 }

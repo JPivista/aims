@@ -21,7 +21,7 @@ const Ambitions = () => {
         {/* Mobile Image */}
         <div className="block md:hidden">
           <Image
-            src="/bba/mobile-acca-training.webp"
+            src="/bba/mobile-acca-training-new.webp"
             alt="BBA ACCA Training"
             width={768}
             height={1024}
@@ -32,14 +32,14 @@ const Ambitions = () => {
 
         <div className="absolute inset-0 flex md:items-center  items-end  bottom-10 md:bottom-0">
           <div className="container mx-auto px-4 md:px-0 lg:px-8 text-center md:text-left ">
-            <div className="w-full md:max-w-2xl space-y-4 text-white ">
+            <div className="w-full md:max-w-2xl space-y-2 md:space-y-2 text-white ">
               {/* Heading */}
               <h2 className="text-[40px] md:text-[50px] lg:text-[60px] playfair-300 italic">
                 BBA+
               </h2>
 
               {/* Subheading */}
-              <h5 className="text-xl md:text-[24px] lg:text-[28px] monser-600">
+              <h5 className="text-xl md:text-[24px] lg:text-[28px] monser-600  -mt-4">
                 CA/ACCA Training
               </h5>
 
