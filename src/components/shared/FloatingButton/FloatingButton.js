@@ -9,7 +9,7 @@ const FloatingButton = () => {
     return (
         <>
             {/* Main Floating Buttons */}
-            <div className="fixed right-4 top-[35%] flex flex-col z-[9999] -rotate-90 transform origin-right">
+            <div className="fixed lg:right-4 right-3 top-[35%] flex flex-col z-[9999] -rotate-90 transform origin-right">
                 {/* Enquire Now Button */}
                 <div className="flex gap-4">
                     {/* Apply Now Button */}
