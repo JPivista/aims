@@ -18,7 +18,7 @@ const Resources = () => {
     <div className='lg:px-8 px-4'>
       <div className="container mx-auto md:pb-12 pb-5">
         {/* Heading */}
-        <h3 className="text-4xl font-bold text-[#0d2352] mb-8">Resources:</h3>
+        <h3 className="text-4xl font-bold text-[#0d2352] mb-8">Resources</h3>
 
         {/* Library Membership */}
         <div className="bg-[#fbeaee] border border-[#f2d0cf] rounded-2xl p-6 mb-6">
@@ -47,6 +47,7 @@ const Resources = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
+                  variant="placement"
                   target="_blank"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScVrD4N-iZ-IWbIXNTAXxjfx-_CNofVNoV4ti682A5WrLCCHg/viewform"
                   showReadMore={false}
@@ -54,6 +55,7 @@ const Resources = () => {
                   Student Membership Form
                 </Button>
                 <Button
+                  variant="placement"
                   target="_blank"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe7zCWJS8aOIZdHo2XQ4sjlvDPdY-x0jzy3a_9SzPAJluBH6w/viewform"
                   showReadMore={false}

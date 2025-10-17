@@ -124,6 +124,7 @@ const MeetOurResearchGuides = () => {
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <h6 className="ps-3">* 1 OBC seat plus either 1 GM or 1 FN seat.</h6>
                                 </div>
                             </div>
                         </div>

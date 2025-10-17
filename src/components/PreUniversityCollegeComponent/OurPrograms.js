@@ -37,8 +37,8 @@ const OurPrograms = () => {
                                 coaching.
                             </p>
                             <div className="flex flex-col gap-3 w-fit ">
-                                <Button href="/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee" showReadMore={false}>PCMB/PCMC Integrated</Button>
-                                <Button href="/pre-university-college/science-pcmb-pcmc" showReadMore={false}>PCMB/PCMC</Button>
+                                <Button variant="placement" href="/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee" showReadMore={false}>PCMB/PCMC Integrated</Button>
+                                <Button variant="placement" href="/pre-university-college/science-pcmb-pcmc" showReadMore={false}>PCMB/PCMC</Button>
                             </div>
                         </div>
 
@@ -53,7 +53,7 @@ const OurPrograms = () => {
                                 for CEBA in Bangalore.
                             </p>
                             <div className="flex flex-col gap-3 w-fit ">
-                                <Button href="/pre-university-college/commerce-ceba" showReadMore={false}>CEBA</Button>
+                                <Button variant="placement" href="/pre-university-college/commerce-ceba" showReadMore={false}>CEBA</Button>
                             </div>
                         </div>
                         <div>

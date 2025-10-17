@@ -67,7 +67,8 @@ const NewsletterHeader = () => {
                             <div className="w-full md:w-2/3 space-y-2 text-gray-800">
                                 <div>
                                     <span>BHM Newsletter June-July, 2024 </span>
-                                    <a href="#" className="text-[#A22877] underline font-semibold">View</a>
+                                    <a target='_blank' href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:bb2e9967-5e5f-4564-9bb1-703c2a620418" 
+                                    className="text-[#A22877] underline font-semibold">View</a>
                                 </div>
                             </div>
                         </div>
@@ -82,11 +83,13 @@ const NewsletterHeader = () => {
                             <div className="w-full md:w-2/3 space-y-2 text-gray-800">
                                 <div>
                                     <span>MCA - Newsletter vol 2 Issue 1 Jan - Jun, 2023 </span>
-                                    <a href="#" className="text-[#A22877] underline font-semibold">View</a>
+                                    <a target='_blank' href="https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e940e9472e953f59b23718/1709785360735/MCA+Newsletter+Vol+2+Issue+1+Jan+-+Jun+2023.pdf" 
+                                    className="text-[#A22877] underline font-semibold">View</a>
                                 </div>
                                 <div>
                                     <span>MCA - Newsletter vol 2 Issue 2 Jul - Dec, 2023 </span>
-                                    <a href="#" className="text-[#A22877] underline font-semibold">View</a>
+                                    <a target='_blank' href="https://static1.squarespace.com/static/638476bc795c4e5410b55317/t/65e9412d47d08372c5363ef0/1709785429627/MCA+Newsletter+Vol+2+Issue+2+Jul+-+Dec+2023.pdf" 
+                                    className="text-[#A22877] underline font-semibold">View</a>
                                 </div>
                             </div>
                         </div>

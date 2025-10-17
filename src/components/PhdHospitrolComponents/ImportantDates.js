@@ -46,7 +46,7 @@ const tabData = [
           Selection Process
         </h6>
         <ul className="list-disc pl-5 text-gray-800 text-sm sm:text-base space-y-1">
-          <li>Admission to PhD. shall be through an Entrance Test only</li>
+          <li>Admission to PhD shall be through an Entrance Test only</li>
           <li>Applications for the Entrance Test are invited by the University once a year, generally held in September or October</li>
           <li>The Registrar (Evaluation) of University of Mysore invites applications from eligible candidates</li>
           <li>The Entrance Test consists of one paper on the broad area of PhD., lasting 3 hours and worth 100 marks</li>

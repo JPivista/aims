@@ -19,19 +19,21 @@ const AcademicHub = () => {
       </div>
       <div className="flex flex-wrap gap-4 my-8 justify-center">
         <Button
+          variant="placement"
           href="/ugc-preparation"
           showReadMore={false}
         >
           Bangalore University Previous year Question papers
         </Button>
         <Button
+          variant="placement"
           target="_blank"
           href="https://www.ugcnetonline.in/question_papers_dec2014.php"
           showReadMore={false}
         >
           UGC NET Question papers
         </Button>
-        <Button href="/eresources" showReadMore={false}>
+        <Button variant="placement" href="/eresources" showReadMore={false}>
           E-Resources
         </Button>
       </div>
