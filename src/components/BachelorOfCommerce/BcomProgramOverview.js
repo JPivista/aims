@@ -77,8 +77,8 @@ const BcomProgramOverview = () => {
                         <Image
                             src="/bcom/bcom-program.svg"
                             alt="B.Com Program Overview"
-                            width={1000}
-                            height={600}
+                            width={1400}
+                            height={300}
                             className="object-contain"
                         />
                     </div>

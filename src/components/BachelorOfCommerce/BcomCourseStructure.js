@@ -65,7 +65,7 @@ const sampleCourseData = [
                     "English",
                     "Advanced Corporate Accounting",
                     "Costing Methods",
-                    "Stock and Commodity markets",
+                    "Stock and Commodity Markets",
                     "Business Research Methodology",
                     "Corporate Communication"
                 ]

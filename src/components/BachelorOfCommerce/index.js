@@ -9,6 +9,7 @@ import BcomCourseStructure from './BcomCourseStructure'
 import BcomPlus from './BcomPlus'
 import CareerOpportunities from './CareerOpportunities'
 import BcomAlumni from './BcomAlumni'
+import ReadyToDraw from '../shared/ReadyToDraw'
 
 const index = () => {
     return (
@@ -23,6 +24,16 @@ const index = () => {
             <BcomPlus />
             <CareerOpportunities />
             <BcomAlumni />
+            <ReadyToDraw
+                title={
+                    <>
+                        Ready to <br className="hidden md:block" /> Draw Your Bow?
+                    </>
+                }
+                subtitle="From helping you define your goals to guiding you through every step, we're here to help you take that first shot."
+                primaryButtonText="Apply Now"
+            // secondaryButtonText="Download Brochure"
+            />
         </>
     )
 }

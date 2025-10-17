@@ -27,7 +27,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                                 SINCE 1994
                             </p>
 
-                            <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
+                            <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight mt-10">
                                 Build the Skills.
                                 <br />
                                 Shape the AIM.
@@ -56,7 +56,7 @@ const HeroBannerBca = ({ announcements, pageType = 'bca' }) => {
                     </div>
 
                     {/* Right Content - Circular Image */}
-                    <div className="flex justify-center items-center w-full lg:w-1/2 mt-6 lg:mt-0">
+                    <div className="flex md:justify-end justify-center md:items-end items-center w-full lg:w-1/2 mt-6 lg:mt-0">
                         <div className="relative">
                             {/* Mobile Circular Image */}
                             <div className="w-96 h-96 rounded-full overflow-hidden lg:hidden">

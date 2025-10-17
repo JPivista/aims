@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Button from '@/shared/Button'
 
 const BcomContent = () => {
     return (
@@ -38,6 +39,16 @@ const BcomContent = () => {
                             className="object-contain w-[95%]"
                         />
                     </div>
+                    <div className="flex justify-center my-10">
+                        <Button
+                            variant="placement"
+                            showArrow={true}
+                            href="https://apply.theaims.ac.in/login"
+                        >
+                            Apply Now
+                        </Button>
+                    </div>
+
                 </div>
             </div>
         </>

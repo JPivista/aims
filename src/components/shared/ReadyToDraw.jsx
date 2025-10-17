@@ -11,7 +11,7 @@ const ReadyToDraw = ({
   ),
   subtitle = "From helping you define your goals to guiding you through every step, we're here to help you take that first shot.",
   primaryButtonText = "Apply Now",
-  secondaryButtonText = "Download Brochure",
+  // secondaryButtonText = "Download Brochure",
   tertiaryButtonText = null,
   bgColor = "bg-[#A22877]",
   arrowImage = "/MBA/arrow.svg",
@@ -44,7 +44,7 @@ const ReadyToDraw = ({
                   </Button>
                 )}
 
-                {secondaryButtonText && (
+                {/* {secondaryButtonText && (
                   <Button
                     variant="secondary"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
@@ -53,7 +53,7 @@ const ReadyToDraw = ({
                   >
                     {secondaryButtonText}
                   </Button>
-                )}
+                )} */}
 
                 {tertiaryButtonText && tertiaryButtonText.trim() !== "" && (
                   <Button

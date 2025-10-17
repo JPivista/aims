@@ -16,7 +16,7 @@ const CareerOpportunities = () => {
         },
         {
             title: "Chartered Financial Analyst (CFA)",
-            role: "CFAs specialize in investment management, financial analysis, and portfolio strategy",
+            role: "CFAs specialise in investment management, financial analysis, and portfolio strategy",
             skills: "Expertise in investment analysis, portfolio management, and financial modeling",
             opportunities: "Roles in investment banking, portfolio management, financial consulting, and risk analysis"
         },
@@ -41,7 +41,7 @@ const CareerOpportunities = () => {
         {
             title: "Business Analyst",
             role: "Bridging the gap between IT and business, using data analytics to improve processes and systems",
-            skills: "Analytical thinking, problem-solving, data analysis, and project management",
+            skills: "Analytical thinking, <br /> problem-solving, data analysis, and project management",
             opportunities: "Opportunities in diverse industries including IT, consulting, financial services, and healthcare"
         },
         {
@@ -92,9 +92,7 @@ const CareerOpportunities = () => {
                                             </p>
                                         </td>
                                         <td className="px-6 py-3 bg-[#E1F9F4] align-top border-b-4 border-white border-r-2 border-r-gray-200">
-                                            <p className="text-gray-700 text-sm leading-relaxed">
-                                                {career.skills}
-                                            </p>
+                                            <p className="text-gray-700 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: career.skills }} />
                                         </td>
                                         <td className="px-6 py-3 bg-[#E1F9F4] align-top rounded-r-lg border-b-4 border-white">
                                             <p className="text-gray-700 text-sm leading-relaxed">
@@ -136,9 +134,7 @@ const CareerOpportunities = () => {
                                     <h4 className="font-semibold text-[#A22877] text-sm uppercase tracking-wide mb-2">
                                         Skills Developed
                                     </h4>
-                                    <p className="text-gray-700 text-sm leading-relaxed">
-                                        {career.skills}
-                                    </p>
+                                    <p className="text-gray-700 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: career.skills }} />
                                 </div>
 
                                 {/* Opportunities Section */}
