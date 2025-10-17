@@ -10,7 +10,7 @@ const SoSwiss = () => {
       title: "Swiss International Culinary Professional Diploma",
       description:
         "Co-certified by Swiss Vocational Education & Training (VET by EHL), this diploma is designed for future chefs ready to master classical and modern culinary techniques. This program sets you on a global culinary path, whether in top hotel kitchens or your own restaurant.",
-      image: "/school-of-hospitality/sohospitality-img-03.webp",
+      image: "/school-of-hospitality/Swiss 01.webp",
       link: "https://www.aimsenrich.com/swiss-international-culinary-professional-diploma",
     },
     {
@@ -18,7 +18,7 @@ const SoSwiss = () => {
       title: "Swiss International Food & Beverage Service Professional Diploma",
       description:
         "This diploma prepares you to excel in fine dining service, wine and beverage pairing, and guest engagement. You'll train in simulated hotel environments and learn from industry professionals, setting you up for careers in luxury hospitality and F&B operations worldwide.",
-      image: "/school-of-hospitality/sohospitality-img-04.webp",
+      image: "/school-of-hospitality/Swiss 02.webp",
       link: "https://www.aimsenrich.com/swiss-international-food-beverage-service-professional-diploma",
     },
     {
@@ -26,7 +26,7 @@ const SoSwiss = () => {
       title: "Swiss Professional Diploma in Rooms (CII-VET)",
       description:
         "Focused on the essential departments of front office and housekeeping, this diploma program blends Swiss precision with Indian operational needs. Students gain deep expertise in customer service, reservation systems, and housekeeping best practices, all critical to ensuring seamless guest experiences.",
-      image: "/school-of-hospitality/sohospitality-img-05.webp",
+      image: "/school-of-hospitality/Swiss 03.webp",
       link: "https://www.aimsenrich.com/swiss-professional-diploma-rooms-cii-vet",
     },
   ]

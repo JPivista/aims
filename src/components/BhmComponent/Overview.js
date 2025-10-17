@@ -1,8 +1,14 @@
-import React from "react"
+"use client"
+import React, { useEffect } from "react"
 import Image from "next/image"
 import BhmOverviewTabs from "./BhmOverviewTabs"
 
 const Overview = () => {
+  // ✅ Scroll to top when this component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const tabData = [
     {
       key: "important-dates",
@@ -39,17 +45,17 @@ const Overview = () => {
             <li>
               Successful completion of a Pre-University Course (PUC)/12th
               standard or an equivalent examination. Candidates with strong
-              communication skills are preferred
+              communication skills are preferred.
             </li>
             <li>
               Holders of GCE/JGCSE/GCSE Certification must have passed at least
               FIVE subjects at &apos;O&apos; level and TWO subjects at
-              &apos;A&apos; level
+              &apos;A&apos; level.
             </li>
             <li>
               A pass certificate or diploma from a Secondary Stage Level
               Examination (12 Years) in any discipline, recognised by a
-              national-level board or council of any country
+              national-level board or council of any country.
             </li>
           </ol>
         </>
@@ -74,11 +80,12 @@ const Overview = () => {
       ),
     },
   ]
+
   return (
     <div className="py-10" style={{ backgroundColor: "#FFE0E9" }}>
       <div className="px-4 lg:px-8">
-        <div className="container mx-auto  flex flex-col gap-10">
-          {/* BBA Aviation Program overview */}
+        <div className="container mx-auto flex flex-col gap-10">
+          {/* BHM Program Overview */}
           <div className="items-center justify-between grid grid-cols-1 lg:grid-cols-2">
             <h3 className="text-[#0C2165]">
               <span className="italic text-[#A22877] playfair-300">
@@ -96,13 +103,13 @@ const Overview = () => {
             </p>
           </div>
 
-          {/* Recognition timeline */}
+          {/* Recognition Timeline */}
           <div>
             {/* Desktop & Tablet Image */}
             <div className="hidden md:flex justify-center">
               <Image
                 src="/bhm-img/overview-img_converted.webp"
-                alt="Bhm Aviation Program Overview Desktop"
+                alt="BHM Program Overview Desktop"
                 width={1000}
                 height={600}
                 className="object-contain"
@@ -112,7 +119,7 @@ const Overview = () => {
             <div className="flex justify-center md:hidden">
               <Image
                 src="/bhm-img/BHM-mobiles.svg"
-                alt="Bhm Aviation Program Overview Mobile"
+                alt="BHM Program Overview Mobile"
                 width={500}
                 height={300}
                 className="object-contain"
@@ -120,7 +127,7 @@ const Overview = () => {
             </div>
           </div>
 
-          {/* Buttons */}
+          {/* Tabs */}
           <BhmOverviewTabs tabs={tabData} />
         </div>
       </div>

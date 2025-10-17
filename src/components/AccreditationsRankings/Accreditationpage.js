@@ -783,7 +783,7 @@ const PatentsTimeline = () => {
             <li>5th Best Private Hotel Management in India</li>
             <li>
               13th Best Institution ranked by Faculty, Publication, Research,
-              Consultancy, CDP and other programmes.
+              Consultancy, CDP and other programs.
             </li>
             <li>
               13th Best Institution ranked by Placement, Social Responsibility,
@@ -930,7 +930,7 @@ const PatentsTimeline = () => {
             <li>
               5th Best Top 20 Hotel Management Institutes (Government & Private)
               in India by faculty, publication, research, consultancy, CDP &
-              other programmes
+              other programs
             </li>
           </ul>
         ),
@@ -988,7 +988,7 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>21st Best Private B-School in India</li>
-            <li>st Best Private B-School in Intellectual Capital</li>
+            <li>1st Best Private B-School in Intellectual Capital</li>
           </ul>
         ),
       },
@@ -1054,7 +1054,7 @@ const PatentsTimeline = () => {
         titles: "Outlook",
         description: (
           <ul className="list-disc pl-5 space-y-1">
-            <li>56th Best B –School in India</li>
+            <li>56th Best B–School in India</li>
           </ul>
         ),
       },
@@ -1063,7 +1063,7 @@ const PatentsTimeline = () => {
         description: (
           <ul className="list-disc pl-5 space-y-1">
             <li>19th Best Private B-School in India</li>
-            <li>34th Best B –School in India</li>
+            <li>34th Best B–School in India</li>
           </ul>
         ),
       },

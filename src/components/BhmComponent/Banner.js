@@ -55,7 +55,7 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                   <br className="hidden lg:block" />
                   <span className="playfair-400 text-[#D7FCF4]   block lg:inline">
                     The Right Training.
-                  </span>
+                  </span> 
                   <br className="hidden lg:block" />
                   <span className="playfair-400 text-[#D7FCF4]">
                     The Right Trajectory.
@@ -67,8 +67,8 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
                   src="/bhm-img/NAAC VET.webp"
                   alt="IACBE"
                   width={200}
-                  height={100}
-                  className="object-contain "
+                  height={300}
+                  className="h-[11vh]"
                 />
               </div>
             </div>
