@@ -12,7 +12,7 @@ export default function Page() {
             "A full-fledged canteen for student needs",
             "In-house clinical care with a full-time nurse for students and staff",
         ],
-        imageSrc: "/pre-university-college/pcmc_pcmb/science_integrated_facilities.webp",
+        imageSrc: "/pre-university-college/pcmc-facilities.webp",
         imageAlt: "Facilities",
     }
 
