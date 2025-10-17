@@ -101,6 +101,36 @@ const Breadcrumbs = () => {
         return
       }
 
+      // Special case for business-school
+      if (segment === "business-school") {
+        breadcrumbs.push({
+          label: "School of Business",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for master-business-administration
+      if (segment === "master-business-administration") {
+        breadcrumbs.push({
+          label: "Master of Business Administration",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for bachelor-business-administration
+      if (segment === "bachelor-business-administration") {
+        breadcrumbs.push({
+          label: "Bachelor of Business Administration",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
       // Convert segment to readable label
       const label = segment
         .split("-")

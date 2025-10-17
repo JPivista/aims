@@ -124,13 +124,14 @@ const Programs = () => {
                                     </Button>
                                 </Link>
                             </div>
-                            <div className="lg:order-2 order-1 relative md:h-auto h-52">
+
+                            <div className="lg:order-2 order-1 relative lg:h-auto h-[300px]">
                                 <Image
                                     src={postgraduateProgram.image}
                                     alt={postgraduateProgram.title}
                                     height={400}
                                     width={800}
-                                    className="object-cover"
+                                    className="object-cover lg:h-auto h-[300px] md:h-[350px]"
                                 />
                             </div>
                         </div>
