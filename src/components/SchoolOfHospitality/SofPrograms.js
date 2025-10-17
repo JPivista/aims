@@ -64,7 +64,7 @@ const SofPrograms = () => {
                   }}
                 />
                 <Link href={postgraduateProgram.link} scroll={true}>
-                  <Button variant="primary" className="text-left">
+                  <Button variant="placement" className="text-left">
                     Explore Now
                   </Button>
                 </Link>
@@ -98,7 +98,7 @@ const SofPrograms = () => {
                   }}
                 />
                 <Link href={undergraduateProgram.link} scroll={true}>
-                  <Button variant="primary" className="text-left">
+                  <Button variant="placement" className="text-left">
                     Explore Now
                   </Button>
                 </Link>

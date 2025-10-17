@@ -7,17 +7,17 @@ const HeroBannerSoH = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[80vh] md:h-[76vh] lg:h-[75vh] xl:h-[76vh] 2xl:h-[80.5vh] 3xl:h-[90vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/events-fests-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/Events-fests-Banner-img.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/events-mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/life-at-aims/Events-fests-Mobile-img.webp')]" />
 
         {/* Gradient Overlay */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
+            "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
           }}
         ></div>
 

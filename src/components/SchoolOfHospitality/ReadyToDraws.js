@@ -35,7 +35,7 @@ const ReadyToDraw = ({
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 pt-2">
                 {primaryButtonText && (
                   <Button
-                    variant="secondary"
+                    variant="placement"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                     href="https://apply.theaims.ac.in/login"
                     target="_blank"
@@ -46,7 +46,7 @@ const ReadyToDraw = ({
 
                 {secondaryButtonText && (
                   <Button
-                    variant="secondary"
+                    variant="placement"
                     className="whitespace-nowrap text-xs sm:text-sm md:text-base"
                     href="https://www.theaims.ac.in/brochure-enquiry"
                     target="_blank"
