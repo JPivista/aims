@@ -25,24 +25,14 @@ const ExaminationsContent = () => {
       </p>
 
       {/* Numbered List */}
-      <div className="ml-4 mb-6">
-        <div className="flex items-start mb-2">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2 monser-500">
-            1.
-          </span>
-          <span className="text-base sm:text-lg md:text-[20px] monser-500">
-            Continuous Internal Assessment (CIA)
-          </span>
-        </div>
-        <div className="flex items-start mb-2">
-          <span className="text-base sm:text-lg md:text-xl lg:text-[18px] mr-2 monser-500">
-            2.
-          </span>
-          <span className="text-base sm:text-lg md:text-[20px] monser-500">
-            Semester-End University Examinations (UE)
-          </span>
-        </div>
-      </div>
+      <ol className="list-decimal list-inside px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed ml-4 mb-6">
+        <li className="mb-2 text-base sm:text-lg md:text-[20px] monser-500">
+          Continuous Internal Assessment (CIA)
+        </li>
+        <li className="mb-2 text-base sm:text-lg md:text-[20px] monser-500">
+          Semester-End University Examinations (UE)
+        </li>
+      </ol>
 
       {/* Sub-Heading */}
       <h5 className="text-lg md:text-[28px] text-[#0C2165] monser-500 mb-3">

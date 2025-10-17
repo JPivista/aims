@@ -14,7 +14,7 @@ const NaacContent = () => {
             <p className="monser-400 text-base md:text-[24px] leading-relaxed md:max-w-5xl">
               As a NAAC‑accredited institution, AIMS sets its sights on quality,
               credibility, and continuous improvement. <br /> With a stellar
-              CGPA of 3.46, we aim high and deliver quality education that hits
+              CGPA of 3.46, we AIM high and deliver quality education that hits
               the mark every time.
             </p>
           </div>

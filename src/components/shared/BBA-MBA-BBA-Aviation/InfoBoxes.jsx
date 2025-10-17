@@ -60,7 +60,7 @@ const InfoBoxes = ({
               {boxes.map((box, index) => (
                 <div
                   key={index}
-                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-1 hover:scale-[1.02] cursor-pointer rounded-lg h-[200px] flex flex-col justify-start flex-1 min-w-0 overflow-hidden`}
+                  className={`group relative ${boxBg} ${boxHoverBg} transition-all duration-300 transform hover:translate-y-1 hover:scale-[1.02] cursor-pointer rounded-lg min-h-[200px] flex flex-col justify-start flex-1 min-w-0 overflow-hidden`}
                 >
                   {/* Arrow */}
                   <div className="absolute left-1 top-4 bottom-4 opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex items-center group-hover:hidden">
@@ -74,7 +74,7 @@ const InfoBoxes = ({
                   </div>
 
                   {/* Content */}
-                  <div className="ml-4 xl:ml-5 2xl:ml-6 px-2 py-2 h-full flex flex-col">
+                  <div className="ml-4 xl:ml-5 2xl:ml-6 px-2 py-3 pb-4 h-full flex flex-col">
                     <div
                       className={`text-base xl:text-lg 2xl:text-xl font-bold mb-1 ${numberColor}`}
                       style={{
@@ -87,12 +87,12 @@ const InfoBoxes = ({
                       {box.number}
                     </div>
                     <h5
-                      className={`text-sm lg:text-base xl:text-lg 2xl:text-xl ${titleColor} mb-1 monser-600 leading-tight flex-shrink-0`}
+                      className={`text-sm lg:text-base xl:text-lg 2xl:text-xl ${titleColor} mb-2 monser-600 leading-tight flex-shrink-0`}
                     >
                       {box.title}
                     </h5>
                     <p
-                      className={`text-[11px] xl:text-[12px] 2xl:text-[13px] ${descColor} monser-400 leading-relaxed flex-grow`}
+                      className={`text-[11px] xl:text-[12px] 2xl:text-[13px] ${descColor} monser-400 leading-relaxed flex-grow mb-2`}
                     >
                       {box.description}
                     </p>

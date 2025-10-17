@@ -10,10 +10,10 @@ const HeroBanner = ({
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/community-service/hero-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/community-service/hero-banner-new.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/community-service/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/community-service/mobile-banner-new.webp')]" />
 
         {/* Bottom Content Container */}
         <div className="absolute left-0 right-0 px-4 lg:px-0 bottom-2 md:bottom-8 lg:mx-10 mx-0">

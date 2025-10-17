@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const SGRC = () => {
   const paragraphs = [
-    "Please share the details about the incident you would like to report. Our Complaint Center will analyze your complaint and take the appropriate measures to resolve it.",
+    "Please share the details about the incident you would like to report. Our Complaint Center will analyse your complaint and take the appropriate measures to resolve it.",
     "We aim to provide a safe, secure and supportive environment for the holistic development of students. A Students Grievance Redressal Committee (SGRC) is established as per guidelines of the UGC to deal with all grievances related to common problems at the institution and its timely redressal.",
     "Grievance is an allegation or a complaint for actual or perceived wrongs as defined in UGC Regulations under clause 2(f) of the Gazette Notification No 14-4/2012 (CPP-II) dated December 2012 and may pertain to academic and non-academic matters.",
-    "Department level grievances will be attended to by the respective class coordinators, mentors and programme heads. The grievances may include all academic, co-curricular and extra-curricular grievances. Unresolved grievances may be escalated to the Students Grievance Redressal Committee.",
+    "Department level grievances will be attended to by the respective class coordinators, mentors and program heads. The grievances may include all academic, co-curricular and extra-curricular grievances. Unresolved grievances may be escalated to the Students Grievance Redressal Committee.",
     "All other grievances may be reported at the immediate levels and unresolved grievances shall be escalated as described. Students may report grievances at the immediate levels and unresolved grievances shall be escalated as shown in the escalation chart.",
     "Unresolved grievances will be forwarded to the Students Grievance Redressal Committee (SGRC), which functions under the ACSD, through the Registrar.",
     "Grievances shall also be submitted in one of the following ways:\na. via this institutional portal\nb. in writing or by email to the Registrar – registrar@theaims.ac.in\nc. by email to grievances@theaims.ac.in\n",

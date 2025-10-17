@@ -47,7 +47,7 @@ const Aiming = () => {
             {/* Left Side - Image */}
             <div className="w-full lg:w-1/2 flex justify-center md:justify-start lg:justify-start ">
               <Image
-                src="/community-service/our-approach.webp"
+                src="/community-service/our-approach-new.webp"
                 alt="Community Approach"
                 width={1000}
                 height={1000}
@@ -100,7 +100,7 @@ const Aiming = () => {
             {/* Right Side - Image */}
             <div className="w-full lg:w-1/2">
               <Image
-                src="/community-service/objectives.webp"
+                src="/community-service/objectives-new.webp"
                 alt="Community Objectives"
                 width={1000}
                 height={1000}

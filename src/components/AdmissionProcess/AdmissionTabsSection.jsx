@@ -55,7 +55,7 @@ const AdmissionTabsSection = () => {
               "On completion of Selection Rounds, selected aspirants would receive Offer letters, notifying the admission Status.",
           },
         ],
-        note: "Presentations and/or Personal Interview will take place on a Single day at various locations with 2-3 panel members (Faculty + Alumni + Any industry expert from those locations – Where possible).",
+        note: "Presentations and/or Personal Interview will take place on a single day at various locations with 2-3 panel members (Faculty + Alumni + Any industry expert from those locations).",
         evaluation: {
           title: "Final Evaluation Framework",
           table: [
@@ -84,7 +84,7 @@ const AdmissionTabsSection = () => {
       description:
         "If you're applying to any other PG program, here's a step-by-step admission process:",
       points: [
-        'Submit your application online via the "Apply Now" link',
+        'Submit your application online via the Apply Now link',
         "Our admissions team will contact you",
         "You may be invited for a selection round/interview, after which an offer will be extended",
       ],
@@ -96,7 +96,7 @@ const AdmissionTabsSection = () => {
       heading: "Undergraduate Admission",
       description: "For UG applicants, the steps are similar:",
       points: [
-        'Apply online through the "Apply Now" portal',
+        'Apply online through the Apply Now portal',
         "Our admissions office will reach out",
         "If applicable, attend an interview/selection round",
         "You'll receive an offer and further instructions on confirming your seat",
@@ -110,7 +110,7 @@ const AdmissionTabsSection = () => {
       description:
         "Students seeking PU admission at AIMS will follow the same online process:",
       points: [
-        'Submit your application via "Apply Now"',
+        'Submit your application via Apply Now',
         "Our team will get in touch",
         "Appear for an interview, if required",
       ],

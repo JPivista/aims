@@ -10,11 +10,11 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-process/hero-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-process/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-process/mobile-banner-new.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 hidden md:block"
           style={{
             background:
               "linear-gradient(179deg, rgba(12, 33, 101, 0.00) 11%, #08101D 99%)",
@@ -35,7 +35,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
                       Your Future.
                     </span>
                   </h1>
-                  <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-4">
+                  <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight  -mt-2 md:-mt-4">
                     Admissions Process at <br /> AIMS Institutes
                   </h5>
                 </div>

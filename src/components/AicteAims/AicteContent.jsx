@@ -12,7 +12,7 @@ const AicteContent = () => {
               Relevance
             </h2>
             <p className="monser-400 text-base md:text-[24px] leading-relaxed md:max-w-4xl">
-              Our technical programmes meet AICTE’s national standards, ensuring
+              Our technical programs meet AICTE’s national standards, ensuring
               industry-aligned curriculum, expert faculty, and infrastructure
               that helps you hit your professional target with precision.
             </p>

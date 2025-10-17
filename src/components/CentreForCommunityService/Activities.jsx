@@ -51,7 +51,7 @@ const Activities = () => {
         {/* Right Side - Image */}
         <div className="w-full lg:w-2/5 hidden lg:flex justify-end items-end -mr-4 md:-mr-8 lg:-mr-14 -mb-4 md:-mb-8 lg:-mb-9">
           <Image
-            src="/community-service/activities.svg"
+            src="/community-service/activities-new.webp"
             alt="Community Activities"
             width={1000}
             height={800}

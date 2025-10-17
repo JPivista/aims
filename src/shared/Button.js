@@ -19,7 +19,7 @@ const Button = ({
     primary:
       "bg-[#A22977] text-white border-[#A22977] border-[0.1px] hover:bg-transparent hover:text-[#2828A2]",
     secondary:
-      "bg-white text-[#2828A2] border-white border-[0.1px] hover:bg-transparent hover:text-white",
+      "bg-[#A22977] text-white border-6 border-[#D8BFD8] rounded-[26.5px] hover:bg-[#ff6c01] hover:text-white ",
     third:
       "bg-[#A22977] text-white border-[#A22977] border-[0.1px] hover:bg-transparent",
     teal: "bg-[#B3DBD3] text-[#002561] border-[#B3DBD3] border-[0.1px] hover:bg-transparent hover:text-[#002561]",

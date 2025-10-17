@@ -7,7 +7,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/student-handbook/hero-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/student-handbook/hero-banner-new.webp')]" />
 
         {/* Background Image - Mobile */}
         <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/student-handbook/mobile-banner.webp')]" />
@@ -42,7 +42,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
         {/* White Empower Logo */}
         <div className="absolute top-5 left-0 right-0 lg:mx-20 mx-0">
           <div className="container mx-auto py-4 px-4 md:px-0 lg:px-0">
-            <div className="flex lg:flex-row flex-col items-end justify-end md:gap-10 gap-4 ">
+            <div className="flex lg:flex-row flex-col md:items-end items-start md:justify-end justify-start md:gap-10 gap-4 ">
               <div className="flex items-center">
                 <Image
                   src="/white-empower.svg"

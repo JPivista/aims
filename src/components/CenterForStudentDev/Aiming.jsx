@@ -50,7 +50,7 @@ const Aiming = () => {
               {/* Image positioned absolutely */}
               <div className="lg:p-2 p-0 lg:mt-20 mt-0 lg:w-1/2">
                 <Image
-                  src="/student-development/aiming.webp"
+                  src="/student-development/aiming-new.webp"
                   alt="Student Development"
                   width={1000}
                   height={1000}
@@ -65,7 +65,7 @@ const Aiming = () => {
             {/* Left Side - Image */}
             <div className="w-full lg:w-2/3 flex pb-0 md:pb-6 lg:pb-0">
               <Image
-                src="/student-development/our-approach.webp"
+                src="/student-development/our-approach-new.webp"
                 alt="Career Guidance"
                 width={1000}
                 height={1000}
@@ -119,7 +119,7 @@ const Aiming = () => {
             {/* Right Side - Image */}
             <div className="lg:w-1/2 px-4 md:px-0">
               <Image
-                src="/student-development/objectives.webp"
+                src="/student-development/objectives-new.webp"
                 alt="Success Achievement"
                 width={1000}
                 height={1000}
