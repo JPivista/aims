@@ -49,7 +49,7 @@ const SchoolOfInformationTechnology = () => {
     [
       "6",
       "Dr.Govindaraj Padith T G",
-      "BSC, MSC.PhD",
+      "BSC, MSC, PhD",
       "Associate Professor",
       "Object Oriented Programming using C++",
     ],
@@ -70,7 +70,7 @@ const SchoolOfInformationTechnology = () => {
     [
       "9",
       "Ms.Vidyarani B V",
-      "B.sc, Msc",
+      "B.Sc, M.Sc",
       "Assistant Professor",
       "Mathematics",
     ],

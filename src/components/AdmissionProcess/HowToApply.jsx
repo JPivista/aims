@@ -9,11 +9,11 @@ const HowToApply = () => {
     },
     {
       program: "Postgraduate Programs (Non-MBA)",
-      deadline: "31st August 2025",
+      deadline: "Closed for 2025",
     },
     {
       program: "Undergraduate Programs",
-      deadline: "31st August 2025",
+      deadline: "Closed for 2025",
     },
   ]
 
@@ -114,7 +114,13 @@ const HowToApply = () => {
                       <div className="bg-white p-3 rounded-[10px] text-center monser-400 text-sm leading-relaxed">
                         {item.program}
                       </div>
-                      <div className="bg-white p-3 rounded-[10px] text-center monser-400 text-sm">
+                      <div
+                        className={`bg-white p-3 rounded-[10px] text-center monser-400 text-sm ${
+                          item.deadline.includes("Closed")
+                            ? "text-red-600 font-semibold"
+                            : "font-semibold"
+                        }`}
+                      >
                         {item.deadline}
                       </div>
                     </div>
@@ -142,7 +148,13 @@ const HowToApply = () => {
                     <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed">
                       {item.program}
                     </div>
-                    <div className="bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px]">
+                    <div
+                      className={`bg-white p-3 sm:p-4 rounded-[10px] text-center monser-400 text-sm sm:text-base md:text-lg lg:text-[20px] ${
+                        item.deadline.includes("Closed")
+                          ? "text-red-600 font-semibold"
+                          : "font-semibold"
+                      }`}
+                    >
                       {item.deadline}
                     </div>
                   </div>

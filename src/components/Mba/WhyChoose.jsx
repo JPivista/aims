@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Button from "@/shared/Button"
 
 const WhyChoose = () => {
   return (
@@ -46,7 +47,7 @@ const WhyChoose = () => {
               <div className="bg-[#B4408B] text-white p-4 rounded-xl">
                 <p className="text-sm monser-500 px-2">
                   Dual specialisation options: Marketing, Finance, HR,
-                  Analytics, etc
+                  Analytics, etc.
                 </p>
               </div>
 
@@ -92,6 +93,17 @@ const WhyChoose = () => {
               className="w-full h-auto object-cover rounded-lg"
               priority
             />
+          </div>
+
+          {/* Explore Placement Stories Button */}
+          <div className="flex justify-center mt-10">
+            <Button
+              variant="placement"
+              showArrow={true}
+              href="https://apply.theaims.ac.in/login"
+            >
+              Apply Now
+            </Button>
           </div>
         </div>
       </div>

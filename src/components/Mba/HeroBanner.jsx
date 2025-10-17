@@ -25,15 +25,20 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
         ></div> */}
 
         {/* Empower Image*/}
-        <div className="absolute left-4 lg:left-auto lg:right-20 -top-8 lg:-top-8 lg:max-w-2xl">
-          <Image
-            src="/black-empower.svg"
-            alt="Empower"
-            width={100}
-            height={100}
-            className="w-30 h-30 md:w-45 md:h-45 lg:w-45 lg:h-45"
-            priority
-          />
+        <div className="absolute top-2 md:top-5 left-0 right-0 lg:mx-10 mx-0 mb-4 md:mb-0 lg:mb-0">
+          <div className="container mx-auto py-4 px-4 md:px-0 lg:px-0">
+            <div className="flex lg:flex-row flex-col md:items-end md:justify-end items-start justify-start md:gap-10 gap-4 ">
+              <div className="flex items-center">
+                <Image
+                  src="/black-empower.svg"
+                  alt="Recruiters"
+                  width={200}
+                  height={200}
+                  className="w-32 md:w-[200px] h-auto  md:pb-0 lg:pb-0"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Content Container */}
@@ -43,11 +48,11 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
               <div className="flex items-center">
                 <div className="text-center lg:text-left">
                   {/* Hero Text */}
-                  <h1 className="text-[#002561] text-3xl md:!text-[50px] lg:text-[60px]  playfair-500 lg:leading-tight lg:tracking-wider">
+                  <h5 className="text-[#002561] text-4xl md:!text-[50px] lg:text-[60px]  playfair-500 lg:leading-tight">
                     Learn the Skills.
                     <br />
                     Build the Career.
-                  </h1>
+                  </h5>
                   <h2 className="monser-500 text-3xl lg:text-[40px]  leading-tight text-[#002561] lg:text-black">
                     MBA at AIMS
                   </h2>

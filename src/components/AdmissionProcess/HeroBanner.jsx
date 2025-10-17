@@ -28,7 +28,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
               <div className="flex items-center">
                 <div className="text-center md:text-center lg:text-left">
                   {/* Hero Text */}
-                  <h1 className="text-white text-4xl leading-tight tracking-wider">
+                  <h1 className="text-white text-4xl leading-tight">
                     <span className="playfair-500 text-4xl md:text-[60px]">
                       Your Goal. <br className="block md:hidden" />
                       Your AIM. <br className="block md:hidden md:inline" />

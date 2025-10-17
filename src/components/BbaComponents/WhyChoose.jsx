@@ -1,5 +1,6 @@
 import React from "react"
 import InfoBoxes from "../shared/BBA-MBA-BBA-Aviation/InfoBoxes"
+import Button from "@/shared/Button"
 
 const WhyChoose = () => {
   const naacBoxes = [
@@ -55,6 +56,17 @@ const WhyChoose = () => {
         </div>
       </div>
       <InfoBoxes boxes={naacBoxes} />
+
+      {/* Apply Now Button */}
+      <div className="flex justify-center lg:mt-10 mt-5 mb-2 lg-mb-0">
+        <Button
+          variant="placement"
+          showArrow={true}
+          href="https://apply.theaims.ac.in/login"
+        >
+          Apply Now
+        </Button>
+      </div>
     </div>
   )
 }

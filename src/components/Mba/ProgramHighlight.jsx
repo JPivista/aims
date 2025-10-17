@@ -6,7 +6,7 @@ const ProgramHighlight = () => {
     <div className="relative w-full h-[90vh] md:h-[90vh] lg:h-[75vh] overflow-hidden">
       {/* Desktop Background Image */}
       <Image
-        src="/MBA/student.webp"
+        src="/MBA/student-new.webp"
         alt="MBA Program Highlight"
         fill
         className="hidden lg:block object-cover"
@@ -37,7 +37,7 @@ const ProgramHighlight = () => {
           <div className="flex justify-start md:justify-center lg:justify-start ">
             <div className="w-full md:max-w-2xl lg:max-w-2xl text-center md:text-center lg:text-left md:mb-10 lg:mb-0">
               <h3
-                className="text-white text-lg sm:text-xl md:!text-5xl lg:!text-[60px] playfair-300 leading-tight mb-3 sm:mb-4 md:mb-6 lg:mb-6 tracking-wider"
+                className="text-white text-lg sm:text-xl md:!text-5xl lg:!text-[60px] playfair-300 leading-tight mb-3 sm:mb-4 md:mb-6 lg:mb-6"
                 dangerouslySetInnerHTML={{
                   __html:
                     "Companies <br/> Our Students Have <br/> Been Placed In",

@@ -38,7 +38,7 @@ const PracticalSkills = () => {
           <div className="flex flex-col md:flex-col lg:flex-row w-full gap-6 md:gap-8 lg:gap-0 mb-8 md:mb-10 lg:mb-12">
             {/* Left Side - Flex Column (2/3 width) */}
             <div className="flex flex-col space-y-3 w-full md:w-full lg:w-4/5 ">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl playfair-300 text-[#0C2165] tracking-wider">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl playfair-300 text-[#0C2165]">
                 Practical Skills.
                 <br />
                 Recognised Certifications.
