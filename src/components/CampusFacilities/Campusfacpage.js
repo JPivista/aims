@@ -82,9 +82,9 @@ const Campusfacpage = () => {
           {clubs.map((club, index) => (
             <div
               key={index}
-              className={`relative px-10 text-white text-sm sm:text-base font-medium ${
+              className={`relative px-14 text-white text-sm sm:text-base font-medium ${
                 club.gradient
-              } flex items-center justify-center text-center w-full  h-[200px] overflow-hidden ${
+              } flex items-center justify-center text-center w-full  h-[220px] overflow-hidden ${
                 index !== 0 ? "-ml-9" : ""
               }`}
               style={{
@@ -92,7 +92,7 @@ const Campusfacpage = () => {
                   "polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%, 50px 50%)",
               }}
             >
-              <span className="px-2 md:line-clamp-9">{club.text}</span>
+              <span className="px-2 md:line-clamp-10">{club.text}</span>
             </div>
           ))}
         </div>

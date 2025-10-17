@@ -66,7 +66,7 @@ const SoSwiss = () => {
                       }}
                     />
                     <Link href={course.link}>
-                      <Button variant="primary">Explore Now</Button>
+                      <Button variant="placement">Explore Now</Button>
                     </Link>
                   </div>
                 </div>
