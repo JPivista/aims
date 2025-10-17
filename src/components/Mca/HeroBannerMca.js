@@ -28,13 +28,13 @@ const HeroBannerMca = ({ announcements, pageType = "mca" }) => {
                 SINCE 1994
               </p>
 
-              <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight mt-10">
                 The Right Code.
                 <br />
                 The Right Career.
               </h1>
 
-              <div className="space-y-2">
+              <div className="space-y-2 ">
                 <h5 className="text-3xl font-bold text-[#0C2165] monser-600">
                   MCA at AIMS
                 </h5>
@@ -58,7 +58,7 @@ const HeroBannerMca = ({ announcements, pageType = "mca" }) => {
           </div>
 
           {/* Right Content - Circular Image */}
-          <div className="flex justify-center items-center w-full lg:w-1/2 mt-6 lg:mt-0">
+          <div className="flex justify-center items-center md:justify-end md:items-end w-full lg:w-1/2 mt-6 lg:mt-0">
             <div className="relative">
               {/* Mobile Circular Image */}
               <div className="w-96 h-96 rounded-full overflow-hidden lg:hidden">

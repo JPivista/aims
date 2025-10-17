@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Button from '@/shared/Button'
 
 const McaContent = () => {
     return (
@@ -13,7 +14,7 @@ const McaContent = () => {
 
                 <div className='text-center'>
                     <h3 className='text-[#531675]'>
-                        Why Choose <span className='italic playfair-400'>MCA at AIMS ?</span>
+                        Why Choose <span className='italic playfair-400'>MCA at <br className='md:hidden block' /> AIMS ?</span>
                     </h3>
                 </div>
 
@@ -35,6 +36,15 @@ const McaContent = () => {
                         height={400}
                         className="object-cover w-[70%]"
                     />
+                </div>
+                <div className="flex justify-center my-10">
+                    <Button
+                        variant="placement"
+                        showArrow={true}
+                        href="https://apply.theaims.ac.in/login"
+                    >
+                        Apply Now
+                    </Button>
                 </div>
             </div>
         </>
