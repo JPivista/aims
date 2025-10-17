@@ -28,7 +28,7 @@ const HeroBannerMcom = ({ announcements, pageType = "finance" }) => {
                 SINCE 1994
               </p>
 
-              <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-light text-[#002561] playfair-300 leading-tight lg:mt-10 mt-6">
                 Master Finance.
                 <br />
                 Shape Your Future.
@@ -47,10 +47,10 @@ const HeroBannerMcom = ({ announcements, pageType = "finance" }) => {
           </div>
 
           {/* Right Content - Circular Image */}
-          <div className="flex justify-center items-end w-full lg:w-1/2 mt-6 lg:mt-0">
+          <div className="flex justify-center items-end md:justify-end w-full lg:w-1/2 mt-6 lg:mt-0">
             <div className="relative">
               {/* Mobile Circular Image */}
-              <div className="w-96 h-96  rounded-full overflow-hidden lg:hidden">
+              <div className="w-96 h-64  rounded-full overflow-hidden lg:hidden flex flex-col items-end justify-end">
                 <Image
                   src="/mcom/mcom-hero-banner-mobile.webp"
                   alt="M.Com Student"
