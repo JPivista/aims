@@ -15,14 +15,16 @@ const MapJourney = () => {
         "A huge congratulations to the Class of 2024! Your journey is just beginning, and the future is yours to shape!",
       date: "Jan 08, 2025",
       duration: "Duration: 02:24",
+      link: "https://www.instagram.com/aimsinstitutes1994/",
     },
     {
       image: "/home/map-journey/insta-2.webp",
       title: "PG 25th Graduation Day Highlights",
       description:
-        "A huge congratulations to the Class of 2024! Your journey is just beginning, and the future is yours to shape!",
+        "Transforming Education with Top Programs like MBA, BBA, BHM, MCA, BCA, MCom, BCom & more!",
       date: "Jan 08, 2025",
       duration: "Duration: 02:24",
+      link: "https://www.instagram.com/aimsinstitutes1994/",
     },
 
     {
@@ -32,6 +34,7 @@ const MapJourney = () => {
         "AIMS School of Business MBA Wins Overall Championship Trophy | AIMS Institutes",
       date: "Mar 19, 2025",
       duration: "00:00",
+      link: "https://www.youtube.com/shorts/vTT3V2oSBbg",
     },
   ];
   return (
@@ -57,13 +60,16 @@ const MapJourney = () => {
               >
                 {/* Image */}
                 <div>
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={400}
-                    className="w-full h-64 object-cover"
-                  />
+                  
+                  <Link href={item.link} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={400}
+                      height={400}
+                      className="w-full h-64 object-cover"
+                    />
+                  </Link>
                 </div>
 
                 {/* Content */}
