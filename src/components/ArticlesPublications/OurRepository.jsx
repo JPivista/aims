@@ -14,7 +14,7 @@ const OurRepository = () => {
               <p className="text-start text-base sm:text-lg md:text-[18px]  monser-400">
                 Dive into expertly crafted research, insightful thought
                 leadership, and innovative business perspectives that empower
-                you to aim higher and achieve precision in your academic and
+                you to AIM higher and achieve precision in your academic and
                 professional journey.
               </p>
             </div>

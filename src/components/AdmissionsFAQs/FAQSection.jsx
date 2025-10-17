@@ -10,11 +10,9 @@ const FAQSection = () => {
           {/* Left Side - Heading and Instructions (5/6 width) */}
           <div className="w-full max-w-5xl">
             <p className="text-base sm:text-lg md:text-[18px] leading-relaxed">
-              At AIMS Institutes, we believe that financial constraints should
-              never stand in the way of your academic goals. That's why we
-              support our applicants and students with access to trusted
-              education loan providers, so you can focus on learning, growing,
-              and building a future you're proud of.
+              We know that applying to college is a big decision. Whether you're
+              planning ahead or ready to enrol, here are some of the most
+              frequently asked questions about joining AIMS Institutes.
             </p>
           </div>
 

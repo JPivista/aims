@@ -119,44 +119,30 @@ const AdmissionTabs = ({ tabsData }) => {
                     <p className="text-base md:text-lg monser-400 mb-3">
                       {tabsData[activeTab].eligibility.subtitle}
                     </p>
-                    <div className="space-y-2">
+                    <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
                       {tabsData[activeTab].eligibility.requirements.map(
                         (req, index) => (
-                          <div key={index}>
+                          <li key={index} className="mb-2">
                             {typeof req === "string" ? (
-                              <div className="flex items-start space-x-3">
-                                <span className="font-semibold">•</span>
-                                <p className="text-base md:text-lg monser-400">
-                                  {renderBoldText(req)}
-                                </p>
-                              </div>
+                              renderBoldText(req)
                             ) : (
-                              <div className="space-y-2">
-                                <div className="flex items-start space-x-3">
-                                  <span className="font-semibold">•</span>
-                                  <p className="text-base md:text-lg monser-400 font-medium">
-                                    {req.main}
-                                  </p>
+                              <div>
+                                <div className="font-medium mb-1">
+                                  {req.main}
                                 </div>
-                                <div className="ml-6 space-y-1">
+                                <ul className="list-disc ml-6 space-y-1">
                                   {req.sub.map((subReq, subIndex) => (
-                                    <div
-                                      key={subIndex}
-                                      className="flex items-start space-x-3"
-                                    >
-                                      <span className="text-sm">◦</span>
-                                      <p className="text-base md:text-lg monser-400">
-                                        {renderBoldText(subReq)}
-                                      </p>
-                                    </div>
+                                    <li key={subIndex} className="text-sm">
+                                      {renderBoldText(subReq)}
+                                    </li>
                                   ))}
-                                </div>
+                                </ul>
                               </div>
                             )}
-                          </div>
+                          </li>
                         )
                       )}
-                    </div>
+                    </ul>
                   </div>
 
                   {/* Selection Process */}
@@ -183,7 +169,7 @@ const AdmissionTabs = ({ tabsData }) => {
                               <h5 className="text-lg md:text-xl monser-600 text-[#A22877]">
                                 {step.title}
                               </h5>
-                              <p className="text-base md:text-lg monser-400 ml-4">
+                              <p className="text-base md:text-lg monser-400 ml-0">
                                 {step.description}
                               </p>
                             </div>
@@ -193,23 +179,15 @@ const AdmissionTabs = ({ tabsData }) => {
                     ) : (
                       /* Fallback for old rounds structure */
                       tabsData[activeTab].selection.rounds && (
-                        <div className="space-y-2">
+                        <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
                           {tabsData[activeTab].selection.rounds.map(
                             (round, index) => (
-                              <div
-                                key={index}
-                                className="flex items-start space-x-3"
-                              >
-                                <span className="font-semibold">
-                                  {index + 1}.
-                                </span>
-                                <p className="text-base md:text-lg monser-400">
-                                  {round}
-                                </p>
-                              </div>
+                              <li key={index} className="mb-2">
+                                {round}
+                              </li>
                             )
                           )}
-                        </div>
+                        </ul>
                       )
                     )}
 
@@ -274,21 +252,15 @@ const AdmissionTabs = ({ tabsData }) => {
                     <h6 className="text-xl md:text-[22px] monser-600 text-[#A22877]">
                       {tabsData[activeTab].afterSelection.title}
                     </h6>
-                    <div className="space-y-2">
+                    <ul className="list-disc px-4 md:pl-8 lg:px-8 font-monser-400 text-base sm:text-lg md:text-[18px] space-y-3 sm:space-y-4 md:space-y-4 leading-relaxed">
                       {tabsData[activeTab].afterSelection.steps.map(
                         (step, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-3"
-                          >
-                            <span className="font-semibold">•</span>
-                            <p className="text-base md:text-lg monser-400">
-                              {step}
-                            </p>
-                          </div>
+                          <li key={index} className="mb-2">
+                            {step}
+                          </li>
                         )
                       )}
-                    </div>
+                    </ul>
                   </div>
                 </div>
               )}
@@ -297,21 +269,34 @@ const AdmissionTabs = ({ tabsData }) => {
               {tabsData[activeTab].points &&
                 !tabsData[activeTab].eligibility && (
                   <div className="space-y-4 md:px-4 lg:px-4 px-0">
-                    <div className="monser-400">
+                    <ol className="list-decimal pl-6 space-y-3 monser-400 text-base md:text-lg lg:text-xl">
                       {tabsData[activeTab].points
                         .filter((point) => point?.trim())
                         .map((point, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-4 text-base md:text-lg lg:text-xl"
-                          >
-                            <span>{index + 1}.</span>
-                            <p className="text-base md:text-lg lg:text-xl">
-                              {point}
-                            </p>
-                          </div>
+                          <li key={index} className="leading-relaxed">
+                            {typeof point === "string" ? (
+                              point.includes("Apply Now") ? (
+                                <span>
+                                  {point.split("Apply Now")[0]}
+                                  <a
+                                    href="https://apply.theaims.ac.in/login"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#A22877] hover:text-[#8B1F5F] underline font-semibold"
+                                  >
+                                    Apply Now
+                                  </a>
+                                  {point.split("Apply Now")[1]}
+                                </span>
+                              ) : (
+                                point
+                              )
+                            ) : (
+                              point
+                            )}
+                          </li>
                         ))}
-                    </div>
+                    </ol>
                   </div>
                 )}
 

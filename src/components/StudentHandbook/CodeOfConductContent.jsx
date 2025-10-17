@@ -54,11 +54,11 @@ const CodeOfConductContent = () => {
           on-campus, in hostels, or during any Institute-related activity or
           function
         </li>
-        <li className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed">
-          The Institute may also take action for off-campus conduct if it:
-        </li>
       </ul>
 
+      <p className="text-base sm:text-lg md:text-xl lg:text-[18px] monser-400 text-black leading-relaxed  ml-6">
+        The Institute may also take action for off-campus conduct if it:
+      </p>
       {/* Nested bullet points */}
       <ul
         className="space-y-2 sm:space-y-3 list-disc list-outside ml-8 lg:ml-12 pl-2 mb-4"

@@ -12,9 +12,9 @@ const NirfContent = () => {
               Framework (NIRF)
             </h2>
             <p className="monser-400 text-base md:text-[24px] leading-relaxed md:max-w-5xl">
-              AIMS has been actively participating in the National Institutional
-              Ranking Framework (NIRF) ranking. <br /> Following is the data
-              submitted by us for respective years.
+              AIMS INSTITUTES has been actively participating in the National
+              Institutional Ranking Framework (NIRF) ranking. <br /> Following
+              is the data submitted by us for respective years.
             </p>
           </div>
         </div>

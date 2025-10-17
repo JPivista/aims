@@ -69,9 +69,9 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                   >
                     <button
                       onClick={() => toggleSection(section.id)}
-                      className="w-full flex items-center justify-between text-left p-2 "
+                      className="w-full flex items-center justify-between text-left p-4 py-4"
                     >
-                      <h2 className="monser-500 text-black text-lg sm:text-xl md:text-2xl leading-tight pr-4">
+                      <h2 className="monser-500 text-black text-lg sm:text-xl md:text-xl leading-tight pr-6">
                         {section.title}
                       </h2>
                       <motion.div
@@ -105,7 +105,7 @@ const TabAccordion = ({ tabsData, defaultActiveTab = 0 }) => {
                           }}
                           className="overflow-hidden"
                         >
-                          <div className="px-2 pb-6 md:ml-2 md:px-0 space-y-4 sm:space-y-5">
+                          <div className="px-2 pb-6 md:ml-2 md:px-0 pt-4 space-y-4 sm:space-y-5">
                             {section.content.map((item, itemIndex) => (
                               <motion.div
                                 key={itemIndex}

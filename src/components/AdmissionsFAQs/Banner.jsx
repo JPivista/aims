@@ -7,10 +7,10 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/admission-faqs/hero-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-faqs/hero-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-faqs/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/admission-faqs/mobile-banner-new.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -45,7 +45,7 @@ const HeroBanner = ({ announcements, pageType = "bba-aviation" }) => {
         {/* Empower Image*/}
         <div className="absolute top-5 left-0 right-0 lg:mx-10 mx-0">
           <div className="container mx-auto py-4 px-4 md:px-0 lg:px-0 ">
-            <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
+            <div className="flex lg:flex-row flex-col lg:items-end items-start lg:justify-end justify-start md:gap-10 gap-4 ">
               <div className="flex items-center">
                 <Image
                   src="/white-empower.svg"
