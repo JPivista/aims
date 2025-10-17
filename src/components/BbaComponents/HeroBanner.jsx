@@ -10,7 +10,7 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba/bba-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/bba/mobile-banner-new.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -37,10 +37,8 @@ const HeroBanner = ({ announcements, pageType = "bba" }) => {
                     </span>
                   </h1>
                   <h5 className="playfair-300 text-[#C9FFF4] text-3xl md:text-[50px] leading-tight tracking-wider -mt-2 md:-mt-6 ">
-                    Sharpen Your Aim. <br className="block md:hidden" />
-                    Step Into <br className="hidden md:block" />
-                    Business <br className="block md:hidden" />
-                    With Confidence.
+                    Sharpen Your Aim. <br />
+                    Step Into Business With Confidence.
                   </h5>
                 </div>
               </div>

@@ -78,10 +78,10 @@ const ValueAddedPrograms = ({
 
                   <button
                     onClick={() => handleItemClick(program.title)}
-                    className="w-full flex items-center justify-between text-left cursor-pointer px-2 md:px-4 py-3"
+                    className="w-full flex items-center justify-between text-left cursor-pointer px-0 md:px-4 py-3"
                   >
                     <h5 className="flex items-center gap-2 md:gap-4 w-full md:flex-wrap">
-                      <span className="break-words monser-500 text-[18px] sm:text-[20px] md:text-[24px] leading-snug">
+                      <span className="break-words monser-500 text-[20px] lg:text-[24px] leading-snug">
                         {program.title}
                       </span>
                       <Image
@@ -103,15 +103,15 @@ const ValueAddedPrograms = ({
 
                   {/* Content with proper bullet points */}
                   {expandedSection === program.title && (
-                    <div className="my-3 md:my-4 mb-10 md:mb-12 ml-2 md:ml-4">
+                    <div className="my-3 md:my-4 mb-10 md:mb-12 ml-0 md:ml-4">
                       <ul
-                        className="space-y-2 sm:space-y-3 list-disc list-outside ml-6 lg:ml-8 pl-2"
+                        className="space-y-2 sm:space-y-3 list-disc list-outside ml-2 lg:ml-8 lg:pl-2 pl-0 "
                         style={{ fontSize: "0.7em" }}
                       >
                         {program.content.map((item, contentIndex) => (
                           <li
                             key={`${program.id}-content-${contentIndex}`}
-                            className={`text-sm sm:text-base lg:text-[20px] monser-400 text-black leading-relaxed ${
+                            className={`text-[18px] lg:text-[20px] monser-400 text-black leading-relaxed ${
                               contentIndex === program.content.length - 1
                                 ? "mb-8"
                                 : ""
@@ -120,11 +120,11 @@ const ValueAddedPrograms = ({
                             {typeof item === "object" ? (
                               // Handle object with title and sub-items
                               <div>
-                                <div className="font-semibold mb-1 monser-600 text-[18px] sm:text-[20px] md:text-[20px]">
+                                <div className="font-semibold mb-1 monser-600 text-[18px] md:text-[20px]">
                                   {item.title}
                                 </div>
                                 {item.subItems && (
-                                  <ul className="ml-4 space-y-just 2">
+                                  <ul className="space-y-just 2">
                                     {item.subItems.map((subItem, subIndex) => (
                                       <li
                                         key={subIndex}

@@ -36,6 +36,7 @@ const AmbitionsSection = ({
                 height={600}
                 className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px] object-cover"
                 style={{ maxWidth: "100%", height: "auto" }}
+                priority
               />
             </div>
           </div>
