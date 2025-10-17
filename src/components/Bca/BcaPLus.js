@@ -5,7 +5,7 @@ import React from 'react'
 const BcaPlus = () => {
     return (
         <>
-            <div className="relative w-full lg:h-[60vh] h-[50vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/bca/bca-plus.webp')] lg:bg-[url('/bca/bca-plus.webp')]">
+            <div className="relative w-full lg:h-[60vh] h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/bca/bca-plus-mobile.webp')] lg:bg-[url('/bca/bca-plus.webp')]">
                 {/* Gradient Overlay - Figma Design */}
                 {/* <div
                     className="absolute inset-0"
@@ -15,7 +15,7 @@ const BcaPlus = () => {
                 ></div> */}
 
                 {/* Top Content Container */}
-                <div className="relative z-10 h-full flex flex-col items-start justify-center px-4 lg:px-8">
+                <div className="relative z-10 h-full flex flex-col md:items-start items-end md:justify-center justify-end md:pb-0 pb-10 px-4 lg:px-8">
                     <div className="container mx-auto py-4 ">
                         <div className="flex lg:flex-row md:gap-10 gap-4">
                             <div className="">

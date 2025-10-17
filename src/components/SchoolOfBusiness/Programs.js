@@ -26,7 +26,7 @@ const Programs = () => {
     const postgraduateProgram = {
         id: 'mba',
         title: 'MBA',
-        description: 'An <b>IACBE accredited</b>, industry-attuned program that strengthens analytical and leadership skills while immersing students in real-world business challenges. Among the <b>Top 1% B-Schools in India</b>, the MBA at AIMS is recognised for its placement record and applied learning.',
+        description: 'An <b>IACBE accredited</b>, <br class="md:hidden block" /> industry-attuned program that strengthens analytical and leadership skills while immersing students in real-world business challenges. Among the <b>Top 1% <br class="md:hidden block" /> B-Schools in India</b>, the MBA at AIMS is recognised for its placement record and applied learning.',
         image: '/school-of-business/mba.webp', // You'll need to add this image
         link: '/business-school/master-business-administration',
         highlights: [

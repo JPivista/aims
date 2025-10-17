@@ -14,7 +14,7 @@ const sampleCourseData = [
                 label: "SEMESTER 1",
                 image: "/bca/students-semester1.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br className='md:hidden block' /> Malayalam/Marathi/Telugu",
                     "Language II: English",
                     "Part 2 Optional",
                     "Discrete Mathematics",
@@ -29,7 +29,7 @@ const sampleCourseData = [
                 label: "SEMESTER 2",
                 image: "/bca/students-semester2.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br className='md:hidden block' /> Malayalam/Marathi/Telugu",
                     "Language II: English",
                     "Part 2 Optional",
                     "Computer Architecture",
@@ -50,7 +50,7 @@ const sampleCourseData = [
                 label: "SEMESTER 3",
                 image: "/bca/students-semester3.jpg", // Add your image path
                 courses: [
-                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Part 1 Languages <br /> Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br className='md:hidden block' /> Malayalam/Marathi/Telugu",
                     "Language II: English",
                     "Part 2 Optional",
                     "Operating Systems",
@@ -66,7 +66,7 @@ const sampleCourseData = [
                 image: "/bca/students-semester4.jpg", // Add your image path
                 courses: [
                     "Part 1 Languages",
-                    "Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/Malayalam/Marathi/Telugu",
+                    "Languages: Kannada/Additional English/Hindi/Urdu/Sanskrit/Tamil/<br className='md:hidden block' /> Malayalam/Marathi/Telugu",
                     "Language II: English",
                     "Part 2 Optional",
                     "Software Engineering",
