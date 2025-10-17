@@ -31,18 +31,18 @@ const ServicesOffered = () => {
       <div className="container mx-auto py-12">
         {/* Top Section */}
         <h3 className="text-3xl md:text-4xl font-bold text-[#0d2352] mb-6">
-          Services Offered:
+          Services Offered
         </h3>
 
         {/* Flex Container */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:items-start gap-8">
           {/* Text Content */}
           <div className="flex-1 order-2 lg:order-1">
-            <ol className="list-decimal list-inside space-y-2 text-gray-900 text-lg pl-1">
+            <ul className="list-disc list-inside space-y-2 text-gray-900 text-lg pl-1">
               {services.map((service, index) => (
                 <li key={index}>{service}</li>
               ))}
-            </ol>
+            </ul>
           </div>
 
           {/* Image */}
@@ -51,7 +51,7 @@ const ServicesOffered = () => {
               src={
                 isMobile
                   ? "/library-and-information-centre/service_offer_mob.webp"
-                  : "/library-and-information-centre/services_offered.webp"
+                  : "/library-and-information-centre/services-offered-new.webp"
               }
               alt="Library services"
               fill

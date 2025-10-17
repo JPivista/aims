@@ -179,7 +179,7 @@ const QuickLinks = () => {
         {/* Image Top on Tablet and Mobile */}
         <div className="relative w-full h-[300px] md:h-[350px] rounded-xl overflow-hidden lg:order-2 md:order-1">
           <Image
-            src="/library-and-information-centre/quick_links.webp"
+            src="/library-and-information-centre/quick-links-new.webp"
             alt="Library services"
             fill
             className="object-cover"
@@ -189,7 +189,7 @@ const QuickLinks = () => {
 
         {/* Accordion Below Image */}
         <div className="lg:order-1 md:order-2">
-          <h3 className="text-4xl font-bold text-[#0d2352] mb-6">Quick Links:</h3>
+          <h3 className="text-4xl font-bold text-[#0d2352] mb-6">Quick Links</h3>
 
           <div className="space-y-4">
             {links.map((link, index) => (

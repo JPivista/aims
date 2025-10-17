@@ -2,7 +2,7 @@ import React from "react";
 
 const leftPoints = [
     "Established in 1994, AIMS Institutes boasts a rich legacy of 3 Decades in imparting Quality Education",
-    "Located at the prime location in Peenya, Bengaluru – The Largest Industrial Hub",
+    "Located at the prime location in Peenya, Bengaluru, The Largest Industrial Hub",
     "Highly Qualified, Experienced, and Dedicated faculty fraternity",
     "Vast Campus with well-equipped Classrooms, Library, Laboratories, Seminar Hall, Auditorium, Playground, Cafeteria, Gym, and Health Care Centre",
     "Dedicated Hostels available for Boys and Girls with free transport facility",
@@ -12,7 +12,7 @@ const leftPoints = [
 
 const rightPoints = [
     "Add-on courses, Industrial Visits, Personality Development Programs, Career Counselling Sessions, Seminars and Symposiums",
-    "Integrated Coaching For CET, NEET and JEE – making us one of the best colleges for PU with CET coaching and JEE coaching in Bangalore",
+    "Integrated Coaching For CET, NEET and JEE, making us one of the best colleges for PU with CET coaching and JEE coaching in Bangalore",
     "Extra-coaching facility for High Performers to enhance their Competence",
     "Extra-Curricular Activities with the Sports Club and the Cultural Club",
     "Remedial classes to support students via additional revision of portions",
