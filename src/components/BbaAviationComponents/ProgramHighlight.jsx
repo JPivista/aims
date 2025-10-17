@@ -6,7 +6,7 @@ const ProgramHighlight = () => {
     <div className="relative w-full h-[90vh] md:h-[80vh] lg:h-[75vh] overflow-hidden">
       {/* Desktop Background Image */}
       <Image
-        src="/bba-aviation/student.webp"
+        src="/bba-aviation/student-new.webp"
         alt="BBA Aviation Program Highlight"
         fill
         className="hidden lg:block object-cover"
@@ -15,7 +15,7 @@ const ProgramHighlight = () => {
 
       {/* Tablet Background Image */}
       <Image
-        src="/bba-aviation/mobile-student.webp"
+        src="/bba-aviation/mobile-student-new.webp"
         alt="BBA Aviation Program Highlight"
         fill
         className="hidden md:block lg:hidden object-cover object-top"
@@ -24,7 +24,7 @@ const ProgramHighlight = () => {
 
       {/* Mobile Background Image */}
       <Image
-        src="/bba-aviation/mobile-student.webp"
+        src="/bba-aviation/mobile-student-new.webp"
         alt="BBA Aviation Program Highlight"
         fill
         className="block md:hidden object-cover"

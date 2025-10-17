@@ -108,7 +108,7 @@ const HeroBanner = ({ announcements, pageType = "mba" }) => {
         <div className="hidden lg:block absolute bottom-0 left-0 z-40">
           <div className="flex items-center justify-center">
             <Image
-              src="/MBA/iacbe-final.svg"
+              src="/MBA/iacbe-destktop-new.webp"
               alt="IACBE"
               width={700}
               height={250}
