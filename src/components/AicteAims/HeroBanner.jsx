@@ -7,10 +7,10 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aicte/hero-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aicte/hero-banner-new.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aicte/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/aicte/mobile-banner-new.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
@@ -55,7 +55,7 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4 ">
               <div className="flex items-center">
                 <Image
-                  src="/white-empower.svg"
+                  src="/black-empower.svg"
                   alt="Recruiters"
                   width={200}
                   height={200}
