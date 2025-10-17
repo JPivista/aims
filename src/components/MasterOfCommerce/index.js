@@ -14,7 +14,7 @@ const index = () => {
             <HeroBannerMcom />
             <McomContent />
             <McomProgramOverview />
-            <ValueAddedPrograms programKey="mba" />
+            <ValueAddedPrograms programKey="mcom" />
             <McomStudentLead />
             <Companies />
             <McomCourseStructure />

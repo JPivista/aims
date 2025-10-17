@@ -131,6 +131,76 @@ const Breadcrumbs = () => {
         return
       }
 
+      // Special case for pgdm (under placements-mba)
+      if (segment === "pgdm") {
+        breadcrumbs.push({
+          label: "Placements MBA/PGDM",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for articles-publications
+      if (segment === "articles-publications") {
+        breadcrumbs.push({
+          label: "Articles & Publications",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for iqac-internal-quality-assurance-cell
+      if (segment === "iqac-internal-quality-assurance-cell") {
+        breadcrumbs.push({
+          label: "IQAC (Internal Quality Assurance Cell)",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for iacbe-accreditation
+      if (segment === "iacbe-accreditation") {
+        breadcrumbs.push({
+          label: "IACBE Accreditation",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for naac-accreditation
+      if (segment === "naac-accreditation") {
+        breadcrumbs.push({
+          label: "NAAC Accreditation",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for aicte-aims
+      if (segment === "aicte-aims") {
+        breadcrumbs.push({
+          label: "AICTE",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
+      // Special case for nirf-ranking
+      if (segment === "nirf-ranking") {
+        breadcrumbs.push({
+          label: "NIRF (National Institutional Ranking Framework)",
+          href: currentPath,
+          isLast: index === pathSegments.length - 1,
+        })
+        return
+      }
+
       // Convert segment to readable label
       const label = segment
         .split("-")
