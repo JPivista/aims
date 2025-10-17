@@ -23,7 +23,7 @@ export default function Footer() {
         { href: '/student-information-zone', text: 'Student Exit Formalities' },
         { href: '/student-information-zone', text: 'Examinations' },
         { href: '/student-information-zone', text: 'Academic Calendar' },
-        { href: '/student-information-zone', text: 'Program and Course Outcome' },
+        { href: '/pdf/footer-pdf/Program_and_Course_Outcomes.pdf', target: '_blank', text: 'Program and Course Outcome' },
         { href: '/student-information-zone', text: 'Code of Conduct (Students)' }
       ]
     },
@@ -46,7 +46,9 @@ export default function Footer() {
         { href: '/naac-accreditation', text: 'NAAC Accreditation' },
         { href: '/aicte-aims', text: 'AICTE' },
         { href: '/nirf-ranking', text: 'NIRF' },
-        { href: '/ugc-preparation', text: 'UGC 2(f) & 12B' }
+        { href: '/pdf/footer-pdf/AIMS-UGC2(f)+&+12B+.pdf', target: '_blank', text: 'UGC 2(f) & 12B' },
+        { href: '/pdf/footer-pdf/IDP-final+copy.pdf', target: '_blank', text: 'Institutional Development Plan' },
+        { href: '/pdf/footer-pdf/Annual+Accounts.pdf', target: '_blank', text: 'Annual Accounts' }
       ]
     },
     {
