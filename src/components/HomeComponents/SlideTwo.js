@@ -24,7 +24,7 @@ const courses = [
         link: "/business-school/bachelor-business-administration-aviation-management",
       },
       {
-        name: "BBA+ CA / ACCA",
+        name: "BBA+ CA/ACCA",
         link: "/business-school/bachelor-business-administration",
       },
     ],
@@ -48,7 +48,7 @@ const courses = [
         link: "/finance-commerce-school/bachelor-of-commerce",
       },
       {
-        name: "CA / ACCA BCOM+",
+        name: "CA/ACCA BCOM+",
         link: "/finance-commerce-school/bachelor-of-commerce",
       },
     ],
@@ -121,16 +121,16 @@ const courses = [
     programsTitle: "SCIENCE",
     programs2: [
       {
-        name: "PCMB",
+        name: "PCMB/PCMC (Integrated)",
         link: "/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee",
       },
-      { name: "PCMC", link: "/pre-university-college/science-pcmb-pcmc" },
+      { name: "PCMB/PCMC", link: "/pre-university-college/science-pcmb-pcmc" },
     ],
     programsTitle2: "COMMERCE",
     programs3: [
       {
         name: "CEBA",
-        link: "/pre-university-college/science-integrated-pcmb-pcmc-cet-neet-jee",
+        link: "/pre-university-college/commerce-heba",
       },
     ],
     leftImage: "/home/course/puc-left.webp",
@@ -190,7 +190,7 @@ export default function ExactSwapCarousel() {
             <button
               onClick={prev}
               aria-label="Previous"
-              className="bg-white hover:bg-[#000] hover:text-white text-black p-2 rounded-full shadow"
+              className="bg-white hover:bg-[#A22877] hover:text-white text-black p-2 rounded-full shadow"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -389,7 +389,7 @@ export default function ExactSwapCarousel() {
                     {courses[current].programs3 &&
                       courses[current].programs3.length > 0 && (
                         <ul className="my-4 space-y-1 ">
-                          {courses[current].programs2.map((p, i) => (
+                          {courses[current].programs3.map((p, i) => (
                             <li key={i} className="text-lg leading-snug">
                               <Link
                                 href={p.link}
@@ -402,9 +402,9 @@ export default function ExactSwapCarousel() {
                         </ul>
                       )}
                     <Link href={courses[current].browseAllLink}>
-                      <Button
+                      <Button variant="placement"
                         showReadMore={false}
-                        className="hover:text-white hover:border-white"
+                        className="hover:text-white hover:border-white text-xl"
                       >
                         {courses[current].buttonText}
                       </Button>

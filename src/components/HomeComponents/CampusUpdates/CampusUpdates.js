@@ -15,10 +15,10 @@ const CampusUpdates = () => {
         </p>
         <div className="flex lg:flex-row flex-col gap-4 lg:pt-5 pt-3">
           <Link href="/news">
-            <Button>Explore News </Button>
+            <Button variant="placement" className="text-xl">Explore News </Button>
           </Link>
           <Link href="/events">
-            <Button>Events at AIMS </Button>
+            <Button variant="placement" className="text-xl">Events at AIMS </Button>
           </Link>
         </div>
       </div>
