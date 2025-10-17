@@ -56,7 +56,7 @@ export default function AlumniCarousel() {
           <span className="italic text-[#A22877] playfair-400">Action</span>
         </h3>
         <Button variant="placement">
-          <Link href="/aims-alumni-association" className="text-xl">Read All Alumni Journeys</Link>
+          <Link href="/aims-alumni-association" className="text-xl">Read Their Journeys</Link>
         </Button>
       </div>
 

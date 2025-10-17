@@ -76,7 +76,7 @@ const IneligibilityAndRecruitment = () => {
 
               {/* Content */}
               <div className="text-black space-y-4">
-                <p className="text-lg monser-600">The Ones Guiding Your Aim.</p>
+                <p className="text-lg monser-600">The Ones Guiding Your AIM.</p>
 
                 <ul className="list-disc list-outside space-y-2 ml-7">
                   <li>Principal and Chief Executive Officer</li>

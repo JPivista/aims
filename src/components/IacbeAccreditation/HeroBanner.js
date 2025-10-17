@@ -21,7 +21,7 @@ const HeroBanner = ({ announcements, pageType = "engineering" }) => {
           }}
         ></div>
 
-        <div className="absolute top-0 lg:top-20 left- lg:right-10 px-4 lg:px-0">
+        <div className="absolute top-0 lg:top-10 left- lg:right-20 px-4 lg:px-0">
           <div className="container mx-auto py-4">
             <div className="flex lg:flex-row flex-col items-start justify-between md:gap-10 gap-4">
               <div className="flex items-center">

@@ -65,7 +65,7 @@ const Accredited = () => {
             <div className="text-lg">
               <p className="lg:w-[75%] w-full">
                 As a CHEA (Council for Higher Education Accreditation)
-                recognised accreditor, the IACBE recognizes that the demand for
+                recognised accreditor, the IACBE Recognizes that the demand for
                 public accountability in higher education is increasing rapidly.
                 Specialised accreditation by the IACBE provides external
                 accountability for the quality of an institution’s business
