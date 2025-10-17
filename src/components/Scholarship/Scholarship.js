@@ -178,7 +178,7 @@ const ScholarshipTable = () => {
 
                     {/* Required Documents - bullet list */}
                     <td className="p-3 border border-gray-300 align-top">
-                      <ul className="list-disc pl-6 space-y-1 text-sm marker:text-black">
+                      <ul className="list-disc pl-6 space-y-1 text-sm marker:text-black marker:text-lg">
                         {scholarship.documents.map((doc, idx) => (
                           <li key={idx}>{doc}</li>
                         ))}

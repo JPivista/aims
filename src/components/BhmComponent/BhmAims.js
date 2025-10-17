@@ -17,7 +17,7 @@ const Partnerships = () => {
                 in October 2023.
               </h4>
               <p className="text-black mb-6 leading-relaxed">
-                Founded in 1955, EUHOFA INTERNATIONAL is the first international
+                Founded in 1955, EUHOFA  international is the first international
                 association of universities and schools of hospitality
                 management and tourism. It was created by the Alpine hotel
                 schools with the aim of assessing the latest trends and

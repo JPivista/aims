@@ -7,9 +7,9 @@ import Button from "../../shared/Button"
 const SofPrograms = () => {
   const postgraduateProgram = {
     id: "",
-    title: "Bachelor of  Hotel Management (BHM)",
-    description:
-      "Our flagship 4-year BHM program prepares students for high-growth careers in hotels, resorts, airlines, and event management. The curriculum helps students aim for leadership roles in the service industry.",
+    title: "Bachelor of Hotel Management (BHM)",
+    description: `Our flagship 4-year BHM program prepares students for high\u2011growth careers in hotels, resorts, airlines, and event management. The curriculum helps students aim for leadership roles in the service industry.`,
+
     image: "/school-of-hospitality/sohospitality-img-01.webp",
     link: "/hospitality-tourism-school/bachelor-hotel-management",
   }
@@ -33,37 +33,41 @@ const SofPrograms = () => {
             alt="School Circle Background"
             width={250}
             height={100}
-            className=" rotate-180"
+            className="rotate-180"
           />
         </div>
 
-        <div className=" px-4 lg:px-8  relative z-30">
+        <div className="px-4 lg:px-8 relative z-30">
           <div className="lg:container mx-auto">
             {/* Postgraduate Program Section */}
-
             <section className="mb-10">
-              {/* <h3 className="text-[#0C2165]">Postgraduate Program</h3> */}
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center  ">
-                <div className="order-1 relative md:h-[550px]  lg:h-[400px] h-52">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+                {/* Image */}
+                <div className="order-1 relative md:h-[550px] lg:h-[400px] h-52 overflow-hidden rounded-2xl">
                   <Image
                     src={postgraduateProgram.image}
                     alt={postgraduateProgram.title}
                     fill
-                    className="object-cover rounded-2xl"
+                    className="object-cover"
                   />
                 </div>
-                <div className=" order-2 md:p-8 p-4">
-                  <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
+
+                {/* Content */}
+                <div className="order-2 md:p-8 p-4">
+                  <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left ">
                     {postgraduateProgram.title}
                   </h4>
                   <p
-                    className="text-black text-left mb-6 leading-relaxed"
+                    className="text-black text-left mb-6 leading-relaxed "
                     dangerouslySetInnerHTML={{
                       __html: postgraduateProgram.description,
                     }}
                   />
-                  <Link href={postgraduateProgram.link}>
+                  <Link
+                    href={postgraduateProgram.link}
+                    scroll={true}
+                    className=""
+                  >
                     <Button variant="primary" className="text-left">
                       Explore Now
                     </Button>
@@ -74,11 +78,10 @@ const SofPrograms = () => {
 
             {/* Undergraduate Programs Section */}
             <section className="mb-10">
-              {/* <h3 className="text-[#0C2165]">Undergraduate Program</h3> */}
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center   ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+                {/* Content */}
                 <div className="lg:order-1 order-2 md:p-8 p-4">
-                  <h4 className="text-2xl lg:text-[24px] font-bold text-[#0165] monser-600 text-left">
+                  <h4 className="text-2xl lg:text-[24px] font-bold text-[#0C2165] monser-600 text-left">
                     {undergraduateProgram.title}
                   </h4>
                   <p
@@ -87,12 +90,17 @@ const SofPrograms = () => {
                       __html: undergraduateProgram.description,
                     }}
                   />
-                  <Link href={undergraduateProgram.link}>
+                  <Link
+                    href={undergraduateProgram.link}
+                    scroll={true} // 👈 also scrolls to top
+                  >
                     <Button variant="primary" className="text-left">
                       Explore Now
                     </Button>
                   </Link>
                 </div>
+
+                {/* Image */}
                 <div className="lg:order-2 order-1 relative md:h-[550px] lg:h-[400px] h-52">
                   <Image
                     src={undergraduateProgram.image}
