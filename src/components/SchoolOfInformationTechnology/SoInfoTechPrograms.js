@@ -60,7 +60,7 @@ const SoInfoTechPrograms = () => {
                 {/* Section 1: Image Left, Text Right */}
                 <section className="mb-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div className="order-1 relative md:h-auto h-52">
+                        <div className="lg:order-2 order-1 relative h-auto">
                             <Image
                                 src={undergraduateProgram.image}
                                 alt={undergraduateProgram.title}
@@ -103,7 +103,7 @@ const SoInfoTechPrograms = () => {
                                 </Button>
                             </Link>
                         </div>
-                        <div className="lg:order-2 order-1 relative md:h-auto h-52">
+                        <div className="lg:order-2 order-1 relative h-auto">
                             <Image
                                 src={postgraduateProgram.image}
                                 alt={postgraduateProgram.title}
@@ -118,7 +118,7 @@ const SoInfoTechPrograms = () => {
                 {/* Section 3: Image Left, Text Right (Same as Section 1) */}
                 <section>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div className="order-1 relative md:h-auto h-52">
+                        <div className="lg:order-2 order-1 relative h-auto ">
                             <Image
                                 src={doctoralProgram.image}
                                 alt={doctoralProgram.title}

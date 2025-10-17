@@ -125,13 +125,13 @@ const Programs = () => {
                                 </Link>
                             </div>
 
-                            <div className="lg:order-2 order-1 relative lg:h-auto h-[300px]">
+                            <div className="lg:order-2 order-1 relative h-auto">
                                 <Image
                                     src={postgraduateProgram.image}
                                     alt={postgraduateProgram.title}
                                     height={400}
                                     width={800}
-                                    className="object-cover lg:h-auto h-[300px] md:h-[350px]"
+                                    className="object-cover"
                                 />
                             </div>
                         </div>
@@ -146,7 +146,7 @@ const Programs = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {undergraduatePrograms.map((program) => (
                                 <div key={program.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                                    <div className="relative md:h-auto h-52">
+                                    <div className="relative h-auto">
                                         <Image
                                             src={program.image}
                                             alt={program.title}
