@@ -10,7 +10,7 @@ const Banner = ({ announcements, pageType = "engineering" }) => {
         <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-hospitality/school-of-hospitality-banner.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-hospitality/hospitality-mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/school-of-hospitality/Banner1-mob.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div

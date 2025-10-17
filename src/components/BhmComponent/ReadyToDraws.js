@@ -47,14 +47,14 @@ const ReadyToDraw = ({
                 <Button
                   variant="secondary"
                   className="whitespace-nowrap text-xs sm:text-sm md:text-base"
-                  href="https://enquiry.theaims.ac.in/"
+                  href="https://www.theaims.ac.in/brochure-enquiry"
                   target="_blank"
                 >
                   {secondaryButtonText}
                 </Button>
               )}
 
-              {tertiaryButtonText && tertiaryButtonText.trim() !== "" && (
+              {/* {tertiaryButtonText && tertiaryButtonText.trim() !== "" && (
                 <Button
                   variant="secondary"
                   className="whitespace-nowrap text-xs sm:text-sm md:text-base"
@@ -63,7 +63,7 @@ const ReadyToDraw = ({
                 >
                   {tertiaryButtonText}
                 </Button>
-              )}
+              )} */}
             </div>
           </div>
 
