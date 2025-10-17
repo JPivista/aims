@@ -4,6 +4,7 @@ import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6
 import { FaPlus, FaMinus } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
+import { GoArrowDownRight } from "react-icons/go";
 
 export default function Footer() {
   const [openSection, setOpenSection] = useState('students');
@@ -167,10 +168,10 @@ export default function Footer() {
               <div className="py-4">
                 <h6 className="font-semibold text-xl lg:text-2xl mb-4">Follow Us</h6>
                 <div className="flex space-x-4 mt-2 text-2xl">
-                  <a href="#" className="hover:text-gray-300 transition-colors"><FaInstagram /></a>
-                  <a href="#" className="hover:text-gray-300 transition-colors"><FaFacebookF /></a>
-                  <a href="#" className="hover:text-gray-300 transition-colors"><FaXTwitter /></a>
-                  <a href="#" className="hover:text-gray-300 transition-colors"><FaYoutube /></a>
+                  <a target="_blank" href="https://www.instagram.com/aimsinstitutes1994/?hl=en" className="hover:text-gray-300 transition-colors"><FaInstagram /></a>
+                  <a target="_blank" href="https://www.facebook.com/AIMS1994" className="hover:text-gray-300 transition-colors"><FaFacebookF /></a>
+                  <a target="_blank" href="#" className="hover:text-gray-300 transition-colors"><FaXTwitter /></a>
+                  <a target="_blank" href="#" className="hover:text-gray-300 transition-colors"><FaYoutube /></a>
                 </div>
               </div>
 
@@ -189,9 +190,16 @@ export default function Footer() {
                   placeholder="Email Address"
                   className="w-full px-3 py-2 rounded border border-gray-400 bg-transparent text-white placeholder-gray-400 focus:outline-none focus:border-white transition-colors"
                 />
-                <Button className="bg-[#A22877] hover:bg-[#8B1F6A] text-white border-[#A22877] hover:border-[#8B1F6A] w-full transition-colors">
-                  Sign Up
-                </Button>
+                 <Link
+                        href="https://www.theaims.ac.in/sign-up"
+                        target="_blank"
+                        className="bg-[#9c2474] border-6 border-[#D8BFD8] text-white font-semibold text-lg px-3 md:px-4 rounded-[25px]  py-1 shadow-lg transform origin-right hover:bg-[#FF7F02] transition-all duration-300 group flex items-center justify-center"
+                    >
+                        <span className="flex items-center justify-center gap-1 md:gap-2">
+                            Sign Up
+                            <GoArrowDownRight className="w-3 h-3 md:w-5 md:h-5 transition-all duration-300 ease-in-out group-hover:-rotate-90" />
+                        </span>
+                    </Link>
               </div>
             </div>
           </div>

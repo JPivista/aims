@@ -55,8 +55,8 @@ export default function AlumniCarousel() {
           AIMers in <br />
           <span className="italic text-[#A22877] playfair-400">Action</span>
         </h3>
-        <Button>
-          <Link href="/aims-alumni-association">Read All Alumni Journeys</Link>
+        <Button variant="placement">
+          <Link href="/aims-alumni-association" className="text-xl">Read All Alumni Journeys</Link>
         </Button>
       </div>
 

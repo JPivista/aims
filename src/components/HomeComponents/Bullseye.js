@@ -15,7 +15,7 @@ const Bullseye = () => {
         <p className="max-w-3xl mx-auto lg:pb-10 lg:px-0 px-4">
           With over 100+ recruiters including EY, Infosys, Deloitte, and
           Accenture, AIMS is where ambition meets real outcomes. Our placement
-          support and alumni stories show what’s possible when you aim with
+          support and alumni stories show what’s possible when you AIM with
           intent.
         </p>
       </div>
@@ -35,8 +35,8 @@ const Bullseye = () => {
         <Companies />
       </div>
       <div className="flex justify-center w-full">
-        <Link href="/placement-policies" className="lg:-mt-20">
-          <Button>Explore Placements</Button>
+        <Link href="/placement-policies" className="lg:-mt-20 text-xl">
+          <Button variant="placement">Explore Placements</Button>
         </Link>
       </div>
     </>

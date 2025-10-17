@@ -18,8 +18,8 @@ export default function CampusLifeSection() {
             and community. From industry labs and student clubs to fests and
             peer learning, you’ll find your rhythm, and your strengths.
           </p>
-          <Button showReadMore={false}>
-            <Link href="/campus-facilities">A Look Into Campus Life</Link>
+          <Button variant="placement" showReadMore={false}>
+            <Link href="/campus-facilities" className="text-xl">A Look Into Campus Life</Link>
           </Button>
         </div>
 
@@ -29,8 +29,8 @@ export default function CampusLifeSection() {
             <Image
               src="/home/your-prac.webp" // replace with your image path
               alt="Campus Students"
-              width={800}
-              height={500}
+              width={1200}
+              height={1000}
               className="object-cover w-full h-full"
             />
           </div>
