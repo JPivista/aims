@@ -1,4 +1,5 @@
 import React from "react"
+import ValueAddedProgramsCommon from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
 import ValueAddedPrograms from "../shared/ValueAddedProgramsProps"
 import Image from "next/image"
 
@@ -82,19 +83,14 @@ const sampleProps = {
 const BbaValueAddedPrograms = () => {
   return (
     <>
-      <ValueAddedPrograms
-        programsData={sampleProgramsData}
-        title={sampleProps.title}
-        description={sampleProps.description}
-        disclaimer={sampleProps.disclaimer}
-      />
+      <ValueAddedProgramsCommon programKey="bhm" />
       {/* Student Image with Overlay */}
       <div className="relative mx-auto">
         {/* Desktop View */}
         <div className="hidden lg:block relative">
           <div className="w-full h-[700px]">
             <Image
-              src="/bhm-img/Employers-img_new.webp"
+              src="/bhm-img/BHM-new-Desktop-image.webp"
               alt="AIMS Students"
               width={1400}
               height={1400}
@@ -108,7 +104,7 @@ const BbaValueAddedPrograms = () => {
             className="absolute inset-0 w-full h-full"
             style={{
               background:
-                "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 35%, rgba(12, 33, 101, 0.00) 75%)",
+                "linear-gradient(270deg, var(--Aims-Blue, #F5BBBC) 0%, var(--Aims-Blue, #F5BBBC) 25%, rgba(12, 33, 101, 0.00) 25%)",
             }}
           ></div>
 
@@ -131,7 +127,7 @@ const BbaValueAddedPrograms = () => {
         <div className="block lg:hidden relative">
           <div className="w-full h-[700px] md:h-[100vh]">
             <Image
-              src="/bhm-img/BHM-new-Mobile.webp"
+              src="/bhm-img/BHM-new-Mobile-image.webp"
               alt="AIMS Students"
               width={2400}
               height={300}

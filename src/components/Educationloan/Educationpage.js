@@ -32,10 +32,9 @@ const Educationpage = () => {
             <p className="">
               To ease your education financing journey, AIMS Institutes has
               associated with select banking and non-banking organisations
-              offering student-friendly loan schemes. Click on the links below
-              to connect directly with the concerned loan representatives and
-              explore available offers.
+              offering student-friendly loan schemes. 
             </p>
+            
           </div>
 
           {/* Right Column - Logos */}

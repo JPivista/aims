@@ -1,5 +1,6 @@
 "use client"
 import React from "react"
+import Button from "@/shared/Button"
 
 const WhyChooseAimsBhm = () => {
   const features = [
@@ -48,8 +49,21 @@ const WhyChooseAimsBhm = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
+      
+      
+
+        {/* Apply Now Button */}
+      <div className="flex justify-center lg:pt-10  pt-8">
+        <Button
+          variant="placement"
+          showArrow={true}
+          href="https://apply.theaims.ac.in/login"
+        >
+          Apply Now
+        </Button>
+      </div>
+      </div>
+      </div>
       </div>
     </>
   )

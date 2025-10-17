@@ -1,7 +1,7 @@
 import React from "react"
 import Banner from "./Banner"
 import WhyChoose from "./WhyChoose"
-import ValueAddedPrograms from "../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms"
+import ValueAddedPrograms from "./ValueAddedPrograms"
 import Companies from "../shared/Companies"
 import ProgramsDatas from "./ProgramsDatas"
 
@@ -18,7 +18,7 @@ const index = () => {
         <Banner />
         <WhyChoose />
         <Overview />
-        <ValueAddedPrograms programKey="mba" />
+        <ValueAddedPrograms />
         {/* <ProgramsDatas/> */}
         <Companies />
         <BhmCourseStructure />

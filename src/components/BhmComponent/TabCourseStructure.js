@@ -73,7 +73,7 @@ const TabCourseStructure = ({ courseData }) => {
                             }}
                             className="flex items-center w-full"
                           >
-                            <div className="bg-[#A22877] rounded-xl p-4 md:p-6 text-white w-80 md:w-[550px] lg:w-[750px] ">
+                            <div className="bg-[#A22877] rounded-xl p-2  md:p-6 text-white w-80 md:w-[550px] lg:w-[750px] ">
                               <h5 className="text-[30px]  mb-3 md:mb-4 monser-400 md:text-[36px] ">
                                 {tab.label}
                               </h5>
