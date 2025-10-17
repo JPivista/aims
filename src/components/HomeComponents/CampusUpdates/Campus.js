@@ -4,38 +4,53 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const slides = [
   {
-    id: "s1",
-    src: "/home/campus/embla-001-updated.webp",
-    description: "A Proud Moment for BHM Dept. of AIMS Institutes! Jun 6, 2025",
-    alt: "card 1",
-  },
-  {
     id: "s2",
     src: "/home/campus/embla-002.webp",
-    description: "PG 27th Graduation Day",
+    description: "LGBTQIA+ Session",
+    date: "Jul 14, 2025",
     alt: "card 2",
-  },
-  {
-    id: "s3",
-    src: "/home/campus/embla-003.webp",
-    description: "Bronze Glory at the National Games",
-    alt: "card 3",
-  },
-  {
-    id: "s4",
-    src: "/home/campus/embla-4.webp",
-    description: "UG 27th Graduation Day",
-    alt: "card 4",
+    link: "/news/lgbtqia-session",
   },
   {
     id: "s6",
     src: "/home/campus/embla-006.webp",
-    description: "UG 28th Graduation Ceremony Jul 14, 2025",
+    description: "UG 28th Graduation Ceremony",
+    date: "Jul 14, 2025",
     alt: "card 6",
+    link: "/news/ug-28th-graduation-ceremony",
   },
+  {
+    id: "s4",
+    src: "/home/campus/slide02.webp",
+    description: "AIMS School of Business Shines Again",
+    date: "Jun 6, 2025",
+    alt: "card 4",
+    link: "/news/aims-school-of-business-shines-again",
+  },
+  {
+    id: "s1",
+    src: "/home/campus/embla-001-updated.webp",
+    description: "A Proud Moment for BHM Dept. of AIMS Institutes!",
+    date: "Jun 7, 2025",
+    alt: "card 1",
+    link: "/news/a-proud-moment-for-bhm-dept-of-aims-institutes",
+  },
+  
+  {
+    id: "s3",
+    src: "/home/campus/slide01.webp",
+    description:
+      "A Milestone Achievement for BBA Aviation at AIMS Institutes!",
+    date: "Jun 6, 2025",
+    alt: "card 3",
+    link: "/news/a-milestone-achievement-for-bba-aviation-at-aims-institutes",
+  },
+ 
+ 
 ];
 
 export default function AimsCarousel() {
@@ -99,14 +114,20 @@ export default function AimsCarousel() {
                 >
                   {/* image wrapper fixed height */}
                   <div className="relative w-full">
-                    <Image
-                      src={slides[start].src}
-                      alt={slides[start].alt}
-                      width={500}
-                      height={500}
-                      className="object-contain"
-                      priority
-                    />
+                    <Link
+                      href={slides[start].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={slides[start].src}
+                        alt={slides[start].alt}
+                        width={500}
+                        height={500}
+                        className="object-contain"
+                        priority
+                      />
+                    </Link>
                   </div>
 
                   {/* description stays at bottom */}
@@ -115,6 +136,9 @@ export default function AimsCarousel() {
                       <p className="text-black text-sm font-medium text-center">
                         {slides[start].description}
                       </p>
+                      <h6  className="text-black text-sm font-medium text-center pt-1">
+                        {slides[start].date}
+                      </h6>
                     </div>
                   )}
                 </motion.div>
@@ -148,25 +172,33 @@ export default function AimsCarousel() {
                   >
                     {/* image wrapper fixed height */}
                     <div className="relative w-full flex flex-col items-center justify-center h[500px]">
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        width={500} // keep actual width or max
-                        height={500} // keep actual height or max
-                        className="object-contain"
-                        priority={isActive}
-                      />
-                        {item.description && (
-                      <div className="w-full -mt-1">
-                        <p className="text-black text-sm md:text-base font-medium text-left break-words whitespace-normal">
-                          {item.description}
-                        </p>
-                      </div>
-                    )}
+                      <Link
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          width={500} // keep actual width or max
+                          height={500} // keep actual height or max
+                          className="object-contain"
+                          priority={isActive}
+                        />
+                      </Link>
+                      {item.description && (
+                        <div className="w-full -mt-1">
+                          <p className="text-black text-sm md:text-base font-medium text-left break-words whitespace-normal">
+                            {item.description}
+                          </p>
+                          <h6 className="text-black text-sm font-medium text-left break-words whitespace-normal pt-1">
+                            {item.date}
+                          </h6>
+                        </div>
+                      )}
                     </div>
 
                     {/* description at bottom */}
-                  
                   </motion.div>
                 );
               })}
@@ -191,7 +223,7 @@ export default function AimsCarousel() {
               >
                 <path
                   d="M0.125 8.5H18.875M18.875 8.5L11.375 1M18.875 8.5L11.375 16"
-                  stroke="currentColor" 
+                  stroke="currentColor"
                   strokeWidth="0.5"
                   strokeLinejoin="round"
                 />
