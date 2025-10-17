@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Button from '@/shared/Button'
 
 const McomContent = () => {
     return (
         <>
             <div className="px-4 lg:px-8">
-                <div className='container mx-auto flex flex-col items-center justify-center lg:px-0 px-4'>
+                <div className='container mx-auto flex flex-col items-center justify-center'>
                     <div className='text-center lg:w-[75%]  py-10'>
                         <p>
                             Offered under the University of Bangalore, the AIMS M.Com program is designed to build high-level financial acumen and business sense. With value-added certifications and immersive workshops, we help you bridge the gap between classroom learning and real-world application.
@@ -19,7 +20,7 @@ const McomContent = () => {
                     </div>
 
                     {/* M.Com at AIMS Image */}
-                    <div className='md:flex justify-center mb-10 hidden'>
+                    <div className='md:flex justify-center hidden'>
                         <Image
                             src="/mcom/mcom-at-aims.svg"
                             alt="M.Com at AIMS"
@@ -28,7 +29,7 @@ const McomContent = () => {
                             className="object-contain w-[70%]"
                         />
                     </div>
-                    <div className='md:hidden flex justify-center mb-10'>
+                    <div className='md:hidden flex justify-center'>
                         <Image
                             src="/mcom/mcom-at-aims-mobile.svg"
                             alt="M.Com at AIMS"
@@ -36,6 +37,15 @@ const McomContent = () => {
                             height={400}
                             className="object-contain w-[95%]"
                         />
+                    </div>
+                    <div className="flex justify-center my-10">
+                        <Button
+                            variant="placement"
+                            showArrow={true}
+                            href="https://apply.theaims.ac.in/login"
+                        >
+                            Apply Now
+                        </Button>
                     </div>
                 </div>
             </div>

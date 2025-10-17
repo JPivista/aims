@@ -2,7 +2,7 @@ import React from 'react'
 import HeroBannerMcom from './HeroBannerMcom'
 import McomContent from './McomContent'
 import McomProgramOverview from './McomProgramOverview'
-import ValueAddedPrograms from './ValueAddedPrograms'
+import ValueAddedPrograms from '../shared/BBA-MBA-BBA-Aviation/ValueAddedPrograms'
 import McomStudentLead from './McomStudentLead'
 import Companies from '../shared/Companies/Companies'
 import McomCourseStructure from './McomCourseStructure'
@@ -14,7 +14,7 @@ const index = () => {
             <HeroBannerMcom />
             <McomContent />
             <McomProgramOverview />
-            <ValueAddedPrograms />
+            <ValueAddedPrograms programKey="mba" />
             <McomStudentLead />
             <Companies />
             <McomCourseStructure />
