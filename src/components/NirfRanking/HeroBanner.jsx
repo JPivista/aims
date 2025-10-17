@@ -7,10 +7,10 @@ const HeroBannerRc = ({ announcements, pageType = "engineering" }) => {
     <>
       <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
         {/* Background Image - Desktop */}
-        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/nirf/hero-banner.webp')]" />
+        <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/nirf/hero-banner-new.webp')]" />
 
         {/* Background Image - Mobile */}
-        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/nirf/mobile-banner.webp')]" />
+        <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/nirf/mobile-banner-new.webp')]" />
 
         {/* Gradient Overlay - Figma Design */}
         <div
