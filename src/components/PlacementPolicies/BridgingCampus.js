@@ -23,7 +23,7 @@ const BridgingCampus = () => {
               <p>
                 At AIMS Institutes, the <span className="monser-600">Corporate & Public Relations (C&PR)</span> Cell
                 is your training ground between the classroom and the corporate
-                world. Just as an archer prepares before taking aim, we equip
+                world. Just as an archer prepares before taking AIM, we equip
                 you with the insights, tools, and discipline to hit your career
                 targets with precision.
               </p>

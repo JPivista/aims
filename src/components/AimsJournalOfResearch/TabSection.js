@@ -67,19 +67,134 @@ const AdmissionTabsSection = () => {
       heading: "",
       showButtons: false,
       points: [
-        "2025 – Vol 20, Issue 1",
-        "2024 – Vol 19, Issue 2",
-        "2023 – Vol 18, Issue 1 & 2",
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Vol-19_Iss-2_September-2024.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2024 - Volume 19, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+18+-+Issue+2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2023 - Volume 18, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+18+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2023 - Volume 18, Issue 1
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+17+-+Issue+2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2022 - Volume 17, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+17+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2022 - Volume 17, Issue 1
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+16+-+Issue+2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2021 - Volume 16, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+16+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2021 - Volume 16, Issue 1
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+15+-+Issue+2+.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2020 - Volume 15, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+15+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2020 - Volume 15, Issue 1
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+14+-+Issue+2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2019 - Volume 14, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+14+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2019 - Volume 14, Issue 1
+          </a>
+        </>,
+
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+13+-+Issue+2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2018 - Volume 13, Issue 2
+          </a>
+        </>,
+        <>
+          <a
+            href="/pdf/aims-journal-of-research/archives/AIMS+Journal+Volume+13+-+Issue+1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2018 - Volume 13, Issue 1
+          </a>
+        </>,
       ],
       conclusion: (
         <>
-          <p>
+          {/* <p>
             [Full Archive Page] (take from Archives section:{" "}
             <a className="underline" href="/aims-journal-of-research" target="_blank" rel="noopener noreferrer">
               https://www.theaims.ac.in/aims-journal-of-research
             </a>
             )
-          </p>
+          </p> */}
         </>
       ),
     },

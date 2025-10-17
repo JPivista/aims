@@ -160,7 +160,7 @@ const AntiSexualHarassment = () => {
                 </div>
               </div>
               <div className="pt-5">
-                <h2 className="text-2xl monser-500 py-5">False Reporting:</h2>
+                <h2 className="text-2xl monser-500 py-5">False Reporting</h2>
                 <div className="flex flex-col gap-4">
                   <p>
                     Intentionally making a false report or providing false

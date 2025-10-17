@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Button from "@/shared/Button";
 import PricingTable from "@/components/shared/PricingTable";
+import Link from "next/link";
 
 const JournalTabs = ({ tabsData }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -70,9 +71,11 @@ const JournalTabs = ({ tabsData }) => {
             </div>
             {tabsData[activeTab].showButtons && (
               <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row gap-4 py-5">
-                <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
+                <Link href="/pdf/aims-journal-of-research/Submission+Guidelines.pdf" target="_blank">
+                <Button>
                   Download Submission Guidelines
                 </Button>
+                </Link>
                 <Button link="https://aimsjournal.in/aims-journal-of-research/submit-your-paper">
                   Download Undertaking Form
                 </Button>
@@ -107,7 +110,7 @@ const JournalTabs = ({ tabsData }) => {
                 <div className="space-y-4 pt-3">
                   <div className="monser-400">
                     {tabsData[activeTab].points
-                      .filter((point) => point?.trim())
+                      .filter((point) => typeof point === 'string' ? point?.trim() : point)
                       .map((point, index) => (
                         <div
                           key={index}
@@ -134,7 +137,7 @@ const JournalTabs = ({ tabsData }) => {
                 <div className="space-y-4 pt-3">
                   <div className="monser-400">
                     {tabsData[activeTab].points2
-                      .filter((point) => point?.trim())
+                      .filter((point) => typeof point === 'string' ? point?.trim() : point)
                       .map((point, index) => (
                         <div
                           key={index}
@@ -161,7 +164,7 @@ const JournalTabs = ({ tabsData }) => {
                 <div className="space-y-4 pt-3">
                   <div className="monser-400">
                     {tabsData[activeTab].points3
-                      .filter((point) => point?.trim())
+                      .filter((point) => typeof point === 'string' ? point?.trim() : point)
                       .map((point, index) => (
                         <div
                           key={index}
@@ -188,7 +191,7 @@ const JournalTabs = ({ tabsData }) => {
                 <div className="space-y-4 pt-3">
                   <div className="monser-400">
                     {tabsData[activeTab].points4
-                      .filter((point) => point?.trim())
+                      .filter((point) => typeof point === 'string' ? point?.trim() : point)
                       .map((point, index) => (
                         <div
                           key={index}
@@ -215,7 +218,7 @@ const JournalTabs = ({ tabsData }) => {
                 <div className="space-y-4 pt-3">
                   <div className="monser-400">
                     {tabsData[activeTab].points5
-                      .filter((point) => point?.trim())
+                      .filter((point) => typeof point === 'string' ? point?.trim() : point)
                       .map((point, index) => (
                         <div
                           key={index}
