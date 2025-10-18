@@ -27,9 +27,9 @@ const AdmissionTabsSection = () => {
                 {
                     heading: "We assess the learning, skills, and abilities of our students through the format prescribed by the Pre-University College Board. ",
                     points: [
-                        "<b>Tests and Examinations</b> The college conducts unit tests worth 30 marks, terminal exams for 40 marks (Non Practical subjects) & 35 Marks for Practical subjects, mid-term exams for 80 marks for Non Practical subjects & 70 marks for Practical Subjects, and preparatory exams for 80 marks for Non Practical subjects & 70 marks for Practical Subjects. The board conducts annual examinations (theory) in the month of March for II PUC and in the month of February for I PUC.",// <-- no bullet, just spacing
-                        "<b>Practical Examinations</b> Students pursuing physics, chemistry, biology and computer science have practical examinations as well. The practical examinations are conducted in the exam centres in the month of January/February for II PUC with an external examiner and in the month of January for I PUC in the college.",
-                        "<b>Practical Record Assessment</b> This is done on a weekly basis during practical classes and also during practical examinations. Viva voces are conducted based on the experiments that are carried out by the students."
+                        "<b>Tests and Examinations</b> The college conducts unit tests worth 30 marks, terminal exams for 40 marks (Non Practical subjects) & 35 Marks for Practical subjects, mid-term exams for 80 marks for Non Practical subjects & 70 marks for Practical Subjects, and preparatory exams for 80 marks for Non Practical subjects & 70 marks for Practical Subjects. The board conducts annual examinations (theory) in the month of March for II PUC and in the month of February for I PUC",// <-- no bullet, just spacing
+                        "<b>Practical Examinations</b> Students pursuing physics, chemistry, biology and computer science have practical examinations as well. The practical examinations are conducted in the exam centres in the month of January/February for II PUC with an external examiner and in the month of January for I PUC in the college",
+                        "<b>Practical Record Assessment</b> This is done on a weekly basis during practical classes and also during practical examinations. Viva voces are conducted based on the experiments that are carried out by the students"
                     ]
                 }
             ],

@@ -53,7 +53,7 @@ const PhdProgram = () => {
                         <Image
                             width={1000}
                             height={500}
-                            src="/business_school/phd/phd_program.webp"
+                            src="/business_school/phd/phd_program_2.webp"
                             alt="Students"
                             className="object-cover w-full h-auto max-h-[300px] md:max-h-none rounded-md"
                             priority

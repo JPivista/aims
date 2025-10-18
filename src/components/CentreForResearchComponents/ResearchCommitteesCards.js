@@ -40,8 +40,8 @@ export default function Page() {
         "To monitor and implement the policies of ACR",
       ],
       frequencyBorder: "border-teal-300",
-      frequencytitle: "Frequency:",
-      frequency: "As one of the top PU colleges in Bangalore for science, we support future-focused aspirations across disciplines.",
+      // frequencytitle: "Frequency:",
+      // frequency: "As one of the top PU colleges in Bangalore for science, we support future-focused aspirations across disciplines.",
     },
   ];
 
