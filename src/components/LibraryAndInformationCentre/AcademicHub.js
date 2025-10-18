@@ -7,7 +7,7 @@ const AcademicHub = () => {
       <div className="">
         <h3 className="text-center text-[#0C2165] font-semibold">
           The Academic Hub
-          <br /> That Supports Your Every AIM
+          <br /> That Supports Every AIM
         </h3>
         <h6 className="text-center">
           At AIMS Institutes, the Library & Information Centre is more than a

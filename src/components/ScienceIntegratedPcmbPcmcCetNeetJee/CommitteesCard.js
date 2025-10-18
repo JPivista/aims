@@ -7,7 +7,7 @@ export default function Page() {
       bgColor: "bg-[#FDE8EC]",
       borderColor: "border-[#A22877]",
       icon: "/centre-for-research/arrow_icon_1.svg",
-      title: "Advantages of Choosing PCMC:",
+      title: "Advantages of Choosing PCMC",
       titleColor: "text-[#531574]",
       description:
         "You can opt for multiple courses after PU, like BTech/BE/BCA/Bio-tech/BSc Nautical Sciences/BSc Computer Science/BSc Aviation/BDes Industrial Design.",
@@ -29,7 +29,7 @@ export default function Page() {
       bgColor: "bg-[#E3F4F1]",
       borderColor: "border-[#88BBB1]",
       icon: "/centre-for-research/arrow_icon_2.svg",
-      title: "Advantages of Choosing PCMB:",
+      title: "Advantages of Choosing PCMB",
       titleColor: "text-[#0C2165]",
       description:
         "You can opt for multiple courses after PU like Medical/Bio-tech/B-Pharma/Bachelor of Medical Sciences/BE/BSc/Bioinformatics/Agricultural Sciences.",

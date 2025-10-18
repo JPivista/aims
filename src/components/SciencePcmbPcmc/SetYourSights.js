@@ -48,7 +48,7 @@ export default function Page() {
                     `At AIMS PU College, one of the best PU colleges in Bangalore for science, we ignite a passion for science and empower students to excel in their academic journey. Our comprehensive program is designed to cultivate a deep understanding of Physics, Chemistry, Mathematics, and Biology/Computer Science, ensuring that students master the fundamentals of each subject. As one of the top colleges for PU with CET coaching and JEE coaching, we equip students with the tools to succeed.`,
                     `<b style="color:black;">Our vision:</b> To transform youth into professionals of global excellence with a deep concern for society.`,
                 ]}
-                subHeading={`Key Features of our <br />PUC Science Program:`}
+                subHeading={`Key Features of our <br />PUC Science Program`}
                 subDescription={[
                     ``,
                     ``

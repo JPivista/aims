@@ -18,10 +18,10 @@ const ScienceIntegratedPcmbPcmcCetNeetJeeBanner = ({ announcements, pageType = "
         <>
             <div className="relative w-full h-[83vh] md:h-[76vh] overflow-hidden">
                 {/* Background Image - Desktop */}
-                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/integrated-pcmc-pcmb.webp')]" />
+                <div className="hidden md:block w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/integrated-pcmc-pcmb-v2.webp')]" />
 
                 {/* Background Image - Mobile */}
-                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/pcmc_mob_banner.webp')]" />
+                <div className="md:hidden w-full h-full bg-cover bg-top bg-no-repeat bg-[url('/pre-university-college/integrated-pcmc-pcmb-v2-mob.webp')]" />
 
                 {/* Gradient Overlay - Figma Design */}
                 <div

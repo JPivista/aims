@@ -21,7 +21,7 @@ const AdvantagesOfChoosingEbac = () => {
       <div className="lg:px-8 px-4 pb-10">
         <div className="bg-white container mx-auto">
           <h3 className="text-4xl font-bold text-[#531675]" style={{ marginBottom: "0px" }}>
-            Advantages of Choosing <br /> EBAC:
+            Advantages of Choosing <br /> EBAC
           </h3>
 
           {/* flex-col-reverse by default, stays in tablet (md), switches to flex-row at large (lg) */}
